@@ -13,13 +13,13 @@ public class Pattern17Q31 {
             for (int j = 1; j <= sp; j++){
                 if (i==n/2+1)
                 {
-                    System.out.print("*\t");
+                    System.out.print("*");
                 }else{
-                    System.out.print("\t");
+                    System.out.print(" ");
                 }
         }
             for (int j = 1; j <= st; j++){
-            System.out.print("*\t");
+            System.out.print("*");
         }
         if (i<=n/2){
             st++;

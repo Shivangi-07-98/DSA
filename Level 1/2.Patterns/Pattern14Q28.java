@@ -9,7 +9,7 @@ public class Pattern14Q28 {
         for (int i = 1; i<=10; i++){
             int val = x*i;
             
-            System.out.println(x+" * "+i+" = "+val);
+            System.out.println(x + " * " + i + " = " + val);
         }
 
     }

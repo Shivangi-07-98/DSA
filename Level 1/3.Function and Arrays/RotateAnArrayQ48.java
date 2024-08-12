@@ -2,13 +2,18 @@ import java.io.*;
 import java.util.*;
 
 public class RotateAnArrayQ48{
-  public static void display(int[] a){
-    stringbuilder sb = new stringbuilder();
+  public static void main (String[] args){
+    Scanner scn = new Scanner (System.in);
+    int n = scn.nextInt();
 
-    for(int val: a){
-      sb.append(val + " ");
+    int [] arr = new int [n];
+    for(int i = 0; i < n; i++){
+      arr[i] = scn.nextInt();
     }
-    System.out.println(sb);
+    int k = scn.nextInt();
+
+    rotate (arr, k, n);
+    display(arr);
   }
 
   public static void rotate(int[] a, int k, int n){
@@ -20,6 +25,8 @@ public class RotateAnArrayQ48{
      reverse (a, 0, a.length-1-k);
      reverse (a, a.length-k, a.length-1);
      reverse (a, 0, a.length-1);
+
+  
   }
   
   public static void reverse (int []a, int left, int right){
@@ -39,18 +46,12 @@ public class RotateAnArrayQ48{
 
   }
 
-public static void main(String[] args) throws Exception {
-    BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+  public static void display(int[] a) {
 
-    int n = Integer.parseInt(br.readLine());
-    int[] a = new int[n];
-    for(int i = 0; i < n; i++){
-       a[i] = Integer.parseInt(br.readLine());
+    for (int val : a) {
+      System.out.print(val + " ");
     }
-    int k = Integer.parseInt(br.readLine());
-
-    rotate(a, k, n);
-    display(a);
- }
-
 }
+
+ }
+// }

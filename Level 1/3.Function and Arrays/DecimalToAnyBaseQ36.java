@@ -8,7 +8,7 @@ public class DecimalToAnyBaseQ36{
         System.out.print (newnum);
     }
     
-    public static int GetNewNum (int num,int base){
+    public static int GetNewNum (int num, int base){
         
         int newnum = 0;
         int pow = 1;
@@ -18,7 +18,7 @@ public class DecimalToAnyBaseQ36{
             num = quo;
             
             newnum += rem * pow;
-            pow = pow * 10 ;
+            pow = pow * 10;
             
         }
         return newnum;

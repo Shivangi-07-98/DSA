@@ -17,7 +17,7 @@ public class DifferenceOfTwoArraysQ46{
             a2[i] = scn.nextInt();
         }
         // size of sub array
-        int [] sub  = new int [n2];
+        int [] sub  = new int [n1];
         
         int i = a1.length-1;
         int j = a2.length-1;
@@ -25,10 +25,10 @@ public class DifferenceOfTwoArraysQ46{
         
         int borrow = 0;
         while (k >= 0){
-            int d = a2[j] - borrow;
+            int d = a1[i] - borrow;
             
-            if (i >= 0){
-            d = d - a1[i];
+            if (j >= 0){
+            d = d - a2[j];
             }
             if (d < 0){
                 d = d + 10;
@@ -71,7 +71,7 @@ public class DifferenceOfTwoArraysQ46{
             }
         }
             while (z < sub.length)
-          { System.out.println (sub[z]);
+          { System.out.print (sub[z]);
             z++;
           }
     }

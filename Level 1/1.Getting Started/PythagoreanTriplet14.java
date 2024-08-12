@@ -1,5 +1,4 @@
 import java.util.*;
-
 public class PythagoreanTriplet14 {
     public static void main(String[] args) {
         Scanner scn = new Scanner(System.in);

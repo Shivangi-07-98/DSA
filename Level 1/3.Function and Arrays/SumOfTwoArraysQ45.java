@@ -46,7 +46,7 @@ public static void main(String[] args) throws Exception {
         System.out.println(c);
     }
     for (int b = 0; b < sum.length; b++){
-    System.out.println(sum[b]);
+    System.out.print(sum[b]);
     }
     
  }

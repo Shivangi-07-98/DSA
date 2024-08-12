@@ -1,7 +1,5 @@
 import java.util.*;
-
 public class Pattern10Q24{
-
 public static void main(String[] args) {
     Scanner scn = new Scanner(System.in);
     int n = scn.nextInt();
@@ -12,16 +10,16 @@ public static void main(String[] args) {
     for (int i = 1; i<=n; i++){
         
         for (int j = 1; j<=osp; j++){
-            System.out.print("\t");
+            System.out.print(" ");
         }
         
-            System.out.print("*\t");
+            System.out.print("*");
             
         for (int j = 1; j<=isp; j++){
-            System.out.print("\t");
+            System.out.print(" ");
         }
         if(i>1 && i<n){
-            System.out.print("*\t");
+            System.out.print("*");
         }
         
         if(i<=n/2){

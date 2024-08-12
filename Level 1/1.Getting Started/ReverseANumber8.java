@@ -10,7 +10,7 @@ import java.util.*;
            int quo = n/10;
            int rem = n%10;
            n = quo;
-           System.out.println(rem);
+           System.out.print(rem);
        }
     }
    }

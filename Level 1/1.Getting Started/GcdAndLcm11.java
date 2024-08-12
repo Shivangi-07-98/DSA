@@ -1,5 +1,4 @@
 import java.util.*;
-    
     public class GcdAndLcm11{
     
     public static void main(String[] args) {

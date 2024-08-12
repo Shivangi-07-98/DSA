@@ -1,7 +1,5 @@
 import java.util.*;
-
 public class DigitsOfANumber7 {
-
     public static void main(String[] args) {
         Scanner scn = new Scanner(System.in);
         int n = scn.nextInt();
@@ -18,7 +16,7 @@ public class DigitsOfANumber7 {
         while (div >= 1) {
             int rem = n % div;
             int quo = n / div;
-            System.out.println(quo);
+            System.out.print(quo);
             div = div / 10;
             n = rem;
         }

@@ -12,6 +12,7 @@ public class PrintAllPrimesTillN4{
                 count++; break;
                 }
             }
+            
             if(count==0){
                 System.out.println(i);
             }
