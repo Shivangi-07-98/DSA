@@ -1,7 +1,7 @@
 import java.io.*;
 import java.util.*;
 
-public class DiagonalDisplayQ {
+public class DiagonalDisplayQ62 {
 
   public static void main(String[] args) throws Exception {
     

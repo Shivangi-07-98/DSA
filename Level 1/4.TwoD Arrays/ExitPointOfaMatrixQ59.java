@@ -1,6 +1,6 @@
 import java.io.*;
 import java.util.*;
-public class ExitPointOfaMatrix {
+public class ExitPointOfaMatrixQ59 {
     public static void main(String[] args) throws Exception {
         
         Scanner scn = new Scanner(System.in);

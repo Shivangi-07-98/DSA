@@ -1,5 +1,5 @@
 import java.util.*;
-public class TheStateOfWakanda1 {
+public class TheStateOfWakanda1Q57 {
     public static void main(String[] args) throws Exception {
         Scanner scn = new Scanner(System.in);
         int n = scn.nextInt(); // rows

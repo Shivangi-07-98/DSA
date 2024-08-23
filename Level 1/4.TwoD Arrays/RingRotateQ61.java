@@ -1,6 +1,6 @@
 import java.io.*;
 import java.util.*;
-public class RingRotate {
+public class RingRotateQ61 {
     public static void main(String[] args) throws Exception {
         Scanner scn = new Scanner(System.in);
 

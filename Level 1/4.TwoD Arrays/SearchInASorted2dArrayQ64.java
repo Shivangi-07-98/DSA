@@ -1,6 +1,6 @@
 import java.io.*;
 import java.util.*;
-public class SearchInASorted2dArrayQ {
+public class SearchInASorted2dArrayQ64 {
 
     public static void main(String[] args) throws Exception {
         // write your code here
