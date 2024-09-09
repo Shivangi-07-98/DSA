@@ -1,0 +1,5 @@
+int[] myArray = new int[5]; // Array of size 5 
+int[] myArray = {1, 2, 3, 4, 5}; // Initializes an array with values 1, 2, 3, 4, 5
+
+The java.util.Arrays class provides several utility methods for array manipulation:
+Arrays.sort(myArray);
