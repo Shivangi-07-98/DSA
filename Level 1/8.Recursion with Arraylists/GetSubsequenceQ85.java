@@ -23,11 +23,15 @@ public class GetSubsequenceQ85 {
             for(String jkl : def){ // line 4
                 jkl = "_" + jkl; //mno
                 ghi.add(jkl);
+                System.out.print(jkl + " ");
+                System.out.println("end 1");
             }
 
             for(String jkl : def){ // line 5
                  jkl = ch + jkl;
                 ghi.add(jkl);
+                System.out.print(jkl + " ");
+                System.out.println("end 2");
             }
 
             return ghi;
