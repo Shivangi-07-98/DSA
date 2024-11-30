@@ -1,5 +1,5 @@
 import java.util.*;
-public class GetStairPathsQ86 {
+public class GetStairPathsQ87 {
   public static void main (String [] args){
     Scanner scn = new Scanner(System.in);
     String str = scn.nextLine();
@@ -11,4 +11,5 @@ public class GetStairPathsQ86 {
     
     return null;
   }
+  
 }

@@ -1,3 +1,3 @@
-public class GetMazePathsQ88 {
+public class GetMazePathsWithJumpsQ89 {
   
 }

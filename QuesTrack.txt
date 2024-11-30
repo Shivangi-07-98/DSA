@@ -1,13 +1,29 @@
-26 Nov => 5 Ques
+29 Nov => 4 Ques
+1. get stair paths - 
+2. print stair paths - 
+3. get maze paths - 
+4. print maze paths - 
+
+30 Nov => 4 Ques
+1. get kpc - done
+2. print kpc - done
+3. 
+4. 
+
+1 Dec => 4 Ques
 1. 
 2. 
 3. 
 4. 
-5.
 
-27 Nov => 4 Ques
+2 Dec => 4 Ques
 1. 
 2. 
 3. 
-4. 
+4.
 
+3 Dec => 4 Ques
+1. 
+2. 
+3. 
+4.

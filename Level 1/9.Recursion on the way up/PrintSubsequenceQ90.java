@@ -1,5 +1,5 @@
 import java.util.*;
-public class PrintSubsequenceQ {
+public class PrintSubsequenceQ90 {
     public static void main (String[] args) throws Exception{
         Scanner scn = new Scanner(System.in);
         String str = scn.nextLine();
@@ -20,3 +20,4 @@ public class PrintSubsequenceQ {
 
     }
 }
+
