@@ -1,8 +1,8 @@
 29 Nov => 4 Ques
 1. get stair paths - 
 2. print stair paths - 
-3. get maze paths - 
-4. print maze paths - 
+3. get maze paths - done
+4. print maze paths - done
 
 30 Nov => 4 Ques
 1. get kpc - done
