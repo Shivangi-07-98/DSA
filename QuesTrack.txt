@@ -1,6 +1,6 @@
 29 Nov => 4 Ques
-1. get stair paths - 
-2. print stair paths - 
+1. get stair paths - done
+2. print stair paths - done
 3. get maze paths - done
 4. print maze paths - done
 
