@@ -7,7 +7,7 @@
 30 Nov => 4 Ques
 1. get kpc - done
 2. print kpc - done
-3. 
+3. sort01 - done
 4. 
 
 1 Dec => 4 Ques
