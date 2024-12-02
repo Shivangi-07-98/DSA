@@ -1,11 +1,11 @@
 import java.util.*;
-public class Sort01Q{
+public class Move0toEndQ{
   public static void main (String [] args){
     Scanner scn = new Scanner(System.in);
     int n = scn.nextInt(); // 7
     int [] arr = new int [n];
     for(int i = 0; i < n; i++){
-      arr[i] = scn.nextInt(); // 1 1 0 1 0 0 1
+      arr[i] = scn.nextInt(); // 9 5 0 4 8 0 2
     }
     sort(arr);
     for(int i = 0; i < arr.length; i++){
@@ -18,13 +18,13 @@ public class Sort01Q{
     int j=0;
 
     while(j < arr.length){
-        if(arr[j] == 0){
+        if(arr[j] != 0){ // non zero
           swap(arr, i, j);
           i++;
           j++;
         }
         else{
-          j++; 
+          j++;
         }
       
     }
@@ -37,3 +37,4 @@ public class Sort01Q{
     
   }
 }
+

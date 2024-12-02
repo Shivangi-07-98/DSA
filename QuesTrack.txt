@@ -8,11 +8,11 @@
 1. get kpc - done
 2. print kpc - done
 3. sort01 - done
-4. 
+4. Move0toEnd and Move0toFront - done
 
 1 Dec => 4 Ques
-1. 
-2. 
+1. get maze paths with jumps - 
+2. print maze paths with jumps - 
 3. 
 4. 
 
