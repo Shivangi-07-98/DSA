@@ -13,7 +13,7 @@
 1 Dec => 4 Ques
 1. get maze paths with jumps - 
 2. print maze paths with jumps - 
-3. 
+3. partition an array - done
 4. 
 
 2 Dec => 4 Ques
