@@ -13,24 +13,42 @@
 ------------------------------Done 8 Ques-----------------------------------
 
 1 Dec => 4 Ques
-1. get maze paths with jumps - 
-2. print maze paths with jumps - 
+1. get maze paths with jumps - pending
+2. print maze paths with jumps - pending
 3. partition an array - done
 4. sort012 - done
 
 2 Dec => 4 Ques
 1. sort lo hi - done
-2. 
+2. count sort - pending
+3. radix sort - pending
+4. sort dates - 
+
+3 Dec => 4 Ques
+1. quick sort - 
+2. quick select - 
 3. 
 4.
 
-3 Dec => 4 Ques
+4 Dec => 4 Ques
 1. 
 2. 
 3. 
 4.
 
-4 Dec => 4 Ques
+5 Dec => 4 Ques
+1. 
+2. 
+3. 
+4.
+
+6 Dec => 4 Ques
+1. 
+2. 
+3. 
+4.
+
+7 Dec => 4 Ques
 1. 
 2. 
 3. 
