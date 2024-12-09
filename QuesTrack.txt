@@ -1,55 +1,23 @@
-29 Nov => 4 Ques
 1. get stair paths - done
 2. print stair paths - done
 3. get maze paths - done
 4. print maze paths - done
+5. get kpc - done
+6. print kpc - done
+7. sort01 - done
+8. Move0toEnd and Move0toFront - done
+9. get maze paths with jumps - done
+10. print maze paths with jumps - done
+11. partition an array - done
+12. sort012 - done
+13. sort lo hi - done
 
-30 Nov => 4 Ques
-1. get kpc - done
-2. print kpc - done
-3. sort01 - done
-4. Move0toEnd and Move0toFront - done
+------------------------------Done 13 Ques-----------------------------------
 
-------------------------------Done 8 Ques-----------------------------------
-
-1 Dec => 4 Ques
-1. get maze paths with jumps - pending
-2. print maze paths with jumps - pending
-3. partition an array - done
-4. sort012 - done
-
-2 Dec => 4 Ques
-1. sort lo hi - done
-2. count sort - pending
-3. radix sort - pending
-4. sort dates - 
-
-3 Dec => 4 Ques
-1. quick sort - 
-2. quick select - 
-3. 
-4.
-
-4 Dec => 4 Ques
-1. 
-2. 
-3. 
-4.
-
-5 Dec => 4 Ques
-1. 
-2. 
-3. 
-4.
-
-6 Dec => 4 Ques
-1. 
-2. 
-3. 
-4.
-
-7 Dec => 4 Ques
-1. 
-2. 
-3. 
-4.
+14. count sort - pending
+15. radix sort - pending
+16. sort dates - 
+17. print permutations
+18. quick sort - 
+19. quick select - 
+20.
