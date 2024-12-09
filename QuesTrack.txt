@@ -11,13 +11,13 @@
 11. partition an array - done
 12. sort012 - done
 13. sort lo hi - done
+14. count sort - done
 
-------------------------------Done 13 Ques-----------------------------------
+------------------------------Done 14 Ques-----------------------------------
 
-14. count sort - pending
 15. radix sort - pending
 16. sort dates - 
-17. print permutations
+17. print permutations - 
 18. quick sort - 
 19. quick select - 
 20.
