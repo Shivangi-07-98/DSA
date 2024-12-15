@@ -12,12 +12,15 @@
 12. sort012 - done
 13. sort lo hi - done
 14. count sort - done
+15. radix sort - done
+16. sort dates - done
+17. print permutations - done
+18. quick sort - done
+19. quick select - done
+20. print encodings - done
 
-------------------------------Done 14 Ques-----------------------------------
+------------------------------Done 20 Ques-----------------------------------
 
-15. radix sort - pending
-16. sort dates - 
-17. print permutations - 
-18. quick sort - 
-19. quick select - 
-20.
+21.
+22.
+23.

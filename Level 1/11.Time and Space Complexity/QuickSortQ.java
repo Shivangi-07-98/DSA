@@ -1,31 +1,24 @@
 import java.util.*;
-public class QuickSelectQ {
+public class QuickSortQ {
   public static void main (String[] args){
     Scanner scn = new Scanner(System.in);
     int n = scn.nextInt(); // 8
     int [] arr = new int[n];
     for(int i = 0; i < arr.length; i++){
-      arr[i] = scn.nextInt(); // 40 60 30 20 90 70 80 50 => 20 30 40 50 60 70 80 90
+      arr[i] = scn.nextInt(); // 40 60 30 20 90 70 80 50
     }
-    int k = scn.nextInt(); // k smallest number
-    System.out.println(QuickSelect(arr, 0, arr.length-1, k - 1));
-    // print(arr);
+    QuickSort(arr, 0, arr.length-1);
+    print(arr);
   }
 
-  public static int QuickSelect(int [] arr, int lo, int hi, int k){
+  public static void QuickSort(int [] arr, int lo, int hi){
+    if(lo > hi){
+      return;
+    }
     int pivot = arr[hi];
     int pidx = partition(arr, pivot, lo, hi);
-
-    if(k > pidx){
-      return QuickSelect(arr, pidx + 1, hi, k);
-    }
-    else if(k < pidx){
-      return QuickSelect(arr, lo, pidx - 1, k);
-    }
-    else {
-      return pivot;
-    }
-    
+    QuickSort(arr, lo, pidx - 1);
+    QuickSort(arr, pidx + 1, hi);
   }
 
   // j-1 is where the pivot is and is on correct spot
