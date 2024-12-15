@@ -18,9 +18,9 @@
 18. quick sort - done
 19. quick select - done
 20. print encodings - done
+21. target sum subsets - done
 
-------------------------------Done 20 Ques-----------------------------------
+------------------------------Done 21 Ques-----------------------------------
 
-21.
-22.
+22. 
 23.
