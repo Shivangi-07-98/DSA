@@ -15,9 +15,11 @@ public class FloodFillQ97 {
   }
 
   public static void FloodFill(int [][] maze, boolean [][] visited, int sr, int sc, String asf) {
+
     if(sr == maze.length || sc == maze[0].length || sr == -1 || sc == -1 || maze[sr][sc] == 1 || visited[sr][sc] == true){
       return;
     }
+
     else if(sr == maze.length - 1 && sc == maze[0].length - 1){
       System.out.println(asf);
       return;
@@ -29,5 +31,8 @@ public class FloodFillQ97 {
     FloodFill(maze, visited, sr + 1, sc, asf + "d");
     FloodFill(maze, visited, sr, sc + 1, asf + "r");
     visited[sr][sc] = false;
+    
   }
+
 }
+
