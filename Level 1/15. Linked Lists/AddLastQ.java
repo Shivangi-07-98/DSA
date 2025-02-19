@@ -8,9 +8,9 @@ public class AddLastQ {
   }
 
   public static class LinkedList {
-    Node head;
-    Node tail;
-    int size;
+    Node head; // address of first node
+    Node tail; // address of last node
+    int size; // value
 
     // o1
     public void addLast(int val) {
@@ -143,6 +143,63 @@ public class AddLastQ {
       return slow.data;
     }
 
+
+    public int mid(){
+      Node fast = head;
+      Node slow = head;
+
+      while(fast.next != null && fast.next.next != null){
+        fast = fast.next.next;
+        slow = slow.next;
+      }
+      return slow.data;
+    }
+
+    // reverseDI n2
+    public Node getNodeAt(int idx){
+      Node temp = head;
+      for(int i = 0; i < idx; i++){
+        temp = temp.next;
+      }
+      return temp;
+    }
+
+
+    public void reverseDI(){
+      int li = 0;
+      int ri = size - 1;
+      while(li < ri){
+        Node left = getNodeAt(li);
+        Node right = getNodeAt(ri);
+
+        int temp = left.data;
+        left.data = right.data;
+        right.data = temp;
+
+        li++;
+        ri--;
+      }
+    }
+
+
+    public void reversePI(){
+      Node prev = null;
+      Node curr = head;
+
+      while(curr != null){
+        Node next = curr.next;
+        curr.next = prev;
+
+        prev = curr;
+        curr = next;
+      }
+
+      Node temp = head;
+      head = tail;
+      tail = temp;
+    }
+
+
   }
 
   public static void main(String[] args) {
@@ -158,3 +215,4 @@ public class AddLastQ {
   }
 
 }
+
