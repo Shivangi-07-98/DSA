@@ -463,7 +463,48 @@ public class AddLastQ {
       return IsPalindromeHelper(head);
     }
 
+
+    private static int addHelper(Node one, Node two, int pio, int pit, LinkedList res){
+      if(one == null && two == null){
+        return 0;
+      }
+
+      int data = 0;
+      int carry = 0;
+
+      if(pio > pit){
+        carry = addHelper(one.next, two, pio - 1, pit, res);
+        data = carry + one.data;
+      }
+      else if(pit > pio){
+        carry = addHelper(one, two.next, pio, pit - 1, res);
+        data = carry + two.data;
+      }
+      else{
+        carry = addHelper(one.next, two.next, pio - 1, pit - 1, res);
+        data = carry + one.data + two.data;
+      }
+
+      carry = data / 10;
+      data = data % 10;
+
+      res.addFirst(data);
+      return carry;
+      
+    }
+
+    public static LinkedList addTwoLists(LinkedList one, LinkedList two){
+      LinkedList res = new LinkedList();
+      int carry = addHelper(one.head, two.head, one.size, two.size, res);
+      if(carry > 0){
+        res.addFirst(carry);
+      }
+      return res;
+    }
+
+
   }
+
 
 
 
