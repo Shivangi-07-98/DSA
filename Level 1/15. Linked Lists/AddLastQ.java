@@ -387,8 +387,7 @@ public class AddLastQ {
         for (int i = 0; i < gap; i++) {
           otemp = otemp.next;
         }
-      } 
-      else if (two.size > one.size) {
+      } else if (two.size > one.size) {
         for (int i = 0; i < gap; i++) {
           ttemp = ttemp.next;
         }
@@ -402,15 +401,15 @@ public class AddLastQ {
       return otemp.data;
     }
 
-    private void reversePRHelper(Node node){
-      if(node.next == null){
+    private void reversePRHelper(Node node) {
+      if (node.next == null) {
         return;
       }
       reversePRHelper(node.next);
       node.next.next = node;
     }
 
-    public void reversePR(){
+    public void reversePR() {
       reversePRHelper(head);
       Node temp = head;
       head = tail;
@@ -418,8 +417,54 @@ public class AddLastQ {
       tail.next = null;
     }
 
-    
+
+    // The most important question (infinitely)
+    private void reverseDRHelper(Node right, int floor){
+      if(right == null){
+        return;
+      }
+      reverseDRHelper(right.next, floor + 1);
+      if(floor >= size / 2){
+        int temp = left.data;
+      left.data = right.data;
+      right.data = temp;
+      left = left.next;
+      } 
+    }
+
+    Node left = null;
+
+    public void reverseDR() {
+      left = head;
+      reverseDRHelper(head, 0);
+    }
+
+
+    private boolean IsPalindromeHelper(Node right){
+      if(right == null){
+        return true;
+      }
+      boolean res = IsPalindromeHelper(right.next);
+      if(res == false){
+        return false;
+      }
+      else if(left.data != right.data){
+        return false;
+      }
+      else{
+        left = left.next;
+        return true;
+      }
+    }
+
+    // Node left = null;
+    public boolean IsPalindrome(){
+      left = head;
+      return IsPalindromeHelper(head);
+    }
+
   }
+
 
 
   public static void main(String[] args) {
