@@ -1,7 +1,7 @@
 import java.io.*;
 import java.util.*;
 
-public class MirrorQ {
+public class RemoveLeavesQ {
 
   private static class Node {
     int data;
@@ -104,25 +104,20 @@ public class MirrorQ {
     }
   }
 
-  public static void mirror(Node node) {
-    for(Node child: node.children){
-      mirror(child);
+  public static void removeLeaves(Node node) {
+    // remove your own leaves
+    for (int i = node.children.size() - 1; i >= 0; i--) {
+        Node child = node.children.get(i);
+        if (child.children.size() == 0) {
+            node.children.remove(i);
+        }
     }
-    // Collections.reverse(node.children);
 
-    // Reverse the order of children
-    int li = 0;
-    int ri = node.children.size() - 1;
-    while (li < ri) {
-        Node left = node.children.get(li);
-        Node right = node.children.get(ri);
-        node.children.set(li, right);
-        node.children.set(ri, left);
-        li++;
-        ri--;
+    // request the children
+    for (Node child : node.children) {
+        removeLeaves(child);
     }
-    
-  }
+}
 
   public static void main(String[] args) throws Exception {
     BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
@@ -135,8 +130,8 @@ public class MirrorQ {
     }
 
     Node root = construct(arr);
-    display(root);
-    mirror(root);
+    
+    removeLeaves(root);
     display(root);
   }
 

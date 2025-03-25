@@ -1,6 +1,7 @@
 import java.util.*;
 
 public class Intro {
+
     public static class Node {
         int data;
         ArrayList<Node> children = new ArrayList<>();
@@ -15,7 +16,7 @@ public class Intro {
         queue.add(root);
 
         while (queue.size() > 0) {
-            // remove, print, add
+            // remove, print, add children
             Node temp = queue.remove();
             System.out.print(temp.data + " ");
             for (Node child : temp.children) {
@@ -86,5 +87,7 @@ public class Intro {
         levelOrder(root);
         levelOrderLinewise(root);
     }
+
+    
 }
 
