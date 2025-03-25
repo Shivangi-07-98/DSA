@@ -13,6 +13,9 @@ public class StackIntro1 {
         stack.push(30); // [10, 20, 30]
         stack.push(40); // [10, 20, 30, 40]
 
+        System.out.println(stack);
+
+
         // Peek at the top element (40) and print it
         System.out.println(stack.peek()); // 40
         // Remove the top element (40)
