@@ -6,6 +6,7 @@ public class Intro {
         int data;
         ArrayList<Node> children = new ArrayList<>();
 
+        // constructor
         Node(int data) {
             this.data = data;
         }
@@ -87,7 +88,5 @@ public class Intro {
         levelOrder(root);
         levelOrderLinewise(root);
     }
-
-    
+  
 }
-
