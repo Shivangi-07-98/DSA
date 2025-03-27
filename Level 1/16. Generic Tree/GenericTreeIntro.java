@@ -49,7 +49,7 @@ public class GenericTreeIntro {
         }
     }
 
-    public static void levelOrderZigZag(Node root) {
+    public static void levelOrderLinewiseZigZag(Node root) {
         
     }
 
