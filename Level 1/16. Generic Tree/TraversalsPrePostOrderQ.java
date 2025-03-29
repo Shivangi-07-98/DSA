@@ -1,4 +1,3 @@
-import java.io.*;
 import java.util.*;
 
 public class TraversalsPrePostOrderQ {
@@ -15,9 +14,46 @@ public class TraversalsPrePostOrderQ {
         }
         str += ".";
         System.out.println(str);
-        
+
         for (Node child : node.children) {
             display(child);
+        }
+    }
+
+    public static void levelOrder(Node root) {
+        Queue<Node> queue = new ArrayDeque<Node>();
+        queue.add(root);
+
+        while (queue.size() > 0) {
+            // remove, print, add
+            Node temp = queue.remove();
+            System.out.print(temp.data + " ");
+            for (Node child : temp.children) {
+                queue.add(child);
+            }
+        }
+
+        System.out.println(".");
+    }
+
+    public static void levelOrderLinewise(Node root) {
+        Queue<Node> queue = new ArrayDeque<Node>();
+        Queue<Node> cqueue = new ArrayDeque<Node>();
+        queue.add(root);
+
+        while (queue.size() > 0) {
+            Node temp = queue.remove();
+            System.out.print(temp.data + " ");
+
+            for (Node child : temp.children) {
+                cqueue.add(child);
+            }
+
+            if (queue.size() == 0) {
+                queue = cqueue;
+                cqueue = new ArrayDeque<>();
+                System.out.println(".");
+            }
         }
     }
 
@@ -26,35 +62,49 @@ public class TraversalsPrePostOrderQ {
 
         Stack<Node> st = new Stack<>();
 
-        for(int i = 0; i < arr.length; i++){
-            if(arr[i] == -1){
+        for (int i = 0; i < arr.length; i++) {
+            if (arr[i] == -1) {
                 st.pop();
-            }
-            else{
+            } else {
                 Node t = new Node();
                 t.data = arr[i];
 
-                if(st.size() > 0){
+                if (st.size() > 0) {
                     st.peek().children.add(t);
-                }
-                else{
+                } else {
                     root = t;
                 }
                 st.push(t);
             }
         }
-        
+
         return root;
     }
 
-
-    public static int size(Node node){
-        int s = 0;
-        for(Node child : node.children){
-            s += size(child);
+    public static int size(Node node) {
+        int size = 0;
+        for (Node child : node.children) {
+            size += size(child);
         }
-        s += 1;
-        return s;
+        return size + 1;
+    }
+
+    public static int max(Node node) {
+        int maxChild = node.data;
+        for (Node child : node.children) {
+            int recAns = max(child);
+            maxChild = Math.max(recAns, maxChild);
+        }
+        return maxChild;
+    }
+
+    public static int height(Node node) {
+        int height = -1;
+        for (Node child : node.children) {
+            int recAns = height(child);
+            height = Math.max(recAns, height);
+        }
+        return height + 1;
     }
 
     public static void traversals(Node node) {
@@ -73,14 +123,17 @@ public class TraversalsPrePostOrderQ {
     }
 
     public static void main(String[] args) throws Exception {
-        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-        int n = Integer.parseInt(br.readLine());
-        int[] arr = new int[n];
+        // BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        // int n = Integer.parseInt(br.readLine());
+        // int[] arr = new int[n];
 
-        String[] values = br.readLine().split(" ");
-        for (int i = 0; i < n; i++) {
-            arr[i] = Integer.parseInt(values[i]);
-        }
+        // String[] values = br.readLine().split(" ");
+        // for (int i = 0; i < n; i++) {
+        // arr[i] = Integer.parseInt(values[i]);
+        // }
+
+        int[] arr = { 10, 20, 50, -1, 60, -1, -1, 30, 70, -1, 80, 110, -1, 120, -1, -1, 90, -1, -1, 40, 100, -1, -1,
+                -1 };
 
         Node root = construct(arr);
         traversals(root);

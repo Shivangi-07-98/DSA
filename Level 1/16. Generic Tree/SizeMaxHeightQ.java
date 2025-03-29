@@ -48,14 +48,13 @@ public class SizeMaxHeightQ {
         }
     }
 
-
     public static void levelOrderLinewise2(Node node) {
         LinkedList<Node> que = new LinkedList<>();
         que.addLast(node);
-    
+
         while (que.size() != 0) {
             int currSize = que.size();
-    
+
             // this loop first checks then decreases
             while (currSize-- > 0) {
                 Node rnode = que.removeFirst();
@@ -68,9 +67,52 @@ public class SizeMaxHeightQ {
         }
     }
 
+    public static void levelOrderLinewiseZigZag(Node node) {
+        LinkedList<Node> que = new LinkedList<>(); // addLast, removeFirst
+        LinkedList<Node> st = new LinkedList<>(); // addFirst, removeFirst
 
-    public static void levelOrderLinewiseZigZag(Node root) {
+        que.addLast(node);
+        int level = 0;
+
+        while (que.size() != 0) {
+            int currSize = que.size();
+
+            while (currSize-- > 0) {
+                Node rnode = que.removeFirst();
+                System.out.print(rnode.data + " ");
+
+                if (level % 2 == 0) {
+                    for (int i = 0; i < rnode.children.size(); i++) {
+                        st.addFirst(rnode.children.get(i));
+                    }
+                } else {
+                    for (int i = rnode.children.size() - 1; i >= 0; i--) {
+                        st.addFirst(rnode.children.get(i));
+                    }
+                }
+            }
+
+            level++;
+            System.out.println();
+            LinkedList<Node> temp = que;
+            que = st;
+            st = temp;
+        }
+
+    }
+
+
+    public static void display(Node node) {
+        String str = node.data + " -> ";
+        for (Node child : node.children) {
+            str += child.data + ", ";
+        }
+        str += ".";
+        System.out.println(str);
         
+        for (Node child : node.children) {
+            display(child);
+        }
     }
 
 
