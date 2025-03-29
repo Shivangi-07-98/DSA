@@ -1,4 +1,3 @@
-import java.io.*;
 import java.util.*;
 
 public class MirrorQ {
@@ -45,70 +44,12 @@ public class MirrorQ {
     return root;
   }
 
-  public static int size(Node node) {
-    int s = 0;
-    for (Node child : node.children) {
-      s += size(child);
-    }
-    s += 1;
-    return s;
-  }
-
-  public static void traversals(Node node) {
-    // Node Pre
-    System.out.println("Node Pre " + node.data);
-
-    // Loop, before call is Edge Pre, after call is Edge Post
-    for (Node child : node.children) {
-      System.out.println("Edge Pre " + node.data + "--" + child.data);
-      traversals(child);
-      System.out.println("Edge Post " + node.data + "--" + child.data);
-    }
-
-    // Node Post
-    System.out.println("Node Post " + node.data);
-  }
-
-  public static void levelOrderLinewiseZZ(Node node) {
-    // if (node == null)
-    //   return;
-
-    Stack<Node> stack = new Stack<>();
-    stack.add(node);
-
-    Stack<Node> cstack = new Stack<>();
-    int level = 0;
-
-    while (stack.size() > 0) {
-      node = stack.pop();
-      System.out.print(node.data + " ");
-
-      if (level % 2 == 0) {
-        for (int i = 0; i < node.children.size(); i++) {
-          Node child = node.children.get(i);
-          cstack.push(child);
-        }
-      } else {
-        for (int i = node.children.size() - 1; i >= 0; i--) {
-          Node child = node.children.get(i);
-          cstack.push(child);
-        }
-      }
-
-      if (stack.size() == 0) {
-        stack = cstack;
-        cstack = new Stack<>();
-        level++;
-        System.out.println();
-      }
-    }
-  }
-
   public static void mirror(Node node) {
+
     for(Node child: node.children){
       mirror(child);
     }
-    // Collections.reverse(node.children);
+    // Collections.reverse(node.children); // this is for arraylists
 
     // Reverse the order of children
     int li = 0;
@@ -125,14 +66,17 @@ public class MirrorQ {
   }
 
   public static void main(String[] args) throws Exception {
-    BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-    int n = Integer.parseInt(br.readLine());
-    int[] arr = new int[n];
+    // BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+    // int n = Integer.parseInt(br.readLine());
+    // int[] arr = new int[n];
 
-    String[] values = br.readLine().split(" ");
-    for (int i = 0; i < n; i++) {
-      arr[i] = Integer.parseInt(values[i]);
-    }
+    // String[] values = br.readLine().split(" ");
+    // for (int i = 0; i < n; i++) {
+    //   arr[i] = Integer.parseInt(values[i]);
+    // }
+
+    int[] arr = { 10, 20, 50, -1, 60, -1, -1, 30, 70, -1, 80, 110, -1, 120, -1, -1, 90, -1, -1, 40, 100, -1, -1,
+      -1 };
 
     Node root = construct(arr);
     display(root);

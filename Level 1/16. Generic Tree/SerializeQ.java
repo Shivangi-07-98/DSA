@@ -72,13 +72,14 @@ public class SerializeQ {
   }
 
   public static void serialize(Node node, ArrayList<Integer> list) {
-    list.add(node.data);
+    list.add(node.data); // node pre
 
     for (Node child : node.children) {
       serialize(child, list);
     }
 
-    list.add(-1);
+    list.add(-1); // node post
+    // output- [10, 20, 50, -1, 60, -1, -1, 30, 70, -1, 80, 110, -1, 120, -1, -1, 90, -1, -1, 40, 100, -1, -1, -1]
   }
 
   public static void main(String[] args) {
@@ -91,7 +92,8 @@ public class SerializeQ {
     System.out.println(list);
 
     // levelOrder(root);
-    levelOrderLinewise(root);
+    // levelOrderLinewise(root);
+
   }
 
 }
