@@ -203,20 +203,36 @@ public class PredecessorAndSuccessorQ {
 
   static Node predecessor;
   static Node successor;
+  static int state = 0;
+
   public static void predecessorAndSuccessor(Node node, int data) {
-      
+    if (state == 0) {
+      if (node.data == data) {
+        state++;
+      } else {
+        predecessor = node;
+      }
+    } else if (state == 1) {
+      successor = node;
+      state++;
+    }
+
+    for (Node child : node.children) {
+      predecessorAndSuccessor(child, data);
+    }
   }
 
   public static void main(String[] args) {
-    
+
     int[] arr = { 10, 20, 50, -1, 60, -1, -1, 30, 70, -1, 80, 110, -1, 120, -1, -1, 90, -1, -1, 40, 100, -1, -1,
         -1 };
     Node root = construct(arr);
 
-    int data = 120;
+    int data = 110;
 
     predecessor = null;
     successor = null;
+    state = 0;
     predecessorAndSuccessor(root, data);
 
     System.out.println(predecessor == null ? "Predecessor = Not found" : "Predecessor = " + predecessor.data);
