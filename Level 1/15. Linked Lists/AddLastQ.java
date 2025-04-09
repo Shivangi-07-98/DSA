@@ -520,6 +520,7 @@ public class AddLastQ {
     list.display();
     int val = list.KthFromLast(0);
     System.out.println(val);
+    System.out.println(list.size());
   }
 
 }
