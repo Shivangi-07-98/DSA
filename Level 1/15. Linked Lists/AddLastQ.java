@@ -17,6 +17,7 @@ public class AddLastQ {
       return size;
     }
 
+    // O(1)
     void addLast(int val) {
       Node temp = new Node();
       temp.data = val;
@@ -33,6 +34,7 @@ public class AddLastQ {
       size++;
     }
 
+    // O(n)
     void display() {
       for(Node temp = head; temp != null; temp = temp.next){
         System.out.print(temp.data + " ");

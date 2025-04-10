@@ -1,0 +1,7 @@
+1. display
+2. add last
+3. get first
+4. get last
+5. get at
+6. add first
+7. add at index
