@@ -13,15 +13,22 @@ public class BasicSetupLL {
     Node tail; // address of last node
     int size; // value
 
-    public void addLast(int val) {
+    int size(){
+      return size;
+    }
+
+    void addLast(int val) {
       
     }
 
-    public void display() {
-      
+    void display() {
+      for(Node temp = head; temp != null; temp = temp.next){
+        System.out.print(temp.data + " ");
+      }
+      System.out.println();
     }
 
-
+ 
   }
 
 
@@ -30,7 +37,7 @@ public class BasicSetupLL {
   public static void main(String[] args) {
     LinkedList list = new LinkedList();
 
-    list.addLast(val);
+    list.addLast(10);
     list.display();
     System.out.println(list.size());
 
