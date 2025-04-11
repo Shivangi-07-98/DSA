@@ -9,3 +9,4 @@
 9. Kth node from end
 10. mid of LL
 11. reverse a ll (data iterative)
+12. reverse a ll (pointer iterative)
