@@ -5,3 +5,7 @@
 5. get at
 6. add first
 7. add at index
+8. remove first
+9. Kth node from end
+10. mid of LL
+11. reverse a ll (data iterative)
