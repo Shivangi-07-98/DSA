@@ -15,4 +15,6 @@
 15. remove duplicates in a sorted ll
 16. K Reverse
 17. odd even 
-18. 
+18. display reverse (recursive) LL
+19. remove last in ll
+20. remove at
