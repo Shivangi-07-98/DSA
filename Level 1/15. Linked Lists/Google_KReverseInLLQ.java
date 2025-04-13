@@ -1,12 +1,8 @@
-// hint to solve ques => make two list odd and even then connect both and make (this) point to this list
-// if both odd even present then this check odd.size > 0 && even.size > 0
-// if only odd present
-// if only even present
-
 import java.io.*;
 import java.util.*;
 
-public class OddEvenLLQ {
+// abc def ghi jk => cba fed ihg jk only reverse 3 pairs because k = 3 
+public class Google_KReverseInLLQ {
 
   public static class Node {
     int data; // value
@@ -84,36 +80,43 @@ public class OddEvenLLQ {
       }
     }
 
-    void OddEven() {
-      LinkedList odd = new LinkedList();
-      LinkedList even = new LinkedList();
+    void kReverse(int k) {
+      LinkedList prev = null;
+      LinkedList curr = new LinkedList();
 
-      while (size > 0) {
-        int val = this.getFirst();
-        this.removeFirst();
+      while (size() > 0) {
 
-        if (val % 2 != 0) {
-          odd.addLast(val);
+        if (size() < k) {
+          int sz = size();
+          for (int i = 0; i < sz; i++) {
+            int val = getFirst();
+            removeFirst();
+            curr.addLast(val);
+          }
         } else {
-          even.addLast(val);
+          for (int i = 0; i < k; i++) {
+            int val = getFirst();
+            removeFirst();
+            curr.addFirst(val);
+          }
         }
+
+        if (prev == null) {
+          prev = curr;
+          curr = new LinkedList();
+        } else {
+          // prev = curr;
+          prev.tail.next = curr.head;
+          prev.tail = curr.tail;
+          prev.size += curr.size;
+          curr = new LinkedList();
+        }
+
       }
 
-      if (odd.size > 0 && even.size > 0) {
-        odd.tail.next = even.head;
-        this.head = odd.head;
-        this.tail = even.tail;
-        this.size = odd.size + even.size;
-      } else if (odd.size > 0) {
-        this.head = odd.head;
-        this.tail = odd.tail;
-        this.size = odd.size;
-      } else if (even.size > 0) {
-        this.head = even.head;
-        this.tail = even.tail;
-        this.size = even.size;
-      }
-
+      head = prev.head;
+      tail = prev.tail;
+      size = prev.size;
     }
 
   }
@@ -121,17 +124,18 @@ public class OddEvenLLQ {
   public static void main(String[] args) {
     LinkedList list = new LinkedList();
 
-    list.addLast(2);
-    list.addLast(8);
-    list.addLast(9);
-    list.addLast(1);
-    list.addLast(5);
-    list.addLast(4);
-    list.addLast(3);
+    list.addLast(10);
+    list.addLast(20);
+    list.addLast(30);
+    list.addLast(40);
+    list.addLast(50);
+    list.addLast(60);
+    list.addLast(70);
+    list.addLast(80);
 
-    list.display(); // 2, 8, 9, 1, 5, 4, 3
-    list.OddEven();
-    list.display(); // 9, 1, 5, 3, 2, 8, 4
+    list.display(); // 10, 20, 30, 40, 50, 60, 70, 80
+    list.kReverse(3);
+    list.display(); // 30, 20, 10, 60, 50, 40, 70, 80
 
   }
 

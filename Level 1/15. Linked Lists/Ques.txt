@@ -12,3 +12,7 @@
 12. reverse a ll (pointer iterative)
 13. merge two sorted ll
 14. merge sort
+15. remove duplicates in a sorted ll
+16. K Reverse
+17. odd even 
+18. 

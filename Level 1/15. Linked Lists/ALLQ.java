@@ -11,7 +11,7 @@ public class ALLQ {
     Node head; // address of first node
     Node tail; // address of last node
     int size; // value
-
+ 
     // o(n)
     public void display() {
       if (size == 0) {
@@ -81,7 +81,7 @@ public class ALLQ {
       if (size == 0) {
         head = tail = node;
       } else {
-        node.next = node;
+        node.next = head;
         head = node;
       }
       size++;
@@ -322,11 +322,6 @@ public class ALLQ {
           odd.addLast(val);
         }
       }
-
-      odd.tail.next = even.head;
-      this.head = odd.head;
-      this.tail = even.tail;
-      this.size = odd.size + even.size;
 
       if (odd.size > 0 && even.size > 0) {
         odd.tail.next = even.head;
