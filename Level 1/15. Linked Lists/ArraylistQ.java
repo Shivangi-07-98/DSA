@@ -17,6 +17,7 @@ public class ArraylistQ {
       data = new int[cap];
     }
 
+    
     int get(int idx){
       if(idx < 0 || idx >= size){
         System.out.println("Invalid arguments");

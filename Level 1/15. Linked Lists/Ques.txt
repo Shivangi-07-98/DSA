@@ -13,8 +13,11 @@
 13. merge two sorted ll
 14. merge sort
 15. remove duplicates in a sorted ll
-16. K Reverse
+16. K Reverse 
 17. odd even 
 18. display reverse (recursive) LL
 19. remove last in ll
-20. remove at
+20. remove at*
+21. Intersection point of a linked list*
+22. add two ll*
+23. 
