@@ -1,7 +1,7 @@
 import java.io.*;
 import java.util.*;
 
-public class ReverseLLPointerRecursiveQ {
+public class ReverseLLDataRecursiveQ {
 
   public static class Node {
     int data; // value
@@ -51,7 +51,7 @@ public class ReverseLLPointerRecursiveQ {
       return temp;
     }
 
-    void reversePRHelper(Node node){
+    void reverseDRHelper(Node node){
       if(node == tail){
         return;
       }
@@ -60,7 +60,7 @@ public class ReverseLLPointerRecursiveQ {
     }
 
     // O(n2)
-    void reversePointerRecursive() {
+    void reverseDataRecursive() {
       reversePRHelper(head);
       Node temp = head;
       head = tail;
@@ -81,7 +81,7 @@ public class ReverseLLPointerRecursiveQ {
     list.addLast(50);
     
     list.display(); // 10, 20, 30, 40, 50
-    list.reversePointerRecursive();
+    list.reverseDataRecursive();
     list.display(); // 50, 40, 30, 20, 10
 
   }

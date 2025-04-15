@@ -18,6 +18,7 @@
 18. display reverse (recursive) LL
 19. remove last in ll
 20. remove at*
-21. Intersection point of a linked list*
-22. add two ll*
-23. 
+21. Intersection point of a linked list
+22. reverse a ll (pointer recursive)
+23. reverse a ll (data recursive)
+24. 
