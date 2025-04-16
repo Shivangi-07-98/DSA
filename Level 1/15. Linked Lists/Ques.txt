@@ -22,4 +22,6 @@
 22. reverse a ll (pointer recursive)
 23. reverse a ll (data recursive)
 24. is a LL palindrome
-25. 
+25. fold a LL
+26. Add two LL
+27. 
