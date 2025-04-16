@@ -42,15 +42,6 @@ public class ReverseLLPointerRecursiveQ {
 
     }
 
-    // O(n)
-    Node getNodeAt(int idx) {
-      Node temp = head;
-      for (int i = 0; i < idx; i++) { // idx 2 means 0,1,2
-        temp = temp.next;
-      }
-      return temp;
-    }
-
     void reversePRHelper(Node node){
       if(node == tail){
         return;

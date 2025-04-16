@@ -42,32 +42,26 @@ public class ReverseLLDataRecursiveQ {
 
     }
 
-    // O(n)
-    Node getNodeAt(int idx) {
-      Node temp = head;
-      for (int i = 0; i < idx; i++) { // idx 2 means 0,1,2
-        temp = temp.next;
-      }
-      return temp;
-    }
 
-    void reverseDRHelper(Node node){
-      if(node == tail){
+    void reverseDRHelper(Node right, int floor) {
+      if (right == null) {
         return;
       }
-      reversePRHelper(node.next);
-      node.next.next = node;
+      reverseDRHelper(right.next, floor + 1);
+      if (floor >= size / 2) {
+        int temp = left.data;
+        left.data = right.data;
+        right.data = temp;
+        left = left.next;
+      }
+
     }
 
-    // O(n2)
+    Node left = null;
     void reverseDataRecursive() {
-      reversePRHelper(head);
-      Node temp = head;
-      head = tail;
-      tail = temp;
-      tail.next = null;
+      left = head;
+      reverseDRHelper(head, 0);
     }
-
 
   }
 
@@ -79,7 +73,7 @@ public class ReverseLLDataRecursiveQ {
     list.addLast(30);
     list.addLast(40);
     list.addLast(50);
-    
+
     list.display(); // 10, 20, 30, 40, 50
     list.reverseDataRecursive();
     list.display(); // 50, 40, 30, 20, 10
