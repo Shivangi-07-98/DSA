@@ -1,3 +1,6 @@
+import java.io.*;
+import java.util.*;
+
 public class LeetcodeQ {
 
   public class ListNode {
@@ -51,7 +54,18 @@ public class LeetcodeQ {
   public void reorderList(ListNode head) {
     
   }
-  
+
+  // 21. Merge Two Sorted Lists 
+  public ListNode mergeTwoLists(ListNode list1, ListNode list2) {
+    ListNode ans = new ListNode();
+    return ans;
+  }
+
+  // 23. Merge k Sorted Lists 
+  public ListNode mergeKLists(ListNode[] lists) {
+    ListNode ans = new ListNode();
+    return ans;
+  }
 
   public static void main(String[] args) {
   }

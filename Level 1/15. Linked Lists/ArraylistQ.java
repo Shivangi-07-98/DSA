@@ -2,10 +2,10 @@ import java.util.*;
 
 public class ArraylistQ {
   
-  public static class MyArrayList{
+  public static class MyArrayList{ // size, data, capacity
     int size;
-    int[] data;
-
+    int[] data; // data points to an array 
+    // size equals to data.length then new array with double capacity
     static final int DEFAULT_CAPACITY = 5;
 
     MyArrayList(){
@@ -17,7 +17,6 @@ public class ArraylistQ {
       data = new int[cap];
     }
 
-    
     int get(int idx){
       if(idx < 0 || idx >= size){
         System.out.println("Invalid arguments");
@@ -114,6 +113,31 @@ public class ArraylistQ {
     list.display();
 
     list.add(2, 3000);
+    list.display();
+
+    list.add(4, 88);
+    list.display();
+    list.add(6, 34);
+    list.display();
+    list.add(2, 77);
+    list.display();
+
+    list.remove(1);
+    list.display();
+    list.remove(1);
+    list.display();
+    list.remove(1);
+    list.display();
+    list.remove(1);
+    list.display();
+    list.remove(1);
+    list.display();
+
+    list.remove(1);
+    list.display();
+    list.remove(1);
+    list.display();
+    list.remove(1);
     list.display();
 
   }
