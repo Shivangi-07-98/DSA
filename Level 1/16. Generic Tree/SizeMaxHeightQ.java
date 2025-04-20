@@ -1,7 +1,7 @@
 import java.util.*;
 
 public class SizeMaxHeightQ {
-
+ 
     public static class Node {
         int data;
         ArrayList<Node> children = new ArrayList<>();
@@ -16,7 +16,7 @@ public class SizeMaxHeightQ {
         queue.add(root);
 
         while (queue.size() > 0) {
-            // remove, print, add
+            // remove, print, add children
             Node temp = queue.remove();
             System.out.print(temp.data + " ");
             for (Node child : temp.children) {

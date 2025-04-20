@@ -2,4 +2,5 @@
 2. level order linewise
 3. level order linewise zig zag
 4. construct 
-5. 
+5. size, max, height of generic tree
+6. 
