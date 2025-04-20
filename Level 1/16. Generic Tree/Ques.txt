@@ -1,0 +1,5 @@
+1. level order 
+2. level order linewise
+3. level order linewise zig zag
+4. construct 
+5. 

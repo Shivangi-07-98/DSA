@@ -55,7 +55,6 @@ public class AddTwoLLQ {
 
     }
 
-    
     // o1
     public void addFirst(int val) {
       Node node = new Node();
@@ -117,8 +116,6 @@ public class AddTwoLLQ {
 
  
   }
-
-
 
 
   public static void main(String[] args) {
