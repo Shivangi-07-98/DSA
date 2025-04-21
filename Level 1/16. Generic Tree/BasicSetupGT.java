@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class BasicSetupGT {
+public class BasicSetupGT { 
 
   public static class Node {
     int data;
@@ -28,7 +28,7 @@ public class BasicSetupGT {
   }
 
   public static void levelOrderLinewise(Node root) {
-    
+
   }
 
   public static Node construct(int[] arr) {
@@ -60,4 +60,5 @@ public class BasicSetupGT {
     // levelOrderLinewise(root);
 
   }
+
 }

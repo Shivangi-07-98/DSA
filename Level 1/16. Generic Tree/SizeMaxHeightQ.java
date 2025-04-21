@@ -100,7 +100,7 @@ public class SizeMaxHeightQ {
         }
 
     }
-
+ 
 
     public static void display(Node node) {
         String str = node.data + " -> ";

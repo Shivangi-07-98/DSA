@@ -25,7 +25,7 @@ public class TraversalsPrePostOrderQ {
         queue.add(root);
 
         while (queue.size() > 0) {
-            // remove, print, add
+            // remove, print, add children
             Node temp = queue.remove();
             System.out.print(temp.data + " ");
             for (Node child : temp.children) {
@@ -33,7 +33,7 @@ public class TraversalsPrePostOrderQ {
             }
         }
 
-        System.out.println(".");
+        System.out.println();
     }
 
     public static void levelOrderLinewise(Node root) {
@@ -52,7 +52,7 @@ public class TraversalsPrePostOrderQ {
             if (queue.size() == 0) {
                 queue = cqueue;
                 cqueue = new ArrayDeque<>();
-                System.out.println(".");
+                System.out.println();
             }
         }
     }
@@ -81,32 +81,6 @@ public class TraversalsPrePostOrderQ {
         return root;
     }
 
-    public static int size(Node node) {
-        int size = 0;
-        for (Node child : node.children) {
-            size += size(child);
-        }
-        return size + 1;
-    }
-
-    public static int max(Node node) {
-        int maxChild = node.data;
-        for (Node child : node.children) {
-            int recAns = max(child);
-            maxChild = Math.max(recAns, maxChild);
-        }
-        return maxChild;
-    }
-
-    public static int height(Node node) {
-        int height = -1;
-        for (Node child : node.children) {
-            int recAns = height(child);
-            height = Math.max(recAns, height);
-        }
-        return height + 1;
-    }
-
     public static void traversals(Node node) {
         // Node Pre
         System.out.println("Node Pre " + node.data);
@@ -122,21 +96,18 @@ public class TraversalsPrePostOrderQ {
         System.out.println("Node Post " + node.data);
     }
 
+    public static void myTraversals(Node root){
+
+    }
+
+
     public static void main(String[] args) throws Exception {
-        // BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-        // int n = Integer.parseInt(br.readLine());
-        // int[] arr = new int[n];
-
-        // String[] values = br.readLine().split(" ");
-        // for (int i = 0; i < n; i++) {
-        // arr[i] = Integer.parseInt(values[i]);
-        // }
-
         int[] arr = { 10, 20, 50, -1, 60, -1, -1, 30, 70, -1, 80, 110, -1, 120, -1, -1, 90, -1, -1, 40, 100, -1, -1,
                 -1 };
 
         Node root = construct(arr);
         traversals(root);
+        // myTraversals(root);
     }
 
 }

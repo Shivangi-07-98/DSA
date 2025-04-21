@@ -51,7 +51,7 @@ public class GenericTreeIntro {
             if (queue.size() == 0) {
                 queue = cqueue;
                 cqueue = new ArrayDeque<>();
-                System.out.println(".");
+                System.out.println();
             }
         }
     }
@@ -101,7 +101,7 @@ public class GenericTreeIntro {
         twenty.children.add(sixty);
 
         Node seventy = new Node(70);
-        thirty.children.add(seventy);
+        thirty.children.add(seventy); 
 
         Node eighty = new Node(80);
         thirty.children.add(eighty);
