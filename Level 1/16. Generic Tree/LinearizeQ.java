@@ -20,6 +20,27 @@ public class LinearizeQ {
     }
   }
 
+  public static void levelOrderLinewise(Node root) {
+    Queue<Node> queue = new ArrayDeque<Node>();
+    Queue<Node> cqueue = new ArrayDeque<Node>();
+    queue.add(root);
+
+    while (queue.size() > 0) {
+      Node temp = queue.remove();
+      System.out.print(temp.data + " ");
+
+      for (Node child : temp.children) {
+        cqueue.add(child);
+      }
+
+      if (queue.size() == 0) {
+        queue = cqueue;
+        cqueue = new ArrayDeque<>();
+        System.out.println();
+      }
+    }
+  }
+
   public static Node construct(int[] arr) {
     Node root = null;
 
@@ -63,6 +84,19 @@ public class LinearizeQ {
     }
   }
 
+  public static void myLinearize(Node node) {
+    for (int i = node.children.size() - 1; i >= 0; i--) {
+      if (node.children.size() > 1) {
+        Node val = node.children.remove(i);
+        Node parent = node.children.get(i - 1);
+        parent.children.add(val);
+      }
+    }
+    for (Node child : node.children) {
+      myLinearize(child);
+    }
+  }
+
   // linearizes and returns the tail
   public static Node linearizeEfficient(Node node) {
     if (node.children.size() == 0) {
@@ -85,28 +119,19 @@ public class LinearizeQ {
   }
 
   public static void main(String[] args) throws Exception {
-    // BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-    // int n = Integer.parseInt(br.readLine());
-    // int[] arr = new int[n];
-
-    // String[] values = br.readLine().split(" ");
-    // for (int i = 0; i < n; i++) {
-    // arr[i] = Integer.parseInt(values[i]);
-    // }
-
     int[] arr = { 10, 20, 50, -1, 60, -1, -1, 30, 70, -1, 80, 110, -1, 120, -1, -1, 90, -1, -1, 40, 100, -1, -1,
         -1 };
-
     Node root = construct(arr);
 
-    linearize(root);
-    display(root);
+    // linearize(root);
+    myLinearize(root);
+    // display(root);
+    levelOrderLinewise(root);
 
-    linearizeEfficient(root);
-    display(root);
+    // linearizeEfficient(root);
+    // display(root);
+    // levelOrderLinewise(root);
+
   }
 
 }
-
-// 24
-// 10 20 50 -1 60 -1 -1 30 70 -1 80 110 -1 120 -1 -1 90 -1 -1 40 100 -1 -1 -1

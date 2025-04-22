@@ -7,4 +7,5 @@
 7. serialize
 8. mirror a gt
 9. remove leaves in gt
-10. 
+10. linearize a gt
+11. 

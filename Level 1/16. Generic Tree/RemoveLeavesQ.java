@@ -81,7 +81,6 @@ public class RemoveLeavesQ {
   }
 
   public static void myRemoveLeaves(Node node) {
-
     for (int i = node.children.size() - 1; i >= 0; i--) {
       Node child = node.children.get(i);
       if (child.children.size() == 0) {
