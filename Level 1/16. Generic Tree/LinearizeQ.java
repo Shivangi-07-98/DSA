@@ -117,6 +117,7 @@ public class LinearizeQ {
 
     return lastKiTail;
   }
+  
 
   public static void main(String[] args) throws Exception {
     int[] arr = { 10, 20, 50, -1, 60, -1, -1, 30, 70, -1, 80, 110, -1, 120, -1, -1, 90, -1, -1, 40, 100, -1, -1,
@@ -124,13 +125,13 @@ public class LinearizeQ {
     Node root = construct(arr);
 
     // linearize(root);
-    myLinearize(root);
-    // display(root);
-    levelOrderLinewise(root);
-
-    // linearizeEfficient(root);
+    // myLinearize(root);
     // display(root);
     // levelOrderLinewise(root);
+
+    linearizeEfficient(root);
+    // display(root);
+    levelOrderLinewise(root);
 
   }
 
