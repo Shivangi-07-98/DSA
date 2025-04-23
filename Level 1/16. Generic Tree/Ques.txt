@@ -11,4 +11,6 @@
 11. linearize efficient
 12. find in gt
 13. node to root path in gt
-14. 
+14. lca
+15. distance between two nodes
+16. 
