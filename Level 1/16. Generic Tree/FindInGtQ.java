@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class FindQ {
+public class FindInGtQ {
 
     public static class Node {
         int data;
@@ -86,6 +86,21 @@ public class FindQ {
         return false;
     }
 
+    public static boolean myFind(Node node, int data){
+        // boolean has = false;
+        if(node.data == data){
+            return true;
+        }
+        for(Node child: node.children){
+            boolean has = find(child, data);
+            if(has == true){
+                return true;
+            }
+        }
+
+        return false;
+    }
+
     public static void main(String[] args) {
         int[] arr = { 10, 20, 50, -1, 60, -1, -1, 30, 70, -1, 80, 110, -1, 120, -1, -1, 90, -1, -1, 40, 100, -1, -1,
                 -1 };
@@ -93,7 +108,7 @@ public class FindQ {
 
         int data = 1200;
 
-        boolean flag = find(root, data);
+        boolean flag = myFind(root, data);
         System.out.println(flag);
 
         // levelOrder(root);

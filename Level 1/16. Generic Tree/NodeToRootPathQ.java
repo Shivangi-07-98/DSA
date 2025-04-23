@@ -101,7 +101,7 @@ public class NodeToRootPathQ {
             if (childToPath.size() > 0) {
                 childToPath.add(node.data); // Add current node to the path
                 return childToPath;
-            }
+            } 
         }
 
         // Return empty list if not found

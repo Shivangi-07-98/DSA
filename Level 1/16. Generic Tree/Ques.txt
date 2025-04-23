@@ -9,4 +9,6 @@
 9. remove leaves in gt
 10. linearize a gt
 11. linearize efficient
-12. find
+12. find in gt
+13. node to root path in gt
+14. 
