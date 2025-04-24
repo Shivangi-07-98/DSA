@@ -71,83 +71,6 @@ public class GtSymmetricQ {
         return root;
     }
 
-    public static boolean find(Node node, int data) {
-        if (node.data == data) {
-            return true;
-        }
-
-        for (Node child : node.children) {
-            boolean fic = find(child, data);
-            if (fic == true) {
-                return true;
-            }
-        }
-
-        return false;
-    }
-
-    public static ArrayList<Integer> nodeToRootPath(Node node, int data) {
-        if (node.data == data) {
-            ArrayList<Integer> bres = new ArrayList<>();
-            bres.add(node.data);
-            return bres;
-        }
-
-        // Search in all children
-        for (Node child : node.children) {
-            ArrayList<Integer> childToPath = nodeToRootPath(child, data);
-
-            // If path found in child subtree
-            if (childToPath.size() > 0) {
-                childToPath.add(node.data); // Add current node to the path
-                return childToPath;
-            }
-        }
-
-        // Return empty list if not found
-        return new ArrayList<>();
-    }
-
-    public static int lca(Node node, int d1, int d2) {
-        ArrayList<Integer> path1 = nodeToRootPath(node, d1);
-        ArrayList<Integer> path2 = nodeToRootPath(node, d2);
-        int i = path1.size() - 1;
-        int j = path2.size() - 1;
-
-        while (i >= 0 && j >= 0) {
-            if (path1.get(i) == path2.get(j)) {
-                i--;
-                j--;
-            } else {
-                break;
-            }
-        }
-
-        int lca = path1.get(i + 1);
-        return lca;
-    }
-
-    public static int distanceBetweenTwoNodes(Node node, int d1, int d2) {
-        ArrayList<Integer> path1 = nodeToRootPath(node, d1);
-        ArrayList<Integer> path2 = nodeToRootPath(node, d2);
-        int i = path1.size() - 1;
-        int j = path2.size() - 1;
-
-        while (i >= 0 && j >= 0) {
-            if (path1.get(i) == path2.get(j)) {
-                i--;
-                j--;
-            } else {
-                break;
-            }
-        }
-
-        i++;
-        j++;
-        return i + j;
-
-    }
-
     public static boolean areSimilar(Node n1, Node n2) {
         // If the number of children is different, they're not similar
         if (n1.children.size() != n2.children.size()) {
@@ -204,6 +127,7 @@ public class GtSymmetricQ {
                 -1 };
         Node root = construct(arr);
 
+        // symmetric things are mirror of themselves
         boolean symmetric = IsSymmetric(root);
         System.out.println(symmetric);
 

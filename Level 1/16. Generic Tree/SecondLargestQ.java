@@ -76,12 +76,10 @@ public class SecondLargestQ {
 
   public static void secondLargest(Node node) {
     if (node.data >= largest) {
-      // If current node is larger than largest, update both values
-      slargest = largest; // Previous largest becomes second largest
-      largest = node.data; // Current node becomes new largest
+      slargest = largest; 
+      largest = node.data; 
     } else if (node.data > slargest) {
-      // If current node is between largest and second largest
-      slargest = node.data; // Update just the second largest
+      slargest = node.data;
     }
 
     for (Node child : node.children) {
@@ -96,12 +94,10 @@ public class SecondLargestQ {
 
   public static void secondLargest2(Node node, MoverForSlargest mover) {
     if (node.data >= mover.largest) {
-      // If current node is larger than largest, update both values
-      mover.slargest = mover.largest; // Previous largest becomes second largest
-      mover.largest = node.data; // Current node becomes new largest
+      mover.slargest = mover.largest; 
+      mover.largest = node.data; 
     } else if (node.data > mover.slargest) {
-      // If current node is between largest and second largest
-      mover.slargest = node.data; // Update just the second largest
+      mover.slargest = node.data;
     }
 
     for (Node child : node.children) {
@@ -110,7 +106,6 @@ public class SecondLargestQ {
   }
 
   public static void main(String[] args) {
-
     int[] arr = { 10, 20, 50, -1, 60, -1, -1, 30, 70, -1, 80, 110, -1, 120, -1, -1, 90, -1, -1, 40, 100, -1, -1,
         -1 };
     Node root = construct(arr);

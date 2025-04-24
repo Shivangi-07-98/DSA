@@ -13,4 +13,10 @@
 13. node to root path in gt
 14. lca
 15. distance between two nodes
-16. 
+16. are gt similar
+17. are gt mirror in shape
+18. are gt symmetric
+19. predecessor and successor of an element
+20. multisolver
+21. second largest
+22. 
