@@ -1,5 +1,4 @@
 import java.util.*;
-
 public class NodeWithMaximumSubtreeSumQ {
 
   public static class Node {
@@ -75,19 +74,19 @@ public class NodeWithMaximumSubtreeSumQ {
   static int msum = Integer.MIN_VALUE;
 
   public static int question(Node node) {
-    int sum = node.data;
+    int sum = node.data; // 1
 
     for (Node child: node.children) {
-      int csum = question(child);
-      sum += csum;
+      int csum = question(child); // 2
+      sum += csum; // 3
     }
 
-    if (sum > msum) {
+    if (sum > msum) { // 4
       msum = sum;
       msn = node;
     }
 
-    return sum;
+    return sum; // 5
   }
 
   public static void main(String[] args) {
@@ -100,7 +99,7 @@ public class NodeWithMaximumSubtreeSumQ {
     Node root2 = construct(arr2);
 
     question(root2);
-    System.out.println(msn.data + "@" + msum);
+    System.out.println(msn.data + "__" + msum);
 
   }
 
