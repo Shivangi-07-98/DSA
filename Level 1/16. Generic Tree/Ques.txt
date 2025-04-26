@@ -19,4 +19,9 @@
 19. predecessor and successor of an element
 20. multisolver
 21. second largest
-22. 
+22. ceil and floor
+23. Kth largest
+24. iterative traversals
+25. node with maximum sum
+26. diameter
+27. 

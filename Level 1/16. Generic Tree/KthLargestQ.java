@@ -9,7 +9,7 @@ public class KthLargestQ {
     Node(int data) {
       this.data = data;
     }
-  }
+  } 
 
   public static void levelOrder(Node root) {
     Queue<Node> queue = new ArrayDeque<Node>();
@@ -119,14 +119,16 @@ public class KthLargestQ {
     int[] arr = { 10, 20, 50, -1, 60, -1, -1, 30, 70, -1, 80, 110, -1, 120, -1, -1, 90, -1, -1, 40, 100, -1, -1,
         -1 };
     Node root = construct(arr);
-    int d = 35;
+    // int d = 35;
 
-    ceilAndFloor1(root, d);
-    System.out.println("ceil1 = " + ceil + " " + "floor1 = " + floor);
+    // ceilAndFloor1(root, d);
+    // System.out.println("ceil1 = " + ceil + " " + "floor1 = " + floor);
 
-    MoverForCeilFloor mover = new MoverForCeilFloor();
-    ceilAndFloor2(root, d, mover);
-    System.out.println("ceil2 = " + mover.ceil + " " + "floor2 = " + mover.floor);
+    // MoverForCeilFloor mover = new MoverForCeilFloor();
+    // ceilAndFloor2(root, d, mover);
+    // System.out.println("ceil2 = " + mover.ceil + " " + "floor2 = " + mover.floor);
+
+    // kth largest
 
     // int k = 4;
     // int KthLargest = Integer.MAX_VALUE;

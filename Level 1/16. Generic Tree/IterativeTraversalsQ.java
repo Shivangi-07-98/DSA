@@ -1,5 +1,6 @@
 import java.util.*;
 
+// do node traversal without recursion
 public class IterativeTraversalsQ {
 
   public static class Node {
@@ -71,6 +72,7 @@ public class IterativeTraversalsQ {
     return root;
   }
 
+  // ith recursion
   public static void preorder(Node node) {
     System.out.print(node.data + " ");
     for (Node child : node.children) {
@@ -120,7 +122,7 @@ public class IterativeTraversalsQ {
         postorder += peekp.node.data + " ";
         peekp.state++;
       } 
-      else {
+      else { // or peekp.state == peekp.node.children.size() + 1
         stack.pop();
       }
     }

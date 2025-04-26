@@ -8,7 +8,7 @@ public class CeilandFloorQ {
 
     Node(int data) {
       this.data = data;
-    }
+    } 
   }
 
   public static void levelOrder(Node root) {
@@ -88,7 +88,7 @@ public class CeilandFloorQ {
     }
 
     for (Node child : node.children) {
-      ceilAndFloor1(child, data); // recursively check all children
+      ceilAndFloor1(child, data); 
     }
   }
 
@@ -111,12 +111,11 @@ public class CeilandFloorQ {
     }
 
     for (Node child : node.children) {
-      ceilAndFloor2(child, data, mover); // recursively check all children
+      ceilAndFloor2(child, data, mover); 
     }
   }
 
   public static void main(String[] args) {
-
     int[] arr = { 10, 20, 50, -1, 60, -1, -1, 30, 70, -1, 80, 110, -1, 120, -1, -1, 90, -1, -1, 40, 100, -1, -1,
         -1 };
     Node root = construct(arr);
