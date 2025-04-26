@@ -22,6 +22,6 @@
 22. ceil and floor
 23. Kth largest
 24. iterative traversals
-25. node with maximum sum
+25. node with maximum subtree sum
 26. diameter
 27. 

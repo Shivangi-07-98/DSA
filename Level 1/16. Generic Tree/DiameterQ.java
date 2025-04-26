@@ -70,24 +70,6 @@ public class DiameterQ {
     return root;
   }
 
-  static Node msn = null;
-  static int msum = Integer.MIN_VALUE;
-
-  public static int question(Node node) {
-    int sum = node.data;
-
-    for (Node child: node.children) {
-      int csum = question(child);
-      sum += csum;
-    }
-
-    if (sum > msum) {
-      msum = sum;
-      msn = node;
-    }
-
-    return sum;
-  }
 
   public static void main(String[] args) {
     int[] arr1 = { 10, 20, 50, -1, 60, -1, -1, 30, 70, -1, 80, 110, -1, 120, -1, -1, 90, -1, -1, 40, 100, -1, -1,
@@ -98,8 +80,6 @@ public class DiameterQ {
         -1 };
     Node root2 = construct(arr2);
 
-    question(root2);
-    System.out.println(msn.data + "@" + msum);
   }
 
 }
