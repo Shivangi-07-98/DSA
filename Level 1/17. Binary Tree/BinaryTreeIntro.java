@@ -1,5 +1,4 @@
 import java.util.*;
-
 public class BinaryTreeIntro {
 
     public static class Node {
@@ -67,6 +66,16 @@ public class BinaryTreeIntro {
         return root;
     }
 
+    // leftNode parentNode rightNode
+    // 25 50 75
+    // 12 25 37
+    //    12
+    // 30 37 
+    //    30
+    // 62 75 87
+    //    62 70
+    //    70
+    //    87
     public static void display(Node node) {
         if (node == null) {
             return;
@@ -82,12 +91,10 @@ public class BinaryTreeIntro {
     }
 
     public static void main(String[] args) {
-
         Integer[] arr = new Integer[] { 50, 25, 12, null, null, 37, 30, null, null, null, 75, 62, null, 70, null, null,
-                87, null, null };
+                87, null, null }; // capital integer array has null
         Node root = construct(arr);
         display(root);
-        
     }
 
 }
