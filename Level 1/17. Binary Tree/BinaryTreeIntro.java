@@ -12,12 +12,14 @@ public class BinaryTreeIntro {
         int state;
     }
 
+    // create stack of pair
     public static Node construct(Integer[] arr) {
         Stack<Pair> stack = new Stack<>();
 
         Node root = new Node();
         root.data = arr[0];
 
+        // main lines
         Pair rootp = new Pair();
         rootp.node = root;
         rootp.state = 1;
@@ -80,7 +82,6 @@ public class BinaryTreeIntro {
         if (node == null) {
             return;
         }
-
         String str = " <- " + node.data + " -> ";
         String lcstr = node.left == null ? ".." : "" + node.left.data;
         String rcstr = node.right == null ? ".." : "" + node.right.data;
