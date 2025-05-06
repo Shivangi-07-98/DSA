@@ -67,102 +67,57 @@ public class Amazon_PrintNodesKDistanceAwayQ {
     }
     return root;
   }
-
-  // leftNode parentNode rightNode
-  public static void display(Node node) {
-    if (node == null) {
-      return;
-    }
-    String str = " <- " + node.data + " -> ";
-    String lcstr = node.left == null ? ".." : "" + node.left.data;
-    String rcstr = node.right == null ? ".." : "" + node.right.data;
-    System.out.println(lcstr + str + rcstr);
-
-    display(node.left); // will print the entire left tree
-    display(node.right); // will print the entire right tree
-  }
-
-  public static void levelOrderLinewise1(Node node) {
-    ArrayDeque<Node> pq = new ArrayDeque<>();
-    ArrayDeque<Node> cq = new ArrayDeque<>();
-
-    pq.add(node);
-    while (pq.size() > 0) {
-      Node temp = pq.remove();
-      System.out.print(temp.data + " ");
-
-      if (temp.left != null) {
-        cq.add(temp.left);
-      }
-      if (temp.right != null) {
-        cq.add(temp.right);
-      }
-
-      if (pq.size() == 0) {
-        pq = cq;
-        cq = new ArrayDeque<>();
-        System.out.println();
-      }
-    }
-  }
-
-  public static boolean find(Node node, int data) {
-    if (node == null) {
-      return false;
-    }
-    if (node.data == data) {
-      return true;
-    }
-
-    boolean ans1 = find(node.left, data);
-    if (ans1 == true) {
-      return true;
-    }
-    boolean ans2 = find(node.right, data);
-    if (ans2 == true) {
-      return true;
-    }
-
-    return false;
-  }
-
-  public static ArrayList<Integer> nodeToRootPath(Node node, int data) {
+  
+  public static ArrayList<Node> nodeToRootPath(Node node, int data) {
     if (node == null) {
       return new ArrayList<>();
     }
     if (node.data == data) {
-      ArrayList<Integer> bres = new ArrayList<>();
-      bres.add(node.data);
+      ArrayList<Node> bres = new ArrayList<>();
+      bres.add(node);
       return bres;
     }
 
-    ArrayList<Integer> ans1 = nodeToRootPath(node.left, data);
+    ArrayList<Node> ans1 = nodeToRootPath(node.left, data);
     if (ans1.size() > 0) {
-      ans1.add(node.data);
+      ans1.add(node);
       return ans1;
     }
 
-    ArrayList<Integer> ans2 = nodeToRootPath(node.right, data);
+    ArrayList<Node> ans2 = nodeToRootPath(node.right, data);
     if (ans2.size() > 0) {
-      ans2.add(node.data);
+      ans2.add(node);
       return ans2;
     }
 
     return new ArrayList<>();
   }
 
+  public static void printKLevelsDown(Node node, int k, Node blocker){
+    if(node == null || k < 0 || node == blocker){
+      return;
+    }
+    if(k == 0){
+      System.out.print(node.data + " ");
+      return;
+    }
+    printKLevelsDown(node.left, k - 1, blocker);
+    printKLevelsDown(node.right, k - 1, blocker);
+  }
+  
+  public static void printKNodesFar(Node node, int data, int k){
+    ArrayList<Node> n2rpath = nodeToRootPath(node, data);
+    for(int i = 0; i < n2rpath.size(); i++){
+      // printKLevelsDown(node, k, node);
+      printKLevelsDown(n2rpath.get(i), k - i, i > 0 ? n2rpath.get(i - 1) : null);
+    }
+  }
+
   public static void main(String[] args) {
     Integer[] arr = new Integer[] { 50, 25, 12, null, null, 37, 30, null, null, null, 75, 62, null, 70, null, null,
         87, null, null }; // capital integer array has null
     Node root = construct(arr);
-    // display(root);
-    // levelOrderLinewise4(root);
-    boolean ans = find(root, 70);
-    System.out.println(ans);
-
-    ArrayList<Integer> path = nodeToRootPath(root, 70);
-    System.out.println(path);
-
+    printKNodesFar(root, 70, 3);
   }
 
 }

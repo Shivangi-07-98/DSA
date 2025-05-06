@@ -68,44 +68,6 @@ public class PrintKLevelsDownQ {
     return root;
   }
 
-  // leftNode parentNode rightNode
-  public static void display(Node node) {
-    if (node == null) {
-      return;
-    }
-    String str = " <- " + node.data + " -> ";
-    String lcstr = node.left == null ? ".." : "" + node.left.data;
-    String rcstr = node.right == null ? ".." : "" + node.right.data;
-    System.out.println(lcstr + str + rcstr);
-
-    display(node.left); // will print the entire left tree
-    display(node.right); // will print the entire right tree
-  }
-
-  public static void levelOrderLinewise1(Node node) {
-    ArrayDeque<Node> pq = new ArrayDeque<>();
-    ArrayDeque<Node> cq = new ArrayDeque<>();
-
-    pq.add(node);
-    while (pq.size() > 0) {
-      Node temp = pq.remove();
-      System.out.print(temp.data + " ");
-
-      if (temp.left != null) {
-        cq.add(temp.left);
-      }
-      if (temp.right != null) {
-        cq.add(temp.right);
-      }
-
-      if (pq.size() == 0) {
-        pq = cq;
-        cq = new ArrayDeque<>();
-        System.out.println();
-      }
-    }
-  }
-
   public static void printKLevelsDown(Node node, int k){
     if(node == null || k < 0){
       return;
