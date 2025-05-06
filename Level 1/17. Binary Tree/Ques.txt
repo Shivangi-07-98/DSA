@@ -1,4 +1,7 @@
 1. construct
 2. display
 3. Size Sum Maximum Height of a bt
-4. 
+4. level order linewise 4 approaches
+5. find in bt
+6. node to root path in bt
+7. 
