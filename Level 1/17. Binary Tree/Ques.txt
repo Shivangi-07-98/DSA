@@ -6,4 +6,5 @@
 6. node to root path in bt
 7. print k levels down 
 8. Amazon print nodes k distance away 
-9. 
+9. iterative pre post inorder traversals
+10.
