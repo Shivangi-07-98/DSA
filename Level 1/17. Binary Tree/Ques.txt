@@ -4,4 +4,6 @@
 4. level order linewise 4 approaches
 5. find in bt
 6. node to root path in bt
-7. 
+7. print k levels down 
+8. Amazon print nodes k distance away 
+9. 
