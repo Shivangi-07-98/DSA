@@ -149,7 +149,7 @@ public class BinaryTreeIntro2 {
         if(pq.size() > 0){
           pq.add(temp);
         }
-        continue;
+        continue; // loop wapas upar pauch jata hai, niche wali lines nhi chlti hai
       }
         System.out.print(temp.data + " ");
         if (temp.left != null) {

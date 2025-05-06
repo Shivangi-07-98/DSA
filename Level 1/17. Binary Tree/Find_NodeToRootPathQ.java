@@ -1,4 +1,5 @@
 import java.util.*;
+
 public class Find_NodeToRootPathQ {
 
   public static class Node {
@@ -105,46 +106,49 @@ public class Find_NodeToRootPathQ {
     }
   }
 
-  public static boolean find(Node node, int data){
-    if(node == null){
+  public static boolean find(Node node, int data) {
+    if (node == null) {
       return false;
     }
-    if(node.data == data){
+    if (node.data == data) {
       return true;
     }
 
     boolean ans1 = find(node.left, data);
-    if(ans1 == true){
+    if (ans1 == true) {
       return true;
     }
     boolean ans2 = find(node.right, data);
-    if(ans2 == true){
+    if (ans2 == true) {
       return true;
     }
 
     return false;
   }
 
-  public static ArrayList<Integer> nodeToRootPath(Node node, int data){
-    if(node == null){
+  public static ArrayList<Integer> nodeToRootPath(Node node, int data) {
+    if (node == null) {
       return new ArrayList<>();
     }
-    if(node.data == data){
-      // return true;
+    if (node.data == data) {
       ArrayList<Integer> bres = new ArrayList<>();
-      bres.add(data); 
+      bres.add(node.data);
+      return bres;
     }
 
-    boolean ans1 = find(node.left, data);
-    if(ans1 == true){
-      return true;
-    }
-    boolean ans2 = find(node.right, data);
-    if(ans2 == true){
-      return true;
+    ArrayList<Integer> ans1 = nodeToRootPath(node.left, data);
+    if (ans1.size() > 0) {
+      ans1.add(node.data);
+      return ans1;
     }
 
-    return false;
+    ArrayList<Integer> ans2 = nodeToRootPath(node.right, data);
+    if (ans2.size() > 0) {
+      ans2.add(node.data);
+      return ans2;
+    }
+
+    return new ArrayList<>();
   }
 
   public static void main(String[] args) {
