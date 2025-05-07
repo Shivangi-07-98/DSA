@@ -7,4 +7,6 @@
 7. print k levels down 
 8. Amazon print nodes k distance away 
 9. iterative pre post inorder traversals
-10. 
+10. transform to left cloned tree
+11. transform to normal from left-cloned tree
+12. 
