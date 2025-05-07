@@ -105,26 +105,26 @@ public class PathToLeafFromRootInRangeQ {
     }
   }
 
-  public static void printSingleChildNodes(Node node, Node parent){
+  public static void pathToLeafFromRootInRange(Node node, String path, int sum, int lo, int hi){
     if(node == null){
       return;
     }
-    if(parent != null && parent.left == null && parent.right == node){
-      System.out.println(node.data);
+    if(node.left == null && node.right == null){
+      sum += node.data;
+      if(sum >= lo && sum <= hi){
+        System.out.println(path + node.data);
+      }
+      return;
     }
-    else if(parent != null && parent.right == null && parent.left == node){
-      System.out.println(node.data);
-    }
-    printSingleChildNodes(node.left, node);
-    printSingleChildNodes(node.right, node);
-
+    pathToLeafFromRootInRange(node.left, path + node.data + " ", sum + node.data, lo, hi);
+    pathToLeafFromRootInRange(node.right, path + node.data + " ", sum + node.data, lo, hi);
   }
 
   public static void main(String[] args) {
     Integer[] arr = new Integer[] { 50, 25, 12, null, null, 37, 30, null, null, null, 75, 62, null, 70, null, null,
         87, null, null }; // capital integer array has null
     Node root = construct(arr);
-    printSingleChildNodes(root, null);
+    pathToLeafFromRootInRange(root, "", 0, 150, 250);
 
   }
 
