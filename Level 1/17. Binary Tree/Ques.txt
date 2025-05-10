@@ -12,4 +12,5 @@
 12. remove leaves in bt
 13. print single child nodes
 14. path to leaf from root in range
-15. 
+15. diameter of a bt
+16. 
