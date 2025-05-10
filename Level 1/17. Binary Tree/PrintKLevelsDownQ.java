@@ -86,7 +86,7 @@ public class PrintKLevelsDownQ {
     Node root = construct(arr);
     // display(root);
     // levelOrderLinewise4(root);
-    printKLevelsDown(root, 3);
+    printKLevelsDown(root, 3); 
 
   }
 

@@ -68,7 +68,7 @@ public class BinaryTreeIntro2 {
     }
     return root;
   }
-
+ 
   // leftNode parentNode rightNode
   public static void display(Node node) {
     if (node == null) {
@@ -83,9 +83,6 @@ public class BinaryTreeIntro2 {
     display(node.right); // will print the entire right tree
   }
 
-  // har level ka alag line mai print hoga
-  // use queue, pq cq, rpa children in cq(add non null children)
-  // pq is empty, pq=cq, cq new, enter
   public static void levelOrderLinewise1(Node node) {
     ArrayDeque<Node> pq = new ArrayDeque<>();
     ArrayDeque<Node> cq = new ArrayDeque<>();
@@ -191,7 +188,6 @@ public class BinaryTreeIntro2 {
         q.add(rightp);
       }
     }
-
 
   }
 

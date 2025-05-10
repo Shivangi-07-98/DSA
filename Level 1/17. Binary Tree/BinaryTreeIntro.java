@@ -23,7 +23,7 @@ public class BinaryTreeIntro {
         Pair rootp = new Pair();
         rootp.node = root;
         rootp.state = 1;
-
+ 
         stack.push(rootp);
         int idx = 1;
 
@@ -87,8 +87,8 @@ public class BinaryTreeIntro {
         String rcstr = node.right == null ? ".." : "" + node.right.data;
         System.out.println(lcstr + str + rcstr);
 
-        display(node.left); // will print the entire left tree
-        display(node.right); // will print the entire right tree
+        display(node.left); 
+        display(node.right); 
     }
 
     public static void main(String[] args) {
