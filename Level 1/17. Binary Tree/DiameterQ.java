@@ -171,6 +171,28 @@ public class DiameterQ {
     return dia;
   }
 
+  // o(n)
+  public static class DiaPair{
+    int ht = -1;
+    int dia = 0;
+  }
+  public static DiaPair diameter4(Node node) {
+    if (node == null) {
+      DiaPair bp = new DiaPair();
+      bp.ht = -1;
+      bp.dia = 0;
+      return bp;
+    }
+    DiaPair lp = diameter4(node.left);
+    DiaPair rp = diameter4(node.right);
+
+    DiaPair mp = new DiaPair();
+    mp.dia = Math.max(lp.ht + rp.ht + 2, Math.max(lp.dia, rp.dia));
+    mp.ht = Math.max(lp.ht, rp.ht) + 1;
+    
+    return mp;
+  }
+
   public static void main(String[] args) {
     Integer[] arr = new Integer[] { 50, 25, 12, null, null, 37, 30, null, null, null, 75, 62, null, 70, null, null,
         87, null, null }; // capital integer array has null
@@ -186,6 +208,10 @@ public class DiameterQ {
 
     int val = diameter3(root);
     System.out.println(val);
+
+    DiaPair dp = diameter4(root);
+    // System.out.println(dp.ht);
+    System.out.println(dp.dia);
 
   }
 
