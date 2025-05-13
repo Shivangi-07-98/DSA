@@ -1,5 +1,7 @@
 import java.util.*;
 
+// maximum number of edges between any two nodes
+// lh + rh + 2 har node ke liye not just root
 public class DiameterQ {
 
   public static class Node {
@@ -116,10 +118,12 @@ public class DiameterQ {
     return height;
   }
 
+  // in heap
+  // o(n)
   static int dia = 0;
   public static int diameter1(Node node) {
     if (node == null) {
-      return -1;
+      return -1; // edges -1, nodes 0
     }
     int lh = diameter1(node.left);
     int rh = diameter1(node.right);
@@ -132,6 +136,7 @@ public class DiameterQ {
     return height;
   }
 
+  // o(n)
   public static class DiaMover{
     int dia = 0;
   }
@@ -150,6 +155,7 @@ public class DiameterQ {
     return height;
   }
 
+  // o(n2)
   public static int diameter3(Node node) {
     if (node == null) {
       return 0;
@@ -170,8 +176,8 @@ public class DiameterQ {
         87, null, null }; // capital integer array has null
     Node root = construct(arr);
 
-    int height = 0;
-    height = diameter1(root);
+    // int height = 0;
+    int height = diameter1(root);
     System.out.println(dia);
 
     DiaMover dm = new DiaMover();
