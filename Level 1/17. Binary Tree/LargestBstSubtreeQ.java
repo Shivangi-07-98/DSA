@@ -122,6 +122,8 @@ public class LargestBstSubtreeQ {
     int max = Integer.MIN_VALUE;
     int min = Integer.MAX_VALUE;
     boolean isBst = true;
+    Node lBstNode = null;
+    int lBstSize = 0;
   }
   public static BstTriplet IsBst(Node node){
     if(node == null){
@@ -137,6 +139,19 @@ public class LargestBstSubtreeQ {
 
     boolean nodeIsbst = node.data > lt.max && node.data < rt.min;
     mt.isBst = (lt.isBst == true) && (rt.isBst == true) && (nodeIsbst == true);
+
+    if(mt.isBst == true){
+      mt.lBstNode = node;
+      mt.lBstSize = lt.lBstSize + rt.lBstSize + 1;
+    }
+    else if(lt.lBstSize > rt.lBstSize){
+      mt.lBstNode = lt.lBstNode;
+      mt.lBstSize = lt.lBstSize;
+    }
+    else{
+      mt.lBstNode = rt.lBstNode;
+      mt.lBstSize = rt.lBstSize;
+    }
     
     return mt;
   }
@@ -147,7 +162,8 @@ public class LargestBstSubtreeQ {
     Node root = construct(arr);
 
     BstTriplet at = IsBst(root);
-    System.out.println(at.isBst);
+    System.out.println(at.lBstNode.data);
+    System.out.println(at.lBstSize);
     
   }
 
