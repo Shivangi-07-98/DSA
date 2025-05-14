@@ -15,4 +15,6 @@
 15. diameter of a bt
 16. tilt of a bt
 17. is balanced tree
-18. 
+18. is a binary search tree
+19. largest bst subtree
+20. 
