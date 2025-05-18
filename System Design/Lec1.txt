@@ -1,0 +1,15 @@
+OOPS - Encapsulation, Inheritance, Polymorphism
+Encapsulation - Classes, Objects
+
+Encapsulation-
+Making a class and putting data members and functions is encapsulation.
+The process of creating classes And putting data members and functions together in classes is called encapsulation.
+
+Classes-
+
+
+Objects-
+
+Instance Reference-
+heap ke andar object bnta hai - Instance/Objects
+uska address stack mai store hota hai - Reference
