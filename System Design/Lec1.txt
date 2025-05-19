@@ -13,3 +13,7 @@ Objects-
 Instance Reference-
 heap ke andar object bnta hai - Instance/Objects
 uska address stack mai store hota hai - Reference
+
+Static- used on three places
+functions, data members, Static class
+
