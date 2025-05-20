@@ -15,5 +15,26 @@ heap ke andar object bnta hai - Instance/Objects
 uska address stack mai store hota hai - Reference
 
 Static- used on three places
-functions, data members, Static class
+Static data members, Static functions, Static class
+
+--------------------------------------------------------------------------
+
+Static functions-
+Such functions which do not require object for their invocation (can be called directly via class names)
+
+Static functions implications- 
+Q1. this keyword cannot be used in static functions. Why?
+Ans- Because can be called by class name in that case this won't know which instance to point to
+
+Q2. non-static data members can't be used in static functions. Why?
+Ans- Because it can be called by class name and in that case we don't know if any object exists and if they do we wont know which objects non-static data members to use.
+
+Q3. non-static functions can't be used in static functions. Why?
+Ans- Can be used by making an object inside the static function and calling the nonstatic function on it. Can't be called directly.
+
+4. can non-static function use static data member? Why?
+Ans- Yes because we have extra information available not less
+
+5. can non-static function use static function? Why?
+Ans- Yes because we have extra information available not less
 
