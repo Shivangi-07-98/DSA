@@ -38,3 +38,6 @@ Ans- Yes because we have extra information available not less
 5. can non-static function use static function? Why?
 Ans- Yes because we have extra information available not less
 
+--------------------------------------------------------------------------
+
+
