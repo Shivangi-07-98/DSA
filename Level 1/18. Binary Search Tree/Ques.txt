@@ -1,0 +1,2 @@
+1. size, sum, max, min, find in bst
+2. 
