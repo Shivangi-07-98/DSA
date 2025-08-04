@@ -1,0 +1,9 @@
+all left node are small, all right node are big is bst
+eg-
+             50
+      25           75
+   12   37      62    87
+       30 40   60 70 
+
+see all left node are smaller 
+and all right node are bigger
