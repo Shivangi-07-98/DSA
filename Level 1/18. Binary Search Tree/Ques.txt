@@ -1,3 +1,5 @@
 1. size, sum, max, min, find in bst
 2. replace with sum of larger
-3. 
+3. lca of bst 
+4. print in range
+5. 
