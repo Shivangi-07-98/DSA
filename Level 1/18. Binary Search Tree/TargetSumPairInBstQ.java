@@ -1,7 +1,8 @@
 import java.io.*;
 import java.util.*;
 
-public class LcaOfBstQ { 
+// print all pair of nodes in a BST such that their sum is equal to a given target sum
+public class TargetSumPairInBstQ { 
 
   public static class Node {
     int data;
@@ -37,24 +38,35 @@ public class LcaOfBstQ {
     return node;
   }
 
-  
-  public static int lca(Node node, int d1, int d2) {
+  public static boolean find(Node node, int data){
     if(node == null){
-      return -1; // or throw an exception
+      return false;
     }
-    
-    if(node.data > d1 && node.data > d2){
-      return lca(node.left, d1, d2);
+
+    if(data > node.data){
+      return find(node.right, data);
     }
-    
-    else if(node.data < d1 && node.data < d2){
-      return lca(node.right, d1, d2);
+    else if(data < node.data){
+      return find(node.left, data);
     }
-    
     else{
-      return node.data; 
+      return true;
     }
-    
+  }
+
+  public static void tsp(Node root, Node node, int target) {
+    if (node == null) {
+      return;
+    }
+    tsp(root, node.left, target);
+
+    int complement = target - node.data;
+
+    if (complement > node.data && find(root, complement)) {
+      System.out.println(node.data + " " + complement);
+    }
+
+    tsp(root, node.right, target);
   }
 
   public static void main(String[] args) {
@@ -62,8 +74,8 @@ public class LcaOfBstQ {
     Node root = construct(arr, 0, arr.length - 1);
     // display(root);
 
-    int lca = lca(root, 10, 30);
-    System.out.println(lca);
+    tsp(root, root, 100);
+    // System.out.println(lca);
 
   }
 
