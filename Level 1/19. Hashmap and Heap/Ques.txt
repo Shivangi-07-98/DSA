@@ -1,2 +1,4 @@
 1. highest frequency character
-2. 
+2. get common elements 1
+3. get common elements 2
+4. 
