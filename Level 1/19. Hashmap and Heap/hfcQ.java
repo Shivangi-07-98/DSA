@@ -44,7 +44,7 @@ public class hfcQ {
     }
     System.out.println(maxChar + " " + maxFreq);
 
-    
+
     // approach 2
     char mfch = str.charAt(0);
     for(int i = 1; i < str.length(); i++){
@@ -55,6 +55,17 @@ public class hfcQ {
       }
     }
     System.out.println(mfch);
+
+    
+    // approach 3
+    char mfch2 = str.charAt(0);
+    Set<Character> uChar = fmap.keySet(); 
+    for(char ch : uChar){
+      if(fmap.get(ch) > fmap.get(mfch2)){
+        mfch2 = ch;
+      }
+    }
+    System.out.println(mfch2);
 
   }
 }

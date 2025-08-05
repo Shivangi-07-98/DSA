@@ -21,6 +21,10 @@ public class pr3Intro{
     pmap.put("Aus", 51);
     System.out.println(pmap);
 
+    // remove O(1) time complexity
+    pmap.remove("China");
+    System.out.println(pmap);
+
     // get O(1) time complexity
     int ipop = pmap.get("India");
     System.out.println(ipop);
