@@ -1,0 +1,2 @@
+1. highest frequency character
+2. 
