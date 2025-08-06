@@ -1,7 +1,7 @@
 import java.util.*;
 import java.io.*;
 
-public class pr3Intro{
+public class pr3HashmapIntro{
 
 
 
