@@ -10,7 +10,9 @@ public class PriorityQueueIntro {
 
   public static void main(String[] args) throws Exception {
 
-    PriorityQueue<Integer> pq = new PriorityQueue<>();
+    PriorityQueue<Integer> pq = new PriorityQueue<>(); // gives priority to small numbers
+    // PriorityQueue<Integer> pq = new PriorityQueue<>(Collections.reverseOrder()); // gives priority to bigger numbers
+    
     // add remove log(n) peek O(1)
     pq.add(20);
     pq.add(40);
