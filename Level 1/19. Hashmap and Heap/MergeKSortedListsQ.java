@@ -4,7 +4,7 @@ import java.util.*;
 public class MergeKSortedListsQ {
 
   // comparable is an interface
-  static class Pair implements Comparable {
+  static class Pair implements Comparable<Pair> {
     int data;
     int li; // mai kis list ka hoon
     int di; // aur mera index kya hai
@@ -12,8 +12,7 @@ public class MergeKSortedListsQ {
     // +ve => this is bigger
     // -ve => this is smaller
     // 0 => this and other are equal
-    public int compareTo(Object o) {
-      Pair other = (Pair) o;
+    public int compareTo(Pair other) {
       return this.data - other.data;
     }
   }
