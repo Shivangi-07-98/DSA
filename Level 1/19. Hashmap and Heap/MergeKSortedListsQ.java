@@ -20,7 +20,7 @@ public class MergeKSortedListsQ {
   public static ArrayList<Integer> mergeKSortedLists(ArrayList<ArrayList<Integer>> lists) {
     ArrayList<Integer> rv = new ArrayList<>();
     PriorityQueue<Pair> pq = new PriorityQueue<>(); // pair will implement comparable...why? for priority queue to decide the priority
-
+    // klog(k)
     for (int li = 0; li < lists.size(); li++) {
       Pair p = new Pair();
       p.li = li;
@@ -29,6 +29,7 @@ public class MergeKSortedListsQ {
       pq.add(p);
     }
 
+    // nlog(k)
     while (pq.size() > 0) {
       Pair rp = pq.peek();
       pq.remove();
@@ -46,7 +47,6 @@ public class MergeKSortedListsQ {
   }
 
   public static void main(String[] args) throws Exception {
-
     Scanner scn = new Scanner(System.in);
     int k = scn.nextInt(); // 4
     ArrayList<ArrayList<Integer>> lists = new ArrayList<>();
@@ -66,7 +66,6 @@ public class MergeKSortedListsQ {
       System.out.print(val + " ");
     }
     System.out.println();
-
   }
 
 }
