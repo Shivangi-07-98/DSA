@@ -1,16 +1,28 @@
 import java.io.*;
 import java.util.*;
 
-// add log(n)
-// remove log(n)
-// peek O(1)
-public class WritePriorityQueueUsingHeap {
+public class ConstructorForHeapQ { 
 
-  public static class PriorityQueue {
+  public static class MyPriorityQueue {
     ArrayList<Integer> data;
 
-    public PriorityQueue() {
+    public MyPriorityQueue() {
       data = new ArrayList<>();
+    }
+
+    // Write a constructor for heap to accept array and do complexity of O(n) instead of  O(nlog(n))
+    public MyPriorityQueue(int[] arr) {
+      data = new ArrayList<>();
+      // for(int val: arr){
+      //   add(val);
+      // }
+
+      for(int val: arr){
+        data.add(val);
+      }
+      for (int i = data.size() / 2 - 1; i >= 0; i--) {
+        downheapify(i);
+      }
     }
 
     // O(log n)
@@ -89,18 +101,14 @@ public class WritePriorityQueueUsingHeap {
   }
 
   public static void main(String[] args) throws Exception {
-    
-    PriorityQueue qu = new PriorityQueue();
-    qu.add(10);
-    qu.add(20);
-    qu.add(30);
-    qu.add(40);
-    qu.add(25);
-    qu.add(5);
-    
-    // System.out.println(qu.size());
-    System.out.println(qu.peek());
-    // System.out.println(qu.remove());
-    
+    int[] arr = {5, 15, 2, 22, 37, 92, 81, 47};
+    MyPriorityQueue pq = new MyPriorityQueue(arr);
+
+    while (pq.size() > 0) {
+      int val = pq.peek();
+      System.out.print(val + " ");
+      pq.remove();
+    }
+
   }
 }
