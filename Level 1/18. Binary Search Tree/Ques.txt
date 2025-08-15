@@ -3,4 +3,6 @@
 3. lca of bst 
 4. print in range
 5. target sum pair in bst
-6. 
+6. add node to bst
+7. remove node from bst
+8. 
