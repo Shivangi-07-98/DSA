@@ -1,6 +1,0 @@
-// in graphs it can connect again
-// in trees one direction
-
-// arraylist 
-// adjacent matrix and adjacent list(99% used)
-// degree incident

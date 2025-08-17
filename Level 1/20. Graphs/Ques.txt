@@ -1,6 +1,6 @@
 1. has path?
 2. print all paths
-3. multisolver - smallest, longest, ceil, floor
+3. multisolver - smallest, longest, ceil, floor, kth largest path
 4. get connected components of a graph
 5. is graph connected
 6. number of islands
