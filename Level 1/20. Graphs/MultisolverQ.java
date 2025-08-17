@@ -16,12 +16,12 @@ public class MultisolverQ {
   }
 
   static class Pair implements Comparable<Pair> {
-    String psf;
     int wsf;
+    String psf;
 
-    Pair(String psf, int wsf) {
-      this.psf = psf;
+    Pair(int wsf, String psf) {
       this.wsf = wsf;
+      this.psf = psf;
     }
 
     public int compareTo(Pair o) {
@@ -37,48 +37,43 @@ public class MultisolverQ {
   static Integer cpathwt = Integer.MAX_VALUE;
   static String fpath = "";
   static Integer fpathwt = Integer.MIN_VALUE;
+
   static PriorityQueue<Pair> pq = new PriorityQueue<>();
 
-  public static void multisolver(ArrayList<Edge>[] graph, boolean[] visited, int src, int dest, int criteria, int k, String psf) {
+  public static void multisolver(ArrayList<Edge>[] graph, int src, int dest, boolean[] visited, int criteria, int k, String psf, int wsf) {
     if (src == dest) {
       if (psf.length() > 0) {
-        String path = psf;
-        int weight = 0;
-        
-        // Calculate total weight from the path
-        for (int i = 0; i < path.length() - 1; i++) {
-          int v1 = path.charAt(i) - '0';
-          int v2 = path.charAt(i + 1) - '0';
-          for (Edge e : graph[v1]) {
-            if (e.v2 == v2) {
-              weight += e.wt;
-              break;
-            }
-          }
+        // Update smallest path
+        if (wsf < spathwt) {
+          spathwt = wsf;
+          spath = psf;
         }
         
-        if (weight < spathwt) {
-          spathwt = weight;
-          spath = path;
+        // Update largest path
+        if (wsf > lpathwt) {
+          lpathwt = wsf;
+          lpath = psf;
         }
-        if (weight > lpathwt) {
-          lpathwt = weight;
-          lpath = path;
+        
+        // Update just larger path than criteria
+        if (wsf > criteria && wsf < cpathwt) {
+          cpathwt = wsf;
+          cpath = psf;
         }
-        if (weight > criteria && weight < cpathwt) {
-          cpathwt = weight;
-          cpath = path;
+        
+        // Update just smaller path than criteria
+        if (wsf < criteria && wsf > fpathwt) {
+          fpathwt = wsf;
+          fpath = psf;
         }
-        if (weight < criteria && weight > fpathwt) {
-          fpathwt = weight;
-          fpath = path;
-        }
+        
+        // Update kth largest path using min heap
         if (pq.size() < k) {
-          pq.add(new Pair(path, weight));
+          pq.add(new Pair(wsf, psf));
         } else {
-          if (weight > pq.peek().wsf) {
+          if (wsf > pq.peek().wsf) {
             pq.remove();
-            pq.add(new Pair(path, weight));
+            pq.add(new Pair(wsf, psf));
           }
         }
       }
@@ -88,7 +83,7 @@ public class MultisolverQ {
     visited[src] = true;
     for (Edge e : graph[src]) {
       if (!visited[e.v2]) {
-        multisolver(graph, visited, e.v2, dest, criteria, k, psf + e.v2);
+        multisolver(graph, e.v2, dest, visited, criteria, k, psf + e.v2, wsf + e.wt);
       }
     }
     visited[src] = false;
@@ -120,15 +115,20 @@ public class MultisolverQ {
     int k = scn.nextInt();
 
     boolean[] visited = new boolean[vertices];
-    multisolver(graph, visited, src, dest, criteria, k, src + "");
+    multisolver(graph, src, dest, visited, criteria, k, src + "", 0);
 
     System.out.println("Smallest path = " + spath + "@" + spathwt);
     System.out.println("Largest path = " + lpath + "@" + lpathwt);
     System.out.println("Just larger path than " + criteria + " = " + cpath + "@" + cpathwt);
-    System.out.println("just smaller path than " + criteria + " = " + fpath + "@" + fpathwt);
-    System.out.println(k + "th largest path = " + pq.peek().psf + "@" + pq.peek().wsf);
+    System.out.println("Just smaller path than " + criteria + " = " + fpath + "@" + fpathwt);
+    
+    if (!pq.isEmpty()) {
+      System.out.println(k + "th largest path = " + pq.peek().psf + "@" + pq.peek().wsf);
+    } else {
+      System.out.println(k + "th largest path = No path found");
+    }
 
-    // scn.close();
+    scn.close();
   }
 
   
