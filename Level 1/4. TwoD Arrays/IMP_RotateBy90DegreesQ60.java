@@ -1,5 +1,5 @@
 import java.util.*;
-public class RotateBy90DegreesQ60 {
+public class IMP_RotateBy90DegreesQ60 {
     public static void main(String [] args) throws Exception {
 
         Scanner scn = new Scanner(System.in);
