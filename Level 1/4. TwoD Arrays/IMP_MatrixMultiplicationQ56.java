@@ -1,6 +1,8 @@
+// MEDIUM PRIORITY - Matrix multiplication has been asked at Apple and other companies
+// (GeeksforGeeks lists it as top 50 matrix problems)
 import java.io.*;
 import java.util.*;
-public class MatrixMultiplicationQ56 {
+public class IMP_MatrixMultiplicationQ56 {
     public static void main(String[] args) throws Exception {
 
         Scanner scn = new Scanner(System.in);

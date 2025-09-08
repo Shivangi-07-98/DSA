@@ -1,3 +1,5 @@
+// NOT AT ALL IMPORTANT - SKIP IT
+// Exit point matrix is rarely asked in interviews
 import java.io.*;
 import java.util.*;
 public class ExitPointOfaMatrixQ59 {

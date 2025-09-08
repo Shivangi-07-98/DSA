@@ -1,3 +1,5 @@
+// NOT AT ALL IMPORTANT - SKIP IT
+// Diagonal traversal is niche and not commonly asked
 import java.io.*;
 import java.util.*;
 

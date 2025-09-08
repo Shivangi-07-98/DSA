@@ -1,3 +1,5 @@
+// NOT AT ALL IMPORTANT - SKIP IT
+// Ring rotation is overly complex and never asked in interviews
 import java.io.*;
 import java.util.*;
 public class RingRotateQ61 {
