@@ -12,15 +12,14 @@ public class HashmapIntro1 {
     System.out.println(pmap);
 
     System.out.println(pmap.get("India")); // O(1)
-    System.out.println(pmap.get("uk")); // null or catch it in capital Integer to avoid error it gives using small int
+    System.out.println(pmap.get("uk")); // null or catch it in capital Integer to avoid error it gives when using small int
 
     pmap.remove("India"); // O(1)
     System.out.println(pmap.containsKey("India")); // O(1)
 
     Set<String> keys = pmap.keySet(); // // O(n)
     for (String key : keys) {
-      System.out.println(key);
-      System.out.println(pmap.get(key));
+      System.out.println(key + " " + pmap.get(key));
     }
 
   }
