@@ -3,17 +3,14 @@ import java.util.*;
 
 public class Q4_LongestConsecutiveSequence {
   
-
-
-
   public static void main (String[] args) throws Exception{
     Scanner scn = new Scanner(System.in);
 
     int n = scn.nextInt(); // 10
     int[] arr = new int [n];
     for(int i = 0; i < arr.length; i++){
-      arr[i] = scn.nextInt(); // 8 1 5 10 3 12 11 6 9 2
-    }
+      arr[i] = scn.nextInt(); // 8 1 5 10 3 12 11 6 9 2 = 1 2 3, 5 6, 8 9 10 11 12
+    } // print 8 9 10 11 12
 
     HashMap<Integer, Boolean> map = new HashMap<>();
 
@@ -30,12 +27,12 @@ public class Q4_LongestConsecutiveSequence {
     }
 
     // third loop => O(n)
-    int msp = 0;
-    int mlen = 0;
+    int msp = 0; // max starting point
+    int mlen = 0; // max length
     for(int val: arr){
       if(map.get(val) == true){
-        int tsp = val;
-        int tlen = 1;
+        int tsp = val; // temporary starting point
+        int tlen = 1; // temporary length
 
         while(map.containsKey(tsp + tlen) == true){
           tlen++;
@@ -52,7 +49,5 @@ public class Q4_LongestConsecutiveSequence {
       System.out.print(msp + i + " ");
     }
   }
-
-
 
 }
