@@ -3,8 +3,6 @@ import java.util.*;
 
 public class Q2_GetCommonElements1 {
 
-
-
   public static void main(String[] args) throws Exception {
     Scanner scn = new Scanner(System.in);
 

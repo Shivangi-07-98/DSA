@@ -17,7 +17,7 @@ public class HashmapIntro {
     pmap.remove("India"); // O(1)
     System.out.println(pmap.containsKey("India")); // O(1)
 
-    Set<String> keys = pmap.keySet(); // // O(n)
+    Set<String> keys = pmap.keySet(); // O(n)
     for (String key : keys) {
       System.out.println(key + " " + pmap.get(key));
     }
