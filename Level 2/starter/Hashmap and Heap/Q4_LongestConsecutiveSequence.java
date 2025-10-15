@@ -1,7 +1,7 @@
 import java.io.*;
 import java.util.*;
 
-public class LongestConsecutiveSequenceQ {
+public class Q4_LongestConsecutiveSequence {
   
 
 

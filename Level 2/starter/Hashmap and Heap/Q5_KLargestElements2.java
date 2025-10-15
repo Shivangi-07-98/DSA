@@ -2,7 +2,7 @@ import java.io.*;
 import java.util.*;
 
 // correct approach
-public class KLargestElements2Q {
+public class Q5_KLargestElements2 {
 
 
 

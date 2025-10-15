@@ -1,7 +1,7 @@
 import java.io.*;
 import java.util.*;
 
-public class GetCommonElements2Q {
+public class Q3_GetCommonElements2 {
 
 
 

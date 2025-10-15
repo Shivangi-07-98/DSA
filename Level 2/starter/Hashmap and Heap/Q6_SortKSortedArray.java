@@ -1,7 +1,7 @@
 import java.io.*;
 import java.util.*;
 
-public class SortKSortedArrayQ {
+public class Q6_SortKSortedArray {
   
 
 

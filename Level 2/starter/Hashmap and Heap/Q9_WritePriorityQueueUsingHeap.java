@@ -14,7 +14,7 @@ import java.util.*;
 
 // hop = Parent would have higher priority then both the children
 // cbt = arraylist implementation enabled = add remove log(n)
-public class WritePriorityQueueUsingHeapQ {
+public class Q9_WritePriorityQueueUsingHeap {
 
   public static class PriorityQueue {
     ArrayList<Integer> data;

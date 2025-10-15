@@ -1,7 +1,7 @@
 import java.io.*;
 import java.util.*;
 
-public class MedianPriorityQueueQ {
+public class Q7_MedianPriorityQueue {
 
   public static class MedianPriorityQueue {
     PriorityQueue<Integer> left;

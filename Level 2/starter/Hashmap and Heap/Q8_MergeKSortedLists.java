@@ -1,7 +1,7 @@
 import java.io.*;
 import java.util.*;
 
-public class MergeKSortedListsQ {
+public class Q8_MergeKSortedLists {
 
   // comparable is an interface
   static class Pair implements Comparable<Pair> {

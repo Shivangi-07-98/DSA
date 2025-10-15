@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class HashmapIntro1 {
+public class HashmapIntro {
 
   public static void main(String[] args) throws Exception {
     // key value
