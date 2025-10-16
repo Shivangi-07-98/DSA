@@ -1,8 +1,8 @@
 import java.io.*;
 import java.util.*;
 
-// in queue added in last removed from front
-// in priority queue remove will not be from front (as small numbers have high priority)
+// in queue = added in last removed from front
+// in priority queue = remove will not be from front (as small numbers have high priority)
 public class PriorityQueueIntro {
 
   public static void main(String[] args) throws Exception {
@@ -12,13 +12,13 @@ public class PriorityQueueIntro {
     // add remove log(n) peek O(1)
     pq.add(40);
     pq.add(10);
-    pq.add(67);
+    pq.add(60);
 
     System.out.println(pq.peek()); // 10
     pq.remove();
     System.out.println(pq.peek()); // 40
     pq.remove();
-    System.out.println(pq.peek()); // 67
+    System.out.println(pq.peek()); // 60
     pq.remove();
   }
   
