@@ -4,11 +4,7 @@ import java.util.*;
 // correct approach
 public class Q5_KLargestElements2 {
 
-
-
-
   public static void main(String[] args) throws Exception {
-
     Scanner scn = new Scanner(System.in);
     int n = scn.nextInt(); // 9
     int []arr = new int[n];
@@ -17,8 +13,9 @@ public class Q5_KLargestElements2 {
     }
     int k = scn.nextInt(); // 3
 
+    // add remove log(n) peek O(1)
     PriorityQueue<Integer> pq = new PriorityQueue<>();
-    // klog(k) space O(k) 
+    // klog(k) for adding, space O(k) 
     for(int i = 0; i < k; i++){
       pq.add(arr[i]);
     }
@@ -34,10 +31,9 @@ public class Q5_KLargestElements2 {
 
     // klog(k)
     while (pq.size() > 0) {
-      System.out.println(pq.peek());
+      System.out.print(pq.peek() + " "); // in ascending order
       pq.remove();
     }
-
 
   }
   
