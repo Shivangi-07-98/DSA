@@ -6,15 +6,17 @@ public class Q6_MergeKSortedLists {
   // comparable is an interface
   static class Pair implements Comparable<Pair> {
     int data;
-    int li; // mai kis list ka hoon
-    int di; // aur mera index kya hai
+    int li; // kis list ka hain
+    int di; // aur list mai kis index ka hai
 
     // +ve => this is bigger
     // -ve => this is smaller
     // 0 => this and other are equal
-    public int compareTo(Pair other) {
-      return this.data - other.data;
+    public int compareTo(Pair o) {
+      return this.data - o.data;
     }
+    // yha par o aur this kaunse h?
+    // priority queue apne aap data bhejti hai ek ek krke compare hone ke liye taki usko pta chle sbse chhota kaun hai = fir apne peek mai usko dikhati hai
   }
 
   public static ArrayList<Integer> mergeKSortedLists(ArrayList<ArrayList<Integer>> lists) {
@@ -36,10 +38,11 @@ public class Q6_MergeKSortedLists {
 
       rv.add(rp.data);
 
-      rp.di++;
-      if (rp.di < lists.get(rp.li).size()) {
-        rp.data = lists.get(rp.li).get(rp.di);
-        pq.add(rp);
+      rp.di++; // jis list ka remove hua tha ussi ka next element dalega
+      // index daalne se pehle check hoga element hai bhi ya nhi
+      if (rp.di < lists.get(rp.li).size()) { 
+        rp.data = lists.get(rp.li).get(rp.di); // wo next element le lo agar list mai elements hai toh
+        pq.add(rp); // priority queue mai add krdo
       }
     }
 
