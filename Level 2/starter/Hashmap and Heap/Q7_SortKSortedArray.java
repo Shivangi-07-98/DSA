@@ -29,7 +29,10 @@ public class Q7_SortKSortedArray {
     while (pq.size() > 0) {
       int val = pq.remove();
       System.out.print(val + " ");
-      
     }
   }
 }
+
+// 10 20 30 40 50 60 70 80 90 (order it should be)
+// 30 10 20 40 70 80 50 60 90 (array we were given for k = 2)
+// k = 2 (element has either moved two places left or right)
