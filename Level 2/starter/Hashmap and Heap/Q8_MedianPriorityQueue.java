@@ -58,11 +58,9 @@ public class Q8_MedianPriorityQueue {
     public int size() {
       return left.size() + right.size();
     }
-
   }
 
   public static void main(String[] args) throws Exception {
-    
     MedianPriorityQueue qu = new MedianPriorityQueue();
     qu.add(10);
     qu.add(20);
@@ -74,6 +72,6 @@ public class Q8_MedianPriorityQueue {
     // System.out.println(qu.size());
     System.out.println(qu.peek());
     // System.out.println(qu.remove());
-    
   }
+
 }
