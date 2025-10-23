@@ -9,11 +9,14 @@ import java.util.*;
 // linked list(sorted) approach -> peek O(1), remove O(1), add O(n) 
 // linked list(unsorted) approach -> peek O(n), remove O(n), add O(1) 
 
-// HOP = heap order property
+// priority queue heap data structure se implement hoti hai = using 2 properties hop, cbt
+// HOP = heap order property (binary tree hi hota hai)
 // CBT = complete binary tree
 
 // hop = Parent would have higher priority then both the children
-// cbt = arraylist implementation enabled = add remove log(n)
+// cbt = mtlb parent then left child then right child, aisa nhi hoga pehle right child hoga and left child hai hi nhi
+// 1 node then parent, 2 node parent and left child, 3 node parent and left and right child, 4 node parent and left and right child and left child's left child
+// arraylist implementation enabled = add remove log(n)
 public class Q9_WritePriorityQueueUsingHeap {
 
   public static class PriorityQueue {
