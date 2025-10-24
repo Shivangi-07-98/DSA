@@ -1,0 +1,5 @@
+1. duplicate brackets
+2. balanced brackets
+3. next greater element to the right
+4. 
+5. 

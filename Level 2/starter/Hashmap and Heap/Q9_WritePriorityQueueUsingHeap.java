@@ -44,15 +44,6 @@ public class Q9_WritePriorityQueueUsingHeap {
       downheapify(0);
       return val;
     }
-
-    // O(1)
-    public int peek() {
-      if (data.size() == 0) {
-        System.out.println("Underflow");
-        return -1;
-      }
-      return data.get(0);
-    }
     
     // O(log n)
     public void upheapify(int i) {
@@ -95,6 +86,15 @@ public class Q9_WritePriorityQueueUsingHeap {
     }
 
     // O(1)
+    public int peek() {
+      if (data.size() == 0) {
+        System.out.println("Underflow");
+        return -1;
+      }
+      return data.get(0);
+    }
+
+    // O(1)
     public int size() {
       return data.size();
     }
@@ -102,7 +102,6 @@ public class Q9_WritePriorityQueueUsingHeap {
   }
 
   public static void main(String[] args) throws Exception {
-    
     PriorityQueue qu = new PriorityQueue();
     qu.add(10);
     qu.add(20);
@@ -114,6 +113,10 @@ public class Q9_WritePriorityQueueUsingHeap {
     // System.out.println(qu.size());
     System.out.println(qu.peek());
     // System.out.println(qu.remove());
-    
   }
+
 }
+// priority queue implement krni hai heap data structure ke through in which add log(n)remove log(n) peek O(1)
+// heap binary tree hota hai having HOP and CBT property
+// add aur remove ki complexity log(n) mai krne ke liye arraylist se tree implement kre kuki euler O(n) ka hota hai 
+// 
