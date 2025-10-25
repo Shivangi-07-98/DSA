@@ -38,7 +38,7 @@ public class Q3_NextGreaterElementToTheRight {
     }
 
     for (int i = 0; i < n; i++) {
-      System.out.println(nge[i]);
+      System.out.print(nge[i] + " ");
     }
   }
 }

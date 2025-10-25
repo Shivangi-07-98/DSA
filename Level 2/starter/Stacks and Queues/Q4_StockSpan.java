@@ -38,7 +38,7 @@ public class Q4_StockSpan {
     }
 
     for (int i = 0; i < n; i++) {
-      System.out.println(span[i]);
+      System.out.print(span[i] + " ");
     }
   }
 }
