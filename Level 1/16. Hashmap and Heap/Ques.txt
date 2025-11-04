@@ -3,9 +3,9 @@
 3. get common elements 2
 4. longest consecutive sequence of elements
 5. k largest elements
-6. sort k sorted array
-7. median priority queue - imp ques
-8. merge k sorted lists
+6. merge k sorted lists
+7. sort k sorted array
+8. median priority queue - imp
 9. write priority queue using heap
 10. write hashmap
 11. 
