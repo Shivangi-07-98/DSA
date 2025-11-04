@@ -93,6 +93,27 @@ public class Q5_MinCostMazeTraversal {
 
     return strg[n - 1][m - 1];
   }
+
+  // Tabulation solution pep
+  public static int minCostMaze_tab_pep(int n, int m, int[][] maze) {
+    int[][] strg = new int[n][m];
+
+    for (int i = n - 1; i >= 0; i--) {
+      for (int j = m - 1; j >= 0; j--) {
+        if (i == n - 1 && j == m - 1) {
+          strg[i][j] = maze[i][j];
+        } else if (i == n - 1) {
+          strg[i][j] = strg[i][j + 1] + maze[i][j];
+        } else if (j == m - 1) {
+          strg[i][j] = strg[i + 1][j] + maze[i][j];
+        } else {
+          strg[i][j] = Math.min(strg[i + 1][j], strg[i][j + 1]) + maze[i][j];
+        }
+      }
+    }
+
+    return strg[0][0];
+  }
   
 }
 

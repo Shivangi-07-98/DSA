@@ -3,3 +3,4 @@
 3. climb stairs with variable jumps
 4. climb stairs with minimum moves
 5. min cost in maze traversal
+6. 
