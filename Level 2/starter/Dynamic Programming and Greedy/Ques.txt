@@ -1,3 +1,5 @@
 1. fibonacci dp
 2. climb stairs
-3. 
+3. climb stairs with variable jumps
+4. climb stairs with minimum moves
+5. min cost in maze traversal
