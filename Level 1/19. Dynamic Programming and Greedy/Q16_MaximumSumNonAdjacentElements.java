@@ -1,5 +1,5 @@
 import java.util.*;
-public class Q12_MaximumSumNonAdjacentElements {
+public class Q16_MaximumSumNonAdjacentElements {
 
   public static void main(String[] args) {
     Scanner scn = new Scanner(System.in);

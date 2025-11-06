@@ -8,7 +8,11 @@
 8. count binary strings
 9. arrange buildings
 10. count encodings
-11. count a+b+c+ subsequences
-12. maximum sum non adjacent elements
-13. paint house
-14. paint house-many colors
+11. coin change combination
+12. coin change permutations
+13. zero one knapsack
+14. unbounded knapsack
+15. count a+b+c+ subsequences
+16. maximum sum non adjacent elements
+17. paint house
+18. paint house-many colors

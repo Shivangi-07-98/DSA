@@ -1,5 +1,5 @@
 import java.util.*;
-public class Q11_CountABCSubsequences {
+public class Q15_CountABCSubsequences {
 
   public static void main(String[] args) {
     Scanner scn = new Scanner(System.in);

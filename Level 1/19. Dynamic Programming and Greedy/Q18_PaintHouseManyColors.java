@@ -1,5 +1,5 @@
 import java.util.*;
-public class Q14_PaintHouseManyColors {
+public class Q18_PaintHouseManyColors {
 
   public static void main(String[] args) {
     Scanner scn = new Scanner(System.in);
