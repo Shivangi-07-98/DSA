@@ -22,3 +22,104 @@
 22. paint fence
 23. friends pairing
 24. partition into subsets
+25. 
+
+
+GOOGLE'S DP PROBLEMS (100% Coverage - Complete This List, No Need to Practice Outside)
+
+
+STRING DP (Critical - High Frequency):
+1. longest common subsequence (LCS) [String DP - Two Strings Comparison] imp
+2. longest increasing subsequence (LIS) [Array DP - Sequence Pattern] imp
+3. edit distance / levenshtein distance [String DP - Transformation] imp
+4. longest palindromic subsequence [String DP - Palindrome Pattern] imp
+5. longest palindromic substring [String DP - Palindrome Pattern] imp
+6. word break [String DP - Dictionary Matching] imp
+7. interleaving string [String DP - Two Strings Merge] imp
+8. distinct subsequences [String DP - Count Pattern Matching] imp
+9. regular expression matching [String DP - Pattern Matching with * and .] imp
+10. wildcard matching [String DP - Pattern Matching with * and ?] imp
+11. longest valid parentheses [String DP - Stack/DP Hybrid] imp
+12. longest string chain [String DP - Sequence Chain] imp
+13. longest common substring [String DP - Continuous Substring] imp
+14. minimum insertions to make string palindrome [String DP - Palindrome Transformation] imp
+15. delete operation for two strings [String DP - LCS Variant] imp
+16. minimum ascii delete sum for two strings [String DP - LCS with Cost] imp
+
+
+ARRAY/SEQUENCE DP (High Frequency):
+17. maximum subarray (kadane's algorithm) [Array DP - Subarray Sum] imp
+18. maximum product subarray [Array DP - Product Variant] imp
+19. russian doll envelopes [Array DP - 2D LIS] imp
+20. maximum length of repeated subarray [Array DP - Common Subarray] imp
+21. longest arithmetic subsequence [Array DP - Arithmetic Pattern] imp
+22. longest arithmetic subsequence of given difference [Array DP - Fixed Difference] imp
+23. arithmetic slices [Array DP - Count Arithmetic Sequences] imp
+24. wiggle subsequence [Array DP - Alternating Pattern] imp
+25. maximum sum circular subarray [Array DP - Circular Array] imp
+26. maximum sum of 3 non-overlapping subarrays [Array DP - Multiple Subarrays] imp
+
+
+STOCK PROBLEMS (Very High Frequency):
+27. best time to buy and sell stock [Stock DP - Single Transaction] imp
+28. best time to buy and sell stock II [Stock DP - Multiple Transactions] imp
+29. best time to buy and sell stock III [Stock DP - At Most 2 Transactions] imp
+30. best time to buy and sell stock IV [Stock DP - At Most K Transactions] imp
+31. best time to buy and sell stock with cooldown [Stock DP - Cooldown Constraint] imp
+32. best time to buy and sell stock with transaction fee [Stock DP - Fee Constraint] imp
+
+
+GRID/PATH DP (High Frequency):
+33. unique paths [Grid DP - Count Paths] imp
+34. unique paths II [Grid DP - With Obstacles] imp
+35. minimum path sum [Grid DP - Min Cost Path] imp
+36. triangle [Grid DP - Triangular Grid] imp
+37. dungeon game [Grid DP - Min Health Required] imp
+38. cherry pickup [Grid DP - Two Paths] imp
+39. maximum path sum in matrix [Grid DP - Max Sum Path] imp
+
+
+ADVANCED DP (Medium-High Frequency):
+40. matrix chain multiplication [Advanced DP - Optimization] imp
+41. burst balloons [Advanced DP - Interval DP] imp
+42. scramble string [Advanced DP - String Partition] imp
+43. rod cutting [Advanced DP - Unbounded Knapsack Variant] imp
+44. palindrome partitioning [Advanced DP - String Partition] imp
+45. palindrome partitioning II [Advanced DP - Min Cuts] imp
+46. boolean parenthesization [Advanced DP - Expression Evaluation] imp
+47. egg dropping problem [Advanced DP - Optimization] imp
+48. super egg drop [Advanced DP - Binary Search + DP] imp
+
+
+GAME THEORY DP (Medium Frequency):
+49. stone game [Game Theory DP - Optimal Strategy] imp
+50. stone game II [Game Theory DP - Variable Piles] imp
+51. stone game III [Game Theory DP - Three Piles] imp
+52. predict the winner [Game Theory DP - Two Players] imp
+53. coin game [Game Theory DP - Optimal Play] imp
+54. nim game [Game Theory DP - Mathematical] imp
+
+
+MISCELLANEOUS HIGH-FREQUENCY:
+55. perfect squares [Number Theory DP - Min Decomposition] imp
+56. coin change 2 [Knapsack DP - Count Ways Variant] imp
+57. combination sum IV [Knapsack DP - Permutation Count] imp
+58. partition equal subset sum [Knapsack DP - Subset Sum Variant] imp
+59. target sum [Knapsack DP - With +/- Operations] imp
+60. count numbers with unique digits [Digit DP - Counting] imp
+61. decode ways II [String DP - With Wildcards] imp
+62. number of ways to stay in same place [DP - State Transition] imp
+63. minimum cost for tickets [DP - Interval Selection] imp
+64. longest turbulent subarray [Array DP - Alternating Pattern] imp
+65. maximum profit in job scheduling [DP - Interval Scheduling] imp
+66. minimum falling path sum [Grid DP - Min Path Variant] imp
+67. minimum falling path sum II [Grid DP - Exclude Same Column] imp
+68. number of ways to paint n*3 grid [DP - State Machine] imp
+69. count square submatrices with all ones [Grid DP - Square Counting] imp
+70. maximal square [Grid DP - Largest Square] imp
+71. count submatrices with all ones [Grid DP - Rectangle Counting] imp
+72. minimum cost to merge stones [Advanced DP - Interval DP] imp
+73. minimum cost tree from leaf values [Advanced DP - Tree Construction] imp
+74. minimum score triangulation of polygon [Advanced DP - Polygon Triangulation] imp
+75. strange printer [Advanced DP - Interval DP] imp
+76. remove boxes [Advanced DP - Complex Interval DP] imp
