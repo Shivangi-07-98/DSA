@@ -16,3 +16,9 @@
 16. maximum sum non adjacent elements
 17. paint house
 18. paint house-many colors
+19. fractional knapsack
+20. tiling with 2*1 tiles
+21. tiling with m*1 tiles
+22. paint fence
+23. friends pairing
+24. partition into subsets
