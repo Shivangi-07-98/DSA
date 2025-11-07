@@ -93,12 +93,13 @@ public class Q3_Multisolver {
     Scanner scn = new Scanner(System.in);
 
     int vertices = scn.nextInt(); // no. of vertices
-    int edges = scn.nextInt(); // no. of edges
 
     ArrayList<Edge>[] graph = new ArrayList[vertices];
     for (int i = 0; i < vertices; i++) {
       graph[i] = new ArrayList<>();
     }
+
+    int edges = scn.nextInt(); // no. of edges
 
     for (int i = 0; i < edges; i++) {
       int v1 = scn.nextInt();
@@ -157,4 +158,3 @@ public class Q3_Multisolver {
 // Just larger path than 30 = 012546@36
 // just smaller path than 30 = 01256@28
 // 4th largest path = 03456@48
-//
