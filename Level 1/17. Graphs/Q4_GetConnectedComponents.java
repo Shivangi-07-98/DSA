@@ -1,7 +1,7 @@
 import java.io.*;
 import java.util.*;
 
-public class PrintAllPathsQ {
+public class Q4_GetConnectedComponents { 
 
   static class Edge {
     int v1;
@@ -35,41 +35,34 @@ public class PrintAllPathsQ {
       graph[v2].add(new Edge(v2, v1, wt));
     }
 
-    int src = scn.nextInt();
-    int dest = scn.nextInt();
-
-    boolean[] visited = new boolean[vertices];
-    printAllPaths(graph, visited, src, dest, src + "");
-
-    // scn.close();
-  }
-
-  public static void printAllPaths(ArrayList<Edge>[] graph, boolean[] visited, int src, int dest, String psf) {
-    // self
-    if (src == dest) {
-      System.out.println(psf);
-      return;
-    }
-
-    visited[src] = true;
-
-    // children
-    // for (Edge e : graph[src]) {
-    //   if (!visited[e.v2]) {
-    //     printAllPaths(graph, visited, e.v2, dest, psf + e.v2 + "");
-    //   }
-    // }
-
-    for (int i = 0; i < graph[src].size(); i++) {
-      Edge edge = graph[src].get(i);
-      int nbr = edge.v2;
-
-      if (visited[nbr] == false) {
-        printAllPaths(graph, visited, nbr, dest, psf + nbr + "");
+    ArrayList<ArrayList<Integer>> comps = new ArrayList<>();
+    boolean[] visited = new boolean[vertices]; 
+    
+    // find all connected components
+    for (int i = 0; i < vertices; i++) {
+      if (visited[i] == false) {
+        ArrayList<Integer> comp = new ArrayList<>();
+        getConnectedComponents(graph, visited, comp, i);
+        comps.add(comp);
       }
     }
 
-    visited[src] = false;
+    System.out.println(comps);
+    scn.close();
+  }
+
+  // DFS to find all vertices in a connected component
+  public static void getConnectedComponents(ArrayList<Edge>[] graph, boolean[] visited, ArrayList<Integer> comp, int src) {
+    
+    visited[src] = true;
+    comp.add(src);
+    
+    // explore all neighbors
+    for (Edge e : graph[src]) {
+      if (visited[e.v2] == false) {
+        getConnectedComponents(graph, visited, comp, e.v2);
+      }
+    }
   }
 
 }
@@ -89,7 +82,4 @@ public class PrintAllPathsQ {
 // 6
 
 // output
-// 0123456
-// 012346
-// 03456
-// 0346
+// [[0, 1, 2, 3], [4, 5, 6]]

@@ -1,7 +1,7 @@
 import java.io.*;
 import java.util.*;
 
-public class MultisolverQ {
+public class Q3_Multisolver {
 
   static class Edge {
     int v1;

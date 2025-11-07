@@ -1,7 +1,7 @@
 import java.io.*;
 import java.util.*;
 
-public class GetConnectedComponentsQ { 
+public class Q2_PrintAllPaths {
 
   static class Edge {
     int v1;
@@ -19,12 +19,13 @@ public class GetConnectedComponentsQ {
     Scanner scn = new Scanner(System.in);
 
     int vertices = scn.nextInt(); // no. of vertices
-    int edges = scn.nextInt(); // no. of edges
 
     ArrayList<Edge>[] graph = new ArrayList[vertices]; // not understood
     for (int i = 0; i < vertices; i++) {
       graph[i] = new ArrayList<>(); // not understood
     }
+
+    int edges = scn.nextInt(); // no. of edges
 
     for (int i = 0; i < edges; i++) {
       int v1 = scn.nextInt();
@@ -35,34 +36,34 @@ public class GetConnectedComponentsQ {
       graph[v2].add(new Edge(v2, v1, wt));
     }
 
-    ArrayList<ArrayList<Integer>> comps = new ArrayList<>();
-    boolean[] visited = new boolean[vertices]; 
-    
-    // find all connected components
-    for (int i = 0; i < vertices; i++) {
-      if (visited[i] == false) {
-        ArrayList<Integer> comp = new ArrayList<>();
-        getConnectedComponents(graph, visited, comp, i);
-        comps.add(comp);
-      }
-    }
+    int src = scn.nextInt();
+    int dest = scn.nextInt();
 
-    System.out.println(comps);
-    scn.close();
+    boolean[] visited = new boolean[vertices];
+    printAllPaths(graph, visited, src, dest, src + "");
+
+    // scn.close();
   }
 
-  // DFS to find all vertices in a connected component
-  public static void getConnectedComponents(ArrayList<Edge>[] graph, boolean[] visited, ArrayList<Integer> comp, int src) {
-    
+  public static void printAllPaths(ArrayList<Edge>[] graph, boolean[] visited, int src, int dest, String psf) {
+    // self
+    if (src == dest) {
+      System.out.println(psf);
+      return;
+    }
+
     visited[src] = true;
-    comp.add(src);
-    
-    // explore all neighbors
-    for (Edge e : graph[src]) {
-      if (visited[e.v2] == false) {
-        getConnectedComponents(graph, visited, comp, e.v2);
+
+    for (int i = 0; i < graph[src].size(); i++) {
+      Edge edge = graph[src].get(i);
+      int nbr = edge.v2;
+
+      if (visited[nbr] == false) {
+        printAllPaths(graph, visited, nbr, dest, psf + nbr + "");
       }
     }
+
+    visited[src] = false;
   }
 
 }
@@ -82,4 +83,7 @@ public class GetConnectedComponentsQ {
 // 6
 
 // output
-// [[0, 1, 2, 3], [4, 5, 6]]
+// 0123456
+// 012346
+// 03456
+// 0346
