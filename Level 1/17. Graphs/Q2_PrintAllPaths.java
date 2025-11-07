@@ -20,9 +20,9 @@ public class Q2_PrintAllPaths {
 
     int vertices = scn.nextInt(); // no. of vertices
 
-    ArrayList<Edge>[] graph = new ArrayList[vertices]; // not understood
+    ArrayList<Edge>[] graph = new ArrayList[vertices];
     for (int i = 0; i < vertices; i++) {
-      graph[i] = new ArrayList<>(); // not understood
+      graph[i] = new ArrayList<>();
     }
 
     int edges = scn.nextInt(); // no. of edges
@@ -87,3 +87,5 @@ public class Q2_PrintAllPaths {
 // 012346
 // 03456
 // 0346
+
+// jb backtrack krega toh remaining child par bhi visit krega taki all paths print kar ske, jb saare childs visit ho jayenge toh all paths print ho chuka hoga

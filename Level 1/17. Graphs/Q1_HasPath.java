@@ -20,9 +20,9 @@ public class Q1_HasPath {
 
     int vertices = scn.nextInt(); // no. of vertices
 
-    ArrayList<Edge>[] graph = new ArrayList[vertices]; // not understood
+    ArrayList<Edge>[] graph = new ArrayList[vertices];
     for (int i = 0; i < vertices; i++) {
-      graph[i] = new ArrayList<>(); // not understood
+      graph[i] = new ArrayList<>();
     }
 
     int edges = scn.nextInt(); // no. of edges

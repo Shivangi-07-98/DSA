@@ -16,6 +16,7 @@ public class Intro1 {
   }
 
   public static void main(String[] args) throws Exception {
+    // int[] arr = new int[n]; refer this, integer ka array, arraylist of edge ka array
     ArrayList<Edge>[] graph = new ArrayList[7];
     for (int i = 0; i < graph.length; i++) {
       graph[i] = new ArrayList<>();

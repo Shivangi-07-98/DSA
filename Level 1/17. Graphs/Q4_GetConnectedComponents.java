@@ -21,9 +21,9 @@ public class Q4_GetConnectedComponents {
     int vertices = scn.nextInt(); // no. of vertices
     int edges = scn.nextInt(); // no. of edges
 
-    ArrayList<Edge>[] graph = new ArrayList[vertices]; // not understood
+    ArrayList<Edge>[] graph = new ArrayList[vertices];
     for (int i = 0; i < vertices; i++) {
-      graph[i] = new ArrayList<>(); // not understood
+      graph[i] = new ArrayList<>();
     }
 
     for (int i = 0; i < edges; i++) {
