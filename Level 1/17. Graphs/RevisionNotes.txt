@@ -1,0 +1,3 @@
+graphs - 
+vertices = node
+edge(can have weights too)

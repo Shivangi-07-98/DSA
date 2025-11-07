@@ -8,7 +8,7 @@ public class Intro1 {
     int v2;
     int wt;
 
-    Edge(int v1, int v2, int wt){
+    Edge(int v1, int v2, int wt) {
       this.v1 = v1;
       this.v2 = v2;
       this.wt = wt;
@@ -16,12 +16,8 @@ public class Intro1 {
   }
 
   public static void main(String[] args) throws Exception {
-
-    // arraylist ka array 
-    // iss array ke andar 7 arraylist pdi hai
-    // ArrayList<Edge> edge ki arraylist hai => arraylist mai multiple edges rahengi 
     ArrayList<Edge>[] graph = new ArrayList[7];
-    for(int i = 0; i < graph.length; i++){
+    for (int i = 0; i < graph.length; i++) {
       graph[i] = new ArrayList<>();
     }
 
@@ -47,14 +43,13 @@ public class Intro1 {
 
     graph[6].add(new Edge(6, 5, 3));
     graph[6].add(new Edge(6, 4, 8));
-
   }
-  
+
 }
 
 // in graphs it can connect again
 // in trees one direction
 
-// arraylist 
-// adjacent matrix and adjacent list(99% used)
-// degree incident
+// To represent graph 2 representation adjacent matrix and adjacent list
+// adjacent list(99% used)
+// ArrayList<Edge>[] graph = new ArrayList[7];

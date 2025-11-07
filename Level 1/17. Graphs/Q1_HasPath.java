@@ -1,7 +1,7 @@
 import java.io.*;
 import java.util.*;
 
-public class HasPathQ {
+public class Q1_HasPath {
 
   static class Edge {
     int v1;
