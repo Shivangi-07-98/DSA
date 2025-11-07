@@ -19,12 +19,13 @@ public class Q1_HasPath {
     Scanner scn = new Scanner(System.in);
 
     int vertices = scn.nextInt(); // no. of vertices
-    int edges = scn.nextInt(); // no. of edges
 
     ArrayList<Edge>[] graph = new ArrayList[vertices]; // not understood
     for (int i = 0; i < vertices; i++) {
       graph[i] = new ArrayList<>(); // not understood
     }
+
+    int edges = scn.nextInt(); // no. of edges
 
     for (int i = 0; i < edges; i++) {
       int v1 = scn.nextInt();
@@ -52,16 +53,6 @@ public class Q1_HasPath {
     }
 
     visited[src] = true;
-
-    // children
-    // for(Edge e : graph[src]){
-    //   if(!visited[e.v2]){
-    //     boolean hasNbrPath = hasPath(graph, visited, e.v2, dest);
-    //     if(hasNbrPath){
-    //       return true;
-    //     }
-    //   }
-    // }
 
     for (int i = 0; i < graph[src].size(); i++) {
       Edge edge = graph[src].get(i);
