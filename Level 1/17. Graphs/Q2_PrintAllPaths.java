@@ -59,7 +59,7 @@ public class Q2_PrintAllPaths {
       int nbr = edge.v2;
 
       if (visited[nbr] == false) {
-        printAllPaths(graph, visited, nbr, dest, psf + nbr + "");
+        printAllPaths(graph, visited, nbr, dest, psf + nbr);
       }
     }
 
