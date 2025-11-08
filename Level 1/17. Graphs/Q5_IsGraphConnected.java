@@ -1,7 +1,7 @@
 import java.io.*;
 import java.util.*;
 
-public class Q4_GetConnectedComponents { 
+public class Q5_IsGraphConnected {
 
   static class Edge {
     int v1;
@@ -36,32 +36,29 @@ public class Q4_GetConnectedComponents {
       graph[v2].add(new Edge(v2, v1, wt));
     }
 
-    ArrayList<ArrayList<Integer>> comps = new ArrayList<>();
     boolean[] visited = new boolean[vertices];
     
-    // find all connected components
+    getConnectedComponents(graph, visited, 0);
+    
+    boolean isConnected = true;
     for (int i = 0; i < vertices; i++) {
       if (visited[i] == false) {
-        ArrayList<Integer> comp = new ArrayList<>();
-        getConnectedComponents(graph, visited, comp, i);
-        comps.add(comp);
+        isConnected = false;
+        break;
       }
     }
-
-    System.out.println(comps);
+    
+    System.out.println(isConnected);
     scn.close();
   }
 
-  // DFS to find all vertices in a connected component
-  public static void getConnectedComponents(ArrayList<Edge>[] graph, boolean[] visited, ArrayList<Integer> comp, int src) {
+  public static void getConnectedComponents(ArrayList<Edge>[] graph, boolean[] visited, int src) {
     
     visited[src] = true;
-    comp.add(src);
     
-    // explore all neighbors
     for (Edge e : graph[src]) {
       if (visited[e.v2] == false) {
-        getConnectedComponents(graph, visited, comp, e.v2);
+        getConnectedComponents(graph, visited, e.v2);
       }
     }
   }
@@ -79,8 +76,18 @@ public class Q4_GetConnectedComponents {
 // 4 5 10
 // 5 6 10
 // 4 6 10
-// 0
-// 6
-
+//
 // output
-// [[0, 1, 2, 3], [4, 5, 6]]
+// true
+
+// input
+// 7 (no. of vertices)
+// 5 (edges)
+// 0 1 10
+// 2 3 10
+// 4 5 10
+// 4 6 10
+// 5 6 10
+//
+// output
+// false
