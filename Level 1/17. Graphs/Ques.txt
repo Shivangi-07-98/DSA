@@ -7,9 +7,9 @@
 7. number of islands
 8. breadth first traversal
 9. spread of infection
+10. is graph cyclic
 
-10. knights tour
-11. is graph cyclic
+11. knights tour
 12. is graph bipartite
 13. hamiltonian path and cycle
 14. shortest path in weights
