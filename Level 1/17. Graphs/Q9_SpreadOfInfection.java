@@ -1,7 +1,7 @@
 import java.io.*;
 import java.util.*;
 
-public class Q8_BreadthFirstTraversal {
+public class Q9_SpreadOfInfection {
 
   static class Edge {
     int v1;
@@ -17,11 +17,11 @@ public class Q8_BreadthFirstTraversal {
 
   static class Pair {
     int vtx;
-    String psf;
+    int time;
 
-    Pair(int vtx, String psf) {
+    Pair(int vtx, int time) {
       this.vtx = vtx;
-      this.psf = psf;
+      this.time = time;
     }
   }
 
@@ -47,31 +47,35 @@ public class Q8_BreadthFirstTraversal {
     }
 
     int src = scn.nextInt();
+    int t = scn.nextInt(); // time limit
 
+    int count = 0;
     ArrayDeque<Pair> queue = new ArrayDeque<>();
-    queue.add(new Pair(src, src + ""));
+    queue.add(new Pair(src, 1));
     boolean[] visited = new boolean[vertices];
 
     while (queue.size() > 0) {
       // remove, mark*, work, add*
       Pair rem = queue.remove();
 
-      // ye wala iteration iss line se wapas and next chlega fir upar while loop se
       if (visited[rem.vtx] == true) {
         continue;
       }
       visited[rem.vtx] = true;
 
-      System.out.println(rem.vtx + "@" + rem.psf);
+      if (rem.time > t) {
+        break;
+      }
+      count++;
 
-      for (int i = 0; i < graph[rem.vtx].size(); i++) {
-        Edge e = graph[rem.vtx].get(i);
+      for (Edge e : graph[rem.vtx]) {
         if (visited[e.v2] == false) {
-          queue.add(new Pair(e.v2, rem.psf + e.v2));
+          queue.add(new Pair(e.v2, rem.time + 1));
         }
       }
     }
 
+    System.out.println(count);
     scn.close();
   }
 
@@ -88,13 +92,8 @@ public class Q8_BreadthFirstTraversal {
 // 4 5 10
 // 5 6 10
 // 4 6 10
-// 2 (starting vertex)
+// 6 (starting vertex)
+// 3 (time limit)
 //
 // output
-// 2@2
-// 1@21
-// 3@23
-// 0@210
-// 4@234
-// 5@2345
-// 6@2346
+// 4
