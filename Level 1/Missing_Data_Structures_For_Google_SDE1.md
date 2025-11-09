@@ -18,3 +18,22 @@
 
 ### Priority 3 (Nice to Have - Lower Frequency):
 5. **Segment Trees** - Less common, but can appear in range query problems
+
+1. Arrays - 20 more questions
+2. Strings - 15 more questions
+3. Linked Lists - 14 more questions
+4. Generic Tree - 4 more questions
+5. Binary Tree - 11 more questions
+6. Binary Search Tree (BST) - 12 more questions
+7. Hash Maps and Heaps - 25 more questions
+8. Graphs - 0 more questions (17 done from Ques.txt, no additional)
+9. Stacks and Queues - 36 more questions (4 current + 36 = 40 total)
+10. Dynamic Programming - 52 more questions (24 current + 52 = 76 total from Ques.txt)
+11. Recursion and Backtracking - 26 more questions
+12. Trie (Prefix Tree) - 15 more questions
+13. Union-Find (Disjoint Set Union) - 12 more questions
+14. Advanced Graph Algorithms - 20 more questions (Dijkstra, Topological Sort, MST, etc.)
+15. Segment Trees / Fenwick Trees - 10 more questions
+16. Bit Manipulation - 15 more questions
+
+Total Additional Questions Needed: 287 questions
