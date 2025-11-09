@@ -5,12 +5,13 @@
 5. is graph connected
 6. perfect friends
 7. number of islands
-8. hamiltonian path and cycle
-9. knights tour
-10. breadth first traversal
+8. breadth first traversal
+9. spread of infection
+
+10. knights tour
 11. is graph cyclic
 12. is graph bipartite
-13. spread of infection
+13. hamiltonian path and cycle
 14. shortest path in weights
 15. minimum wire required to connect all pcs
 16. order of compilation
