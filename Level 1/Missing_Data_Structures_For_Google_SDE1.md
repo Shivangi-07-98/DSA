@@ -19,6 +19,8 @@
 ### Priority 3 (Nice to Have - Lower Frequency):
 5. **Segment Trees** - Less common, but can appear in range query problems
 
+## Topics with Question Counts:
+
 1. Arrays - 20 more questions
 2. Strings - 15 more questions
 3. Linked Lists - 14 more questions
