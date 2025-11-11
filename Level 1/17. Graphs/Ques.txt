@@ -8,11 +8,11 @@
 8. breadth first traversal
 9. spread of infection
 10. is graph cyclic
+11. is graph bipartite
+12. shortest path in weights
 
-11. knights tour
-12. is graph bipartite
 13. hamiltonian path and cycle
-14. shortest path in weights
+14. knights tour
 15. minimum wire required to connect all pcs
 16. order of compilation
 17. iterative depth first traversal
