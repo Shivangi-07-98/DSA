@@ -1,13 +1,5 @@
 # Missing Data Structures for Google SDE-1 Interview Preparation
 
-### 1. **Advanced Graph Algorithms**
-  - **Dijkstra's Algorithm** (Shortest path in weighted graphs)
-  - **Topological Sort** (Dependency resolution, scheduling)
-  - **Kruskal's Algorithm** (Minimum Spanning Tree - requires Union-Find)
-  - **Prim's Algorithm** (Minimum Spanning Tree)
-  - **Bellman-Ford Algorithm** (Shortest path with negative weights)
-  - **Floyd-Warshall Algorithm** (All pairs shortest path)
-
 ### Priority 1 (Must Learn - High Frequency):
 1. **Advanced Graph Algorithms** - Very High frequency
 2. **Union-Find** - Frequently appears with graph problems

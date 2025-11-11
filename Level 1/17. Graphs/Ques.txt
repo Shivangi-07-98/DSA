@@ -10,8 +10,8 @@
 10. is graph cyclic
 11. is graph bipartite
 12. shortest path in weights - Dijkstra's algorithm
-
 13. hamiltonian path and cycle
+
 14. knights tour
 15. minimum wire required to connect all pcs
 16. order of compilation
