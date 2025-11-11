@@ -9,7 +9,7 @@
 9. spread of infection
 10. is graph cyclic
 11. is graph bipartite
-12. shortest path in weights
+12. shortest path in weights - Dijkstra's algorithm
 
 13. hamiltonian path and cycle
 14. knights tour

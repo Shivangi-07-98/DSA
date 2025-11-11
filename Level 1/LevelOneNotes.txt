@@ -1,0 +1,5 @@
+write here sare data structure ko initialize kaise krte hai, declare kaise krte hai, syntax
+write code of comparable
+write code of pair
+
+write common pattern in ques
