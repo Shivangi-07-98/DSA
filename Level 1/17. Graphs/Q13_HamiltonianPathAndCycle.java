@@ -57,9 +57,9 @@ public class Q13_HamiltonianPathAndCycle {
       }
 
       if (closingEdgeFound == true) {
-        System.out.println("*");
+        System.out.println("* = cycle");
       } else {
-        System.out.println(".");
+        System.out.println(". = path");
       }
       return;
     }
@@ -76,6 +76,16 @@ public class Q13_HamiltonianPathAndCycle {
   }
 
 }
+// backtracking ka ques hai, backtrack krte tym saare remaining childrens visit
+// ho jayenge isse saare possible paths mil jate hain.
+
+/*
+ * Hamiltonian Path ek aisa path jo graph ke SARE vertices ko exactly ek baar
+ * visit kare
+ * (koi vertex repeat nahi honi chahiye). Last vertex se starting vertex tak
+ * edge nahi hai aur hai toh Hamiltonian Cycle
+ * 
+ */
 
 // input
 // 7 (no. of vertices)
