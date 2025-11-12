@@ -13,6 +13,6 @@
 13. hamiltonian path and cycle
 14. knights tour
 15. iterative depth first traversal
-16. minimum wire required to connect all pcs
+16. minimum wire required to connect all pcs - Prim's algorithm
 17. order of compilation
 18. 
