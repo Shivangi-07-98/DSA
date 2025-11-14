@@ -1,8 +1,1 @@
-write here sare data structure ko initialize kaise krte hai, declare kaise krte hai, syntax
-write code of comparable
-write code of pair
-
-write common pattern in ques
-
-backtracking ke code and ques ko samazhna kaise answer laata hai wo
-Path mark krke unmark ku krte hain kuki jab bhi hme all path chaiye hota hai uske liye
+DP - 
