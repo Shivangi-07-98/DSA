@@ -84,3 +84,11 @@ public class Q8_CountBinaryStrings {
   
 }
 
+/*
+Sample Input:
+5
+
+Sample Output:
+13
+*/
+

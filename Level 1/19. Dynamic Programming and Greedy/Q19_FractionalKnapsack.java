@@ -63,3 +63,14 @@ public class Q19_FractionalKnapsack {
   
 }
 
+/*
+Sample Input:
+3
+60 100 120
+10 20 30
+50
+
+Sample Output:
+240.0
+*/
+

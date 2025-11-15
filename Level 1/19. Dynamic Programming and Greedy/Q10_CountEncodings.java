@@ -97,3 +97,11 @@ public class Q10_CountEncodings {
   
 }
 
+/*
+Sample Input:
+123
+
+Sample Output:
+3
+*/
+

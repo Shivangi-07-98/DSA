@@ -100,3 +100,15 @@ public class Q17_PaintHouse {
   
 }
 
+/*
+Sample Input:
+4
+1 5 7
+5 8 4
+3 2 9
+1 2 4
+
+Sample Output:
+8
+*/
+

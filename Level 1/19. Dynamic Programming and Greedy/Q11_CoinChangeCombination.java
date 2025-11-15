@@ -87,3 +87,13 @@ public class Q11_CoinChangeCombination {
   
 }
 
+/*
+Sample Input:
+4
+2 3 5 6
+7
+
+Sample Output:
+2
+*/
+

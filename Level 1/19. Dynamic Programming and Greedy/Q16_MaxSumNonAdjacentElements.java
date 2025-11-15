@@ -90,3 +90,12 @@ public class Q16_MaxSumNonAdjacentElements {
   
 }
 
+/*
+Sample Input:
+6
+5 10 10 100 5 6
+
+Sample Output:
+116
+*/
+

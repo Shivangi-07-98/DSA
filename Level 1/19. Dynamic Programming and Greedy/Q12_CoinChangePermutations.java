@@ -82,3 +82,13 @@ public class Q12_CoinChangePermutations {
   
 }
 
+/*
+Sample Input:
+4
+2 3 5 6
+7
+
+Sample Output:
+5
+*/
+

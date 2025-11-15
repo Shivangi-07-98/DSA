@@ -43,3 +43,11 @@ public class Q1_FibonacciDP {
   }
   
 }
+
+/*
+Sample Input:
+10
+
+Sample Output:
+55
+*/

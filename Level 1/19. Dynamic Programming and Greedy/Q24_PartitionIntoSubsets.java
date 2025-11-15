@@ -77,3 +77,12 @@ public class Q24_PartitionIntoSubsets {
   
 }
 
+/*
+Sample Input:
+4
+3
+
+Sample Output:
+6
+*/
+

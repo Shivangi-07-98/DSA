@@ -80,3 +80,11 @@ public class Q23_FriendsPairing {
   
 }
 
+/*
+Sample Input:
+4
+
+Sample Output:
+10
+*/
+

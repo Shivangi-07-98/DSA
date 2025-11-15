@@ -60,3 +60,11 @@ public class Q15_CountABCSubsequences {
   
 }
 
+/*
+Sample Input:
+abcabc
+
+Sample Output:
+7
+*/
+

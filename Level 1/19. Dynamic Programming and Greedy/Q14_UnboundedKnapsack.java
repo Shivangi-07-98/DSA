@@ -81,3 +81,14 @@ public class Q14_UnboundedKnapsack {
   
 }
 
+/*
+Sample Input:
+5
+15 14 10 45 30
+2 5 1 3 4
+7
+
+Sample Output:
+100
+*/
+

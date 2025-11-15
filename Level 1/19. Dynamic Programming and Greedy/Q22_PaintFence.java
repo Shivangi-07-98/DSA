@@ -106,3 +106,12 @@ public class Q22_PaintFence {
   
 }
 
+/*
+Sample Input:
+8
+3
+
+Sample Output:
+3672
+*/
+

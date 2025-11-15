@@ -94,3 +94,12 @@ public class Q21_TilingWithMx1Tiles {
   
 }
 
+/*
+Sample Input:
+8
+3
+
+Sample Output:
+13
+*/
+

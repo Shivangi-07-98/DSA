@@ -95,3 +95,13 @@ public class Q7_TargetSumSubsets {
   }
   
 }
+
+/*
+Sample Input:
+5
+4 2 7 1 3
+10
+
+Sample Output:
+true
+*/

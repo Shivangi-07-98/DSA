@@ -3,37 +3,20 @@ public class Q3_ClimbStairsVariableJumps {
 
   public static void main(String[] args) {
     Scanner scn = new Scanner(System.in);
-    int n = scn.nextInt();
-    int[] jumps = new int[n];
+    int n = scn.nextInt(); // 10
+    int[] arr = new int[n]; // 0-9
     for (int i = 0; i < n; i++) {
-      jumps[i] = scn.nextInt();
+      arr[i] = scn.nextInt(); // 3 3 0 2 1 2 4 2 0 0
     }
 
-    int[] storage = new int[n + 1];
+    int[] storage = new int[n + 1]; // 11 size 0-10
     
-    System.out.println(climbStairsVariable(n, 0, jumps));
-    System.out.println(climbStairsVariable_memo(n, 0, jumps, storage));
-    System.out.println(climbStairsVariable_tab(n, jumps));
-  }
-
-  // Recursive solution
-  public static int climbStairsVariable(int n, int src, int[] jumps) {
-    if (src == n) {
-      return 1;
-    }
-
-    int total = 0;
-    for (int jump = 1; jump <= jumps[src]; jump++) {
-      if (src + jump <= n) {
-        total += climbStairsVariable(n, src + jump, jumps);
-      }
-    }
-
-    return total;
+    System.out.println(climbStairsVariable_memo(n, 0, arr, storage));
+    System.out.println(climbStairsVariable_tab(n, arr));
   }
 
   // Memoized solution
-  public static int climbStairsVariable_memo(int n, int src, int[] jumps, int[] storage) {
+  public static int climbStairsVariable_memo(int n, int src, int[] arr, int[] storage) {
     if (src == n) {
       return 1;
     }
@@ -43,9 +26,9 @@ public class Q3_ClimbStairsVariableJumps {
     }
 
     int total = 0;
-    for (int jump = 1; jump <= jumps[src]; jump++) {
+    for (int jump = 1; jump <= arr[src]; jump++) {
       if (src + jump <= n) {
-        total += climbStairsVariable_memo(n, src + jump, jumps, storage);
+        total += climbStairsVariable_memo(n, src + jump, arr, storage);
       }
     }
 
@@ -54,27 +37,13 @@ public class Q3_ClimbStairsVariableJumps {
   }
 
   // Tabulation solution
-  public static int climbStairsVariable_tab(int n, int[] jumps) {
-    int[] strg = new int[n + 1];
-    strg[n] = 1;
-
-    for (int i = n - 1; i >= 0; i--) {
-      for (int jump = 1; jump <= jumps[i] && i + jump <= n; jump++) {
-        strg[i] += strg[i + jump];
-      }
-    }
-
-    return strg[0];
-  }
-
-  // Tabulation solution pep
-  public static int climbStairsVariable_tab_pep(int n, int[] jumps) {
+  public static int climbStairsVariable_tab(int n, int[] arr) {
     int[] strg = new int[n + 1];
     strg[n] = 1;
 
     for (int i = n - 1; i >= 0; i--) {
       strg[i] = 0;
-      for (int jump = i + 1; jump <= i + jumps[i]; jump++) {
+      for (int jump = i + 1; jump <= i + arr[i]; jump++) {
         if(jump < strg.length){
           strg[i] = strg[i] + strg[jump];
         }
@@ -85,3 +54,12 @@ public class Q3_ClimbStairsVariableJumps {
   }
   
 }
+
+/*
+Sample Input:
+10
+3 3 0 2 1 2 4 2 0 0
+
+Sample Output:
+5
+*/

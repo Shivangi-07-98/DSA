@@ -92,3 +92,16 @@ public class Q18_PaintHouseManyColors {
   
 }
 
+/*
+Sample Input:
+4
+3
+1 5 7
+5 8 4
+3 2 9
+1 2 4
+
+Sample Output:
+8
+*/
+

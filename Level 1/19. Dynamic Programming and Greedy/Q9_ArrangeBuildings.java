@@ -115,3 +115,11 @@ public class Q9_ArrangeBuildings {
   
 }
 
+/*
+Sample Input:
+5
+
+Sample Output:
+169
+*/
+

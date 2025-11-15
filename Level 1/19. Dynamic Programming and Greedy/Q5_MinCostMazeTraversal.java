@@ -11,66 +11,8 @@ public class Q5_MinCostMazeTraversal {
         maze[i][j] = scn.nextInt();
       }
     }
-
-    int[][] storage = new int[n][m];
-    for (int i = 0; i < n; i++) {
-      Arrays.fill(storage[i], -1);
-    }
     
-    System.out.println(minCostMaze(n - 1, m - 1, maze));
-    System.out.println(minCostMaze_memo(n - 1, m - 1, maze, storage));
     System.out.println(minCostMaze_tab(n, m, maze));
-  }
-
-  // Recursive solution
-  public static int minCostMaze(int r, int c, int[][] maze) {
-    if (r == 0 && c == 0) {
-      return maze[0][0];
-    }
-
-    int minCost = Integer.MAX_VALUE;
-    if (r - 1 >= 0) {
-      int cost = minCostMaze(r - 1, c, maze);
-      if (cost != Integer.MAX_VALUE) {
-        minCost = Math.min(minCost, cost + maze[r][c]);
-      }
-    }
-    if (c - 1 >= 0) {
-      int cost = minCostMaze(r, c - 1, maze);
-      if (cost != Integer.MAX_VALUE) {
-        minCost = Math.min(minCost, cost + maze[r][c]);
-      }
-    }
-
-    return minCost;
-  }
-
-  // Memoized solution
-  public static int minCostMaze_memo(int r, int c, int[][] maze, int[][] storage) {
-    if (r == 0 && c == 0) {
-      return maze[0][0];
-    }
-
-    if (storage[r][c] != -1) {
-      return storage[r][c];
-    }
-
-    int minCost = Integer.MAX_VALUE;
-    if (r - 1 >= 0) {
-      int cost = minCostMaze_memo(r - 1, c, maze, storage);
-      if (cost != Integer.MAX_VALUE) {
-        minCost = Math.min(minCost, cost + maze[r][c]);
-      }
-    }
-    if (c - 1 >= 0) {
-      int cost = minCostMaze_memo(r, c - 1, maze, storage);
-      if (cost != Integer.MAX_VALUE) {
-        minCost = Math.min(minCost, cost + maze[r][c]);
-      }
-    }
-
-    storage[r][c] = minCost;
-    return minCost;
   }
 
   // Tabulation solution
@@ -117,3 +59,17 @@ public class Q5_MinCostMazeTraversal {
   
 }
 
+/*
+Sample Input:
+6
+6
+0 1 4 2 8 2
+4 3 6 5 0 4
+1 2 4 1 4 6
+2 0 7 3 2 2
+3 1 5 9 2 4
+2 7 0 8 5 1
+
+Sample Output:
+23
+*/

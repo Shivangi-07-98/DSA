@@ -79,3 +79,11 @@ public class Q20_TilingWith2x1Tiles {
   
 }
 
+/*
+Sample Input:
+8
+
+Sample Output:
+34
+*/
+
