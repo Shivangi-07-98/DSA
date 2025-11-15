@@ -1,4 +1,5 @@
 import java.util.*;
+
 public class Q2_ClimbStairs {
 
   public static void main(String[] args) {
@@ -6,30 +7,12 @@ public class Q2_ClimbStairs {
     int n = scn.nextInt(); // 5
 
     int[] storage = new int[n + 1];
-    
-    System.out.println(climbStairs(n));
+
     System.out.println(climbStairs_memo(n, storage));
     System.out.println(climbStairs_tab(n));
   }
 
-  // Recursive solution
-  public static int climbStairs(int n) {
-    if (n == 0) {
-      return 1;
-    }
-    if (n < 0) {
-      return 0;
-    }
-
-    int nm1 = climbStairs(n - 1);
-    int nm2 = climbStairs(n - 2);
-    int nm3 = climbStairs(n - 3);
-    int total = nm1 + nm2 + nm3;
-
-    return total;
-  }
-
-  // Memoized solution
+  // Memoized solution O(3^n)
   public static int climbStairs_memo(int n, int[] storage) {
     if (n == 0) {
       return 1;
@@ -57,6 +40,7 @@ public class Q2_ClimbStairs {
     strg[0] = 1;
 
     for (int i = 1; i <= n; i++) {
+      // arr is from 0 to n, so if n is 0 or 1, there is no value stored for -ve no.
       if (i - 1 >= 0) {
         strg[i] += strg[i - 1];
       }
@@ -70,5 +54,6 @@ public class Q2_ClimbStairs {
 
     return strg[n];
   }
-  
+
 }
+// 3 moves allowed at a time 1, 2, 3
