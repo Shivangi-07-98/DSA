@@ -12,66 +12,76 @@ public class Q7_TargetSumSubsets {
     int target = scn.nextInt(); // 10
 
     Boolean[][] storage = new Boolean[n + 1][target + 1]; // 6 11
-    
-    System.out.println(targetSumSubsets_memo(0, 0, arr, target, storage));
+
+    System.out.println(targetSumSubsets_memo(arr, 0, target, storage));
     System.out.println(targetSumSubsets_tab(arr, target));
   }
 
   // Memoized solution
-  public static boolean targetSumSubsets_memo(int idx, int sum, int[] arr, int target, Boolean[][] storage) {
-    if (idx == arr.length) {
-      return sum == target;
+  public static boolean targetSumSubsets_memo(int[] arr, int idx, int target, Boolean[][] storage) {
+    if (target == 0) {
+      return true;
+    } else if (idx == arr.length) {
+      return false;
     }
 
-    if (storage[idx][sum] != null) {
-      return storage[idx][sum];
+    if (target >= 0 && storage[idx][target] != null) {
+      return storage[idx][target];
     }
 
-    boolean include = targetSumSubsets_memo(idx + 1, sum + arr[idx], arr, target, storage);
-    boolean exclude = targetSumSubsets_memo(idx + 1, sum, arr, target, storage);
+    boolean exclude = targetSumSubsets_memo(arr, idx + 1, target, storage);
+    boolean include = targetSumSubsets_memo(arr, idx + 1, target - arr[idx], storage);
 
-    storage[idx][sum] = include || exclude;
-    return storage[idx][sum];
+    boolean ans = exclude || include;
+
+    if (target >= 0) {
+      storage[idx][target] = ans;
+    }
+
+    return ans;
   }
 
   // Tabulation solution
   public static boolean targetSumSubsets_tab(int[] arr, int target) {
-    boolean[][] strg = new boolean[arr.length + 1][target + 1];
+    boolean[][] strg = new boolean[arr.length + 1][target + 1]; // 6 11
+    // arr in row 0 1 2 3 4 5, target in col 0 1 2 3 4 5 6 7 8 9 10
 
-    for (int i = 0; i < strg.length; i++) {
-      for (int j = 0; j < strg[0].length; j++) {
-        if (i == 0 && j == 0) {
+    for (int i = 0; i < strg.length; i++) { // row = 0-5
+      for (int j = 0; j < strg[0].length; j++) { // col = 0-10
+
+        if (i == 0 && j == 0) { // strg[0][0]
           strg[i][j] = true;
-        } else if (i == 0) {
+        } else if (i == 0) { // row = 0
           strg[i][j] = false;
-        } else if (j == 0) {
+        } else if (j == 0) { // col = 0
           strg[i][j] = true;
         } else {
           strg[i][j] = strg[i - 1][j];
-          int val = arr[i - 1];
+          int val = arr[i - 1]; // strg ka i ek jyada hai arr se
           if (j >= val && strg[i - 1][j - val]) {
             strg[i][j] = true;
           }
         }
+
       }
     }
 
-    return strg[arr.length][target];
+    return strg[arr.length][target]; // strg[5][10]
   }
-  
+
 }
 // kya iss array ka koi subset aisa hai jiska sum 10 hai
 // each element can be included or excluded
 
 /*
-Sample Input:
-5
-4 2 7 1 3
-10
-
-Sample Output:
-true
-*/
+ * Sample Input:
+ * 5
+ * 4 2 7 1 3
+ * 10
+ * 
+ * Sample Output:
+ * true
+ */
 
 // subset calculation formula = 2^n
 // All 32 subsets of [4, 2, 7, 1, 3]
