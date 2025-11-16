@@ -1,119 +1,38 @@
 import java.util.*;
+
 public class Q9_ArrangeBuildings {
 
   public static void main(String[] args) {
     Scanner scn = new Scanner(System.in);
-    int n = scn.nextInt();
+    int n = scn.nextInt(); // 5
 
-    long[] storage = new long[n + 1];
     System.out.println(arrangeBuildings(n));
-    System.out.println(arrangeBuildings_memo(n, storage));
-    System.out.println(arrangeBuildings_tab(n));
-    System.out.println(arrangeBuildings_optimized(n));
   }
 
-  // Recursive solution
-  // Same logic as binary strings - one side can be arranged in countBinaryStrings ways
-  // Total ways = countBinaryStrings(n) * countBinaryStrings(n)
+  // Tabulation solution - Space optimized
+  // using long as value is greater than 10^9
   public static long arrangeBuildings(int n) {
-    if (n == 0) {
-      return 1;
-    }
-    if (n == 1) {
-      return 4; // 2 * 2
-    }
-
-    long ways = countBinaryStrings(n);
-    return ways * ways;
-  }
-
-  private static long countBinaryStrings(int n) {
-    if (n == 0) {
-      return 1;
-    }
-    if (n == 1) {
-      return 2;
-    }
-    return countBinaryStrings(n - 1) + countBinaryStrings(n - 2);
-  }
-
-  // Memoized solution
-  public static long arrangeBuildings_memo(int n, long[] storage) {
-    if (n == 0) {
-      return 1;
-    }
-    if (n == 1) {
-      return 4;
-    }
-
-    if (storage[n] != 0) {
-      return storage[n];
-    }
-
-    long[] binaryStorage = new long[n + 1];
-    long ways = countBinaryStrings_memo(n, binaryStorage);
-    storage[n] = ways * ways;
-    return storage[n];
-  }
-
-  private static long countBinaryStrings_memo(int n, long[] storage) {
-    if (n == 0) {
-      return 1;
-    }
-    if (n == 1) {
-      return 2;
-    }
-
-    if (storage[n] != 0) {
-      return storage[n];
-    }
-
-    storage[n] = countBinaryStrings_memo(n - 1, storage) + countBinaryStrings_memo(n - 2, storage);
-    return storage[n];
-  }
-
-  // Tabulation solution
-  public static long arrangeBuildings_tab(int n) {
-    if (n == 0) {
-      return 1;
-    }
-    if (n == 1) {
-      return 4;
-    }
-
-    long[] strg = new long[n + 1];
-    strg[0] = 1;
-    strg[1] = 2;
+    long old_zero = 1; // binary strings ending in 0 of length 1
+    long old_one = 1; // binary strings ending in 1 of length 1
 
     for (int i = 2; i <= n; i++) {
-      strg[i] = strg[i - 1] + strg[i - 2];
+      long new_one = old_zero + old_one;
+      long new_zero = old_one;
+
+      old_zero = new_zero;
+      old_one = new_one;
     }
 
-    return strg[n] * strg[n];
+    long oneside = old_zero + old_one;
+    long ways = oneside * oneside;
+    return ways;
   }
 
-  // Space optimized solution
-  public static long arrangeBuildings_optimized(int n) {
-    if (n == 0) {
-      return 1;
-    }
-    if (n == 1) {
-      return 4;
-    }
-
-    long prev2 = 1;
-    long prev1 = 2;
-
-    for (int i = 2; i <= n; i++) {
-      long curr = prev1 + prev2;
-      prev2 = prev1;
-      prev1 = curr;
-    }
-
-    return prev1 * prev1;
-  }
-  
 }
+// 5 plots on each side of road, 2 building saath nhi honi chaiye
+// 0 = Building, 1 = Space
+// assume 2 building as 2 zero
+// focus on one side first then total different ways is multiply both sides
 
 /*
 Sample Input:
@@ -122,4 +41,3 @@ Sample Input:
 Sample Output:
 169
 */
-
