@@ -1,94 +1,54 @@
 import java.util.*;
+
 public class Q8_CountBinaryStrings {
 
   public static void main(String[] args) {
     Scanner scn = new Scanner(System.in);
-    int n = scn.nextInt();
+    int n = scn.nextInt(); // 6
 
-    long[] storage = new long[n + 1];
-    System.out.println(countBinaryStrings(n));
-    System.out.println(countBinaryStrings_memo(n, storage));
-    System.out.println(countBinaryStrings_tab(n));
-    System.out.println(countBinaryStrings_optimized(n));
-  }
-
-  // Recursive solution
-  public static long countBinaryStrings(int n) {
-    if (n == 0) {
-      return 1;
-    }
-    if (n == 1) {
-      return 2;
-    }
-
-    return countBinaryStrings(n - 1) + countBinaryStrings(n - 2);
-  }
-
-  // Memoized solution
-  public static long countBinaryStrings_memo(int n, long[] storage) {
-    if (n == 0) {
-      return 1;
-    }
-    if (n == 1) {
-      return 2;
-    }
-
-    if (storage[n] != 0) {
-      return storage[n];
-    }
-
-    storage[n] = countBinaryStrings_memo(n - 1, storage) + countBinaryStrings_memo(n - 2, storage);
-    return storage[n];
+    System.out.println(countBinaryStrings_tab1(n));
   }
 
   // Tabulation solution
-  public static long countBinaryStrings_tab(int n) {
-    if (n == 0) {
-      return 1;
-    }
-    if (n == 1) {
-      return 2;
-    }
+  public static int countBinaryStrings_tab1(int n) {
+    int[] zero = new int[n + 1];
+    int[] one = new int[n + 1];
 
-    long[] strg = new long[n + 1];
-    strg[0] = 1;
-    strg[1] = 2;
+    zero[1] = 1;
+    one[1] = 1;
 
     for (int i = 2; i <= n; i++) {
-      strg[i] = strg[i - 1] + strg[i - 2];
+      one[i] = one[i - 1] + zero[i - 1];
+      zero[i] = one[i - 1];
     }
 
-    return strg[n];
+    return zero[n] + one[n];
   }
 
-  // Space optimized solution
-  public static long countBinaryStrings_optimized(int n) {
-    if (n == 0) {
-      return 1;
-    }
-    if (n == 1) {
-      return 2;
-    }
-
-    long prev2 = 1; // strings ending with 0
-    long prev1 = 2; // total strings
+  // Tabulation solution - Space optimized (using variables instead of arrays)
+  public static int countBinaryStrings_tab2(int n) {
+    int old_zero = 1; // binary strings ending in 0 of length 1
+    int old_one = 1; // binary strings ending in 1 of length 1
 
     for (int i = 2; i <= n; i++) {
-      long curr = prev1 + prev2;
-      prev2 = prev1;
-      prev1 = curr;
+      int new_one = old_zero + old_one;
+      int new_zero = old_one;
+
+      old_zero = new_zero;
+      old_one = new_one;
     }
 
-    return prev1;
+    return old_zero + old_one;
   }
-  
+
 }
+// formula 2^n
+// binary string 0,1 of length n jisme 2 zero saath nhi hone chaiye
 
 /*
-Sample Input:
-5
-
-Sample Output:
-13
-*/
-
+ * Sample Input:
+ * 6
+ * 
+ * Sample Output:
+ * 21
+ */
