@@ -1,61 +1,32 @@
 import java.util.*;
+
 public class Q18_PaintHouseManyColors {
 
   public static void main(String[] args) {
     Scanner scn = new Scanner(System.in);
-    int n = scn.nextInt();
-    int k = scn.nextInt();
-    int[][] costs = new int[n][k];
-    for (int i = 0; i < n; i++) {
-      for (int j = 0; j < k; j++) {
-        costs[i][j] = scn.nextInt();
+    int n = scn.nextInt(); // 4
+    int k = scn.nextInt(); // 3
+    int[][] arr = new int[n][k]; // 4 3
+    for (int i = 0; i < arr.length; i++) {
+      for (int j = 0; j < arr[0].length; j++) {
+        arr[i][j] = scn.nextInt();
       }
     }
 
-    System.out.println(paintHouse_tab(costs, n, k));
-    System.out.println(paintHouse_optimized(costs, n, k));
+    System.out.println(paintHouse_tab(arr));
   }
 
-  // Tabulation solution - O(n*k*k)
-  public static int paintHouse_tab(int[][] costs, int n, int k) {
-    int[][] strg = new int[n][k];
-
-    for (int j = 0; j < k; j++) {
-      strg[0][j] = costs[0][j];
-    }
-
-    for (int i = 1; i < n; i++) {
-      for (int j = 0; j < k; j++) {
-        int minCost = Integer.MAX_VALUE;
-        for (int prev = 0; prev < k; prev++) {
-          if (prev != j) {
-            minCost = Math.min(minCost, strg[i - 1][prev]);
-          }
-        }
-        strg[i][j] = costs[i][j] + minCost;
-      }
-    }
-
-    int result = Integer.MAX_VALUE;
-    for (int j = 0; j < k; j++) {
-      result = Math.min(result, strg[n - 1][j]);
-    }
-
-    return result;
-  }
-
-  // Optimized solution - O(n*k)
-  // Track minimum and second minimum from previous row to avoid nested loop
-  public static int paintHouse_optimized(int[][] costs, int n, int k) {
+  // Tabulation solution - O(n*k)
+  public static int paintHouse_tab(int[][] arr) {
+    int k = arr[0].length;
     int[] prev = new int[k];
     for (int j = 0; j < k; j++) {
-      prev[j] = costs[0][j];
+      prev[j] = arr[0][j];
     }
 
-    for (int i = 1; i < n; i++) {
+    for (int i = 1; i < arr.length; i++) {
       int[] curr = new int[k];
-      
-      // Find minimum and second minimum from previous row
+
       int min1 = Integer.MAX_VALUE;
       int min2 = Integer.MAX_VALUE;
       int min1Idx = -1;
@@ -70,12 +41,11 @@ public class Q18_PaintHouseManyColors {
         }
       }
 
-      // Fill current row
       for (int j = 0; j < k; j++) {
         if (j == min1Idx) {
-          curr[j] = costs[i][j] + min2; // Use second minimum
+          curr[j] = arr[i][j] + min2;
         } else {
-          curr[j] = costs[i][j] + min1; // Use minimum
+          curr[j] = arr[i][j] + min1;
         }
       }
 
@@ -89,19 +59,22 @@ public class Q18_PaintHouseManyColors {
 
     return result;
   }
-  
+
 }
 
+// adjacent houses cannot have same color
+// k colors available
+// minimize cost
+
 /*
-Sample Input:
-4
-3
-1 5 7
-5 8 4
-3 2 9
-1 2 4
-
-Sample Output:
-8
-*/
-
+ * Sample Input:
+ * 4
+ * 3
+ * 1 5 7 (house 1)
+ * 5 8 4 (house 2)
+ * 3 2 9 (house 3)
+ * 1 2 4 (house 4)
+ * 
+ * Sample Output:
+ * 8
+ */
