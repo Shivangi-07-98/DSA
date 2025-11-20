@@ -18,7 +18,7 @@ public class Intro1 {
   public static void main(String[] args) throws Exception {
     // int[] arr = new int[n]; refer this, integer ka array, arraylist of edge ka array
     ArrayList<Edge>[] graph = new ArrayList[7];
-    for (int i = 0; i < graph.length; i++) {
+    for (int i = 0; i < graph.length; i++) { // 0-6
       graph[i] = new ArrayList<>();
     }
 
@@ -51,6 +51,6 @@ public class Intro1 {
 // in graphs it can connect again
 // in trees one direction
 
-// To represent graph 2 representation adjacent matrix and adjacent list
-// adjacent list(99% used)
+// To represent graph 2 representation adjacency matrix and adjacency list
+// adjacency list(99% used)
 // ArrayList<Edge>[] graph = new ArrayList[7];
