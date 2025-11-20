@@ -84,3 +84,15 @@ public class Q4_GetConnectedComponents {
 
 // output
 // [[0, 1, 2, 3], [4, 5, 6]]
+
+// sample input
+// 7 (no. of vertices)
+// 5 (edges)
+// 0 1 10
+// 2 3 10
+// 4 5 10
+// 5 6 10
+// 4 6 10
+//
+// sample output
+// [[0, 1], [2, 3], [4, 5, 6]]
