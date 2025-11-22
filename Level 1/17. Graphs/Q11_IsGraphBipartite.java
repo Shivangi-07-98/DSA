@@ -142,7 +142,7 @@ public class Q11_IsGraphBipartite {
 // 4 6 10
 //
 // output
-// true
+// false
 
 // input
 // 3 (no. of vertices)
