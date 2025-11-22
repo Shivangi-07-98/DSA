@@ -79,9 +79,7 @@ public class Q4_GetConnectedComponents {
 // 4 5 10
 // 5 6 10
 // 4 6 10
-// 0
-// 6
-
+//
 // output
 // [[0, 1, 2, 3], [4, 5, 6]]
 

@@ -156,5 +156,5 @@ public class Q3_Multisolver {
 // Smallest path = 01256@28
 // Largest path = 032546@66
 // Just larger path than 30 = 012546@36
-// just smaller path than 30 = 01256@28
+// Just smaller path than 30 = 01256@28
 // 4th largest path = 03456@48

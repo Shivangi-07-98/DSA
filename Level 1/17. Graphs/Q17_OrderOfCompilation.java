@@ -65,7 +65,7 @@ public class Q17_OrderOfCompilation {
 
 // input
 // 7 (no. of vertices)
-// 8 (edges)
+// 7 (edges)
 // 0 1 10
 // 1 2 10
 // 0 3 10
@@ -90,4 +90,3 @@ public class Q17_OrderOfCompilation {
  * - DFS approach: Process all neighbors first, then push current node to stack
  * - Application: Order of compilation, course prerequisites, task scheduling
  */
-
