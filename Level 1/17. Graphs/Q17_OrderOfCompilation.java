@@ -68,11 +68,11 @@ public class Q17_OrderOfCompilation {
 // 7 (edges)
 // 0 1 10
 // 1 2 10
-// 0 3 10
 // 2 3 10
+// 0 3 10
 // 4 5 10
-// 4 6 10
 // 5 6 10
+// 4 6 10
 //
 // output
 // 4
