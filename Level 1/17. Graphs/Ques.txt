@@ -1,12 +1,12 @@
 1. has path?
-2. print all paths
+2. print all paths - using edges adjacency list
 3. multisolver - smallest, longest, ceil, floor, kth largest path
 4. get connected components of a graph
 5. is graph connected
 6. perfect friends
-7. number of islands
+7. number of islands - using edges adjacency list
 8. breadth first traversal
-9. spread of infection
+9. spread of infection - using edges adjacency list
 10. is graph cyclic
 11. is graph bipartite
 12. shortest path in weights - Dijkstra's algorithm
@@ -15,4 +15,6 @@
 15. iterative depth first traversal
 16. minimum wire required to connect all pcs - Prim's algorithm
 17. order of compilation
-18. 
+18. print all paths - using edges adjacency matrix
+19. spread of infection - using edges adjacency matrix
+20. number of islands - using edges adjacency matrix
