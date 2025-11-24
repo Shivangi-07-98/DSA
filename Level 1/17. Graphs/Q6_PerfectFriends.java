@@ -1,3 +1,4 @@
+// O(V + E) - build components via DFS and combine counts.
 import java.io.*;
 import java.util.*;
 

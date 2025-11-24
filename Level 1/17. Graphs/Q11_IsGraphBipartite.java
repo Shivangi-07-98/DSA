@@ -1,3 +1,4 @@
+// O(V + E) - BFS colors each vertex once to check conflicts.
 import java.io.*;
 import java.util.*;
 

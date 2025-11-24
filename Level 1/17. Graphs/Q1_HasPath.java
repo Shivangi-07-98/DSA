@@ -1,3 +1,4 @@
+// O(V + E) - DFS visits each vertex and edge at most once.
 import java.io.*;
 import java.util.*;
 

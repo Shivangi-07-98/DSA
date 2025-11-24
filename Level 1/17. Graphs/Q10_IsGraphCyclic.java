@@ -1,3 +1,4 @@
+// O(V + E) - each BFS explores a component once to detect cycles.
 import java.io.*;
 import java.util.*;
 

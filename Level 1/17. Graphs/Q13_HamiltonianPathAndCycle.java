@@ -1,3 +1,4 @@
+// O(V!) - backtracking enumerates every Hamiltonian permutation.
 import java.io.*;
 import java.util.*;
 

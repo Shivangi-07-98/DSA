@@ -1,3 +1,4 @@
+// O(V!) - exhaustive DFS over all simple paths to collect metrics.
 import java.io.*;
 import java.util.*;
 

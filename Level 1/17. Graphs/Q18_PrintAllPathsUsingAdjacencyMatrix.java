@@ -1,5 +1,6 @@
 import java.util.*;
 
+// O(V!) - exploring every simple path between src and dest.
 // Print all paths (same as Q2) but edges stored in an adjacency matrix.
 public class Q18_PrintAllPathsUsingAdjacencyMatrix {
 
