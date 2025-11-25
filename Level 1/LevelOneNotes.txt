@@ -1,20 +1,16 @@
-DP - 
-Memoization = recursion
-Tabulation = iteration
-
--------------------------------------------------------------------
-
 Stack and Queue - 
+
 stack - bread packet
 push, pop, peek O(1)
 
 queue - 
 add, remove, peek 
 
-stack-
-
 Stack<Integer> stack = new Stack<>(); // just like arraylist
 Stack<String> stack = new Stack<>();
+
+Queue<Integer> queue = new ArrayDeque<>();
+Queue<Node> queue = new ArrayDeque<Node>();
 
 System.out.println(stack);     System.out.println(queue);
 stack.push(10);                queue.add(10);
@@ -22,7 +18,8 @@ stack.peek();                  queue.peek();
 stack.pop();                   queue.remove();
 stack.size();                  queue.size();
 
-queue-
+-------------------------------------------------------------------
 
-Queue<Integer> queue = new ArrayDeque<>();
-Queue<Node> queue = new ArrayDeque<Node>();
+DP - 
+Memoization = recursion
+Tabulation = iteration
