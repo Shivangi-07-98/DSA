@@ -4,30 +4,46 @@ import java.util.*;
 public class delete {
   public static void main(String[] args) {
     Scanner scn = new Scanner(System.in);
-    String str = scn.nextLine(); // ((a+b))
+    String str = scn.nextLine();
+    // ((a+b) = more opening
+    // (a+b)) = more closing
+    // {[(a+b) + c} + c] = bracket mismatch
+    Stack<Character> stack = new Stack<>();
 
-    Stack<Character> st = new Stack<>();
     for (int i = 0; i < str.length(); i++) {
       char ch = str.charAt(i);
 
-      if (ch == ')') {
-        if (st.peek() == '(') {
-          System.out.println("true have duplicate brackets");
-          return;
-          // break;
+      if (ch == '(' || ch == '{' || ch == '[') {
+        stack.push(ch);
+      } else if (ch == ')') {
+        if (stack.size() > 0 && stack.peek() == '(') {
+          stack.pop();
         } else {
-          while (st.peek() != '(') {
-            st.pop();
-          }
-          st.pop();
+          System.out.println("bracket mismatch or extra closing bracket");
+          return;
         }
-      } else {
-        st.push(ch);
+      } else if (ch == '}') {
+        if (stack.size() > 0 && stack.peek() == '{') {
+          stack.pop();
+        } else {
+          System.out.println("bracket mismatch or extra closing bracket");
+          return;
+        }
+      } else if (ch == ']') {
+        if (stack.size() > 0 && stack.peek() == '[') {
+          stack.pop();
+        } else {
+          System.out.println("bracket mismatch or extra closing bracket");
+          return;
+        }
       }
-      
     }
 
-    System.out.println("false no duplicate brackets");
+    if (stack.size() != 0) {
+      System.out.println("unbalanced brackets");
+    } else {
+      System.out.println("balanced brackets");
+    }
 
   }
 }
