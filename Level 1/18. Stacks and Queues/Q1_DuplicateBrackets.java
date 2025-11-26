@@ -17,6 +17,7 @@ public class Q1_DuplicateBrackets {
         if (st.peek() == '(') {
           System.out.println(true); // if found duplicate print true
           return;
+          // break;
         } else {
           while (st.size() > 0 && st.peek() != '(') {
             st.pop();
@@ -36,3 +37,6 @@ public class Q1_DuplicateBrackets {
 // (a+b) + (c+d) + (e + (f+g)) = false, no duplicate brackets
 // (((a+b) + (c+d))) = true, has duplicate brackets
 // (a+b) + ((c+d)) = true, has duplicate brackets
+// Why return instead of break?
+// We use return inside main to stop the method immediately after printing true.
+// A plain break would only exit the for-loop, after which we'd still hit the final println(false).

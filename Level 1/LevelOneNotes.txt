@@ -8,6 +8,7 @@ add, remove, peek
 
 Stack<Integer> stack = new Stack<>(); // just like arraylist
 Stack<String> stack = new Stack<>();
+Stack<Character> stack = new Stack<>(); // not Characters
 
 Queue<Integer> queue = new ArrayDeque<>();
 Queue<Node> queue = new ArrayDeque<Node>();
