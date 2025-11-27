@@ -16,7 +16,7 @@ public class delete {
     stack.push(0);
 
     for (int i = 1; i < n; i++) {
-      while(stack.size() > 0 && stack.peek() <= arr[i]){
+      while(stack.size() > 0 && arr[stack.peek()] <= arr[i]){
         stack.pop();
       }
       if (stack.size() == 0) {
