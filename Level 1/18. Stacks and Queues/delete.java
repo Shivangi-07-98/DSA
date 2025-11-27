@@ -4,46 +4,35 @@ import java.util.*;
 public class delete {
   public static void main(String[] args) {
     Scanner scn = new Scanner(System.in);
-    String str = scn.nextLine();
-    // ((a+b) = more opening
-    // (a+b)) = more closing
-    // {[(a+b) + c} + c] = bracket mismatch
-    Stack<Character> stack = new Stack<>();
+    int n = scn.nextInt(); // 9
+    int[] arr = new int[n];
+    for(int i = 0; i < n; i++){
+      arr[i] = scn.nextInt(); // 2 5 9 3 1 12 6 8 7
+    }
 
-    for (int i = 0; i < str.length(); i++) {
-      char ch = str.charAt(i);
+    Stack<Integer> stack = new Stack<>();
+    stack.push(arr[n-1]);
 
-      if (ch == '(' || ch == '{' || ch == '[') {
-        stack.push(ch);
-      } else if (ch == ')') {
-        if (stack.size() > 0 && stack.peek() == '(') {
-          stack.pop();
-        } else {
-          System.out.println("bracket mismatch or extra closing bracket");
-          return;
-        }
-      } else if (ch == '}') {
-        if (stack.size() > 0 && stack.peek() == '{') {
-          stack.pop();
-        } else {
-          System.out.println("bracket mismatch or extra closing bracket");
-          return;
-        }
-      } else if (ch == ']') {
-        if (stack.size() > 0 && stack.peek() == '[') {
-          stack.pop();
-        } else {
-          System.out.println("bracket mismatch or extra closing bracket");
-          return;
-        }
+    int[] ans = new int[n];
+    ans[n-1] = -1;
+
+    for(int i = n-2; i >= 0; i--){
+      while(stack.size() > 0 && stack.peek() <= arr[i]){
+        stack.pop();
       }
+      if(stack.size() > 0 && stack.peek() > arr[i]){
+        ans[i] = (stack.peek());
+      }
+      if(stack.size() == 0){
+        ans[i] = -1;
+      }
+      stack.push(arr[i]);
     }
-
-    if (stack.size() != 0) {
-      System.out.println("unbalanced brackets");
-    } else {
-      System.out.println("balanced brackets");
+    
+    for(int i = 0; i < ans.length; i++){
+      System.out.print(ans[i] + " ");
     }
+    System.out.println();
 
   }
 }
