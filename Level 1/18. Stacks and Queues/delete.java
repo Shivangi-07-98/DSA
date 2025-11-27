@@ -4,35 +4,33 @@ import java.util.*;
 public class delete {
   public static void main(String[] args) {
     Scanner scn = new Scanner(System.in);
-    int n = scn.nextInt(); // 9
+    int n = scn.nextInt(); // 7
     int[] arr = new int[n];
-    for(int i = 0; i < n; i++){
-      arr[i] = scn.nextInt(); // 2 5 9 3 1 12 6 8 7
+    for (int i = 0; i < n; i++) {
+      arr[i] = scn.nextInt(); // 100 80 60 70 60 75 85 = 1 1 1 2 1 4 6
     }
 
-    Stack<Integer> stack = new Stack<>();
-    stack.push(arr[n-1]);
-
     int[] ans = new int[n];
-    ans[n-1] = -1;
+    ans[0] = 1;
+    Stack<Integer> stack = new Stack<>();
+    stack.push(0);
 
-    for(int i = n-2; i >= 0; i--){
+    for (int i = 1; i < n; i++) {
       while(stack.size() > 0 && stack.peek() <= arr[i]){
         stack.pop();
       }
-      if(stack.size() > 0 && stack.peek() > arr[i]){
-        ans[i] = (stack.peek());
+      if (stack.size() == 0) {
+        ans[i] = i + 1;
+      } else {
+        ans[i] = i - stack.peek();
       }
-      if(stack.size() == 0){
-        ans[i] = -1;
-      }
-      stack.push(arr[i]);
+
+      stack.push(i);
     }
-    
-    for(int i = 0; i < ans.length; i++){
+
+    for (int i = 0; i < n; i++) {
       System.out.print(ans[i] + " ");
     }
-    System.out.println();
 
   }
 }

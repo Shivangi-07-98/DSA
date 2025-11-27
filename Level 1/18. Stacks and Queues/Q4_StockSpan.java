@@ -42,3 +42,26 @@ public class Q4_StockSpan {
     }
   }
 }
+
+// Question in plain words:
+// For each element, start from that position and move left one step at a time.
+// Keep counting steps as long as left values are <= current value.
+// Stop when you meet a left value that is bigger, or when you reach the start.
+// The count (including the current position) is the answer for that element.
+
+// Example arr = [100, 80, 60, 70, 60, 75, 85]:
+// 100 -> only itself (no left values) => count 1
+// 80  -> stop at 100 => count 1
+// 60  -> stop at 80 => count 1
+// 70  -> include 70, 60, stop at 80 => count 2
+// 60  -> stop at 70 => count 1
+// 75  -> include 75, 60, 70, 60; stop at 80 => count 4
+// 85  -> include 85, 75, 60, 70, 60, 80, stop at 100 => count 6
+// Final array = [1, 1, 1, 2, 1, 4, 6]
+
+// Sample Input:
+// 7
+// 100 80 60 70 60 75 85
+//
+// Sample Output:
+// 1 1 1 2 1 4 6

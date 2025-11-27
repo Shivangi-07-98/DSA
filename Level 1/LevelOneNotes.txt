@@ -19,6 +19,9 @@ stack.pop();                   queue.remove();
 stack.peek();                  queue.peek();
 stack.size();                  queue.size();
 
+next greater element to the right - front, back
+next greater element to the left - front, back
+
 -------------------------------------------------------------------
 
 DP - 
