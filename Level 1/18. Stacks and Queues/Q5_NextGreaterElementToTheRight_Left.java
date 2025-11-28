@@ -1,7 +1,7 @@
 import java.io.*;
 import java.util.*;
 
-public class delete {
+public class Q5_NextGreaterElementToTheRight_Left {
   public static void main(String[] args) {
 
     Scanner scn = new Scanner(System.in);
@@ -16,7 +16,7 @@ public class delete {
     stack.push(0);
 
     for (int i = 1; i < n; i++) {
-      while (stack.size() > 0 && arr[i] > arr[stack.peek()]) {
+      while (stack.size() > 0 && arr[i] >= arr[stack.peek()]) {
         int idx = stack.pop();
         ans[idx] = arr[i];
       }
