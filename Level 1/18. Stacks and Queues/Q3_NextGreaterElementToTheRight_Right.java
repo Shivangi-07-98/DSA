@@ -3,7 +3,7 @@ import java.util.*;
 
 // O(n) - each element pushed and popped at most once
 // Find next greater element to the right for each element, if not found print -1
-public class Q3_NextGreaterElementToTheRight {
+public class Q3_NextGreaterElementToTheRight_Right {
   public static void main(String[] args) throws Exception {
     Scanner scn = new Scanner(System.in);
 
