@@ -15,17 +15,7 @@ public class delete {
     Stack<Integer> stack = new Stack<>();
     stack.push(0);
 
-    for (int i = 1; i < n; i++) {
-      while (stack.size() > 0 && arr[i] > arr[stack.peek()]) {
-        int idx = stack.pop();
-        ans[idx] = arr[i];
-      }
-      stack.push(i);
-    }
-
-    while (stack.size() > 0) {
-      ans[stack.pop()] = -1;
-    }
+    
 
     for (int i = 0; i < n; i++) {
       System.out.print(ans[i] + " ");
