@@ -4,3 +4,5 @@
 4. stock span - next greater element to the left_left
 5. next greater element to the right_left
 6. next greater element to the left_right
+7. largest area histogram
+8. 
