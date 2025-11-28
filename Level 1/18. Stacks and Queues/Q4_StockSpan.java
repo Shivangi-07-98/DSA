@@ -1,6 +1,7 @@
 import java.io.*;
 import java.util.*;
 
+// next greater element to the left_left
 // O(n) - each element pushed and popped at most once
 // Find stock span - number of consecutive days (including current) where price was <= current price
 public class Q4_StockSpan {
