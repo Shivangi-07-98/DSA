@@ -7,14 +7,12 @@ public class Q8_SlidingWindowMaximum {
     int n = scn.nextInt(); // 11
     int[] arr = new int[n];
     for (int i = 0; i < n; i++) {
-      arr[i] = scn.nextInt(); // 5 3 4 5 5 4 3 6 5 6 4 = 7 2 3 7 7 7 7 11 9 11 11 (idx)
+      arr[i] = scn.nextInt(); // Example: [1 3 2 4 5 2 1 6 3 4 2]
     }
     int k = scn.nextInt(); // 4
-    // if k is 7, 0-14 have elements meaning n = 15 elements in n = 21
-    // or 0 to arr.length - 7 have elements so array size is arr.length - 7 + 1
-    // so array of size n - k + 1
 
-    int[] ans = new int[n - k + 1]; // 11-4+1 = 8 windows (indices 0-7)
+    // array of size n - k + 1
+    int[] ans = new int[n - k + 1]; // 11-4+1 = 8 (stores max for each window)
 
     // next greater element to the right_right
     int[] right = new int[n];
@@ -37,22 +35,25 @@ public class Q8_SlidingWindowMaximum {
     }
 
     // for (int i = 0; i < n; i++) {
-    // System.out.print(right[i] + " "); // 7 2 3 7 7 7 7 11 9 11 11
+    // System.out.print(right[i] + " "); // 1 3 3 4 7 7 7 11 9 11 11 (idx)
     // }
+    // System.out.println();
 
     int j = 0; // travels in right arr
-    for (int i = 0; i < ans.length; i++) { // 0 to n-k (8 windows for n=11, k=4)
+    for (int i = 0; i < ans.length; i++) {
       if (j < i) {
         j = i;
       }
-      while (right[j] < i + k) { // 4, 5, 6, 7, 8, 9, 10
+      // Keep jumping to next greater element while it's still within window [i, i+k-1]
+      while (right[j] < i + k) { // 4 5 6 7 8 9 10 11
         j = right[j];
       }
+      // Now j points to max element in window i
       ans[i] = arr[j];
     }
 
     for (int val : ans) {
-      System.out.print(val + " "); // 7 2 3 7 7 7 7 11 9 11 11
+      System.out.print(val + " "); // 4 5 5 5 6 6 6 6
     }
 
   }
