@@ -7,4 +7,17 @@
 7. largest area histogram
 8. sliding window maximum
 9. infix evaluation
-10. 
+10. infix conversions
+11. postfix evaluation and conversions
+12. prefix evaluation and conversions
+13. celebrity problem
+14. merge overlapping interval
+15. smallest number following pattern
+16. normal stack
+17. dynamic stack
+18. minimum stack 1
+19. minimum stack - constant space
+20. normal queue
+21. dynamic queue
+22. queue to stack adapter - push efficient
+23. 
