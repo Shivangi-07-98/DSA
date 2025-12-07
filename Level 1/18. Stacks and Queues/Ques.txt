@@ -12,8 +12,8 @@
 12. prefix evaluation and conversions
 13. smallest number following pattern
 14. merge overlapping interval
-
 15. celebrity problem
+
 16. normal stack
 17. dynamic stack
 18. minimum stack 1
