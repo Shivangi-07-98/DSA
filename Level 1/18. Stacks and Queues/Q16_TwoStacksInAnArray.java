@@ -12,7 +12,7 @@ public class Q16_TwoStacksInAnArray {
     public TwoStack(int cap) {
       data = new int[cap];
       tos1 = -1; // stack 1 empty
-      tos2 = cap; // stack 2 empty
+      tos2 = data.length; // stack 2 empty
     }
 
     int size1() {
@@ -24,7 +24,7 @@ public class Q16_TwoStacksInAnArray {
     }
 
     void push1(int val) {
-      if (tos2 == tos1 + 1) {
+      if (tos1 == tos2 - 1) {
         System.out.println("Stack overflow");
         return;
       }
@@ -33,7 +33,7 @@ public class Q16_TwoStacksInAnArray {
     }
 
     void push2(int val) {
-      if (tos2 == tos1 + 1) {
+      if (tos1 == tos2 - 1) {
         System.out.println("Stack overflow");
         return;
       }
