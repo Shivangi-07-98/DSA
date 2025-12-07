@@ -21,4 +21,7 @@
 21. normal queue
 22. dynamic queue
 23. queue to stack adapter - push efficient
-24. 
+24. queue to stack adapter - pop efficient
+25. stack to queue adapter - add efficient
+26. stack to queue adapter - remove efficient
+27. 
