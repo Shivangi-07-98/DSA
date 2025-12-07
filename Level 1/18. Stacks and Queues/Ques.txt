@@ -13,12 +13,12 @@
 13. smallest number following pattern
 14. merge overlapping interval
 15. celebrity problem
-
-16. normal stack
-17. dynamic stack
-18. minimum stack 1
-19. minimum stack - constant space
-20. normal queue
-21. dynamic queue
-22. queue to stack adapter - push efficient
-23. 
+16. two stacks in an array
+17. normal stack
+18. dynamic stack
+19. minimum stack 1
+20. minimum stack - constant space
+21. normal queue
+22. dynamic queue
+23. queue to stack adapter - push efficient
+24. 
