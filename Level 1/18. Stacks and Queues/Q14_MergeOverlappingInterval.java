@@ -6,11 +6,11 @@ import java.util.*;
 public class Q14_MergeOverlappingInterval {
   public static void main(String[] args) {
     Scanner scn = new Scanner(System.in);
-    int n = scn.nextInt();
-    int[][] arr = new int[n][2];
-    for (int j = 0; j < n; j++) {
-      arr[j][0] = scn.nextInt();
-      arr[j][1] = scn.nextInt();
+    int n = scn.nextInt(); // 6
+    int[][] arr = new int[n][2]; // 6 2
+    for (int i = 0; i < n; i++) { // 0-5
+      arr[i][0] = scn.nextInt();
+      arr[i][1] = scn.nextInt();
     }
     mergeOverlappingIntervals(arr);
     scn.close();
@@ -25,6 +25,7 @@ public class Q14_MergeOverlappingInterval {
       this.end = end;
     }
 
+    // +ve hai this bada hai, 0 hai this barabar hai, -ve hai this chhota hai
     public int compareTo(Pair o) {
       if (this.start != o.start) {
         return this.start - o.start;
@@ -36,15 +37,15 @@ public class Q14_MergeOverlappingInterval {
 
   public static void mergeOverlappingIntervals(int[][] arr) {
     // merge overlapping intervals and print in increasing order of start time
-    Pair[] pairs = new Pair[arr.length];
-    for (int i = 0; i < pairs.length; i++) {
+    Pair[] pairs = new Pair[arr.length]; // 6
+    for (int i = 0; i < pairs.length; i++) { // 0-5
       pairs[i] = new Pair(arr[i][0], arr[i][1]);
     }
 
     Arrays.sort(pairs);
 
     Stack<Pair> st = new Stack<>();
-    for (int i = 0; i < pairs.length; i++) {
+    for (int i = 0; i < pairs.length; i++) { // 0-5
       if (i == 0) {
         st.push(pairs[0]);
       } else {
@@ -75,7 +76,7 @@ public class Q14_MergeOverlappingInterval {
 // 1. Convert intervals to Pair objects
 // 2. Sort pairs by start time (then end time if start is same)
 // 3. Use stack to merge: if current.start > top.end, push new interval
-//    else merge by updating top.end = max(curr.end, top.end)
+// else merge by updating top.end = max(curr.end, top.end)
 // 4. Reverse stack and print
 
 // Sample Input:
