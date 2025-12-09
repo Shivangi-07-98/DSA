@@ -53,7 +53,7 @@ public class Q6_MergeKSortedLists {
     Scanner scn = new Scanner(System.in);
     int k = scn.nextInt(); // 4
     ArrayList<ArrayList<Integer>> lists = new ArrayList<>();
-    for (int i = 0; i < k; i++) {
+    for (int i = 0; i < k; i++) { // 0 1 2 3
       ArrayList<Integer> list = new ArrayList<>();
 
       int n = scn.nextInt();
