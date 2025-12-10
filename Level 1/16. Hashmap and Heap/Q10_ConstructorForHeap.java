@@ -10,7 +10,7 @@ public class Q10_ConstructorForHeap {
       data = new ArrayList<>();
     }
 
-    // Write a constructor for heap to accept array and do complexity of O(n) instead of O(nlog(n))
+    // Write a constructor for heap to accept an array and do complexity of O(n) instead of O(nlog(n))
     public MyPriorityQueue(int[] arr) {
       data = new ArrayList<>();
       // O(nlog(n))
@@ -111,6 +111,6 @@ public class Q10_ConstructorForHeap {
       System.out.print(val + " ");
       pq.remove();
     }
-
   }
+
 }
