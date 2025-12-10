@@ -7,5 +7,6 @@
 7. sort k sorted array
 8. median priority queue - imp
 9. write priority queue using heap
-10. write hashmap
-11. 
+10. constructor for heap
+11. write hashmap
+12. 

@@ -1,7 +1,7 @@
 import java.io.*;
 import java.util.*;
 
-public class ConstructorForHeapQ { 
+public class Q10_ConstructorForHeap { 
 
   public static class MyPriorityQueue {
     ArrayList<Integer> data;
