@@ -1,3 +1,4 @@
+import java.io.*;
 import java.util.*;
 
 public class Q11_WriteHashmap {
@@ -11,7 +12,7 @@ public class Q11_WriteHashmap {
       cmptr = null;
     }
 
-    public MyPriorityQueue(Comparator<T> cmptr) {
+    public MyPriorityQueue(Comparator cmptr) {
       data = new ArrayList<>();
       this.cmptr = cmptr;
     }
@@ -77,6 +78,18 @@ public class Q11_WriteHashmap {
       }
     }
 
+    public void swap(int i, int j) {
+      T ith = data.get(i);
+      T jth = data.get(j);
+      data.set(i, jth);
+      data.set(j, ith);
+    }
+
+    // O(1)
+    public int size() {
+      return data.size();
+    }
+
     boolean isSmaller(int i, int j) {
       T ith = data.get(i);
       T jth = data.get(j);
@@ -95,18 +108,6 @@ public class Q11_WriteHashmap {
           return false;
         }
       }
-    }
-
-    public void swap(int i, int j) {
-      T ith = data.get(i);
-      T jth = data.get(j);
-      data.set(i, jth);
-      data.set(j, ith);
-    }
-
-    // O(1)
-    public int size() {
-      return data.size();
     }
 
   }
@@ -200,7 +201,7 @@ public class Q11_WriteHashmap {
       pqMarks.remove();
       System.out.println(student);
     }
-    
+
   }
 
 }
