@@ -2,49 +2,44 @@ import java.util.*;
 
 public class Q11_WriteHashmap {
 
-  public static class MyPriorityQueue {
-    ArrayList<Integer> data;
+  public static class MyPriorityQueue<T> {
+    ArrayList<T> data;
+    Comparator<T> cmptr;
 
     public MyPriorityQueue() {
       data = new ArrayList<>();
+      cmptr = null;
     }
 
-    public MyPriorityQueue(int[] arr) {
+    public MyPriorityQueue(Comparator<T> cmptr) {
       data = new ArrayList<>();
-
-      for (int val : arr) {
-        data.add(val);
-      }
-      // n = 11
-      for (int i = data.size() / 2 - 1; i >= 0; i--) { // 4, 3, 2, 1, 0
-        downheapify(i);
-      }
+      this.cmptr = cmptr;
     }
 
     // O(log n)
-    public void add(int val) {
+    public void add(T val) {
       data.add(val);
       upheapify(data.size() - 1);
     }
 
     // O(log n)
-    public int remove() {
+    public T remove() {
       if (data.size() == 0) {
         System.out.println("Underflow");
-        return -1;
+        return null;
       }
 
       swap(0, data.size() - 1);
-      int val = data.remove(data.size() - 1);
+      T val = data.remove(data.size() - 1);
       downheapify(0);
       return val;
     }
 
     // O(1)
-    public int peek() {
+    public T peek() {
       if (data.size() == 0) {
         System.out.println("Underflow");
-        return -1;
+        return null;
       }
       return data.get(0);
     }
@@ -56,7 +51,7 @@ public class Q11_WriteHashmap {
       }
 
       int pi = (i - 1) / 2;
-      if (data.get(pi) > data.get(i)) {
+      if (isSmaller(i, pi) == true) {
         swap(pi, i);
         upheapify(pi);
       }
@@ -67,12 +62,12 @@ public class Q11_WriteHashmap {
       int mini = i;
 
       int li = 2 * i + 1;
-      if (li < data.size() && data.get(li) < data.get(mini)) {
+      if (li < data.size() && isSmaller(li, mini) == true) {
         mini = li;
       }
 
       int ri = 2 * i + 2;
-      if (ri < data.size() && data.get(ri) < data.get(mini)) {
+      if (ri < data.size() && isSmaller(ri, mini) == true) {
         mini = ri;
       }
 
@@ -82,9 +77,29 @@ public class Q11_WriteHashmap {
       }
     }
 
+    boolean isSmaller(int i, int j) {
+      T ith = data.get(i);
+      T jth = data.get(j);
+      if (cmptr != null) {
+        if (cmptr.compare(ith, jth) < 0) {
+          return true;
+        } else {
+          return false;
+        }
+      } else {
+        Comparable cith = (Comparable) ith;
+        Comparable cjth = (Comparable) jth;
+        if (cith.compareTo(cjth) < 0) {
+          return true;
+        } else {
+          return false;
+        }
+      }
+    }
+
     public void swap(int i, int j) {
-      int ith = data.get(i);
-      int jth = data.get(j);
+      T ith = data.get(i);
+      T jth = data.get(j);
       data.set(i, jth);
       data.set(j, ith);
     }
@@ -114,7 +129,13 @@ public class Q11_WriteHashmap {
     }
 
     public int compareTo(Student other) {
-      return this.ht - other.ht;
+      return this.name.compareTo(other.name);
+    }
+  }
+
+  public static class StudentHeightComparator implements Comparator<Student> {
+    public int compare(Student s1, Student s2) {
+      return s1.ht - s2.ht;
     }
   }
 
@@ -132,22 +153,31 @@ public class Q11_WriteHashmap {
 
   public static void main(String[] args) throws Exception {
     Student[] students = new Student[5];
-    students[0] = new Student("A", 180, 75, 90);
-    students[1] = new Student("B", 150, 85, 33);
-    students[2] = new Student("C", 185, 72, 99);
-    students[3] = new Student("D", 165, 65, 75);
-    students[4] = new Student("E", 177, 55, 88);
+    students[0] = new Student("Amit", 180, 75, 90);
+    students[1] = new Student("Sumit", 150, 85, 33);
+    students[2] = new Student("Neha", 185, 72, 99);
+    students[3] = new Student("Kunal", 165, 65, 75);
+    students[4] = new Student("Aryan", 177, 55, 88);
 
     // agar aap comparator provide krte ho toh wo comparable ko use nhi krta fir wo
     // comparator use krta hai
-    PriorityQueue<Student> pqHt = new PriorityQueue<>();
-    PriorityQueue<Student> pqWt = new PriorityQueue<>(new StudentWeightComparator());
-    PriorityQueue<Student> pqMarks = new PriorityQueue<>(new StudentMarksComparator());
+    MyPriorityQueue<Student> pq = new MyPriorityQueue<>();
+    MyPriorityQueue<Student> pqHt = new MyPriorityQueue<>(new StudentHeightComparator());
+    MyPriorityQueue<Student> pqWt = new MyPriorityQueue<>(new StudentWeightComparator());
+    MyPriorityQueue<Student> pqMarks = new MyPriorityQueue<>(new StudentMarksComparator());
 
     for (Student student : students) {
+      pq.add(student);
       pqHt.add(student);
       pqWt.add(student);
       pqMarks.add(student);
+    }
+
+    System.out.println("On the basis of name");
+    while (pq.size() > 0) {
+      Student student = pq.peek();
+      pq.remove();
+      System.out.println(student);
     }
 
     System.out.println("On the basis of height");
@@ -170,6 +200,7 @@ public class Q11_WriteHashmap {
       pqMarks.remove();
       System.out.println(student);
     }
+    
   }
 
 }
