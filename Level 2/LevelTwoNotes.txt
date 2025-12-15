@@ -1,0 +1,61 @@
+Hashmap and Heap -
+
+Comparable - 
+static class Pair implements Comparable<Pair> {
+  int data;
+  int li;
+  int di;
+
+  public int compareTo(Pair o) {
+    return this.data - o.data;
+  }
+}
+
+HashMap<String, Integer> pmap = new HashMap<>();
+pmap.put("India", 130); // O(1)
+pmap.remove("India"); // O(1)
+System.out.println(pmap.containsKey("India")); // O(1)
+
+Set<String> keys = pmap.keySet(); // O(n)
+for (String key : keys) {
+  System.out.println(key + " " + pmap.get(key));
+}
+
+PriorityQueue<Integer> pq = new PriorityQueue<>(); // gives priority to small numbers
+PriorityQueue<Integer> pq = new PriorityQueue<>(Collections.reverseOrder()); // gives priority to bigger numbers
+
+-------------------------------------------------------------------
+
+Graphs - 
+
+-------------------------------------------------------------------
+
+Stack and Queue - 
+
+stack - bread packet
+push, pop, peek O(1)
+
+queue - ticket line
+add, remove, peek 
+
+Stack<Integer> stack = new Stack<>(); // just like arraylist
+Stack<String> stack = new Stack<>();
+Stack<Character> stack = new Stack<>(); // not Characters
+
+Queue<Integer> queue = new ArrayDeque<>();
+Queue<Node> queue = new ArrayDeque<Node>();
+
+System.out.println(stack);     System.out.println(queue);
+stack.push(10);                queue.add(10);
+stack.pop();                   queue.remove();
+stack.peek();                  queue.peek();
+stack.size();                  queue.size();
+
+next greater element to the right - front, back
+next greater element to the left - front, back
+
+-------------------------------------------------------------------
+
+DP - 
+Memoization = recursion
+Tabulation = iteration
