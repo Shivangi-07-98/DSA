@@ -1,1 +1,27 @@
-1. 
+1. subarray with equal number of 0 and 1
+
+2. check ap sequence
+3. array of doubled pair
+4. morning assembly
+5. rabbits in forest
+6. number of subarrays sum exactly k
+7. x of a kind in a deck
+8. substring with equal 0 1 and 2
+9. subarray sum divisible by k
+10. count pair whose sum is divisible by k
+11. grid illumination
+12. brick wall
+13. minimum number of refueling spots
+14. potions (hard version)
+15. same differences
+16. longest consecutive 1's
+17. island perimeter
+18. the skyline problem
+19. pairs of coinciding points
+20. length of largest subarray with continuous element
+21. length of largest subarray with continuous element 2
+22. rearrange character string such that no two are same
+23. rearrange k distance apart
+24. same frequency after one removal
+25. mode of frequencies
+26. line reflection
