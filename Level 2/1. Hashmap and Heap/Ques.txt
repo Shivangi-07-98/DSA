@@ -1,13 +1,13 @@
 1. subarray with equal number of 0 and 1
 2. substring with equal 0 1 and 2
 3. number of subarrays sum exactly k
+4. subarray sum divisible by k
 
-4. morning assembly
 5. rabbits in forest
 6. array of doubled pair
 7. x of a kind in a deck
 8. check ap sequence
-9. subarray sum divisible by k
+9. morning assembly
 10. count pair whose sum is divisible by k
 11. grid illumination
 12. brick wall
