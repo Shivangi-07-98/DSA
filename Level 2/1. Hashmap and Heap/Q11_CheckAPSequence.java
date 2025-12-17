@@ -1,3 +1,5 @@
+// LeetCode 1502: Can Make Arithmetic Progression From Sequence
+// https://leetcode.com/problems/can-make-arithmetic-progression-from-sequence/
 // Time Complexity: O(n)
 // Space Complexity: O(n)
 import java.io.*;
