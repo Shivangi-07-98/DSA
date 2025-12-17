@@ -4,9 +4,9 @@
 4. subarray sum divisible by k
 5-8. longest subarray
 9. count pair whose sum is divisible by k
+10. x of a kind in a deck
 
-6. array of doubled pair
-7. x of a kind in a deck
+7. array of doubled pair 
 8. check ap sequence
 9. morning assembly
 10. rabbits in forest
