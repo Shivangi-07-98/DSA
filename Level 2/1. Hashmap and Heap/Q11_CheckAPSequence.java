@@ -1,5 +1,18 @@
 // LeetCode 1502: Can Make Arithmetic Progression From Sequence
 // https://leetcode.com/problems/can-make-arithmetic-progression-from-sequence/
+// 
+// WHAT IS AP SEQUENCE?
+// AP = Arithmetic Progression
+// An AP sequence has CONSTANT DIFFERENCE between consecutive numbers
+// Example: [1, 3, 5, 7] -> difference is 2 (3-1=2, 5-3=2, 7-5=2)
+// Example: [2, 4, 6, 8, 10] -> difference is 2
+// Example: [5, 10, 15, 20] -> difference is 5
+// 
+// WHAT DOES THIS QUESTION ASK?
+// Given an array, can we REARRANGE it to form an AP sequence?
+// Example: [3, 5, 1] can be rearranged to [1, 3, 5] -> YES (difference = 2)
+// Example: [1, 2, 4] cannot form AP -> NO (no constant difference possible)
+// 
 // Time Complexity: O(n)
 // Space Complexity: O(n)
 import java.io.*;
@@ -21,34 +34,26 @@ public class Q11_CheckAPSequence {
 
   // check if array can be rearranged to form AP sequence
   static boolean canMakeAP(int[] arr, int n) {
-    if (n <= 2) {
-      return true;
-    }
-
-    int min = Integer.MAX_VALUE;
-    int max = Integer.MIN_VALUE;
     HashSet<Integer> set = new HashSet<>();
+    int min = Integer.MAX_VALUE;
+    int smin = Integer.MAX_VALUE;
 
     for (int val : arr) {
-      min = Math.min(min, val);
-      max = Math.max(max, val);
       set.add(val);
+      if (val < min) {
+        smin = min;
+        min = val;
+      } else if (val < smin) {
+        smin = val;
+      }
     }
 
-    int diff = max - min;
-    if (diff == 0) {
-      return true;
-    }
-
-    if (diff % (n - 1) != 0) {
-      return false;
-    }
-
-    int d = diff / (n - 1);
+    int d = smin - min;
 
     for (int i = 0; i < n; i++) {
-      int expected = min + i * d;
-      if (!set.contains(expected)) {
+      if (set.contains(min)) {
+        min = min + d;
+      } else {
         return false;
       }
     }
@@ -59,12 +64,14 @@ public class Q11_CheckAPSequence {
 }
 
 /*
- * Sample Input:
+ * Sample Input 1:
  * 4
  * 3 5 1 7
  * 
- * Sample Output:
- * false
+ * Sample Output 1:
+ * true
+ * 
+ * Explanation: Can be rearranged to [1, 3, 5, 7] which is AP with difference = 2
  * 
  * Sample Input 2:
  * 4
@@ -72,4 +79,27 @@ public class Q11_CheckAPSequence {
  * 
  * Sample Output 2:
  * true
+ * 
+ * Explanation: Already an AP sequence with difference = 2
+ * 
+ * Sample Input 3:
+ * 3
+ * 1 2 4
+ * 
+ * Sample Output 3:
+ * false
+ * 
+ * Explanation: Cannot form AP. 
+ * If arranged as [1, 2, 4]: difference = 1, then 2 (not constant)
+ * If arranged as [1, 4, 2]: difference = 3, then -2 (not constant)
+ * No arrangement gives constant difference -> NO
+ * 
+ * Sample Input 4:
+ * 3
+ * 1 1 1
+ * 
+ * Sample Output 4:
+ * true
+ * 
+ * Explanation: All numbers same, difference = 0 (constant) -> YES
  */
