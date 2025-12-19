@@ -49,7 +49,7 @@ public class Intro1 {
 
 }
 
-// in graphs it can connect again
+// in graphs it can connect again, and all nodes are equal not like parent and child in trees
 // in trees one direction
 
 // To represent graph 2 representation adjacency matrix and adjacency list
