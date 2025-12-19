@@ -49,6 +49,7 @@ public class Q1_HasPath {
 
   public static boolean hasPath(ArrayList<Edge>[] graph, boolean[] visited, int src, int dest) {
     // self
+    // nbr pehle khud check hoga niche bs wo apne nbr ko check hone ke liye yha bhejta hai, asli checking yhi hoti hai 
     if (src == dest) {
       return true;
     }
@@ -58,8 +59,9 @@ public class Q1_HasPath {
     for (int i = 0; i < graph[src].size(); i++) {
       Edge edge = graph[src].get(i);
       int nbr = edge.v2;
+      // kuki hme har new node check krna hai, old toh checked hai
       if (visited[nbr] == false) {
-        boolean pathExists = hasPath(graph, visited, nbr, dest);
+        boolean pathExists = hasPath(graph, visited, nbr, dest); // src updated
         if (pathExists) {
           return true;
         }
