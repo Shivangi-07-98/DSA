@@ -42,7 +42,7 @@ public class Q3_Multisolver {
   static PriorityQueue<Pair> pq = new PriorityQueue<>();
 
   public static void multisolver(ArrayList<Edge>[] graph, int src, int dest, boolean[] visited, int criteria, int k, String psf, int wsf) {
-    if (src == dest) {
+    if (src == dest) { // dest tk ka saare chhote bade etc raste print krne hai
       if (psf.length() > 0) {
         // Update smallest path
         if (wsf < spathwt) {
