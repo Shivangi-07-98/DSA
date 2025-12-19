@@ -50,7 +50,7 @@ public class Q2_PrintAllPaths {
     // self
     if (src == dest) {
       System.out.println(psf);
-      return;
+      return; // iss return se uske nbr par hi visit nhi hoga, nbr hone ke baad bhi
     }
 
     visited[src] = true;
@@ -64,6 +64,7 @@ public class Q2_PrintAllPaths {
       }
     }
 
+    // yha par tbh aayenge jb khud check ho chuka hoga, children bhi check ho chuke honge mtlb pura for loop chl chuka hoga
     visited[src] = false;
   }
 
