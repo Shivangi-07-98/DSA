@@ -65,8 +65,7 @@ public class Q8_BreadthFirstTraversal {
 
       System.out.println(rem.vtx + "@" + rem.psf);
 
-      for (int i = 0; i < graph[rem.vtx].size(); i++) {
-        Edge e = graph[rem.vtx].get(i);
+      for (Edge e : graph[rem.vtx]) {
         if (visited[e.v2] == false) {
           queue.add(new Pair(e.v2, rem.psf + e.v2));
         }
