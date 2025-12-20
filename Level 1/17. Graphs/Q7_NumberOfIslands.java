@@ -63,3 +63,7 @@ public class Q7_NumberOfIslands {
 //
 // output
 // 3
+
+// 0 is land, 1 is water
+// every cell is a vertex, edges are virtual
+// find number of islands, connect all 0, and give answer i.e. 3
