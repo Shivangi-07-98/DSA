@@ -92,3 +92,8 @@ public class Q5_IsGraphConnected {
 //
 // output
 // false
+
+// break vs continue vs return:
+// break: Exits the loop immediately, remaining iterations won't run
+// continue: Skips current iteration, continues with next iteration of same loop
+// return: Exits the entire function/method immediately, no code below runs
