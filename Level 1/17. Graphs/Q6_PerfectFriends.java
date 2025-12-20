@@ -49,8 +49,8 @@ public class Q6_PerfectFriends {
     }
 
     int count = 0;
-    for (int i = 0; i < comps.size(); i++) {
-      for (int j = i + 1; j < comps.size(); j++) {
+    for (int i = 0; i < comps.size(); i++) { // 0 1 2
+      for (int j = i + 1; j < comps.size(); j++) { // 1 2, 2, loop will not run
         int si = comps.get(i).size();
         int sj = comps.get(j).size();
         int pairs = si * sj;
