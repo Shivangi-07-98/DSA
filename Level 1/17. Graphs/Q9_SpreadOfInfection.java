@@ -76,6 +76,7 @@ public class Q9_SpreadOfInfection {
       }
     }
 
+    // find how many people will get infected in time t
     System.out.println(count);
     scn.close();
   }
