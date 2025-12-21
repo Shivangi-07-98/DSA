@@ -1,4 +1,5 @@
 // O(V + E) - BFS processes each vertex and edge once level-wise.
+// BFS - shortest path in terms of edges
 import java.io.*;
 import java.util.*;
 
