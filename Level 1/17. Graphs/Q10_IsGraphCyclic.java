@@ -54,7 +54,7 @@ public class Q10_IsGraphCyclic {
         if (isCyclic == true) {
           System.out.println(true);
           scn.close();
-          return;
+          return; // niche false print na ho issiliye
         }
       }
     }
@@ -70,21 +70,22 @@ public class Q10_IsGraphCyclic {
       // remove, mark*, work, add*
       Pair rem = queue.remove();
 
-      if (visited[rem.vtx] == true) {
-        return true;
+      // pehle se mark hai mtlb yha pauchne ke 2 raste hai mtlb cycle hai
+      if (visited[rem.vtx] == true) { // khud ko check krta hai visited hai ya nhi
+        return true; // ek hi jagah pr do baar pauch gye mtlb cycle hai
       }
       visited[rem.vtx] = true;
 
       // System.out.println(rem.vtx + "@" + rem.psf);
 
       for (Edge e : graph[rem.vtx]) {
-        if (visited[e.v2] == false) {
+        if (visited[e.v2] == false) { // nbr ko check krta hai visited hai ya nhi fir unvisited nbr ko add krega
           queue.add(new Pair(e.v2, rem.psf + e.v2));
         }
       }
     }
 
-    return false;
+    return false; // agar yha tk koi cycle nhi mili toh return false
   }
 
 }
@@ -116,3 +117,10 @@ public class Q10_IsGraphCyclic {
 //
 // output
 // true
+
+// CYCLIC GRAPH DEFINITION:
+// A cycle is a path where the start and end are the same.
+// A graph is cyclic if it contains at least one cycle.
+// Connected graph: Agar cycle hai toh cyclic hai.
+// In disconnected graphs, if any component contains a cycle, the whole graph is cyclic.
+// Example: 3 disconnected components mein se 2 acyclic hain aur 1 cyclic hai, toh poora graph cyclic hai.
