@@ -70,9 +70,7 @@ public class Q11_IsGraphBipartite {
       Pair rem = queue.remove();
 
       if (visited[rem.vtx] != null) {
-        int originalValue = visited[rem.vtx];
-        int newValue = rem.level % 2;
-        if (originalValue != newValue) {
+        if (visited[rem.vtx] != rem.level % 2) { // old number != new number
           return false;
         }
       } else {
