@@ -96,3 +96,8 @@ public class Q15_IterativeDepthFirstTraversal {
 // 5@23465
 // 0@230
 // 1@2301
+
+// ye wali stack heap mai bnti hai kuki ye ek object hai iski koi limit nhi hoti
+// hai hum call stack ki baat kar rhe hai
+// java ke andar recursion ki call stack ki depth 10k hoti hai
+// will not work for linear graph from 1-10,000 - stack overflow
