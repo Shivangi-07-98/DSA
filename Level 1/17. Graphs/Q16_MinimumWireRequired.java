@@ -101,10 +101,11 @@ public class Q16_MinimumWireRequired {
 // [5-4@3]
 // [6-5@3]
 
+// prim's algorithm mai jb hum next vertex pr move krenge tbh last vertex and dono ke beech ki weight, note - only last vertex and last weight not all vertex like psf and not all weight like wsf will be used
+
 /*
  * MINIMUM SPANNING TREE (MST):
  * - Connected + Acyclic (Tree)
- * - Subset of graph: includes ALL vertices, SOME edges
+ * - Subset of a graph which includes all vertices, but not all edges
  * - Minimum total weight among all spanning trees
- * - Prim's algorithm: PriorityQueue se minimum weight edge pick karte hain
  */
