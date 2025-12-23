@@ -1,6 +1,6 @@
 import java.util.*;
 
-// O(V^2) - building + traversing the grid as a dense adjacency matrix.
+// O(V^2)
 // Number of islands (same as Q7) but cells projected onto an adjacency matrix.
 public class Q20_NumberOfIslandsUsingAdjacencyMatrix {
 

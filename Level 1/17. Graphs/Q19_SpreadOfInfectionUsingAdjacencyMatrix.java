@@ -1,6 +1,6 @@
 import java.util.*;
 
-// O(V^2) - BFS over adjacency matrix scans every vertex for neighbors.
+// O(V^2)
 // Spread of infection (same as Q9) but edges stored in an adjacency matrix.
 public class Q19_SpreadOfInfectionUsingAdjacencyMatrix {
 

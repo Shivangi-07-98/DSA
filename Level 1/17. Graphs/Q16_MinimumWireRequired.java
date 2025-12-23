@@ -1,4 +1,5 @@
-// O(E log V) - Prim's algorithm with a priority queue.
+// Prim's Algorithm
+// O(E log V)
 import java.io.*;
 import java.util.*;
 

@@ -1,4 +1,5 @@
-// O(V + E) - DFS-based topological sort touches each edge once.
+// DFS based topological sort
+// O(V + E)
 import java.util.*;
 
 public class Q17_OrderOfCompilation {

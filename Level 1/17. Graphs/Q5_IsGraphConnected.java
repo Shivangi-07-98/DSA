@@ -1,4 +1,4 @@
-// O(V + E) - single DFS/BFS spans all vertices to check connectivity.
+// O(V + E)
 import java.io.*;
 import java.util.*;
 

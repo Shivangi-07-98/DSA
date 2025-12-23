@@ -1,4 +1,4 @@
-// O(V + E) - stack-based DFS touches each vertex and edge once.
+// O(V + E)
 import java.io.*;
 import java.util.*;
 

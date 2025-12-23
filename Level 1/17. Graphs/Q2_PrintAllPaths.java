@@ -1,4 +1,4 @@
-// O(V!) - enumerates every simple path between src and dest.
+// O(V!)
 import java.io.*;
 import java.util.*;
 

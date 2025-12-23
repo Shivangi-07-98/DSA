@@ -1,4 +1,4 @@
-// O(V!) - backtracking enumerates every Hamiltonian permutation.
+// O(V!)
 import java.io.*;
 import java.util.*;
 
@@ -82,10 +82,8 @@ public class Q13_HamiltonianPathAndCycle {
 
 /*
  * Hamiltonian Path ek aisa path jo graph ke SARE vertices ko exactly ek baar
- * visit kare
- * (koi vertex repeat nahi honi chahiye). Last vertex se starting vertex tak
- * edge nahi hai aur hai toh Hamiltonian Cycle
- * 
+ * visit kare (koi vertex repeat nahi honi chahiye).
+ * Last vertex aur starting vertex ke beech ek edge hai toh Hamiltonian Cycle hai
  */
 
 // input

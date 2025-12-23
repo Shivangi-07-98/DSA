@@ -1,4 +1,4 @@
-// O(V + E) - DFS explores each vertex/edge once while building components.
+// O(V + E)
 import java.io.*;
 import java.util.*;
 

@@ -1,4 +1,4 @@
-// O(V + E) - BFS queue simulates infection across each edge once.
+// O(V + E)
 import java.io.*;
 import java.util.*;
 

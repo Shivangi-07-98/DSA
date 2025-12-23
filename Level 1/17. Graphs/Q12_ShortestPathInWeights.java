@@ -1,5 +1,5 @@
 // Dijkstra's Algorithm
-// O(E log V) - Dijkstra with a priority queue processes each edge once.
+// O(E log V)
 import java.io.*;
 import java.util.*;
 

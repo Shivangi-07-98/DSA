@@ -1,4 +1,4 @@
-// O(m * n) - DFS visits each grid cell at most once.
+// O(m * n)
 import java.io.*;
 import java.util.*;
 

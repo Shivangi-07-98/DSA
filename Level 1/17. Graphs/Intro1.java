@@ -1,4 +1,4 @@
-// O(V + E) - builds the demo adjacency list once.
+// O(V + E)
 import java.io.*;
 import java.util.*;
 
