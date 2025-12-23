@@ -19,7 +19,7 @@ public class Q16_MinimumWireRequired {
 
   static class Pair implements Comparable<Pair> {
     int vtx;
-    int par;
+    int par; // parent
     int cost;
 
     Pair(int vtx, int par, int cost) {
@@ -66,7 +66,7 @@ public class Q16_MinimumWireRequired {
       }
       visited[rem.vtx] = true;
 
-      if (rem.par != -1) {
+      if (rem.par != -1) { // pehla wala print nhi krna
         System.out.println("[" + rem.vtx + "-" + rem.par + "@" + rem.cost + "]");
       }
 
