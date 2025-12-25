@@ -1,5 +1,5 @@
 // Dijkstra's Algorithm
-// O(V log V), O(E log V)
+// O(E log V)
 import java.io.*;
 import java.util.*;
 
