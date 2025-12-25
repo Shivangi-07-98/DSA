@@ -1,5 +1,5 @@
-// DFS based topological sort
 // O(V + E)
+import java.io.*;
 import java.util.*;
 
 public class Q17_OrderOfCompilation {
@@ -33,7 +33,7 @@ public class Q17_OrderOfCompilation {
       int v2 = scn.nextInt();
       int wt = scn.nextInt();
 
-      graph[v1].add(new Edge(v1, v2, wt));
+      graph[v1].add(new Edge(v1, v2, wt)); // change 1
     }
 
     boolean[] visited = new boolean[vertices];
@@ -61,7 +61,7 @@ public class Q17_OrderOfCompilation {
       }
     }
 
-    st.push(src);
+    st.push(src); // change 2
   }
 }
 
@@ -89,6 +89,4 @@ public class Q17_OrderOfCompilation {
  * TOPOLOGICAL SORT:
  * - Only for Directed Acyclic Graph (DAG)
  * - Linear ordering of vertices such that for every edge u->v, u appears before v
- * - DFS approach: Process all neighbors first, then push current node to stack
- * - Application: Order of compilation, course prerequisites, task scheduling
  */
