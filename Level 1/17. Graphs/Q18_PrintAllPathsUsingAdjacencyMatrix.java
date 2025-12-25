@@ -10,8 +10,8 @@ public class Q18_PrintAllPathsUsingAdjacencyMatrix {
     int vertices = scn.nextInt();
     Integer[][] graph = new Integer[vertices][vertices];
 
-    int edges = scn.nextInt();
-    for (int i = 0; i < edges; i++) {
+    int edges = scn.nextInt(); // 8
+    for (int i = 0; i < edges; i++) { // 8 baar loop chlega aur 2d matrix mai 16 jagah dalega
       int v1 = scn.nextInt();
       int v2 = scn.nextInt();
       int wt = scn.nextInt();
@@ -24,7 +24,7 @@ public class Q18_PrintAllPathsUsingAdjacencyMatrix {
     int dest = scn.nextInt();
 
     boolean[] visited = new boolean[vertices];
-    printAllPaths(graph, visited, src, dest, String.valueOf(src));
+    printAllPaths(graph, visited, src, dest, src + "");
     scn.close();
   }
 
