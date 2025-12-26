@@ -1,5 +1,6 @@
 import java.io.*;
 import java.util.*;
+
 public class Q1_FibonacciDP {
 
   public static void main(String[] args) {
@@ -7,7 +8,7 @@ public class Q1_FibonacciDP {
     int n = scn.nextInt(); // 10
 
     int[] storage = new int[n + 1];
-    
+
     System.out.println(fib(n));
     System.out.println(fib_memo(n, storage));
   }
@@ -42,16 +43,16 @@ public class Q1_FibonacciDP {
     storage[n] = fn;
     return fn;
   }
-  
+
 }
 
 /*
-Sample Input:
-10
-
-Sample Output:
-55
-*/
+ * Sample Input:
+ * 10
+ * 
+ * Sample Output:
+ * 55
+ */
 
 // Fibonacci indexing starts from 0.
 // So Fibonacci of 5 is 5, not 3.
