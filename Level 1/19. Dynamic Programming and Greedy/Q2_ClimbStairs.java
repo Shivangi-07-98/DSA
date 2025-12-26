@@ -1,3 +1,4 @@
+import java.io.*;
 import java.util.*;
 
 public class Q2_ClimbStairs {
@@ -59,9 +60,9 @@ public class Q2_ClimbStairs {
 // 3 moves allowed at a time 1, 2, 3
 
 /*
-Sample Input:
-5
-
-Sample Output:
-13
-*/
+ * Sample Input:
+ * 5
+ * 
+ * Sample Output:
+ * 13
+ */
