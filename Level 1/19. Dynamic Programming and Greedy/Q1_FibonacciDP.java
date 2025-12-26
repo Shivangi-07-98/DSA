@@ -1,3 +1,4 @@
+import java.io.*;
 import java.util.*;
 public class Q1_FibonacciDP {
 
@@ -51,3 +52,7 @@ Sample Input:
 Sample Output:
 55
 */
+
+// Fibonacci indexing starts from 0.
+// So Fibonacci of 5 is 5, not 3.
+// 0 is the 0th Fibonacci number.
