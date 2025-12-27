@@ -1,9 +1,11 @@
+import java.io.*;
 import java.util.*;
 
 public class Q6_GoldMine {
 
   public static void main(String[] args) {
     Scanner scn = new Scanner(System.in);
+
     int n = scn.nextInt(); // 6
     int m = scn.nextInt(); // 6
     int[][] mine = new int[n][m];
@@ -23,7 +25,7 @@ public class Q6_GoldMine {
     for (int j = strg[0].length - 1; j >= 0; j--) { // col 5 4 3 2 1 0
       for (int i = 0; i < strg.length; i++) { // row 0 1 2 3 4 5
         // 2d array mai ulta travel krenge from right to left
-        //  0-5(5) 0-5(4) 0-5(3) 0-5(2) 0-5(1) 0-5(0) = 5 loops
+        // 0-5(5) 0-5(4) 0-5(3) 0-5(2) 0-5(1) 0-5(0) = 6 loops
         if (j == strg[0].length - 1) { // col = 5
           strg[i][j] = mine[i][j];
         } else if (i == 0) { // row = 0
