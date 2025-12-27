@@ -1,9 +1,11 @@
+import java.io.*;
 import java.util.*;
 
 public class Q7_TargetSumSubsets {
 
   public static void main(String[] args) {
     Scanner scn = new Scanner(System.in);
+
     int n = scn.nextInt(); // 5
     int[] arr = new int[n];
     for (int i = 0; i < n; i++) { // 4 2 7 1 3
