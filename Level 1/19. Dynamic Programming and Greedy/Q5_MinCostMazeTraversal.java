@@ -1,9 +1,11 @@
+import java.io.*;
 import java.util.*;
 
 public class Q5_MinCostMazeTraversal {
 
   public static void main(String[] args) {
     Scanner scn = new Scanner(System.in);
+
     int n = scn.nextInt(); // 6
     int m = scn.nextInt(); // 6
     int[][] maze = new int[n][m]; // 6 6
