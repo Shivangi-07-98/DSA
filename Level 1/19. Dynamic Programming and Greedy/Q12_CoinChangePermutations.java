@@ -1,9 +1,11 @@
+import java.io.*;
 import java.util.*;
 
 public class Q12_CoinChangePermutations {
 
   public static void main(String[] args) {
     Scanner scn = new Scanner(System.in);
+
     int n = scn.nextInt(); // 4
     int[] coins = new int[n];
     for (int i = 0; i < n; i++) { // 2 3 5 6
@@ -31,18 +33,19 @@ public class Q12_CoinChangePermutations {
   }
 
 }
-// 4 types infinite coins hai 2 3 5 6 aur hme 7 rs pay krne hai, kitne tarike se pay kar skte hai
+// 4 types infinite coins hai 2 3 5 6 aur hme 7 rs pay krne hai, kitne tarike se
+// pay kar skte hai
 // combination ways = 2 2 3, 2 5 = 2
 // permutation ways = 2 2 3, 2 3 2, 3 2 2, 2 5, 5 2 = 5
 
 // target outer loop, coins inner loop
 
 /*
-Sample Input:
-4
-2 3 5 6
-7
-
-Sample Output:
-5
-*/
+ * Sample Input:
+ * 4
+ * 2 3 5 6
+ * 7
+ * 
+ * Sample Output:
+ * 5
+ */

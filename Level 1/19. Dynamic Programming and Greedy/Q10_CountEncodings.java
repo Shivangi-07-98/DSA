@@ -1,4 +1,6 @@
+import java.io.*;
 import java.util.*;
+
 public class Q10_CountEncodings {
 
   public static void main(String[] args) {
@@ -11,7 +13,7 @@ public class Q10_CountEncodings {
   // Tabulation solution
   public static int countEncodings_tab(String str) {
     int[] dp = new int[str.length() + 1]; // 4 = empty 1 2 3
-    
+
     dp[0] = 1;
     dp[1] = 1;
 
@@ -30,15 +32,15 @@ public class Q10_CountEncodings {
 
     return dp[dp.length - 1];
   }
-  
+
 }
 // 1-26 a-z
 // starting from 0 is invalid
 
 /*
-Sample Input:
-123
-
-Sample Output:
-3
-*/
+ * Sample Input:
+ * 123
+ * 
+ * Sample Output:
+ * 3
+ */
