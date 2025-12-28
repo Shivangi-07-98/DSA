@@ -1,9 +1,11 @@
+import java.io.*;
 import java.util.*;
 
 public class Q14_UnboundedKnapsack {
 
   public static void main(String[] args) {
     Scanner scn = new Scanner(System.in);
+
     int n = scn.nextInt(); // 5
     int[] values = new int[n];
     int[] wts = new int[n];
@@ -37,9 +39,8 @@ public class Q14_UnboundedKnapsack {
   }
 
 }
-
 // each item can be used unlimited times
-// maximize value within capacity
+// maximize value within capacity, bag mai value maximum krni hai
 
 /*
  * Sample Input:
