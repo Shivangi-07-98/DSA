@@ -1,3 +1,4 @@
+import java.io.*;
 import java.util.*;
 
 public class Q8_CountBinaryStrings {
@@ -7,6 +8,7 @@ public class Q8_CountBinaryStrings {
     int n = scn.nextInt(); // 6
 
     System.out.println(countBinaryStrings_tab1(n));
+    System.out.println(countBinaryStrings_tab2(n));
   }
 
   // Tabulation solution
@@ -43,6 +45,7 @@ public class Q8_CountBinaryStrings {
 
 }
 // formula 2^n
+// 1 spot par 0,1 aa skte toh n=5 par 2^n 2^5 = 32
 // binary string 0,1 of length n jisme 2 zero saath nhi hone chaiye
 
 /*
