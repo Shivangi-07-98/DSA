@@ -1,9 +1,11 @@
+import java.io.*;
 import java.util.*;
 
 public class Q13_ZeroOneKnapsack {
 
   public static void main(String[] args) {
     Scanner scn = new Scanner(System.in);
+
     int n = scn.nextInt(); // 5
     int[] values = new int[n];
     int[] wts = new int[n];
@@ -41,7 +43,8 @@ public class Q13_ZeroOneKnapsack {
 
 }
 // each item can be used at most once
-// maximize value within capacity
+// maximize value within capacity, bag mai value maximum krni hai
+// har item ke paas 2 option hai bag mai ja skta hai aur nhi jaa skta hai
 // 2^n = 32 combinations
 
 /*
