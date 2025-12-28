@@ -35,7 +35,7 @@ public class Q10_CountEncodings {
 
 }
 // 1-26 a-z
-// starting from 0 is invalid
+// starting from 0 is invalid input
 
 /*
  * Sample Input:
