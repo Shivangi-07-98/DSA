@@ -1,3 +1,4 @@
+import java.io.*;
 import java.util.*;
 
 public class Q9_ArrangeBuildings {
@@ -35,9 +36,9 @@ public class Q9_ArrangeBuildings {
 // focus on one side first then total different ways is multiply both sides
 
 /*
-Sample Input:
-5
-
-Sample Output:
-169
-*/
+ * Sample Input:
+ * 5
+ * 
+ * Sample Output:
+ * 169
+ */
