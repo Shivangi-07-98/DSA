@@ -1,3 +1,4 @@
+import java.io.*;
 import java.util.*;
 
 public class Q19_FractionalKnapsack {
@@ -70,6 +71,7 @@ public class Q19_FractionalKnapsack {
 }
 // greedy: sort by value/weight ratio, take items greedily
 // can take fraction of items
+// maximize value within capacity, bag mai value maximum krni hai
 
 /*
  * Sample Input:
