@@ -20,9 +20,7 @@
 20. tiling with 2*1 tiles
 21. tiling with m*1 tiles
 22. paint fence
-23. friends pairing
-24. partition into subsets
-25. 
+23. 
 
 
 GOOGLE'S DP PROBLEMS (100% Coverage - Complete This List, No Need to Practice Outside)
