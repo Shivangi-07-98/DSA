@@ -1,9 +1,11 @@
+import java.io.*;
 import java.util.*;
 
 public class Q18_PaintHouseManyColors {
 
   public static void main(String[] args) {
     Scanner scn = new Scanner(System.in);
+
     int n = scn.nextInt(); // 4
     int k = scn.nextInt(); // 3
     int[][] arr = new int[n][k]; // 4 3
@@ -61,7 +63,6 @@ public class Q18_PaintHouseManyColors {
   }
 
 }
-
 // adjacent houses cannot have same color
 // k colors available
 // minimize cost

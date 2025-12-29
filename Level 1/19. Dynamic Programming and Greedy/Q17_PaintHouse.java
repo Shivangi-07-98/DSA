@@ -1,9 +1,11 @@
+import java.io.*;
 import java.util.*;
 
 public class Q17_PaintHouse {
 
   public static void main(String[] args) {
     Scanner scn = new Scanner(System.in);
+
     int n = scn.nextInt(); // 4
     int[][] arr = new int[n][3]; // 4 3
     for (int i = 0; i < arr.length; i++) {
@@ -14,7 +16,7 @@ public class Q17_PaintHouse {
 
     System.out.println(paintHouse_tab(arr));
   }
-  
+
   // Sample Input:
   // 4
   // 1 5 7 (house 1)
