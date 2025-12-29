@@ -8,6 +8,7 @@ public class Q19_FractionalKnapsack {
     int wt;
     double vwRatio;
 
+    // yha par double ki wajah se pura likhna hoga, kuki hum integer return kar rhe hai
     public int compareTo(Item o) {
       if (this.vwRatio < o.vwRatio) {
         return -1;
@@ -45,20 +46,20 @@ public class Q19_FractionalKnapsack {
       items[i] = new Item();
       items[i].val = values[i];
       items[i].wt = weights[i];
-      items[i].vwRatio = (items[i].val * 1.0) / items[i].wt;
+      items[i].vwRatio = (items[i].val * 1.0) / items[i].wt; // * 1.0 to make it in double
     }
 
     Arrays.sort(items);
     double vib = 0; // value in bag
     int rc = cap; // remaining capacity
-    int i = n - 1;
+    int i = n - 1; // sorting ke baad bada item (value jyada wala) piche chla jayega
 
     while (rc > 0) {
       if (rc >= items[i].wt) {
         vib = vib + items[i].val;
         rc = rc - items[i].wt;
       } else {
-        vib += (rc * items[i].val * 1.0) / items[i].wt;
+        vib += (rc * items[i].val * 1.0) / items[i].wt; // * 1.0 to make it in double
         rc = 0;
         break;
       }
@@ -70,6 +71,7 @@ public class Q19_FractionalKnapsack {
 
 }
 // greedy: sort by value/weight ratio, take items greedily
+// each item can be used at most once
 // can take fraction of items
 // maximize value within capacity, bag mai value maximum krni hai
 
