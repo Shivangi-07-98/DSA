@@ -1,3 +1,4 @@
+import java.io.*;
 import java.util.*;
 
 public class Q20_TilingWith2x1Tiles {
