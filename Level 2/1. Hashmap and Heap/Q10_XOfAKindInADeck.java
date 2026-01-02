@@ -1,7 +1,6 @@
 // LeetCode 914: X of a Kind in a Deck of Cards
 // https://leetcode.com/problems/x-of-a-kind-in-a-deck-of-cards/
-// Time Complexity: O(n)
-// Space Complexity: O(n)
+// Time Complexity: O(n), Space Complexity: O(n)
 import java.io.*;
 import java.util.*;
 
@@ -19,7 +18,6 @@ public class Q10_XOfAKindInADeck {
     System.out.println(ans);
   }
 
-  // check if arr can be partitioned into groups of size x (x >= 2)
   static boolean hasGroupsSizeX(int[] arr) {
     HashMap<Integer, Integer> map = new HashMap<>();
 
@@ -49,8 +47,8 @@ public class Q10_XOfAKindInADeck {
 
   static int getGCD(int n1, int n2) {
     while (n1 % n2 != 0) {
-      int rem = n1 % n2;
-      n1 = n2;
+      int rem = n1 % n2; // n1 andar hota hai aur n2 bahar hota hai
+      n1 = n2; // ab n2 andar aayega n1 bankr aur rem se divide hoga n2 bankr
       n2 = rem;
     }
     return n2;
@@ -59,15 +57,22 @@ public class Q10_XOfAKindInADeck {
 }
 
 /*
- * Sample Input:
- * 8
- * 1 2 3 4 4 3 2 1
+ * Return true if and only if you can split the entire deck into 1 or more
+ * groups of cards, where:
+ * Each group has exactly x cards (x >= 2)
+ * All the cards in each group have the same integer
  * 
- * Sample Output:
- * true
+ * Example 1:
+ * Input: deck = [1,2,3,4,4,3,2,1]
+ * Output: true
+ * Explanation: Possible partition [1,1], [2,2], [3,3], [4,4]
+ * (x = 2: each group has 2 cards, all cards in a group are same)
  * 
- * Explanation:
- * Every set size should be equal and every set should have same element.
- * (Each set should have only one type of data and all sets should have equal
- * size)
+ * Example 2:
+ * Input: deck = [1,1,1,2,2,2,3,3]
+ * Output: false
+ * Explanation: No possible partition
+ * (Card 1 appears 3 times, Card 2 appears 3 times, Card 3 appears 2 times.
+ * No single x >= 2 can satisfy: all groups must have same size x and all cards
+ * in each group must be same integer)
  */
