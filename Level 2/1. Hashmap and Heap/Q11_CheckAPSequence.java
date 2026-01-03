@@ -13,8 +13,7 @@
 // Example: [3, 5, 1] can be rearranged to [1, 3, 5] -> YES (difference = 2)
 // Example: [1, 2, 4] cannot form AP -> NO (no constant difference possible)
 // 
-// Time Complexity: O(n)
-// Space Complexity: O(n)
+// Time Complexity: O(n), Space Complexity: O(n)
 import java.io.*;
 import java.util.*;
 
@@ -40,6 +39,7 @@ public class Q11_CheckAPSequence {
 
     for (int val : arr) {
       set.add(val);
+
       if (val < min) {
         smin = min;
         min = val;
@@ -67,16 +67,15 @@ public class Q11_CheckAPSequence {
  * Sample Input 1:
  * 4
  * 3 5 1 7
- * 
  * Sample Output 1:
  * true
  * 
- * Explanation: Can be rearranged to [1, 3, 5, 7] which is AP with difference = 2
+ * Explanation: Can be rearranged to [1, 3, 5, 7] which is AP with difference =
+ * 2
  * 
  * Sample Input 2:
  * 4
  * 1 3 5 7
- * 
  * Sample Output 2:
  * true
  * 
@@ -85,11 +84,10 @@ public class Q11_CheckAPSequence {
  * Sample Input 3:
  * 3
  * 1 2 4
- * 
  * Sample Output 3:
  * false
  * 
- * Explanation: Cannot form AP. 
+ * Explanation: Cannot form AP.
  * If arranged as [1, 2, 4]: difference = 1, then 2 (not constant)
  * If arranged as [1, 4, 2]: difference = 3, then -2 (not constant)
  * No arrangement gives constant difference -> NO
@@ -97,7 +95,6 @@ public class Q11_CheckAPSequence {
  * Sample Input 4:
  * 3
  * 1 1 1
- * 
  * Sample Output 4:
  * true
  * 
