@@ -7,9 +7,9 @@
 10. x of a kind in a deck
 11. check ap sequence
 12. array of doubled pair
+13. rabbits in forest
 
-9. morning assembly
-10. rabbits in forest
+10. morning assembly
 11. grid illumination
 12. brick wall
 13. minimum number of refueling spots
