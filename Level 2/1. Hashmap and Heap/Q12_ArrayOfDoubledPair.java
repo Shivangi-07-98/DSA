@@ -43,14 +43,14 @@ public class Q12_ArrayOfDoubledPair {
     // If we include zero, we'd decrement the SAME key twice in one iteration
     for (int val : arr) {
       if (val != 0 && map.containsKey(val) && map.containsKey(2 * val)) {
-        if (map.getOrDefault(val, 0) > 1) {
-          map.put(val, map.getOrDefault(val, 0) - 1);
+        if (map.get(val) > 1) {
+          map.put(val, map.get(val) - 1);
         } else {
           map.remove(val);
         }
 
-        if (map.getOrDefault(2 * val, 0) > 1) {
-          map.put(2 * val, map.getOrDefault(2 * val, 0) - 1);
+        if (map.get(2 * val) > 1) {
+          map.put(2 * val, map.get(2 * val) - 1);
         } else {
           map.remove(2 * val);
         }
