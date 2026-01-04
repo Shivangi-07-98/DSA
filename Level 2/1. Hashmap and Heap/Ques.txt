@@ -9,13 +9,18 @@
 12. array of doubled pair
 13. rabbits in forest
 14. same differences - 15 mar 2022
+15. count of distinct elements in window of size k
+16. number of employees under every manager
+17. morning assembly
+18. longest consecutive sequence of 1's in a binary string
+19. is array divisible in pairs whose sum is k
 
 11. grid illumination
 12. brick wall
 13. minimum number of refueling spots
 14. potions (hard version)
-15. morning assembly
-16. longest consecutive 1's
+15. 
+16. 
 17. island perimeter
 18. the skyline problem
 19. pairs of coinciding points
