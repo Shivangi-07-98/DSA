@@ -7,14 +7,14 @@
 10. x of a kind in a deck
 11. check ap sequence
 12. array of doubled pair
-13. rabbits in forest - 15 mar 2022
+13. rabbits in forest
+14. same differences - 15 mar 2022
 
-10. morning assembly
 11. grid illumination
 12. brick wall
 13. minimum number of refueling spots
 14. potions (hard version)
-15. same differences
+15. morning assembly
 16. longest consecutive 1's
 17. island perimeter
 18. the skyline problem
