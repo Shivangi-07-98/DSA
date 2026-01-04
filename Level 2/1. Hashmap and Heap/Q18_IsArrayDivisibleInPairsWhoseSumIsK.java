@@ -24,6 +24,9 @@ public class Q18_IsArrayDivisibleInPairsWhoseSumIsK {
 
     for (int val : arr) {
       int rem = val % k;
+      if (rem < 0) {
+        rem = rem + k;
+      }
       if (map.containsKey(rem)) {
         map.put(rem, map.get(rem) + 1);
       } else {
@@ -33,6 +36,9 @@ public class Q18_IsArrayDivisibleInPairsWhoseSumIsK {
 
     for (int val : arr) {
       int rem = val % k;
+      if (rem < 0) {
+        rem = rem + k;
+      }
 
       if (2 * rem == k) {
         if (map.get(rem) % 2 != 0) {
@@ -65,4 +71,7 @@ public class Q18_IsArrayDivisibleInPairsWhoseSumIsK {
  * 
  * Output:
  * true
+ * 
+ * n = 4 elements, means 2 pair
+ * n = 10 elements, means 5 pair
  */
