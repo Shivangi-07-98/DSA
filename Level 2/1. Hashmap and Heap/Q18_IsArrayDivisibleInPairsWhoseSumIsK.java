@@ -50,8 +50,8 @@ public class Q18_IsArrayDivisibleInPairsWhoseSumIsK {
           System.out.println("false");
           return;
         }
-      } else {
-        if (map.get(rem) != map.get(k - rem)) {
+      } else { // don't know if k-rem exists??
+        if (map.get(rem) != map.getOrDefault(k - rem, 0)) {
           System.out.println("false");
           return;
         }
