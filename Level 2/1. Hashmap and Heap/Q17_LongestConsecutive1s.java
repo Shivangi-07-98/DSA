@@ -1,4 +1,3 @@
-
 // LeetCode 485: Max Consecutive Ones
 // https://leetcode.com/problems/max-consecutive-ones/
 // Time Complexity: O(n), Space Complexity: O(1)
