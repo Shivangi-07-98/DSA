@@ -24,12 +24,12 @@ public class Q5_LongestSubarrayWithEqual0And1 {
     int ans = 0;
     int sum = 0;
     HashMap<Integer, Integer> map = new HashMap<>();
-    map.put(0, -1); // Initialize sum 0 at index -1 (before start)
+    map.put(0, -1);
 
     for (int i = 0; i < n; i++) {
       sum += (arr[i] == 0 ? -1 : 1);
 
-      // ===== MAIN LOGIC FOR LONGEST: Store first index, calculate length =====
+      // Store first index, calculate length
       if (map.containsKey(sum)) {
         int firstIndex = map.get(sum);
         int length = i - firstIndex;
@@ -37,9 +37,8 @@ public class Q5_LongestSubarrayWithEqual0And1 {
           ans = length;
         }
       } else {
-        map.put(sum, i); // Store first occurrence index
+        map.put(sum, i);
       }
-      // ===== END OF MAIN LOGIC =====
     }
 
     return ans;

@@ -25,12 +25,11 @@ public class Q7_LongestSubarraySumExactlyK {
     int ans = 0;
     int sum = 0;
     HashMap<Integer, Integer> map = new HashMap<>();
-    map.put(0, -1); // Initialize sum 0 at index -1 (before start)
+    map.put(0, -1);
 
     for (int i = 0; i < nums.length; i++) {
       sum += nums[i];
 
-      // ===== MAIN LOGIC FOR LONGEST: Check for (sum - k), calculate length =====
       if (map.containsKey(sum - k)) {
         int firstIndex = map.get(sum - k);
         int length = i - firstIndex;
@@ -40,9 +39,8 @@ public class Q7_LongestSubarraySumExactlyK {
       }
 
       if (!map.containsKey(sum)) {
-        map.put(sum, i); // Store first occurrence index
+        map.put(sum, i);
       }
-      // ===== END OF MAIN LOGIC =====
     }
 
     return ans;

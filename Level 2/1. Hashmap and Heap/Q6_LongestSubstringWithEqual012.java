@@ -23,7 +23,7 @@ public class Q6_LongestSubstringWithEqual012 {
     int c2 = 0;
     String key = "0#0";
     HashMap<String, Integer> map = new HashMap<>();
-    map.put(key, -1); // Initialize key "0#0" at index -1 (before start)
+    map.put(key, -1);
 
     for (int i = 0; i < str.length(); i++) {
       char ch = str.charAt(i);
@@ -37,7 +37,6 @@ public class Q6_LongestSubstringWithEqual012 {
 
       key = (c1 - c0) + "#" + (c2 - c1);
 
-      // ===== MAIN LOGIC FOR LONGEST: Store first index, calculate length =====
       if (map.containsKey(key)) {
         int firstIndex = map.get(key);
         int length = i - firstIndex;
@@ -45,9 +44,8 @@ public class Q6_LongestSubstringWithEqual012 {
           ans = length;
         }
       } else {
-        map.put(key, i); // Store first occurrence index
+        map.put(key, i);
       }
-      // ===== END OF MAIN LOGIC =====
     }
 
     return ans;

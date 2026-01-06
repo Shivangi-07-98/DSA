@@ -25,7 +25,7 @@ public class Q8_LongestSubarraySumDivisibleByK {
     int ans = 0;
     int sum = 0;
     HashMap<Integer, Integer> map = new HashMap<>();
-    map.put(0, -1); // Initialize remainder 0 at index -1 (before start)
+    map.put(0, -1);
 
     for (int i = 0; i < n; i++) {
       sum += arr[i];
@@ -36,7 +36,6 @@ public class Q8_LongestSubarraySumDivisibleByK {
         remainder = remainder + k; // Make positive
       }
 
-      // ===== MAIN LOGIC FOR LONGEST: Store first index, calculate length =====
       if (map.containsKey(remainder)) {
         int firstIndex = map.get(remainder);
         int length = i - firstIndex;
@@ -44,9 +43,8 @@ public class Q8_LongestSubarraySumDivisibleByK {
           ans = length;
         }
       } else {
-        map.put(remainder, i); // Store first occurrence index
+        map.put(remainder, i);
       }
-      // ===== END OF MAIN LOGIC =====
     }
 
     return ans;
