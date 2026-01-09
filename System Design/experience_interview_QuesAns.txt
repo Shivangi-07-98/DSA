@@ -1,59 +1,13 @@
 Experience Interview Question Bank (For 20–50 LPA Roles)
-Prepare these questions thoroughly. These follow the exact order you can expect in interviews.
-
-Q1 Tell me about yourself — specifically your professional journey.
-Q2 What product does your current company build? Who are the users/customers?
-Q3 What was your role in the team?
-Q4 What tech stack did your team/project use? Why these technologies?
-Q5 What features did you build end-to-end?
-Q6 Walk me through one major project/feature you owned.
-Q7 What was the problem statement?
-Q8 What was your approach/solution?
-Q9 What part of the system did you work on (frontend/backend/integration)?
-Q10 How did you break down requirements?
-Q11 What design decisions did you make and why?
-Q12 What challenges did you face while building this feature?
-Q13 How did you handle state management? Why that approach?
-Q14 How did you optimize performance?
-Q15 How did you ensure code quality? (reviews, testing, linting)
-Q16 How did you handle API integration? Any backend collaboration examples?
-Q17 Can you discuss an example of caching or performance optimization you implemented?
-Q18 Did you have experience with authentication & authorization? Explain.
-Q19 How did your team manage deployments? CI/CD experience?
-Q20 What was one incident where something went wrong in production? How did you solve it?
-Q21 How do you track errors? (Monitoring/logging tools)
-Q22 Tell me about a time you improved something proactively.
-Q23 What was the biggest technical challenge you solved?
-Q24 What was your learning curve when joining this project?
-Q25 What would you do differently if you rebuilt this feature today?
-Q26 How do you ensure scalability or maintainability in your system?
-Q27 What design pattern or architecture did you use in your project?
-Q28 How did you collaborate with backend/QA/product teams?
-Q29 Explain your git workflow (branching strategy, PR process).
-Q30 How did you handle performance issues in production?
-Q31 Explain a situation where you had to debug a critical bug.
-Q32 What metrics did you track for performance or success?
-Q33 How do you prioritize tasks when multiple things are assigned?
-Q34 Tell me about your biggest achievement in this role.
-Q35 Why are you leaving your current organization?
-Q36 What kind of problems do you want to solve in your next role?
-Q37 Do you have any questions for us about the product/team/work?
-
-
-================================================================================
-ANSWERS SECTION
-================================================================================
 
 Q1 Tell me about yourself — specifically your professional journey.
 
 Answer:
-I'm a Software Engineer with over 2 years of experience in frontend development, currently working as a Software Engineer I at MEDECRO.AI, a healthcare SaaS startup. My journey started in December 2023 when I joined 18 PIXELS INDIA as a Frontend Developer, where I worked on migrating legacy websites from vanilla JavaScript to React, which significantly improved performance and user engagement.
+I'm a Software Engineer with over 2 years of experience in frontend development. My journey started in December 2023 when I joined 18 PIXELS INDIA as a Frontend Developer, where I worked on migrating websites from vanilla JavaScript to React, which significantly improved performance and user engagement.
 
-In April 2024, I moved to AAYAN INFOTECH, a service-based company, where I worked on multiple client projects across e-commerce, fashion, and homecare domains. I handled 100+ web components and fixed 1000+ bugs, which taught me a lot about maintaining large codebases and working with diverse requirements.
+In April 2024, I moved to AAYAN INFOTECH, a service-based company, where I worked on multiple client projects across e-commerce, fashion, and homecare domains.
 
-Currently, at MEDECRO.AI since September 2024, I'm part of a team building a healthcare SaaS platform from scratch. I've been responsible for developing critical features like real-time patient-doctor chat, appointment scheduling systems, and AI-powered dental diagnosis interfaces. This role has given me exposure to product-based development, working with complex healthcare workflows, and collaborating closely with cross-functional teams.
-
-Throughout my journey, I've focused on building scalable, maintainable frontend solutions using modern technologies like Next.js, React, TypeScript, and Tailwind CSS, while always prioritizing user experience and code quality.
+And my recent company MEDECRO.AI, I was part of a team building a healthcare SaaS platform from scratch. I've been responsible for developing critical features like real-time patient-doctor chat, appointment scheduling systems, and AI-powered dental diagnosis interfaces. This role has given me exposure to product-based development, working with complex healthcare workflows, and collaborating closely with cross-functional teams.
 
 
 Q2 What product does your current company build? Who are the users/customers?
@@ -62,6 +16,7 @@ Answer:
 MEDECRO.AI is a healthcare SaaS platform focused on dental care management. The platform serves as a comprehensive solution for dental clinics and practitioners to manage their practice operations digitally.
 
 Our primary users are:
+Dental clinics and practitioners, Patients, Clinic staff members
 1. Dental clinics and practitioners who use the platform to manage patient records, schedule appointments, and conduct consultations
 2. Patients who interact with the platform to book appointments, communicate with their doctors, and view their treatment history
 3. Clinic staff members who handle administrative tasks like patient registration, appointment management, and clinic operations
@@ -81,17 +36,13 @@ Q3 What was your role in the team?
 Answer:
 At MEDECRO.AI, I work as a Software Engineer I in the frontend team. My role involves:
 
-1. Feature Development: I'm responsible for building end-to-end features from design to implementation. I work closely with the design team to transform Figma designs into functional, responsive UI components.
+1. I'm responsible for building end-to-end features from design to implementation. I work to transform Figma designs into functional, responsive UI components.
 
-2. Technical Implementation: I develop complex UI components and features using Next.js, TypeScript, and Tailwind CSS. This includes building form-heavy applications, real-time communication interfaces, and data visualization components.
+2. I develop complex UI components and features using Next.js, TypeScript, and Tailwind CSS. This includes building form-heavy applications, real-time communication interfaces, and data visualization components.
 
-3. Collaboration: I work closely with backend engineers to integrate APIs, define data structures, and ensure seamless frontend-backend integration. I also collaborate with product managers to understand requirements and provide technical feasibility feedback.
+3. I work closely with backend engineers to integrate APIs, define data structures, and ensure seamless frontend-backend integration. I also collaborate with product managers to understand requirements and provide technical feasibility feedback.
 
-4. Code Quality: I participate in code reviews, ensure adherence to coding standards, and maintain code quality through proper component architecture and reusable patterns.
-
-5. Problem Solving: I actively participate in technical discussions, propose solutions for complex UI challenges, and help debug issues in production.
-
-My role is primarily frontend-focused, but I have a good understanding of the overall system architecture and how frontend integrates with backend services.
+4. maintain code quality through proper component architecture and reusable patterns.propose solutions for complex UI challenges, and help debug issues in production.My role is primarily frontend-focused
 
 
 Q4 What tech stack did your team/project use? Why these technologies?
@@ -106,9 +57,6 @@ Frontend:
 - React Hook Form: Used for form management because our application has many complex forms (patient registration, doctor onboarding, clinic management). It provides excellent performance and validation capabilities.
 - Socket.IO: For real-time patient-doctor chat functionality, enabling instant communication.
 - Day.js: For date manipulation in the appointments calendar feature, providing lightweight date handling.
-
-State Management:
-- React Context API and useState/useReducer: For most state management needs. We use Context for global state like authentication and user data, and local state for component-specific data.
 
 Why these choices:
 - Next.js provides excellent performance out of the box, which is important for a healthcare SaaS platform where users need quick access to critical information.
@@ -177,7 +125,7 @@ My approach:
 
 2. UI Design: I created a two-panel layout - a sidebar showing the list of chats and a main window displaying the active conversation. I used Tailwind CSS for responsive design, ensuring it works well on desktop and mobile.
 
-3. State Management: I used React Context API to manage chat state globally, including active conversations, message history, and connection status. For local component state, I used useState hooks.
+3. State Management: I used mobx to manage chat state globally, including active conversations, message history, and connection status. For local component state, I used useState hooks.
 
 4. Backend Integration: I worked closely with backend engineers to define the Socket.IO event structure, API endpoints for fetching chat history, and message persistence logic.
 
@@ -1418,105 +1366,6 @@ Communication Channels:
 This collaborative approach ensured smooth development and high-quality deliverables.
 
 
-Q29 Explain your git workflow (branching strategy, PR process).
-
-Answer:
-Git workflow at MEDECRO.AI:
-
-Branching Strategy:
-- Main branch: Production-ready code
-- Develop branch: Integration branch for features (if used)
-- Feature branches: For new features (feature/feature-name)
-- Bugfix branches: For bug fixes (bugfix/issue-description)
-- Hotfix branches: For urgent production fixes (hotfix/fix-name)
-
-My Workflow:
-
-1. Starting Work:
-   ```bash
-   git checkout main
-   git pull origin main
-   git checkout -b feature/chat-system
-   ```
-
-2. Development:
-   - Make small, focused commits
-   - Write clear commit messages
-   - Commit frequently (not just at the end)
-   - Keep branch up to date with main
-
-3. Commit Messages:
-   - Format: "type: brief description"
-   - Types: feat, fix, refactor, style, docs, test
-   - Example: "feat: add real-time chat message sending"
-   - Include context in commit body if needed
-
-4. Keeping Branch Updated:
-   ```bash
-   git fetch origin
-   git rebase origin/main  # or merge, depending on team preference
-   ```
-
-5. Before PR:
-   - Ensure code follows team standards
-   - Test locally
-   - Fix linting errors
-   - Update documentation if needed
-
-PR Process:
-
-1. Creating PR:
-   - Push feature branch to remote
-   - Create PR on GitHub with:
-     - Clear title describing the change
-     - Description of what and why
-     - Screenshots/videos for UI changes
-     - Link to related issues/tickets
-     - Checklist of what was done
-
-2. PR Description Template:
-   ```
-   ## Description
-   Brief description of changes
-   
-   ## Changes Made
-   - List of changes
-   
-   ## Testing
-   - How it was tested
-   
-   ## Screenshots (if applicable)
-   ```
-
-3. Code Review:
-   - Request review from at least one team member
-   - Address all review comments
-   - Have discussions in PR comments
-   - Make additional commits to address feedback
-   - Re-request review after changes
-
-4. CI/CD Checks:
-   - PR triggers automated checks (linting, type checking, build)
-   - All checks must pass before merge
-   - Fix any failing checks
-
-5. Merge:
-   - Squash and merge (preferred) or regular merge
-   - Delete feature branch after merge
-   - Update main branch locally
-
-Best Practices I Follow:
-- Small, focused PRs (easier to review)
-- Clear commit history
-- Regular commits (not one big commit)
-- Meaningful commit messages
-- Keep branches clean and organized
-- Resolve conflicts promptly
-- Never force push to shared branches
-
-This workflow ensures code quality, smooth collaboration, and maintainable git history.
-
-
 Q30 How did you handle performance issues in production?
 
 Answer:
@@ -1766,233 +1615,15 @@ Lessons Learned:
 Q32 What metrics did you track for performance or success?
 
 Answer:
-Metrics tracked for performance and success:
 
-1. Performance Metrics:
-
-   Frontend Performance:
-   - Page Load Time: Measured using Lighthouse and Chrome DevTools
-   - Time to Interactive (TTI): When page becomes fully interactive
-   - First Contentful Paint (FCP): When first content appears
-   - Largest Contentful Paint (LCP): Loading of main content
-   - Cumulative Layout Shift (CLS): Visual stability
-   - Bundle Size: JavaScript bundle sizes
-   - API Response Times: Time taken for API calls
-
-   Chat-Specific Metrics:
-   - Message Delivery Time: Time from send to receive
-   - Connection Uptime: Socket.IO connection stability
-   - Reconnection Time: How quickly connection restores
-   - Messages Per Second: System capacity
-
-2. User Experience Metrics:
-
-   - User Engagement:
-     - Daily/Monthly Active Users
-     - Feature Adoption Rate
-     - Session Duration
-     - Pages Per Session
-
-   - Form Completion:
-     - Patient Registration Completion Rate
-     - Form Abandonment Points
-     - Time to Complete Forms
-     - Validation Error Frequency
-
-   - Chat Usage:
-     - Number of Active Conversations
-     - Average Messages Per Conversation
-     - Response Time (doctor to patient)
-     - Chat Initiation Rate
-
-3. Technical Metrics:
-
-   - Error Rates:
-     - JavaScript Errors (console errors)
-     - API Error Rates (4xx, 5xx)
-     - Socket.IO Connection Failures
-     - Failed Message Deliveries
-
-   - Performance:
-     - Component Render Times (React Profiler)
-     - Memory Usage
-     - Network Request Count and Size
-     - Cache Hit Rates
-
-4. Business Metrics (Collaborated with Product Team):
-
-   - Feature Usage:
-     - Which features are used most
-     - Feature discovery rate
-     - User flow completion rates
-
-   - User Satisfaction:
-     - User feedback and ratings
-     - Support ticket volume
-     - Feature request patterns
-
-5. How I Tracked:
-
-   Development:
+Development:
    - Chrome DevTools Performance tab
-   - React DevTools Profiler
-   - Lighthouse audits
    - Network tab analysis
-
-   Production (Ideally):
    - Google Analytics for user behavior
-   - Sentry for error tracking
-   - Performance monitoring tools
-   - Custom analytics events
-
-   Manual Tracking:
-   - User feedback collection
-   - Support ticket analysis
-   - Regular performance audits
-
-6. Success Criteria Examples:
-
-   Chat Feature:
-   - Message delivery < 1 second
-   - 99%+ connection uptime
-   - < 2% message failure rate
-   - Positive user feedback
-
-   Form Performance:
-   - Load time < 2 seconds
-   - Form completion rate > 80%
-   - Validation errors < 5% of submissions
-
-   Overall App:
-   - Lighthouse score > 90
-   - Page load < 3 seconds
-   - Error rate < 1%
-
-7. Reporting:
    - Regular performance reviews with team
    - Shared metrics in team meetings
-   - Documented improvements and regressions
-   - Used metrics to prioritize optimizations
 
 While we didn't have advanced analytics tools set up, I tracked these metrics manually and through browser tools to ensure we maintained good performance and user experience. I understand the importance of data-driven development and would leverage proper analytics tools in future roles.
-
-
-Q33 How do you prioritize tasks when multiple things are assigned?
-
-Answer:
-Prioritization approach:
-
-1. Understanding Priority Levels:
-
-   Critical/Urgent:
-   - Production bugs affecting users
-   - Security issues
-   - Blockers for other team members
-   - Time-sensitive deliverables
-
-   Important/High Priority:
-   - Feature development with deadlines
-   - Performance issues
-   - User-reported bugs
-   - Technical debt that's blocking progress
-
-   Medium Priority:
-   - New features without strict deadlines
-   - Improvements and optimizations
-   - Code refactoring
-   - Documentation
-
-   Low Priority:
-   - Nice-to-have features
-   - Minor UI improvements
-   - Future enhancements
-
-2. My Prioritization Framework:
-
-   Step 1: Gather All Tasks:
-   - List all assigned tasks
-   - Understand requirements and deadlines
-   - Identify dependencies
-
-   Step 2: Categorize:
-   - Urgency: When is it needed?
-   - Impact: How many users affected? Business impact?
-   - Effort: How long will it take?
-   - Dependencies: What blocks what?
-
-   Step 3: Rank:
-   - Critical + High Impact = Do first
-   - High Impact + Low Effort = Quick wins
-   - High Impact + High Effort = Plan and schedule
-   - Low Impact = Lower priority
-
-3. Communication:
-
-   With Manager/Team Lead:
-   - If overloaded, communicate early
-   - Discuss priorities and get alignment
-   - Negotiate deadlines if needed
-   - Get help if something is blocking
-
-   Example Conversation:
-   "I have 5 tasks assigned. Based on deadlines and impact, I'm planning to work on:
-   1. Critical bug fix (today)
-   2. Feature A (this week)
-   3. Feature B (next week)
-   Does this align with your expectations?"
-
-4. Practical Example:
-
-   Scenario: Multiple tasks assigned on Monday
-
-   Tasks:
-   - Critical: Production bug (users can't login) - 2 hours
-   - High: Chat feature enhancement - 1 day
-   - Medium: Form optimization - 4 hours
-   - Low: Documentation update - 1 hour
-
-   My Approach:
-   1. Fix critical bug first (immediate impact)
-   2. Work on chat feature (high priority, has deadline)
-   3. Form optimization (can be done in parallel or after)
-   4. Documentation (when I have time)
-
-5. Time Management:
-
-   - Break large tasks into smaller chunks
-   - Use time blocking for focused work
-   - Avoid context switching too frequently
-   - Batch similar tasks together
-
-6. Handling Overload:
-
-   - Communicate capacity honestly
-   - Suggest reprioritization if needed
-   - Ask for help when stuck
-   - Focus on quality over quantity
-
-7. Balancing Act:
-
-   - Don't ignore low-priority tasks completely
-   - Sometimes quick wins boost morale
-   - Technical debt needs attention too
-   - Balance urgent vs important
-
-8. Tools I Use:
-
-   - Task management: Jira, Linear, or simple lists
-   - Calendar for time blocking
-   - Notes for task details
-   - Regular reviews and adjustments
-
-Key Principles:
-- User impact first
-- Communicate early and often
-- Be realistic about capacity
-- Quality over speed
-- Learn to say no when necessary
-
-This approach helps me manage multiple tasks effectively while maintaining quality and meeting deadlines.
 
 
 Q34 Tell me about your biggest achievement in this role.
@@ -2158,11 +1789,9 @@ I'm particularly interested in roles where I can:
 I'm excited about the opportunity to bring my experience and enthusiasm to solve important problems in my next role.
 
 
-Q37 Do you have any questions for us about the product/team/work?
+Q37 Do you have any questions for us?
 
 Answer:
-Questions I typically ask (tailored to the role):
-
 About the Product:
 1. "What are the biggest technical challenges the product is facing right now?"
 2. "What's the product roadmap for the next 6-12 months?"
@@ -2200,11 +1829,3 @@ About Growth:
 2. "How does the company support career development?"
 3. "Are there opportunities for mentorship?"
 4. "What are the paths for advancement?"
-
-These questions show:
-- Genuine interest in the role and company
-- Thoughtfulness about the opportunity
-- Understanding of what matters in a role
-- Desire to contribute and grow
-
-I ask questions that help me understand if the role is a good fit and demonstrate my interest in making a meaningful contribution.
