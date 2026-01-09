@@ -687,121 +687,10 @@ Results:
 This caching strategy significantly improved user experience, especially for users who frequently switch between multiple chats.
 
 
-Q18 Did you have experience with authentication & authorization? Explain.
-
-Answer:
-Yes, I have experience with authentication and authorization in the healthcare platform.
-
-Authentication:
-- Implemented JWT-based authentication
-- Token stored in httpOnly cookies for security
-- Automatic token refresh before expiration
-- Handled token expiration and logout scenarios
-- Implemented "Remember Me" functionality
-
-Authorization - Role-Based Access Control (RBAC):
-The platform has different user roles:
-1. Super Admin: Full system access
-2. Clinic Admin: Manage their clinic and staff
-3. Doctor: Access to their patients, can view/edit medical records
-4. Staff: Limited access, can view but not edit sensitive data
-5. Patient: Can only view their own records and chat with assigned doctor
-
-Implementation:
-- Role information included in JWT token
-- Created custom hooks like `useAuth()` and `useRole()` to check permissions
-- Protected routes based on user roles
-- Conditional UI rendering based on permissions
-- API request authorization headers
-
-Example:
-```typescript
-// Protected Route Component
-const ProtectedRoute = ({ children, requiredRole }) => {
-  const { user, isAuthenticated } = useAuth();
-  
-  if (!isAuthenticated) {
-    return <Redirect to="/login" />;
-  }
-  
-  if (requiredRole && user.role !== requiredRole) {
-    return <AccessDenied />;
-  }
-  
-  return children;
-};
-
-// Usage in component
-const PatientProfile = () => {
-  const { user } = useAuth();
-  const canEdit = user.role === 'doctor' || user.role === 'clinic_admin';
-  
-  return (
-    <div>
-      {/* View-only content */}
-      {canEdit && <EditButton />}
-    </div>
-  );
-};
-```
-
-Security Considerations:
-- Never exposed sensitive tokens in client-side code
-- Validated permissions on both frontend and backend
-- Implemented proper error handling for unauthorized access
-- Regular token rotation for security
-
-This experience taught me the importance of security in healthcare applications where data privacy is critical.
-
-
 Q19 How did your team manage deployments? CI/CD experience?
 
 Answer:
 At MEDECRO.AI, we use a CI/CD pipeline for deployments:
-
-CI/CD Setup:
-- GitHub Actions for CI/CD
-- Automated testing on every PR
-- Automated builds on merge to main branch
-- Staging environment for testing before production
-- Production deployments after staging approval
-
-Deployment Process:
-1. Development: Work on feature branch
-2. PR Creation: Create pull request, triggers CI pipeline
-3. Automated Checks:
-   - Linting and type checking
-   - Unit tests (if we had them)
-   - Build verification
-4. Code Review: Team reviews the PR
-5. Merge to Main: After approval, merge triggers deployment to staging
-6. Staging Testing: QA and product team test on staging
-7. Production: After staging approval, deploy to production
-
-My Experience:
-- I've been involved in setting up GitHub Actions workflows
-- Created deployment scripts for different environments
-- Handled environment variable configuration
-- Managed build optimizations for production
-
-Deployment Tools:
-- Vercel for frontend hosting (Next.js optimized)
-- Environment-specific configurations (dev, staging, prod)
-- Automated preview deployments for PRs
-
-Challenges Handled:
-- Fixed deployment failures due to build errors
-- Resolved environment variable issues
-- Optimized build times
-- Handled rollback scenarios
-
-While I haven't set up the entire CI/CD pipeline from scratch, I understand the process, have worked with it daily, and can troubleshoot deployment issues. I'm comfortable with:
-- Git workflows and branching strategies
-- Understanding CI/CD pipeline configurations
-- Debugging build and deployment issues
-- Environment management
-
-I'm eager to learn more about advanced CI/CD practices and infrastructure as code in my next role.
 
 
 Q20 What was one incident where something went wrong in production? How did you solve it?
@@ -868,65 +757,20 @@ Lessons Learned:
 The incident was resolved within 30 minutes, and we put measures in place to prevent similar issues.
 
 
-Q21 How do you track errors? (Monitoring/logging tools)
+Q21 How do you track errors?
 
 Answer:
-Error tracking approach:
 
 1. Client-Side Error Tracking:
    - Used browser console logging for development
-   - Implemented error boundaries in React to catch component errors
    - Used try-catch blocks for async operations
    - Logged errors to console with context information
-
-2. Error Boundaries:
-   - Created error boundary components to catch React errors
-   - Displayed user-friendly error messages
-   - Logged error details for debugging
-
-```typescript
-class ErrorBoundary extends React.Component {
-  componentDidCatch(error, errorInfo) {
-    console.error('Error caught:', error, errorInfo);
-    // In production, would send to error tracking service
-  }
-  
-  render() {
-    if (this.state.hasError) {
-      return <ErrorFallback />;
-    }
-    return this.props.children;
-  }
-}
-```
-
-3. API Error Handling:
-   - Caught and logged all API errors
-   - Included request details (URL, method, payload)
-   - Logged response status and error messages
-   - Differentiated between client errors (4xx) and server errors (5xx)
-
-4. Socket.IO Error Tracking:
-   - Logged connection errors
-   - Tracked message delivery failures
-   - Monitored reconnection attempts
-
-5. User Feedback:
-   - Implemented user-reported error mechanism
-   - Users could report issues through the app
-   - Collected context (browser, device, actions taken)
 
 Tools Used:
 - Browser DevTools for development debugging
 - Console logging with different log levels
 - Network tab for API debugging
 - React DevTools for component debugging
-
-For Production (Ideally):
-- Services like Sentry, LogRocket, or similar for error tracking
-- Real-time error monitoring and alerts
-- Error aggregation and analytics
-- User session replay for debugging
 
 While we didn't have advanced error tracking services set up, I ensured comprehensive logging that helped us debug issues effectively. I understand the importance of proper error tracking and monitoring in production applications.
 
