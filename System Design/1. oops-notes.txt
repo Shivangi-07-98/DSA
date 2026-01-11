@@ -2,7 +2,6 @@ OOPS - Encapsulation, Inheritance, Polymorphism
 Encapsulation - Classes, Objects
 
 Encapsulation-
-Making a class and putting data members and functions is encapsulation.
 The process of creating classes And putting data members and functions together in classes is called encapsulation.
 
 Classes-
