@@ -6,8 +6,12 @@ The process of creating classes And putting data members and functions together 
 
 Classes-
 
-
 Objects-
+
+new Person krne se heap mai ek object(instance) bn gya (jiske andar uss object ki properties padi hai lekin sb 0 ya null hai) jiska address(reference) stack mai stored hai
+
+jis object pr aapne function call kia hai toh this apne aap pass ho jata hai aur this ke andar uss object ka address pass ho jata hai
+this reference hota hai (address)
 
 Instance Reference-
 heap ke andar object bnta hai - Instance/Objects
