@@ -36,22 +36,24 @@ Static data members, Static functions, Static class
 wo function jisko call krne ke liye object bnana na pde
 Static functions-
 Such functions which do not require object for their invocation (are invoked directly via class names)
+BankAccount.roi isko directly nhi ched skte, function bna kar ched skte
 
-Static functions implications- 
+refer f1 file
+Static functions implications - 
 Q1. this keyword cannot be used in static functions. Why?
-Ans- Because can be called by class name in that case this won't know which instance to point to
+Ans - Because static functions can be called by class name in that case this won't know which instance to point to, it knows only when called using object
 
 Q2. non-static data members can't be used in static functions. Why?
-Ans- Because it can be called by class name and in that case we don't know if any object exists and if they do we wont know which objects non-static data members to use.
+Ans - Because static functions can be called by class name and in that case we don't know if any object exists and if they do we wont know which objects non-static data members to use.
 
 Q3. non-static functions can't be used in static functions. Why?
-Ans- Can be used by making an object inside the static function and calling the nonstatic function on it. Can't be called directly.
+Ans - Can be used by making an object inside the static function and calling the nonstatic function on it. Can't be called directly.
 
 4. can non-static function use static data member? Why?
-Ans- Yes because we have extra information available not less
+Ans - Yes because we have extra information available not less
 
 5. can non-static function use static function? Why?
-Ans- Yes because we have extra information available not less
+Ans - Yes because we have extra information available not less
 
 --------------------------------------------------------------------------
 
