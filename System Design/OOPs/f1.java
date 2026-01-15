@@ -7,11 +7,6 @@ class Main {
     int money;
     static int roi;
 
-    // BankAccount(BankAccount o) {
-    //   this.anum = o.anum;
-    //   this.money = o.money;
-    // }
-
     void announce() {
       int anum = 10;
       System.out.println(anum + ", " + this.money + ", " + this.roi);
@@ -26,8 +21,6 @@ class Main {
 
       BankAccount a = new BankAccount();
       a.announce(); // this is allowed
-
-      BankAccount b = a;
     }
   }
 
