@@ -17,13 +17,25 @@ Instance Reference-
 heap ke andar object bnta hai - Instance/Objects
 uska address stack mai store hota hai - Reference
 
+Static data members - class ko belong krte hai
+jb hum class bnate hai
+static class BankAccount{
+  int anum;
+  int money;
+  static int roi;
+}
+
+static int roi; // jis cheez ko static bna dete hai wo class se kbhi object mai aata hi nhi hai wo class mai hi rehta hai
+
+BankAccount a1 = new BankAccount(); // ye krne se har baar bank account ka object bnega aur usme anum, money hoga but (static int roi) nhi hoga wo uss class se har baar object bnate hue nhi bnega wo bs ek hi hai jo class ko belong krta hai aur uski value change krni h toh 
+BankAccount.roi krke assign hoga
+
 Static- used on three places
 Static data members, Static functions, Static class
 
---------------------------------------------------------------------------
-
+wo function jisko call krne ke liye object bnana na pde
 Static functions-
-Such functions which do not require object for their invocation (can be called directly via class names)
+Such functions which do not require object for their invocation (are invoked directly via class names)
 
 Static functions implications- 
 Q1. this keyword cannot be used in static functions. Why?
