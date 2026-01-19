@@ -3,7 +3,7 @@ package OOPs;
 import java.io.*;
 import java.util.*;
 
-class Main {
+class f2 {
 
   static class P {
     int d = 1;

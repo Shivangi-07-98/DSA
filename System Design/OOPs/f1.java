@@ -3,7 +3,7 @@ package OOPs;
 import java.io.*;
 import java.util.*;
 
-class Main {
+class f1 {
 
   static class BankAccount {
     int anum;
