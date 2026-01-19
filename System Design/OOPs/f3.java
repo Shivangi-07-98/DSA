@@ -4,6 +4,7 @@ import java.io.*;
 import java.util.*;
 
 class f3 {
+
   public static void main(String[] args) throws NumberFormatException, IOException {
     Student s = new Student(10, "A");
   }
@@ -33,8 +34,7 @@ class f3 {
       // maxScore = read from database and set;
     }
 
-    // For class creator to initialize data members which are dynamic e.g. reading
-    // from a file or a db
+    // For class creator to initialize data members which are dynamic e.g. reading from a file or a db
     Student() {
       // dbconnection = new DBConnection("<ip address>");
       // studentFolder = Files.read("..");
