@@ -90,3 +90,10 @@ Inheritance & Polymorphism -
   4. C ref, P inst => not allowed
   5. Run-time polymorphism -> calling fun in case 1 and 3 (fn overriding)
   6. Compile-time polymorphism -> Arrays.sort multiple (fn overloading)
+
+--------------------------------------------------------------------------
+
+1. Final 
+  variable = values can't be reassigned
+  data member = values can't be reassigned (either assign in parsing or constructor / static block)
+  fn = Can't override the fn in derived class (overloading is allowed in same class and derived class)
