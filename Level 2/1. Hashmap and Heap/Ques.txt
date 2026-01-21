@@ -27,7 +27,7 @@
 11. grid illumination
 12. brick wall
 13. minimum number of refueling spots
-14. potions (hard version) 
+14. potions (hard version)
 17. island perimeter
 18. the skyline problem
 19. pairs of coinciding points
