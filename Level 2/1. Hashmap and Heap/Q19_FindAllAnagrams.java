@@ -30,7 +30,7 @@ public class Q19_FindAllAnagrams {
     }
 
     ArrayList<Integer> res = new ArrayList<>();
-    if (areAnagram(map1, map2)) {
+    if (areAnagram(map1, map2) == true) {
       res.add(0);
     }
 
