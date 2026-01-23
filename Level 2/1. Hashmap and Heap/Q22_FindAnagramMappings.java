@@ -25,12 +25,12 @@ public class Q22_FindAnagramMappings {
   }
 
   public static int[] anagramMappings(int[] arr1, int[] arr2) {
-    HashMap<Integer, Queue<Integer>> map = new HashMap<>();
+    HashMap<Integer, ArrayDeque<Integer>> map = new HashMap<>();
 
     // store indices of arr2
     for (int i = 0; i < arr2.length; i++) {
       if (!map.containsKey(arr2[i])) {
-        map.put(arr2[i], new LinkedList<>());
+        map.put(arr2[i], new ArrayDeque<>());
       }
       map.get(arr2[i]).add(i);
     }
@@ -44,7 +44,7 @@ public class Q22_FindAnagramMappings {
 
     return res;
   }
-
+  
 }
 
 /*
