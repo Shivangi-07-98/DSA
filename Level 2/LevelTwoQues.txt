@@ -37,7 +37,32 @@ Hashmap and Heap -
 38. largest subarray with contiguous elements
 39. powerful integers
 40. subdomain visit count
+41. group anagrams - 25 mar 2022
+42. group shifted strings
+43. maximum consecutive ones - 1
+44. maximum consecutive ones - 2
+45. longest substring with atmost k unique characters
+46. count of substrings having atmost k unique characters
+47. count of substrings with exactly k unique characters
+48. equivalent subarrays
+49. max frequency stack - 28 mar 2022
+50. insert delete get random O(1)
+51. insert delete get random O(1) - duplicates allowed
+52. recurring sequence in a fraction
+53. pairs with equal sum
+54. brick wall - 30 mar 2022
+55. random pick with blacklist
+56. the skyline problem
+57. pairs of non coinciding points
+58. minimum cost to connect sticks - 31 mar 2022
+59. snapshot array
+60. encode and decode tinyurl
+61. avoid flood in the city
+62. minimum number of refueling stops - 1 apr 2022
 
-41. count of substrings with exactly k unique characters
-38. group anagrams
-39. group shifted strings
+64. line reflection
+65. reorganize strings
+66. binary strings
+67. 
+59. count substring with less than equal to k unique characters
+47. count of substring with exactly k unique characters
