@@ -1,4 +1,4 @@
-Hashmap and Heap -
+Hashmap and Heap - 
 
 1. subarray with equal number of 0 and 1 - 11 mar 2022
 2. substring with equal 0 1 and 2
@@ -59,10 +59,11 @@ Hashmap and Heap -
 60. encode and decode tinyurl
 61. avoid flood in the city
 62. minimum number of refueling stops - 1 apr 2022
+63. line reflection
+64. reorganize string
+65. binary string with substrings representing numbers from 1 to n
+66. longest substring with every char occuring at least k times
 
-64. line reflection
-65. reorganize strings
-66. binary strings
-67. 
-59. count substring with less than equal to k unique characters
-47. count of substring with exactly k unique characters
+Bit Manipulation - 
+
+1. - 5 apr 2022
