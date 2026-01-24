@@ -1,3 +1,5 @@
+Hashmap and Heap -
+
 1. subarray with equal number of 0 and 1 - 11 mar 2022
 2. substring with equal 0 1 and 2
 3. number of subarrays sum exactly k
@@ -21,20 +23,3 @@
 24. group shifted strings - 22 mar 2022
 25. isomorphic strings
 26. word pattern
-
-
-19. morning assembly
-11. grid illumination
-12. brick wall
-13. minimum number of refueling spots
-14. potions (hard version)
-17. island perimeter
-18. the skyline problem
-19. pairs of coinciding points
-20. length of largest subarray with continuous element
-21. length of largest subarray with continuous element 2
-22. rearrange character string such that no two are same
-23. rearrange k distance apart
-24. same frequency after one removal
-25. mode of frequencies
-26. line reflection
