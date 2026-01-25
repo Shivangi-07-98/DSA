@@ -66,4 +66,17 @@ Hashmap and Heap -
 
 Bit Manipulation - 
 
-1. - 5 apr 2022
+1. basics of bit manipulation - 5 apr 2022
+2. print value of rsb mask
+3. kernighans algorithm
+4. gray code
+5. josephus special - 6 apr 2022
+6. all repeating except one
+7. all repeating except two
+8. one repeating and one missing
+9. all repeating three times except one
+10. is a power of 2 - 7 apr 2022
+11. is a power of 4
+12. xor of sum of all pairs
+13. triplets 1
+14. reduce n to 1
