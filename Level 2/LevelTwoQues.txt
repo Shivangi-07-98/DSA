@@ -82,4 +82,14 @@ Bit Manipulation -
 14. all repeating three times except one - 8 apr 2022----
 15. copy set bits in a range
 16. flip bits to convert a to b
-17. 
+17. swap all odd and even bits
+18. 3 ques - 11 apr 2022----
+19. 3 ques - 12 apr 2022----
+20. 3 ques - 18 apr 2022----
+21. permutation 1 - 19 apr 2022----
+22. permutations 2
+23. combinations 1
+24. combinations 2
+
+Bit Manipulation - 
+
