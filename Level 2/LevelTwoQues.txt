@@ -88,6 +88,10 @@ Bit Manipulation -
 20. 3 ques - 18 apr 2022----
 21. nqueens using bit - 22 apr 2022----
 22. sudoku using bit manipulation
+23. count set bits in first n natural numbers - 13 may 2022----
+24. solve 7n by 8
+25. sum of bit differences of all pairs
+26. abbreviation 1 using bits
 
 Recursion and Backtracking - 
 
@@ -122,4 +126,37 @@ Recursion and Backtracking -
 29. words k length words 2
 30. words k selection 2
 31. words k selection 3 - 10 may 2022----
-32. 
+32. words k length words 4
+33. words k selection 4
+34. coin change combinations 1
+35. coin change permutations 1
+36. coin change combinations 2 - 11 may 2022----
+37. coin change permutations 2
+38. josephus problem
+39. abbreviation using backtracking
+40. max score
+41. all palindromic permutations - 13 may 2022----
+
+Trees - 16 may 2022 to 9 june 2022
+20 aug 2022
+
+1. level order - 16 may 2022----
+2. reverse level order traversal
+3. left view of bt
+4. right view of bt
+5. top view of bt
+6. bottom view of bt
+7. - 17 may 2022----
+
+Graphs - 13 june 2022 to 12 july 2022
+
+Arrays and Strings - 15 july 2022 to 18 aug 2022
+
+Dynamic Programming - 23 aug 2022 to 1 oct 2022
+Stack and Queues, Trie
+
+Linked List - 1 oct 2022 to 6 oct 2022
+
+Hashmap and Heap - 8 oct 2022 to 22 oct 2022
+
+Bits, Recursion and Backtracking - 26 oct 2022 to 13 nov 2022
