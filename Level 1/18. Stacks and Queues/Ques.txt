@@ -5,7 +5,7 @@
 5. next greater element to the right_left
 6. next greater element to the left_right
 7. largest area histogram
-8. sliding window maximum
+8. sliding window maximum - 14 feb 2022
 9. infix evaluation
 10. infix conversions
 11. postfix evaluation and conversions
