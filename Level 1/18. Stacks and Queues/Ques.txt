@@ -1,11 +1,11 @@
-1. duplicate brackets
+1. duplicate brackets - 11 feb 2022----
 2. balanced brackets
 3. next greater element to the right_right
 4. stock span - next greater element to the left_left
-5. next greater element to the right_left
+5. next greater element to the right_left - 13 feb 2022----
 6. next greater element to the left_right
 7. largest area histogram
-8. sliding window maximum - 14 feb 2022
+8. sliding window maximum - 14 feb 2022----
 9. infix evaluation
 10. infix conversions
 11. postfix evaluation and conversions
