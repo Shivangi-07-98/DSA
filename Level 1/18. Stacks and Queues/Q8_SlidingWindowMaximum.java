@@ -63,4 +63,4 @@ public class Q8_SlidingWindowMaximum {
 // Naive O(n*k) approach: For each window, loop through k elements to find max
 // Complexity: (n-k+1) windows × k checks = O(n*k)
 
-// - O(n*k) becomes slow for large k (if k=n/2, it's O(n²))
+// O(n*k) becomes slow for large k (if k=n/2, it's O(n²))
