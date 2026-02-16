@@ -58,6 +58,11 @@ public class Q12_PrefixEvaluationAndConversions {
   }
 }
 
+// Conversion rules:
+// infix = v1 op v2  (e.g., a+b)
+// prefix = op v1 v2 (e.g., +ab)
+// postfix = v1 v2 op (e.g., ab+)
+
 // Prefix evaluation: process right to left, when operator found, apply to next two operands
 // Prefix to Infix: (v1 op v2) with parentheses
 // Prefix to Postfix: v1 v2 op (operands first, operator last)

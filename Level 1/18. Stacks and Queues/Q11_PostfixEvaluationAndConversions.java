@@ -56,6 +56,11 @@ public class Q11_PostfixEvaluationAndConversions {
   }
 }
 
+// Conversion rules:
+// infix = v1 op v2  (e.g., a+b)
+// prefix = op v1 v2 (e.g., +ab)
+// postfix = v1 v2 op (e.g., ab+)
+
 // Postfix to Infix: (v1 op v2) with parentheses
 // Postfix to Prefix: op v1 v2 (operator first)
 
