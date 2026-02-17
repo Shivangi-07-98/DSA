@@ -1,7 +1,7 @@
 import java.io.*;
 import java.util.*;
 
-public class Q18_DynamicStack {
+public class Q25_NormalStack {
   public static void main(String[] args) {
     
   }
