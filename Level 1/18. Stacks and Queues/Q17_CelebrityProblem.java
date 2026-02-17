@@ -53,6 +53,7 @@ public class Q17_CelebrityProblem {
       System.out.println("none");
     }
   }
+  
 }
 
 // Algorithm:

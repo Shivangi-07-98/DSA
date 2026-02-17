@@ -120,6 +120,7 @@ public class Q18_TwoStacksInAnArray {
     }
     scn.close();
   }
+  
 }
 
 // Two stacks in one array:
