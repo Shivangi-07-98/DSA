@@ -3,7 +3,7 @@ import java.util.*;
 
 // O(n) - each person processed once in elimination, then O(n) verification
 // Find celebrity: everyone knows them, they know no one
-public class Q15_CelebrityProblem {
+public class Q17_CelebrityProblem {
   public static void main(String[] args) {
     Scanner scn = new Scanner(System.in);
     int n = scn.nextInt();

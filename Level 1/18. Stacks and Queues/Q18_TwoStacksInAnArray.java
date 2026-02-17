@@ -3,7 +3,7 @@ import java.util.*;
 
 // Implement two stacks in a single array
 // Stack 1 grows from left (index 0), Stack 2 grows from right (index n-1)
-public class Q16_TwoStacksInAnArray {
+public class Q18_TwoStacksInAnArray {
   public static class TwoStack {
     int[] data;
     int tos1; // top of stack 1 (points to top element)

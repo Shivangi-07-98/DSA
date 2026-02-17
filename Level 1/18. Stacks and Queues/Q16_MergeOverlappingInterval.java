@@ -3,7 +3,7 @@ import java.util.*;
 
 // O(n log n) - sorting + O(n) processing
 // Merge overlapping intervals and print in increasing order of start time
-public class Q14_MergeOverlappingInterval {
+public class Q16_MergeOverlappingInterval {
   public static void main(String[] args) {
     Scanner scn = new Scanner(System.in);
     int n = scn.nextInt(); // 6
