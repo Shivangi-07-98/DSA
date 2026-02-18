@@ -118,6 +118,7 @@ public class Q18_TwoStacksInAnArray {
       }
       str = scn.nextLine();
     }
+    
     scn.close();
   }
   
