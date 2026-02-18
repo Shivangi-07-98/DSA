@@ -18,7 +18,6 @@ public class Q19_MinimumStack1 {
 
     void push(int val) {
       allData.push(val);
-
       if (minData.size() == 0 || val <= minData.peek()) {
         minData.push(val);
       }
@@ -30,10 +29,9 @@ public class Q19_MinimumStack1 {
         return -1;
       }
 
-      if (allData.peek().equals(minData.peek())) {
-        int val = allData.pop();
+      if (allData.peek() == minData.peek()) {
         minData.pop();
-        return val;
+        return allData.pop();
       } else {
         return allData.pop();
       }
