@@ -48,8 +48,8 @@ public class Q17_CelebrityProblem {
     int pot = st.pop();
     boolean flag = true;
     for (int i = 0; i < arr.length; i++) {
-      if (i != pot) {
-        if (arr[i][pot] == 0 || arr[pot][i] == 1) {
+      if (i != pot) { // 3 3 both on col and row, check will not happen
+        if (arr[i][pot] == 0 || arr[pot][i] == 1) { // col row
           flag = false;
           break;
         }
