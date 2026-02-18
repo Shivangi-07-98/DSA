@@ -3,15 +3,24 @@ import java.util.*;
 
 // O(n) - each person processed once in elimination, then O(n) verification
 // Find celebrity: everyone knows them, they know no one
+// Sample Input:
+// 4
+// 0000
+// 1011
+// 1101
+// 1110
+//
+// Sample Output:
+// 0
 public class Q17_CelebrityProblem {
   public static void main(String[] args) {
     Scanner scn = new Scanner(System.in);
-    int n = scn.nextInt();
-    int[][] arr = new int[n][n];
-    for (int j = 0; j < n; j++) {
-      String line = scn.next();
-      for (int k = 0; k < n; k++) {
-        arr[j][k] = line.charAt(k) - '0';
+    int n = scn.nextInt(); // 4
+    int[][] arr = new int[n][n]; // 4 4
+    for (int i = 0; i < n; i++) { // 0 1 2 3
+      String line = scn.next(); // 0000, 1011, 1101, 1110
+      for (int j = 0; j < n; j++) {
+        arr[i][j] = line.charAt(j) - '0'; // converting to integer
       }
     }
     findCelebrity(arr);
