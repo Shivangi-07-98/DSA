@@ -66,6 +66,7 @@ public class Q16_MergeOverlappingInterval {
       rs.push(st.pop());
     }
 
+    System.out.println();
     while (rs.size() > 0) {
       Pair p = rs.pop();
       System.out.println(p.start + " " + p.end);
