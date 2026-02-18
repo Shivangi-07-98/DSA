@@ -124,6 +124,14 @@ public class Q18_TwoStacksInAnArray {
   
 }
 
+// String str = "push1 10";
+// str.split(" ") returns ["push1", "10"]
+
+// String[] parts = str.split(" ");
+// String value = parts[1];
+
+// String value = str.split(" ")[1];
+
 // Two stacks in one array:
 // Stack 1: grows from left (tos1 starts at -1, increments)
 // Stack 2: grows from right (tos2 starts at n, decrements)
