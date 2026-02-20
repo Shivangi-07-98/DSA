@@ -72,6 +72,7 @@ public class Q10_InfixConversions {
       return 2;
     }
   }
+  
 }
 
 // Conversion rules:
