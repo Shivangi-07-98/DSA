@@ -17,6 +17,20 @@ public class Q22_QueueToStackAdapterPopEfficient {
     }
 
     void push(int val) {
+      helperQ.add(val);
+
+      // move everything to helper
+      while (mainQ.size() > 0) {
+        helperQ.add(mainQ.remove());
+      }
+
+      // swap queues
+      Queue<Integer> temp = mainQ;
+      mainQ = helperQ;
+      helperQ = temp;
+    }
+
+    void push2(int val) {
       // move everything to helper
       while (mainQ.size() > 0) {
         helperQ.add(mainQ.remove());
