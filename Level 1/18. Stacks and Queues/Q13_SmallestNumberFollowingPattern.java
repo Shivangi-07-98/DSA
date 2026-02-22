@@ -3,7 +3,7 @@ import java.util.*;
 
 // O(n) - each character processed once
 // Generate smallest number following pattern where 'd' = decrease, 'i' = increase
-// digits repeat nhi hone chaiye, max 8 length, no 0 only 1-9 digits
+// digits repeat nhi hone chaiye, max 8 length, no 0 - only 1-9 digits
 public class Q13_SmallestNumberFollowingPattern {
   public static void main(String[] args) {
     Scanner scn = new Scanner(System.in);
@@ -39,6 +39,7 @@ public class Q13_SmallestNumberFollowingPattern {
     System.out.println();
     scn.close();
   }
+
 }
 
 // Pattern rules:
