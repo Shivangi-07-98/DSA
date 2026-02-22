@@ -51,8 +51,8 @@ public class Q23_StackToQueueAdapterAddEfficient {
         helperS.push(mainS.pop());
       }
 
-      int val = mainS.peek();
-      helperS.push(mainS.pop());
+      int val = mainS.pop();
+      helperS.push(val);
 
       // restore
       while (helperS.size() > 0) {
