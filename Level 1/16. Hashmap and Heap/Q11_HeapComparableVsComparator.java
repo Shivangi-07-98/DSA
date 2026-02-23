@@ -1,7 +1,7 @@
 import java.io.*;
 import java.util.*;
 
-public class Q11_WriteHashmap {
+public class Q11_HeapComparableVsComparator {
 
   public static class MyPriorityQueue<T> {
     ArrayList<T> data;
