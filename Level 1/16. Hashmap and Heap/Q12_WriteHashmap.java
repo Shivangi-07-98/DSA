@@ -129,11 +129,9 @@ public class Q12_WriteHashmap {
   }
 
   public static void main(String[] args) throws Exception {
-
-    BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+    Scanner scn = new Scanner(System.in);
     HashMap<String, Integer> map = new HashMap<>();
-
-    String str = br.readLine();
+    String str = scn.nextLine();
 
     while (str.equals("quit") == false) {
 
@@ -168,7 +166,7 @@ public class Q12_WriteHashmap {
         map.display();
       }
 
-      str = br.readLine();
+      str = scn.nextLine();
     }
   }
 
