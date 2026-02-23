@@ -32,7 +32,7 @@ public class Q12_WriteHashmap {
 
     public boolean containsKey(K key) {
       int bi = hashFunction(key);
-      int di = findInBucket(key, bi);
+      int di = findInBucket(key, bi); // O(lambda)
 
       if (di == -1) {
         return false;
@@ -77,6 +77,11 @@ public class Q12_WriteHashmap {
       } else {
         HMpair pair = buckets[bi].get(di);
         pair.val = val;
+      }
+
+      double lambda = size * 1.0 / buckets.length;
+      if (lambda > 2.0) {
+        rehash();
       }
     }
 
@@ -124,6 +129,20 @@ public class Q12_WriteHashmap {
         }
       }
       return -1;
+    }
+
+    private void rehash() {
+      LinkedList<HMpair>[] oba = buckets;
+
+      size = 0;
+      initBuckets(2 * oba.length);
+
+      for(int bi = 0; bi < oba.length; bi++){
+        for(int di = 0; di < oba[bi].size(); di++){
+          HMpair pair = oba[bi].get(di);
+          put(pair.key, pair.val);
+        }
+      }
     }
 
   }
