@@ -30,17 +30,14 @@ public class Q12_WriteHashmap {
       }
     }
 
-    public void put(K key, V val) {
+    public boolean containsKey(K key) {
       int bi = hashFunction(key);
       int di = findInBucket(key, bi);
 
       if (di == -1) {
-        HMpair pair = new HMpair(key, val);
-        buckets[bi].add(pair);
-        size++;
+        return false;
       } else {
-        HMpair pair = buckets[bi].get(di);
-        pair.val = val;
+        return true;
       }
     }
 
@@ -53,17 +50,6 @@ public class Q12_WriteHashmap {
       } else {
         HMpair pair = buckets[bi].get(di);
         return pair.val;
-      }
-    }
-
-    public boolean containsKey(K key) {
-      int bi = hashFunction(key);
-      int di = findInBucket(key, bi);
-
-      if (di == -1) {
-        return false;
-      } else {
-        return true;
       }
     }
 
@@ -80,6 +66,20 @@ public class Q12_WriteHashmap {
       }
     }
 
+    public void put(K key, V val) {
+      int bi = hashFunction(key);
+      int di = findInBucket(key, bi);
+
+      if (di == -1) {
+        HMpair pair = new HMpair(key, val);
+        buckets[bi].add(pair);
+        size++;
+      } else {
+        HMpair pair = buckets[bi].get(di);
+        pair.val = val;
+      }
+    }
+
     public ArrayList<K> keyset() {
       ArrayList<K> keys = new ArrayList<>();
 
@@ -93,10 +93,6 @@ public class Q12_WriteHashmap {
       return keys;
     }
 
-    public int size() {
-      return size;
-    }
-
     public void display() {
       System.out.println("Display Begins");
       for (int bi = 0; bi < buckets.length; bi++) {
@@ -108,6 +104,10 @@ public class Q12_WriteHashmap {
         System.out.println(".");
       }
       System.out.println("Display Ends");
+    }
+
+    public int size() {
+      return size;
     }
 
     private int hashFunction(K key) {
