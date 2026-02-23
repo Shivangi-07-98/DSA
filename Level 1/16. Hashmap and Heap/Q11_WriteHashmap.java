@@ -205,7 +205,7 @@ public class Q11_WriteHashmap {
   }
 
 }
+
 // interface is a contract of functions
 // agar koi class interface ko implement krti hai toh usse interface ke function
 // ki body provide krni pdti hai
-//
