@@ -42,7 +42,7 @@ public class Q19_FindAllAnagrams {
       map1[chi - 'a']++;
 
       char chj = s.charAt(j);
-        map1[chj - 'a']--;
+      map1[chj - 'a']--;
 
       if (areAnagram(map1, map2) == true) {
         res.add(j + 1);
@@ -67,6 +67,7 @@ public class Q19_FindAllAnagrams {
     }
     return true;
   }
+
 }
 
 /*
