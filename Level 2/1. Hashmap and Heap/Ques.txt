@@ -25,7 +25,7 @@
 28. smallest substring containing all unique characters
 29. word pattern
 30. longest substring with exactly k unique characters
-31. smallest subarray with all occurrences of the most frequent element - 23 mar 2022----
+31. smallest subarray with most frequent element - 23 mar 2022----
 32. first non repeating character
 33. lru cache
 34. task completion
