@@ -1,4 +1,4 @@
-Hashmap and Heap - 
+Hashmap and Heap - (12 lec)
 
 1. subarray with equal number of 0 and 1 - 11 mar 2022----
 2. substring with equal 0 1 and 2
@@ -27,7 +27,7 @@ Hashmap and Heap -
 28. smallest substring containing all unique characters
 29. word pattern
 30. longest substring with exactly k unique characters
-31. smallest subarray with all occurrences of the most frequent element - 23 mar 2022----
+31. smallest subarray with most frequent element - 23 mar 2022----
 32. first non repeating character
 33. lru cache
 34. task completion
@@ -64,7 +64,7 @@ Hashmap and Heap -
 65. binary string with substrings representing numbers from 1 to n
 66. longest substring with every char occuring at least k times
 
-Bit Manipulation - 
+Bit Manipulation - (9 lec)
 
 1. basics of bit manipulation - 5 apr 2022----
 2. print value of rsb mask
@@ -93,7 +93,7 @@ Bit Manipulation -
 25. sum of bit differences of all pairs
 26. abbreviation 1 using bits
 
-Recursion and Backtracking - 
+Recursion and Backtracking - (12 lec)
 
 1. permutation 1 - 19 apr 2022----
 2. permutations 2
@@ -137,7 +137,7 @@ Recursion and Backtracking -
 40. max score
 41. all palindromic permutations - 13 may 2022----
 
-Trees - 16 may 2022 to 9 june 2022
+Trees - 16 may 2022 to 9 june 2022 (15 lec)
 20 aug 2022
 
 1. level order - 16 may 2022----
@@ -148,11 +148,11 @@ Trees - 16 may 2022 to 9 june 2022
 6. bottom view of bt
 7. - 17 may 2022----
 
-Graphs - 13 june 2022 to 12 july 2022
+Graphs - 13 june 2022 to 12 july 2022 (18 lec)
 
-Arrays and Strings - 15 july 2022 to 18 aug 2022
+Arrays and Strings - 15 july 2022 to 18 aug 2022 (18 lec)
 
-Dynamic Programming - 23 aug 2022 to 1 oct 2022
+Dynamic Programming - 23 aug 2022 to 1 oct 2022 (23 lec)
 Stack and Queues, Trie
 
 Linked List - 1 oct 2022 to 6 oct 2022
