@@ -15,7 +15,6 @@ public class Q21_MinimumWindowSubstring {
   }
 
   public static String minWindow(String s, String t) {
-
     if (t.length() > s.length()) {
       return "";
     }
@@ -34,7 +33,6 @@ public class Q21_MinimumWindowSubstring {
     String ans = "";
 
     while (true) {
-
       // acquire
       while (mmc > 0 && i < s.length()) {
         char ch = s.charAt(i);
