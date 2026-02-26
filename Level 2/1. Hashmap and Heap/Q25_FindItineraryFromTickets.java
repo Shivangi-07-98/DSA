@@ -1,8 +1,9 @@
-// Time Complexity: O(n), Space Complexity: O(n)
+// Time Complexity: , Space Complexity: 
+
 import java.io.*;
 import java.util.*;
 
-public class Q26_WordPattern {
+public class Q25_FindItineraryFromTickets {
 
   public static void main(String[] args) {
     Scanner scn = new Scanner(System.in);
