@@ -1,0 +1,63 @@
+1. subarray with equal number of 0 and 1 - 11 mar 2022----
+2. substring with equal 0 1 and 2
+3. number of subarrays sum exactly k
+4. subarray sum divisible by k
+5-8. longest subarray
+9. count pair whose sum is divisible by k - 14 mar 2022----
+10. x of a kind in a deck
+11. check ap sequence
+12. array of doubled pair
+13. rabbits in forest
+14. same differences - 15 mar 2022----
+15. count of distinct elements in window of size k
+16. number of employees under every manager
+17. longest consecutive sequence of 1's in a binary string
+18. is array divisible in pairs whose sum is k
+19. find all anagrams - 17 mar 2022----
+20. k anagrams
+21. minimum window substring
+22. find anagram mappings
+23. longest substring with non-repeating characters - 22 mar 2022----
+24. count of substrings having all unique characters
+25. find itinerary from tickets
+26. morning assembly (tricky sorting cost)
+27. isomorphic strings
+28. smallest substring containing all unique characters
+29. word pattern
+30. longest substring with exactly k unique characters
+31. smallest subarray with most frequent element - 23 mar 2022----
+32. first non repeating character
+33. lru cache
+34. task completion
+35. pairs with given sum in two sorted matrices - 24 mar 2022----
+36. quadruplet sum1
+37. quadruplet sum2
+38. largest subarray with contiguous elements
+39. powerful integers
+40. subdomain visit count
+41. group anagrams - 25 mar 2022----
+42. group shifted strings
+43. maximum consecutive ones - 1
+44. maximum consecutive ones - 2
+45. longest substring with atmost k unique characters
+46. count of substrings having atmost k unique characters
+47. count of substrings with exactly k unique characters
+48. equivalent subarrays
+49. max frequency stack - 28 mar 2022----
+50. insert delete get random O(1)
+51. insert delete get random O(1) - duplicates allowed
+52. recurring sequence in a fraction
+53. pairs with equal sum
+54. brick wall - 30 mar 2022----
+55. random pick with blacklist
+56. the skyline problem
+57. pairs of non coinciding points
+58. minimum cost to connect sticks - 31 mar 2022----
+59. snapshot array
+60. encode and decode tinyurl
+61. avoid flood in the city
+62. minimum number of refueling stops - 1 apr 2022----
+63. line reflection
+64. reorganize string
+65. binary string with substrings representing numbers from 1 to n
+66. longest substring with every char occuring at least k times
