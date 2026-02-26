@@ -30,4 +30,3 @@ public class Q65_BinaryStringSubstrings1ToN {
  * Output:
  * true
  */
-

@@ -54,4 +54,3 @@ public class Q47_CountExactlyKUniqueSubstrings {
  * Output:
  * 7
  */
-

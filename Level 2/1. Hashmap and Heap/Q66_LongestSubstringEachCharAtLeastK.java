@@ -60,4 +60,3 @@ public class Q66_LongestSubstringEachCharAtLeastK {
  * Output:
  * 3
  */
-
