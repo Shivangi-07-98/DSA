@@ -1,0 +1,22 @@
+Bit Manipulation Intro
+
+1 bit can store only 0 or 1.
+If a data type has n bits, it can represent 2^n total combinations.
+
+Java integer types:
+byte  -> 8 bits
+short -> 16 bits
+int   -> 32 bits
+long  -> 64 bits
+
+(Matlab: jitne bits, utni jagah par 0/1 store ho sakta hai)
+Example: 8 bits => 8 positions, each position is 0 or 1.
+
+Signed range formula (two's complement):
+-2^(n-1) to (2^(n-1) - 1)
+
+Range in powers + values:
+byte  (n=8)  : -2^7  to (2^7 - 1)   = -128 to 127
+short (n=16) : -2^15 to (2^15 - 1)  = -32768 to 32767
+int   (n=32) : -2^31 to (2^31 - 1)  = -2147483648 to 2147483647
+long  (n=64) : -2^63 to (2^63 - 1)  = -9223372036854775808 to 9223372036854775807
