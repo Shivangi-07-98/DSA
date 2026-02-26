@@ -2,7 +2,7 @@
 // Space Complexity: O(n*m)
 import java.util.*;
 
-public class Q5_QueensPermutations2DQueenChooses {
+public class Q5_QueensPermutations2DAs2DQueenChooses {
 
   private static void queens(int qpsf, int tq, int[][] board) {
     if (qpsf > tq) {
@@ -67,3 +67,4 @@ public class Q5_QueensPermutations2DQueenChooses {
  * -	-	
  * q1	q2	
  */
+

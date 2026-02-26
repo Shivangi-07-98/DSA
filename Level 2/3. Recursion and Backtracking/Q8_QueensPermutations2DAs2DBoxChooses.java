@@ -2,7 +2,7 @@
 // Space Complexity: O(n*m)
 import java.util.*;
 
-public class Q8_QueensPermutations2DBoxChooses {
+public class Q8_QueensPermutations2DAs2DBoxChooses {
 
   private static void queens(int idx, int qpsf, int tq, int[][] board, boolean[] used) {
     int n = board.length;
@@ -89,3 +89,4 @@ public class Q8_QueensPermutations2DBoxChooses {
  * -\tq2\t
  * -\tq1\t
  */
+

@@ -2,28 +2,25 @@
 // Space Complexity: O(n*m)
 import java.util.*;
 
-public class Q7_QueensCombinations2DBoxChooses {
+public class Q6_QueensCombinations2DAs2DQueenChooses {
 
-  private static void queens(int idx, int qpsf, int tq, int[][] board) {
-    int n = board.length;
-    int m = board[0].length;
-    if (idx == n * m) {
-      if (qpsf == tq) {
-        printBoard(board);
-      }
+  private static void queens(int qpsf, int tq, int idx, int[][] board) {
+    if (qpsf > tq) {
+      printBoard(board);
       return;
     }
 
-    int r = idx / m;
-    int c = idx % m;
-
-    if (qpsf < tq) {
-      board[r][c] = qpsf + 1;
-      queens(idx + 1, qpsf + 1, tq, board);
-      board[r][c] = 0;
+    int n = board.length;
+    int m = board[0].length;
+    for (int i = idx; i < n * m; i++) {
+      int r = i / m;
+      int c = i % m;
+      if (board[r][c] == 0) {
+        board[r][c] = qpsf;
+        queens(qpsf + 1, tq, i + 1, board);
+        board[r][c] = 0;
+      }
     }
-
-    queens(idx + 1, qpsf, tq, board);
   }
 
   private static void printBoard(int[][] board) {
@@ -42,7 +39,7 @@ public class Q7_QueensCombinations2DBoxChooses {
     int m = scn.nextInt();
     int tq = scn.nextInt();
     int[][] board = new int[n][m];
-    queens(0, 0, tq, board);
+    queens(1, tq, 0, board);
   }
 
 }
@@ -72,3 +69,4 @@ public class Q7_QueensCombinations2DBoxChooses {
  * -	-	
  * q1	q2	
  */
+
