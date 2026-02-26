@@ -17,7 +17,7 @@
 20. k anagrams
 21. minimum window substring
 22. find anagram mappings
-23. longest substring with non-repeating characters - 22 mar 2022----
+23. longest unique substring - 22 mar 2022----start from here
 24. count of substrings having all unique characters
 25. find itinerary from tickets
 26. morning assembly (tricky sorting cost)
