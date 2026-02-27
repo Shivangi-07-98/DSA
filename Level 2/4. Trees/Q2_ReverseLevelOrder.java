@@ -80,6 +80,35 @@ public class Q2_ReverseLevelOrder {
     display(node.right);
   }
 
+  public static void levelOrderLW(Node node) {
+    Queue<Node> queue = new LinkedList<>();
+    queue.add(node);
+    queue.add(null);
+
+    while (queue.size() > 0) {
+      Node temp = queue.remove();
+
+      if (temp != null) {
+        System.out.print(temp.data + " ");
+
+        if (temp.left != null) {
+          queue.add(temp.left);
+        }
+
+        if (temp.right != null) {
+          queue.add(temp.right);
+        }
+      } else {
+        System.out.println();
+
+        if (queue.size() > 0) {
+          queue.add(null);
+        }
+      }
+    }
+
+  }
+
   public static ArrayList<Integer> reverseLevelOrder(Node node) {
     ArrayList<Integer> ret = new ArrayList<>();
 
@@ -117,7 +146,13 @@ public class Q2_ReverseLevelOrder {
     }
 
     Node root = construct(arr);
-    reverseLevelOrder(root);
+    levelOrderLW(root);
+    ArrayList<Integer> ans = reverseLevelOrder(root);
+    System.out.println(ans);
   }
 
 }
+
+// Input:
+// 19
+// 50 25 12 n n 37 30 n n n 75 62 n 70 n n 87 n n
