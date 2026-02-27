@@ -109,7 +109,45 @@ public class Q2_ReverseLevelOrder {
 
   }
 
-  public static ArrayList<Integer> reverseLevelOrder(Node node) {
+  public static void reverseLevelOrder1(Node node) {
+    Queue<Node> queue = new LinkedList<>();
+    queue.add(node);
+    queue.add(null);
+
+    Stack<String> st = new Stack<>();
+
+    String res = "";
+
+    while (queue.size() > 0) {
+      Node temp = queue.remove();
+
+      if (temp != null) {
+        res += temp.data + " ";
+
+        if (temp.left != null) {
+          queue.add(temp.left);
+        }
+
+        if (temp.right != null) {
+          queue.add(temp.right);
+        }
+      } else {
+        st.push(res);
+        res = "";
+
+        if (queue.size() > 0) {
+          queue.add(null);
+        }
+      }
+    }
+
+    while (st.size() > 0) {
+      res = st.pop();
+      System.out.println(res);
+    }
+  }
+
+  public static ArrayList<Integer> reverseLevelOrder2(Node node) {
     ArrayList<Integer> ret = new ArrayList<>();
 
     Queue<Node> queue = new LinkedList<>();
@@ -146,9 +184,10 @@ public class Q2_ReverseLevelOrder {
     }
 
     Node root = construct(arr);
-    levelOrderLW(root);
-    ArrayList<Integer> ans = reverseLevelOrder(root);
-    System.out.println(ans);
+    // levelOrderLW(root);
+    reverseLevelOrder1(root);
+    // ArrayList<Integer> ans = reverseLevelOrder2(root);
+    // System.out.println(ans);
   }
 
 }
