@@ -140,14 +140,6 @@ Recursion and Backtracking - (12 lec)
 Trees - 16 may 2022 to 9 june 2022 (15 lec)
 20 aug 2022
 
-1. level order - 16 may 2022----
-2. reverse level order traversal
-3. left view of bt
-4. right view of bt
-5. top view of bt
-6. bottom view of bt
-7. - 17 may 2022----
-
 Graphs - 13 june 2022 to 12 july 2022 (18 lec)
 
 Arrays and Strings - 15 july 2022 to 18 aug 2022 (18 lec)
