@@ -1,7 +1,7 @@
 import java.io.*;
 import java.util.*;
 
-public class Q3_LeftView {
+public class Q3_LeftRightTopBottomView {
 
   public static class Node {
     int data;
