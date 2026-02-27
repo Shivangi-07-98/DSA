@@ -1,7 +1,7 @@
 import java.io.*;
 import java.util.*;
 
-public class Q1_LevelOrder {
+public class Q2_ReverseLevelOrder {
 
   public static class Node {
     int data;
@@ -80,52 +80,27 @@ public class Q1_LevelOrder {
     display(node.right);
   }
 
-  public static void levelOrder(Node node) {
-    ArrayDeque<Node> queue = new ArrayDeque<>();
+  public static ArrayList<Integer> reverseLevelOrder(Node node) {
+    ArrayList<Integer> ret = new ArrayList<>();
+
+    Queue<Node> queue = new LinkedList<>();
     queue.add(node);
 
     while (queue.size() > 0) {
       Node temp = queue.remove();
-      System.out.print(temp.data + " ");
+
+      ret.add(temp.data);
+      if (temp.right != null) {
+        queue.add(temp.right);
+      }
 
       if (temp.left != null) {
         queue.add(temp.left);
       }
-
-      if (temp.right != null) {
-        queue.add(temp.right);
-      }
     }
 
-  }
-
-  public static void levelOrderLW(Node node) {
-    Queue<Node> queue = new LinkedList<>();
-    queue.add(node);
-    queue.add(null);
-
-    while (queue.size() > 0) {
-      Node temp = queue.remove();
-
-      if (temp != null) {
-        System.out.print(temp.data + " ");
-
-        if (temp.left != null) {
-          queue.add(temp.left);
-        }
-
-        if (temp.right != null) {
-          queue.add(temp.right);
-        }
-      } else {
-        System.out.println();
-
-        if (queue.size() > 0) {
-          queue.add(null);
-        }
-      }
-    }
-
+    Collections.reverse(ret);
+    return ret;
   }
 
   public static void main(String[] args) throws Exception {
@@ -142,7 +117,7 @@ public class Q1_LevelOrder {
     }
 
     Node root = construct(arr);
-    levelOrder(root);
+    reverseLevelOrder(root);
   }
 
 }
