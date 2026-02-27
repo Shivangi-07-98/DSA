@@ -142,7 +142,7 @@ public class Q1_LevelOrder {
     }
 
     Node root = construct(arr);
-    levelOrder(root);
+    levelOrderLW(root);
   }
 
 }
