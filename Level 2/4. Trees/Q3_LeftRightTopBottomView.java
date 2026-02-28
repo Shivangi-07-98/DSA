@@ -236,6 +236,7 @@ public class Q3_LeftRightTopBottomView {
 
     while (queue.size() > 0) {
       VPair rem = queue.remove();
+      
       map.put(rem.hd, rem.node.data);
 
       if (rem.hd < leftMin) {
