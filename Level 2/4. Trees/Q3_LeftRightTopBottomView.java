@@ -138,6 +138,130 @@ public class Q3_LeftRightTopBottomView {
     return retVal;
   }
 
+  public static ArrayList<Integer> rightView(Node root) {
+    ArrayList<Integer> retVal = new ArrayList<>();
+    if (root == null) {
+      return retVal;
+    }
+    Queue<Node> queue = new LinkedList<>();
+    queue.add(root);
+
+    while (queue.size() > 0) {
+      int lsize = queue.size();
+
+      for (int i = 0; i < lsize; i++) {
+        Node temp = queue.remove();
+
+        if (i == lsize - 1) {
+          retVal.add(temp.data);
+        }
+        if (temp.left != null) {
+          queue.add(temp.left);
+        }
+        if (temp.right != null) {
+          queue.add(temp.right);
+        }
+      }
+    }
+
+    return retVal;
+  }
+
+  public static class VPair {
+    Node node;
+    int hd; // horizontal distance
+
+    VPair(Node node, int hd) {
+      this.node = node;
+      this.hd = hd;
+    }
+  }
+
+  public static ArrayList<Integer> topView(Node root) {
+    ArrayList<Integer> retVal = new ArrayList<>();
+    if (root == null) {
+      return retVal;
+    }
+
+    Queue<VPair> queue = new LinkedList<>();
+    HashMap<Integer, Integer> map = new HashMap<>();
+    int leftMin = 0;
+    int rightMax = 0;
+
+    queue.add(new VPair(root, 0));
+
+    while (queue.size() > 0) {
+      VPair rem = queue.remove();
+
+      if (!map.containsKey(rem.hd)) {
+        map.put(rem.hd, rem.node.data);
+      }
+
+      if (rem.hd < leftMin) {
+        leftMin = rem.hd;
+      }
+      if (rem.hd > rightMax) {
+        rightMax = rem.hd;
+      }
+
+      if (rem.node.left != null) {
+        queue.add(new VPair(rem.node.left, rem.hd - 1));
+      }
+      if (rem.node.right != null) {
+        queue.add(new VPair(rem.node.right, rem.hd + 1));
+      }
+    }
+
+    for (int i = leftMin; i <= rightMax; i++) {
+      if (map.containsKey(i)) {
+        retVal.add(map.get(i));
+      }
+    }
+
+    return retVal;
+  }
+
+  public static ArrayList<Integer> bottomView(Node root) {
+    ArrayList<Integer> retVal = new ArrayList<>();
+    if (root == null) {
+      return retVal;
+    }
+
+    Queue<VPair> queue = new LinkedList<>();
+    HashMap<Integer, Integer> map = new HashMap<>();
+    int leftMin = 0;
+    int rightMax = 0;
+
+    queue.add(new VPair(root, 0));
+
+    while (queue.size() > 0) {
+      VPair rem = queue.remove();
+      map.put(rem.hd, rem.node.data);
+
+      if (rem.hd < leftMin) {
+        leftMin = rem.hd;
+      }
+      if (rem.hd > rightMax) {
+        rightMax = rem.hd;
+      }
+
+      if (rem.node.left != null) {
+        queue.add(new VPair(rem.node.left, rem.hd - 1));
+      }
+      if (rem.node.right != null) {
+        queue.add(new VPair(rem.node.right, rem.hd + 1));
+      }
+    }
+
+    for (int i = leftMin; i <= rightMax; i++) {
+      if (map.containsKey(i)) {
+        retVal.add(map.get(i));
+      }
+    }
+
+    return retVal;
+  }
+
   public static void main(String[] args) throws Exception {
     BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
     int n = Integer.parseInt(br.readLine());
@@ -152,9 +276,19 @@ public class Q3_LeftRightTopBottomView {
     }
 
     Node root = construct(arr);
-    levelOrderLW(root);
-    ArrayList<Integer> ans = leftView(root);
-    System.out.println(ans);
+    // levelOrderLW(root);
+    
+    // ArrayList<Integer> left = leftView(root);
+    // System.out.println(left);
+
+    // ArrayList<Integer> right = rightView(root);
+    // System.out.println(right);
+
+    ArrayList<Integer> top = topView(root);
+    System.out.println(top);
+
+    // ArrayList<Integer> bottom = bottomView(root);
+    // System.out.println(bottom);
   }
 
 }
