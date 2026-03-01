@@ -6,7 +6,7 @@ class Solution {
       return;
     }
 
-    if (node.left != null || node.right != null) {
+    if (node.left != null || node.right != null) { // if any one is true, it enters
       list.add(node.data);
     }
 
