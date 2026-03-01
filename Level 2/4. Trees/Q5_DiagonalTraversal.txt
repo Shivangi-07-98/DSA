@@ -41,3 +41,33 @@ class Tree {
     return total;
   }
 }
+
+-----------------------------------------------------------------------------
+
+best approach (iterative, no static, no hashmap null issue)
+
+class Tree {
+  public ArrayList<Integer> diagonal(Node root) {
+    ArrayList<Integer> ans = new ArrayList<>();
+    if (root == null) {
+      return ans;
+    }
+
+    Queue<Node> q = new LinkedList<>();
+    q.add(root);
+
+    while (q.size() > 0) {
+      Node cur = q.remove();
+
+      while (cur != null) {
+        ans.add(cur.data);
+        if (cur.left != null) {
+          q.add(cur.left);
+        }
+        cur = cur.right;
+      }
+    }
+
+    return ans;
+  }
+}
