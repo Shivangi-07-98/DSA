@@ -3,4 +3,5 @@
 3. left right top bottom view
 4. vertical order traversal of a bt - 17 may 2022----
 5. diagonal traversal
-6. 
+6. boundary traversal of binary tree
+7. 
