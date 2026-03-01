@@ -27,8 +27,8 @@ class Solution {
     Queue<Pair> queue = new LinkedList<>();
     queue.add(new Pair(root, 0, 1));
 
-    int lmw = 0;
-    int rmw = 0;
+    int lmw = 0; // left most horizontal
+    int rmw = 0; // right most horizontal
 
     HashMap<Integer, ArrayList<Pair>> map = new HashMap<>();
     while (queue.size() > 0) {
