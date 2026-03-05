@@ -1,5 +1,7 @@
 https://leetcode.com/problems/binary-tree-coloring-game/description/
 
+O(n)
+
 class Solution {
 
   int xkaleft;
@@ -35,5 +37,5 @@ class Solution {
       return false;
     }
   }
-  
+
 }
