@@ -5,4 +5,4 @@
 5. diagonal traversal
 6. boundary traversal of binary tree
 7. binary tree coloring game - 18 may 2022----
-8. 
+8. morris traversal - 19 may 2022----
