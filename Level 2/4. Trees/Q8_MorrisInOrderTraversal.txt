@@ -1,3 +1,5 @@
+https://leetcode.com/problems/binary-tree-inorder-traversal/description/
+
 recursion - time O(n), space height
 
 morris - iteration, does not take space
@@ -20,7 +22,7 @@ class Solution {
         }
 
         if (iop.right == null) {
-          iop.right = curr; // making the thread
+          iop.right = curr; // making the link
           curr = curr.left;
         } else {
           iop.right = null;
