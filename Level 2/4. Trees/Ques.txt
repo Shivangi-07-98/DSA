@@ -6,4 +6,5 @@
 6. boundary traversal of binary tree
 7. binary tree coloring game - 18 may 2022----
 8. morris in order traversal - 19 may 2022----
-9. 
+9. morris pre order traversal
+10. 
