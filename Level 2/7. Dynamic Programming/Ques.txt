@@ -1,4 +1,2 @@
-1. level order
-2. reverse level order
-3. left right top bottom view
-4. 
+1. ques - 23 aug 2022----
+2. 
