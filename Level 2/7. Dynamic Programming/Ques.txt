@@ -6,3 +6,5 @@
 6. goldmine
 7. longest increasing subsequence
 8. 
+
+super egg drop - 3 oct 2022----

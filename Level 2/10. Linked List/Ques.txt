@@ -1,4 +1,14 @@
-1. level order
-2. reverse level order
-3. left right top bottom view
-4. 
+1. copy list with random pointer - 1 oct 2022----
+2. split a circular linked list into two halves
+3. lru cache
+4. lfu cache
+5. odd even linked list - 3 oct 2022----
+6. reorder list
+7. unfold linked list
+8. reverse linked list
+9. add two numbers - 6 oct 2022----
+10. subtraction in linked list
+11. intersection of two linked lists
+12. linked list cycle
+13. linked list cycle 2
+14. quick sort on linked list

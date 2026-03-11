@@ -10,3 +10,5 @@
 10. recover bst
 11. in order successor
 12. 
+
+kth ancestor of a tree node - 6 oct 2022----
