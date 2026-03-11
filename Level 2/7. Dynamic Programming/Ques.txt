@@ -1,2 +1,10 @@
-1. ques - 23 aug 2022----
-2. 
+1. fibonacci - 23 aug 2022----
+2. climb stairs
+3. climb stairs with variable jumps
+4. climb stairs with minimum moves
+5. min cost in maze traversal
+6. goldmine
+7. target sum subsets
+8. coin change combinations
+9. coin change permutations
+10. 
