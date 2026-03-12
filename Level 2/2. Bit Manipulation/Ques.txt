@@ -1,6 +1,6 @@
 1. basics of bit manipulation - 5 apr 2022----
 2. print value of rsb mask
-3. kernighans algorithm
+3. kernighans algorithm (number of 1 bits)
 4. gray code
 5. josephus special - 6 apr 2022----
 6. all repeating except one
