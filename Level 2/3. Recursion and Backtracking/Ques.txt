@@ -39,3 +39,6 @@
 39. abbreviation using backtracking
 40. max score
 41. all palindromic permutations - 13 may 2022----
+
+remove invalid parenthesis - 12 nov 2022----
+all palindromic partitions

@@ -24,3 +24,5 @@
 24. solve 7n by 8
 25. sum of bit differences of all pairs
 26. abbreviation 1 using bits
+
+min xor pairs - 13 nov 2022----
