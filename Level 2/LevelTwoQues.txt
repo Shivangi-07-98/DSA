@@ -64,6 +64,23 @@ Hashmap and Heap - (12 lec)
 65. binary string with substrings representing numbers from 1 to n
 66. longest substring with every char occuring at least k times
 
+67. check whether arithmetic progression can formed given array - 8 oct 2022----
+68. rearrange characters string no two adjacent - 13 oct 2022----
+69. grid illumination
+70. largest subarray with contiguous elements set 2
+71. check anagram string palindrome or not - 15 oct 2022----
+72. check if frequency of all characters can become same by one removal
+73. count number of nice subarrays - 20 oct 2022----
+74. subarrays with k different integers
+75. number of substrings containing all three characters
+76. find median from data stream
+77. fruit into baskets - 22 oct 2022----
+78. replace the substring for balanced string
+79. minimum size subarray sum
+80. island perimeter
+81. a simple fraction
+82. shortest subarray with sum at least k
+
 Bit Manipulation - (9 lec)
 
 1. basics of bit manipulation - 5 apr 2022----
@@ -92,6 +109,8 @@ Bit Manipulation - (9 lec)
 24. solve 7n by 8
 25. sum of bit differences of all pairs
 26. abbreviation 1 using bits
+
+min xor pairs - 13 nov 2022----
 
 Recursion and Backtracking - (12 lec)
 
@@ -137,6 +156,9 @@ Recursion and Backtracking - (12 lec)
 40. max score
 41. all palindromic permutations - 13 may 2022----
 
+remove invalid parenthesis - 12 nov 2022----
+all palindromic partitions
+
 Trees - 16 may 2022 to 9 june 2022 (15 lec)
 20 aug 2022
 
@@ -145,10 +167,3 @@ Graphs - 13 june 2022 to 12 july 2022 (18 lec)
 Arrays and Strings - 15 july 2022 to 18 aug 2022 (18 lec)
 
 Dynamic Programming - 23 aug 2022 to 1 oct 2022 (23 lec)
-Stack and Queues, Trie
-
-Linked List - 1 oct 2022 to 6 oct 2022
-
-Hashmap and Heap - 8 oct 2022 to 22 oct 2022
-
-Bits, Recursion and Backtracking - 26 oct 2022 to 13 nov 2022
