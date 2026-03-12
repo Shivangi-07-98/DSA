@@ -61,3 +61,21 @@
 64. reorganize string
 65. binary string with substrings representing numbers from 1 to n
 66. longest substring with every char occuring at least k times
+
+67. check whether arithmetic progression can formed given array - 8 oct 2022----
+68. rearrange characters string no two adjacent - 13 oct 2022----
+69. grid illumination
+70. largest subarray with contiguous elements set 2
+71. check anagram string palindrome or not - 15 oct 2022----
+72. check if frequency of all characters can become same by one removal
+73. count number of nice subarrays - 20 oct 2022----
+74. subarrays with k different integers
+75. number of substrings containing all three characters
+76. find median from data stream
+77. fruit into baskets - 22 oct 2022----
+78. replace the substring for balanced string
+79. minimum size subarray sum
+80. island perimeter
+81. a simple fraction
+82. shortest subarray with sum at least k
+83. 
