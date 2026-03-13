@@ -4,7 +4,38 @@
 4. climb stairs with minimum moves
 5. min cost in maze traversal
 6. goldmine
-7. longest increasing subsequence
-8. 
+7. longest increasing subsequence n^2 - 24 aug 2022----
+8. building bridges
+9. russian doll envelopes
+10. weighted job scheduling set 2 using lis/maximum profit in job scheduling
+11. minimum number of increasing subsequences
+12. longest increasing subsequence nlog(n)
+13. count binary strings - 26 aug 2022----
+14. arrange buildings
+15. paint fence
+16. paint house
+17. paint house many colors
+18. highway billboard
+19. total number of possible binary search trees with n keys/count bst
+20. catalan - 27 aug 2022----
+21. unique binary search trees
+22. count brackets
+23. valleys and mountains | maze path above diagonal | dyck words
+24. circles and chords
+25. triangulations
+26. partition equal subset sum - 28 aug 2022----
+27. target sum subsets
+28. coin change combination
+29. coin change permutations
+30. zero one knapsack
+31. unbounded knapsack
+32. best time to buy and sell stock - 30 aug 2022----
+33. best time to buy and sell stock 2
+34. best time to buy and sell stock with transaction fee
+35. best time to buy and sell stock with cooldown
+36. best time to buy and sell stock 3
+37. best time to buy and sell stock 4 - 1 sept 2022----
+38. 
+39. 
 
 super egg drop - 3 oct 2022----
