@@ -1,4 +1,9 @@
-1. level order
-2. reverse level order
-3. left right top bottom view
-4. 
+1. implement trie prefix tree - 20 sept 2022----
+2. design add and search words data structure
+3. map sum pairs
+4. longest word in dictionary - 21 sept 2022----
+5. replace words
+6. concatenated words
+7. word search 2
+8. maximum xor of two numbers in an array - 24 sept 2022----
+9. count pairs with xor in a range

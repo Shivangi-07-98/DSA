@@ -35,7 +35,50 @@
 35. best time to buy and sell stock with cooldown
 36. best time to buy and sell stock 3
 37. best time to buy and sell stock 4 - 1 sept 2022----
-38. 
-39. 
-
-super egg drop - 3 oct 2022----
+38. tiling with 2*1 tiles
+39. tiling with m*1 tiles
+40. friends pairing
+41. partition into subsets
+42. matrix chain multiplication - 3 sept 2022----
+43. minimum maximum value expression - 6 sept 2022----
+44. optimal binary search tree
+45. burst balloons - 7 sept 2022----
+46. minimum score triangulation of polygon
+47. longest common substring - 9 sept 2022----
+48. palindromic substrings
+49. longest palindromic substring
+50. count palindromic subsequence given string
+51. count different palindromic subsequences
+52. palindrome partitioning 2 - 11 sept 2022----
+53. longest palindromic subsequence
+54. longest common subsequence
+55. palindrome partitioning
+56. count a+b+c+ subsequences
+57. lcs longest common subsequence 3 strings
+58. ugly number - 12 sept 2022----
+59. ugly number 2
+60. super ugly number
+61. distinct subsequences 2
+62. distinct subsequences
+63. probability of knight to remain in the chessboard - 14 sept 2022----
+64. longest repeating subsequence
+65. wildcard pattern matching
+66. frog jump
+67. edit distance
+68. largest sum subarray of size at least k - 16 sept 2022----
+69. regular expression matching
+70. jump game 2
+71. longest subsequence repeated k times
+72. remove boxes - 18 sept 2022----
+73. word break problem - 20 sept 2022----
+74. shortest common supersequence - 24 sept 2022----
+75. longest increasing subsequence 2
+76. number of digit one - 26 sept 2022----
+77. ones and zeroes
+78. minimum cost to cut a stick
+79. super egg drop
+80. optimal strategy for a game dp
+81. dungeon game - 28 sept 2022----
+82. cherry pickup 2
+83. cherry pickup
+84. scramble string
