@@ -1,0 +1,283 @@
+Getting Started
+
+1. Grading System
+2. Is A Number Prime
+3. Print All Primes Till N
+4. Print Fibonacci Numbers Till N
+5. Count Digits In A Number
+6. Digits Of A Number
+7. Reverse A Number
+8. Inverse Of A Number
+9. Rotate A Number
+10. Gcd And Lcm
+11. Prime Factorization Of A Number
+12. The Curious Case Of Benjamin Bulbs
+13. Pythagorean Triplet
+
+Arrays and Strings
+
+1. Digit Frequency
+2. Span Of Array
+3. Find Element In An Array
+4. Bar Chart
+5. Sum Of Two Arrays
+6. Difference Of Two Arrays
+7. Reverse An Array
+8. Rotate An Array
+9. Inverse Of An Array
+10. Subarray Problem
+11. Broken Economy
+12. First Index And Last Index
+13. Subsets Of Array
+14. Inverted Bar Chart
+15. Print All Palindromic Substrings
+16. String Compression
+17. Toggle Case
+18. String With Difference Of Every Two Consecutive Characters
+19. Print All Permutations Of A String Iteratively
+20. Remove Primes
+
+TwoD Arrays
+
+1. Matrix Multiplication
+2. Rotate By 90 Degrees
+3. Search In A Sorted 2d Array
+4. Spiral Display
+
+Recursion
+
+1. Print Decreasing
+2. Print Increasing
+3. Print Increasing Decreasing
+4. Factorial
+5. Powerlinear
+6. Powerlogarithmic
+7. Print Zigzag
+8. Tower Of Hanoi
+9. Display Array
+10. Display Array In Reverse
+11. Max Of An Array
+12. First Index
+13. Last Index
+14. Allindices Of Array
+15. Get Subsequence
+16. Get Kpc
+17. Get Stair Paths
+18. Get Maze Paths
+19. Get Maze Paths With Jumps
+20. Print Subsequence
+21. Print Kpc
+22. Print Stair Paths
+23. Print Maze Paths
+24. Print Maze Paths With Jumps
+25. Print Permutations
+26. Print Encodings
+27. Flood Fill
+28. Target Sum Subsets
+29. N Queens
+30. Knights Tour
+
+Time and Space Complexity
+
+1. Bubble Sort
+2. Count Sort
+3. Insertion Sort
+4. Merge Sort
+5. Merge Two Sorted Arrays
+6. Move 0 to End
+7. Move 0 to Front
+8. Partition An Array
+9. Quick Select
+10. Quick Sort
+11. Radix Sort
+12. Selection Sort
+13. Sort 01
+14. Sort 012
+15. Sort Dates
+16. Sort Lo Hi
+17. Highest Frequency Character
+18. Sieve Of Eratosthenes
+19. Target Sum Pair
+20. Target Sum Pair With Binary Search
+21. Target Sum Triplet
+
+Linked Lists
+
+1. display
+2. add last
+3. get first
+4. get last
+5. get at
+6. add first
+7. add at index
+8. remove first
+9. Kth node from end
+10. mid of LL
+11. reverse a ll (data iterative)
+12. reverse a ll (pointer iterative)
+13. merge two sorted ll
+14. merge sort
+15. remove duplicates in a sorted ll
+16. K Reverse
+17. odd even
+18. display reverse (recursive) LL
+19. remove last in ll
+20. remove at*
+21. Intersection point of a linked list
+22. reverse a ll (pointer recursive)
+23. reverse a ll (data recursive)
+24. is a LL palindrome
+25. fold a LL
+26. Add two LL
+
+Generic Tree
+
+1. level order
+2. level order linewise
+3. level order linewise zig zag
+4. construct
+5. size, max, height of generic tree
+6. Traversals Pre Post Order
+7. serialize
+8. mirror a gt
+9. remove leaves in gt
+10. linearize a gt
+11. linearize efficient
+12. find in gt
+13. node to root path in gt
+14. lca
+15. distance between two nodes
+16. are gt similar
+17. are gt mirror in shape
+18. are gt symmetric
+19. predecessor and successor of an element
+20. multisolver
+21. second largest
+22. ceil and floor
+23. Kth largest
+24. iterative traversals
+25. node with maximum subtree sum
+26. diameter
+
+Binary Tree
+
+1. construct
+2. display
+3. Size Sum Maximum Height of a bt
+4. level order linewise 4 approaches
+5. find in bt
+6. node to root path in bt
+7. print k levels down
+8. Amazon print nodes k distance away
+9. iterative pre post inorder traversals
+10. transform to left cloned tree
+11. transform to normal from left-cloned tree
+12. remove leaves in bt
+13. print single child nodes
+14. path to leaf from root in range
+15. diameter of a bt
+16. tilt of a bt
+17. is balanced tree
+18. is a binary search tree
+19. largest bst subtree
+
+Binary Search Tree
+
+1. size, sum, max, min, find in bst
+2. replace with sum of larger
+3. lca of bst
+4. print in range
+5. target sum pair in bst
+6. add node to bst
+7. remove node from bst
+8. target sum pair alternate approach
+
+Hashmap and Heap
+
+1. highest frequency character
+2. get common elements 1
+3. get common elements 2
+4. longest consecutive sequence of elements
+5. k largest elements
+6. merge k sorted lists
+7. sort k sorted array
+8. median priority queue - imp
+9. write priority queue using heap
+10. constructor for heap
+11. heap comparable vs comparator
+12. write hashmap
+
+Graphs
+
+1. has path?
+2. print all paths - using edges adjacency list
+3. multisolver - smallest, longest, ceil, floor, kth largest path
+4. get connected components of a graph
+5. is graph connected
+6. perfect friends
+7. number of islands - using edges adjacency list
+8. breadth first traversal
+9. spread of infection - using edges adjacency list
+10. is graph cyclic
+11. is graph bipartite
+12. shortest path in weights - Dijkstra's algorithm
+13. hamiltonian path and cycle
+14. knights tour
+15. iterative depth first traversal
+16. minimum wire required to connect all pcs - Prim's algorithm
+17. order of compilation
+18. print all paths - using edges adjacency matrix
+19. spread of infection - using edges adjacency matrix
+20. number of islands - using edges adjacency matrix
+
+Stacks and Queues
+
+1. duplicate brackets
+2. balanced brackets
+3. next greater element to the right_right
+4. stock span - next greater element to the left_left
+5. next greater element to the right_left
+6. next greater element to the left_right
+7. largest area histogram
+8. sliding window maximum
+9. infix evaluation
+10. infix conversions
+11. postfix evaluation and conversions
+12. prefix evaluation and conversions
+13. smallest number following pattern
+14. implement stack using queues
+15. dynamic stack
+16. merge overlapping interval
+17. celebrity problem
+18. two stacks in an array
+19. minimum stack 1
+20. minimum stack - constant space
+21. queue to stack adapter - push efficient
+22. queue to stack adapter - pop efficient
+23. stack to queue adapter - add efficient
+24. stack to queue adapter - remove efficient
+
+Dynamic Programming and Greedy
+
+1. fibonacci dp
+2. climb stairs
+3. climb stairs with variable jumps
+4. climb stairs with minimum moves
+5. min cost in maze traversal
+6. gold mine
+7. target sum subsets
+8. count binary strings
+9. arrange buildings
+10. count encodings
+11. coin change combination
+12. coin change permutations
+13. zero one knapsack
+14. unbounded knapsack
+15. count a+b+c+ subsequences
+16. maximum sum non adjacent elements
+17. paint house
+18. paint house-many colors
+19. fractional knapsack
+20. tiling with 2*1 tiles
+21. tiling with m*1 tiles
+22. paint fence
