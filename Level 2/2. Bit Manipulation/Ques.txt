@@ -1,5 +1,5 @@
 1. basics of bit manipulation - 5 apr 2022----
-2. print value of rsb mask
+2. print value of rsb mask ×
 3. kernighans algorithm (number of 1 bits)
 4. gray code
 5. josephus special - 6 apr 2022----
@@ -8,11 +8,11 @@
 8. one repeating and one missing
 9. is a power of 2 - 7 apr 2022----
 10. is a power of 4
-11. xor of sum of all pairs
-12. triplets 1
+11. xor of sum of all pairs ×
+12. triplets 1 ×
 13. reduce n to 1
 14. all repeating three times except one - 8 apr 2022----
-15. copy set bits in a range
+15. copy set bits in a range ×
 16. flip bits to convert a to b
 17. swap all odd and even bits
 18. 3 ques - 11 apr 2022----
@@ -21,8 +21,8 @@
 21. nqueens using bit - 22 apr 2022----
 22. sudoku using bit manipulation
 23. count set bits in first n natural numbers - 13 may 2022----
-24. solve 7n by 8
+24. solve 7n by 8 ×
 25. sum of bit differences of all pairs
-26. abbreviation 1 using bits
+26. abbreviation 1 using bits ×
 
-min xor pairs - 13 nov 2022----
+min xor pairs - 13 nov 2022---- ×

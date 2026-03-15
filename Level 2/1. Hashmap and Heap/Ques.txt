@@ -20,7 +20,7 @@
 23. longest unique substring - 22 mar 2022----start from here
 24. count of substrings having all unique characters
 25. find itinerary from tickets
-26. morning assembly (tricky sorting cost)
+26. morning assembly (tricky sorting cost) ×
 27. isomorphic strings
 28. smallest substring containing all unique characters
 29. word pattern
@@ -33,7 +33,7 @@
 36. quadruplet sum1
 37. quadruplet sum2
 38. largest subarray with contiguous elements
-39. powerful integers
+39. powerful integers ×
 40. subdomain visit count
 41. group anagrams - 25 mar 2022----
 42. group shifted strings
@@ -46,28 +46,28 @@
 49. max frequency stack - 28 mar 2022----
 50. insert delete get random O(1)
 51. insert delete get random O(1) - duplicates allowed
-52. recurring sequence in a fraction
+52. recurring sequence in a fraction ×
 53. pairs with equal sum
 54. brick wall - 30 mar 2022----
 55. random pick with blacklist
 56. the skyline problem
-57. pairs of non coinciding points
+57. pairs of non coinciding points ×
 58. minimum cost to connect sticks - 31 mar 2022----
 59. snapshot array
 60. encode and decode tinyurl
 61. avoid flood in the city
 62. minimum number of refueling stops - 1 apr 2022----
-63. line reflection
+63. line reflection ×
 64. reorganize string
-65. binary string with substrings representing numbers from 1 to n
+65. binary string with substrings representing numbers from 1 to n ×
 66. longest substring with every char occuring at least k times
 
-67. check whether arithmetic progression can formed given array - 8 oct 2022----
+67. check whether arithmetic progression can formed given array - 8 oct 2022---- ×
 68. rearrange characters string no two adjacent - 13 oct 2022----
 69. grid illumination
 70. largest subarray with contiguous elements set 2
-71. check anagram string palindrome or not - 15 oct 2022----
-72. check if frequency of all characters can become same by one removal
+71. check anagram string palindrome or not - 15 oct 2022---- ×
+72. check if frequency of all characters can become same by one removal ×
 73. count number of nice subarrays - 20 oct 2022----
 74. subarrays with k different integers
 75. number of substrings containing all three characters
@@ -76,6 +76,5 @@
 78. replace the substring for balanced string
 79. minimum size subarray sum
 80. island perimeter
-81. a simple fraction
+81. a simple fraction ×
 82. shortest subarray with sum at least k
-83. 
