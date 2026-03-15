@@ -179,7 +179,7 @@ Stack and Queues
 16. validate stack sequences - 7 sept 2022----
 17. maximum frequency stack
 
-Linked List
+Linked List (final list)
 
 1. copy list with random pointer - 1 oct 2022----
 3. lru cache
