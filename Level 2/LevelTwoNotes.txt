@@ -1,15 +1,16 @@
-Hashmap and Heap - 
+Recommended Order (Highest ROI → Lowest ROI)
 
+1. Arrays & Strings
+2. Hashmap & Heap
+3. Trees (Binary Tree + BST)
+4. Graphs
+5. Dynamic Programming
+6. Stack & Queues
+7. Recursion & Backtracking
+8. Linked List
+9. Bit Manipulation
+10. Trie
 
--------------------------------------------------------------------
-
-Xyz - 
-
--------------------------------------------------------------------
-
-Xyz - 
-
-
--------------------------------------------------------------------
-
-Xyz - 
+If you only finish half the list
+You’ll still be strong enough for 25–30 LPA if you complete:
+Arrays & Strings → HashMap/Heap → Trees → Graphs → (some) DP
