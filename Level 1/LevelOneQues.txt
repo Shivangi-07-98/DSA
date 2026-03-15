@@ -73,8 +73,8 @@ Recursion
 25. Print Permutations
 26. Print Encodings
 27. Flood Fill
-28. Target Sum Subsets
-29. N Queens
+vimp 28. Target Sum Subsets
+vimp 29. N Queens
 30. Knights Tour x
 
 Time and Space Complexity
