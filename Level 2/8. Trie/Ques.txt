@@ -1,9 +1,9 @@
-1. implement trie prefix tree - 20 sept 2022----
-2. design add and search words data structure
+imp 1. implement trie prefix tree - 20 sept 2022----
+vimp 2. design add and search words data structure
 3. map sum pairs ×
 4. longest word in dictionary - 21 sept 2022----
 5. replace words
-6. concatenated words
-7. word search 2
-8. maximum xor of two numbers in an array - 24 sept 2022----
+imp 6. concatenated words
+vimp 7. word search 2
+vimp 8. maximum xor of two numbers in an array - 24 sept 2022----
 9. count pairs with xor in a range ×
