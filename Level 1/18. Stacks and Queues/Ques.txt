@@ -1,24 +1,24 @@
-1. duplicate brackets - 11 feb 2022----
-2. balanced brackets
-3. next greater element to the right_right
-4. stock span - next greater element to the left_left
-5. next greater element to the right_left - 13 feb 2022----
-6. next greater element to the left_right
-7. largest area histogram
-8. sliding window maximum - 14 feb 2022----
-9. infix evaluation
-10. infix conversions
-11. postfix evaluation and conversions - 15 feb 2022----
-12. prefix evaluation and conversions
-13. smallest number following pattern
-14. implement stack using queues - 16 feb 2022----(rajneesh)
-15. dynamic stack
-16. merge overlapping interval - 17 feb 2022----
-17. celebrity problem
-18. two stacks in an array
-19. minimum stack 1 - 18 feb 2022----
-20. minimum stack - constant space
-21. queue to stack adapter - push efficient - 19 feb 2022----
-22. queue to stack adapter - pop efficient
-23. stack to queue adapter - add efficient
-24. stack to queue adapter - remove efficient
+imp 1. duplicate brackets - 11 feb 2022----
+imp 2. balanced brackets
+imp 3. next greater element to the right_right
+imp 4. stock span - next greater element to the left_left
+imp 5. next greater element to the right_left - 13 feb 2022----
+imp 6. next greater element to the left_right
+vimp 7. largest area histogram
+vimp 8. sliding window maximum - 14 feb 2022----
+9. infix evaluation ×
+10. infix conversions ×
+11. postfix evaluation and conversions × - 15 feb 2022----
+12. prefix evaluation and conversions ×
+imp 13. smallest number following pattern
+imp 14. implement stack using queues - 16 feb 2022----(rajneesh)
+15. dynamic stack ×
+imp 16. merge overlapping interval - 17 feb 2022----
+imp 17. celebrity problem
+18. two stacks in an array ×
+imp 19. minimum stack 1 - 18 feb 2022----
+imp 20. minimum stack - constant space
+21. queue to stack adapter - push efficient × - 19 feb 2022----
+22. queue to stack adapter - pop efficient ×
+23. stack to queue adapter - add efficient ×
+24. stack to queue adapter - remove efficient ×

@@ -162,14 +162,13 @@ Trie
 7. word search 2
 8. maximum xor of two numbers in an array - 24 sept 2022----
 
-Stack and Queues
+Stack and Queues (final list)
 
 1. daily temperatures - 2 sept 2022----
 3. largest rectangle in histogram
 4. valid parentheses
 5. maximal rectangle
 6. minimum add to make parentheses valid - 3 sept 2022----
-8. find if an expression has duplicate parenthesis or not
 9. asteroid collision
 10. length of the longest valid substring
 11. backspace string compare - 5 sept 2022----
