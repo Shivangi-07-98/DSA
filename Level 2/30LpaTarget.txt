@@ -1,54 +1,54 @@
 Hashmap and Heap
 
 1. subarray with equal number of 0 and 1 - 11 mar 2022----
-2. number of subarrays sum exactly k
-3. subarray sum divisible by k
+2. substring with equal 0 1 and 2
+3. number of subarrays sum exactly k
+4. subarray sum divisible by k
 5-8. longest subarray
-4. count pair whose sum is divisible by k - 14 mar 2022----
-5. substring with equal 0 1 and 2
-5. count of distinct elements in window of size k
-6. find all anagrams - 17 mar 2022----
-7. minimum window substring
-8. longest unique substring - 22 mar 2022----start from here
-9. count of substrings having all unique characters
-10. isomorphic strings
-11. smallest substring containing all unique characters
-12. word pattern
-13. longest substring with exactly k unique characters
-14. first non repeating character
-15. lru cache
-16. largest subarray with contiguous elements
-17. group anagrams - 25 mar 2022----
-18. maximum consecutive ones - 1
-19. maximum consecutive ones - 2
-20. longest substring with atmost k unique characters
-21. count of substrings having atmost k unique characters
-22. count of substrings with exactly k unique characters
-23. equivalent subarrays
-24. max frequency stack - 28 mar 2022----
-25. insert delete get random O(1)
-26. insert delete get random O(1) - duplicates allowed
-27. minimum cost to connect sticks - 31 mar 2022----
-28. encode and decode tinyurl
-29. reorganize string
-30. longest substring with every char occuring at least k times
-31. rearrange characters string no two adjacent - 13 oct 2022----
-32. count number of nice subarrays - 20 oct 2022----
-33. subarrays with k different integers
-34. number of substrings containing all three characters
-35. find median from data stream
-36. fruit into baskets - 22 oct 2022----
-37. minimum size subarray sum
-38. shortest subarray with sum at least k
-39. longest consecutive sequence of 1's in a binary string
+9. count pair whose sum is divisible by k - 14 mar 2022----
+15. count of distinct elements in window of size k
+17. longest consecutive sequence of 1's in a binary string
+19. find all anagrams - 17 mar 2022----
+21. minimum window substring
+23. longest unique substring - 22 mar 2022----start from here
+24. count of substrings having all unique characters
+27. isomorphic strings
+28. smallest substring containing all unique characters
+29. word pattern
+30. longest substring with exactly k unique characters
+32. first non repeating character
+33. lru cache
+38. largest subarray with contiguous elements
+41. group anagrams - 25 mar 2022----
+43. maximum consecutive ones - 1
+44. maximum consecutive ones - 2
+45. longest substring with atmost k unique characters
+46. count of substrings having atmost k unique characters
+47. count of substrings with exactly k unique characters
+48. equivalent subarrays
+49. max frequency stack - 28 mar 2022----
+50. insert delete get random O(1)
+51. insert delete get random O(1) - duplicates allowed
+58. minimum cost to connect sticks - 31 mar 2022----
+60. encode and decode tinyurl
+64. reorganize string
+66. longest substring with every char occuring at least k times
+68. rearrange characters string no two adjacent - 13 oct 2022----
+73. count number of nice subarrays - 20 oct 2022----
+74. subarrays with k different integers
+75. number of substrings containing all three characters
+76. find median from data stream
+77. fruit into baskets - 22 oct 2022----
+79. minimum size subarray sum
+82. shortest subarray with sum at least k
 
 Bit Manipulation
 
 3. kernighans algorithm (number of 1 bits)
-4. all repeating except one
-5. all repeating except two
-6. one repeating and one missing
-7. is a power of 2 - 7 apr 2022----
+6. all repeating except one
+7. all repeating except two
+8. one repeating and one missing
+9. is a power of 2 - 7 apr 2022----
 
 Recursion and Backtracking
 
@@ -56,14 +56,14 @@ Recursion and Backtracking
 2. permutations 2
 3. combinations 1
 4. combinations 2
-5. nqueens combinations 2d as 1d queen chooses
-6. nqueens branch and bound - 22 apr 2022----
-7. solve sudoku
-8. word break 1
-9. coin change combinations 1 x
-10. coin change permutations 1 x
-11. remove invalid parenthesis - 12 nov 2022----
-12. all palindromic partitions
+10. nqueens combinations 2d as 1d queen chooses
+13. nqueens branch and bound - 22 apr 2022----
+14. solve sudoku
+24. word break 1
+34. coin change combinations 1 x
+35. coin change permutations 1 x
+42. remove invalid parenthesis - 12 nov 2022----
+43. all palindromic partitions
 
 Trees
 
@@ -75,28 +75,28 @@ Graphs
 2. number of enclaves
 3. rotting oranges
 4. is graph bipartite - 14 june 2022----
-5. 01 matrix - 15 june 2022----
-6. shortest bridge
-7. swim in rising water
-6. shortest path in weights
-7. clone graph
-8. topological sorting - 21 june 2022----
-9. given sorted dictionary find precedence characters/alien dictionary
-10. kahn's algorithm for topological sorting
-11. course schedule 2
-12. disjoint set union - 22 june 2022----
-13. kruskal minimum spanning tree/minimum wire to connect all pcs
-14. number of island 2
-15. redundant connection - 23 june 2022----
-16. strongly connected components kosaraju's algo - 20 june 2022----
-17. bridge edge in graph
-16. satisfiability of equality equations - 27 june 2022----
-17. evaluate division
-18. journey to the moon
-19. reconstruct itinerary
-20. find eventual safe states
-21. smallest string with swaps
-22. cheapest flights within k stops
+7. 01 matrix - 15 june 2022----
+9. shortest path in weights
+10. swim in rising water
+14. shortest bridge
+15. strongly connected components kosaraju's algo - 20 june 2022----
+17. clone graph
+18. topological sorting - 21 june 2022----
+19. given sorted dictionary find precedence characters/alien dictionary
+20. kahn's algorithm for topological sorting
+21. course schedule 2
+22. disjoint set union - 22 june 2022----
+23. kruskal minimum spanning tree/minimum wire to connect all pcs
+24. number of island 2
+25. redundant connection - 23 june 2022----
+28. satisfiability of equality equations - 27 june 2022----
+29. evaluate division
+32. bridge edge in graph
+41. journey to the moon
+46. reconstruct itinerary
+47. find eventual safe states - 7 july 2022----
+48. smallest string with swaps
+51. cheapest flights within k stops
 
 Arrays and Strings
 
@@ -112,16 +112,14 @@ imp 5. min cost in maze traversal
 imp 6. goldmine
 imp 7. longest increasing subsequence n^2 - 24 aug 2022----
 imp 9. russian doll envelopes
-imp 20. catalan - 27 aug 2022----
-imp 21. unique binary search trees
-imp 42. matrix chain multiplication - 3 sept 2022----
-imp 45. burst balloons - 7 sept 2022----
 imp 12. longest increasing subsequence nlog(n)
 13. count binary strings - 26 aug 2022----
 14. arrange buildings
 15. paint fence
 16. paint house
 17. paint house many colors
+imp 20. catalan - 27 aug 2022----
+imp 21. unique binary search trees
 imp 26. partition equal subset sum - 28 aug 2022----
 imp 27. target sum subsets
 imp 28. coin change combination
@@ -136,6 +134,8 @@ imp 36. best time to buy and sell stock 3
 imp 37. best time to buy and sell stock 4 - 1 sept 2022----
 imp 40. friends pairing
 imp 41. partition into subsets
+imp 42. matrix chain multiplication - 3 sept 2022----
+imp 45. burst balloons - 7 sept 2022----
 imp 47. longest common substring - 9 sept 2022----
 imp 48. palindromic substrings
 imp 49. longest palindromic substring
@@ -150,7 +150,7 @@ imp 67. edit distance
 imp 69. regular expression matching
 imp 70. jump game 2
 imp 73. word break problem - 20 sept 2022----
-imp 74. shortest common supersequence
+imp 74. shortest common supersequence - 24 sept 2022----
 imp 77. ones and zeroes
 imp 80. optimal strategy for a game dp
 
@@ -158,36 +158,36 @@ Trie
 
 1. implement trie prefix tree - 20 sept 2022----
 2. design add and search words data structure
-3. longest word in dictionary - 21 sept 2022----
-4. word search 2
-5. maximum xor of two numbers in an array - 24 sept 2022----
+4. longest word in dictionary - 21 sept 2022----
+7. word search 2
+8. maximum xor of two numbers in an array - 24 sept 2022----
 
 Stack and Queues
 
 1. daily temperatures - 2 sept 2022----
-2. largest rectangle in histogram
-3. valid parentheses
-4. maximal rectangle
-5. minimum add to make parentheses valid - 3 sept 2022----
-6. find if an expression has duplicate parenthesis or not
-7. asteroid collision
-8. length of the longest valid substring
-9. backspace string compare - 5 sept 2022----
-10. min stack
-11. remove duplicate letters - 6 sept 2022----
-12. remove k digits
-13. validate stack sequences - 7 sept 2022----
-14. maximum frequency stack
+3. largest rectangle in histogram
+4. valid parentheses
+5. maximal rectangle
+6. minimum add to make parentheses valid - 3 sept 2022----
+8. find if an expression has duplicate parenthesis or not
+9. asteroid collision
+10. length of the longest valid substring
+11. backspace string compare - 5 sept 2022----
+13. min stack
+14. remove duplicate letters - 6 sept 2022----
+15. remove k digits
+16. validate stack sequences - 7 sept 2022----
+17. maximum frequency stack
 
 Linked List
 
 1. copy list with random pointer - 1 oct 2022----
-2. lru cache
-3. lfu cache
-4. odd even linked list - 3 oct 2022----
-5. reorder list
-6. reverse linked list
-7. add two numbers - 6 oct 2022----
-8. intersection of two linked lists
-9. linked list cycle
-10. linked list cycle 2
+3. lru cache
+4. lfu cache
+5. odd even linked list - 3 oct 2022----
+6. reorder list
+8. reverse linked list
+9. add two numbers - 6 oct 2022----
+11. intersection of two linked lists
+12. linked list cycle
+13. linked list cycle 2
