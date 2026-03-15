@@ -3,8 +3,9 @@ Hashmap and Heap
 1. subarray with equal number of 0 and 1 - 11 mar 2022----
 2. number of subarrays sum exactly k
 3. subarray sum divisible by k
-   5-8. longest subarray
+5-8. longest subarray
 4. count pair whose sum is divisible by k - 14 mar 2022----
+5. substring with equal 0 1 and 2
 5. count of distinct elements in window of size k
 6. find all anagrams - 17 mar 2022----
 7. minimum window substring
@@ -39,6 +40,7 @@ Hashmap and Heap
 36. fruit into baskets - 22 oct 2022----
 37. minimum size subarray sum
 38. shortest subarray with sum at least k
+39. longest consecutive sequence of 1's in a binary string
 
 Bit Manipulation
 
@@ -74,6 +76,8 @@ Graphs
 3. rotting oranges
 4. is graph bipartite - 14 june 2022----
 5. 01 matrix - 15 june 2022----
+6. shortest bridge
+7. swim in rising water
 6. shortest path in weights
 7. clone graph
 8. topological sorting - 21 june 2022----
