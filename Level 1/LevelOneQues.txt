@@ -1,25 +1,25 @@
 Getting Started
 
-1. Grading System
+1. Grading System x
 2. Is A Number Prime
 3. Print All Primes Till N
 4. Print Fibonacci Numbers Till N
-5. Count Digits In A Number
-6. Digits Of A Number
-7. Reverse A Number
-8. Inverse Of A Number
-9. Rotate A Number
+5. Count Digits In A Number x
+6. Digits Of A Number x
+7. Reverse A Number x
+8. Inverse Of A Number x
+9. Rotate A Number x
 10. Gcd And Lcm
 11. Prime Factorization Of A Number
-12. The Curious Case Of Benjamin Bulbs
-13. Pythagorean Triplet
+12. The Curious Case Of Benjamin Bulbs x
+13. Pythagorean Triplet x
 
 Arrays and Strings
 
 1. Digit Frequency
 2. Span Of Array
 3. Find Element In An Array
-4. Bar Chart
+4. Bar Chart x
 5. Sum Of Two Arrays
 6. Difference Of Two Arrays
 7. Reverse An Array
@@ -29,13 +29,13 @@ Arrays and Strings
 11. Broken Economy
 12. First Index And Last Index
 13. Subsets Of Array
-14. Inverted Bar Chart
+14. Inverted Bar Chart x
 15. Print All Palindromic Substrings
 16. String Compression
 17. Toggle Case
 18. String With Difference Of Every Two Consecutive Characters
 19. Print All Permutations Of A String Iteratively
-20. Remove Primes
+20. Remove Primes x
 
 TwoD Arrays
 
@@ -75,7 +75,7 @@ Recursion
 27. Flood Fill
 28. Target Sum Subsets
 29. N Queens
-30. Knights Tour
+30. Knights Tour x
 
 Time and Space Complexity
 
@@ -93,7 +93,7 @@ Time and Space Complexity
 12. Selection Sort
 13. Sort 01
 14. Sort 012
-15. Sort Dates
+15. Sort Dates x
 16. Sort Lo Hi
 17. Highest Frequency Character
 18. Sieve Of Eratosthenes
@@ -130,7 +130,7 @@ Linked Lists
 25. fold a LL
 26. Add two LL
 
-Generic Tree
+Generic Tree x
 
 1. level order
 2. level order linewise
@@ -170,8 +170,8 @@ Binary Tree
 7. print k levels down
 8. Amazon print nodes k distance away
 9. iterative pre post inorder traversals
-10. transform to left cloned tree
-11. transform to normal from left-cloned tree
+10. transform to left cloned tree x
+11. transform to normal from left-cloned tree x
 12. remove leaves in bt
 13. print single child nodes
 14. path to leaf from root in range
@@ -203,9 +203,9 @@ Hashmap and Heap
 7. sort k sorted array
 8. median priority queue - imp
 9. write priority queue using heap
-10. constructor for heap
-11. heap comparable vs comparator
-12. write hashmap
+10. constructor for heap x
+11. heap comparable vs comparator x
+12. write hashmap x
 
 Graphs
 
@@ -222,7 +222,7 @@ Graphs
 11. is graph bipartite
 12. shortest path in weights - Dijkstra's algorithm
 13. hamiltonian path and cycle
-14. knights tour
+14. knights tour x
 15. iterative depth first traversal
 16. minimum wire required to connect all pcs - Prim's algorithm
 17. order of compilation
@@ -245,15 +245,15 @@ Stacks and Queues
 11. postfix evaluation and conversions
 12. prefix evaluation and conversions
 13. smallest number following pattern
-14. implement stack using queues
-15. dynamic stack
+14. implement stack using queues x
+15. dynamic stack x
 16. merge overlapping interval
 17. celebrity problem
-18. two stacks in an array
+18. two stacks in an array x
 19. minimum stack 1
 20. minimum stack - constant space
-21. queue to stack adapter - push efficient
-22. queue to stack adapter - pop efficient
+21. queue to stack adapter x - push efficient
+22. queue to stack adapter x - pop efficient
 23. stack to queue adapter - add efficient
 24. stack to queue adapter - remove efficient
 
