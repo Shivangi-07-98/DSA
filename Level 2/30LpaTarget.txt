@@ -84,6 +84,8 @@ Graphs
 13. kruskal minimum spanning tree/minimum wire to connect all pcs
 14. number of island 2
 15. redundant connection - 23 june 2022----
+16. strongly connected components kosaraju's algo - 20 june 2022----
+17. bridge edge in graph
 16. satisfiability of equality equations - 27 june 2022----
 17. evaluate division
 18. journey to the moon
@@ -105,6 +107,11 @@ imp 4. climb stairs with minimum moves
 imp 5. min cost in maze traversal
 imp 6. goldmine
 imp 7. longest increasing subsequence n^2 - 24 aug 2022----
+imp 9. russian doll envelopes
+imp 20. catalan - 27 aug 2022----
+imp 21. unique binary search trees
+imp 42. matrix chain multiplication - 3 sept 2022----
+imp 45. burst balloons - 7 sept 2022----
 imp 12. longest increasing subsequence nlog(n)
 13. count binary strings - 26 aug 2022----
 14. arrange buildings
