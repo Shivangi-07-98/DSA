@@ -1,3 +1,5 @@
 1. container with most water - 15 july 2022----
 2. squares of a sorted array
-next greater element 3 majority element maximum product of three numbers
+3. next greater element 3
+4. majority element
+ maximum product of three numbers - 18 july 2022----
