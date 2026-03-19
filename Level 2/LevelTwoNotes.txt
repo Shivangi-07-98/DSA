@@ -5,9 +5,10 @@ Recommended Order (Highest ROI → Lowest ROI)
 3. Trees
 4. Graphs
 
-5. Dynamic Programming/Stack and Queues/Trie/Recursion and Backtracking
+5. Dynamic Programming/Stack and Queues/Trie
+5. Recursion and Backtracking
 
-10. Bit Manipulation (9 lec)
+6. Bit Manipulation (9 lec)
 
 
 If you only finish half the list
