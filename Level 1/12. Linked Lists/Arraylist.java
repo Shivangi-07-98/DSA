@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class ArraylistQ {
+public class Arraylist {
   
   public static class MyArrayList{ // size, data, capacity
     int size;

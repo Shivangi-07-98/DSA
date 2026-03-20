@@ -1,7 +1,7 @@
 import java.io.*;
 import java.util.*;
 
-public class Q26_AddTwoLLQ {
+public class Q26_AddTwoLL {
 
   public static class Node {
     int data; // value

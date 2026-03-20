@@ -1,7 +1,7 @@
 import java.io.*;
 import java.util.*;
 
-public class Q9_KthNodeFromEndQ {
+public class Q8_RemoveFirst {
 
   public static class Node {
     int data; // value
@@ -34,6 +34,18 @@ public class Q9_KthNodeFromEndQ {
       size++;
     }
 
+    void removeFirst(){
+      if (size == 0) {
+        System.out.println("List is empty");
+      } else if (size == 1) {
+        head = tail = null;
+        size = 0;
+      } else {
+        head = head.next;
+        size--;
+      }
+    }
+
     // O(n)
     void display() {
       for(Node temp = head; temp != null; temp = temp.next){
@@ -41,26 +53,6 @@ public class Q9_KthNodeFromEndQ {
       }
       System.out.println();
 
-    }
-
-    // 3
-    int KthNodeFromEnd(int idx){ // 10, 20, 30, 40, 50, 60 => 40
-
-      Node a = head;
-      Node b = head;
-      for(int i = 0; i < idx; i++){
-        a = a.next;
-      }
-
-      while(a.next != null){
-        a = a.next;
-        b = b.next; 
-
-      }
-
-      return b.next.data; // if asked on position
-      // return b.data; // if asked on idx
-      
     }
 
  
@@ -82,12 +74,9 @@ public class Q9_KthNodeFromEndQ {
 
     list.addLast(30);
     list.addLast(40);
-    list.addLast(50);
-    list.addLast(60);
 
-    int ans = list.KthNodeFromEnd(3); // 10, 20, 30, 40, 50, 60 => 40
-    System.out.println(ans); 
-
+    list.removeFirst();
+    list.display();
 
   }
 

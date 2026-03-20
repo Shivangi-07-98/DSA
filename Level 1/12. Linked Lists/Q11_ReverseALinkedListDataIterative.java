@@ -1,7 +1,7 @@
 import java.io.*;
 import java.util.*;
 
-public class Q12_ReverseALinkedListPointerIterativeQ {
+public class Q11_ReverseALinkedListDataIterative {
 
   public static class Node {
     int data; // value
@@ -52,19 +52,22 @@ public class Q12_ReverseALinkedListPointerIterativeQ {
     }
 
     // O(n2)
-    void ReverseALinkedListPointerIterative() {
-      Node prev = null;
-      Node curr = head;
-      while(curr != null){
-        Node next = curr.next;
-        curr.next = prev;
-        prev = curr;
-        curr = next;
-      }
+    void ReverseALinkedListDataIterative() {
 
-      Node temp = head;
-      head = tail;
-      tail = temp;
+      int i = 0;
+      int j = size - 1;
+      while (i < j) {
+        Node leftNode = getNodeAt(i);
+        Node rightNode = getNodeAt(j);
+
+        int temp = leftNode.data;
+        leftNode.data = rightNode.data;
+        rightNode.data = temp;
+        
+        i++;
+        j--;
+      }
+      
     }
 
   }
@@ -81,7 +84,7 @@ public class Q12_ReverseALinkedListPointerIterativeQ {
     list.addLast(70);
 
     list.display(); // 10, 20, 30, 40, 50, 60, 70
-    list.ReverseALinkedListPointerIterative();
+    list.ReverseALinkedListDataIterative();
     list.display(); // 70, 60, 50, 40, 30, 20, 10
 
   }

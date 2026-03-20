@@ -1,7 +1,7 @@
 import java.io.*;
 import java.util.*;
 
-public class GetValueQ {
+public class GetValue {
 
   public static class Node {
     int data; // value

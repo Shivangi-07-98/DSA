@@ -1,7 +1,7 @@
 import java.io.*;
 import java.util.*;
 
-public class Q18_DisplayReverseRecursiveQ {
+public class Q6_AddFirst {
 
   public static class Node {
     int data; // value
@@ -13,9 +13,27 @@ public class Q18_DisplayReverseRecursiveQ {
     Node tail; // address of last node
     int size; // value
 
-    int size() {
+    int size(){
       return size;
     }
+
+    // O(1)
+    void addFirst(int val) {
+      Node temp = new Node();
+      temp.data = val;
+      
+      if(size == 0){
+        // temp.next = null;
+        head = tail = temp;
+      }
+      else{
+        temp.next = head;
+        head = temp;
+      }
+
+      size++;
+    }
+
 
     // O(1)
     void addLast(int val) {
@@ -23,52 +41,45 @@ public class Q18_DisplayReverseRecursiveQ {
       temp.data = val;
       temp.next = null;
 
-      if (size == 0) {
+      if(size == 0){
         head = tail = temp;
-      } else {
+      }
+      else{
         tail.next = temp;
         tail = temp;
       }
-
+      
       size++;
     }
 
     // O(n)
     void display() {
-      for (Node temp = head; temp != null; temp = temp.next) {
+      for(Node temp = head; temp != null; temp = temp.next){
         System.out.print(temp.data + " ");
       }
       System.out.println();
 
     }
 
-    private void displayReverseHelper(Node node) {
-      if (node == null) {
-        return;
-      }
-      displayReverseHelper(node.next);
-      System.out.print(node.data + " ");
-    }
-
-    public void displayReverse() {
-      displayReverseHelper(head);
-      System.out.println();
-    }
-
+ 
   }
+
+
 
   public static void main(String[] args) {
     LinkedList list = new LinkedList();
 
-    list.addLast(10);
-    list.addLast(20);
-    list.addLast(30);
-    list.addLast(40);
-    list.addLast(50);
-
-    list.display();
-    list.displayReverse();
+    // list.addLast(10);
     // list.display();
+    // System.out.println(list.size());
+
+    // list.addLast(20);
+    // list.display();
+    // System.out.println(list.size());
+
+    list.addFirst(5);
+    list.display();
+
 
   }
 

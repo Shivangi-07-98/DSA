@@ -1,7 +1,7 @@
 import java.io.*;
 import java.util.*;
 
-public class Q25_FoldaLLQ {
+public class Q25_FoldaLL {
 
   public static class Node {
     int data; // value

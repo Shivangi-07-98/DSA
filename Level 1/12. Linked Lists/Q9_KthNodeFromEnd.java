@@ -1,7 +1,7 @@
 import java.io.*;
 import java.util.*;
 
-public class Q2_AddLastQ {
+public class Q9_KthNodeFromEnd {
 
   public static class Node {
     int data; // value
@@ -43,6 +43,26 @@ public class Q2_AddLastQ {
 
     }
 
+    // 3
+    int KthNodeFromEnd(int idx){ // 10, 20, 30, 40, 50, 60 => 40
+
+      Node a = head;
+      Node b = head;
+      for(int i = 0; i < idx; i++){
+        a = a.next;
+      }
+
+      while(a.next != null){
+        a = a.next;
+        b = b.next; 
+
+      }
+
+      return b.next.data; // if asked on position
+      // return b.data; // if asked on idx
+      
+    }
+
  
   }
 
@@ -53,12 +73,21 @@ public class Q2_AddLastQ {
     LinkedList list = new LinkedList();
 
     list.addLast(10);
-    list.display();
-    System.out.println(list.size());
+    // list.display();
+    // System.out.println(list.size());
 
     list.addLast(20);
-    list.display();
-    System.out.println(list.size());
+    // list.display();
+    // System.out.println(list.size());
+
+    list.addLast(30);
+    list.addLast(40);
+    list.addLast(50);
+    list.addLast(60);
+
+    int ans = list.KthNodeFromEnd(3); // 10, 20, 30, 40, 50, 60 => 40
+    System.out.println(ans); 
+
 
   }
 

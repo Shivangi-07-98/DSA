@@ -1,7 +1,7 @@
 import java.io.*;
 import java.util.*;
 
-public class Q21_IntersectionPointOfLLQ {
+public class Q21_IntersectionPointOfLL {
 
   public static class Node {
     int data; // value

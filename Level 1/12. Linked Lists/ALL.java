@@ -1,6 +1,6 @@
 // import java.util.*;
 
-public class ALLQ {
+public class ALL {
 
   public static class Node {
     int data; // value

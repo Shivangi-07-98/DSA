@@ -1,7 +1,7 @@
 import java.io.*;
 import java.util.*;
 
-public class Q19_RemoveLastQ {
+public class Q12_ReverseALinkedListPointerIterative {
 
   public static class Node {
     int data; // value
@@ -13,7 +13,7 @@ public class Q19_RemoveLastQ {
     Node tail; // address of last node
     int size; // value
 
-    int size(){
+    int size() {
       return size;
     }
 
@@ -23,49 +23,51 @@ public class Q19_RemoveLastQ {
       temp.data = val;
       temp.next = null;
 
-      if(size == 0){
+      if (size == 0) {
         head = tail = temp;
-      }
-      else{
+      } else {
         tail.next = temp;
         tail = temp;
       }
-      
+
       size++;
     }
 
     // O(n)
     void display() {
-      for(Node temp = head; temp != null; temp = temp.next){
+      for (Node temp = head; temp != null; temp = temp.next) {
         System.out.print(temp.data + " ");
       }
       System.out.println();
 
     }
 
-    void removeLast(){
-      if(size == 0){
-        System.out.println("List is empty");
+    // O(n)
+    Node getNodeAt(int idx) {
+      Node temp = head;
+      for (int i = 0; i < idx; i++) { // idx 2 means 0,1,2
+        temp = temp.next;
       }
-      else if(size == 1){
-        head = tail = null;
-        size = 0;
-      }
-      else{
-        Node temp = head;
-        for(int i = 0; i < size -2; i++){
-          temp = temp.next;
-        }
-        tail = temp;
-        tail.next = null;
-        size--;
+      return temp;
+    }
 
+    // O(n2)
+    void ReverseALinkedListPointerIterative() {
+      Node prev = null;
+      Node curr = head;
+      while(curr != null){
+        Node next = curr.next;
+        curr.next = prev;
+        prev = curr;
+        curr = next;
       }
+
+      Node temp = head;
+      head = tail;
+      tail = temp;
     }
 
   }
-
-
 
   public static void main(String[] args) {
     LinkedList list = new LinkedList();
@@ -75,13 +77,12 @@ public class Q19_RemoveLastQ {
     list.addLast(30);
     list.addLast(40);
     list.addLast(50);
-    
-    list.display();
-    // System.out.println(list.size());
-    list.removeLast();
-    list.removeLast();
-    list.removeLast();
-    list.display();
+    list.addLast(60);
+    list.addLast(70);
+
+    list.display(); // 10, 20, 30, 40, 50, 60, 70
+    list.ReverseALinkedListPointerIterative();
+    list.display(); // 70, 60, 50, 40, 30, 20, 10
 
   }
 

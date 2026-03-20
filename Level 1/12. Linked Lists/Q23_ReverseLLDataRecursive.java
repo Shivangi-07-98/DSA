@@ -1,7 +1,7 @@
 import java.io.*;
 import java.util.*;
 
-public class Q20_RemoveAtIndexQ {
+public class Q23_ReverseLLDataRecursive {
 
   public static class Node {
     int data; // value
@@ -13,7 +13,7 @@ public class Q20_RemoveAtIndexQ {
     Node tail; // address of last node
     int size; // value
 
-    int size(){
+    int size() {
       return size;
     }
 
@@ -23,49 +23,47 @@ public class Q20_RemoveAtIndexQ {
       temp.data = val;
       temp.next = null;
 
-      if(size == 0){
+      if (size == 0) {
         head = tail = temp;
-      }
-      else{
+      } else {
         tail.next = temp;
         tail = temp;
       }
-      
+
       size++;
     }
 
     // O(n)
     void display() {
-      for(Node temp = head; temp != null; temp = temp.next){
+      for (Node temp = head; temp != null; temp = temp.next) {
         System.out.print(temp.data + " ");
       }
       System.out.println();
 
     }
 
-    void removeLast(){
-      if(size == 0){
-        System.out.println("List is empty");
-      }
-      else if(size == 1){
-        head = tail = null;
-        size = 0;
-      }
-      else{
-        Node temp = head;
-        for(int i = 0; i < size -2; i++){
-          temp = temp.next;
-        }
-        tail = temp;
-        tail.next = null;
-        size--;
 
+    void reverseDRHelper(Node right, int floor) {
+      if (right == null) {
+        return;
       }
+      reverseDRHelper(right.next, floor + 1);
+      if (floor >= size / 2) {
+        int temp = left.data;
+        left.data = right.data;
+        right.data = temp;
+        left = left.next;
+      }
+
+    }
+
+    Node left = null;
+    void reverseDataRecursive() {
+      left = head;
+      reverseDRHelper(head, 0);
     }
 
   }
-
-
 
   public static void main(String[] args) {
     LinkedList list = new LinkedList();
@@ -75,13 +73,10 @@ public class Q20_RemoveAtIndexQ {
     list.addLast(30);
     list.addLast(40);
     list.addLast(50);
-    
-    list.display();
-    // System.out.println(list.size());
-    list.removeLast();
-    list.removeLast();
-    list.removeLast();
-    list.display();
+
+    list.display(); // 10, 20, 30, 40, 50
+    list.reverseDataRecursive();
+    list.display(); // 50, 40, 30, 20, 10
 
   }
 

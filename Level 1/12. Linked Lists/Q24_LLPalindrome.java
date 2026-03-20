@@ -1,7 +1,7 @@
 import java.io.*;
 import java.util.*;
 
-public class Q10_MidQ {
+public class Q24_LLPalindrome {
 
   public static class Node {
     int data; // value
@@ -42,30 +42,26 @@ public class Q10_MidQ {
 
     }
 
-    int mid1() {
-      int val = size / 2;
-      Node temp = head;
-      for (int i = 0; i < val -1; i++) {
-        temp = temp.next;
+    boolean isPalindromeHelper(Node right) {
+      if (right == null) {
+        return true;
       }
-      if (size % 2 == 0) { // even
-        return temp.data;
-      } else { // odd
-        return temp.next.data;
+      boolean res = isPalindromeHelper(right.next);
+      if (res == false) {
+        return false;
+      } else if (left.data != right.data) {
+        return false;
+      } else {
+        left = left.next;
+        return true;
       }
 
     }
 
-    int mid2(){
-      Node fast = head;
-      Node slow = head;
-      while(fast.next != null && fast.next.next != null){
-      // while(fast != tail && fast.next != tail){
-        fast = fast.next.next;
-        slow = slow.next;
-      }
-
-      return slow.data;
+    Node left = null;
+    boolean isPalindrome() {
+      left = head;
+      return isPalindromeHelper(head);
     }
 
   }
@@ -73,26 +69,16 @@ public class Q10_MidQ {
   public static void main(String[] args) {
     LinkedList list = new LinkedList();
 
+    list.addLast(5);
     list.addLast(10);
-    // list.display();
-    // System.out.println(list.size());
-
     list.addLast(20);
-    // list.display();
-    // System.out.println(list.size());
-
     list.addLast(30);
-    list.addLast(40);
-    list.addLast(50);
-    list.addLast(60);
-    list.addLast(70);
+    list.addLast(20);
+    list.addLast(10);
+    list.addLast(5);
 
-    // System.out.println(list.size());
-
-    // int ans = list.mid1();
-    // System.out.println(ans);
-
-    int ans = list.mid2();
+    list.display(); 
+    boolean ans = list.isPalindrome();
     System.out.println(ans);
 
   }

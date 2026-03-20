@@ -1,7 +1,7 @@
 import java.io.*;
 import java.util.*;
 
-public class LeetcodeQ {
+public class Leetcode {
 
   public class ListNode {
     int val;

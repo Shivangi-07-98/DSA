@@ -1,7 +1,7 @@
 import java.io.*;
 import java.util.*;
 
-public class Q24_LLPalindromeQ {
+public class Q20_RemoveAtIndex {
 
   public static class Node {
     int data; // value
@@ -13,7 +13,7 @@ public class Q24_LLPalindromeQ {
     Node tail; // address of last node
     int size; // value
 
-    int size() {
+    int size(){
       return size;
     }
 
@@ -23,63 +23,65 @@ public class Q24_LLPalindromeQ {
       temp.data = val;
       temp.next = null;
 
-      if (size == 0) {
+      if(size == 0){
         head = tail = temp;
-      } else {
+      }
+      else{
         tail.next = temp;
         tail = temp;
       }
-
+      
       size++;
     }
 
     // O(n)
     void display() {
-      for (Node temp = head; temp != null; temp = temp.next) {
+      for(Node temp = head; temp != null; temp = temp.next){
         System.out.print(temp.data + " ");
       }
       System.out.println();
 
     }
 
-    boolean isPalindromeHelper(Node right) {
-      if (right == null) {
-        return true;
+    void removeLast(){
+      if(size == 0){
+        System.out.println("List is empty");
       }
-      boolean res = isPalindromeHelper(right.next);
-      if (res == false) {
-        return false;
-      } else if (left.data != right.data) {
-        return false;
-      } else {
-        left = left.next;
-        return true;
+      else if(size == 1){
+        head = tail = null;
+        size = 0;
       }
+      else{
+        Node temp = head;
+        for(int i = 0; i < size -2; i++){
+          temp = temp.next;
+        }
+        tail = temp;
+        tail.next = null;
+        size--;
 
-    }
-
-    Node left = null;
-    boolean isPalindrome() {
-      left = head;
-      return isPalindromeHelper(head);
+      }
     }
 
   }
 
+
+
   public static void main(String[] args) {
     LinkedList list = new LinkedList();
 
-    list.addLast(5);
     list.addLast(10);
     list.addLast(20);
     list.addLast(30);
-    list.addLast(20);
-    list.addLast(10);
-    list.addLast(5);
-
-    list.display(); 
-    boolean ans = list.isPalindrome();
-    System.out.println(ans);
+    list.addLast(40);
+    list.addLast(50);
+    
+    list.display();
+    // System.out.println(list.size());
+    list.removeLast();
+    list.removeLast();
+    list.removeLast();
+    list.display();
 
   }
 

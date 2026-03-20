@@ -1,7 +1,7 @@
 import java.io.*;
 import java.util.*;
 
-public class Q8_RemoveFirstQ {
+public class Q19_RemoveLast {
 
   public static class Node {
     int data; // value
@@ -34,18 +34,6 @@ public class Q8_RemoveFirstQ {
       size++;
     }
 
-    void removeFirst(){
-      if (size == 0) {
-        System.out.println("List is empty");
-      } else if (size == 1) {
-        head = tail = null;
-        size = 0;
-      } else {
-        head = head.next;
-        size--;
-      }
-    }
-
     // O(n)
     void display() {
       for(Node temp = head; temp != null; temp = temp.next){
@@ -55,9 +43,27 @@ public class Q8_RemoveFirstQ {
 
     }
 
- 
-  }
+    void removeLast(){
+      if(size == 0){
+        System.out.println("List is empty");
+      }
+      else if(size == 1){
+        head = tail = null;
+        size = 0;
+      }
+      else{
+        Node temp = head;
+        for(int i = 0; i < size -2; i++){
+          temp = temp.next;
+        }
+        tail = temp;
+        tail.next = null;
+        size--;
 
+      }
+    }
+
+  }
 
 
 
@@ -65,17 +71,16 @@ public class Q8_RemoveFirstQ {
     LinkedList list = new LinkedList();
 
     list.addLast(10);
-    // list.display();
-    // System.out.println(list.size());
-
     list.addLast(20);
-    // list.display();
-    // System.out.println(list.size());
-
     list.addLast(30);
     list.addLast(40);
-
-    list.removeFirst();
+    list.addLast(50);
+    
+    list.display();
+    // System.out.println(list.size());
+    list.removeLast();
+    list.removeLast();
+    list.removeLast();
     list.display();
 
   }

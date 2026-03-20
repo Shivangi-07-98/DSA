@@ -1,7 +1,7 @@
 import java.io.*;
 import java.util.*;
 
-public class Q6_AddFirstQ {
+public class Q2_AddLast {
 
   public static class Node {
     int data; // value
@@ -16,24 +16,6 @@ public class Q6_AddFirstQ {
     int size(){
       return size;
     }
-
-    // O(1)
-    void addFirst(int val) {
-      Node temp = new Node();
-      temp.data = val;
-      
-      if(size == 0){
-        // temp.next = null;
-        head = tail = temp;
-      }
-      else{
-        temp.next = head;
-        head = temp;
-      }
-
-      size++;
-    }
-
 
     // O(1)
     void addLast(int val) {
@@ -66,20 +48,17 @@ public class Q6_AddFirstQ {
 
 
 
+
   public static void main(String[] args) {
     LinkedList list = new LinkedList();
 
-    // list.addLast(10);
-    // list.display();
-    // System.out.println(list.size());
-
-    // list.addLast(20);
-    // list.display();
-    // System.out.println(list.size());
-
-    list.addFirst(5);
+    list.addLast(10);
     list.display();
+    System.out.println(list.size());
 
+    list.addLast(20);
+    list.display();
+    System.out.println(list.size());
 
   }
 

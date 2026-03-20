@@ -1,7 +1,7 @@
 import java.io.*;
 import java.util.*;
 
-public class Q7_AddAtIndexQ {
+public class Q7_AddAtIndex {
 
   public static class Node {
     int data; // value

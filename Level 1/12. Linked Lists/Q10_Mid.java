@@ -1,7 +1,7 @@
 import java.io.*;
 import java.util.*;
 
-public class Q23_ReverseLLDataRecursiveQ {
+public class Q10_Mid {
 
   public static class Node {
     int data; // value
@@ -42,25 +42,30 @@ public class Q23_ReverseLLDataRecursiveQ {
 
     }
 
-
-    void reverseDRHelper(Node right, int floor) {
-      if (right == null) {
-        return;
+    int mid1() {
+      int val = size / 2;
+      Node temp = head;
+      for (int i = 0; i < val -1; i++) {
+        temp = temp.next;
       }
-      reverseDRHelper(right.next, floor + 1);
-      if (floor >= size / 2) {
-        int temp = left.data;
-        left.data = right.data;
-        right.data = temp;
-        left = left.next;
+      if (size % 2 == 0) { // even
+        return temp.data;
+      } else { // odd
+        return temp.next.data;
       }
 
     }
 
-    Node left = null;
-    void reverseDataRecursive() {
-      left = head;
-      reverseDRHelper(head, 0);
+    int mid2(){
+      Node fast = head;
+      Node slow = head;
+      while(fast.next != null && fast.next.next != null){
+      // while(fast != tail && fast.next != tail){
+        fast = fast.next.next;
+        slow = slow.next;
+      }
+
+      return slow.data;
     }
 
   }
@@ -69,14 +74,26 @@ public class Q23_ReverseLLDataRecursiveQ {
     LinkedList list = new LinkedList();
 
     list.addLast(10);
+    // list.display();
+    // System.out.println(list.size());
+
     list.addLast(20);
+    // list.display();
+    // System.out.println(list.size());
+
     list.addLast(30);
     list.addLast(40);
     list.addLast(50);
+    list.addLast(60);
+    list.addLast(70);
 
-    list.display(); // 10, 20, 30, 40, 50
-    list.reverseDataRecursive();
-    list.display(); // 50, 40, 30, 20, 10
+    // System.out.println(list.size());
+
+    // int ans = list.mid1();
+    // System.out.println(ans);
+
+    int ans = list.mid2();
+    System.out.println(ans);
 
   }
 

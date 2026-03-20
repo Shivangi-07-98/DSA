@@ -1,7 +1,7 @@
 import java.io.*;
 import java.util.*;
 
-public class Q13_MergeTwoSortedLLQ {
+public class Q14_MergeSortLL {
 
   public static class Node {
     int data; // value
@@ -72,63 +72,85 @@ public class Q13_MergeTwoSortedLLQ {
       return res;
     }
 
-
     public static LinkedList MyMergeTwoSortedLL(LinkedList l1, LinkedList l2) {
       LinkedList res = new LinkedList();
 
       Node one = l1.head;
       Node two = l2.head;
-      while(one != null && two != null){
-        if(one.data < two.data){
+      while (one != null && two != null) {
+        if (one.data < two.data) {
           res.addLast(one.data);
           one = one.next;
-        }
-        else{
+        } else {
           res.addLast(two.data);
           two = two.next;
         }
       }
 
-      while(one != null){
+      while (one != null) {
         res.addLast(one.data);
-          one = one.next;
+        one = one.next;
       }
 
-      while(two != null){
+      while (two != null) {
         res.addLast(two.data);
-          two = two.next;
+        two = two.next;
       }
 
       return res;
     }
 
+    public static Node mid(Node num1, Node num2) {
+      Node fast = num1;
+      Node slow = num1;
+      while (fast != num2 && fast.next != num2) {
+        // while(fast != tail && fast.next != tail){
+        fast = fast.next.next;
+        slow = slow.next;
+      }
+
+      return slow;
+    }
+
+    public static LinkedList mergeSort(Node head, Node tail) {
+
+      if(head == tail){
+        LinkedList baseList = new LinkedList();
+        baseList.addLast(head.data);
+        return baseList;
+      }
+
+      Node mid = mid(head, tail);
+      LinkedList fsh = mergeSort(head, mid);
+      LinkedList ssh = mergeSort(mid.next, tail);
+      LinkedList fullSortedList = MergeTwoSortedLL(fsh, ssh);
+      return fullSortedList;
+    }
+
   }
 
   public static void main(String[] args) {
-    LinkedList list1 = new LinkedList();
+    LinkedList list = new LinkedList();
 
-    list1.addLast(10);
-    list1.addLast(20);
-    list1.addLast(30);
-    list1.addLast(40);
-    list1.addLast(50);
+    list.addLast(55);
+    list.addLast(66);
+    list.addLast(10);
+    list.addLast(20);
+    list.addLast(11);
+    list.addLast(15);
+    list.addLast(17);
+    list.addLast(19);
+    list.addLast(33);
+    list.addLast(30);
+    list.addLast(40);
+    list.addLast(50);
 
-    list1.display(); // 10, 20, 30, 40, 50
+    Node midNode = LinkedList.mid(list.head, list.tail);
+    System.out.println(midNode.data);
 
-    LinkedList list2 = new LinkedList();
-
-    list2.addLast(11);
-    list2.addLast(15);
-    list2.addLast(17);
-    list2.addLast(19);
-    list2.addLast(33);
-    list2.addLast(55);
-    list2.addLast(66);
-
-    list2.display(); // 11, 15, 17, 19, 33, 55, 66
-
-    LinkedList ans = LinkedList.MyMergeTwoSortedLL(list1, list2); // 10, 11, 15, 17, 19, 20, 30, 33, 40, 50, 55, 66
-    ans.display();
+    list.display(); // 55, 66, 10, 20, 11, 15, 17, 19, 33, 30, 40, 50
+    LinkedList ans = LinkedList.mergeSort(list.head, list.tail);
+    ans.display(); // 10, 11, 15, 17, 19, 20, 30, 33, 40, 50, 55, 66
 
   }
 
