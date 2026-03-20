@@ -34,9 +34,6 @@ imp 33. best time to buy and sell stock 2
 imp 34. best time to buy and sell stock with transaction fee
 imp 35. best time to buy and sell stock with cooldown
 imp 36. best time to buy and sell stock 3
-
-----------------------------------break-----------------------------------------
-
 imp 37. best time to buy and sell stock 4 - 1 sept 2022----
 38. tiling with 2*1 tiles ×
 39. tiling with m*1 tiles ×
@@ -47,6 +44,9 @@ imp 42. matrix chain multiplication - 3 sept 2022----
 imp 44. optimal binary search tree
 imp 45. burst balloons - 7 sept 2022----
 imp 46. minimum score triangulation of polygon
+
+----------------------------------break-----------------------------------------
+
 imp 47. longest common substring - 9 sept 2022----
 imp 48. palindromic substrings
 imp 49. longest palindromic substring
