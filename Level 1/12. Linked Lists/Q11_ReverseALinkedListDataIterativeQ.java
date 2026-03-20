@@ -1,7 +1,7 @@
 import java.io.*;
 import java.util.*;
 
-public class FoldaLLQ {
+public class Q11_ReverseALinkedListDataIterativeQ {
 
   public static class Node {
     int data; // value
@@ -42,25 +42,32 @@ public class FoldaLLQ {
 
     }
 
-
-    void foldHelper(Node right, int floor) {
-      if (right == null) {
-        return;
+    // O(n)
+    Node getNodeAt(int idx) {
+      Node temp = head;
+      for (int i = 0; i < idx; i++) { // idx 2 means 0,1,2
+        temp = temp.next;
       }
-      foldHelper(right.next, floor + 1);
-      if (floor >= size / 2) {
-        int temp = left.data;
-        left.data = right.data;
-        right.data = temp;
-        left = left.next;
-      }
-
+      return temp;
     }
 
-    Node left = null;
-    void fold() {
-      left = head;
-      foldHelper(head, 0);
+    // O(n2)
+    void ReverseALinkedListDataIterative() {
+
+      int i = 0;
+      int j = size - 1;
+      while (i < j) {
+        Node leftNode = getNodeAt(i);
+        Node rightNode = getNodeAt(j);
+
+        int temp = leftNode.data;
+        leftNode.data = rightNode.data;
+        rightNode.data = temp;
+        
+        i++;
+        j--;
+      }
+      
     }
 
   }
@@ -68,16 +75,17 @@ public class FoldaLLQ {
   public static void main(String[] args) {
     LinkedList list = new LinkedList();
 
-    list.addLast(1);
-    list.addLast(2);
-    list.addLast(3);
-    list.addLast(4);
-    list.addLast(5);
+    list.addLast(10);
+    list.addLast(20);
+    list.addLast(30);
+    list.addLast(40);
+    list.addLast(50);
+    list.addLast(60);
+    list.addLast(70);
 
-    list.display(); // 1, 2, 3, 4, 5
-    list.fold();
-    list.display(); // 1, 5, 2, 4, 3
-    // 1 2 3 4 5 6 => 1 6 2 5 3 4
+    list.display(); // 10, 20, 30, 40, 50, 60, 70
+    list.ReverseALinkedListDataIterative();
+    list.display(); // 70, 60, 50, 40, 30, 20, 10
 
   }
 

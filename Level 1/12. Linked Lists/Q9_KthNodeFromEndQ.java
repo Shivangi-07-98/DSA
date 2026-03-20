@@ -1,7 +1,7 @@
 import java.io.*;
 import java.util.*;
 
-public class ReverseLLPointerRecursiveQ {
+public class Q9_KthNodeFromEndQ {
 
   public static class Node {
     int data; // value
@@ -13,7 +13,7 @@ public class ReverseLLPointerRecursiveQ {
     Node tail; // address of last node
     int size; // value
 
-    int size() {
+    int size(){
       return size;
     }
 
@@ -23,57 +23,71 @@ public class ReverseLLPointerRecursiveQ {
       temp.data = val;
       temp.next = null;
 
-      if (size == 0) {
+      if(size == 0){
         head = tail = temp;
-      } else {
+      }
+      else{
         tail.next = temp;
         tail = temp;
       }
-
+      
       size++;
     }
 
     // O(n)
     void display() {
-      for (Node temp = head; temp != null; temp = temp.next) {
+      for(Node temp = head; temp != null; temp = temp.next){
         System.out.print(temp.data + " ");
       }
       System.out.println();
 
     }
 
-    void reversePRHelper(Node node){
-      if(node == tail){
-        return;
+    // 3
+    int KthNodeFromEnd(int idx){ // 10, 20, 30, 40, 50, 60 => 40
+
+      Node a = head;
+      Node b = head;
+      for(int i = 0; i < idx; i++){
+        a = a.next;
       }
-      reversePRHelper(node.next);
-      node.next.next = node;
+
+      while(a.next != null){
+        a = a.next;
+        b = b.next; 
+
+      }
+
+      return b.next.data; // if asked on position
+      // return b.data; // if asked on idx
+      
     }
 
-    // O(n2)
-    void reversePointerRecursive() {
-      reversePRHelper(head);
-      Node temp = head;
-      head = tail;
-      tail = temp;
-      tail.next = null;
-    }
-
-
+ 
   }
+
+
+
 
   public static void main(String[] args) {
     LinkedList list = new LinkedList();
 
     list.addLast(10);
+    // list.display();
+    // System.out.println(list.size());
+
     list.addLast(20);
+    // list.display();
+    // System.out.println(list.size());
+
     list.addLast(30);
     list.addLast(40);
     list.addLast(50);
-    
-    list.display(); // 10, 20, 30, 40, 50
-    list.reversePointerRecursive();
-    list.display(); // 50, 40, 30, 20, 10
+    list.addLast(60);
+
+    int ans = list.KthNodeFromEnd(3); // 10, 20, 30, 40, 50, 60 => 40
+    System.out.println(ans); 
+
 
   }
 

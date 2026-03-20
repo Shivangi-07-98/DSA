@@ -1,7 +1,7 @@
 import java.io.*;
 import java.util.*;
 
-public class KthNodeFromEndQ {
+public class Q20_RemoveAtIndexQ {
 
   public static class Node {
     int data; // value
@@ -43,29 +43,27 @@ public class KthNodeFromEndQ {
 
     }
 
-    // 3
-    int KthNodeFromEnd(int idx){ // 10, 20, 30, 40, 50, 60 => 40
-
-      Node a = head;
-      Node b = head;
-      for(int i = 0; i < idx; i++){
-        a = a.next;
+    void removeLast(){
+      if(size == 0){
+        System.out.println("List is empty");
       }
-
-      while(a.next != null){
-        a = a.next;
-        b = b.next; 
+      else if(size == 1){
+        head = tail = null;
+        size = 0;
+      }
+      else{
+        Node temp = head;
+        for(int i = 0; i < size -2; i++){
+          temp = temp.next;
+        }
+        tail = temp;
+        tail.next = null;
+        size--;
 
       }
-
-      return b.next.data; // if asked on position
-      // return b.data; // if asked on idx
-      
     }
 
- 
   }
-
 
 
 
@@ -73,21 +71,17 @@ public class KthNodeFromEndQ {
     LinkedList list = new LinkedList();
 
     list.addLast(10);
-    // list.display();
-    // System.out.println(list.size());
-
     list.addLast(20);
-    // list.display();
-    // System.out.println(list.size());
-
     list.addLast(30);
     list.addLast(40);
     list.addLast(50);
-    list.addLast(60);
-
-    int ans = list.KthNodeFromEnd(3); // 10, 20, 30, 40, 50, 60 => 40
-    System.out.println(ans); 
-
+    
+    list.display();
+    // System.out.println(list.size());
+    list.removeLast();
+    list.removeLast();
+    list.removeLast();
+    list.display();
 
   }
 

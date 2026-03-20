@@ -1,7 +1,7 @@
 import java.io.*;
 import java.util.*;
 
-public class ReverseALinkedListPointerIterativeQ {
+public class Q22_ReverseLLPointerRecursiveQ {
 
   public static class Node {
     int data; // value
@@ -42,30 +42,23 @@ public class ReverseALinkedListPointerIterativeQ {
 
     }
 
-    // O(n)
-    Node getNodeAt(int idx) {
-      Node temp = head;
-      for (int i = 0; i < idx; i++) { // idx 2 means 0,1,2
-        temp = temp.next;
+    void reversePRHelper(Node node){
+      if(node == tail){
+        return;
       }
-      return temp;
+      reversePRHelper(node.next);
+      node.next.next = node;
     }
 
     // O(n2)
-    void ReverseALinkedListPointerIterative() {
-      Node prev = null;
-      Node curr = head;
-      while(curr != null){
-        Node next = curr.next;
-        curr.next = prev;
-        prev = curr;
-        curr = next;
-      }
-
+    void reversePointerRecursive() {
+      reversePRHelper(head);
       Node temp = head;
       head = tail;
       tail = temp;
+      tail.next = null;
     }
+
 
   }
 
@@ -77,12 +70,10 @@ public class ReverseALinkedListPointerIterativeQ {
     list.addLast(30);
     list.addLast(40);
     list.addLast(50);
-    list.addLast(60);
-    list.addLast(70);
-
-    list.display(); // 10, 20, 30, 40, 50, 60, 70
-    list.ReverseALinkedListPointerIterative();
-    list.display(); // 70, 60, 50, 40, 30, 20, 10
+    
+    list.display(); // 10, 20, 30, 40, 50
+    list.reversePointerRecursive();
+    list.display(); // 50, 40, 30, 20, 10
 
   }
 

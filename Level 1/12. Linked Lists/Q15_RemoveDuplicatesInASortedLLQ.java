@@ -1,7 +1,7 @@
 import java.io.*;
 import java.util.*;
 
-public class RemoveDuplicatesInASortedLLQ {
+public class Q15_RemoveDuplicatesInASortedLLQ {
 
   public static class Node {
     int data; // value

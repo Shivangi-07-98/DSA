@@ -1,7 +1,7 @@
 import java.io.*;
 import java.util.*;
 
-public class LLPalindromeQ {
+public class Q10_MidQ {
 
   public static class Node {
     int data; // value
@@ -42,26 +42,30 @@ public class LLPalindromeQ {
 
     }
 
-    boolean isPalindromeHelper(Node right) {
-      if (right == null) {
-        return true;
+    int mid1() {
+      int val = size / 2;
+      Node temp = head;
+      for (int i = 0; i < val -1; i++) {
+        temp = temp.next;
       }
-      boolean res = isPalindromeHelper(right.next);
-      if (res == false) {
-        return false;
-      } else if (left.data != right.data) {
-        return false;
-      } else {
-        left = left.next;
-        return true;
+      if (size % 2 == 0) { // even
+        return temp.data;
+      } else { // odd
+        return temp.next.data;
       }
 
     }
 
-    Node left = null;
-    boolean isPalindrome() {
-      left = head;
-      return isPalindromeHelper(head);
+    int mid2(){
+      Node fast = head;
+      Node slow = head;
+      while(fast.next != null && fast.next.next != null){
+      // while(fast != tail && fast.next != tail){
+        fast = fast.next.next;
+        slow = slow.next;
+      }
+
+      return slow.data;
     }
 
   }
@@ -69,16 +73,26 @@ public class LLPalindromeQ {
   public static void main(String[] args) {
     LinkedList list = new LinkedList();
 
-    list.addLast(5);
     list.addLast(10);
-    list.addLast(20);
-    list.addLast(30);
-    list.addLast(20);
-    list.addLast(10);
-    list.addLast(5);
+    // list.display();
+    // System.out.println(list.size());
 
-    list.display(); 
-    boolean ans = list.isPalindrome();
+    list.addLast(20);
+    // list.display();
+    // System.out.println(list.size());
+
+    list.addLast(30);
+    list.addLast(40);
+    list.addLast(50);
+    list.addLast(60);
+    list.addLast(70);
+
+    // System.out.println(list.size());
+
+    // int ans = list.mid1();
+    // System.out.println(ans);
+
+    int ans = list.mid2();
     System.out.println(ans);
 
   }

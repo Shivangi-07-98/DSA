@@ -1,7 +1,7 @@
 import java.io.*;
 import java.util.*;
 
-public class RemoveAtIndexQ {
+public class Q19_RemoveLastQ {
 
   public static class Node {
     int data; // value

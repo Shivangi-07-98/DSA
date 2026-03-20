@@ -1,7 +1,7 @@
 import java.io.*;
 import java.util.*;
 
-public class RemoveFirstQ {
+public class Q6_AddFirstQ {
 
   public static class Node {
     int data; // value
@@ -16,6 +16,24 @@ public class RemoveFirstQ {
     int size(){
       return size;
     }
+
+    // O(1)
+    void addFirst(int val) {
+      Node temp = new Node();
+      temp.data = val;
+      
+      if(size == 0){
+        // temp.next = null;
+        head = tail = temp;
+      }
+      else{
+        temp.next = head;
+        head = temp;
+      }
+
+      size++;
+    }
+
 
     // O(1)
     void addLast(int val) {
@@ -34,18 +52,6 @@ public class RemoveFirstQ {
       size++;
     }
 
-    void removeFirst(){
-      if (size == 0) {
-        System.out.println("List is empty");
-      } else if (size == 1) {
-        head = tail = null;
-        size = 0;
-      } else {
-        head = head.next;
-        size--;
-      }
-    }
-
     // O(n)
     void display() {
       for(Node temp = head; temp != null; temp = temp.next){
@@ -60,23 +66,20 @@ public class RemoveFirstQ {
 
 
 
-
   public static void main(String[] args) {
     LinkedList list = new LinkedList();
 
-    list.addLast(10);
+    // list.addLast(10);
     // list.display();
     // System.out.println(list.size());
 
-    list.addLast(20);
+    // list.addLast(20);
     // list.display();
     // System.out.println(list.size());
 
-    list.addLast(30);
-    list.addLast(40);
-
-    list.removeFirst();
+    list.addFirst(5);
     list.display();
+
 
   }
 

@@ -1,7 +1,7 @@
 import java.io.*;
 import java.util.*;
 
-public class ReverseLLDataRecursiveQ {
+public class Q25_FoldaLLQ {
 
   public static class Node {
     int data; // value
@@ -43,11 +43,11 @@ public class ReverseLLDataRecursiveQ {
     }
 
 
-    void reverseDRHelper(Node right, int floor) {
+    void foldHelper(Node right, int floor) {
       if (right == null) {
         return;
       }
-      reverseDRHelper(right.next, floor + 1);
+      foldHelper(right.next, floor + 1);
       if (floor >= size / 2) {
         int temp = left.data;
         left.data = right.data;
@@ -58,9 +58,9 @@ public class ReverseLLDataRecursiveQ {
     }
 
     Node left = null;
-    void reverseDataRecursive() {
+    void fold() {
       left = head;
-      reverseDRHelper(head, 0);
+      foldHelper(head, 0);
     }
 
   }
@@ -68,15 +68,16 @@ public class ReverseLLDataRecursiveQ {
   public static void main(String[] args) {
     LinkedList list = new LinkedList();
 
-    list.addLast(10);
-    list.addLast(20);
-    list.addLast(30);
-    list.addLast(40);
-    list.addLast(50);
+    list.addLast(1);
+    list.addLast(2);
+    list.addLast(3);
+    list.addLast(4);
+    list.addLast(5);
 
-    list.display(); // 10, 20, 30, 40, 50
-    list.reverseDataRecursive();
-    list.display(); // 50, 40, 30, 20, 10
+    list.display(); // 1, 2, 3, 4, 5
+    list.fold();
+    list.display(); // 1, 5, 2, 4, 3
+    // 1 2 3 4 5 6 => 1 6 2 5 3 4
 
   }
 

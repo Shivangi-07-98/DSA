@@ -1,7 +1,7 @@
 import java.io.*;
 import java.util.*;
 
-public class ReverseALinkedListDataIterativeQ {
+public class Q18_DisplayReverseRecursiveQ {
 
   public static class Node {
     int data; // value
@@ -42,32 +42,17 @@ public class ReverseALinkedListDataIterativeQ {
 
     }
 
-    // O(n)
-    Node getNodeAt(int idx) {
-      Node temp = head;
-      for (int i = 0; i < idx; i++) { // idx 2 means 0,1,2
-        temp = temp.next;
+    private void displayReverseHelper(Node node) {
+      if (node == null) {
+        return;
       }
-      return temp;
+      displayReverseHelper(node.next);
+      System.out.print(node.data + " ");
     }
 
-    // O(n2)
-    void ReverseALinkedListDataIterative() {
-
-      int i = 0;
-      int j = size - 1;
-      while (i < j) {
-        Node leftNode = getNodeAt(i);
-        Node rightNode = getNodeAt(j);
-
-        int temp = leftNode.data;
-        leftNode.data = rightNode.data;
-        rightNode.data = temp;
-        
-        i++;
-        j--;
-      }
-      
+    public void displayReverse() {
+      displayReverseHelper(head);
+      System.out.println();
     }
 
   }
@@ -80,12 +65,10 @@ public class ReverseALinkedListDataIterativeQ {
     list.addLast(30);
     list.addLast(40);
     list.addLast(50);
-    list.addLast(60);
-    list.addLast(70);
 
-    list.display(); // 10, 20, 30, 40, 50, 60, 70
-    list.ReverseALinkedListDataIterative();
-    list.display(); // 70, 60, 50, 40, 30, 20, 10
+    list.display();
+    list.displayReverse();
+    // list.display();
 
   }
 

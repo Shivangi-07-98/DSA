@@ -24,4 +24,18 @@ imp 22. reverse a ll (pointer recursive)
 vimp 24. is a LL palindrome
 25. fold a LL ×
 vimp 26. Add two LL
-27. 
+
+imp 27. copy list with random pointer - 1 oct 2022----
+28. split a circular linked list into two halves ×
+vimp 29. lru cache
+imp 30. lfu cache
+31. odd even linked list - 3 oct 2022----
+imp 32. reorder list
+33. unfold linked list ×
+imp 34. reverse linked list
+imp 35. add two numbers - 6 oct 2022----
+36. subtraction in linked list ×
+imp 37. intersection of two linked lists
+vimp 38. linked list cycle
+vimp 39. linked list cycle 2
+40. quick sort on linked list ×
