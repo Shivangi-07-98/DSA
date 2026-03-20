@@ -1,1 +1,110 @@
-Q36_SubtractionInLL
+https://www.geeksforgeeks.org/problems/subtraction-in-linked-list/1
+
+
+class Solution {
+  public Node subLinkedList(Node head1, Node head2) {
+    head1 = removeLeadingZeros(head1);
+    head2 = removeLeadingZeros(head2);
+
+    if (head1 == null && head2 == null) {
+      return new Node(0);
+    }
+    if (head1 == null) {
+      return new Node(0);
+    }
+    if (head2 == null) {
+      return head1;
+    }
+
+    int cmp = compare(head1, head2);
+    if (cmp == 0) {
+      return new Node(0);
+    }
+
+    Node larger = cmp > 0 ? head1 : head2;
+    Node smaller = cmp > 0 ? head2 : head1;
+
+    Node res = subtract(larger, smaller);
+    res = removeLeadingZeros(res);
+
+    return res == null ? new Node(0) : res;
+  }
+
+  private Node removeLeadingZeros(Node head) {
+    while (head != null && head.data == 0) {
+      head = head.next;
+    }
+    return head;
+  }
+
+  private int length(Node head) {
+    int len = 0;
+    while (head != null) {
+      len++;
+      head = head.next;
+    }
+    return len;
+  }
+
+  private int compare(Node a, Node b) {
+    int la = length(a);
+    int lb = length(b);
+    if (la != lb) {
+      return la - lb;
+    }
+
+    while (a != null && b != null) {
+      if (a.data != b.data) {
+        return a.data - b.data;
+      }
+      a = a.next;
+      b = b.next;
+    }
+
+    return 0;
+  }
+
+  private Node reverse(Node head) {
+    Node prev = null;
+    Node curr = head;
+
+    while (curr != null) {
+      Node next = curr.next;
+      curr.next = prev;
+      prev = curr;
+      curr = next;
+    }
+
+    return prev;
+  }
+
+  private Node subtract(Node a, Node b) {
+    a = reverse(a);
+    b = reverse(b);
+
+    int borrow = 0;
+    Node dummy = new Node(0);
+    Node tail = dummy;
+
+    while (a != null) {
+      int val = a.data - borrow - (b != null ? b.data : 0);
+      if (val < 0) {
+        val += 10;
+        borrow = 1;
+      } else {
+        borrow = 0;
+      }
+
+      tail.next = new Node(val);
+      tail = tail.next;
+
+      a = a.next;
+      if (b != null) {
+        b = b.next;
+      }
+    }
+
+    return reverse(dummy.next);
+  }
+  
+}

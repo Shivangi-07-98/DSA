@@ -1,1 +1,43 @@
-Q33_UnfoldLL
+https://www.geeksforgeeks.org/dsa/program-to-unfold-a-folded-linked-list/
+
+
+class Solution {
+  public ListNode unfold(ListNode head) {
+    if (head == null || head.next == null) {
+      return head;
+    }
+
+    ListNode first = head;
+    ListNode second = head.next;
+    ListNode secondHead = second;
+
+    while (second != null && second.next != null) {
+      first.next = second.next;
+      first = first.next;
+
+      second.next = first.next;
+      second = second.next;
+    }
+
+    first.next = null;
+    ListNode revSecond = reverse(secondHead);
+    first.next = revSecond;
+
+    return head;
+  }
+
+  private ListNode reverse(ListNode head) {
+    ListNode prev = null;
+    ListNode curr = head;
+
+    while (curr != null) {
+      ListNode next = curr.next;
+      curr.next = prev;
+      prev = curr;
+      curr = next;
+    }
+
+    return prev;
+  }
+  
+}
