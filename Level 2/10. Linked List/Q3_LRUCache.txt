@@ -36,7 +36,7 @@ class LRUCache {
     node.next.prev = node.prev;
   }
 
-  private void insert(Node node) {
+  private void addFirst(Node node) {
     node.next = head.next;
     node.prev = head;
 
@@ -48,7 +48,7 @@ class LRUCache {
     if (map.containsKey(key)) {
       Node node = map.get(key);
       remove(node);
-      insert(node);
+      addFirst(node);
       return node.val;
     }
     return -1;
@@ -62,7 +62,7 @@ class LRUCache {
 
     Node node = new Node(key, value);
     map.put(key, node);
-    insert(node);
+    addFirst(node);
 
     if (map.size() > capacity) {
       Node lru = tail.prev;
