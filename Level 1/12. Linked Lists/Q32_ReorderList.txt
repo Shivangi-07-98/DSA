@@ -7,6 +7,43 @@ class Solution {
       return;
     }
 
+    left = head;
+    helper(head);
+  }
+
+  boolean work = true;
+  ListNode left;
+
+  void helper(ListNode right) {
+    if (right == null) {
+      return;
+    }
+    helper(right.next);
+
+    if (work == true) {
+      if (left == right || left.next == right) {
+        right.next = null;
+        work = false;
+      } else {
+        ListNode next = left.next;
+
+        left.next = right;
+        right.next = next;
+
+        left = next;
+      }
+    }
+  }
+
+}
+
+
+class Solution {
+  public void reorderList(ListNode head) {
+    if (head == null || head.next == null) {
+      return;
+    }
+
     ListNode slow = head;
     ListNode fast = head;
 
