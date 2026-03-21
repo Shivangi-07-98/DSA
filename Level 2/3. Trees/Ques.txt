@@ -11,6 +11,6 @@
 11. in order successor
 12. 
 
-kth ancestor of a tree node - 6 oct 2022----
+kth ancestor of a tree node × - 6 oct 2022----
 longest even sum path - 8 oct 2022----
 count univalue subtrees - 11 oct 2022----
