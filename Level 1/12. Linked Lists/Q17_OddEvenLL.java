@@ -3,6 +3,8 @@
 // if only odd present
 // if only even present
 
+// https://leetcode.com/problems/odd-even-linked-list/description/
+
 import java.io.*;
 import java.util.*;
 
