@@ -30,7 +30,7 @@ imp 27. copy list with random pointer - 1 oct 2022----
 vimp 29. lru cache
 imp 30. lfu cache
 31. odd even linked list - 3 oct 2022----
-imp 32. reorder list
+imp 32. reorder list/fold linked list
 33. unfold linked list ×
 imp 34. reverse linked list
 imp 35. add two numbers - 6 oct 2022----
