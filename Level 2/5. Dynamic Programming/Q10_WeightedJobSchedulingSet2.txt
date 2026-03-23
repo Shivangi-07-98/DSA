@@ -1,4 +1,4 @@
-https://www.geeksforgeeks.org/dsa/weighted-job-scheduling-set-2-using-lis/
+https://leetcode.com/problems/maximum-profit-in-job-scheduling/description/
 
 
 class Solution {
