@@ -1,11 +1,13 @@
 import java.io.*;
 import java.util.*;
-
 public class Q18_HighwayBillboard {
+
   public static int solution(int m, int[] x, int[] rev, int t) {
+
     int[] dp = new int[x.length];
     int omax = rev[0];
     dp[0] = rev[0];
+
     for (int i = 1; i < dp.length; i++) {
       int max = 0;
       for (int j = 0; j < i; j++) {
