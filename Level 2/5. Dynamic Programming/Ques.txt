@@ -23,8 +23,8 @@ imp 22. count brackets
 23. valleys and mountains × | maze path above diagonal | dyck words
 24. circles and chords ×
 25. triangulations ×
-imp 26. partition equal subset sum - 28 aug 2022----
-imp 27. target sum subsets
+imp 26. target sum subsets - 28 aug 2022----
+imp 27. partition equal subset sum
 imp 28. coin change combination
 imp 29. coin change permutations
 imp 30. zero one knapsack

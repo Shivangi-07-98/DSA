@@ -1,15 +1,17 @@
-class Solution {
-  public boolean canPartition(int[] arr) {
-    int sum = 0;
-    for (int val : arr) {
-      sum += val;
+import java.io.*;
+import java.util.*;
+public class Q27_TargetSumSubsets {
+
+  public static void main(String[] args) throws Exception {
+    BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+    int n = Integer.parseInt(br.readLine());
+    int[] arr = new int[n];
+
+    for (int i = 0; i < n; i++) {
+      arr[i] = Integer.parseInt(br.readLine());
     }
 
-    if (sum % 2 == 1) {
-      return false;
-    }
-
-    int tar = sum / 2;
+    int tar = Integer.parseInt(br.readLine());
 
     boolean[][] dp = new boolean[arr.length + 1][tar + 1];
     for (int i = 0; i < dp.length; i++) {
@@ -38,6 +40,7 @@ class Solution {
       }
     }
 
-    return dp[arr.length][tar];
+    System.out.println(dp[arr.length][tar]);
   }
+  
 }
