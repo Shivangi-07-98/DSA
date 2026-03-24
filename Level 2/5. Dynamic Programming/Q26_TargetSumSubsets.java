@@ -1,6 +1,6 @@
 import java.io.*;
 import java.util.*;
-public class Q27_TargetSumSubsets {
+public class Q26_TargetSumSubsets {
 
   public static void main(String[] args) throws Exception {
     BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
@@ -42,5 +42,5 @@ public class Q27_TargetSumSubsets {
 
     System.out.println(dp[arr.length][tar]);
   }
-  
+
 }
