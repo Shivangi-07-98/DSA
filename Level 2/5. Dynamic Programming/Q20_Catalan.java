@@ -1,5 +1,12 @@
-class Solution {
-  public int numTrees(int n) {
+import java.io.*;
+import java.util.*;
+public class Q20_Catalan {
+
+  public static void main(String[] args) {
+    catalan(10);
+  }
+
+  public static void catalan(int n) {
     int[] dp = new int[n + 1];
     dp[0] = 1;
     dp[1] = 1;
@@ -14,6 +21,7 @@ class Solution {
       }
     }
 
-    return dp[n];
+    System.out.println(Arrays.toString(dp));
   }
+
 }
