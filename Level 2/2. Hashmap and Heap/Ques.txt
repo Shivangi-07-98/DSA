@@ -13,11 +13,11 @@
 16. number of employees under every manager
 17. longest consecutive sequence of 1's in a binary string
 18. is array divisible in pairs whose sum is k
-19. find all anagrams - 17 mar 2022----
+19. find all anagrams - 17 mar 2022----start from here
 20. k anagrams
 21. minimum window substring
 22. find anagram mappings
-23. longest unique substring - 22 mar 2022----start from here
+23. longest unique substring - 22 mar 2022----
 24. count of substrings having all unique characters
 25. find itinerary from tickets
 26. morning assembly (tricky sorting cost) ×
