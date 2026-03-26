@@ -1,44 +1,44 @@
-vimp 1. permutation 1 - 19 apr 2022----
-vimp 2. permutations 2
-3. combinations 1
-4. combinations 2
-5. queens permutations 2d as 2d queen chooses × - 20 apr 2022----
+imp 1. permutation 1 - 19 apr 2022---- todo
+imp 2. permutations 2
+imp 3. combinations 1
+imp 4. combinations 2
+5. queens permutations 2d as 2d queen chooses × - 20 apr 2022---- todo
 6. queens combinations 2d as 2d queen chooses ×
 7. queens combinations 2d as 2d box chooses ×
 8. queens permutations 2d as 2d box chooses ×
-9. queens combinations 2d as 1d queen chooses × - 21 apr 2022----
-10. nqueens combinations 2d as 1d queen chooses
+9. queens combinations 2d as 1d queen chooses × - 21 apr 2022---- todo
+imp 10. nqueens combinations 2d as 1d queen chooses
 11. nqueens permutations 2d as 1d queen chooses ×
 12. nknights combinations 2d as 1d knight chooses ×
-13. nqueens branch and bound - 22 apr 2022----
-14. solve sudoku
+imp 13. nqueens branch and bound - 22 apr 2022---- todo
+imp 14. solve sudoku
 15. cryptarithmetic - 25 apr 2022----
 16. crossword puzzle
 17. lexicographical numbers × - 26 apr 2022----
 18. friends pairing 2
 19. k partitions - 2 may 2022----
-20. k subsets with equal sum
+imp* 20. k subsets with equal sum
 21. permutations words 1 ×
 22. permutations words 2 ×
-23. pattern matching - 4 may 2022----
-24. word break 1
-25. tug of war
-26. largest number possible after at most k swaps
+imp 23. pattern matching - 4 may 2022---- todo
+imp 24. word break 1
+imp* 25. tug of war
+imp 26. largest number possible after at most k swaps
 27. words k selection 1 × - 6 may 2022----
 28. words k length words 1 ×
 29. words k length words 2 ×
 30. words k selection 2 ×
-31. words k selection 3 × - 10 may 2022----
+31. words k selection 3 × - 10 may 2022---- todo
 32. words k length words 4 ×
 33. words k selection 4 ×
-34. coin change combinations 1 ×
-35. coin change permutations 1 ×
-36. coin change combinations 2 × - 11 may 2022----
-37. coin change permutations 2 ×
-38. josephus problem
+imp 34. coin change combinations 1
+imp* 35. coin change permutations 1
+imp* 36. coin change combinations 2 - 11 may 2022---- todo
+imp* 37. coin change permutations 2
+imp 38. josephus problem
 39. abbreviation using backtracking ×
-40. max score
+40. max score ×
 41. all palindromic permutations × - 13 may 2022----
 
-remove invalid parenthesis - 12 nov 2022----
-all palindromic partitions
+imp 42. remove invalid parenthesis - 12 nov 2022---- todo
+imp 43. all palindromic partitions
