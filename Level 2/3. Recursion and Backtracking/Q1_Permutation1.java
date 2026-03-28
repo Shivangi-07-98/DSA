@@ -4,13 +4,13 @@ import java.util.*;
 
 public class Q1_Permutation1 {
 
-  private static void permute(int[] boxes, int ci, int ti) {
+  private static void permute(int[] boxes, int ci, int ti) { // 3 1 2
     if (ci > ti) {
       printBoxes(boxes);
       return;
     }
 
-    for (int i = 0; i < boxes.length; i++) {
+    for (int i = 0; i < boxes.length; i++) { // 0 1 2
       if (boxes[i] == 0) {
         boxes[i] = ci;
         permute(boxes, ci + 1, ti);
@@ -45,7 +45,7 @@ public class Q1_Permutation1 {
  * 12_
  * 1_2
  * 21_
- * 2_1
  * _12
+ * 2_1
  * _21
  */
