@@ -21,7 +21,7 @@ public class Q1_Permutation1 {
 
   private static void printBoxes(int[] boxes) {
     for (int val : boxes) {
-      System.out.print(val == 0 ? "-" : val);
+      System.out.print(val == 0 ? "_" : val);
     }
     System.out.println();
   }
@@ -42,10 +42,10 @@ public class Q1_Permutation1 {
  * 2
  *
  * Output:
- * 12-
- * 1-2
- * 21-
- * 2-1
- * -12
- * -21
+ * 12_
+ * 1_2
+ * 21_
+ * 2_1
+ * _12
+ * _21
  */
