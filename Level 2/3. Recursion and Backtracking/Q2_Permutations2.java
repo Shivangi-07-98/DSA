@@ -1,48 +1,35 @@
+
 // Time Complexity: O(nPr * n)
 // Space Complexity: O(n)
 import java.util.*;
 
 public class Q2_Permutations2 {
 
-  private static void permute(int idx, int[] boxes, boolean[] used, int r, int usedCount) {
-    if (idx == boxes.length) {
-      if (usedCount == r) {
-        printBoxes(boxes);
+  public static void permutations(int cb, int tb, int[] items, int ssf, int ts, String asf) {
+    if (cb > tb) {
+      if (ssf == ts) {
+        System.out.println(asf);
       }
       return;
     }
 
-    for (int i = 1; i <= r; i++) {
-      if (!used[i]) {
-        used[i] = true;
-        boxes[idx] = i;
-        permute(idx + 1, boxes, used, r, usedCount + 1);
-        boxes[idx] = 0;
-        used[i] = false;
+    for (int i = 0; i < items.length; i++) {
+      if (items[i] == 0) {
+        items[i] = cb;
+        permutations(cb + 1, tb, items, ssf + 1, ts, asf + (i + 1));
+        items[i] = 0;
       }
     }
 
-    if (boxes.length - idx - 1 >= r - usedCount) {
-      permute(idx + 1, boxes, used, r, usedCount);
-    }
-  }
-
-  private static void printBoxes(int[] boxes) {
-    for (int val : boxes) {
-      System.out.print(val == 0 ? "_" : val);
-    }
-    System.out.println();
+    permutations(cb + 1, tb, items, ssf, ts, asf + "_");
   }
 
   public static void main(String[] args) {
     Scanner scn = new Scanner(System.in);
-    int n = scn.nextInt();
-    int r = scn.nextInt();
-    int[] boxes = new int[n];
-    boolean[] used = new boolean[r + 1];
-    permute(0, boxes, used, r, 0);
+    int nboxes = scn.nextInt();
+    int ritems = scn.nextInt();
+    permutations(1, nboxes, new int[ritems], 0, ritems, "");
   }
-
 }
 
 /*
@@ -52,21 +39,9 @@ public class Q2_Permutations2 {
  *
  * Output:
  * 12_
- * 13_
- * 21_
- * 23_
- * 31_
- * 32_
  * 1_2
- * 1_3
+ * 21_
  * 2_1
- * 2_3
- * 3_1
- * 3_2
  * _12
- * _13
  * _21
- * _23
- * _31
- * _32
  */
