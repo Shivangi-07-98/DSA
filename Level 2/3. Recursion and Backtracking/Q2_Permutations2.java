@@ -29,7 +29,7 @@ public class Q2_Permutations2 {
 
   private static void printBoxes(int[] boxes) {
     for (int val : boxes) {
-      System.out.print(val == 0 ? "-" : val);
+      System.out.print(val == 0 ? "_" : val);
     }
     System.out.println();
   }
@@ -51,22 +51,22 @@ public class Q2_Permutations2 {
  * 2
  *
  * Output:
- * 12-
- * 13-
- * 21-
- * 23-
- * 31-
- * 32-
- * 1-2
- * 1-3
- * 2-1
- * 2-3
- * 3-1
- * 3-2
- * -12
- * -13
- * -21
- * -23
- * -31
- * -32
+ * 12_
+ * 13_
+ * 21_
+ * 23_
+ * 31_
+ * 32_
+ * 1_2
+ * 1_3
+ * 2_1
+ * 2_3
+ * 3_1
+ * 3_2
+ * _12
+ * _13
+ * _21
+ * _23
+ * _31
+ * _32
  */
