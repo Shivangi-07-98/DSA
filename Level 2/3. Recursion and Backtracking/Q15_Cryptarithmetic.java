@@ -11,11 +11,11 @@ public class Q15_Cryptarithmetic {
       long n2 = toNumber(s2, map);
       long n3 = toNumber(s3, map);
       if (n1 + n2 == n3) {
-        StringBuilder sb = new StringBuilder();
+        String line = "";
         for (Character ch : uniq) {
-          sb.append(ch).append("-").append(map.get(ch)).append(" ");
+          line += ch + "-" + map.get(ch) + " ";
         }
-        System.out.println(sb.toString().trim());
+        System.out.println(line.trim());
       }
       return;
     }

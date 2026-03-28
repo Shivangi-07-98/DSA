@@ -12,10 +12,10 @@ public class Q34_CoinChangeCombinations1 {
     if (idx == coins.length) return;
 
     for (int t = target; t >= coins[idx]; t -= coins[idx]) {
-      StringBuilder sb = new StringBuilder(asf);
+      String next = asf;
       int count = (target - t) / coins[idx];
-      for (int i = 0; i < count; i++) sb.append(coins[idx]).append(" ");
-      solve(coins, idx + 1, t, sb.toString());
+      for (int i = 0; i < count; i++) next = next + coins[idx] + " ";
+      solve(coins, idx + 1, t, next);
     }
   }
 

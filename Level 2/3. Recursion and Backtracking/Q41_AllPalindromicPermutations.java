@@ -4,10 +4,23 @@ import java.util.*;
 
 public class Q41_AllPalindromicPermutations {
 
+  private static String reverseString(String s) {
+    char[] arr = s.toCharArray();
+    int left = 0;
+    int right = arr.length - 1;
+    while (left < right) {
+      char temp = arr[left];
+      arr[left] = arr[right];
+      arr[right] = temp;
+      left++;
+      right--;
+    }
+    return new String(arr);
+  }
+
   private static void generate(List<Character> chars, int[] freq, int len, String asf, String mid) {
     if (asf.length() == len) {
-      StringBuilder sb = new StringBuilder(asf);
-      String rev = sb.reverse().toString();
+      String rev = reverseString(asf);
       System.out.println(asf + mid + rev);
       return;
     }

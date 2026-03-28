@@ -20,11 +20,10 @@ public class Q1_Permutation1 {
   }
 
   private static void printBoxes(int[] boxes) {
-    StringBuilder sb = new StringBuilder();
     for (int val : boxes) {
-      sb.append(val == 0 ? "-" : val);
+      System.out.print(val == 0 ? "-" : val);
     }
-    System.out.println(sb.toString());
+    System.out.println();
   }
 
   public static void main(String[] args) {

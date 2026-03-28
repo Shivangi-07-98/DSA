@@ -8,12 +8,14 @@ public class Q23_PatternMatching {
       LinkedHashMap<Character, String> map, HashSet<String> used) {
     if (idx == pattern.length()) {
       if (si == str.length()) {
-        StringBuilder sb = new StringBuilder();
+        String line = "";
+        boolean first = true;
         for (Map.Entry<Character, String> e : map.entrySet()) {
-          sb.append(e.getKey()).append(" -> ").append(e.getValue()).append(", ");
+          if (!first) line += ", ";
+          line += e.getKey() + " -> " + e.getValue();
+          first = false;
         }
-        if (sb.length() >= 2) sb.setLength(sb.length() - 2);
-        System.out.println(sb.toString());
+        System.out.println(line);
       }
       return;
     }

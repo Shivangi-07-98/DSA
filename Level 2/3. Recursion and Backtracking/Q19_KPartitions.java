@@ -30,11 +30,11 @@ public class Q19_KPartitions {
   }
 
   private static void print(List<List<Integer>> parts) {
-    StringBuilder sb = new StringBuilder();
+    String line = "";
     for (List<Integer> p : parts) {
-      sb.append(p.toString()).append(" ");
+      line += p.toString() + " ";
     }
-    System.out.println(sb.toString().trim());
+    System.out.println(line.trim());
   }
 
   public static void main(String[] args) {

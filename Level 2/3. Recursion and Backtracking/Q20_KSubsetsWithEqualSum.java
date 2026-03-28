@@ -27,11 +27,11 @@ public class Q20_KSubsetsWithEqualSum {
   }
 
   private static void print(List<List<Integer>> sets) {
-    StringBuilder sb = new StringBuilder();
+    String line = "";
     for (List<Integer> set : sets) {
-      sb.append(set.toString()).append(" ");
+      line += set.toString() + " ";
     }
-    System.out.println(sb.toString().trim());
+    System.out.println(line.trim());
   }
 
   public static void main(String[] args) {

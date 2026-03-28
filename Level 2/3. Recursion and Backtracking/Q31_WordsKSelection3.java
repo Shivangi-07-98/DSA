@@ -12,9 +12,9 @@ public class Q31_WordsKSelection3 {
 
     char ch = chars.get(idx);
     for (int i = 0; i <= freq[idx] && asf.length() + i <= k; i++) {
-      StringBuilder sb = new StringBuilder(asf);
-      for (int j = 0; j < i; j++) sb.append(ch);
-      solve(chars, freq, idx + 1, k, sb.toString());
+      String next = asf;
+      for (int j = 0; j < i; j++) next = next + ch;
+      solve(chars, freq, idx + 1, k, next);
     }
   }
 
