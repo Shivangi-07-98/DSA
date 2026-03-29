@@ -34,11 +34,11 @@ public class Q8_QueensPermutations2DAs2DBoxChooses {
       for (int i = 0; i < queens.length; i++) {
         if (!queens[i]) {
           queens[i] = true;
-          queensPermutations(qpsf + 1, tq, row, col + 1, asf + "q" + (i + 1), queens);
+          queensPermutations(qpsf + 1, tq, row, col + 1, asf + "q" + (i + 1) + "\t", queens);
           queens[i] = false;
         }
       }
-      queensPermutations(qpsf, tq, row, col + 1, asf + "-", queens);
+      queensPermutations(qpsf, tq, row, col + 1, asf + "-\t", queens);
     }
   }
 
@@ -49,39 +49,39 @@ public class Q8_QueensPermutations2DAs2DBoxChooses {
  * 2
  *
  * Output:
- * q1q2
- * --
+ * q1	q2	
+ * -	-	
  *
- * q1-
- * q2-
+ * q1	-	
+ * q2	-	
  *
- * q1-
- * -q2
+ * q1	-	
+ * -	q2	
  *
- * q2q1
- * --
+ * q2	q1	
+ * -	-	
  *
- * q2-
- * q1-
+ * q2	-	
+ * q1	-	
  *
- * q2-
- * -q1
+ * q2	-	
+ * -	q1	
  *
- * -q1
- * q2-
+ * -	q1	
+ * q2	-	
  *
- * -q1
- * -q2
+ * -	q1	
+ * -	q2	
  *
- * -q2
- * q1-
+ * -	q2	
+ * q1	-	
  *
- * -q2
- * -q1
+ * -	q2	
+ * -	q1	
  *
- * --
- * q1q2
+ * -	-	
+ * q1	q2	
  *
- * --
- * q2q1
+ * -	-	
+ * q2	q1	
  */
