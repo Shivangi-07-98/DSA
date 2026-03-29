@@ -7,86 +7,81 @@ public class Q8_QueensPermutations2DAs2DBoxChooses {
   public static void main(String[] args) {
     Scanner scn = new Scanner(System.in);
     int n = scn.nextInt();
-    int m = scn.nextInt();
-    int tq = scn.nextInt();
-    int[][] board = new int[n][m];
-    boolean[] used = new boolean[tq + 1];
-    queens(0, 0, tq, board, used);
+
+    boolean[] queens = new boolean[n];
+    queensPermutations(0, n, 0, 0, "", queens);
   }
 
-  private static void queens(int idx, int qpsf, int tq, int[][] board, boolean[] used) {
-    int n = board.length;
-    int m = board[0].length;
-    if (idx == n * m) {
+  public static void queensPermutations(int qpsf, int tq, int row, int col, String asf, boolean[] queens) {
+    if (row == tq) {
       if (qpsf == tq) {
-        printBoard(board);
+        System.out.println(asf);
       }
       return;
     }
 
-    int r = idx / m;
-    int c = idx % m;
-
-    for (int q = 1; q <= tq; q++) {
-      if (!used[q]) {
-        used[q] = true;
-        board[r][c] = q;
-        queens(idx + 1, qpsf + 1, tq, board, used);
-        board[r][c] = 0;
-        used[q] = false;
+    if (col == tq - 1) {
+      for (int i = 0; i < queens.length; i++) {
+        if (!queens[i]) {
+          queens[i] = true;
+          queensPermutations(qpsf + 1, tq, row + 1, 0, asf + "q" + (i + 1) + "\n", queens);
+          queens[i] = false;
+        }
       }
-    }
+      queensPermutations(qpsf, tq, row + 1, 0, asf + "-\n", queens);
 
-    queens(idx + 1, qpsf, tq, board, used);
-  }
-
-  private static void printBoard(int[][] board) {
-    for (int[] row : board) {
-      for (int val : row) {
-        System.out.print(val == 0 ? "-\t" : "q" + val + "\t");
+    } else {
+      for (int i = 0; i < queens.length; i++) {
+        if (!queens[i]) {
+          queens[i] = true;
+          queensPermutations(qpsf + 1, tq, row, col + 1, asf + "q" + (i + 1), queens);
+          queens[i] = false;
+        }
       }
-      System.out.println();
+      queensPermutations(qpsf, tq, row, col + 1, asf + "-", queens);
     }
-    System.out.println();
   }
-
 
 }
 
 /*
  * Input:
  * 2
- * 2
- * 2
  *
  * Output:
- * q1\tq2\t
- * -\t-\t
+ * q1q2
+ * --
  *
- * q2\tq1\t
- * -\t-\t
+ * q1-
+ * q2-
  *
- * q1\t-\t
- * q2\t-\t
+ * q1-
+ * -q2
  *
- * q2\t-\t
- * q1\t-\t
+ * q2q1
+ * --
  *
- * q1\t-\t
- * -\tq2\t
+ * q2-
+ * q1-
  *
- * q2\t-\t
- * -\tq1\t
+ * q2-
+ * -q1
  *
- * -\tq1\t
- * q2\t-\t
+ * -q1
+ * q2-
  *
- * -\tq2\t
- * q1\t-\t
+ * -q1
+ * -q2
  *
- * -\tq1\t
- * -\tq2\t
+ * -q2
+ * q1-
  *
- * -\tq2\t
- * -\tq1\t
+ * -q2
+ * -q1
+ *
+ * --
+ * q1q2
+ *
+ * --
+ * q2q1
  */
