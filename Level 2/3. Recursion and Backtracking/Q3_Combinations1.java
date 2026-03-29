@@ -1,49 +1,38 @@
 // Time Complexity: O(nCr * n)
 // Space Complexity: O(n)
 import java.util.*;
-
 public class Q3_Combinations1 {
 
-  private static void combine(int[] boxes, int ci, int ti, int lastBox) {
-    if (ci > ti) {
-      printBoxes(boxes);
+  public static void combinations(int cb, int tb, int ssf, int ts, String asf) {
+    if (cb > tb) {
+      if (ssf == ts) {
+        System.out.println(asf);
+      }
       return;
     }
 
-    for (int i = lastBox + 1; i < boxes.length; i++) {
-      boxes[i] = ci;
-      combine(boxes, ci + 1, ti, i);
-      boxes[i] = 0;
+    if (ssf < ts) {
+      combinations(cb + 1, tb, ssf + 1, ts, asf + "i");
     }
-  }
-
-  private static void printBoxes(int[] boxes) {
-    for (int val : boxes) {
-      System.out.print(val == 0 ? "-" : val);
-    }
-    System.out.println();
+    combinations(cb + 1, tb, ssf, ts, asf + "_");
   }
 
   public static void main(String[] args) {
     Scanner scn = new Scanner(System.in);
-    int n = scn.nextInt();
-    int r = scn.nextInt();
-    int[] boxes = new int[n];
-    combine(boxes, 1, r, -1);
+    int nboxes = scn.nextInt();
+    int ritems = scn.nextInt();
+    combinations(1, nboxes, 0, ritems, "");
   }
 
 }
 
 /*
  * Input:
- * 4
+ * 3
  * 2
  *
  * Output:
- * 12--
- * 1-2-
- * 1--2
- * -12-
- * -1-2
- * --12
+ * 12_
+ * 1_2
+ * _12
  */

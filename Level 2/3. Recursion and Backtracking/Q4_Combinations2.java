@@ -4,50 +4,36 @@ import java.util.*;
 
 public class Q4_Combinations2 {
 
-  private static void combine(int idx, int[] boxes, int r, int placed) {
-    if (idx == boxes.length) {
-      if (placed == r) {
-        printBoxes(boxes);
+  public static void combinations(int cb, int tb, int ssf, int ts, String asf) {
+    if (cb > tb) {
+      if (ssf == ts) {
+        System.out.println(asf);
       }
       return;
     }
 
-    if (placed < r) {
-      boxes[idx] = placed + 1;
-      combine(idx + 1, boxes, r, placed + 1);
-      boxes[idx] = 0;
+    if (ssf < ts) {
+      combinations(cb + 1, tb, ssf + 1, ts, asf + "i");
     }
-
-    combine(idx + 1, boxes, r, placed);
-  }
-
-  private static void printBoxes(int[] boxes) {
-    for (int val : boxes) {
-      System.out.print(val == 0 ? "-" : val);
-    }
-    System.out.println();
+    combinations(cb + 1, tb, ssf, ts, asf + "_");
   }
 
   public static void main(String[] args) {
     Scanner scn = new Scanner(System.in);
-    int n = scn.nextInt();
-    int r = scn.nextInt();
-    int[] boxes = new int[n];
-    combine(0, boxes, r, 0);
+    int nboxes = scn.nextInt();
+    int ritems = scn.nextInt();
+    combinations(1, nboxes, 0, ritems, "");
   }
 
 }
 
 /*
  * Input:
- * 4
+ * 3
  * 2
  *
  * Output:
- * 12--
- * 1-2-
- * 1--2
- * -12-
- * -1-2
- * --12
+ * 12_
+ * 1_2
+ * _12
  */
