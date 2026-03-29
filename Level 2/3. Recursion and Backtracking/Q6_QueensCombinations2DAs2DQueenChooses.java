@@ -19,14 +19,14 @@ public class Q6_QueensCombinations2DAs2DQueenChooses {
 
     int rows = chess.length;
     int cols = chess[0].length;
-    int start = i * cols + (j + 1);
-    for (int idx = start; idx < rows * cols; idx++) {
-      int r = idx / cols;
-      int c = idx % cols;
-      if (!chess[r][c]) {
-        chess[r][c] = true;
-        queens(qpsf + 1, tq, chess, r, c);
-        chess[r][c] = false;
+    for (int r = i; r < rows; r++) {
+      int cStart = (r == i) ? j + 1 : 0;
+      for (int c = cStart; c < cols; c++) {
+        if (chess[r][c] == false) {
+          chess[r][c] = true;
+          queens(qpsf + 1, tq, chess, r, c);
+          chess[r][c] = false;
+        }
       }
     }
   }
@@ -48,21 +48,21 @@ public class Q6_QueensCombinations2DAs2DQueenChooses {
  * 2
  *
  * Output:
- * q	q	
- * -	-	
+ * q q
+ * - -
  *
- * q	-	
- * q	-	
+ * q -
+ * q -
  *
- * q	-	
- * -	q	
+ * q -
+ * - q
  *
- * -	q	
- * q	-	
+ * - q
+ * q -
  *
- * -	q	
- * -	q	
+ * - q
+ * - q
  *
- * -	-	
- * q	q	
+ * - -
+ * q q
  */
