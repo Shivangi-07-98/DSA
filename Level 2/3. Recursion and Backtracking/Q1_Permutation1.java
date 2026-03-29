@@ -4,13 +4,13 @@ import java.util.*;
 
 public class Q1_Permutation1 {
 
-  private static void permutation(int[] boxes, int ci, int ti) { // 3 1 2
+  private static void permutation(int[] boxes, int ci, int ti) {
     if (ci > ti) {
       printBoxes(boxes);
       return;
     }
 
-    for (int i = 0; i < boxes.length; i++) { // 0 1 2
+    for (int i = 0; i < boxes.length; i++) {
       if (boxes[i] == 0) {
         boxes[i] = ci;
         permutation(boxes, ci + 1, ti);
@@ -37,6 +37,10 @@ public class Q1_Permutation1 {
 }
 
 /*
+ * Q1 (item chooses box):
+ * Where should item 1 go? Where should item 2 go? ...
+ * Recursion fixes the item and tries empty boxes.
+ *
  * Input:
  * 3
  * 2
