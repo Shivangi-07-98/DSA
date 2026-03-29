@@ -1,6 +1,7 @@
 // Time Complexity: O(nCr * n)
 // Space Complexity: O(n)
 import java.util.*;
+
 public class Q3_Combinations1 {
 
   public static void main(String[] args) {
@@ -20,7 +21,7 @@ public class Q3_Combinations1 {
     }
 
     // if (ssf < ts) {
-      combinations(cb + 1, tb, ssf + 1, ts, asf + "i");
+    combinations(cb + 1, tb, ssf + 1, ts, asf + "i");
     // }
     combinations(cb + 1, tb, ssf, ts, asf + "_");
   }

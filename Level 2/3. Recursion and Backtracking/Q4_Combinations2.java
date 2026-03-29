@@ -1,6 +1,7 @@
 // Time Complexity: O(nCr * n)
 // Space Complexity: O(n)
 import java.util.*;
+
 public class Q4_Combinations2 {
 
   public static void main(String[] args) {
@@ -31,7 +32,7 @@ public class Q4_Combinations2 {
         boxes[i] = 0;
       }
     }
-    
+
   }
 
 }
