@@ -7,66 +7,62 @@ public class Q6_QueensCombinations2DAs2DQueenChooses {
   public static void main(String[] args) {
     Scanner scn = new Scanner(System.in);
     int n = scn.nextInt();
-    int m = scn.nextInt();
-    int tq = scn.nextInt();
-    int[][] board = new int[n][m];
-    queens(1, tq, 0, board);
+    boolean[][] chess = new boolean[n][n];
+    queens(0, n, chess, 0, -1);
   }
 
-  private static void queens(int qpsf, int tq, int idx, int[][] board) {
-    if (qpsf > tq) {
-      printBoard(board);
+  private static void queens(int qpsf, int tq, boolean[][] chess, int i, int j) {
+    if (qpsf == tq) {
+      printBoard(chess);
       return;
     }
 
-    int n = board.length;
-    int m = board[0].length;
-    for (int i = idx; i < n * m; i++) {
-      int r = i / m;
-      int c = i % m;
-      if (board[r][c] == 0) {
-        board[r][c] = qpsf;
-        queens(qpsf + 1, tq, i + 1, board);
-        board[r][c] = 0;
+    int rows = chess.length;
+    int cols = chess[0].length;
+    int start = i * cols + (j + 1);
+    for (int idx = start; idx < rows * cols; idx++) {
+      int r = idx / cols;
+      int c = idx % cols;
+      if (!chess[r][c]) {
+        chess[r][c] = true;
+        queens(qpsf + 1, tq, chess, r, c);
+        chess[r][c] = false;
       }
     }
   }
 
-  private static void printBoard(int[][] board) {
-    for (int[] row : board) {
-      for (int val : row) {
-        System.out.print(val == 0 ? "-\t" : "q" + val + "\t");
+  private static void printBoard(boolean[][] chess) {
+    for (boolean[] row : chess) {
+      for (boolean hasQueen : row) {
+        System.out.print(hasQueen ? "q\t" : "-\t");
       }
       System.out.println();
     }
     System.out.println();
   }
 
-
 }
 
 /*
  * Input:
  * 2
- * 2
- * 2
  *
  * Output:
- * q1	q2	
+ * q	q	
  * -	-	
  *
- * q1	-	
- * q2	-	
+ * q	-	
+ * q	-	
  *
- * q1	-	
- * -	q2	
+ * q	-	
+ * -	q	
  *
- * -	q1	
- * q2	-	
+ * -	q	
+ * q	-	
  *
- * -	q1	
- * -	q2	
+ * -	q	
+ * -	q	
  *
  * -	-	
- * q1	q2	
+ * q	q	
  */

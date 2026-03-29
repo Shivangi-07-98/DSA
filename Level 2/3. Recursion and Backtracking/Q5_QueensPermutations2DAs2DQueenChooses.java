@@ -32,7 +32,7 @@ public class Q5_QueensPermutations2DAs2DQueenChooses {
   private static void printBoard(int[][] chess) {
     for (int[] row : chess) { // take one row at a time
       for (int val : row) { // take each value inside that row
-        System.out.print(val == 0 ? "-  " : "q" + val + " ");
+        System.out.print(val == 0 ? "-\t" : "q" + val + "\t");
       }
       System.out.println();
     }
@@ -46,21 +46,39 @@ public class Q5_QueensPermutations2DAs2DQueenChooses {
  * 2
  *
  * Output:
- * q1 q2
- * - -
+ * q1	q2	
+ * -	-	
  *
- * q1 -
- * q2 -
+ * q1	-	
+ * q2	-	
  *
- * q1 -
- * - q2
+ * q1	-	
+ * -	q2	
  *
- * - q1
- * q2 -
+ * q2	q1	
+ * -	-	
  *
- * - q1
- * - q2
+ * -	q1	
+ * q2	-	
  *
- * - -
- * q1 q2
+ * -	q1	
+ * -	q2	
+ *
+ * q2	-	
+ * q1	-	
+ *
+ * -	q2	
+ * q1	-	
+ *
+ * -	-	
+ * q1	q2	
+ *
+ * q2	-	
+ * -	q1	
+ *
+ * -	q2	
+ * -	q1	
+ *
+ * -	-	
+ * q2	q1	
  */
