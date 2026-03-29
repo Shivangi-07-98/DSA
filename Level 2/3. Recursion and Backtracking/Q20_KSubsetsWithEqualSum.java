@@ -4,6 +4,29 @@ import java.util.*;
 
 public class Q20_KSubsetsWithEqualSum {
 
+  public static void main(String[] args) {
+    Scanner scn = new Scanner(System.in);
+    int n = scn.nextInt();
+    int[] arr = new int[n];
+    int sum = 0;
+    for (int i = 0; i < n; i++) {
+      arr[i] = scn.nextInt();
+      sum += arr[i];
+    }
+    int k = scn.nextInt();
+
+    if (k == 0 || sum % k != 0) {
+      System.out.println("-1");
+      return;
+    }
+
+    int target = sum / k;
+    int[] partSum = new int[k];
+    List<List<Integer>> sets = new ArrayList<>();
+    for (int i = 0; i < k; i++) sets.add(new ArrayList<>());
+    solve(arr, 0, k, target, partSum, sets);
+  }
+
   private static boolean solve(int[] arr, int idx, int k, int target, int[] sum, List<List<Integer>> sets) {
     if (idx == arr.length) {
       for (int s : sum) if (s != target) return false;
@@ -34,28 +57,6 @@ public class Q20_KSubsetsWithEqualSum {
     System.out.println(line.trim());
   }
 
-  public static void main(String[] args) {
-    Scanner scn = new Scanner(System.in);
-    int n = scn.nextInt();
-    int[] arr = new int[n];
-    int sum = 0;
-    for (int i = 0; i < n; i++) {
-      arr[i] = scn.nextInt();
-      sum += arr[i];
-    }
-    int k = scn.nextInt();
-
-    if (k == 0 || sum % k != 0) {
-      System.out.println("-1");
-      return;
-    }
-
-    int target = sum / k;
-    int[] partSum = new int[k];
-    List<List<Integer>> sets = new ArrayList<>();
-    for (int i = 0; i < k; i++) sets.add(new ArrayList<>());
-    solve(arr, 0, k, target, partSum, sets);
-  }
 
 }
 

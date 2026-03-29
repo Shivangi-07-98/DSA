@@ -4,6 +4,20 @@ import java.util.*;
 
 public class Q14_SolveSudoku {
 
+  public static void main(String[] args) {
+    Scanner scn = new Scanner(System.in);
+    int[][] board = new int[9][9];
+    for (int i = 0; i < 9; i++) {
+      for (int j = 0; j < 9; j++) {
+        board[i][j] = scn.nextInt();
+      }
+    }
+
+    if (solve(board, 0, 0)) {
+      printBoard(board);
+    }
+  }
+
   private static boolean solve(int[][] board, int r, int c) {
     if (r == 9) return true;
 
@@ -55,19 +69,6 @@ public class Q14_SolveSudoku {
     }
   }
 
-  public static void main(String[] args) {
-    Scanner scn = new Scanner(System.in);
-    int[][] board = new int[9][9];
-    for (int i = 0; i < 9; i++) {
-      for (int j = 0; j < 9; j++) {
-        board[i][j] = scn.nextInt();
-      }
-    }
-
-    if (solve(board, 0, 0)) {
-      printBoard(board);
-    }
-  }
 
 }
 

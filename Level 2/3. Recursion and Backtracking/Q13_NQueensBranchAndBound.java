@@ -4,6 +4,16 @@ import java.util.*;
 
 public class Q13_NQueensBranchAndBound {
 
+  public static void main(String[] args) {
+    Scanner scn = new Scanner(System.in);
+    int n = scn.nextInt();
+    boolean[] cols = new boolean[n];
+    boolean[] diag = new boolean[2 * n - 1];
+    boolean[] adiag = new boolean[2 * n - 1];
+    int[][] board = new int[n][n];
+    nqueens(0, n, cols, diag, adiag, board);
+  }
+
   private static void nqueens(int r, int n, boolean[] cols, boolean[] diag, boolean[] adiag, int[][] board) {
     if (r == n) {
       printBoard(board);
@@ -33,15 +43,6 @@ public class Q13_NQueensBranchAndBound {
     System.out.println();
   }
 
-  public static void main(String[] args) {
-    Scanner scn = new Scanner(System.in);
-    int n = scn.nextInt();
-    boolean[] cols = new boolean[n];
-    boolean[] diag = new boolean[2 * n - 1];
-    boolean[] adiag = new boolean[2 * n - 1];
-    int[][] board = new int[n][n];
-    nqueens(0, n, cols, diag, adiag, board);
-  }
 
 }
 

@@ -4,21 +4,6 @@ import java.util.*;
 
 public class Q29_WordsKLengthWords2 {
 
-  private static void solve(List<Character> chars, int[] freq, int k, String asf) {
-    if (asf.length() == k) {
-      System.out.println(asf);
-      return;
-    }
-
-    for (int i = 0; i < chars.size(); i++) {
-      if (freq[i] > 0) {
-        freq[i]--;
-        solve(chars, freq, k, asf + chars.get(i));
-        freq[i]++;
-      }
-    }
-  }
-
   public static void main(String[] args) {
     Scanner scn = new Scanner(System.in);
     String str = scn.next();
@@ -37,6 +22,22 @@ public class Q29_WordsKLengthWords2 {
 
     solve(chars, freq, k, "");
   }
+
+  private static void solve(List<Character> chars, int[] freq, int k, String asf) {
+    if (asf.length() == k) {
+      System.out.println(asf);
+      return;
+    }
+
+    for (int i = 0; i < chars.size(); i++) {
+      if (freq[i] > 0) {
+        freq[i]--;
+        solve(chars, freq, k, asf + chars.get(i));
+        freq[i]++;
+      }
+    }
+  }
+
 
 }
 

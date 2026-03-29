@@ -4,6 +4,14 @@ import java.util.*;
 
 public class Q18_FriendsPairing2 {
 
+  public static void main(String[] args) {
+    Scanner scn = new Scanner(System.in);
+    int n = scn.nextInt();
+    boolean[] used = new boolean[n + 1];
+    solve(n, used, "");
+    System.out.println(count);
+  }
+
   private static int count = 0;
 
   private static void solve(int n, boolean[] used, String asf) {
@@ -30,13 +38,6 @@ public class Q18_FriendsPairing2 {
     used[i] = false;
   }
 
-  public static void main(String[] args) {
-    Scanner scn = new Scanner(System.in);
-    int n = scn.nextInt();
-    boolean[] used = new boolean[n + 1];
-    solve(n, used, "");
-    System.out.println(count);
-  }
 
 }
 

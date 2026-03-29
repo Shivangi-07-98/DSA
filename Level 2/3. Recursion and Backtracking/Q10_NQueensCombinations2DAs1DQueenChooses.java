@@ -4,6 +4,14 @@ import java.util.*;
 
 public class Q10_NQueensCombinations2DAs1DQueenChooses {
 
+  public static void main(String[] args) {
+    Scanner scn = new Scanner(System.in);
+    int n = scn.nextInt();
+    int tq = scn.nextInt();
+    int[][] board = new int[n][n];
+    nqueens(1, tq, 0, board);
+  }
+
   private static void nqueens(int qpsf, int tq, int idx, int[][] board) {
     if (qpsf > tq) {
       printBoard(board);
@@ -65,13 +73,6 @@ public class Q10_NQueensCombinations2DAs1DQueenChooses {
     System.out.println();
   }
 
-  public static void main(String[] args) {
-    Scanner scn = new Scanner(System.in);
-    int n = scn.nextInt();
-    int tq = scn.nextInt();
-    int[][] board = new int[n][n];
-    nqueens(1, tq, 0, board);
-  }
 
 }
 

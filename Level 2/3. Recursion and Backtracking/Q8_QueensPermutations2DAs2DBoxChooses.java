@@ -4,6 +4,16 @@ import java.util.*;
 
 public class Q8_QueensPermutations2DAs2DBoxChooses {
 
+  public static void main(String[] args) {
+    Scanner scn = new Scanner(System.in);
+    int n = scn.nextInt();
+    int m = scn.nextInt();
+    int tq = scn.nextInt();
+    int[][] board = new int[n][m];
+    boolean[] used = new boolean[tq + 1];
+    queens(0, 0, tq, board, used);
+  }
+
   private static void queens(int idx, int qpsf, int tq, int[][] board, boolean[] used) {
     int n = board.length;
     int m = board[0].length;
@@ -40,15 +50,6 @@ public class Q8_QueensPermutations2DAs2DBoxChooses {
     System.out.println();
   }
 
-  public static void main(String[] args) {
-    Scanner scn = new Scanner(System.in);
-    int n = scn.nextInt();
-    int m = scn.nextInt();
-    int tq = scn.nextInt();
-    int[][] board = new int[n][m];
-    boolean[] used = new boolean[tq + 1];
-    queens(0, 0, tq, board, used);
-  }
 
 }
 
@@ -89,4 +90,3 @@ public class Q8_QueensPermutations2DAs2DBoxChooses {
  * -\tq2\t
  * -\tq1\t
  */
-

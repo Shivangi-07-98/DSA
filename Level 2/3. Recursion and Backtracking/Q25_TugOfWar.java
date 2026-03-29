@@ -4,6 +4,16 @@ import java.util.*;
 
 public class Q25_TugOfWar {
 
+  public static void main(String[] args) {
+    Scanner scn = new Scanner(System.in);
+    int n = scn.nextInt();
+    int[] arr = new int[n];
+    for (int i = 0; i < n; i++) arr[i] = scn.nextInt();
+    solve(arr, 0, new ArrayList<>(), new ArrayList<>(), 0, 0);
+    System.out.println(bestA);
+    System.out.println(bestB);
+  }
+
   private static int minDiff = Integer.MAX_VALUE;
   private static List<Integer> bestA = new ArrayList<>();
   private static List<Integer> bestB = new ArrayList<>();
@@ -32,15 +42,6 @@ public class Q25_TugOfWar {
     }
   }
 
-  public static void main(String[] args) {
-    Scanner scn = new Scanner(System.in);
-    int n = scn.nextInt();
-    int[] arr = new int[n];
-    for (int i = 0; i < n; i++) arr[i] = scn.nextInt();
-    solve(arr, 0, new ArrayList<>(), new ArrayList<>(), 0, 0);
-    System.out.println(bestA);
-    System.out.println(bestB);
-  }
 
 }
 

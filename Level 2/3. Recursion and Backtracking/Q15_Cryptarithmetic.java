@@ -4,6 +4,28 @@ import java.util.*;
 
 public class Q15_Cryptarithmetic {
 
+  public static void main(String[] args) {
+    Scanner scn = new Scanner(System.in);
+    String s1 = scn.next();
+    String s2 = scn.next();
+    String s3 = scn.next();
+
+    LinkedHashSet<Character> set = new LinkedHashSet<>();
+    for (char ch : s1.toCharArray()) set.add(ch);
+    for (char ch : s2.toCharArray()) set.add(ch);
+    for (char ch : s3.toCharArray()) set.add(ch);
+
+    List<Character> uniq = new ArrayList<>(set);
+    Map<Character, Integer> map = new HashMap<>();
+    boolean[] used = new boolean[10];
+    Set<Character> leading = new HashSet<>();
+    if (s1.length() > 1) leading.add(s1.charAt(0));
+    if (s2.length() > 1) leading.add(s2.charAt(0));
+    if (s3.length() > 1) leading.add(s3.charAt(0));
+
+    solve(uniq, 0, map, used, s1, s2, s3, leading);
+  }
+
   private static void solve(List<Character> uniq, int idx, Map<Character, Integer> map, boolean[] used,
       String s1, String s2, String s3, Set<Character> leading) {
     if (idx == uniq.size()) {
@@ -41,27 +63,6 @@ public class Q15_Cryptarithmetic {
     return num;
   }
 
-  public static void main(String[] args) {
-    Scanner scn = new Scanner(System.in);
-    String s1 = scn.next();
-    String s2 = scn.next();
-    String s3 = scn.next();
-
-    LinkedHashSet<Character> set = new LinkedHashSet<>();
-    for (char ch : s1.toCharArray()) set.add(ch);
-    for (char ch : s2.toCharArray()) set.add(ch);
-    for (char ch : s3.toCharArray()) set.add(ch);
-
-    List<Character> uniq = new ArrayList<>(set);
-    Map<Character, Integer> map = new HashMap<>();
-    boolean[] used = new boolean[10];
-    Set<Character> leading = new HashSet<>();
-    if (s1.length() > 1) leading.add(s1.charAt(0));
-    if (s2.length() > 1) leading.add(s2.charAt(0));
-    if (s3.length() > 1) leading.add(s3.charAt(0));
-
-    solve(uniq, 0, map, used, s1, s2, s3, leading);
-  }
 
 }
 

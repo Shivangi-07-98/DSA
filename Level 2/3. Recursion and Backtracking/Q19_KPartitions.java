@@ -4,6 +4,16 @@ import java.util.*;
 
 public class Q19_KPartitions {
 
+  public static void main(String[] args) {
+    Scanner scn = new Scanner(System.in);
+    int n = scn.nextInt();
+    int k = scn.nextInt();
+    List<List<Integer>> parts = new ArrayList<>();
+    for (int i = 0; i < k; i++) parts.add(new ArrayList<>());
+    solve(n, k, 1, 0, parts);
+    System.out.println(count);
+  }
+
   private static int count = 0;
 
   private static void solve(int n, int k, int idx, int filled, List<List<Integer>> parts) {
@@ -37,15 +47,6 @@ public class Q19_KPartitions {
     System.out.println(line.trim());
   }
 
-  public static void main(String[] args) {
-    Scanner scn = new Scanner(System.in);
-    int n = scn.nextInt();
-    int k = scn.nextInt();
-    List<List<Integer>> parts = new ArrayList<>();
-    for (int i = 0; i < k; i++) parts.add(new ArrayList<>());
-    solve(n, k, 1, 0, parts);
-    System.out.println(count);
-  }
 
 }
 

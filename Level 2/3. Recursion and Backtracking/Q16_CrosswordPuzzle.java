@@ -5,6 +5,17 @@ import java.util.*;
 
 public class Q16_CrosswordPuzzle {
 
+  public static void main(String[] args) throws Exception {
+    BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+    char[][] board = new char[10][10];
+    for (int i = 0; i < 10; i++) {
+      board[i] = br.readLine().trim().toCharArray();
+    }
+    String wordsLine = br.readLine().trim();
+    String[] words = wordsLine.split(";");
+    solve(board, words, 0);
+  }
+
   private static boolean canPlaceHoriz(char[][] board, String word, int r, int c) {
     if (c + word.length() > 10) return false;
     if (c > 0 && board[r][c - 1] != '+') return false;
@@ -99,16 +110,6 @@ public class Q16_CrosswordPuzzle {
     }
   }
 
-  public static void main(String[] args) throws Exception {
-    BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-    char[][] board = new char[10][10];
-    for (int i = 0; i < 10; i++) {
-      board[i] = br.readLine().trim().toCharArray();
-    }
-    String wordsLine = br.readLine().trim();
-    String[] words = wordsLine.split(";");
-    solve(board, words, 0);
-  }
 
 }
 

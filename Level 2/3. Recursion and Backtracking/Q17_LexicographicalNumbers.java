@@ -4,6 +4,15 @@ import java.util.*;
 
 public class Q17_LexicographicalNumbers {
 
+  public static void main(String[] args) {
+    Scanner scn = new Scanner(System.in);
+    int n = scn.nextInt();
+    for (int i = 1; i <= 9; i++) {
+      if (i > n) break;
+      dfs(i, n);
+    }
+  }
+
   private static void dfs(int curr, int n) {
     if (curr > n) return;
     System.out.println(curr);
@@ -14,14 +23,6 @@ public class Q17_LexicographicalNumbers {
     }
   }
 
-  public static void main(String[] args) {
-    Scanner scn = new Scanner(System.in);
-    int n = scn.nextInt();
-    for (int i = 1; i <= 9; i++) {
-      if (i > n) break;
-      dfs(i, n);
-    }
-  }
 
 }
 

@@ -4,6 +4,15 @@ import java.util.*;
 
 public class Q23_PatternMatching {
 
+  public static void main(String[] args) {
+    Scanner scn = new Scanner(System.in);
+    String str = scn.next();
+    String pattern = scn.next();
+    LinkedHashMap<Character, String> map = new LinkedHashMap<>();
+    HashSet<String> used = new HashSet<>();
+    solve(str, pattern, 0, 0, map, used);
+  }
+
   private static void solve(String str, String pattern, int idx, int si,
       LinkedHashMap<Character, String> map, HashSet<String> used) {
     if (idx == pattern.length()) {
@@ -40,14 +49,6 @@ public class Q23_PatternMatching {
     }
   }
 
-  public static void main(String[] args) {
-    Scanner scn = new Scanner(System.in);
-    String str = scn.next();
-    String pattern = scn.next();
-    LinkedHashMap<Character, String> map = new LinkedHashMap<>();
-    HashSet<String> used = new HashSet<>();
-    solve(str, pattern, 0, 0, map, used);
-  }
 
 }
 

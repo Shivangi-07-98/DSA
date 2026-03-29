@@ -4,6 +4,19 @@ import java.util.*;
 
 public class Q40_MaxScore {
 
+  public static void main(String[] args) {
+    Scanner scn = new Scanner(System.in);
+    int n = scn.nextInt();
+    String[] words = new String[n];
+    for (int i = 0; i < n; i++) words[i] = scn.next();
+    String letters = scn.next();
+    int[] freq = new int[26];
+    for (int i = 0; i < letters.length(); i++) freq[letters.charAt(i) - 'a']++;
+    int[] score = new int[26];
+    for (int i = 0; i < 26; i++) score[i] = scn.nextInt();
+    System.out.println(solve(words, 0, freq, score));
+  }
+
   private static int solve(String[] words, int idx, int[] freq, int[] score) {
     if (idx == words.length) return 0;
 
@@ -33,18 +46,6 @@ public class Q40_MaxScore {
     return max;
   }
 
-  public static void main(String[] args) {
-    Scanner scn = new Scanner(System.in);
-    int n = scn.nextInt();
-    String[] words = new String[n];
-    for (int i = 0; i < n; i++) words[i] = scn.next();
-    String letters = scn.next();
-    int[] freq = new int[26];
-    for (int i = 0; i < letters.length(); i++) freq[letters.charAt(i) - 'a']++;
-    int[] score = new int[26];
-    for (int i = 0; i < 26; i++) score[i] = scn.nextInt();
-    System.out.println(solve(words, 0, freq, score));
-  }
 
 }
 

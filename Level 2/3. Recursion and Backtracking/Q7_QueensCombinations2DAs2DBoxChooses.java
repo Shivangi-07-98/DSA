@@ -4,6 +4,15 @@ import java.util.*;
 
 public class Q7_QueensCombinations2DAs2DBoxChooses {
 
+  public static void main(String[] args) {
+    Scanner scn = new Scanner(System.in);
+    int n = scn.nextInt();
+    int m = scn.nextInt();
+    int tq = scn.nextInt();
+    int[][] board = new int[n][m];
+    queens(0, 0, tq, board);
+  }
+
   private static void queens(int idx, int qpsf, int tq, int[][] board) {
     int n = board.length;
     int m = board[0].length;
@@ -36,14 +45,6 @@ public class Q7_QueensCombinations2DAs2DBoxChooses {
     System.out.println();
   }
 
-  public static void main(String[] args) {
-    Scanner scn = new Scanner(System.in);
-    int n = scn.nextInt();
-    int m = scn.nextInt();
-    int tq = scn.nextInt();
-    int[][] board = new int[n][m];
-    queens(0, 0, tq, board);
-  }
 
 }
 
@@ -72,4 +73,3 @@ public class Q7_QueensCombinations2DAs2DBoxChooses {
  * -	-	
  * q1	q2	
  */
-

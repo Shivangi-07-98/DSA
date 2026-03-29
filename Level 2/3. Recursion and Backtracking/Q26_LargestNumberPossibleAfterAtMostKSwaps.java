@@ -4,6 +4,15 @@ import java.util.*;
 
 public class Q26_LargestNumberPossibleAfterAtMostKSwaps {
 
+  public static void main(String[] args) {
+    Scanner scn = new Scanner(System.in);
+    String str = scn.next();
+    int k = scn.nextInt();
+    max = str;
+    solve(str.toCharArray(), k, 0);
+    System.out.println(max);
+  }
+
   private static String max;
 
   private static void solve(char[] arr, int k, int idx) {
@@ -38,14 +47,6 @@ public class Q26_LargestNumberPossibleAfterAtMostKSwaps {
     arr[j] = tmp;
   }
 
-  public static void main(String[] args) {
-    Scanner scn = new Scanner(System.in);
-    String str = scn.next();
-    int k = scn.nextInt();
-    max = str;
-    solve(str.toCharArray(), k, 0);
-    System.out.println(max);
-  }
 
 }
 

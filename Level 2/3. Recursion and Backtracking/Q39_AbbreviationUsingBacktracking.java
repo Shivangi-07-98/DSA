@@ -4,6 +4,12 @@ import java.util.*;
 
 public class Q39_AbbreviationUsingBacktracking {
 
+  public static void main(String[] args) {
+    Scanner scn = new Scanner(System.in);
+    String str = scn.next();
+    solve(str, 0, 0, "");
+  }
+
   private static void solve(String str, int idx, int count, String asf) {
     if (idx == str.length()) {
       if (count > 0) asf += count;
@@ -16,11 +22,6 @@ public class Q39_AbbreviationUsingBacktracking {
     solve(str, idx + 1, 0, next);
   }
 
-  public static void main(String[] args) {
-    Scanner scn = new Scanner(System.in);
-    String str = scn.next();
-    solve(str, 0, 0, "");
-  }
 
 }
 

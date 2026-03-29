@@ -4,6 +4,15 @@ import java.util.*;
 
 public class Q5_QueensPermutations2DAs2DQueenChooses {
 
+  public static void main(String[] args) {
+    Scanner scn = new Scanner(System.in);
+    int n = scn.nextInt();
+    int m = scn.nextInt();
+    int tq = scn.nextInt();
+    int[][] board = new int[n][m];
+    queens(1, tq, board);
+  }
+
   private static void queens(int qpsf, int tq, int[][] board) {
     if (qpsf > tq) {
       printBoard(board);
@@ -31,14 +40,6 @@ public class Q5_QueensPermutations2DAs2DQueenChooses {
     System.out.println();
   }
 
-  public static void main(String[] args) {
-    Scanner scn = new Scanner(System.in);
-    int n = scn.nextInt();
-    int m = scn.nextInt();
-    int tq = scn.nextInt();
-    int[][] board = new int[n][m];
-    queens(1, tq, board);
-  }
 
 }
 
@@ -67,4 +68,3 @@ public class Q5_QueensPermutations2DAs2DQueenChooses {
  * -	-	
  * q1	q2	
  */
-

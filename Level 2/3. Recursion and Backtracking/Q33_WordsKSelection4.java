@@ -4,6 +4,14 @@ import java.util.*;
 
 public class Q33_WordsKSelection4 {
 
+  public static void main(String[] args) {
+    Scanner scn = new Scanner(System.in);
+    String str = scn.next();
+    int k = scn.nextInt();
+    char[] spots = new char[k];
+    solve(str, 0, k, spots, 0, new HashMap<>());
+  }
+
   private static void solve(String str, int idx, int k, char[] spots, int filled, Map<Character, Integer> last) {
     if (idx == str.length()) {
       if (filled == k) {
@@ -28,13 +36,6 @@ public class Q33_WordsKSelection4 {
     solve(str, idx + 1, k, spots, filled, last);
   }
 
-  public static void main(String[] args) {
-    Scanner scn = new Scanner(System.in);
-    String str = scn.next();
-    int k = scn.nextInt();
-    char[] spots = new char[k];
-    solve(str, 0, k, spots, 0, new HashMap<>());
-  }
 
 }
 

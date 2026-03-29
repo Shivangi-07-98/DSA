@@ -4,20 +4,6 @@ import java.util.*;
 
 public class Q31_WordsKSelection3 {
 
-  private static void solve(List<Character> chars, int[] freq, int idx, int k, String asf) {
-    if (idx == chars.size()) {
-      if (asf.length() == k) System.out.println(asf);
-      return;
-    }
-
-    char ch = chars.get(idx);
-    for (int i = 0; i <= freq[idx] && asf.length() + i <= k; i++) {
-      String next = asf;
-      for (int j = 0; j < i; j++) next = next + ch;
-      solve(chars, freq, idx + 1, k, next);
-    }
-  }
-
   public static void main(String[] args) {
     Scanner scn = new Scanner(System.in);
     String str = scn.next();
@@ -34,6 +20,21 @@ public class Q31_WordsKSelection3 {
 
     solve(chars, freq, 0, k, "");
   }
+
+  private static void solve(List<Character> chars, int[] freq, int idx, int k, String asf) {
+    if (idx == chars.size()) {
+      if (asf.length() == k) System.out.println(asf);
+      return;
+    }
+
+    char ch = chars.get(idx);
+    for (int i = 0; i <= freq[idx] && asf.length() + i <= k; i++) {
+      String next = asf;
+      for (int j = 0; j < i; j++) next = next + ch;
+      solve(chars, freq, idx + 1, k, next);
+    }
+  }
+
 
 }
 

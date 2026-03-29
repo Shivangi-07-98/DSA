@@ -4,6 +4,17 @@ import java.util.*;
 
 public class Q24_WordBreak1 {
 
+  public static void main(String[] args) {
+    Scanner scn = new Scanner(System.in);
+    String str = scn.next();
+    int n = scn.nextInt();
+    Set<String> dict = new HashSet<>();
+    for (int i = 0; i < n; i++) {
+      dict.add(scn.next());
+    }
+    solve(str, dict, "");
+  }
+
   private static void solve(String str, Set<String> dict, String asf) {
     if (str.length() == 0) {
       System.out.println(asf.trim());
@@ -18,16 +29,6 @@ public class Q24_WordBreak1 {
     }
   }
 
-  public static void main(String[] args) {
-    Scanner scn = new Scanner(System.in);
-    String str = scn.next();
-    int n = scn.nextInt();
-    Set<String> dict = new HashSet<>();
-    for (int i = 0; i < n; i++) {
-      dict.add(scn.next());
-    }
-    solve(str, dict, "");
-  }
 
 }
 
