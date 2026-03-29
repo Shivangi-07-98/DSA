@@ -1,9 +1,17 @@
 // Time Complexity: O(nPr * n)
 // Space Complexity: O(n)
 import java.util.*;
-
 public class Q1_Permutation1 {
 
+  public static void main(String[] args) {
+    Scanner scn = new Scanner(System.in);
+    int n = scn.nextInt();
+    int r = scn.nextInt();
+    int[] boxes = new int[n];
+    permutation(boxes, 1, r);
+  }
+
+  // Item chooses box
   private static void permutation(int[] boxes, int ci, int ti) {
     if (ci > ti) {
       printBoxes(boxes);
@@ -24,14 +32,6 @@ public class Q1_Permutation1 {
       System.out.print(val == 0 ? "_" : val);
     }
     System.out.println();
-  }
-
-  public static void main(String[] args) {
-    Scanner scn = new Scanner(System.in);
-    int n = scn.nextInt();
-    int r = scn.nextInt();
-    int[] boxes = new int[n];
-    permutation(boxes, 1, r);
   }
 
 }

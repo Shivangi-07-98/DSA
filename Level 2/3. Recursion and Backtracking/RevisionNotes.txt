@@ -1,8 +1,8 @@
 Recursion Backtracking: 4 Patterns (Perm/Comb)
 
 1. Who decides?
-- Item decides box -> item-first recursion
-- Box decides item/empty -> box-first recursion
+- Item decides box
+- Box decides item/empty
 
 2. Does order matter?
 - Yes -> Permutation

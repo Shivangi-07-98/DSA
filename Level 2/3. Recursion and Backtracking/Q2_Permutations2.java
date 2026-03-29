@@ -1,7 +1,6 @@
 // Time Complexity: O(nPr * n)
 // Space Complexity: O(n)
 import java.util.*;
-
 public class Q2_Permutations2 {
 
   public static void main(String[] args) {
@@ -11,6 +10,7 @@ public class Q2_Permutations2 {
     permutations(1, nboxes, new int[ritems], 0, ritems, "");
   }
 
+  // Box chooses item/empty
   public static void permutations(int cb, int tb, int[] items, int ssf, int ts, String asf) {
     if (cb > tb) {
       if (ssf == ts) { // ssf == ts ensures we placed all 2 items before printing
@@ -27,6 +27,7 @@ public class Q2_Permutations2 {
       }
     }
 
+    // box blank bhi reh skta hai, ku? kuki boxes jyada hai 3 boxes hai 2 hi items aa skte
     permutations(cb + 1, tb, items, ssf, ts, asf + "_");
   }
 
