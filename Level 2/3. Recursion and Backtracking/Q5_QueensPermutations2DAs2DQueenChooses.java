@@ -7,64 +7,60 @@ public class Q5_QueensPermutations2DAs2DQueenChooses {
   public static void main(String[] args) {
     Scanner scn = new Scanner(System.in);
     int n = scn.nextInt();
-    int m = scn.nextInt();
-    int tq = scn.nextInt();
-    int[][] board = new int[n][m];
-    queens(1, tq, board);
+    int[][] chess = new int[n][n];
+    queens(0, n, chess);
   }
 
-  private static void queens(int qpsf, int tq, int[][] board) {
-    if (qpsf > tq) {
-      printBoard(board);
+  private static void queens(int qpsf, int tq, int[][] chess) {
+    if (qpsf == tq) {
+      printBoard(chess);
       return;
     }
 
-    for (int i = 0; i < board.length; i++) {
-      for (int j = 0; j < board[0].length; j++) {
-        if (board[i][j] == 0) {
-          board[i][j] = qpsf;
-          queens(qpsf + 1, tq, board);
-          board[i][j] = 0;
+    for (int i = 0; i < chess.length; i++) {
+      for (int j = 0; j < chess[0].length; j++) {
+        if (chess[i][j] == 0) {
+          chess[i][j] = qpsf + 1;
+          queens(qpsf + 1, tq, chess);
+          chess[i][j] = 0;
         }
       }
     }
   }
 
-  private static void printBoard(int[][] board) {
-    for (int[] row : board) {
-      for (int val : row) {
-        System.out.print(val == 0 ? "-\t" : "q" + val + "\t");
+  // chess = [ row0, row1, row2, ... ]
+  private static void printBoard(int[][] chess) {
+    for (int[] row : chess) { // take one row at a time
+      for (int val : row) { // take each value inside that row
+        System.out.print(val == 0 ? "-  " : "q" + val + " ");
       }
       System.out.println();
     }
     System.out.println();
   }
 
-
 }
 
 /*
  * Input:
  * 2
- * 2
- * 2
  *
  * Output:
- * q1	q2	
- * -	-	
+ * q1 q2
+ * - -
  *
- * q1	-	
- * q2	-	
+ * q1 -
+ * q2 -
  *
- * q1	-	
- * -	q2	
+ * q1 -
+ * - q2
  *
- * -	q1	
- * q2	-	
+ * - q1
+ * q2 -
  *
- * -	q1	
- * -	q2	
+ * - q1
+ * - q2
  *
- * -	-	
- * q1	q2	
+ * - -
+ * q1 q2
  */
