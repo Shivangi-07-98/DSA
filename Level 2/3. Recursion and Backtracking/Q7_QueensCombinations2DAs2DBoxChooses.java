@@ -18,7 +18,7 @@ public class Q7_QueensCombinations2DAs2DBoxChooses {
       return;
     }
 
-    if (col != tq - 1) {
+    if (col == tq - 1) {
       queens(qpsf + 1, tq, row + 1, 0, asf + "q\n");
       queens(qpsf + 0, tq, row + 1, 0, asf + "-\n");
     } else {
