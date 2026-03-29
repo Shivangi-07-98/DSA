@@ -34,21 +34,21 @@ public class Q7_QueensCombinations2DAs2DBoxChooses {
  * 2
  *
  * Output:
- * q1 q2
- * - -
+ * qq
+ * --
  *
- * q1 -
- * q2 -
+ * q-
+ * q-
  *
- * q1 -
- * - q2
+ * q-
+ * -q
  *
- * - q1
- * q2 -
+ * -q
+ * q-
  *
- * - q1
- * - q2
+ * -q
+ * -q
  *
- * - -
- * q1 q2
+ * --
+ * qq
  */
