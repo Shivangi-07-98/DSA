@@ -32,7 +32,7 @@ public class Q3_Combinations1 {
  * 2
  *
  * Output:
- * 12_
- * 1_2
- * _12
+ * ii_
+ * i_i
+ * _ii
  */

@@ -4,25 +4,33 @@ import java.util.*;
 
 public class Q4_Combinations2 {
 
-  public static void combinations(int cb, int tb, int ssf, int ts, String asf) {
-    if (cb > tb) {
-      if (ssf == ts) {
-        System.out.println(asf);
+  public static void combinations(int[] boxes, int ci, int ti, int lb) {
+    if (ci > ti) {
+      for (int val : boxes) {
+        if (val != 0) {
+          System.out.print("i");
+        } else {
+          System.out.print("_");
+        }
       }
+      System.out.println();
       return;
     }
 
-    if (ssf < ts) {
-      combinations(cb + 1, tb, ssf + 1, ts, asf + "i");
+    for (int i = lb + 1; i < boxes.length; i++) {
+      if (boxes[i] == 0) {
+        boxes[i] = ci;
+        combinations(boxes, ci + 1, ti, i);
+        boxes[i] = 0;
+      }
     }
-    combinations(cb + 1, tb, ssf, ts, asf + "_");
   }
 
   public static void main(String[] args) {
     Scanner scn = new Scanner(System.in);
     int nboxes = scn.nextInt();
     int ritems = scn.nextInt();
-    combinations(1, nboxes, 0, ritems, "");
+    combinations(new int[nboxes], 1, ritems, -1);
   }
 
 }
@@ -33,7 +41,7 @@ public class Q4_Combinations2 {
  * 2
  *
  * Output:
- * 12_
- * 1_2
- * _12
+ * ii_
+ * i_i
+ * _ii
  */
