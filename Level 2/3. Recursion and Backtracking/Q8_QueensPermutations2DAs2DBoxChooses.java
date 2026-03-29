@@ -16,6 +16,7 @@ public class Q8_QueensPermutations2DAs2DBoxChooses {
     if (row == tq) {
       if (qpsf == tq) {
         System.out.println(asf);
+        System.out.println();
       }
       return;
     }
