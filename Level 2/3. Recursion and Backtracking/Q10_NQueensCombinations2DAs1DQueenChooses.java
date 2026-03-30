@@ -11,51 +11,51 @@ public class Q10_NQueensCombinations2DAs1DQueenChooses {
     nqueens(0, n, chess, -1);
   }
 
-  private static void nqueens(int qpsf, int tq, boolean[][] chess, int lbno) {
+  public static void nqueens(int qpsf, int tq, boolean[][] chess, int lcno) {
     if (qpsf == tq) {
-      printBoard(chess);
+      for (int i = 0; i < chess.length; i++) {
+        for (int j = 0; j < chess.length; j++) {
+          System.out.print(chess[i][j] ? "q\t" : "-\t");
+        }
+        System.out.println();
+      }
+      System.out.println();
       return;
     }
 
-    int n = chess.length;
-    for (int i = lbno + 1; i < n * n; i++) {
-      int r = i / n;
-      int c = i % n;
-      if (!chess[r][c] && isSafe(chess, r, c)) {
-        chess[r][c] = true;
+    for (int i = lcno + 1; i < chess.length * chess.length; i++) {
+      int row = i / chess.length;
+      int col = i % chess.length;
+      if (!chess[row][col] && IsQueenSafe(chess, row, col)) {
+        chess[row][col] = true;
         nqueens(qpsf + 1, tq, chess, i);
-        chess[r][c] = false;
+        chess[row][col] = false;
       }
     }
   }
 
-  private static boolean isSafe(boolean[][] chess, int r, int c) {
-    int n = chess.length;
-
-    for (int i = r - 1; i >= 0; i--) {
-      if (chess[i][c])
+  public static boolean IsQueenSafe(boolean[][] chess, int row, int col) {
+    for (int i = row, j = col - 1; j >= 0; j--) {
+      if (chess[i][j]) {
         return false;
+      }
     }
-    for (int i = r - 1, j = c - 1; i >= 0 && j >= 0; i--, j--) {
-      if (chess[i][j])
+    for (int i = row - 1, j = col; i >= 0; i--) {
+      if (chess[i][j]) {
         return false;
+      }
     }
-    for (int i = r - 1, j = c + 1; i >= 0 && j < n; i--, j++) {
-      if (chess[i][j])
+    for (int i = row - 1, j = col - 1; i >= 0 && j >= 0; i--, j--) {
+      if (chess[i][j]) {
         return false;
+      }
     }
-
+    for (int i = row - 1, j = col + 1; i >= 0 && j < chess.length; i--, j++) {
+      if (chess[i][j]) {
+        return false;
+      }
+    }
     return true;
-  }
-
-  private static void printBoard(boolean[][] chess) {
-    for (boolean[] row : chess) {
-      for (boolean hasQueen : row) {
-        System.out.print(hasQueen ? "q\t" : "-\t");
-      }
-      System.out.println();
-    }
-    System.out.println();
   }
 
 }
