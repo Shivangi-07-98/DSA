@@ -1,5 +1,5 @@
-// Time Complexity: O((n*m)Pq * n)
-// Space Complexity: O(n*m)
+// Time Complexity: O((n*n)Pq * n*n)
+// Space Complexity: O(n*n)
 import java.util.*;
 
 public class Q11_NQueensPermutations2DAs1DQueenChooses {
@@ -7,7 +7,7 @@ public class Q11_NQueensPermutations2DAs1DQueenChooses {
   public static void main(String[] args) {
     Scanner scn = new Scanner(System.in);
     int n = scn.nextInt();
-    int tq = scn.nextInt();
+    int tq = n;
     int[][] board = new int[n][n];
     nqueens(1, tq, board);
   }
@@ -33,7 +33,6 @@ public class Q11_NQueensPermutations2DAs1DQueenChooses {
 
   private static boolean isSafe(int[][] board, int r, int c) {
     int n = board.length;
-    int m = board[0].length;
 
     for (int i = r - 1; i >= 0; i--) {
       if (board[i][c] != 0) return false;
@@ -44,19 +43,19 @@ public class Q11_NQueensPermutations2DAs1DQueenChooses {
     for (int j = c - 1; j >= 0; j--) {
       if (board[r][j] != 0) return false;
     }
-    for (int j = c + 1; j < m; j++) {
+    for (int j = c + 1; j < n; j++) {
       if (board[r][j] != 0) return false;
     }
     for (int i = r - 1, j = c - 1; i >= 0 && j >= 0; i--, j--) {
       if (board[i][j] != 0) return false;
     }
-    for (int i = r - 1, j = c + 1; i >= 0 && j < m; i--, j++) {
+    for (int i = r - 1, j = c + 1; i >= 0 && j < n; i--, j++) {
       if (board[i][j] != 0) return false;
     }
     for (int i = r + 1, j = c - 1; i < n && j >= 0; i++, j--) {
       if (board[i][j] != 0) return false;
     }
-    for (int i = r + 1, j = c + 1; i < n && j < m; i++, j++) {
+    for (int i = r + 1, j = c + 1; i < n && j < n; i++, j++) {
       if (board[i][j] != 0) return false;
     }
 
@@ -78,17 +77,8 @@ public class Q11_NQueensPermutations2DAs1DQueenChooses {
 
 /*
  * Input:
- * 4
- * 4
+ * 1
  *
  * Output:
- * -\tq1\t-\t-\t
- * -\t-\t-\tq2\t
- * q3\t-\t-\t-\t
- * -\t-\tq4\t-\t
- *
- * -\t-\tq1\t-\t
- * q2\t-\t-\t-\t
- * -\t-\t-\tq3\t
- * -\tq4\t-\t-\t
+ * q1	
  */

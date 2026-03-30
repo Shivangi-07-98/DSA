@@ -1,5 +1,5 @@
-// Time Complexity: O((n*m)Ck)
-// Space Complexity: O(n*m)
+// Time Complexity: O((n*n)Cn * n*n)
+// Space Complexity: O(n*n)
 import java.util.*;
 
 public class Q12_NKnightsCombinations2DAs1DKnightChooses {
@@ -7,7 +7,7 @@ public class Q12_NKnightsCombinations2DAs1DKnightChooses {
   public static void main(String[] args) {
     Scanner scn = new Scanner(System.in);
     int n = scn.nextInt();
-    int k = scn.nextInt();
+    int k = n;
     int[][] board = new int[n][n];
     nknights(1, k, 0, board);
   }
@@ -58,15 +58,8 @@ public class Q12_NKnightsCombinations2DAs1DKnightChooses {
 
 /*
  * Input:
- * 3
- * 2
+ * 1
  *
  * Output:
- * k1\tk2\t-\t
- * -\t-\t-\t
- * -\t-\t-\t
- *
- * k1\t-\tk2\t
- * -\t-\t-\t
- * -\t-\t-\t
+ * k1	
  */
