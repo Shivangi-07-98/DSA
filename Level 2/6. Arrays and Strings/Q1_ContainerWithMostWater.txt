@@ -23,3 +23,5 @@ class Solution {
     return res;
   }
 }
+
+algorithm - left right pointer rakhenge, jis side chhota hoga uss side pointer badha denge
