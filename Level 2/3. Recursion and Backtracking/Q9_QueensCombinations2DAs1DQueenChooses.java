@@ -1,5 +1,5 @@
-// Time Complexity: O((n*m)Cq)
-// Space Complexity: O(n*m)
+// Time Complexity: O((n*n)Cn * n*n)
+// Space Complexity: O(n*n)
 import java.util.*;
 
 public class Q9_QueensCombinations2DAs1DQueenChooses {
@@ -7,66 +7,55 @@ public class Q9_QueensCombinations2DAs1DQueenChooses {
   public static void main(String[] args) {
     Scanner scn = new Scanner(System.in);
     int n = scn.nextInt();
-    int m = scn.nextInt();
-    int tq = scn.nextInt();
-    int[][] board = new int[n][m];
-    queens(1, tq, 0, board);
+
+    boolean[][] chess = new boolean[n][n];
+    queensCombinations(0, n, chess, -1);
   }
 
-  private static void queens(int qpsf, int tq, int idx, int[][] board) {
-    if (qpsf > tq) {
-      printBoard(board);
+  public static void queensCombinations(int qpsf, int tq, boolean[][] chess, int lbno) {
+    if (qpsf == tq) {
+      for (int i = 0; i < chess.length; i++) {
+        for (int j = 0; j < chess.length; j++) {
+          System.out.print(chess[i][j] ? "q\t" : "-\t");
+        }
+        System.out.println();
+      }
+      System.out.println();
       return;
     }
 
-    int n = board.length;
-    int m = board[0].length;
-    for (int i = idx; i < n * m; i++) {
-      int r = i / m;
-      int c = i % m;
-      if (board[r][c] == 0) {
-        board[r][c] = qpsf;
-        queens(qpsf + 1, tq, i + 1, board);
-        board[r][c] = 0;
+    for (int i = lbno + 1; i < chess.length * chess.length; i++) {
+      int r = i / chess.length;
+      int c = i % chess.length;
+      if (!chess[r][c]) {
+        chess[r][c] = true;
+        queensCombinations(qpsf + 1, tq, chess, i);
+        chess[r][c] = false;
       }
     }
   }
-
-  private static void printBoard(int[][] board) {
-    for (int[] row : board) {
-      for (int val : row) {
-        System.out.print(val == 0 ? "-\t" : "q" + val + "\t");
-      }
-      System.out.println();
-    }
-    System.out.println();
-  }
-
-
 }
 
 /*
  * Input:
  * 2
- * 2
- * 2
  *
  * Output:
- * q1\tq2\t
- * -\t-\t
+ * q	q	
+ * -	-	
  *
- * q1\t-\t
- * q2\t-\t
+ * q	-	
+ * q	-	
  *
- * q1\t-\t
- * -\tq2\t
+ * q	-	
+ * -	q	
  *
- * -\tq1\t
- * q2\t-\t
+ * -	q	
+ * q	-	
  *
- * -\tq1\t
- * -\tq2\t
+ * -	q	
+ * -	q	
  *
- * -\t-\t
- * q1\tq2\t
+ * -	-	
+ * q	q	
  */
