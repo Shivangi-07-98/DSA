@@ -34,6 +34,7 @@ public class Q9_QueensCombinations2DAs1DQueenChooses {
       }
     }
   }
+  
 }
 
 /*
