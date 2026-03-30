@@ -1,5 +1,5 @@
-// Time Complexity: O((n*m)Cq * n)
-// Space Complexity: O(n*m)
+// Time Complexity: O((n*n)Cn * n*n)
+// Space Complexity: O(n*n)
 import java.util.*;
 
 public class Q10_NQueensCombinations2DAs1DQueenChooses {
@@ -7,88 +7,71 @@ public class Q10_NQueensCombinations2DAs1DQueenChooses {
   public static void main(String[] args) {
     Scanner scn = new Scanner(System.in);
     int n = scn.nextInt();
-    int tq = scn.nextInt();
-    int[][] board = new int[n][n];
-    nqueens(1, tq, 0, board);
+    boolean[][] chess = new boolean[n][n];
+    nqueens(0, n, chess, -1);
   }
 
-  private static void nqueens(int qpsf, int tq, int idx, int[][] board) {
-    if (qpsf > tq) {
-      printBoard(board);
+  private static void nqueens(int qpsf, int tq, boolean[][] chess, int lbno) {
+    if (qpsf == tq) {
+      printBoard(chess);
       return;
     }
 
-    int n = board.length;
-    int m = board[0].length;
-    for (int i = idx; i < n * m; i++) {
-      int r = i / m;
-      int c = i % m;
-      if (board[r][c] == 0 && isSafe(board, r, c)) {
-        board[r][c] = qpsf;
-        nqueens(qpsf + 1, tq, i + 1, board);
-        board[r][c] = 0;
+    int n = chess.length;
+    for (int i = lbno + 1; i < n * n; i++) {
+      int r = i / n;
+      int c = i % n;
+      if (!chess[r][c] && isSafe(chess, r, c)) {
+        chess[r][c] = true;
+        nqueens(qpsf + 1, tq, chess, i);
+        chess[r][c] = false;
       }
     }
   }
 
-  private static boolean isSafe(int[][] board, int r, int c) {
-    int n = board.length;
-    int m = board[0].length;
+  private static boolean isSafe(boolean[][] chess, int r, int c) {
+    int n = chess.length;
 
     for (int i = r - 1; i >= 0; i--) {
-      if (board[i][c] != 0) return false;
-    }
-    for (int i = r + 1; i < n; i++) {
-      if (board[i][c] != 0) return false;
-    }
-    for (int j = c - 1; j >= 0; j--) {
-      if (board[r][j] != 0) return false;
-    }
-    for (int j = c + 1; j < m; j++) {
-      if (board[r][j] != 0) return false;
+      if (chess[i][c])
+        return false;
     }
     for (int i = r - 1, j = c - 1; i >= 0 && j >= 0; i--, j--) {
-      if (board[i][j] != 0) return false;
+      if (chess[i][j])
+        return false;
     }
-    for (int i = r - 1, j = c + 1; i >= 0 && j < m; i--, j++) {
-      if (board[i][j] != 0) return false;
-    }
-    for (int i = r + 1, j = c - 1; i < n && j >= 0; i++, j--) {
-      if (board[i][j] != 0) return false;
-    }
-    for (int i = r + 1, j = c + 1; i < n && j < m; i++, j++) {
-      if (board[i][j] != 0) return false;
+    for (int i = r - 1, j = c + 1; i >= 0 && j < n; i--, j++) {
+      if (chess[i][j])
+        return false;
     }
 
     return true;
   }
 
-  private static void printBoard(int[][] board) {
-    for (int[] row : board) {
-      for (int val : row) {
-        System.out.print(val == 0 ? "-\t" : "q" + val + "\t");
+  private static void printBoard(boolean[][] chess) {
+    for (boolean[] row : chess) {
+      for (boolean hasQueen : row) {
+        System.out.print(hasQueen ? "q\t" : "-\t");
       }
       System.out.println();
     }
     System.out.println();
   }
 
-
 }
 
 /*
  * Input:
  * 4
- * 4
  *
  * Output:
- * -\tq1\t-\t-\t
- * -\t-\t-\tq2\t
- * q3\t-\t-\t-\t
- * -\t-\tq4\t-\t
+ * - q - -
+ * - - - q
+ * q - - -
+ * - - q -
  *
- * -\t-\tq1\t-\t
- * q2\t-\t-\t-\t
- * -\t-\t-\tq3\t
- * -\tq4\t-\t-\t
+ * - - q -
+ * q - - -
+ * - - - q
+ * - q - -
  */
