@@ -7,59 +7,68 @@ public class Q12_NKnightsCombinations2DAs1DKnightChooses {
   public static void main(String[] args) {
     Scanner scn = new Scanner(System.in);
     int n = scn.nextInt();
-    int k = n;
-    int[][] board = new int[n][n];
-    nknights(1, k, 0, board);
+    boolean[][] chess = new boolean[n][n];
+    nknights(0, n, chess, -1);
   }
 
-  private static void nknights(int kpsf, int tk, int idx, int[][] board) {
-    if (kpsf > tk) {
-      printBoard(board);
+  private static void nknights(int kpsf, int tk, boolean[][] chess, int lbno) {
+    if (kpsf == tk) {
+      printBoard(chess);
       return;
     }
 
-    int n = board.length;
-    int m = board[0].length;
-    for (int i = idx; i < n * m; i++) {
-      int r = i / m;
-      int c = i % m;
-      if (board[r][c] == 0 && isSafe(board, r, c)) {
-        board[r][c] = kpsf;
-        nknights(kpsf + 1, tk, i + 1, board);
-        board[r][c] = 0;
+    int n = chess.length;
+    for (int i = lbno + 1; i < n * n; i++) {
+      int r = i / n;
+      int c = i % n;
+      if (!chess[r][c] && IsKnightSafe(chess, r, c)) {
+        chess[r][c] = true;
+        nknights(kpsf + 1, tk, chess, i);
+        chess[r][c] = false;
       }
     }
   }
 
-  private static boolean isSafe(int[][] board, int r, int c) {
-    int[][] moves = { {-2, -1}, {-2, 1}, {-1, -2}, {-1, 2} };
-    for (int[] mv : moves) {
-      int nr = r + mv[0];
-      int nc = c + mv[1];
-      if (nr >= 0 && nc >= 0 && nr < board.length && nc < board[0].length) {
-        if (board[nr][nc] != 0) return false;
-      }
-    }
+  public static boolean IsKnightSafe(boolean[][] chess, int i, int j) {
+    if (i - 1 >= 0 && j - 2 >= 0 && chess[i - 1][j - 2]) return false;
+    if (i - 2 >= 0 && j - 1 >= 0 && chess[i - 2][j - 1]) return false;
+    if (i - 2 >= 0 && j + 1 < chess.length && chess[i - 2][j + 1]) return false;
+    if (i - 1 >= 0 && j + 2 < chess.length && chess[i - 1][j + 2]) return false;
     return true;
   }
 
-  private static void printBoard(int[][] board) {
-    for (int[] row : board) {
-      for (int val : row) {
-        System.out.print(val == 0 ? "-\t" : "k" + val + "\t");
+  private static void printBoard(boolean[][] chess) {
+    for (boolean[] row : chess) {
+      for (boolean hasKnight : row) {
+        System.out.print(hasKnight ? "k\t" : "-\t");
       }
       System.out.println();
     }
     System.out.println();
   }
 
-
 }
 
 /*
  * Input:
- * 1
+ * 2
  *
  * Output:
- * k1	
+ * k	k	
+ * -	-	
+ *
+ * k	-	
+ * k	-	
+ *
+ * k	-	
+ * -	k	
+ *
+ * -	k	
+ * k	-	
+ *
+ * -	k	
+ * -	k	
+ *
+ * -	-	
+ * k	k	
  */
