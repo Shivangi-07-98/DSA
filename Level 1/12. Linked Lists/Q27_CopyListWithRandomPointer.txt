@@ -7,6 +7,7 @@ class Solution {
       return null;
     }
 
+    // insert clones
     Node prev = head;
     Node curr = prev.next;
 
@@ -46,3 +47,5 @@ class Solution {
   }
   
 }
+
+algorithm - sbke beech mai ek extra node unhi jaise insert kr denge, aur unka random set krenge temp.next.random = temp.random.next, fir wapas break krke clones nikal lenge
