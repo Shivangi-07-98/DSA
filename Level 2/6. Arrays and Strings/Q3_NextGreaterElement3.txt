@@ -50,3 +50,5 @@ class Solution {
     arr[j] = temp;
   }
 }
+
+algorithm - 
