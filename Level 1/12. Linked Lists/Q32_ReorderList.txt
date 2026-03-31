@@ -11,75 +11,27 @@ class Solution {
     helper(head);
   }
 
-  boolean work = true;
   ListNode left;
+  boolean work = true;
 
   void helper(ListNode right) {
     if (right == null) {
       return;
     }
+
     helper(right.next);
 
-    if (work == true) {
-      if (left == right || left.next == right) {
-        right.next = null;
-        work = false;
-      } else {
-        ListNode next = left.next;
+    if (work == true && (left == right || left.next == right)) {
+      right.next = null;
+      work = false;
+    } else if (work == true) {
+      ListNode temp = left.next;
 
-        left.next = right;
-        right.next = next;
+      left.next = right;
+      right.next = temp;
 
-        left = next;
-      }
+      left = temp;
     }
+
   }
-
-}
-
-
-class Solution {
-  public void reorderList(ListNode head) {
-    if (head == null || head.next == null) {
-      return;
-    }
-
-    ListNode slow = head;
-    ListNode fast = head;
-
-    while (fast.next != null && fast.next.next != null) {
-      slow = slow.next;
-      fast = fast.next.next;
-    }
-
-    ListNode second = reverse(slow.next);
-    slow.next = null;
-
-    ListNode first = head;
-    while (second != null) {
-      ListNode fNext = first.next;
-      ListNode sNext = second.next;
-
-      first.next = second;
-      second.next = fNext;
-
-      first = fNext;
-      second = sNext;
-    }
-  }
-
-  private ListNode reverse(ListNode head) {
-    ListNode prev = null;
-    ListNode curr = head;
-
-    while (curr != null) {
-      ListNode next = curr.next;
-      curr.next = prev;
-      prev = curr;
-      curr = next;
-    }
-
-    return prev;
-  }
-  
 }
