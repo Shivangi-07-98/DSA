@@ -120,23 +120,27 @@ class LFUCache {
     }
 
     if (nodemap.size() == cap) {
-      LL list = listmap.get(min);
-      Node evict = list.tail.prev;
-      remove(list, evict);
-      nodemap.remove(evict.key);
+      LL list = listmap.get(node.freq);
+
+      remove(list, node);
+      if (list1.size == 0 && min == node.freq) {
+        listmap.remove(min);
+        min++;
+      }
     }
 
     Node node = new Node(key, value);
-    nodemap.put(key, node);
+    
     min = 1;
-    LL list;
-    if (listmap.containsKey(1) == false) {
-      list = new LL();
-      listmap.put(1, list);
+    node.freq = 1;
+    LL list1;
+    if (listmap.containsKey(node.freq) == false) {
+      list1 = new LL();
+      listmap.put(node.freq, list1);
     } else {
-      list = listmap.get(1);
+      list1 = listmap.get(node.freq);
     }
-    addFirst(list, node);
+    addFirst(list1, node);
   }
   
 }
