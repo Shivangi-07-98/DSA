@@ -66,54 +66,77 @@ class LFUCache {
   }
 
 
-public int get(int key) {
-  if (nodemap.containsKey(key) == false) {
-    return -1;
-  } else {
-    Node node = nodemap.get(key);
-    LL list = listmap.containsKey(node.freq)
-
-    remove(list1, node);
-    if(list1.size == 0 && min == node.freq){
-      min++;
-    }
-
-    node.freq++;
-    LL list2;
-    if (listmap.containsKey(node.freq) == false) {
-      list2 = new LL();
-      listmap.put(node.freq, list2);
+  public int get(int key) {
+    if (nodemap.containsKey(key) == false) {
+      return -1;
     } else {
-      list2 = listmap.get(node.freq);
-    }
-    addFirst(list2, node);
+      Node node = nodemap.get(key);
+      LL list1 = listmap.get(node.freq);
 
-    return node.value;
+      remove(list1, node);
+      if (list1.size == 0 && min == node.freq) {
+        min++;
+      }
+
+      node.freq++;
+      LL list2;
+      if (listmap.containsKey(node.freq) == false) {
+        list2 = new LL();
+        listmap.put(node.freq, list2);
+      } else {
+        list2 = listmap.get(node.freq);
+      }
+      addFirst(list2, node);
+
+      return node.val;
+    }
   }
-}
 
   public void put(int key, int value) {
-    if (capacity == 0) {
+    if (cap == 0) {
       return;
     }
 
-    if (map.containsKey(key)) {
-      Node node = map.get(key);
+    if (nodemap.containsKey(key)) {
+      Node node = nodemap.get(key);
       node.val = value;
-      update(node);
+
+      LL list1 = listmap.get(node.freq);
+      remove(list1, node);
+      if (list1.size == 0 && min == node.freq) {
+        min++;
+      }
+
+      node.freq++;
+      LL list2;
+      if (listmap.containsKey(node.freq) == false) {
+        list2 = new LL();
+        listmap.put(node.freq, list2);
+      } else {
+        list2 = listmap.get(node.freq);
+      }
+      addFirst(list2, node);
       return;
     }
 
-    if (map.size() == capacity) {
-      DList list = freqMap.get(minFreq);
-      Node evict = list.removeLast();
-      map.remove(evict.key);
+    if (nodemap.size() == cap) {
+      LL list = listmap.get(min);
+      Node evict = list.tail.prev;
+      remove(list, evict);
+      nodemap.remove(evict.key);
     }
 
     Node node = new Node(key, value);
-    map.put(key, node);
-    minFreq = 1;
-    freqMap.computeIfAbsent(1, k -> new DList()).addFirst(node);
+    nodemap.put(key, node);
+    min = 1;
+    LL list;
+    if (listmap.containsKey(1) == false) {
+      list = new LL();
+      listmap.put(1, list);
+    } else {
+      list = listmap.get(1);
+    }
+    addFirst(list, node);
   }
   
 }
