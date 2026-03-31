@@ -24,7 +24,7 @@ class gfg {
     list.head1 = list.head;
     list.head2 = slow.next;
 
-    slow.next = list.head;
+    slow.next = list.head1;
 
     if (fast.next == list.head) {
       fast.next = list.head2;
@@ -34,3 +34,5 @@ class gfg {
   }
   
 }
+
+algorithm - find mid of a ll, then 
