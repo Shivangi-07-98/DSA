@@ -120,19 +120,20 @@ class LFUCache {
     }
 
     if (nodemap.size() == cap) {
-      LL list = listmap.get(node.freq);
+      LL list1 = listmap.get(min);
+      Node node = list1.tail.prev;
 
-      remove(list, node);
-      if (list1.size == 0 && min == node.freq) {
+      remove(list1, node);
+      nodemap.remove(node.key);
+      if (list1.size == 0) {
         listmap.remove(min);
-        min++;
       }
     }
 
     Node node = new Node(key, value);
     
     min = 1;
-    node.freq = 1;
+    nodemap.put(key, node);
     LL list1;
     if (listmap.containsKey(node.freq) == false) {
       list1 = new LL();
