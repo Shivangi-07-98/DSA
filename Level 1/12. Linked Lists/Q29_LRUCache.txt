@@ -61,15 +61,18 @@ class LRUCache {
   }
 
   public void put(int key, int value) {
-    if (map.containsKey(key)) {
-      remove(map.get(key));
+    if (map.containsKey(key) == false) {
+      Node node = new Node(key, value);
+      map.put(key, node);
+      addFirst(node);
+    } else {
+      Node node = map.get(key);
+      node.value = value;
+      remove(node);
+      addFirst(node);
     }
 
-    Node node = new Node(key, value);
-    map.put(key, node);
-    addFirst(node);
-
-    if (map.size() == cap) {
+    if (map.size() > cap) {
       map.remove(tail.prev.key);
       remove(tail.prev);
     }
