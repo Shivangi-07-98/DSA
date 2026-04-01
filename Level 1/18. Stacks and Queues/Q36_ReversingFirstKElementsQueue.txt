@@ -1,0 +1,1 @@
+https://www.geeksforgeeks.org/reversing-first-k-elements-queue/
