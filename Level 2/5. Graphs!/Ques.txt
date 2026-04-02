@@ -1,31 +1,31 @@
-imp 1. number of islands - 13 june 2022----
-imp 2. number of enclaves
-imp 3. rotting oranges
-imp 4. is graph bipartite - 14 june 2022----
-imp 5. bus routes
-imp 6. number of distinct island
-imp 7. 01 matrix - 15 june 2022----
+1. number of islands - 13 june 2022----
+2. number of enclaves
+vimp 3. rotting oranges
+4. is graph bipartite - 14 june 2022----
+5. bus routes
+6. number of distinct island
+vimp 7. 01 matrix - 15 june 2022----
 8. as far from land as possible
 9. shortest path in weights ×
 10. swim in rising water
 11. minimum wire to connect all pcs
 12. minimum cost to connect all cities
 13. coloring a border × - 16 june 2022----
-imp 14. shortest bridge
+14. shortest bridge
 15. strongly connected components kosaraju's algo × - 20 june 2022----
 16. mother vertex ×
-imp 17. clone graph
-imp 18. topological sorting - 21 june 2022----
-imp 19. given sorted dictionary find precedence characters/alien dictionary
-imp 20. kahn's algorithm for topological sorting
-imp 21. course schedule 2
-imp 22. disjoint set union - 22 june 2022----
+17. clone graph
+18. topological sorting - 21 june 2022----
+19. given sorted dictionary find precedence characters/alien dictionary
+20. kahn's algorithm for topological sorting
+vimp 21. course schedule 2
+vimp 22. disjoint set union - 22 june 2022----
 23. kruskal minimum spanning tree/minimum wire to connect all pcs
-24. number of island 2
-imp 25. redundant connection - 23 june 2022----
+vimp 24. number of island 2
+vimp 25. redundant connection - 23 june 2022----
 26. regions cut by slashes
 27. sentence similarity ×
-imp 28. satisfiability of equality equations - 27 june 2022----
+28. satisfiability of equality equations - 27 june 2022----
 29. evaluate division
 30. articulation point × - 29 june 2022----
 31. articulation point 2 ×
@@ -41,15 +41,15 @@ imp 28. satisfiability of equality equations - 27 june 2022----
 41. journey to the moon ×
 42. euler circuit in a directed graph ×
 43. eulerian path in an undirected graph ×
-imp 44. sliding puzzle - 6 july 2022----
+44. sliding puzzle - 6 july 2022----
 45. k similar strings ×
 46. reconstruct itinerary
-imp 47. find eventual safe states - 7 july 2022----
+47. find eventual safe states - 7 july 2022----
 48. smallest string with swaps
 49. bricks falling when hit ×
 50. cracking the safe × - 8 july 2022----
-imp 51. cheapest flights within k stops
-52. distance from the source bellman ford algorithm × - 11 july 2022----
+vimp 51. cheapest flights within k stops
+vimp 52. distance from the source bellman ford algorithm × - 11 july 2022----
 53. implementing floyd warshall ×
 54. graph connectivity with threshold ×
 55. ford fulkerson/find the maximum flow × - 12 july 2022----
