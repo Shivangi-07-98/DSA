@@ -14,20 +14,20 @@ class MinStack {
     if (data.size() == 0) {
       data.push(val);
       min.push(val);
+    } else if (val <= min.peek()) {
+      data.push(val);
+      min.push(val);
     } else {
       data.push(val);
-      if (val <= min.peek()) {
-        min.push(val);
-      }
     }
   }
 
   public void pop() {
-    if (!data.peek().equals(min.peek())) {
-      data.pop();
-    } else {
+    if (data.peek().equals(min.peek())) {
       data.pop();
       min.pop();
+    } else {
+      data.pop();
     }
   }
 
@@ -40,6 +40,7 @@ class MinStack {
   }
 }
 
+-------------------------------------------------
 
 class MinStack {
   Stack<Long> data;
