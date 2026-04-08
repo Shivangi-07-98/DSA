@@ -1,4 +1,3 @@
-https://codeforces.com/contest/1534/problem/C
 
 
 import java.io.*;
@@ -6,7 +5,7 @@ import java.util.*;
 
 public class Main {
   public static void main(String[] args){
-    
+
     Scanner scn = new Scanner(System.in);
     int t = scn.nextInt();
 
@@ -55,7 +54,7 @@ public class Main {
       if(ilead != xlead){
         union(ilead, xlead);
       }
-      
+
       int y = map1.get(r2[i]);
       int ylead = find(y);
       if(ilead != ylead){

@@ -8,7 +8,7 @@ class Solution {
     int[] res = new int[V];
     Arrays.fill(res, 100000000);
     res[S] = 0;
-    
+
     for(int i = 1; i <= V - 1; i++){
       for(ArrayList<Integer> edge: adj){
         int u = edge.get(0);
@@ -23,7 +23,7 @@ class Solution {
         }
       }
     }
-    
+
     return res;
   }
 }

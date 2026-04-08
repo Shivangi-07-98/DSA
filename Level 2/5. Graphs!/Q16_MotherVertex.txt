@@ -14,19 +14,19 @@ class Solution {
         mv = v;
       }
     }
-    
+
     Arrays.fill(vis, false);
     dfs(mv, vis, adj);
-    
+
     for(int v = 0; v < V; v++){
       if(vis[v] == false){
         return -1;
       }
     }
-    
+
     return mv;
   }
-  
+
   public void dfs(int v, boolean[] vis, ArrayList<ArrayList<Integer>> adj){
     vis[v] = true;
     for(int n: adj.get(v)){

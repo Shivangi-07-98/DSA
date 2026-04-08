@@ -9,7 +9,7 @@ class Solution {
     boolean[] vis = new boolean[V];
     int[] dis = new int[V];
     int[] low = new int[V];
-    
+
     time = 0;
     res = 0;
     for(int i = 0; i < V; i++){
@@ -17,17 +17,17 @@ class Solution {
         dfs(adj, vis, dis, low, i, -1, c, d);
       }
     }
-    
+
     return res;
   }
-  
+
   static int time = 0;
   static int res = 0;
-  
+
   public static void dfs(ArrayList<ArrayList<Integer>> adj, boolean[] vis, int[] dis, int[] low, int u, int p, int c, int d){
     vis[u] = true;
     dis[u] = low[u] = ++time;
-    
+
     for(int v: adj.get(u)){
       if(v == p){
         continue;
@@ -36,7 +36,7 @@ class Solution {
       } else {
         dfs(adj, vis, dis, low, v, u, c, d);
         low[u] = Math.min(low[u], low[v]);
-        
+
         if(low[v] > dis[u]){
           if(c == v && d == u || c == u && d == v){
             res = 1;

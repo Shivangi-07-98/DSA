@@ -5,15 +5,15 @@ class Solution {
   public int[] findRedundantDirectedConnection(int[][] edges) {
     int[] parent = new int[edges.length + 1];
     Arrays.fill(parent, -1);
-    
+
     boolean twopf = false;
     int[] e1 = null;
     int[] e2 = null;
-    
+
     for(int i = 0; i < edges.length; i++){
       int from = edges[i][0];
       int to = edges[i][1];
-      
+
       if(parent[to] == -1){
         parent[to] = from;
       } else {
@@ -22,21 +22,21 @@ class Solution {
         e1 = new int[] {parent[to], to};
         break;
       }
-    }       
-    
+    }
+
     dsu = new int[edges.length + 1];
     for(int i = 0; i <= edges.length; i++){
-      dsu[i] = i;    
+      dsu[i] = i;
     }
-    
+
     if(twopf == false){
       // edge creating the cycle is the answer
       int[] res = null;
-      
+
       for(int i = 0; i < edges.length; i++){
         int from = edges[i][0];
         int to = edges[i][1];
-        
+
         int fromLead = find(from);
         if(to == fromLead){
           res = edges[i];
@@ -45,7 +45,7 @@ class Solution {
           dsu[to] = fromLead;
         }
       }
-      
+
       return res;
     } else {
       // check for cycle
@@ -54,10 +54,10 @@ class Solution {
         if(edges[i] == e2){
           continue;
         }
-        
+
         int from = edges[i][0];
         int to = edges[i][1];
-        
+
         int fromLead = find(from);
         if(to == fromLead){
           // cycle
@@ -67,15 +67,15 @@ class Solution {
           dsu[to] = fromLead;
         }
       }
-      
+
       if(noCycleFlag == true){
         return e2;
       } else {
-        return e1;   
+        return e1;
       }
     }
   }
-  
+
   int[] dsu;
   int find(int x){
     if(dsu[x] == x){
