@@ -1,6 +1,3 @@
-https://www.pepcoding.com/resources/data-structures-and-algorithms-in-java-levelup/graphs/number-of-island-2-official/ojquestion
-
-
 import java.util.*;
 import java.io.*;
 

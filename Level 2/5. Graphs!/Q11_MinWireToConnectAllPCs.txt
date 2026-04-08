@@ -1,6 +1,3 @@
-https://pepcoding.com/resources/online-java-foundation/graphs/minimum-wire-to-connect-all-pcs-official/ojquestion
-
-
 import java.io.*;
 import java.util.*;
 

@@ -1,6 +1,3 @@
-https://www.pepcoding.com/resources/data-structures-and-algorithms-in-java-levelup/graphs/sentence_similarity_official/ojquestion
-
-
 import java.io.*;
 import java.util.*;
 
