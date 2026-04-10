@@ -1,3 +1,4 @@
+// https://leetcode.com/problems/minimum-window-substring/
 // Time Complexity: O(n), Space Complexity: O(n)
 import java.io.*;
 import java.util.*;
@@ -72,6 +73,8 @@ public class Q21_MinimumWindowSubstring {
   }
 
 }
+
+// Algorithm - acquire until you become valid, release until you become invalid
 
 /*
  * Example 1:
