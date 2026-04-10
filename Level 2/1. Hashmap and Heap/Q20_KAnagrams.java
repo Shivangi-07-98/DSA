@@ -1,13 +1,15 @@
 // Time Complexity: O(n), Space Complexity: O(n)
+// agar do strings ke saare characters match kar rahe hain, aur jo characters match nahi kar rahe unki count **k ya usse kam hai**, to wo **k-anagram** hain
+ 
 import java.io.*;
 import java.util.*;
 
 public class Q20_KAnagrams {
   public static void main(String[] args) {
-    Scanner s = new Scanner(System.in);
-    String str1 = s.next();
-    String str2 = s.next();
-    int k = s.nextInt();
+    Scanner scn = new Scanner(System.in);
+    String str1 = scn.next();
+    String str2 = scn.next();
+    int k = scn.nextInt();
 
     System.out.println(areKAnagrams(str1, str2, k));
   }
@@ -42,6 +44,8 @@ public class Q20_KAnagrams {
   }
 
 }
+
+// Algorithm - dono str ka freq map bnao
 
 /*
  * input
