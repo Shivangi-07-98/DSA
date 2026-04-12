@@ -1,5 +1,4 @@
 // Time Complexity: O(n), Space Complexity: O(n)
-
 import java.io.*;
 import java.util.*;
 
@@ -7,7 +6,6 @@ public class Q25_FindItineraryFromTickets {
 
   public static void main(String[] args) {
     Scanner scn = new Scanner(System.in);
-
     int n = scn.nextInt();
 
     HashMap<String, String> map = new HashMap<>();
@@ -17,12 +15,10 @@ public class Q25_FindItineraryFromTickets {
       String dest = scn.next();
       map.put(src, dest);
     }
-
     solution(map);
   }
 
   public static void solution(HashMap<String, String> map) {
-
     HashMap<String, Boolean> potentialStart = new HashMap<>();
 
     // Mark cities
