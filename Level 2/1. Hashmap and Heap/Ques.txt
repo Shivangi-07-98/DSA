@@ -17,7 +17,7 @@
 20. k anagrams
 21. minimum window substring
 22. find anagram mappings
-23. longest unique substring - 22 mar 2022----start from here
+23. longest unique substring - 22 mar 2022----
 24. count of substrings having all unique characters
 25. find itinerary from tickets
 26. morning assembly (tricky sorting cost) ×
@@ -25,7 +25,7 @@
 28. smallest substring containing all unique characters
 29. word pattern
 30. longest substring with exactly k unique characters
-31. smallest subarray with most frequent element - 23 mar 2022----
+31. smallest subarray with most frequent element - 23 mar 2022----start from here
 32. first non repeating character
 33. lru cache
 34. task completion

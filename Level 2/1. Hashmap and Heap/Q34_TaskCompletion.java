@@ -1,13 +1,10 @@
 // Time Complexity: O(n log n), Space Complexity: O(n)
-
 import java.io.*;
 import java.util.*;
 
 public class Q34_TaskCompletion {
-
   public static void main(String[] args) {
     Scanner scn = new Scanner(System.in);
-
     int n = scn.nextInt();
     int m = scn.nextInt();
 
@@ -36,6 +33,7 @@ public class Q34_TaskCompletion {
     for (int x : s2)
       System.out.print(x + " ");
   }
+  
 }
 
 /*

@@ -1,10 +1,8 @@
 // Time Complexity: O(n), Space Complexity: O(n)
-
 import java.io.*;
 import java.util.*;
 
 public class Q31_SmallestSubarrayWithMostFrequentElement {
-
   public static void main(String[] args) {
     Scanner scn = new Scanner(System.in);
     int n = scn.nextInt();
@@ -56,6 +54,7 @@ public class Q31_SmallestSubarrayWithMostFrequentElement {
 
     return new int[] { bestEle, bestStart, bestEnd };
   }
+  
 }
 
 /*
