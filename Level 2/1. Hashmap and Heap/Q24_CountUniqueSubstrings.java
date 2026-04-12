@@ -1,4 +1,3 @@
-
 // Time Complexity: O(n), Space Complexity: O(n)
 import java.io.*;
 import java.util.*;
@@ -12,7 +11,6 @@ public class Q24_CountUniqueSubstrings {
   }
 
   public static int solution(String str) {
-
     HashMap<Character, Integer> map = new HashMap<>();
 
     int i = -1;
@@ -20,7 +18,6 @@ public class Q24_CountUniqueSubstrings {
     int count = 0;
 
     while (true) {
-
       boolean f1 = false;
       boolean f2 = false;
 
