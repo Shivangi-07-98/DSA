@@ -4,12 +4,12 @@ public class Main {
 
   static class Pair {
     int freq;
-    int si;
+    int fi;
     int li;
 
-    Pair(int freq, int si, int li) {
+    Pair(int freq, int fi, int li) {
       this.freq = freq;
-      this.si = si;
+      this.fi = fi;
       this.li = li;
     }
   }
@@ -32,22 +32,22 @@ public class Main {
         p.freq++;
         p.li = i;
 
-        int len = i - p.si + 1;
+        int len = i - p.fi + 1;
 
         if (p.freq > mfiKiFreq) {
           mfi = val;
           mfiKiFreq = p.freq;
-          mfiKaSi = p.si;
+          mfiKaSi = p.fi;
           mfiKiLen = len;
         } else if (p.freq == mfiKiFreq && len < mfiKiLen) {
           mfi = val;
           mfiKiFreq = p.freq;
-          mfiKaSi = p.si;
+          mfiKaSi = p.fi;
           mfiKiLen = len;
-        } else if (p.freq == mfiKiFreq && len == mfiKiLen && p.si < mfiKaSi) {
+        } else if (p.freq == mfiKiFreq && len == mfiKiLen && p.fi < mfiKaSi) {
           mfi = val;
           mfiKiFreq = p.freq;
-          mfiKaSi = p.si;
+          mfiKaSi = p.fi;
           mfiKiLen = len;
         }
       }
