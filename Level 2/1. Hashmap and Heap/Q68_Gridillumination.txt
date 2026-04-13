@@ -1,3 +1,6 @@
+https://leetcode.com/problems/grid-illumination/description/
+
+
 class Solution {
 
   int[][] dirs = { { 0, 0 }, { -1, 0 }, { -1, 1 }, { 0, 1 }, { 1, 1 }, { 1, 0 }, { 1, -1 }, { 0, -1 }, { -1, -1 } };
