@@ -1,3 +1,40 @@
+https://www.geeksforgeeks.org/problems/a-simple-fraction0921/1
 
 
-map.put(rem, frac.length());
+class Solution {
+  public String fractionToDecimal(int num, int den) {
+    int quo = num / den;
+    int rem = num % den;
+
+    // if no remainder → no decimal part
+    if (rem == 0) {
+      return quo + "";
+    }
+
+    String str = quo + ".";
+    String frac = "";
+
+    HashMap<Integer, Integer> map = new HashMap<>();
+
+    // long division + cycle detection
+    while (rem != 0 && map.containsKey(rem) == false) {
+      map.put(rem, frac.length());
+
+      rem = rem * 10;
+      quo = rem / den;
+      rem = rem % den;
+
+      frac += quo;
+    }
+
+    // no repeating cycle
+    if (rem == 0) {
+      str = str + frac;
+    } else {
+      int idx = map.get(rem);
+      str = str + frac.substring(0, idx) + "(" + frac.substring(idx) + ")";
+    }
+
+    return str;
+  }
+}
