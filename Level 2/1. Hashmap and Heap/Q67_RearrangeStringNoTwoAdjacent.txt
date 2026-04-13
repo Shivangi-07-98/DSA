@@ -48,3 +48,61 @@ class Solution {
   }
 
 }
+
+------------------------------------------------------------------
+
+class Solution {
+
+  static class Pair implements Comparable<Pair> {
+    char ch;
+    int freq;
+
+    Pair(char ch, int freq) {
+      this.ch = ch;
+      this.freq = freq;
+    }
+
+    public int compareTo(Pair o) {
+      return this.freq - o.freq; // reverse using PQ
+    }
+  }
+
+  public static String rearrangeString(String str) {
+    HashMap<Character, Integer> map = new HashMap<>();
+
+    // frequency count
+    for (char ch : str.toCharArray()) {
+      map.put(ch, map.getOrDefault(ch, 0) + 1);
+    }
+
+    // max heap using reverse order
+    PriorityQueue<Pair> pq = new PriorityQueue<>(Collections.reverseOrder());
+
+    for (char ch : map.keySet()) {
+      pq.add(new Pair(ch, map.get(ch)));
+    }
+
+    StringBuilder sb = new StringBuilder();
+
+    Pair prev = null;
+    while (pq.size() > 0) {
+      Pair rem = pq.remove();
+      sb.append(rem.ch);
+      rem.freq--;
+
+      if (prev != null && prev.freq > 0) {
+        pq.add(prev);
+      }
+
+      prev = rem;
+    }
+
+    // optional check (important in interviews)
+    if (sb.length() != str.length()) {
+      return ""; // not possible
+    }
+
+    return sb.toString();
+  }
+  
+}
