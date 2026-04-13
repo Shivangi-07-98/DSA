@@ -3,8 +3,8 @@
 
 import java.io.*;
 import java.util.*;
-public class Q20_Catalan {
 
+public class Q20_Catalan {
   public static void main(String[] args) {
     catalan(10);
   }
@@ -26,5 +26,5 @@ public class Q20_Catalan {
 
     System.out.println(Arrays.toString(dp));
   }
-
+  
 }
