@@ -12,6 +12,7 @@ public class Q17_PaintHouseManyColors {
     int n = Integer.parseInt(line.split(" ")[0]);
     int k = Integer.parseInt(line.split(" ")[1]);
     int[][] arr = new int[n][k];
+    
     for (int i = 0; i < n; i++) {
       String str = br.readLine();
       String[] items = str.split(" ");
