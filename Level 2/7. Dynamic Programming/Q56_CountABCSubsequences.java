@@ -1,11 +1,10 @@
-https://www.geeksforgeeks.org/number-subsequences-form-ai-bj-ck/
+// https://www.geeksforgeeks.org/number-subsequences-form-ai-bj-ck/
 
 
 import java.io.*;
 import java.util.*;
 
-public class Main {
-
+public class Q56_CountABCSubsequences {
   public static void main(String[] args) throws Exception {
     Scanner scn = new Scanner(System.in);
     String str = scn.nextLine();
@@ -13,7 +12,6 @@ public class Main {
     int ca = 0;
     int cab = 0;
     int cabc = 0;
-
     for(int i = 0; i < str.length(); i++){
       char ch = str.charAt(i);
       if(ch == 'a'){
