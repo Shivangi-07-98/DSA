@@ -14,14 +14,12 @@ class Solution {
       for(int j = 0; j < primes.length; j++){
         int prime = primes[j];
         int idx = idxs[j];
-
         ans = Math.min(ans, dp[idx] * prime);
       }
 
       for(int j = 0; j < primes.length; j++){
         int prime = primes[j];
         int idx = idxs[j];
-
         if(ans == dp[idx] * prime){
           idxs[j] = idx + 1;
         }
