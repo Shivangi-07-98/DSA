@@ -2,37 +2,48 @@ https://leetcode.com/problems/palindrome-partitioning-ii/
 
 
 class Solution {
-  public int minCut(String s) {
-    int n = s.length();
+  boolean[][] ip;
 
-    // palindrome table
-    boolean[][] pal = new boolean[n][n];
+  void IsPalindrome(String s) {
+    int n = s.length();
+    ip = new boolean[n][n];
 
     for (int g = 0; g < n; g++) {
       for (int i = 0, j = g; j < n; i++, j++) {
         if (g == 0) {
-          pal[i][j] = true;
+          ip[i][j] = true;
         } else if (g == 1) {
-          pal[i][j] = s.charAt(i) == s.charAt(j);
+          ip[i][j] = s.charAt(i) == s.charAt(j);
         } else {
-          pal[i][j] = (s.charAt(i) == s.charAt(j)) && pal[i + 1][j - 1];
+          ip[i][j] = (s.charAt(i) == s.charAt(j)) && ip[i + 1][j - 1];
         }
       }
     }
+  }
 
+  public int minCut(String s) {
+    if (s.length() <= 1) {
+      return 0;
+    }
+
+    IsPalindrome(s);
+    int n = s.length();
     int[] dp = new int[n];
 
-    for (int j = 0; j < n; j++) {
-      if (pal[0][j]) {
+    dp[0] = 0;
+    dp[1] = (s.charAt(0) == s.charAt(1)) ? 0 : 1;
+
+    for (int j = 2; j < n; j++) {
+      if (ip[0][j]) {
         dp[j] = 0;
       } else {
-        int min = Integer.MAX_VALUE;
-        for (int i = j; i >= 1; i--) {
-          if (pal[i][j]) {
-            min = Math.min(min, dp[i - 1]);
+        dp[j] = j; // worst case
+
+        for (int i = j; i > 0; i--) {
+          if (ip[i][j]) {
+            dp[j] = Math.min(dp[j], dp[i - 1] + 1);
           }
         }
-        dp[j] = min + 1;
       }
     }
 
