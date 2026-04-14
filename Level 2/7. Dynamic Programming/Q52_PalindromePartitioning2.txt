@@ -1,2 +1,41 @@
 https://leetcode.com/problems/palindrome-partitioning-ii/
 
+
+class Solution {
+  public int minCut(String s) {
+    int n = s.length();
+
+    // palindrome table
+    boolean[][] pal = new boolean[n][n];
+
+    for (int g = 0; g < n; g++) {
+      for (int i = 0, j = g; j < n; i++, j++) {
+        if (g == 0) {
+          pal[i][j] = true;
+        } else if (g == 1) {
+          pal[i][j] = s.charAt(i) == s.charAt(j);
+        } else {
+          pal[i][j] = (s.charAt(i) == s.charAt(j)) && pal[i + 1][j - 1];
+        }
+      }
+    }
+
+    int[] dp = new int[n];
+
+    for (int j = 0; j < n; j++) {
+      if (pal[0][j]) {
+        dp[j] = 0;
+      } else {
+        int min = Integer.MAX_VALUE;
+        for (int i = j; i >= 1; i--) {
+          if (pal[i][j]) {
+            min = Math.min(min, dp[i - 1]);
+          }
+        }
+        dp[j] = min + 1;
+      }
+    }
+
+    return dp[n - 1];
+  }
+}
