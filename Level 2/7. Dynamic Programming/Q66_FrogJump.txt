@@ -14,15 +14,16 @@ class Solution {
 
       for(int step: map.get(stone)){
         int reach = stone + step;
-
         if(reach == stones[stones.length - 1]){
           return true;
         } else if(map.containsKey(reach)) {
-          map.get(reach).add(step);
+          HashSet<Integer> steps = map.get(reach);
           map.get(reach).add(step + 1);
           if(step - 1 > 0){
-            map.get(reach).add(step - 1);
+            steps.add(step - 1);
           }
+          steps.add(step);
+          steps.add(step + 1);
         }
       }
     }
