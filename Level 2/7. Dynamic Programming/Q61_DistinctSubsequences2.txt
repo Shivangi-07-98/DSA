@@ -13,12 +13,10 @@ class Solution {
 
     for(int i = 2; i < dp.length; i++){
       dp[i] = (2 * dp[i - 1]) % MOD;
-
       int ch = s.charAt(i - 1) - 'a';
       if(lo[ch] != 0){
         dp[i] = (dp[i] - dp[lo[ch] - 1] + MOD) % MOD;
       }
-
       lo[ch] = i;
     }
 
