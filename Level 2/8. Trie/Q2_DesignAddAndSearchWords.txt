@@ -28,23 +28,25 @@ class WordDictionary {
     return helper(word, 0, root);
   }
 
-  boolean helper(String word, int i, Node node) {
-    if (i == word.length()) {
+  boolean helper(String word, int idx, Node node) {
+    if (idx == word.length()) {
       return node.eow;
     }
 
-    char ch = word.charAt(i);
+    char ch = word.charAt(idx);
     if (ch != '.') {
-      if (node.children[ch - 'a'] != null) {
-        return helper(word, i + 1, node.children[ch - 'a']);
-      } else {
+      Node child = node.children[ch - 'a'];
+      if (child == null) {
         return false;
+      } else {
+        return helper(word, idx + 1, child);
       }
     } else {
       for (char nch = 'a'; nch <= 'z'; nch++) {
-        if (node.children[nch - 'a'] != null) {
-          boolean found = helper(word, i + 1, node.children[nch - 'a']);
-          if (found) {
+        Node child = node.children[nch - 'a'];
+        if (child != null) {
+          boolean res = helper(word, idx + 1, child);
+          if (res) {
             return true;
           }
         }
