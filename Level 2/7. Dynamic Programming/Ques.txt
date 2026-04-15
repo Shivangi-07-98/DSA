@@ -44,9 +44,6 @@ imp 42. matrix chain multiplication - 3 sept 2022----
 imp 44. optimal binary search tree
 imp 45. burst balloons - 7 sept 2022----
 imp 46. minimum score triangulation of polygon
-
---------------------------------------------------------------------------------
-
 vimp 47. longest common substring - 9 sept 2022----
 vimp 48. palindromic substrings
 49. longest palindromic substring
