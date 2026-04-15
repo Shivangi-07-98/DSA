@@ -35,7 +35,6 @@ class Solution {
       if(c1 != c2){
         res += grid[r2][c2];
       }
-
       res += max;
     }
 

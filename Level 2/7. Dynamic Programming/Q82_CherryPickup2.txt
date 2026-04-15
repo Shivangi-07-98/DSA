@@ -30,6 +30,7 @@ class Solution {
     max = Math.max(max, helper(grid, r1 + 1, c1 + 1, c2 - 1, dp));
     max = Math.max(max, helper(grid, r1 + 1, c1 + 1, c2, dp));
     max = Math.max(max, helper(grid, r1 + 1, c1 + 1, c2 + 1, dp));
+    
     if(max != Integer.MIN_VALUE){
       res += max;
     }
