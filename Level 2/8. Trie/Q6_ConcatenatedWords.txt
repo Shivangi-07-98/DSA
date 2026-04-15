@@ -12,6 +12,7 @@ class Solution {
   public List<String> findAllConcatenatedWordsInADict(String[] words) {
     for (String word : words) {
       Node temp = root;
+      
       for (char ch : word.toCharArray()) {
         if (temp.arr[ch - 'a'] == null) {
           temp.arr[ch - 'a'] = new Node();
@@ -45,6 +46,7 @@ class Solution {
     Node temp = root;
     for (int i = j; i < word.length(); i++) {
       char ch = word.charAt(i);
+
       if (temp.arr[ch - 'a'] != null) {
         temp = temp.arr[ch - 'a'];
         if (temp.eow == true) {
