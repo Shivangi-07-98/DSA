@@ -12,7 +12,6 @@ class Solution {
     if(i > j){
       return 0;
     }
-
     if(dp[i][j][k] != 0){
       return dp[i][j][k];
     }
