@@ -4,8 +4,8 @@ https://leetcode.com/problems/course-schedule-ii/
 class Solution {
   public int[] findOrder(int numCourses, int[][] prerequisites) {
     int[] ans = new int[numCourses];
-
     int[] in = new int[numCourses];
+
     for(int[] edge: prerequisites){
       in[edge[1]]++;
     }
@@ -39,4 +39,5 @@ class Solution {
 
     return ans;
   }
+  
 }

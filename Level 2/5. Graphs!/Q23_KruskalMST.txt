@@ -40,10 +40,8 @@ public class Main {
       graph[v2].add(new Edge(v2, v1, wt));
     }
 
-    // write your code here
     kruskals(graph);
   }
-
 
   public static void kruskals(ArrayList<Edge>[] graph){
     PriorityQueue<Edge> pq = new PriorityQueue<>();
@@ -96,4 +94,5 @@ public class Main {
       rank[s2l]++;
     }
   }
+  
 }

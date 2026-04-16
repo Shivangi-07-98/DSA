@@ -57,6 +57,7 @@ public class Main {
         }
       }
     }
+
   }
 
   static class Pair implements Comparable<Pair> {
@@ -74,4 +75,5 @@ public class Main {
       return this.wt - o.wt;
     }
   }
+  
 }

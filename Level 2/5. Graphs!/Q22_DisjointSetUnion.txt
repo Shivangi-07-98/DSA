@@ -1,8 +1,8 @@
 https://www.geeksforgeeks.org/introduction-to-disjoint-set-data-structure-or-union-find-algorithm/
 
 
-import java.util.*;
 import java.io.*;
+import java.util.*;
 
 public class Main {
   public static void main(String[] args) throws NumberFormatException, IOException {
@@ -21,7 +21,6 @@ public class Main {
 
     System.out.println(numIslands2(m, n, pos));
   }
-
 
   public static List<Integer> numIslands2(int m, int n, int[][] positions) {
     int[][] grid = new int[m][n];
@@ -75,7 +74,6 @@ public class Main {
   static int[] parent;
   static int[] rank;
 
-
   static int find(int i){
     if(parent[i] == i){
       return i;
@@ -95,4 +93,5 @@ public class Main {
       rank[j]++;
     }
   }
+  
 }

@@ -14,9 +14,7 @@ class Solution {
     }
   }
 
-
   public int shortestBridge(int[][] grid) {
-
     ArrayDeque<Pair> queue = new ArrayDeque<>();
 
     boolean found = false;
@@ -80,4 +78,5 @@ class Solution {
     dfs(grid, queue, i, j - 1);
     dfs(grid, queue, i, j + 1);
   }
+  
 }

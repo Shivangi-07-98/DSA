@@ -1,5 +1,5 @@
-import java.util.*;
 import java.io.*;
+import java.util.*;
 
 public class Main {
   public static void main(String[] args) throws NumberFormatException, IOException {
@@ -72,7 +72,6 @@ public class Main {
   static int[] parent;
   static int[] rank;
 
-
   static int find(int i){
     if(parent[i] == i){
       return i;
@@ -92,4 +91,5 @@ public class Main {
       rank[j]++;
     }
   }
+  
 }
