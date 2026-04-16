@@ -2,9 +2,7 @@ https://practice.geeksforgeeks.org/problems/implementing-floyd-warshall2042/1
 
 
 class Solution {
-  public void shortest_distance(int[][] matrix)
-  {
-    // Code here
+  public void shortest_distance(int[][] matrix) {
     for(int k = 0; k < matrix.length; k++){
       for(int i = 0; i < matrix.length; i++){
         for(int j = 0; j < matrix.length; j++){
@@ -20,5 +18,7 @@ class Solution {
         }
       }
     }
+    
   }
+
 }

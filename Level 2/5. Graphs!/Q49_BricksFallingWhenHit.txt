@@ -57,7 +57,7 @@ class Solution {
   }
 
   int[][] dirs = {{0, -1}, {1, 0}, {0, 1}, {-1, 0}};
-  void handleUnionOfAllNbrs(int[][] grid, int i, int j){
+  void handleUnionOfAllNbrs(int[][] grid, int i, int j) {
     int bno = i * n + j + 1;
 
     for(int[] dir: dirs){
@@ -74,8 +74,6 @@ class Solution {
       union(0, bno);
     }
   }
-
-
 
   int[] parent;
   int[] rank;
@@ -108,4 +106,5 @@ class Solution {
       return parent[x];
     }
   }
+  
 }

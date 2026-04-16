@@ -2,8 +2,7 @@ https://practice.geeksforgeeks.org/problems/find-the-maximum-flow2126/1
 
 
 class Solution {
-  int findMaxFlow(int N, int M, ArrayList<ArrayList<Integer>> Edges)
-  {
+  int findMaxFlow(int N, int M, ArrayList<ArrayList<Integer>> Edges) {
     int mflow = 0;
 
     int[][] graph = new int[N + 1][N + 1];
@@ -62,4 +61,5 @@ class Solution {
 
     return false;
   }
+  
 }
