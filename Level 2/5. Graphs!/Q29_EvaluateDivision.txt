@@ -48,7 +48,6 @@ class Solution {
       Double m1 = mult.get(query.get(1));
       res[i] = m0 / m1;
 
-
       i++;
     }
 
@@ -65,7 +64,6 @@ class Solution {
     }
   }
 
-
   String find(String x){
     if(parent.get(x).equals(x)){
       return parent.get(x);
@@ -79,4 +77,5 @@ class Solution {
       return np;
     }
   }
+  
 }

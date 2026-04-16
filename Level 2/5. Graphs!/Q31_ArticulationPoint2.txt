@@ -35,8 +35,7 @@ public static int doctorStrange (int n, int k, int g[][]) {
 }
 
 static int time = 0;
-public static void dfs(ArrayList<Integer>[] graph, boolean[] aps, boolean[] vis, int[] dis, int[] low, int u, int p)
-{
+public static void dfs(ArrayList<Integer>[] graph, boolean[] aps, boolean[] vis, int[] dis, int[] low, int u, int p) {
   vis[u] = true;
   dis[u] = low[u] = ++time;
 
@@ -60,5 +59,5 @@ public static void dfs(ArrayList<Integer>[] graph, boolean[] aps, boolean[] vis,
   if(p == -1 && c > 1){
     aps[u] = true;
   }
-}
+
 }
