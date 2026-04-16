@@ -29,7 +29,7 @@ class Solution {
       dsu[i] = i;
     }
 
-    if(twopf == false){
+    if(twopf == false) {
       // edge creating the cycle is the answer
       int[] res = null;
 
@@ -47,7 +47,8 @@ class Solution {
       }
 
       return res;
-    } else {
+    }
+    else {
       // check for cycle
       boolean noCycleFlag = true;
       for(int i = 0; i < edges.length; i++){
@@ -85,5 +86,5 @@ class Solution {
       return dsu[x];
     }
   }
-
+  
 }

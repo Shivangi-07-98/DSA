@@ -1,8 +1,6 @@
 https://www.geeksforgeeks.org/minimum-swaps-to-make-two-array-identical/
 
 
-/*package whatever //do not write package name here */
-
 import java.io.*;
 import java.util.*;
 
@@ -37,4 +35,5 @@ class GFG {
 
     System.out.println(ans);
   }
+  
 }

@@ -41,6 +41,7 @@ class Solution {
 
     return sb.toString();
   }
+
   int[] parent;
   int[] rank;
 
@@ -63,4 +64,5 @@ class Solution {
       return parent[x];
     }
   }
+  
 }

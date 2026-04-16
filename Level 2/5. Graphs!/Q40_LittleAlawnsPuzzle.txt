@@ -3,13 +3,11 @@ import java.util.*;
 
 public class Main {
   public static void main(String[] args){
-
     Scanner scn = new Scanner(System.in);
     int t = scn.nextInt();
 
     while(t-- > 0){
       int n = scn.nextInt();
-
       int[] r1 = new int[n];
       int[] r2 = new int[n];
 
@@ -98,4 +96,5 @@ public class Main {
       }
     }
   }
+  
 }

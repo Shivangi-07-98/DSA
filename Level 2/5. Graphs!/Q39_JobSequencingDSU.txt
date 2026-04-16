@@ -5,9 +5,7 @@ class Solution {
   int[] parent;
 
   //Function to find the maximum profit and the number of jobs done.
-  int[] JobScheduling(Job arr[], int n)
-  {
-    // Your code here
+  int[] JobScheduling(Job arr[], int n) {
     Arrays.sort(arr, (a, b) -> {
       return b.profit - a.profit;
     });
@@ -27,7 +25,6 @@ class Solution {
         // Job j is done on empty day
         count++;
         profit += j.profit;
-
         parent[empty] = find(empty - 1);
       }
     }
@@ -41,16 +38,5 @@ class Solution {
     }
     return parent[x];
   }
-
+  
 }
-
-/*
-class Job {
-  int id, profit, deadline;
-  Job(int x, int y, int z){
-    this.id = x;
-    this.deadline = y;
-    this.profit = z;
-  }
-}
-*/

@@ -57,14 +57,12 @@ class Solution {
     } else {
       String pox = parent.get(x);
       String lead = find(pox);
-
       parent.put(x, lead);
-
       return lead;
     }
   }
 
-  void union(String x, String y){
+  void union(String x, String y) {
     if(rank.get(x) < rank.get(y)){
       parent.put(x, y);
     } else if(rank.get(y) < rank.get(x)){
@@ -74,4 +72,5 @@ class Solution {
       rank.put(x, rank.get(x) + 1);
     }
   }
+  
 }

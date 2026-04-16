@@ -3,9 +3,7 @@ https://practice.geeksforgeeks.org/problems/minimum-swaps/1
 
 class Solution {
   //Function to find the minimum number of swaps required to sort the array.
-  public int minSwaps(int nums[])
-  {
-    // Code here
+  public int minSwaps(int nums[]) {
     HashMap<Integer, Integer> posMap = new HashMap<>();
     for(int i = 0; i < nums.length; i++){
       posMap.put(nums[i], i);
@@ -28,7 +26,6 @@ class Solution {
         j = posMap.get(nums[j]);
         vis[j] = true;
         csize++;
-
       }  while(j != i);
 
       ans += (csize - 1);
@@ -36,4 +33,5 @@ class Solution {
 
     return ans;
   }
+  
 }
