@@ -25,7 +25,6 @@ class Main {
     }
 
     System.out.println(numDistinctIslands(arr));
-
   }
 
   public static StringBuilder psf = new StringBuilder();
@@ -71,4 +70,5 @@ class Main {
 
     psf.append("z");
   }
+  
 }

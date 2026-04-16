@@ -6,7 +6,6 @@ class Solution {
   int len = 0;
 
   public int numEnclaves(int[][] grid) {
-
     boolean[][] visited = new boolean[grid.length][grid[0].length];
     int count = 0;
 
