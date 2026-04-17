@@ -4,42 +4,49 @@ import java.io.*;
 import java.util.*;
 
 public class Q63_LineReflection {
-
-  public static void main(String[] args) {
-    Scanner scn = new Scanner(System.in);
-    int n = scn.nextInt();
-
-    int[][] points = new int[n][2];
-    for (int i = 0; i < n; i++) {
-      points[i][0] = scn.nextInt();
-      points[i][1] = scn.nextInt();
-    }
-
-    System.out.println(solution(points));
-  }
-
-  public static boolean solution(int[][] points) {
+  public static boolean isReflected(int[][] points) {
     HashSet<String> set = new HashSet<>();
 
-    int minX = Integer.MAX_VALUE;
-    int maxX = Integer.MIN_VALUE;
+    long xmin = points[0][0];
+    long xmax = points[0][0];
 
-    for (int[] p : points) {
-      minX = Math.min(minX, p[0]);
-      maxX = Math.max(maxX, p[0]);
-      set.add(p[0] + "#" + p[1]);
+    set.add(points[0][0] + "$" + points[0][1]);
+
+    for (int i = 1; i < points.length; i++) {
+      set.add(points[i][0] + "$" + points[i][1]);
+      xmin = Math.min(xmin, points[i][0]);
+      xmax = Math.max(xmax, points[i][0]);
     }
 
-    int sum = minX + maxX;
+    long twiceXmirr = xmin + xmax;
 
-    for (int[] p : points) {
-      int rx = sum - p[0];
-      String key = rx + "#" + p[1];
-      if (!set.contains(key))
+    for (int i = 0; i < points.length; i++) {
+      long x = points[i][0];
+      long y = points[i][1];
+
+      long ximg = twiceXmirr - x;
+      long yimg = y;
+
+      if (set.contains(ximg + "$" + yimg) == false) {
         return false;
+      }
     }
 
     return true;
+  }
+  
+  public static void main(String[] args) {
+    Scanner scn = new Scanner(System.in);
+    int n = scn.nextInt();
+    int[][] points = new int[n][2];
+
+    for (int i = 0; i < points.length; i++) {
+      for (int j = 0; j < points[0].length; j++) {
+        points[i][j] = scn.nextInt();
+      }
+    }
+
+    System.out.println(isReflected(points));
   }
 }
 
