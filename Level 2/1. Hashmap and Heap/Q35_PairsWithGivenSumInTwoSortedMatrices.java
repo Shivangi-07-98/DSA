@@ -7,19 +7,17 @@ public class Q35_PairsWithGivenSumInTwoSortedMatrices {
   public static void main(String[] args) {
     Scanner scn = new Scanner(System.in);
     int n = scn.nextInt();
-    int m = scn.nextInt();
 
-    int[][] mat1 = new int[n][m];
-    int[][] mat2 = new int[n][m];
-
+    int[][] mat1 = new int[n][n];
     for (int i = 0; i < n; i++) {
-      for (int j = 0; j < m; j++) {
+      for (int j = 0; j < n; j++) {
         mat1[i][j] = scn.nextInt();
       }
     }
-
+    
+    int[][] mat2 = new int[n][n];
     for (int i = 0; i < n; i++) {
-      for (int j = 0; j < m; j++) {
+      for (int j = 0; j < n; j++) {
         mat2[i][j] = scn.nextInt();
       }
     }
@@ -68,10 +66,10 @@ public class Q35_PairsWithGivenSumInTwoSortedMatrices {
         ans++;
         left++;
         right--;
-      } else if (sum < k) {
-        left++;
-      } else {
+      } else if (sum > k) {
         right--;
+      } else {
+        left++;
       }
     }
 
