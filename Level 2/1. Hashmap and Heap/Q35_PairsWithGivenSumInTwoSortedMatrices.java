@@ -2,7 +2,6 @@
 
 import java.io.*;
 import java.util.*;
-
 public class Q35_PairsWithGivenSumInTwoSortedMatrices {
 
   public static void main(String[] args) {
@@ -29,6 +28,7 @@ public class Q35_PairsWithGivenSumInTwoSortedMatrices {
     System.out.println(solution(mat1, mat2, k));
   }
 
+  // duplicate values
   public static int solution(int[][] mat1, int[][] mat2, int k) {
     HashMap<Integer, Integer> map = new HashMap<>();
 
@@ -47,6 +47,37 @@ public class Q35_PairsWithGivenSumInTwoSortedMatrices {
 
     return count;
   }
+
+  // unique values
+  public static int solve(int[][] num1, int[][] num2, int k) {
+    int size = num2.length * num2[0].length;
+    int left = 0;
+    int right = size - 1;
+    int ans = 0;
+
+    while (left < size && right >= 0) {
+      int r1 = left / num1[0].length;
+      int c1 = left % num1[0].length;
+
+      int r2 = right / num2[0].length;
+      int c2 = right % num2[0].length;
+
+      int sum = num1[r1][c1] + num2[r2][c2];
+
+      if (sum == k) {
+        ans++;
+        left++;
+        right--;
+      } else if (sum < k) {
+        left++;
+      } else {
+        right--;
+      }
+    }
+
+    return ans;
+  }
+  
 }
 
 /*
