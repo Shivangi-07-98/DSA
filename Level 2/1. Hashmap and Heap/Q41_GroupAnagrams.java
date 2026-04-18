@@ -86,11 +86,11 @@ public class Q41_GroupAnagrams {
 
 /*
  * Input:
- * 6
- * eat tea tan ate nat bat
+ * 5
+ * pepcoding codingpep pepper rapper repepp
  * 
  * Output:
- * [eat, tea, ate]
- * [tan, nat]
- * [bat]
+ * codingpep pepcoding
+ * pepper repepp
+ * rapper
  */
