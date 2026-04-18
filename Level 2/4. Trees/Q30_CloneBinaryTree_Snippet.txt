@@ -1,0 +1,16 @@
+https://practice.geeksforgeeks.org/problems/clone-a-binary-tree/1
+
+
+class Solution{
+  Node clone(Node node){
+    if(temp == null){
+      return null;
+    }
+    
+    Node temp = new Node(node.data);
+    temp.left = clone(node.left);
+    temp.right = clone(node.right);
+
+    return temp;
+  }
+}
