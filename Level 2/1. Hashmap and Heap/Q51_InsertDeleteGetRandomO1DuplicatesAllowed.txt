@@ -44,8 +44,15 @@ class RandomizedCollection {
     list.remove(lidx);
 
     map.get(val).remove(vidx);
+    if (map.get(val).size() == 0) {
+      map.remove(val);
+    }
+
+    if(map.containsKey(lval)) {
     map.get(lval).remove(lidx);
     map.get(lval).add(vidx);
+    }
+    
     return true;
   }
 
