@@ -1,6 +1,5 @@
 // Time Complexity: O(n), Space Complexity: O(k)
 
-import java.io.*;
 import java.util.*;
 
 public class Q46_CountAtmostKUniqueSubstrings {
@@ -11,33 +10,25 @@ public class Q46_CountAtmostKUniqueSubstrings {
     int k = scn.nextInt();
 
     System.out.println(solution(str, k));
+    scn.close();
   }
 
-  public static long solution(String str, int k) {
-    if (k <= 0)
-      return 0;
-
+  public static int solution(String str, int k) {
     HashMap<Character, Integer> map = new HashMap<>();
-    int i = 0;
-    int j = 0;
-    long ans = 0;
-
-    while (i < str.length()) {
+    int ans = 0;
+    for (int i = 0, j = 0; i < str.length(); i++) {
       char ch = str.charAt(i);
       map.put(ch, map.getOrDefault(ch, 0) + 1);
-
       while (map.size() > k) {
-        char left = str.charAt(j);
-        map.put(left, map.get(left) - 1);
-        if (map.get(left) == 0)
-          map.remove(left);
+        char chj = str.charAt(j);
+        map.put(chj, map.get(chj) - 1);
+        if (map.get(chj) == 0) {
+          map.remove(chj);
+        }
         j++;
       }
-
       ans += (i - j + 1);
-      i++;
     }
-
     return ans;
   }
 }

@@ -1,6 +1,5 @@
 // Time Complexity: O(n), Space Complexity: O(n)
 
-import java.io.*;
 import java.util.*;
 
 public class Q48_EquivalentSubarrays {
@@ -9,44 +8,31 @@ public class Q48_EquivalentSubarrays {
     Scanner scn = new Scanner(System.in);
     int n = scn.nextInt();
     int[] arr = new int[n];
+    HashSet<Integer> set = new HashSet<>();
     for (int i = 0; i < n; i++) {
       arr[i] = scn.nextInt();
+      set.add(arr[i]);
     }
-
-    System.out.println(solution(arr));
+    System.out.println(solution(arr, set.size()) - solution(arr, set.size() - 1));
+    scn.close();
   }
 
-  private static long atMostK(int[] arr, int k) {
-    HashMap<Integer, Integer> map = new HashMap<>();
-    int i = 0;
-    int j = 0;
-    long ans = 0;
-
-    while (i < arr.length) {
+  public static int solution(int[] arr, int K) {
+    int j = 0, res = 0;
+    Map<Integer, Integer> map = new HashMap<>();
+    for (int i = 0; i < arr.length; i++) {
+      if (map.getOrDefault(arr[i], 0) == 0)
+        K--;
       map.put(arr[i], map.getOrDefault(arr[i], 0) + 1);
-
-      while (map.size() > k) {
-        int val = arr[j];
-        map.put(val, map.get(val) - 1);
-        if (map.get(val) == 0)
-          map.remove(val);
+      while (K < 0) {
+        map.put(arr[j], map.get(arr[j]) - 1);
+        if (map.get(arr[j]) == 0)
+          K++;
         j++;
       }
-
-      ans += (i - j + 1);
-      i++;
+      res += i - j + 1;
     }
-
-    return ans;
-  }
-
-  public static long solution(int[] arr) {
-    HashSet<Integer> set = new HashSet<>();
-    for (int val : arr)
-      set.add(val);
-
-    int k = set.size();
-    return atMostK(arr, k) - atMostK(arr, k - 1);
+    return res;
   }
 }
 
