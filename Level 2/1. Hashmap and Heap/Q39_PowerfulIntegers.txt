@@ -1,0 +1,50 @@
+https://leetcode.com/problems/powerful-integers/
+Time Complexity: O(log(bound)^2), Space Complexity: O(log(bound)^2)
+
+
+class Solution {
+  public List<Integer> powerfulIntegers(int x, int y, int bound) {
+    HashSet<Integer> set = new HashSet<>();
+    ArrayList<Integer> list = new ArrayList<>();
+
+    if (bound <= 1) {
+      return list;
+    } else if (x == 1 && y == 1) {
+      list.add(2);
+      return list;
+    } else if (x == 1) {
+      for (int vy = 1; 1 + vy <= bound; vy *= y) {
+        int val = 1 + vy;
+        if (set.contains(val) == false) {
+          set.add(val);
+          list.add(val);
+        }
+        if (y == 1) break;
+      }
+      return list;
+    } else if (y == 1) {
+      for (int vx = 1; 1 + vx <= bound; vx *= x) {
+        int val = vx + 1;
+        if (set.contains(val) == false) {
+          set.add(val);
+          list.add(val);
+        }
+      }
+      return list;
+    }
+
+    for (int vx = 1; vx <= bound; vx *= x) {
+      for (int vy = 1; vx + vy <= bound; vy *= y) {
+        int val = vx + vy;
+        if (set.contains(val) == false) {
+          set.add(val);
+          list.add(val);
+        }
+        if (y == 1) break;
+      }
+      if (x == 1) break;
+    }
+
+    return list;
+  }
+}
