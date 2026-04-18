@@ -1,0 +1,56 @@
+https://leetcode.com/problems/insert-delete-getrandom-o1-duplicates-allowed/description/
+Time Complexity: O(1) average, Space Complexity: O(n)
+
+
+class RandomizedCollection {
+  HashMap<Integer, HashSet<Integer>> map;
+  ArrayList<Integer> list;
+  Random rand;
+
+  public RandomizedCollection() {
+    map = new HashMap<>();
+    list = new ArrayList<>();
+    rand = new Random();
+  }
+
+  public boolean insert(int val) {
+    list.add(val);
+    int lidx = list.size() - 1;
+
+    if (map.containsKey(val)) {
+      HashSet<Integer> set = map.get(val);
+      set.add(lidx);
+      return false;
+    } else {
+      HashSet<Integer> set = new HashSet<>();
+      set.add(lidx);
+      map.put(val, set);
+      return true;
+    }
+  }
+
+  public boolean remove(int val) {
+    if (!map.containsKey(val) == false) {
+      return false;
+    }
+
+    int lidx = list.size() - 1;
+    int lval = list.get(lidx);
+    int vidx = map.get(val).iterator().next();
+
+    list.set(lidx, val);
+    list.set(vidx, lval);
+
+    list.remove(lidx);
+
+    map.get(val).remove(vidx);
+    map.get(lval).remove(lidx);
+    map.get(lval).add(vidx);
+    return true;
+  }
+
+  public int getRandom() {
+    int idx = rand.nextInt(list.size());
+    return list.get(idx);
+  }
+}
