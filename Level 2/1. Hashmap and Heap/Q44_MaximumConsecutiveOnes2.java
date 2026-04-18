@@ -1,6 +1,5 @@
 // Time Complexity: O(n), Space Complexity: O(1)
 
-import java.io.*;
 import java.util.*;
 
 public class Q44_MaximumConsecutiveOnes2 {
@@ -15,29 +14,47 @@ public class Q44_MaximumConsecutiveOnes2 {
     int k = scn.nextInt();
 
     System.out.println(solution(arr, k));
+    scn.close();
   }
 
   public static int solution(int[] arr, int k) {
+    int len = 0;
+
     int i = 0;
-    int j = 0;
-    int zeros = 0;
-    int ans = 0;
+    int j = -1;
+    int zc = 0;
 
-    while (i < arr.length) {
-      if (arr[i] == 0)
-        zeros++;
+    while (i < arr.length && j < i) {
+      while (i < arr.length) {
+        if (arr[i] == 1) {
+          // nothing to do
+        } else if (arr[i] == 0) {
+          zc++;
+        }
 
-      while (zeros > k) {
-        if (arr[j] == 0)
-          zeros--;
-        j++;
+        if (zc <= k) {
+          int tlen = i - j;
+          len = Math.max(len, tlen);
+          i++;
+        } else {
+          i++;
+          break;
+        }
       }
 
-      ans = Math.max(ans, i - j + 1);
-      i++;
+      while (j < i) {
+        j++;
+        if (arr[j] == 0) {
+          zc--;
+        }
+
+        if (zc <= k) {
+          break;
+        }
+      }
     }
 
-    return ans;
+    return len;
   }
 }
 
