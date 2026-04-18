@@ -1,6 +1,5 @@
 // Time Complexity: O(n), Space Complexity: O(k)
 
-import java.io.*;
 import java.util.*;
 
 public class Q45_LongestAtmostKUniqueSubstring {
@@ -9,33 +8,28 @@ public class Q45_LongestAtmostKUniqueSubstring {
     Scanner scn = new Scanner(System.in);
     String str = scn.next();
     int k = scn.nextInt();
-
     System.out.println(solution(str, k));
+    scn.close();
   }
 
   public static int solution(String str, int k) {
-    if (k == 0)
-      return 0;
-
     HashMap<Character, Integer> map = new HashMap<>();
-    int i = 0;
-    int j = 0;
     int ans = 0;
 
-    while (i < str.length()) {
+    for (int i = 0, j = 0; i < str.length(); i++) {
       char ch = str.charAt(i);
       map.put(ch, map.getOrDefault(ch, 0) + 1);
 
       while (map.size() > k) {
-        char left = str.charAt(j);
-        map.put(left, map.get(left) - 1);
-        if (map.get(left) == 0)
-          map.remove(left);
+        char chj = str.charAt(j);
+        map.put(chj, map.get(chj) - 1);
+        if (map.get(chj) == 0) {
+          map.remove(chj);
+        }
         j++;
       }
 
       ans = Math.max(ans, i - j + 1);
-      i++;
     }
 
     return ans;
