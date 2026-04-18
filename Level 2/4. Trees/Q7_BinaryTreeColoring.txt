@@ -1,5 +1,6 @@
 https://leetcode.com/problems/binary-tree-coloring-game/description/
 
+
 O(n)
 
 class Solution {
