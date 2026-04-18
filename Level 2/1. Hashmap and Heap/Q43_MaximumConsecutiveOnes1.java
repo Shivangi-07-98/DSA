@@ -1,10 +1,8 @@
 // Time Complexity: O(n), Space Complexity: O(1)
 
-import java.io.*;
 import java.util.*;
 
 public class Q43_MaximumConsecutiveOnes1 {
-
   public static void main(String[] args) {
     Scanner scn = new Scanner(System.in);
     int n = scn.nextInt();
@@ -14,29 +12,47 @@ public class Q43_MaximumConsecutiveOnes1 {
     }
 
     System.out.println(solution(arr));
+    scn.close();
   }
 
   public static int solution(int[] arr) {
+    int len = 0;
+
     int i = 0;
-    int j = 0;
-    int zeros = 0;
-    int ans = 0;
+    int j = -1;
+    int zc = 0;
 
-    while (i < arr.length) {
-      if (arr[i] == 0)
-        zeros++;
+    while (i < arr.length && j < i) {
+      while (i < arr.length) {
+        if (arr[i] == 1) {
+          // nothing to do
+        } else if (arr[i] == 0) {
+          zc++;
+        }
 
-      while (zeros > 1) {
-        if (arr[j] == 0)
-          zeros--;
-        j++;
+        if (zc <= 1) {
+          int tlen = i - j;
+          len = Math.max(len, tlen);
+          i++;
+        } else {
+          i++;
+          break;
+        }
       }
 
-      ans = Math.max(ans, i - j + 1);
-      i++;
+      while (j < i) {
+        j++;
+        if (arr[j] == 0) {
+          zc--;
+        }
+
+        if (zc <= 1) {
+          break;
+        }
+      }
     }
 
-    return ans;
+    return len;
   }
 }
 
