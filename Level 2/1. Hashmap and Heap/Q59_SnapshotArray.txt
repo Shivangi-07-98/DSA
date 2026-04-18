@@ -1,0 +1,34 @@
+https://leetcode.com/problems/snapshot-array/description/
+Time Complexity: set O(1), snap O(1), get O(log n), Space Complexity: O(total updates)
+
+
+class SnapshotArray {
+  HashMap<Integer, Integer>[] maps;
+  int currentSnapId = 0;
+
+  public SnapshotArray(int length) {
+    maps = new HashMap[length];
+    for (int i = 0; i < maps.length; i++) {
+      maps[i] = new HashMap<>();
+    }
+  }
+
+  public void set(int index, int val) {
+    maps[index].put(currentSnapId, val);
+  }
+
+  public int snap() {
+    currentSnapId++;
+    return currentSnapId - 1;
+  }
+
+  public int get(int index, int snap_id) {
+    for (int sidx = snap_id; sidx >= 0; sidx--) {
+      if (maps[index].containsKey(sidx)) {
+        return maps[index].get(sidx);
+      }
+    }
+    return 0;
+  }
+  
+}
