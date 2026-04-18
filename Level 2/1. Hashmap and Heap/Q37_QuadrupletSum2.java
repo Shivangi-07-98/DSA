@@ -23,27 +23,32 @@ public class Q37_QuadrupletSum2 {
     for (int i = 0; i < n; i++)
       d[i] = scn.nextInt();
 
-    System.out.println(solution(a, b, c, d));
+    System.out.println(fourSumCount(a, b, c, d));
+    scn.close();
   }
 
-  public static int solution(int[] a, int[] b, int[] c, int[] d) {
-    HashMap<Integer, Integer> map = new HashMap<>();
+  public static int fourSumCount(int[] A, int[] B, int[] C, int[] D) {
+    int n = A.length;
+    if (n == 0)
+      return 0;
 
-    for (int x : a) {
-      for (int y : b) {
-        int sum = x + y;
-        map.put(sum, map.getOrDefault(sum, 0) + 1);
+    int res = 0;
+
+    HashMap<Integer, Integer> map = new HashMap<Integer, Integer>();
+
+    for (int i = 0; i < n; i++) {
+      for (int j = 0; j < n; j++) {
+        map.put(A[i] + B[j], map.getOrDefault(A[i] + B[j], 0) + 1);
       }
     }
 
-    int ans = 0;
-    for (int x : c) {
-      for (int y : d) {
-        ans += map.getOrDefault(-(x + y), 0);
+    for (int i = 0; i < n; i++) {
+      for (int j = 0; j < n; j++) {
+        res += map.getOrDefault(-1 * (C[i] + D[j]), 0);
       }
     }
 
-    return ans;
+    return res;
   }
 }
 

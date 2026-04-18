@@ -29,7 +29,7 @@
 32. first non repeating character
 33. lru cache
 34. task completion
-35. pairs with given sum in two sorted matrices - 24 mar 2022----start from here
+35. pairs with given sum in two sorted matrices - 24 mar 2022----
 36. quadruplet sum1
 37. quadruplet sum2
 38. largest subarray with contiguous elements
