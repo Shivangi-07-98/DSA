@@ -1,6 +1,5 @@
 // https://leetcode.com/problems/binary-tree-level-order-traversal/
 
-
 import java.io.*;
 import java.util.*;
 
@@ -174,7 +173,7 @@ public class Q1_LevelOrder {
         queue.add(rightPair);
       }
     }
-    
+
   }
 
   public static void main(String[] args) throws Exception {
