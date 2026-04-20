@@ -67,19 +67,27 @@ public class Q2_ReverseLevelOrder {
     return root;
   }
 
+  // leftNode parentNode rightNode
+  // 25 50 75
+  // 12 25 37
+  // 12
+  // 30 37
+  // 30
+  // 62 75 87
+  // 62 70
+  // 70
+  // 87
   public static void display(Node node) {
     if (node == null) {
       return;
     }
+    String str = " <- " + node.data + " -> ";
+    String lcstr = node.left == null ? ".." : "" + node.left.data;
+    String rcstr = node.right == null ? ".." : "" + node.right.data;
+    System.out.println(lcstr + str + rcstr);
 
-    String str = "";
-    str += node.left == null ? "." : node.left.data + "";
-    str += " <- " + node.data + " -> ";
-    str += node.right == null ? "." : node.right.data + "";
-    System.out.println(str);
-
-    display(node.left);
-    display(node.right);
+    display(node.left); // will print the entire left tree
+    display(node.right); // will print the entire right tree
   }
 
   public static void levelOrderLW(Node node) {
