@@ -1,6 +1,5 @@
 // https://leetcode.com/problems/binary-tree-right-side-view/
 
-
 import java.io.*;
 import java.util.*;
 
@@ -72,15 +71,13 @@ public class Q3_LeftRightTopBottomView {
     if (node == null) {
       return;
     }
+    String str = " <- " + node.data + " -> ";
+    String lcstr = node.left == null ? ".." : "" + node.left.data;
+    String rcstr = node.right == null ? ".." : "" + node.right.data;
+    System.out.println(lcstr + str + rcstr);
 
-    String str = "";
-    str += node.left == null ? "." : node.left.data + "";
-    str += " <- " + node.data + " -> ";
-    str += node.right == null ? "." : node.right.data + "";
-    System.out.println(str);
-
-    display(node.left);
-    display(node.right);
+    display(node.left); // will print the entire left tree
+    display(node.right); // will print the entire right tree
   }
 
   public static void levelOrderLW(Node node) {
@@ -112,6 +109,7 @@ public class Q3_LeftRightTopBottomView {
 
   }
 
+  // https://www.geeksforgeeks.org/print-left-view-binary-tree/
   public static ArrayList<Integer> leftView(Node root) {
     ArrayList<Integer> retVal = new ArrayList<>();
     if (root == null) {
@@ -141,6 +139,7 @@ public class Q3_LeftRightTopBottomView {
     return retVal;
   }
 
+  // https://leetcode.com/problems/binary-tree-right-side-view/
   public static ArrayList<Integer> rightView(Node root) {
     ArrayList<Integer> retVal = new ArrayList<>();
     if (root == null) {
@@ -180,6 +179,7 @@ public class Q3_LeftRightTopBottomView {
     }
   }
 
+  // https://www.geeksforgeeks.org/top-view-of-a-binary-tree/
   public static ArrayList<Integer> topView(Node root) {
     ArrayList<Integer> retVal = new ArrayList<>();
     if (root == null) {
@@ -224,6 +224,7 @@ public class Q3_LeftRightTopBottomView {
     return retVal;
   }
 
+  // https://www.geeksforgeeks.org/bottom-view-binary-tree/
   public static ArrayList<Integer> bottomView(Node root) {
     ArrayList<Integer> retVal = new ArrayList<>();
     if (root == null) {
@@ -239,7 +240,7 @@ public class Q3_LeftRightTopBottomView {
 
     while (queue.size() > 0) {
       VPair rem = queue.remove();
-      
+
       map.put(rem.hd, rem.node.data);
 
       if (rem.hd < leftMin) {
@@ -281,7 +282,7 @@ public class Q3_LeftRightTopBottomView {
 
     Node root = construct(arr);
     // levelOrderLW(root);
-    
+
     // ArrayList<Integer> left = leftView(root);
     // System.out.println(left);
 
