@@ -91,7 +91,7 @@ public class Q1_LevelOrder {
   }
 
   public static void levelOrder(Node node) {
-    ArrayDeque<Node> queue = new ArrayDeque<>(); // null allow nhi krta
+    ArrayDeque<Node> queue = new ArrayDeque<>(); // ArrayDeque null allow nhi krta
     queue.add(node);
 
     while (queue.size() > 0) {
@@ -110,7 +110,7 @@ public class Q1_LevelOrder {
   }
 
   public static void levelOrderLW(Node node) {
-    Queue<Node> queue = new LinkedList<>(); // null allow krta hai
+    Queue<Node> queue = new LinkedList<>(); // LinkedList null allow krta hai
     queue.add(node);
     queue.add(null);
 
@@ -135,7 +135,7 @@ public class Q1_LevelOrder {
         }
       }
     }
-
+    
   }
 
   static class LOPair {
