@@ -135,44 +135,6 @@ public class Q1_LevelOrder {
         }
       }
     }
-    
-  }
-
-  static class LOPair {
-    Node node;
-    int vl; // vertical level
-
-    LOPair(Node node, int vl) {
-      this.node = node;
-      this.vl = vl;
-    }
-  }
-
-  public static void levelOrderLWPair(Node node) {
-    Queue<LOPair> queue = new LinkedList<>();
-    queue.add(new LOPair(node, 1));
-    int cl = 1; // current level
-
-    while (queue.size() > 0) {
-      LOPair pair = queue.remove();
-
-      if (pair.vl > cl) {
-        System.out.println();
-        cl = pair.vl;
-      }
-
-      System.out.print(pair.node.data + " ");
-
-      if (pair.node.left != null) {
-        LOPair leftPair = new LOPair(pair.node.left, pair.vl + 1);
-        queue.add(leftPair);
-      }
-
-      if (pair.node.right != null) {
-        LOPair rightPair = new LOPair(pair.node.right, pair.vl + 1);
-        queue.add(rightPair);
-      }
-    }
 
   }
 
