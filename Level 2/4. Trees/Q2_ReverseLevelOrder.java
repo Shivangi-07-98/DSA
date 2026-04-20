@@ -1,5 +1,3 @@
-// https://leetcode.com/problems/binary-tree-level-order-traversal-ii/
-
 import java.io.*;
 import java.util.*;
 
@@ -181,6 +179,41 @@ public class Q2_ReverseLevelOrder {
     return ret;
   }
 
+  // https://leetcode.com/problems/binary-tree-level-order-traversal-ii/
+  public static List<List<Integer>> levelOrderBottom(Node root) {
+    List<List<Integer>> result = new ArrayList<>();
+    if (root == null) {
+      return result;
+    }
+
+    Queue<Node> queue = new LinkedList<>();
+    queue.add(root);
+
+    while (queue.size() > 0) {
+      int size = queue.size();
+
+      ArrayList<Integer> level = new ArrayList<>();
+
+      for (int i = 0; i < size; i++) {
+        Node temp = queue.remove();
+        level.add(temp.data);
+
+        if (temp.left != null) {
+          queue.add(temp.left);
+        }
+
+        if (temp.right != null) {
+          queue.add(temp.right);
+        }
+      }
+
+      result.add(level);
+    }
+
+    Collections.reverse(result);
+    return result;
+  }
+
   public static void main(String[] args) throws Exception {
     BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
     int n = Integer.parseInt(br.readLine());
@@ -196,9 +229,19 @@ public class Q2_ReverseLevelOrder {
 
     Node root = construct(arr);
     // levelOrderLW(root);
-    reverseLevelOrder1(root);
+    // reverseLevelOrder1(root);
+
     // ArrayList<Integer> ans = reverseLevelOrder2(root);
     // System.out.println(ans);
+
+    List<List<Integer>> ans = levelOrderBottom(root);
+    for (List<Integer> level : ans) {
+      for (int val : level) {
+        System.out.print(val + " ");
+      }
+      System.out.println();
+    }
+    
   }
 
 }
