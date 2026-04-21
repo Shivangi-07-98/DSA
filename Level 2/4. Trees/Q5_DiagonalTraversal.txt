@@ -1,8 +1,9 @@
 https://www.geeksforgeeks.org/dsa/diagonal-traversal-of-binary-tree/
-
-code is done using recursion
 Time Complexity: O(n)
 Space Complexity: O(n)  (hashmap + output) + O(h) recursion stack
+
+code is done using recursion because left tree wale saare right tree wale se pehle the
+cross mai se left side wali (diagonal) ArrayList mai bhar ke deni hai
 
 class Tree {
   static int md = 0;
@@ -42,6 +43,7 @@ class Tree {
 
     return total;
   }
+  
 }
 
 -----------------------------------------------------------------------------
