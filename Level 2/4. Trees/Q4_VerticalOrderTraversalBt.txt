@@ -16,7 +16,7 @@ class Solution {
 
     // this - other, means increasing order
     // other - this, means decreasing order
-    public int compareTo(Pair other) { // agar priority queue use kia hota toh use hota
+    public int compareTo(Pair other) {
       if (this.d == other.d) {
         return this.node.val - other.node.val;
       } else {
@@ -45,7 +45,7 @@ class Solution {
       }
 
       if (map.containsKey(temp.w) == false) {
-        map.put(temp.w, new ArrayList<>()); // compareTo priority queue ke liye tha
+        map.put(temp.w, new ArrayList<>());
         map.get(temp.w).add(temp);
       } else {
         map.get(temp.w).add(temp);
