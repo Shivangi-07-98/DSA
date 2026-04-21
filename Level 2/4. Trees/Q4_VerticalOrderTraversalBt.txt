@@ -8,19 +8,19 @@ class Solution {
     int w;
     int d;
 
-    Pair(TreeNode node, int w, int d) {
+    Pair(TreeNode node, int w, int d) { // constructor
       this.node = node;
       this.w = w;
       this.d = d;
     }
 
-    // this - other, means increasing
-    // other - this, means decreasing
-    public int compareTo(Pair other) {
+    // this - other, means increasing order
+    // other - this, means decreasing order
+    public int compareTo(Pair other) { // agar priority queue use kia hota toh use hota
       if (this.d == other.d) {
         return this.node.val - other.node.val;
       } else {
-        return this.d - other.d;
+        return this.d - other.d; // chhota vertical pehle aayega aur bada vertical baad mai
       }
     }
   }
@@ -45,7 +45,7 @@ class Solution {
       }
 
       if (map.containsKey(temp.w) == false) {
-        map.put(temp.w, new ArrayList<>());
+        map.put(temp.w, new ArrayList<>()); // compareTo priority queue ke liye tha
         map.get(temp.w).add(temp);
       } else {
         map.get(temp.w).add(temp);
@@ -75,4 +75,5 @@ class Solution {
 
     return res;
   }
+
 }
