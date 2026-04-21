@@ -48,6 +48,15 @@ class Tree {
 
 continue in a for loop means: current iteration ko yahin stop karo, loop ka next iteration start karo
 
+the bug:
+md came from previous test case (because static).
+Previous md was bigger, say 4.
+New tree max diagonal is only 2.
+Condition if (diag > md) never becomes true for diag = 0,1,2, so md stays 4 (wrong for current tree).
+Then loop runs d = 0..4; keys 3,4 missing in current map; map.get(d) becomes null.
+map.get(d) tab null deta hai jab key d map me exist nahi karti.
+That’s why resetting md = 0 at start of each diagonal() is required.
+
 -----------------------------------------------------------------------------
 
 best approach (iterative, no static, no hashmap null issue)
