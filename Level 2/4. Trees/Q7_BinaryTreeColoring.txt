@@ -1,7 +1,8 @@
 https://leetcode.com/problems/binary-tree-coloring-game/description/
 
 
-O(n)
+Time Complexity: O(n)
+Space Complexity: O(h) recursion stack, where h = height
 
 class Solution {
 

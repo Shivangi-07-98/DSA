@@ -1,8 +1,8 @@
-https://www.geeksforgeeks.org/problems/diagonal-traversal-of-binary-tree/1
-
+https://www.geeksforgeeks.org/dsa/diagonal-traversal-of-binary-tree/
 
 code is done using recursion
-O(n)
+Time Complexity: O(n)
+Space Complexity: O(n)  (hashmap + output) + O(h) recursion stack
 
 class Tree {
   static int md = 0;
@@ -47,6 +47,8 @@ class Tree {
 -----------------------------------------------------------------------------
 
 best approach (iterative, no static, no hashmap null issue)
+Time Complexity: O(n)
+Space Complexity: O(n)  (queue + output)
 
 class Tree {
   public ArrayList<Integer> diagonal(Node root) {

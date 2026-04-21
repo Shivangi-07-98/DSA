@@ -1,7 +1,8 @@
 https://www.geeksforgeeks.org/problems/boundary-traversal-of-binary-tree/1
 
 
-O(n)
+Time Complexity: O(n)
+Space Complexity: O(n)  (output list) + O(h) recursion stack
 
 class Solution {
   void leftWall(Node node, ArrayList<Integer> list) {
@@ -68,6 +69,9 @@ class Solution {
 }
 
 --------------------------------------------------------------------------
+
+Time Complexity: O(n)
+Space Complexity: O(n)  (output list) + O(h) recursion stack
 
 class Solution {
   void leftWall(Node node, ArrayList<Integer> list) {

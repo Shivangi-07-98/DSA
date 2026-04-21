@@ -108,6 +108,8 @@ public class Q3_LeftRightTopBottomView {
   }
 
   // https://www.geeksforgeeks.org/print-left-view-binary-tree/
+  // Time Complexity: O(n)
+  // Space Complexity: O(n)  (queue + output)
   public static ArrayList<Integer> leftView(Node root) {
     ArrayList<Integer> retVal = new ArrayList<>();
     if (root == null) {
@@ -138,6 +140,8 @@ public class Q3_LeftRightTopBottomView {
   }
 
   // https://leetcode.com/problems/binary-tree-right-side-view/
+  // Time Complexity: O(n)
+  // Space Complexity: O(n)  (queue + output)
   public static ArrayList<Integer> rightView(Node root) {
     ArrayList<Integer> retVal = new ArrayList<>();
     if (root == null) {
@@ -178,6 +182,8 @@ public class Q3_LeftRightTopBottomView {
   }
 
   // https://www.geeksforgeeks.org/top-view-of-a-binary-tree/
+  // Time Complexity: O(n)
+  // Space Complexity: O(n)  (queue + hashmap + output)
   public static ArrayList<Integer> topView(Node root) {
     ArrayList<Integer> retVal = new ArrayList<>();
     if (root == null) {
@@ -223,6 +229,8 @@ public class Q3_LeftRightTopBottomView {
   }
 
   // https://www.geeksforgeeks.org/bottom-view-binary-tree/
+  // Time Complexity: O(n)
+  // Space Complexity: O(n)  (queue + hashmap + output)
   public static ArrayList<Integer> bottomView(Node root) {
     ArrayList<Integer> retVal = new ArrayList<>();
     if (root == null) {

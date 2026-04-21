@@ -1,5 +1,6 @@
 https://leetcode.com/problems/vertical-order-traversal-of-a-binary-tree/description/
-nlog(n)
+Time Complexity: O(n log n)  (sorting nodes inside each vertical)
+Space Complexity: O(n)  (hashmap + queue + output)
 
 
 class Solution {

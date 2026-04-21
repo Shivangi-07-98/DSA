@@ -1,0 +1,6 @@
+TreeMap:
+- TreeMap is also a Map (key -> value), like HashMap.
+- Main difference: TreeMap keeps keys ALWAYS sorted (HashMap keys sorted nahi hote).
+- Time: TreeMap put/get/remove/containsKey => O(log n), HashMap (average) => O(1).
+- Use TreeMap when you need sorted keys or closest key operations: firstKey/lastKey/floorKey/ceilingKey.
+

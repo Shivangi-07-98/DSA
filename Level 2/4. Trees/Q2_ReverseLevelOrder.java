@@ -180,6 +180,8 @@ public class Q2_ReverseLevelOrder {
   }
 
   // https://leetcode.com/problems/binary-tree-level-order-traversal-ii/
+  // Time Complexity: O(n)
+  // Space Complexity: O(n)  (queue + result)
   public static List<List<Integer>> levelOrderBottom(Node root) {
     List<List<Integer>> result = new ArrayList<>();
     if (root == null) {
