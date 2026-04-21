@@ -46,6 +46,8 @@ class Tree {
   
 }
 
+continue in a for loop means: current iteration ko yahin stop karo, loop ka next iteration start karo
+
 -----------------------------------------------------------------------------
 
 best approach (iterative, no static, no hashmap null issue)
