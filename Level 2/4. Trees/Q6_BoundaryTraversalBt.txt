@@ -64,7 +64,11 @@ class Solution {
 
     return list;
   }
+
 }
+
+leaves ki call 2 baar issiliye agar single node hai tbh
+1 ke liye 1 1 nhi sirf 1 aana chaiye
 
 --------------------------------------------------------------------------
 
