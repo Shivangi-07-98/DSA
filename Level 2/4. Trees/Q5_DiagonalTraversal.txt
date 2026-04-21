@@ -27,6 +27,9 @@ class Tree {
   }
 
   public ArrayList<Integer> diagonal(Node root) {
+    // Reset for every test case because md is static (shared across calls).
+    md = 0;
+
     HashMap<Integer, ArrayList<Integer>> map = new HashMap<>();
     traversal(root, 0, map);
 
