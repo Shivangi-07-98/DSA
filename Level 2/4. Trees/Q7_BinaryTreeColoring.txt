@@ -31,10 +31,10 @@ class Solution {
     size(root, x);
 
     int theOtherSide = n - (xkaleft + xkaright + 1);
-    int maxOfThree = Math.max(theOtherSide, Math.max(xkaleft, xkaright));
+    int maxOfThree = Math.max(theOtherSide, Math.max(xkaleft, xkaright)); // player2 nodes
 
-    int rest = n - maxOfThree;
-    if (maxOfThree > rest) {
+    int rest = n - maxOfThree; // player1 nodes
+    if (maxOfThree > rest) { // player2 nodes > player1 nodes
       return true;
     } else {
       return false;
