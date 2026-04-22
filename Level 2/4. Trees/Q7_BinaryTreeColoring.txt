@@ -2,6 +2,9 @@ https://leetcode.com/problems/binary-tree-coloring-game/description/
 Time Complexity: O(n)
 Space Complexity: O(h) recursion stack, where h = height
 
+player 1 and player 2 hai, jisne jyada nodes select kiye wo winner
+har player apne adjacent node hi select kar skta hai (mtlb jo nodes uss node se touch hai)
+ques - jaise hi player 1 ek node select krta hai toh hme btana kya player 2 jeet skta h ya nhi??
 
 class Solution {
   int xkaleft;
