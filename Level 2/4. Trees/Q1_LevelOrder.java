@@ -130,10 +130,11 @@ public class Q1_LevelOrder {
           queue.add(temp.right);
         }
       } else {
-        System.out.println();
+        // System.out.println(); // ye last element ke liye bhi enter lgata hai, so its best
 
         if (queue.size() > 0) {
-          queue.add(null);
+          System.out.println();
+          queue.add(null); // LinkedList null allow krta hai
         }
       }
     }
