@@ -233,16 +233,11 @@ public class Q2_ReverseLevelOrder {
     // levelOrderLW(root);
     // reverseLevelOrder1(root);
 
-    // ArrayList<Integer> ans = reverseLevelOrder2(root);
-    // System.out.println(ans);
+    ArrayList<Integer> ans1 = reverseLevelOrder2(root);
+    System.out.println(ans1);
 
-    List<List<Integer>> ans = levelOrderBottom(root);
-    for (List<Integer> level : ans) {
-      for (int val : level) {
-        System.out.print(val + " ");
-      }
-      System.out.println();
-    }
+    List<List<Integer>> ans2 = levelOrderBottom(root);
+    System.out.println(ans2);
 
   }
 
