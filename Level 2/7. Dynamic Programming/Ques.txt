@@ -16,7 +16,7 @@ imp 12. longest increasing subsequence nlog(n)
 16. paint house
 17. paint house many colors
 18. highway billboard
-19. total number of possible binary search trees with n keys/count bst
+imp 19. total number of possible binary search trees with n keys/count bst
 imp 20. catalan - 27 aug 2022----
 imp 21. unique binary search trees
 imp 22. count brackets
@@ -46,15 +46,16 @@ imp 45. burst balloons - 7 sept 2022----
 imp 46. minimum score triangulation of polygon
 vimp 47. longest common substring - 9 sept 2022----
 vimp 48. palindromic substrings
-49. longest palindromic substring
+imp 49. longest palindromic substring
 50. count palindromic subsequence given string ×
 51. count different palindromic subsequences ×
-52. palindrome partitioning 2 - 11 sept 2022----
-53. longest palindromic subsequence
-54. longest common subsequence
+imp 52. palindrome partitioning 2 - 11 sept 2022----
+imp 53. longest palindromic subsequence
+imp 54. longest common subsequence
 55. palindrome partitioning
 56. count a+b+c+ subsequences ×
 57. longest common subsequence 3 strings ×
+
 58. ugly number - 12 sept 2022----
 59. ugly number 2
 60. super ugly number ×
@@ -62,7 +63,7 @@ vimp 48. palindromic substrings
 vimp 62. distinct subsequences
 63. probability of knight to remain in the chessboard - 14 sept 2022----
 64. longest repeating subsequence
-vimp 65. wildcard pattern matching
+imp 65. wildcard pattern matching
 66. frog jump
 vimp 67. edit distance
 68. largest sum subarray of size at least k × - 16 sept 2022----
@@ -76,10 +77,10 @@ vimp 73. word break problem - 20 sept 2022----
 76. number of digit one × - 26 sept 2022----
 77. ones and zeroes
 78. minimum cost to cut a stick
-vimp 79. super egg drop
+imp 79. super egg drop
 80. optimal strategy for a game dp
 81. dungeon game - 28 sept 2022----
 82. cherry pickup 2
 83. cherry pickup
 84. scramble string
-vimp 85. super egg drop binary search - 3 oct 2022----
+imp 85. super egg drop binary search - 3 oct 2022----
