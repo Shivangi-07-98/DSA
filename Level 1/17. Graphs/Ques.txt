@@ -1,19 +1,19 @@
-vimp 1. has path?
-vimp 2. print all paths - using edges adjacency list
+1. has path?
+2. print all paths - using edges adjacency list
 3. multisolver - smallest, longest, ceil, floor, kth largest path ×
-vimp 4. get connected components of a graph
-vimp 5. is graph connected
+4. get connected components of a graph
+5. is graph connected
 6. perfect friends
 7. number of islands - using edges adjacency list
-vimp 8. breadth first traversal
+8. breadth first traversal
 9. spread of infection - using edges adjacency list
-vimp 10. is graph cyclic
-vimp 11. is graph bipartite
-vimp 12. shortest path in weights - Dijkstra's algorithm
+10. is graph cyclic
+11. is graph bipartite
+12. shortest path in weights - Dijkstra's algorithm
 13. hamiltonian path and cycle ×
 14. knights tour ×
-vimp 15. iterative depth first traversal
-imp 16. minimum wire required to connect all pcs - Prim's algorithm
+15. iterative depth first traversal
+16. minimum wire required to connect all pcs - Prim's algorithm
 17. order of compilation ×
 18. print all paths - using edges adjacency matrix ×
 19. spread of infection - using edges adjacency matrix ×
