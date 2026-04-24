@@ -9,7 +9,7 @@
 9. morris pre order traversal
 10. recover bst
 11. in order successor
-12. 
+12. iterative pre post inorder traversals - 23 may 2022----
 
 kth ancestor of a tree node × - 6 oct 2022----
 longest even sum path - 8 oct 2022----
