@@ -16,11 +16,9 @@ class Solution {
             if (n1 == null) {
               n1 = prev;
             }
-
             n2 = curr;
           }
         }
-
         prev = curr;
         curr = curr.right;
       } else {
@@ -38,11 +36,9 @@ class Solution {
               if (n1 == null) {
                 n1 = prev;
               }
-
               n2 = curr;
             }
           }
-
           prev = curr;
           iop.right = null;
           curr = curr.right;
