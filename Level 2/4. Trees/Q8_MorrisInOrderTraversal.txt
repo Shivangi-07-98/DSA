@@ -1,10 +1,8 @@
 https://leetcode.com/problems/binary-tree-inorder-traversal/description/
 
-recursion - time O(n), space height
+recursion - time O(n), space height (max stack mai ht ke barabar hi bnde ho skte hai)
 
-morris - iteration, does not take space
-time O(n), space O(1)
-
+morris - time O(n), space O(1) iteration, does not take space
 
 class Solution {
   public List<Integer> inorderTraversal(TreeNode root) {
@@ -12,6 +10,7 @@ class Solution {
 
     TreeNode curr = root;
 
+    // ekdum end mai left right null hota hai, mtlb nodes khatam hogye, toh iteration stop krne ke liye
     while (curr != null) {
       if (curr.left == null) {
         retVal.add(curr.val);
