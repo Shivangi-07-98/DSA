@@ -1,10 +1,10 @@
 https://leetcode.com/problems/binary-tree-inorder-traversal/description/
 
-
 recursion - time O(n), space height
 
 morris - iteration, does not take space
 time O(n), space O(1)
+
 
 class Solution {
   public List<Integer> inorderTraversal(TreeNode root) {
@@ -36,3 +36,23 @@ class Solution {
     return retVal;
   }
 }
+
+
+Morris Traversal (Inorder) - Node
+
+Case 1: node.left == null
+print node
+go to right
+
+Case 2: node.left != null
+left not processed (left ka rightmost)
+iop.right == null
+iop.right = node (return path)
+go to left
+
+Case 3: node.left != null
+left is processed (left ka rightmost)
+iop.right == node
+iop.right = null
+print node
+go to right
