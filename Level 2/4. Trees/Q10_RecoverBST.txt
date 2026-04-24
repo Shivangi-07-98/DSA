@@ -51,3 +51,9 @@ class Solution {
     n2.val = temp;
   }
 }
+
+agar bst ko dhyan se dekhe toh agar hum tree ka inorder likh de toh saare increasing order mai hai, toh yhi clue use krke hum defected node nikal skte hai
+
+bst ka mtlb left side chhote right side bade
+iska mtlb just immediate right nhi saare right (uske child bhi) sb bade hone chaiye
+same case left ka, sb chhote hone chaiye
