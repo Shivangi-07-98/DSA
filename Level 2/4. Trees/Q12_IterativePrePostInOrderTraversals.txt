@@ -1,4 +1,3 @@
-
 class Solution {
   public static class TPair {
     Node node;
@@ -50,3 +49,7 @@ class Solution {
     System.out.println(post);
   }
 }
+
+morris traversal pre and in order ke liye chlta hai
+post ke liye nahi
+issiliye iterative pre post in order traversals using stack
