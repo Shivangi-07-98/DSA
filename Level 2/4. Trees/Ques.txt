@@ -11,7 +11,8 @@
 11. in order successor
 12. iterative pre post in order traversals - 23 may 2022----
 13. construct binary tree from preorder and inorder traversal
-14. 
+14. construct binary tree from postorder and inorder traversal
+15.  - 24 may 2022----
 
 kth ancestor of a tree node × - 6 oct 2022----
 longest even sum path - 8 oct 2022----
