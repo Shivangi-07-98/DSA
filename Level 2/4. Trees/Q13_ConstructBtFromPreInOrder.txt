@@ -21,7 +21,10 @@ class Solution {
     TreeNode node = new TreeNode();
     node.val = pre[pre_lo];
 
+    // map mai inorder ki value hai, hum pre ka value inorder mai khoj rhe
     int index = map.getOrDefault(pre[pre_lo], 0);
+
+    // uske baad dekh rhe kitne values hai
     int lhs = index - in_lo;
 
     node.left = construct(pre_lo + 1, pre_lo + lhs, in_lo, index - 1, pre, map);
