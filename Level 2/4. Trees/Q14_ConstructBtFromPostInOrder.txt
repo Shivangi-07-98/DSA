@@ -23,12 +23,19 @@ class Solution {
       idx++;
     }
 
-    int lhs = idx - inlo;
+    int rhs = inhi - idx;
 
     node.val = postorder[posthi];
-    node.left = buildTreeRec(inorder, postorder, postlo, postlo + lhs - 1, inlo, idx - 1);
-    node.right = buildTreeRec(inorder, postorder, postlo + lhs, posthi - 1, idx + 1, inhi);
+    node.left = buildTreeRec(inorder, postorder, postlo, posthi - rhs - 1, inlo, idx - 1);
+    node.right = buildTreeRec(inorder, postorder, posthi - rhs, posthi - 1, idx + 1, inhi);
 
     return node;
   }
 }
+
+
+int lhs = idx - inlo;
+
+node.val = postorder[posthi];
+node.left = buildTreeRec(inorder, postorder, postlo, postlo + lhs - 1, inlo, idx - 1);
+node.right = buildTreeRec(inorder, postorder, postlo + lhs, posthi - 1, idx + 1, inhi);
