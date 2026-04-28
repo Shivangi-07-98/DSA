@@ -3,6 +3,20 @@ https://www.geeksforgeeks.org/problems/maximum-sum-leaf-to-root-path/1
 
 class Solution {
   public static int maxPathSum(Node root) {
+    if (root == null) {
+      return 0;
+    }
+    int left = maxPathSum(root.left);
+    int right = maxPathSum(root.right);
+
+    return Math.max(left, right) + root.data;
+  }
+}
+
+--------------------------------------------------------------------
+
+class Solution {
+  public static int maxPathSum(Node root) {
     if (root.left != null && root.right != null) {
       int left = maxPathSum(root.left);
       int right = maxPathSum(root.right);
@@ -20,7 +34,7 @@ class Solution {
   }
 }
 
-------------------------------------------------------------
+--------------------------------------------------------------------
 
 class Solution {
   static int max = Integer.MIN_VALUE;
@@ -47,4 +61,5 @@ class Solution {
     travel(node.left, sum + node.data);
     travel(node.right, sum + node.data);
   }
+  
 }
