@@ -31,5 +31,5 @@ class Solution {
     travel2(node.left, csum + node.val, targetSum);
     travel2(node.right, csum + node.val, targetSum);
   }
-
+  
 }
