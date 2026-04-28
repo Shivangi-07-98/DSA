@@ -16,6 +16,8 @@
 16. max path sum (root to leaves) - 24 may 2022----
 17. max path sum (root to node)
 18. max path sum (node to node)
+19. path sum 3
+20. 
 
 
 kth ancestor of a tree node × - 6 oct 2022----
