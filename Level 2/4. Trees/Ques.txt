@@ -13,7 +13,10 @@
 13. construct binary tree from preorder and inorder traversal
 14. construct binary tree from inorder and postorder traversal
 15. count complete tree nodes
-16.  - 24 may 2022----
+16. max path sum (root to leaves) - 24 may 2022----
+17. max path sum (root to node)
+18. max path sum (node to node)
+
 
 kth ancestor of a tree node × - 6 oct 2022----
 longest even sum path - 8 oct 2022----
