@@ -63,8 +63,8 @@
 66. longest substring with every char occuring at least k times
 
 67. rearrange characters string no two adjacent - 13 oct 2022----
-68. grid illumination
-69. largest subarray with contiguous elements set 2
+68. grid illumination ×
+69. largest subarray with contiguous elements set 2 ×
 70. check anagram string palindrome or not - 15 oct 2022---- ×
 71. check if frequency of all characters can become same by one removal ×
 72. count number of nice subarrays - 20 oct 2022----
