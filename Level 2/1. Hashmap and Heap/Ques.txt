@@ -62,7 +62,6 @@
 65. binary string with substrings representing numbers from 1 to n ×
 66. longest substring with every char occuring at least k times
 
-longest consecutive sequence - 11 oct 2022----
 67. rearrange characters string no two adjacent - 13 oct 2022----
 68. grid illumination ×
 69. largest subarray with contiguous elements set 2 ×
