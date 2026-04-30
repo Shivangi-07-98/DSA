@@ -64,7 +64,7 @@ class Solution {
       map.put(val, true);
     }
 
-    for (int val : nums) {
+    for (int val : map.keySet()) {
       if (map.containsKey(val - 1)) {
         map.put(val, false);
       }
@@ -72,7 +72,7 @@ class Solution {
 
     int res = 0;
 
-    for (int val : nums) {
+    for (int val : map.keySet()) {
       if (map.get(val) == true) {
         int len = 1;
         while (map.containsKey(val + len)) {
