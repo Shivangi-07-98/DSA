@@ -36,5 +36,3 @@ class Solution {
     return ans;
   }
 }
-
-ques also done by sumeet sir on 15 oct 2022
