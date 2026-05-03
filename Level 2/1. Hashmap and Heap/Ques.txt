@@ -50,7 +50,7 @@
 53. pairs with equal sum
 54. brick wall - 30 mar 2022----
 55. random pick with blacklist
-56. the skyline problem
+56. the skyline problem ×
 57. pairs of non coinciding points ×
 58. minimum cost to connect sticks - 31 mar 2022----
 59. snapshot array
