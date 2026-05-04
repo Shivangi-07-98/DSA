@@ -28,9 +28,10 @@ class Solution {
     }
 
     visited[i][j] = true;
-    traverse(grid, visited, i - 1, j);
-    traverse(grid, visited, i + 1, j);
-    traverse(grid, visited, i, j - 1);
-    traverse(grid, visited, i, j + 1);
+    traverse(grid, visited, i - 1, j); // top
+    traverse(grid, visited, i + 1, j); // bottom
+    traverse(grid, visited, i, j - 1); // left
+    traverse(grid, visited, i, j + 1); // right
   }
+  
 }
