@@ -49,8 +49,10 @@ imp 29. evaluate division
 49. bricks falling when hit ×
 50. cracking the safe × - 8 july 2022----
 vimp 51. cheapest flights within k stops
-vimp 52. distance from the source bellman ford algorithm × - 11 july 2022----
-53. implementing floyd warshall ×
-54. graph connectivity with threshold ×
-55. ford fulkerson/find the maximum flow × - 12 july 2022----
-56. find critical and pseudo critical edges in minimum spanning tree ×
+52. remove max number of edges to keep graph fully traversable - 9 july 2022----
+53. bricks falling when hit
+vimp 54. distance from the source bellman ford algorithm × - 11 july 2022----
+55. implementing floyd warshall ×
+56. graph connectivity with threshold ×
+57. ford fulkerson/find the maximum flow × - 12 july 2022----
+58. find critical and pseudo critical edges in minimum spanning tree ×
