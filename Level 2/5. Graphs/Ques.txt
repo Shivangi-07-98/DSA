@@ -11,13 +11,13 @@ imp 9. shortest path in weights
 11. minimum wire to connect all pcs
 imp 12. minimum cost to connect all cities
 13. coloring a border × - 16 june 2022----
-imp 14. shortest bridge
+vimp 14. shortest bridge
 15. strongly connected components kosaraju's algo × - 20 june 2022----
 16. mother vertex ×
 17. clone graph
-imp 18. topological sorting - 21 june 2022----
-19. given sorted dictionary find precedence characters/alien dictionary
-imp 20. kahn's algorithm for topological sorting
+vimp 18. topological sorting - 21 june 2022----
+vimp 19. given sorted dictionary find precedence characters/alien dictionary
+vimp 20. kahn's algorithm for topological sorting
 vimp 21. course schedule 2
 vimp 22. disjoint set union - 22 june 2022----
 imp 23. kruskal minimum spanning tree/minimum wire to connect all pcs
@@ -29,7 +29,7 @@ vimp 25. redundant connection - 23 june 2022----
 imp 29. evaluate division
 30. articulation point × - 29 june 2022----
 31. articulation point 2 ×
-32. bridge edge in graph ×
+vimp 32. bridge edge in graph ×
 33. minimize malware spread × - 30 june 2022----
 34. similar string groups ×
 35. redundant connection 2 ×
