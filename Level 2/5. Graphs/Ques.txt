@@ -1,15 +1,15 @@
-imp 1. number of islands - 13 june 2022----
-imp 2. number of enclaves
+1. number of islands - 13 june 2022----done
+2. number of enclaves
 vimp 3. rotting oranges
-imp 4. is graph bipartite - 14 june 2022----
-imp 5. bus routes
+4. is graph bipartite - 14 june 2022----
+5. bus routes
 6. number of distinct island ×
 vimp 7. 01 matrix - 15 june 2022----
 8. as far from land as possible ×
-imp 9. shortest path in weights
+9. shortest path in weights
 10. swim in rising water
 11. minimum wire to connect all pcs
-imp 12. minimum cost to connect all cities
+12. minimum cost to connect all cities
 13. coloring a border × - 16 june 2022----
 vimp 14. shortest bridge
 15. strongly connected components kosaraju's algo × - 20 june 2022----
@@ -26,7 +26,7 @@ vimp 25. redundant connection - 23 june 2022----
 26. regions cut by slashes ×
 27. sentence similarity ×
 28. satisfiability of equality equations - 27 june 2022----
-imp 29. evaluate division
+29. evaluate division
 30. articulation point × - 29 june 2022----
 31. articulation point 2 ×
 vimp 32. bridge edge in graph ×

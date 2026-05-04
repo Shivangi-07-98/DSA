@@ -1,48 +1,49 @@
 imp 1. fibonacci - 23 aug 2022----
-imp 2. climb stairs
+vimp 2. climb stairs
 imp 3. climb stairs with variable jumps
-imp 4. climb stairs with minimum moves
-imp 5. min cost in maze traversal
-imp 6. goldmine
-imp 7. longest increasing subsequence n^2 - 24 aug 2022----
+vimp 4. climb stairs with minimum moves
+vimp 5. min cost in maze traversal
+vimp 6. goldmine
+vimp 7. longest increasing subsequence n^2 - 24 aug 2022----
 imp 8. building bridges
 imp 9. russian doll envelopes
 10. weighted job scheduling set 2 using lis/maximum profit in job scheduling
 11. minimum number of increasing subsequences ×
-imp 12. longest increasing subsequence nlog(n)
+vimp 12. longest increasing subsequence nlog(n)
 13. count binary strings - 26 aug 2022----
 14. arrange buildings
 15. paint fence
 16. paint house
 17. paint house many colors
 18. highway billboard
-imp 19. total number of possible binary search trees with n keys/count bst
-imp 20. catalan - 27 aug 2022----
-imp 21. unique binary search trees
-imp 22. count brackets
+19. total number of possible binary search trees with n keys/count bst
+20. catalan - 27 aug 2022----
+21. unique binary search trees
+22. count brackets
 23. valleys and mountains × | maze path above diagonal | dyck words
 24. circles and chords ×
 25. triangulations ×
-imp 26. target sum subsets - 28 aug 2022----
-imp 27. partition equal subset sum
+vimp 26. target sum subsets - 28 aug 2022----
+vimp 27. partition equal subset sum
 imp 28. coin change combination
 imp 29. coin change permutations
-imp 30. zero one knapsack
-imp 31. unbounded knapsack
-imp 32. best time to buy and sell stock - 30 aug 2022----
+vimp 30. zero one knapsack
+vimp 31. unbounded knapsack
+vimp 32. best time to buy and sell stock - 30 aug 2022----
 imp 33. best time to buy and sell stock 2
-imp 34. best time to buy and sell stock with transaction fee
-imp 35. best time to buy and sell stock with cooldown
+vimp 34. best time to buy and sell stock with transaction fee
+vimp 35. best time to buy and sell stock with cooldown
 imp 36. best time to buy and sell stock 3
-imp 37. best time to buy and sell stock 4 - 1 sept 2022----
+
+37. best time to buy and sell stock 4 - 1 sept 2022----
 38. tiling with 2*1 tiles ×
 39. tiling with m*1 tiles ×
-imp 40. friends pairing
-imp 41. partition into subsets
-imp 42. matrix chain multiplication - 3 sept 2022----
+40. friends pairing
+41. partition into subsets
+vimp 42. matrix chain multiplication - 3 sept 2022----
 43. minimum maximum value expression × - 6 sept 2022----
 imp 44. optimal binary search tree
-imp 45. burst balloons - 7 sept 2022----
+vimp 45. burst balloons - 7 sept 2022----
 imp 46. minimum score triangulation of polygon
 vimp 47. longest common substring - 9 sept 2022----
 vimp 48. palindromic substrings
@@ -51,7 +52,7 @@ imp 49. longest palindromic substring
 51. count different palindromic subsequences ×
 imp 52. palindrome partitioning 2 - 11 sept 2022----
 imp 53. longest palindromic subsequence
-imp 54. longest common subsequence
+vimp 54. longest common subsequence
 55. palindrome partitioning
 56. count a+b+c+ subsequences ×
 57. longest common subsequence 3 strings ×
@@ -63,7 +64,7 @@ imp 54. longest common subsequence
 vimp 62. distinct subsequences
 63. probability of knight to remain in the chessboard - 14 sept 2022----
 64. longest repeating subsequence
-imp 65. wildcard pattern matching
+65. wildcard pattern matching
 66. frog jump
 vimp 67. edit distance
 68. largest sum subarray of size at least k × - 16 sept 2022----
@@ -77,10 +78,10 @@ vimp 73. word break problem - 20 sept 2022----
 76. number of digit one × - 26 sept 2022----
 77. ones and zeroes
 78. minimum cost to cut a stick
-imp 79. super egg drop
+79. super egg drop
 80. optimal strategy for a game dp
 81. dungeon game - 28 sept 2022----
 82. cherry pickup 2
 83. cherry pickup
 84. scramble string
-imp 85. super egg drop binary search - 3 oct 2022----
+85. super egg drop binary search - 3 oct 2022----
