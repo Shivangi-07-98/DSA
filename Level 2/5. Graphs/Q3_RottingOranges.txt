@@ -51,10 +51,10 @@ class Solution {
       }
 
       // add neighbours
-      addNeighbors(rem.x + 1, rem.y, visited, grid, queue, rem.t + 1);
-      addNeighbors(rem.x - 1, rem.y, visited, grid, queue, rem.t + 1);
-      addNeighbors(rem.x, rem.y + 1, visited, grid, queue, rem.t + 1);
-      addNeighbors(rem.x, rem.y - 1, visited, grid, queue, rem.t + 1);
+      addNeighbours(rem.x + 1, rem.y, visited, grid, queue, rem.t + 1);
+      addNeighbours(rem.x - 1, rem.y, visited, grid, queue, rem.t + 1);
+      addNeighbours(rem.x, rem.y + 1, visited, grid, queue, rem.t + 1);
+      addNeighbours(rem.x, rem.y - 1, visited, grid, queue, rem.t + 1);
     }
 
     if(fresh == 0){
@@ -64,7 +64,7 @@ class Solution {
     }
   }
 
-  public void addNeighbors(int x, int y, boolean[][] visited, int[][] grid, ArrayDeque<Pair> queue, int t){
+  public void addNeighbours(int x, int y, boolean[][] visited, int[][] grid, ArrayDeque<Pair> queue, int t){
     if(x < 0 || y < 0 || x >= grid.length || y >= grid[0].length){
       return;
     } else if(visited[x][y]){
