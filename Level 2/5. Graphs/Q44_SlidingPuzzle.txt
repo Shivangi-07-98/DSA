@@ -1,5 +1,6 @@
 https://leetcode.com/problems/sliding-puzzle/
-
+Time Complexity: O(6! * 6)
+Space Complexity: O(6!)
 
 class Solution {
   class Pair {

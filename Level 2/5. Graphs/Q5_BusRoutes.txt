@@ -1,5 +1,6 @@
 https://leetcode.com/problems/bus-routes/
-
+Time Complexity: O(R*S)
+Space Complexity: O(R*S)
 
 class Solution {
   class Pair {

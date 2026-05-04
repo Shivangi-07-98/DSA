@@ -1,5 +1,6 @@
 https://www.geeksforgeeks.org/introduction-to-disjoint-set-data-structure-or-union-find-algorithm/
-
+Time Complexity: O(q * alpha(m*n))
+Space Complexity: O(m*n)
 
 import java.io.*;
 import java.util.*;

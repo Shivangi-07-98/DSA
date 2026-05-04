@@ -1,5 +1,6 @@
 https://leetcode.com/problems/evaluate-division/
-
+Time Complexity: O((E+Q) * alpha(V))
+Space Complexity: O(V)
 
 class Solution {
   public double[] calcEquation(List<List<String>> equations, double[] values, List<List<String>> queries) {

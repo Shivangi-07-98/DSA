@@ -1,5 +1,6 @@
 https://leetcode.com/problems/01-matrix/
-
+Time Complexity: O(m*n)
+Space Complexity: O(m*n)
 
 class Solution {
   class Pair {

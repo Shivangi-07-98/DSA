@@ -1,5 +1,6 @@
 https://leetcode.com/problems/reconstruct-itinerary/
-
+Time Complexity: O(E log E)
+Space Complexity: O(E)
 
 class Solution {
   HashMap<String, PriorityQueue<String>> adj;

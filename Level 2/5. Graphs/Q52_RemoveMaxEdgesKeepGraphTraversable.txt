@@ -1,5 +1,6 @@
 https://leetcode.com/problems/remove-max-number-of-edges-to-keep-graph-fully-traversable/description/
-
+Time Complexity: O(E * alpha(n))
+Space Complexity: O(n)
 
 class Solution {
   public int maxNumEdgesToRemove(int n, int[][] edges) {

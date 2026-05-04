@@ -1,5 +1,6 @@
 https://leetcode.com/problems/cracking-the-safe/
-
+Time Complexity: O(k^n * n)
+Space Complexity: O(k^n * n)
 
 class Solution {
   public String crackSafe(int n, int k) {

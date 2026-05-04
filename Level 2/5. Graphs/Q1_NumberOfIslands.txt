@@ -1,5 +1,6 @@
 https://leetcode.com/problems/number-of-islands/
-
+Time Complexity: O(m*n)
+Space Complexity: O(m*n)
 
 class Solution {
   public int numIslands(char[][] grid) {

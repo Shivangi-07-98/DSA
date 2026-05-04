@@ -1,5 +1,6 @@
 https://www.geeksforgeeks.org/minimum-swaps-to-make-two-array-identical/
-
+Time Complexity: O(n)
+Space Complexity: O(n)
 
 import java.io.*;
 import java.util.*;

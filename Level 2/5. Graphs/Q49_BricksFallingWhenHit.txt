@@ -1,5 +1,6 @@
 https://leetcode.com/problems/bricks-falling-when-hit/
-
+Time Complexity: O((m*n + h) * alpha(m*n))
+Space Complexity: O(m*n)
 
 class Solution {
   int m;

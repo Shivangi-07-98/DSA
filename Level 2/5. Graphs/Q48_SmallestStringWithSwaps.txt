@@ -1,5 +1,6 @@
 https://leetcode.com/problems/smallest-string-with-swaps/
-
+Time Complexity: O((n+p) * alpha(n) + n log n)
+Space Complexity: O(n)
 
 class Solution {
   public String smallestStringWithSwaps(String s, List<List<Integer>> pairs) {

@@ -1,5 +1,6 @@
 https://practice.geeksforgeeks.org/problems/eulerian-path-in-an-undirected-graph5052/1
-
+Time Complexity: O(V^2)
+Space Complexity: O(1)
 
 class Solution{
   static int eulerPath(int N, int graph[][]){

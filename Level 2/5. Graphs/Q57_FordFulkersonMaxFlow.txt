@@ -1,5 +1,6 @@
 https://practice.geeksforgeeks.org/problems/find-the-maximum-flow2126/1
-
+Time Complexity: O(V^3 * E)
+Space Complexity: O(V^2)
 
 class Solution {
   int findMaxFlow(int N, int M, ArrayList<ArrayList<Integer>> Edges) {

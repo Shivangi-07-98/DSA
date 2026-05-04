@@ -1,5 +1,6 @@
 https://leetcode.com/problems/redundant-connection/
-
+Time Complexity: O(E * alpha(V))
+Space Complexity: O(V)
 
 class Solution {
   public int[] findRedundantConnection(int[][] edges) {

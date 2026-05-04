@@ -1,5 +1,6 @@
 https://www.geeksforgeeks.org/kruskals-minimum-spanning-tree-algorithm-greedy-algo-2/
-
+Time Complexity: O(E log E)
+Space Complexity: O(V+E)
 
 import java.io.*;
 import java.util.*;

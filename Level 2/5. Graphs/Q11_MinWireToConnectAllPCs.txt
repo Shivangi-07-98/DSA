@@ -1,3 +1,7 @@
+https://www.geeksforgeeks.org/prims-minimum-spanning-tree-mst-greedy-algo-5/
+Time Complexity: O((V+E) log V)
+Space Complexity: O(V+E)
+
 import java.io.*;
 import java.util.*;
 

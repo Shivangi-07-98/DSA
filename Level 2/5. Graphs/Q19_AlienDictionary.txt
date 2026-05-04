@@ -1,5 +1,6 @@
 https://www.geeksforgeeks.org/given-sorted-dictionary-find-precedence-characters/
-
+Time Complexity: O(N*L + K + E)
+Space Complexity: O(K+E)
 
 class Solution {
   public String findOrder(String [] dict, int N, int K) {

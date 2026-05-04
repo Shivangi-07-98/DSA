@@ -1,5 +1,6 @@
 https://leetcode.com/problems/similar-string-groups/
-
+Time Complexity: O(n^2 * L)
+Space Complexity: O(n)
 
 class Solution {
   public int numSimilarGroups(String[] strs) {

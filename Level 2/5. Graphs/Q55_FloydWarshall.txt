@@ -1,5 +1,6 @@
 https://practice.geeksforgeeks.org/problems/implementing-floyd-warshall2042/1
-
+Time Complexity: O(V^3)
+Space Complexity: O(1)
 
 class Solution {
   public void shortest_distance(int[][] matrix) {

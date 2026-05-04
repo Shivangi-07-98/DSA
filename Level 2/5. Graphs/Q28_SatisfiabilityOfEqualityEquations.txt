@@ -1,5 +1,6 @@
 https://leetcode.com/problems/satisfiability-of-equality-equations/
-
+Time Complexity: O(n * alpha(26))
+Space Complexity: O(1)
 
 class Solution {
   public boolean equationsPossible(String[] equations) {

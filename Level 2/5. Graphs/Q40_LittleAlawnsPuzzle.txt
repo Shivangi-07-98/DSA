@@ -1,3 +1,7 @@
+https://codeforces.com/problemset/problem/1534/C
+Time Complexity: O(n * alpha(n)) per test case
+Space Complexity: O(n)
+
 import java.io.*;
 import java.util.*;
 

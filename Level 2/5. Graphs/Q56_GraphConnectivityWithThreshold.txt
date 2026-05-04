@@ -1,5 +1,6 @@
 https://leetcode.com/problems/graph-connectivity-with-threshold/
-
+Time Complexity: O(n log n + q * alpha(n))
+Space Complexity: O(n)
 
 class Solution {
   public List<Boolean> areConnected(int n, int threshold, int[][] queries) {

@@ -1,5 +1,6 @@
 https://leetcode.com/problems/swim-in-rising-water/
-
+Time Complexity: O(n^2 log n)
+Space Complexity: O(n^2)
 
 class Solution {
   class Pair implements Comparable<Pair> {

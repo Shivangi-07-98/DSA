@@ -1,5 +1,6 @@
 https://leetcode.com/problems/number-of-distinct-islands/
-
+Time Complexity: O(m*n)
+Space Complexity: O(m*n)
 
 import java.io.BufferedReader;
 import java.io.IOException;

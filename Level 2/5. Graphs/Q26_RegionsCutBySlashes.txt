@@ -1,5 +1,6 @@
 https://leetcode.com/problems/regions-cut-by-slashes/
-
+Time Complexity: O(n^2 * alpha(n^2))
+Space Complexity: O(n^2)
 
 class Solution {
   public int regionsBySlashes(String[] grid) {
