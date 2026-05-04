@@ -2,6 +2,12 @@ https://leetcode.com/problems/number-of-islands/
 Time Complexity: O(m*n)
 Space Complexity: O(m*n)
 
+O(V + E)
+O(m*n + m*n)
+O(m*n)
+
+V+E and m*n are the same
+
 class Solution {
   public int numIslands(char[][] grid) {
     boolean[][] visited = new boolean[grid.length][grid[0].length];
