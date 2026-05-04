@@ -30,6 +30,7 @@ class Solution {
 
     boolean[][] visited = new boolean[grid.length][grid[0].length];
     int time = 0;
+
     while(queue.size() > 0){
       // remove
       Pair rem = queue.remove();
@@ -44,11 +45,12 @@ class Solution {
       if(rem.t > time){
         time = rem.t;
       }
+
       if(grid[rem.x][rem.y] == 1){
         fresh--;
       }
 
-      // add neighbors
+      // add neighbours
       addNeighbors(rem.x + 1, rem.y, visited, grid, queue, rem.t + 1);
       addNeighbors(rem.x - 1, rem.y, visited, grid, queue, rem.t + 1);
       addNeighbors(rem.x, rem.y + 1, visited, grid, queue, rem.t + 1);
@@ -73,4 +75,5 @@ class Solution {
 
     queue.add(new Pair(x, y, t));
   }
+  
 }
