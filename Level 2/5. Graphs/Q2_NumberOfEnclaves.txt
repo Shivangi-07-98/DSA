@@ -43,4 +43,12 @@ class Solution {
     traverse(grid, visited, i, j + 1);
     traverse(grid, visited, i, j - 1);
   }
+  
 }
+
+going outside = Proof that you were touching the wall
+so if DFS reaches a position where it tries to go outside that means current cell is at boundary
+
+Start DFS from (0,1):
+From (0,1), go UP → (-1,1) ❌
+flag = false ❌
