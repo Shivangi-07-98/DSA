@@ -1,4 +1,3 @@
 https://www.hackerrank.com/challenges/journey-to-the-moon/problem
-Time Complexity: N/A (code not present in file)
-Space Complexity: N/A (code not present in file)
-
+Time Complexity: 
+Space Complexity: 
