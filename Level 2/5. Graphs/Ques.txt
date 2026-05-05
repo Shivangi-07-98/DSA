@@ -1,38 +1,38 @@
-1. number of islands - 13 june 2022----done
-2. number of enclaves
+vimp 1. number of islands - 13 june 2022----done
+imp 2. number of enclaves
 vimp 3. rotting oranges
-4. is graph bipartite - 14 june 2022----
-5. bus routes
+vimp 4. is graph bipartite - 14 june 2022----
+imp 5. bus routes
 6. number of distinct island ×
 vimp 7. 01 matrix - 15 june 2022----
 8. as far from land as possible ×
 9. shortest path in weights
-10. swim in rising water
+imp 10. swim in rising water
 11. minimum wire to connect all pcs
-12. minimum cost to connect all cities
+imp 12. minimum cost to connect all cities
 13. coloring a border × - 16 june 2022----
 vimp 14. shortest bridge
 15. strongly connected components kosaraju's algo × - 20 june 2022----
 16. mother vertex ×
-17. clone graph
+imp 17. clone graph
 vimp 18. topological sorting - 21 june 2022----
 vimp 19. given sorted dictionary find precedence characters/alien dictionary
 vimp 20. kahn's algorithm for topological sorting
 vimp 21. course schedule 2
 vimp 22. disjoint set union - 22 june 2022----
-imp 23. kruskal minimum spanning tree/minimum wire to connect all pcs
+vimp 23. kruskal minimum spanning tree/minimum wire to connect all pcs
 vimp 24. number of island 2
 vimp 25. redundant connection - 23 june 2022----
 26. regions cut by slashes ×
 27. sentence similarity ×
-28. satisfiability of equality equations - 27 june 2022----
-29. evaluate division
+imp 28. satisfiability of equality equations - 27 june 2022----
+imp 29. evaluate division
 30. articulation point × - 29 june 2022----
 31. articulation point 2 ×
-vimp 32. bridge edge in graph ×
+32. bridge edge in graph ×
 33. minimize malware spread × - 30 june 2022----
 34. similar string groups ×
-35. redundant connection 2 ×
+imp 35. redundant connection 2 ×
 36. minimum swaps to sort × - 1 july 2022----
 37. minimum swaps to make two array identical ×
 38. optimize water distribution ×
@@ -43,8 +43,8 @@ vimp 32. bridge edge in graph ×
 43. eulerian path in an undirected graph ×
 44. sliding puzzle × - 6 july 2022----
 45. k similar strings ×
-46. reconstruct itinerary
-47. find eventual safe states - 7 july 2022----
+imp 46. reconstruct itinerary
+imp 47. find eventual safe states - 7 july 2022----
 48. smallest string with swaps
 49. bricks falling when hit ×
 50. cracking the safe × - 8 july 2022----
