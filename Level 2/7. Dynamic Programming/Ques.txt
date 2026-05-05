@@ -1,10 +1,10 @@
-imp 1. fibonacci - 23 aug 2022----
+1. fibonacci - 23 aug 2022----todo1
 vimp 2. climb stairs
-imp 3. climb stairs with variable jumps
+3. climb stairs with variable jumps
 vimp 4. climb stairs with minimum moves
-vimp 5. min cost in maze traversal
-vimp 6. goldmine
-vimp 7. longest increasing subsequence n^2 - 24 aug 2022----
+imp 5. min cost in maze traversal
+imp 6. goldmine
+vimp 7. longest increasing subsequence n^2 - 24 aug 2022----todo2
 imp 8. building bridges
 imp 9. russian doll envelopes
 10. weighted job scheduling set 2 using lis/maximum profit in job scheduling
@@ -23,13 +23,13 @@ vimp 12. longest increasing subsequence nlog(n)
 23. valleys and mountains × | maze path above diagonal | dyck words
 24. circles and chords ×
 25. triangulations ×
-vimp 26. target sum subsets - 28 aug 2022----
+vimp 26. target sum subsets - 28 aug 2022----todo3
 vimp 27. partition equal subset sum
 imp 28. coin change combination
 imp 29. coin change permutations
 vimp 30. zero one knapsack
 vimp 31. unbounded knapsack
-vimp 32. best time to buy and sell stock - 30 aug 2022----
+vimp 32. best time to buy and sell stock - 30 aug 2022----todo4
 imp 33. best time to buy and sell stock 2
 vimp 34. best time to buy and sell stock with transaction fee
 vimp 35. best time to buy and sell stock with cooldown
@@ -40,18 +40,18 @@ imp 36. best time to buy and sell stock 3
 39. tiling with m*1 tiles ×
 40. friends pairing
 41. partition into subsets
-vimp 42. matrix chain multiplication - 3 sept 2022----
+42. matrix chain multiplication - 3 sept 2022----
 43. minimum maximum value expression × - 6 sept 2022----
-imp 44. optimal binary search tree
-vimp 45. burst balloons - 7 sept 2022----
-imp 46. minimum score triangulation of polygon
-vimp 47. longest common substring - 9 sept 2022----
-vimp 48. palindromic substrings
+44. optimal binary search tree
+45. burst balloons - 7 sept 2022----
+46. minimum score triangulation of polygon
+vimp 47. longest common substring - 9 sept 2022----todo5
+imp 48. palindromic substrings
 imp 49. longest palindromic substring
 50. count palindromic subsequence given string ×
 51. count different palindromic subsequences ×
-imp 52. palindrome partitioning 2 - 11 sept 2022----
-imp 53. longest palindromic subsequence
+imp 52. palindrome partitioning 2 - 11 sept 2022----todo6
+53. longest palindromic subsequence
 vimp 54. longest common subsequence
 55. palindrome partitioning
 56. count a+b+c+ subsequences ×
