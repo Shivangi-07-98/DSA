@@ -23,4 +23,4 @@ class Solution {
   }
 }
 
-algorithm - 
+algorithm - array sorted hai agar sb positive hota toh last wale ka hi bda aata, but negatives hai toh left right comparison hoga, jiska bda uska ans mai last daal kar sirf uska pointer badha denge
