@@ -21,3 +21,5 @@ class Solution {
     return count;
   }
 }
+
+algorithm = jahan jahan max value aur idx match hoga wha wha chunk (partition) bna skte
