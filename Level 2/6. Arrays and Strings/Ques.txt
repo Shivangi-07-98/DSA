@@ -4,7 +4,8 @@
 4. majority element
 5. max chunks to make sorted - 18 july 2022----
 6. max chunks to make sorted 2
-7. long pressed name
-8. largest number at least twice of others
-9. maximum product of three numbers
-10. 
+7. number of subarrays with bounded maximum
+8. long pressed name
+9. largest number at least twice of others
+10. maximum product of three numbers
+11. 
