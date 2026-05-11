@@ -1,5 +1,8 @@
 https://leetcode.com/problems/squares-of-a-sorted-array/description/
 
+time O(n)
+space O(n)
+
 class Solution {
   public int[] sortedSquares(int[] nums) {
     int[] res = new int[nums.length];

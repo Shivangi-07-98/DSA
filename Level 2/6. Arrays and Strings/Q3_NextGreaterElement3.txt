@@ -1,5 +1,7 @@
 https://leetcode.com/problems/next-greater-element-iii/description/
 
+time O(d)
+space O(d)
 
 class Solution {
   public int nextGreaterElement(int n) {

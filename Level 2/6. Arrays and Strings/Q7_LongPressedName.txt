@@ -1,0 +1,6 @@
+https://leetcode.com/problems/long-pressed-name/description/
+
+time O(n + m)
+space O(1)
+
+solution pending

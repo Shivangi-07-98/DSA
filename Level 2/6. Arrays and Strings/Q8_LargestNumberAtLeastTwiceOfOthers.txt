@@ -1,0 +1,6 @@
+https://leetcode.com/problems/largest-number-at-least-twice-of-others/description/
+
+time O(n)
+space O(1)
+
+solution pending
