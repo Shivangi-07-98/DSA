@@ -1,5 +1,6 @@
 https://leetcode.com/problems/next-greater-element-iii/description/
 
+
 class Solution {
   public int nextGreaterElement(int n) {
     char[] arr = (n + "").toCharArray();
@@ -39,9 +40,11 @@ class Solution {
       right--;
     }
 
-    String res = new String(arr);
+    // char arr se wapas string and then single integer
+    String res = new String(arr); // char arr pass krdo string bn jayegi
+    // int val = Integer.parseInt(res); // int max is only about 2.147 × 10^9
     long val = Long.parseLong(res);
-    return (val > Integer.MAX_VALUE ? -1 : (int) val);
+    return (val > Integer.MAX_VALUE ? -1 : (int) val); // long nhi return kr skte int mai typecast
   }
 
   void swap(char[] arr, int i, int j) {
@@ -49,6 +52,15 @@ class Solution {
     arr[i] = arr[j];
     arr[j] = temp;
   }
+  
 }
 
-algorithm - 
+algorithm - inhi digits ko rearrange krna hai aur usse bada digit bnana hai, for eg 8 bade digits bne rearrange karke toh un bado mai sbse chhota wala ans hai
+
+last se badhte jayega jbtk usse bada number mil rha, jaise hi usse chhota milega uss number ko yaad rakhenge fir uss number se last tk ka koi usse just bada ho toh dono ko swap kr denge, and last ke saare numbers jo decreasing order mai hai usko sort krke increasing order mai kar denge
+
+| Syntax               | Converts        |
+| -------------------- | --------------- |
+| `(int)`              | number → number |
+| `Integer.parseInt()` | String → int    |
+
