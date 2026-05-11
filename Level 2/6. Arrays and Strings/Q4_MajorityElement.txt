@@ -1,9 +1,13 @@
 https://leetcode.com/problems/majority-element/description/
 
+time O(n)
+space O(1)
+
 class Solution {
   public int majorityElement(int[] nums) {
     int count = 0;
-    Integer me = null;
+    Integer me = null; // primitive int cannot store null
+    // int me = 0; // we could have used this here
 
     for (int i = 0; i < nums.length; i++) {
       if (count == 0) {
@@ -20,4 +24,5 @@ class Solution {
   }
 }
 
-algorithm - 
+algorithm - majority element wo hai jo 50% se jyada baar aaye, 10 mai se 6, 12 mai se 7, 11 mai se 6
+count 0 hai mtlb exact 50%, but hme 50% se jyada chaiye mtlb count 0 se jyada
