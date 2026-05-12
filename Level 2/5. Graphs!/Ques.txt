@@ -1,27 +1,28 @@
-vimp 1. number of islands - 13 june 2022----
+vimp 1. number of islands - 13 june 2022----todo1
 2. number of enclaves
 vimp 3. rotting oranges
-vimp 4. is graph bipartite - 14 june 2022----
+vimp 4. is graph bipartite - 14 june 2022----todo2
 5. bus routes
 6. number of distinct island ×
-vimp 7. 01 matrix - 15 june 2022----
+vimp 7. 01 matrix - 15 june 2022----todo3
 8. as far from land as possible ×
 9. shortest path in weights
 10. swim in rising water
 11. minimum wire to connect all pcs
 12. minimum cost to connect all cities
-13. coloring a border × - 16 june 2022----
+13. coloring a border × - 16 june 2022----todo4
 14. shortest bridge
-15. strongly connected components kosaraju's algo × - 20 june 2022----
+15. strongly connected components kosaraju's algo × - 20 june 2022----todo5
 16. mother vertex ×
 vimp 17. clone graph
-vimp 18. topological sorting - 21 june 2022----todo1
+vimp 18. topological sorting - 21 june 2022----todo6
 vimp 19. given sorted dictionary find precedence characters/alien dictionary
 vimp 20. kahn's algorithm for topological sorting
 vimp 21. course schedule 2
-vimp 22. disjoint set union - 22 june 2022----todo2
+vimp 22. disjoint set union - 22 june 2022----todo7
 vimp 23. kruskal minimum spanning tree/minimum wire to connect all pcs
 vimp 24. number of island 2
+
 vimp 25. redundant connection - 23 june 2022----
 26. regions cut by slashes ×
 27. sentence similarity ×
@@ -47,11 +48,11 @@ vimp 25. redundant connection - 23 june 2022----
 47. find eventual safe states - 7 july 2022----
 48. smallest string with swaps
 49. bricks falling when hit ×
-50. cracking the safe × - 8 july 2022----todo3
+50. cracking the safe × - 8 july 2022----
 vimp 51. cheapest flights within k stops
 52. remove max number of edges to keep graph fully traversable - 9 july 2022----
 53. bricks falling when hit
-vimp 54. distance from the source bellman ford algorithm × - 11 july 2022----
+54. distance from the source bellman ford algorithm × - 11 july 2022----
 55. implementing floyd warshall ×
 56. graph connectivity with threshold ×
 57. ford fulkerson/find the maximum flow × - 12 july 2022----
