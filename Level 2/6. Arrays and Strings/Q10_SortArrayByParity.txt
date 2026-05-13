@@ -1,0 +1,6 @@
+https://leetcode.com/problems/sort-array-by-parity/description/
+
+time O(n)
+space O(1)
+
+solution pending

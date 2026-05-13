@@ -1,0 +1,6 @@
+https://leetcode.com/problems/maximum-swap/description/
+
+time O(n)
+space O(1)
+
+solution pending
