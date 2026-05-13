@@ -1,0 +1,87 @@
+my first approach
+
+time O(n)
+space O(n)
+
+class Solution {
+  public int[] sortArrayByParity(int[] arr) {
+    // place even then odd
+    HashMap<String, ArrayList<Integer>> map = new HashMap<>();
+    ArrayList<Integer> ans = new ArrayList<>();
+
+    for (int i = 0; i < arr.length; i++) {
+      if (arr[i] % 2 == 0) {
+        if (map.containsKey("even") == false) {
+          ArrayList<Integer> res = new ArrayList<>();
+          res.add(arr[i]);
+          map.put("even", res);
+        } else {
+          map.get("even").add(arr[i]);
+        }
+
+      } else {
+        if (map.containsKey("odd") == false) {
+          ArrayList<Integer> res = new ArrayList<>();
+          res.add(arr[i]);
+          map.put("odd", res);
+        } else {
+          map.get("odd").add(arr[i]);
+        }
+      }
+    }
+
+    for (String val : map.keySet()) {
+      if (val == "even") {
+        for (int num : map.get("even")) {
+          ans.add(num);
+        }
+      } else {
+        for (int num : map.get("odd")) {
+          ans.add(num);
+        }
+      }
+    }
+
+    int[] res = new int[ans.size()];
+
+    for (int i = 0; i < ans.size(); i++) {
+      res[i] = ans.get(i);
+    }
+
+    return res;
+
+  }
+}
+
+---------------------------------------------------------------
+
+second approach
+
+time O(n)
+space O(n)
+
+class Solution {
+  public int[] sortArrayByParity(int[] arr) {
+
+    ArrayList<Integer> even = new ArrayList<>();
+    ArrayList<Integer> odd = new ArrayList<>();
+
+    for (int i = 0; i < arr.length; i++) {
+      if (arr[i] % 2 == 0) {
+        even.add(arr[i]);
+      } else {
+        odd.add(arr[i]);
+      }
+    }
+
+    even.addAll(odd);
+
+    int[] ans = new int[even.size()];
+
+    for (int i = 0; i < even.size(); i++) {
+      ans[i] = even.get(i);
+    }
+
+    return ans;
+  }
+}
