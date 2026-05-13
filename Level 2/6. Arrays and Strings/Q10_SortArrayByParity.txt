@@ -3,4 +3,26 @@ https://leetcode.com/problems/sort-array-by-parity/description/
 time O(n)
 space O(1)
 
-solution pending
+class Solution {
+  public int[] sortArrayByParity(int[] arr) {
+    int i = 0;
+    int j = 0;
+    while (i < arr.length) {
+      if (arr[i] % 2 == 0) {
+        swap(arr, i, j);
+        i++;
+        j++;
+      } else {
+        i++;
+      }
+    }
+
+    return arr;
+  }
+
+  public void swap(int[] arr, int i, int j) {
+    int temp = arr[j];
+    arr[j] = arr[i];
+    arr[i] = temp;
+  }
+}
