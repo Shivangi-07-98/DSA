@@ -15,13 +15,14 @@
 15. maximize distance to closest person
 16. sort the matrix diagonally - 21 july 2022----
 17. first missing positive
+18. pairs of songs with total durations divisible by 60
 
-18. maximum product of three numbers
-19. majority element 2
-20. given an array of size n find all the elements that appear more than nk times
-21. pairs of songs with total durations divisible by 60
-22. minimum number platforms required railway bus station
-23. sieve of eratosthenes
-24. kth largest element in an array
-25. minimum moves to equal array elements
-26. car pooling
+19. minimum number platforms required railway bus station
+20. car pooling
+
+31. maximum product of three numbers
+32. majority element 2
+33. given an array of size n find all the elements that appear more than nk times
+34. sieve of eratosthenes
+35. kth largest element in an array
+36. minimum moves to equal array elements
