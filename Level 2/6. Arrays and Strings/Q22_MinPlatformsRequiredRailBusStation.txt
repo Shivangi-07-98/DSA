@@ -1,0 +1,6 @@
+https://leetcode.com/discuss/post/1045664/minimum-number-of-platforms-required-for-a-railwaybus-station/
+
+time O(n log n)
+space O(1)
+
+solution pending

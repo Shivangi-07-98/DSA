@@ -1,0 +1,6 @@
+https://leetcode.com/problems/pairs-of-songs-with-total-durations-divisible-by-60/description/
+
+time O(n)
+space O(1)
+
+solution pending

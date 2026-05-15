@@ -1,6 +1,7 @@
+https://leetcode.com/problems/sort-the-matrix-diagonally/description/
 
 time O(mn log(min(m,n)))
-space 
+space O(mn)
 
 class Solution {
   public int[][] diagonalSort(int[][] mat) {

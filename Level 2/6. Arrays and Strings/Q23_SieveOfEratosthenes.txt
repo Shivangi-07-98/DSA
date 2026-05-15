@@ -1,0 +1,6 @@
+https://leetcode.com/problems/count-primes/description/
+
+time O(n log log n)
+space O(n)
+
+solution pending

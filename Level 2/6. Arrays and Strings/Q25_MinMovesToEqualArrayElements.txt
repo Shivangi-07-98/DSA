@@ -1,0 +1,6 @@
+https://leetcode.com/problems/minimum-moves-to-equal-array-elements/description/
+
+time O(n)
+space O(1)
+
+solution pending
