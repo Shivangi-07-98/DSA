@@ -13,6 +13,8 @@
 13. product of array except self
 14. maximum swap
 15. maximize distance to closest person
+16. sort the matrix diagonally - 21 july 2022----
+17. 
 
 16. best meeting point
 17. first missing positive
