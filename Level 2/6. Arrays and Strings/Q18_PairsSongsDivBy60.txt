@@ -23,3 +23,13 @@ class Solution {
     return res;
   }
 }
+
+This question is similar to the HashMap question
+https://leetcode.com/problems/check-if-array-pairs-are-divisible-by-k/description/
+
+Go through each array element, compute its remainder, and group by remainder.
+Use remainder as key in HashMap, and in value store the list/count of numbers giving that remainder.
+For remainder 0, number of valid pairs is nC2.
+Formula: nC2 = n * (n - 1) / 2.
+From left to right, pair complementary remainders.
+For k = 5: remainder 1 pairs with 4, and remainder 2 pairs with 3.
