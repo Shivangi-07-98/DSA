@@ -3,4 +3,25 @@ https://leetcode.com/discuss/post/1045664/minimum-number-of-platforms-required-f
 time O(n log n)
 space O(1)
 
-solution pending
+static int findPlatform(int arr[], int dep[], int n) {
+  Arrays.sort(arr);
+  Arrays.sort(dep);
+
+  int count = 0;
+  int max = 0;
+
+  int i = 0;
+  int j = 0;
+  while (i < arr.length && j < dep.length) {
+    if (arr[i] <= dep[j]) {
+      i++;
+      count++;
+    } else {
+      j++;
+      count--;
+    }
+    max = Math.max(count, max);
+  }
+  
+  return max;
+}

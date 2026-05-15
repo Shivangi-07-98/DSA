@@ -14,8 +14,8 @@
 14. maximum swap
 15. maximize distance to closest person
 16. sort the matrix diagonally - 21 july 2022----
-
 17. first missing positive
+
 18. maximum product of three numbers
 19. majority element 2
 20. given an array of size n find all the elements that appear more than nk times
