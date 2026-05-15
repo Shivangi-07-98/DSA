@@ -1,6 +1,0 @@
-https://leetcode.com/problems/maximum-product-of-three-numbers/description/
-
-time O(n)
-space O(1)
-
-solution pending

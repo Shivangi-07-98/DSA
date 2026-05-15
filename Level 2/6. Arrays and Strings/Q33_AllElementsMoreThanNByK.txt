@@ -1,6 +1,0 @@
-https://leetcode.com/problems/majority-element-ii/description/
-
-time O(n*k)
-space O(k)
-
-solution pending

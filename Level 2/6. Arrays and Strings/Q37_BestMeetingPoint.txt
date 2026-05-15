@@ -1,6 +1,0 @@
-https://leetcode.com/problems/best-meeting-point/description/
-
-time O(m*n)
-space O(m+n)
-
-solution pending

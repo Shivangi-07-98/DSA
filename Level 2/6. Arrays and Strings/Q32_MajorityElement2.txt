@@ -1,6 +1,0 @@
-https://leetcode.com/problems/majority-element-ii/description/
-
-time O(n)
-space O(1)
-
-solution pending

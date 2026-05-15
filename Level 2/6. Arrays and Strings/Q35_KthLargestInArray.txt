@@ -1,6 +1,0 @@
-https://leetcode.com/problems/kth-largest-element-in-an-array/description/
-
-time O(n) avg
-space O(1)
-
-solution pending
