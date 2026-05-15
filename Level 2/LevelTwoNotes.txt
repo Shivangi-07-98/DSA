@@ -1,0 +1,11 @@
+0 is actually an even number.
+Because an even number means divisible by 2 with remainder 0
+And: 0 % 2 = 0
+So 0 is even.
+
+Examples of even numbers:
+... -4, -2, 0, 2, 4, 6 ...
+
+Examples of odd numbers:
+... -3, -1, 1, 3, 5 ...
+
