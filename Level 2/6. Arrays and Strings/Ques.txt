@@ -19,9 +19,9 @@
 19. minimum number platforms required railway bus station
 20. car pooling
 21. minimum moves to equal array elements - 22 july 2022----
+22. boats to save people
 
-22. best meeting point
-23. boats to save people
+23. best meeting point
 24. pair with given difference
 25. two sum sorted array
 26. partition array into disjoint intervals2
