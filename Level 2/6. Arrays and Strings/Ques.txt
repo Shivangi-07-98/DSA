@@ -18,10 +18,10 @@
 18. pairs of songs with total durations divisible by 60
 19. minimum number platforms required railway bus station
 20. car pooling
+21. minimum moves to equal array elements - 22 july 2022----
 
-21. best meeting point
-22. boats to save people
-23. min moves to equal array elements
+22. best meeting point
+23. boats to save people
 24. pair with given difference
 25. two sum sorted array
 26. partition array into disjoint intervals2
