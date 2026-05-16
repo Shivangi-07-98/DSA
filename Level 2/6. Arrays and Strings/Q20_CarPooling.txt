@@ -1,26 +1,40 @@
 https://leetcode.com/problems/car-pooling/description/
 
-solution 1 (difference array over fixed range 0..1000)
+all solutions summary
+
+solution 1 (treemap sweep line)
+time O(n log n)
+space O(n)
+
+solution 2 (treemap sweep line, same logic style-2)
+time O(n log n)
+space O(n)
+
+solution 3 (difference array over fixed range 0..1000)
 time O(n + 1001) = O(n)
 space O(1001) = O(1)
 
-solution 2 (priority queue of events)
+solution 4 (priority queue of events)
 time O(n log n)
 space O(n)
 
-solution 3 (hashmap + sorted stops)
+solution 5 (hashmap + sorted stops)
 time O(n log n)
 space O(n)
 
-best solution for this question: solution 1
-reason:
-- this problem has fixed location bounds (0 to 1000), so scanning 1001 indices is constant work
-- even if many indices are zero, 1001 iterations is very small and predictable
-- simplest implementation, no sorting/heaps, very fast in practice on LeetCode
-- best balance of clarity + performance for given constraints
+solution 6 (fixed array + treeset stops)
+time O(n log n)
+space O(n)
+
+best choice notes
+- if stop range is fixed and small (like 0..1000), solution 3 is best in practice.
+- if stop range is very large or unbounded, solution 1/2 (treemap sweep line) is the best go-to.
+reason: it only stores touched stops, no huge array allocation, and keeps sorted order naturally.
 
 -----------------------------------------------------------------------
 
+solution 1
+(time O(n log n), space O(n))
 class Solution {
   public boolean carPooling(int[][] trips, int capacity) {
     TreeMap<Integer, Integer> map = new TreeMap<>();
@@ -58,6 +72,8 @@ class Solution {
 
 -----------------------------------------------------------------
 
+solution 2
+(time O(n log n), space O(n))
 class Solution {
   public boolean carPooling(int[][] trips, int capacity) {
     // key = location
@@ -101,6 +117,8 @@ class Solution {
 
 ------------------------------------------------------------------
 
+solution 3
+(time O(n + 1001) = O(n), space O(1001) = O(1))
 // solution 1
 class Solution {
   public boolean carPooling(int[][] trips, int capacity) {
@@ -158,6 +176,8 @@ class Solution {
 
 ----------------------------------------------------------------------
 
+solution 4
+(time O(n log n), space O(n))
 // solution 2
 class Solution {
   class Pair implements Comparable<Pair> {
@@ -212,6 +232,8 @@ class Solution {
 
 ------------------------------------------------------------------------
 
+solution 5
+(time O(n log n), space O(n))
 // solution 3
 class Solution {
   public boolean carPooling(int[][] trips, int capacity) {
@@ -255,6 +277,8 @@ class Solution {
 
 -------------------------------------------------------------------
 
+solution 6
+(time O(n log n), space O(n))
 class Solution {
   public boolean carPooling(int[][] trips, int capacity) {
     int[] map = new int[1001];
