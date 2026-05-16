@@ -4,6 +4,62 @@ time O(n log n)
 space O(n)
 
 class Solution {
+  public boolean carPooling(int[][] trips, int capacity) {
+
+    // locations go from 0 to 1000
+    // each index represents a location
+
+    int[] stops = new int[1001];
+
+    // process every trip
+    for (int[] trip : trips) {
+
+      int passengers = trip[0];
+      int from = trip[1];
+      int to = trip[2];
+
+      // passengers enter at "from"
+      stops[from] += passengers;
+
+      // passengers leave at "to"
+      stops[to] -= passengers;
+    }
+
+    // current passengers inside car
+    int currentPassengers = 0;
+
+    // travel through all locations
+    for (int i = 0; i < 1001; i++) {
+
+      // apply change happening at this location
+      currentPassengers += stops[i];
+
+      /*
+          Example:
+      
+          stops[1] = +2
+          means 2 passengers entered here
+      
+          stops[5] = -2
+          means 2 passengers left here
+      */
+
+      // if capacity exceeded -> impossible
+      // Impossible to complete all trips
+      // without breaking car capacity rules
+      if (currentPassengers > capacity) {
+        return false;
+      }
+    }
+
+    // never exceeded capacity
+    return true;
+  }
+}
+
+----------------------------------------------------------------------
+
+class Solution {
   class Pair implements Comparable<Pair> {
     int time;
     int delta;
