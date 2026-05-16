@@ -1,8 +1,107 @@
 https://leetcode.com/problems/car-pooling/description/
 
+solution 1 (difference array over fixed range 0..1000)
+time O(n + 1001) = O(n)
+space O(1001) = O(1)
+
+solution 2 (priority queue of events)
 time O(n log n)
 space O(n)
 
+solution 3 (hashmap + sorted stops)
+time O(n log n)
+space O(n)
+
+best solution for this question: solution 1
+reason:
+- this problem has fixed location bounds (0 to 1000), so scanning 1001 indices is constant work
+- even if many indices are zero, 1001 iterations is very small and predictable
+- simplest implementation, no sorting/heaps, very fast in practice on LeetCode
+- best balance of clarity + performance for given constraints
+
+-----------------------------------------------------------------------
+
+class Solution {
+  public boolean carPooling(int[][] trips, int capacity) {
+    TreeMap<Integer, Integer> map = new TreeMap<>();
+
+    // store passenger changes
+    for (int[] trip : trips) {
+
+      // passengers entering
+      map.put(
+          trip[1],
+          map.getOrDefault(trip[1], 0) + trip[0]);
+
+      // passengers leaving
+      map.put(
+          trip[2],
+          map.getOrDefault(trip[2], 0) - trip[0]);
+    }
+
+    // traverse locations in sorted order
+    for (int val : map.values()) {
+
+      // subtract because positive means seats occupied
+      capacity -= val;
+
+      // if seats become negative
+      // capacity exceeded
+      if (capacity < 0) {
+        return false;
+      }
+    }
+
+    return true;
+  }
+}
+
+-----------------------------------------------------------------
+
+class Solution {
+  public boolean carPooling(int[][] trips, int capacity) {
+    // key = location
+    // value = passenger change at that location
+    TreeMap<Integer, Integer> map = new TreeMap<>();
+
+    // process all trips
+    for (int[] trip : trips) {
+      int passengers = trip[0];
+      int from = trip[1];
+      int to = trip[2];
+
+      // passengers enter
+      map.put(
+          from,
+          map.getOrDefault(from, 0) + passengers);
+
+      // passengers leave
+      map.put(
+          to,
+          map.getOrDefault(to, 0) - passengers);
+    }
+
+    // current passengers inside car
+    int currentPassengers = 0;
+
+    // TreeMap gives keys in sorted order automatically
+    for (int change : map.values()) {
+      // apply passenger change
+      currentPassengers += change;
+
+      // capacity exceeded
+      if (currentPassengers > capacity) {
+        return false;
+      }
+    }
+
+    return true;
+  }
+}
+
+------------------------------------------------------------------
+
+// solution 1
 class Solution {
   public boolean carPooling(int[][] trips, int capacity) {
 
@@ -59,6 +158,7 @@ class Solution {
 
 ----------------------------------------------------------------------
 
+// solution 2
 class Solution {
   class Pair implements Comparable<Pair> {
     int time;
@@ -112,6 +212,7 @@ class Solution {
 
 ------------------------------------------------------------------------
 
+// solution 3
 class Solution {
   public boolean carPooling(int[][] trips, int capacity) {
     HashMap<Integer, Integer> map = new HashMap<>();
@@ -145,6 +246,57 @@ class Solution {
 
       if (pic > capacity) {
         return false;
+      }
+    }
+
+    return true;
+  }
+}
+
+-------------------------------------------------------------------
+
+class Solution {
+  public boolean carPooling(int[][] trips, int capacity) {
+    int[] map = new int[1001];
+    TreeSet<Integer> stops = new TreeSet<>();
+
+    // store passenger changes
+    for (int[] trip : trips) {
+      int people = trip[0];
+      int from = trip[1];
+      int to = trip[2];
+
+      // people enter at "from"
+      map[from] += people;
+
+      // store this stop in sorted set
+      stops.add(from);
+
+      // people leave at "to"
+      map[to] -= people;
+
+      // store this stop also
+      stops.add(to);
+    }
+
+    // passengers inside car currently
+    int pic = 0;
+
+    // TreeSet gives stops in sorted order
+    for (int stop : stops) {
+      int delta = map[stop];
+
+      // apply passenger change
+      pic += delta;
+
+      // capacity exceeded
+      if (pic > capacity) {
+        return false;
+      }
+
+      // extra safety check
+      else if (pic < 0) {
+        pic = 0;
       }
     }
 
