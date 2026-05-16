@@ -119,7 +119,6 @@ class Solution {
 
 solution 3
 (time O(n + 1001) = O(n), space O(1001) = O(1))
-// solution 1
 class Solution {
   public boolean carPooling(int[][] trips, int capacity) {
 
@@ -178,7 +177,6 @@ class Solution {
 
 solution 4
 (time O(n log n), space O(n))
-// solution 2
 class Solution {
   class Pair implements Comparable<Pair> {
     int time;
@@ -234,7 +232,6 @@ class Solution {
 
 solution 5
 (time O(n log n), space O(n))
-// solution 3
 class Solution {
   public boolean carPooling(int[][] trips, int capacity) {
     HashMap<Integer, Integer> map = new HashMap<>();
