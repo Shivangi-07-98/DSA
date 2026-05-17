@@ -23,11 +23,11 @@
 23. key pair
 24. find pair given difference
 25. best meeting point
+26. partition labels - 25 july 2022----
 
 25. two sum sorted array
 26. partition array into disjoint intervals2
 27. partition array into disjoint intervals
-28. partition labels
 29. consecutive numbers sum
 30. push dominoes
 31. maximum subarray
