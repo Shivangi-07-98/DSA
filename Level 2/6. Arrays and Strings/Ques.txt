@@ -20,6 +20,7 @@
 20. car pooling
 21. minimum moves to equal array elements - 22 july 2022----
 22. boats to save people
+23. key pair
 
 23. best meeting point
 24. pair with given difference
