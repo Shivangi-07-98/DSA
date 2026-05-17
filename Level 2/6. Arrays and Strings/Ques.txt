@@ -22,8 +22,8 @@
 22. boats to save people
 23. key pair
 24. find pair given difference
+25. best meeting point
 
-23. best meeting point
 25. two sum sorted array
 26. partition array into disjoint intervals2
 27. partition array into disjoint intervals
