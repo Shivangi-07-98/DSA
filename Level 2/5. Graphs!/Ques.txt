@@ -1,7 +1,7 @@
-vimp 1. number of islands - 13 june 2022----todo1
+1. number of islands - 13 june 2022----todo1
 2. number of enclaves
 vimp 3. rotting oranges
-vimp 4. is graph bipartite - 14 june 2022----todo2
+4. is graph bipartite - 14 june 2022----todo2
 5. bus routes
 6. number of distinct island ×
 vimp 7. 01 matrix - 15 june 2022----todo3
@@ -15,13 +15,13 @@ vimp 7. 01 matrix - 15 june 2022----todo3
 15. strongly connected components kosaraju's algo × - 20 june 2022----todo5
 16. mother vertex ×
 vimp 17. clone graph
-vimp 18. topological sorting - 21 june 2022----todo6
-vimp 19. given sorted dictionary find precedence characters/alien dictionary
+18. topological sorting - 21 june 2022----todo6
+19. given sorted dictionary find precedence characters/alien dictionary
 vimp 20. kahn's algorithm for topological sorting
 vimp 21. course schedule 2
 vimp 22. disjoint set union - 22 june 2022----todo7
 vimp 23. kruskal minimum spanning tree/minimum wire to connect all pcs
-vimp 24. number of island 2
+24. number of island 2
 
 vimp 25. redundant connection - 23 june 2022----
 26. regions cut by slashes ×
