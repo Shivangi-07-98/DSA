@@ -21,6 +21,7 @@ public class Q25_BestMeetingPoint {
 
     int dist = minTotalDistance(grid);
     System.out.println(dist);
+    scn.close();
   }
 
   public static int minTotalDistance(int[][] grid) {
