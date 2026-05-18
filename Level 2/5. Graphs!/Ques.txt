@@ -1,28 +1,27 @@
-1. number of islands - 13 june 2022----todo1
+1. number of islands - 13 june 2022----
 2. number of enclaves
 vimp 3. rotting oranges
-4. is graph bipartite - 14 june 2022----todo2
+4. is graph bipartite - 14 june 2022----
 5. bus routes
 6. number of distinct island ×
-vimp 7. 01 matrix - 15 june 2022----todo3
+vimp 7. 01 matrix - 15 june 2022----
 8. as far from land as possible ×
 9. shortest path in weights
 10. swim in rising water
 11. minimum wire to connect all pcs
 12. minimum cost to connect all cities
-13. coloring a border × - 16 june 2022----todo4
+13. coloring a border × - 16 june 2022----
 14. shortest bridge
-15. strongly connected components kosaraju's algo × - 20 june 2022----todo5
+15. strongly connected components kosaraju's algo × - 20 june 2022----
 16. mother vertex ×
 vimp 17. clone graph
-18. topological sorting - 21 june 2022----todo6
+18. topological sorting - 21 june 2022----
 19. given sorted dictionary find precedence characters/alien dictionary
 vimp 20. kahn's algorithm for topological sorting
 vimp 21. course schedule 2
-vimp 22. disjoint set union - 22 june 2022----todo7
+vimp 22. disjoint set union - 22 june 2022----
 vimp 23. kruskal minimum spanning tree/minimum wire to connect all pcs
 24. number of island 2
-
 vimp 25. redundant connection - 23 june 2022----
 26. regions cut by slashes ×
 27. sentence similarity ×
