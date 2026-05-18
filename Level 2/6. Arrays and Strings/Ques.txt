@@ -25,7 +25,6 @@
 25. best meeting point
 26. partition labels - 25 july 2022----
 27. partition array into disjoint intervals
-28. partition array into disjoint intervals 2
 
 25. two sum sorted array
 29. consecutive numbers sum
