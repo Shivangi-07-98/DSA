@@ -56,6 +56,27 @@ public class Q2_ClimbStairs {
     return strg[n];
   }
 
+  // Tabulation solution
+  public static int climbStairs_tab2(int n) {
+    int[] strg = new int[n + 1];
+    strg[0] = 1;
+
+    for (int i = 1; i <= n; i++) {
+      // arr is from 0 to n, so if n is 0 or 1, there is no value stored for -ve no.
+      if (i >= 3) {
+        strg[i] = strg[i - 1] + strg[i - 2] + strg[i - 3];
+      }
+      else if (i == 2) {
+        strg[i] = strg[i - 1] + strg[i - 2];
+      }
+      else if (i == 1) {
+        strg[i] = strg[i - 1];
+      }
+    }
+
+    return strg[n];
+  }
+
 }
 // 3 moves allowed at a time 1, 2, 3
 
