@@ -11,6 +11,7 @@ public class Q1_FibonacciDP {
 
     System.out.println(fib(n));
     System.out.println(fib_memo(n, storage));
+    System.out.println(fib_tab(n));
   }
 
   // Recursive solution
@@ -44,6 +45,20 @@ public class Q1_FibonacciDP {
     return fn;
   }
 
+  // Tabulation solution
+  public static int fib_tab(int n) {
+    int[] dp = new int[n + 1];
+
+    dp[0] = 0;
+    dp[1] = 1;
+    
+    for (int i = 2; i <= n; i++) {
+      dp[i] = dp[i - 1] + dp[i - 2];
+    }
+
+    return dp[n];
+  }
+  
 }
 
 /*
