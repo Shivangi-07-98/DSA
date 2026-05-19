@@ -11,6 +11,7 @@ public class Q2_ClimbStairs {
 
     System.out.println(climbStairs_memo(n, storage));
     System.out.println(climbStairs_tab(n));
+    System.out.println(climbStairs_tab2(n));
   }
 
   // Memoized solution O(3^n)
