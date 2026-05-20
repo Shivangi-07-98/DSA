@@ -3,13 +3,12 @@ https://www.geeksforgeeks.org/problems/maximum-sum-leaf-to-root-path/1
 time O(n)
 space O(h) recursion stack, where h = height
 
-
-
 class Solution {
   public static int maxPathSum(Node root) {
     if (root == null) {
       return 0;
     }
+
     int left = maxPathSum(root.left);
     int right = maxPathSum(root.right);
 
@@ -17,24 +16,33 @@ class Solution {
   }
 }
 
+jb sirf leaf ke parent ka 1 child hoga jo ki negative and dusre side se 0 return hoga, tbh max 0 hoga, jbki aisa nhi hona chaiye, jo ek node ka negative wohi return hona chaiye
+
 --------------------------------------------------------------------
+
+ye solution upar wale issue ko fix krta hai
 
 class Solution {
   public static int maxPathSum(Node root) {
+
     if (root.left != null && root.right != null) {
       int left = maxPathSum(root.left);
       int right = maxPathSum(root.right);
       return Math.max(left, right) + root.data;
+
     } else if (root.left != null) {
       int left = maxPathSum(root.left);
       return left + root.data;
+
     } else if (root.right != null) {
       int right = maxPathSum(root.right);
       return right + root.data;
+
     } else {
       // leaf
       return root.data;
     }
+
   }
 }
 
@@ -65,5 +73,4 @@ class Solution {
     travel(node.left, sum + node.data);
     travel(node.right, sum + node.data);
   }
-  
 }
