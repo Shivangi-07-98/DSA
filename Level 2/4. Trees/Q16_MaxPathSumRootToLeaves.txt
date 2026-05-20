@@ -1,5 +1,9 @@
 https://www.geeksforgeeks.org/problems/maximum-sum-leaf-to-root-path/1
 
+time O(n)
+space O(h) recursion stack, where h = height
+
+
 
 class Solution {
   public static int maxPathSum(Node root) {

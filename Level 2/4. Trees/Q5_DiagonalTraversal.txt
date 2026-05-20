@@ -1,6 +1,6 @@
 https://www.geeksforgeeks.org/dsa/diagonal-traversal-of-binary-tree/
-Time Complexity: O(n)
-Space Complexity: O(n)  (hashmap + output) + O(h) recursion stack
+time O(n)
+space O(n)  (hashmap + output) + O(h) recursion stack
 
 code is done using recursion because left tree wale saare right tree wale se pehle the
 cross mai se left side wali (diagonal) ArrayList mai bhar ke deni hai
@@ -63,8 +63,8 @@ That’s why resetting md = 0 at start of each diagonal() is required.
 -----------------------------------------------------------------------------
 
 best approach (iterative, no static, no hashmap null issue)
-Time Complexity: O(n)
-Space Complexity: O(n)  (queue + output)
+time O(n)
+space O(n)  (queue + output)
 
 class Tree {
   public ArrayList<Integer> diagonal(Node root) {

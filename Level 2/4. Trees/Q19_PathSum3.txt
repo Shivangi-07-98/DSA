@@ -1,5 +1,8 @@
 https://leetcode.com/problems/path-sum-iii/description/
 
+time O(n^2) worst case
+space O(h) recursion stack, where h = height
+
 
 class Solution {
   int count = 0;

@@ -1,5 +1,9 @@
 https://leetcode.com/problems/construct-binary-tree-from-inorder-and-postorder-traversal/description/
 
+time O(n^2)
+space O(h) recursion stack, where h = height
+
+
 
 class Solution {
   public TreeNode buildTree(int[] inorder, int[] postorder) {

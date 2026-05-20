@@ -1,6 +1,6 @@
 https://www.geeksforgeeks.org/dsa/boundary-traversal-of-binary-tree/
-Time Complexity: O(n)
-Space Complexity: O(n)  (output list) + O(h) recursion stack
+time O(n)
+space O(n)  (output list) + O(h) recursion stack
 
 class Solution {
   void leftWall(Node node, ArrayList<Integer> list) {
@@ -72,8 +72,8 @@ leaves ki call 2 baar issiliye agar single node hai tbh
 
 --------------------------------------------------------------------------
 
-Time Complexity: O(n)
-Space Complexity: O(n)  (output list) + O(h) recursion stack
+time O(n)
+space O(n)  (output list) + O(h) recursion stack
 
 class Solution {
   void leftWall(Node node, ArrayList<Integer> list) {

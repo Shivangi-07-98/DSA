@@ -1,5 +1,9 @@
 https://leetcode.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/description/
 
+time O(n)
+space O(n)  (hashmap + recursion stack)
+
+
 
 class Solution {
   public TreeNode buildTree(int[] preorder, int[] inorder) {

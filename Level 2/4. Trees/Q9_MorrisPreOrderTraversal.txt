@@ -1,5 +1,9 @@
 https://leetcode.com/problems/binary-tree-preorder-traversal/description/
 
+time O(n)
+space O(1)
+
+
 
 class Solution {
   public List<Integer> inorderTraversal(TreeNode root) {

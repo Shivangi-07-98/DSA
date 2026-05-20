@@ -1,5 +1,12 @@
-time O(n^2)
+time O(n)
 space O(n)  (stack + output strings)
+
+Why StringBuilder here:
+- Tree traversal itself is O(n) because each node is processed a constant number of times.
+- With normal String (`pre += ...`), Java creates a new String every time and copies old content.
+- Repeating that copy many times can make total cost O(n^2).
+- `StringBuilder` appends in-place (amortized O(1) per append), so total output-building cost stays O(n).
+- Therefore full solution remains O(n) with StringBuilder.
 
 class Solution {
   public static class TPair {
@@ -17,42 +24,43 @@ class Solution {
     TPair rootp = new TPair(node, 1);
     stack.push(rootp);
 
-    String pre = "";
-    String in = "";
-    String post = "";
+    StringBuilder pre = new StringBuilder();
+    StringBuilder in = new StringBuilder();
+    StringBuilder post = new StringBuilder();
 
     while (stack.size() > 0) {
       TPair top = stack.peek();
 
       if (top.state == 1) {
         // pre = pre, left
-        pre += top.node.data + " ";
+        pre.append(top.node.data).append(" ");
         if (top.node.left != null) {
           TPair leftp = new TPair(top.node.left, 1);
           stack.push(leftp);
         }
       } else if (top.state == 2) {
         // in = in, right
-        in += top.node.data + " ";
+        in.append(top.node.data).append(" ");
         if (top.node.right != null) {
           TPair rightp = new TPair(top.node.right, 1);
           stack.push(rightp);
         }
       } else {
         // post = post, pop
-        post += top.node.data + " ";
+        post.append(top.node.data).append(" ");
         stack.pop();
       }
 
       top.state++;
     }
 
-    System.out.println(pre);
-    System.out.println(in);
-    System.out.println(post);
+    System.out.println(pre.toString());
+    System.out.println(in.toString());
+    System.out.println(post.toString());
   }
 }
 
 morris traversal pre and in order ke liye chlta hai
 post ke liye nahi
 issiliye iterative pre post in order traversals using stack
+

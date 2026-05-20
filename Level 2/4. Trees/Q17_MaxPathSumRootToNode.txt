@@ -1,3 +1,6 @@
+time O(n)
+space O(h) recursion stack, where h = height
+
 class Solution {
   public static int maxPathSum(Node root) {
     if (root.left != null && root.right != null) {
