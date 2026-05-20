@@ -1,6 +1,6 @@
 // https://leetcode.com/problems/binary-tree-level-order-traversal/
-// Time Complexity: O(n)
-// Space Complexity: O(n)  (queue) + O(h) recursion stack for construct/display, where h = height
+// time O(n)
+// space O(n)  (queue) + O(h) recursion stack for construct/display, where h = height
 
 import java.io.*;
 import java.util.*;
