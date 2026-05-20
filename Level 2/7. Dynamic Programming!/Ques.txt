@@ -1,7 +1,7 @@
 1. fibonacci - 23 aug 2022----todo1
 vimp 2. climb stairs
 3. climb stairs with variable jumps
-vimp 4. climb stairs with minimum moves
+4. climb stairs with minimum moves
 imp 5. min cost in maze traversal
 imp 6. goldmine
 vimp 7. longest increasing subsequence n^2 - 24 aug 2022----todo2
@@ -11,22 +11,22 @@ imp 9. russian doll envelopes
 11. minimum number of increasing subsequences ×
 vimp 12. longest increasing subsequence nlog(n)
 13. count binary strings - 26 aug 2022----todo3
-14. arrange buildings
+14. arrange buildings ×
 15. paint fence
 16. paint house
 17. paint house many colors
-18. highway billboard
-19. total number of possible binary search trees with n keys/count bst
-20. catalan - 27 aug 2022----todo4
-21. unique binary search trees
-22. count brackets
-23. valleys and mountains × | maze path above diagonal | dyck words
+18. highway billboard ×
+19. total number of possible binary search trees with n keys/count bst ×
+20. catalan × - 27 aug 2022----todo4
+21. unique binary search trees ×
+22. count brackets ×
+23. valleys and mountains × | maze path above diagonal × | dyck words ×
 24. circles and chords ×
 25. triangulations ×
 vimp 26. target sum subsets - 28 aug 2022----todo5
 vimp 27. partition equal subset sum
 imp 28. coin change combination
-imp 29. coin change permutations
+29. coin change permutations ×
 vimp 30. zero one knapsack
 vimp 31. unbounded knapsack
 vimp 32. best time to buy and sell stock - 30 aug 2022----todo6
@@ -35,15 +35,15 @@ vimp 34. best time to buy and sell stock with transaction fee
 vimp 35. best time to buy and sell stock with cooldown
 imp 36. best time to buy and sell stock 3
 37. best time to buy and sell stock 4 - 1 sept 2022----todo7
-38. tiling with 2*1 tiles ×
+38. tiling with 2*1 tiles
 39. tiling with m*1 tiles ×
-40. friends pairing
-41. partition into subsets
-42. matrix chain multiplication - 3 sept 2022----todo9
+40. friends pairing ×
+41. partition into subsets ×
+imp 42. matrix chain multiplication - 3 sept 2022----todo9
 43. minimum maximum value expression × - 6 sept 2022----todo11
-44. optimal binary search tree
-45. burst balloons - 7 sept 2022----todo12
-46. minimum score triangulation of polygon
+44. optimal binary search tree ×
+imp 45. burst balloons - 7 sept 2022----todo12
+46. minimum score triangulation of polygon ×
 vimp 47. longest common substring - 9 sept 2022----todo13
 imp 48. palindromic substrings
 imp 49. longest palindromic substring
@@ -61,26 +61,26 @@ vimp 54. longest common subsequence
 60. super ugly number ×
 61. distinct subsequences 2 ×
 vimp 62. distinct subsequences
-63. probability of knight to remain in the chessboard - 14 sept 2022----
-64. longest repeating subsequence
-65. wildcard pattern matching
+63. probability of knight to remain in the chessboard × - 14 sept 2022----
+64. longest repeating subsequence ×
+imp 65. wildcard pattern matching
 66. frog jump
 vimp 67. edit distance
 68. largest sum subarray of size at least k × - 16 sept 2022----
-69. regular expression matching
+imp 69. regular expression matching
 70. jump game 2
 71. longest subsequence repeated k times ×
 72. remove boxes × - 18 sept 2022----
 vimp 73. word break problem - 20 sept 2022----
-74. shortest common supersequence - 24 sept 2022----
+74. shortest common supersequence × - 24 sept 2022----
 75. longest increasing subsequence 2 ×
 76. number of digit one × - 26 sept 2022----
 77. ones and zeroes
-78. minimum cost to cut a stick
-79. super egg drop
-80. optimal strategy for a game dp
-81. dungeon game - 28 sept 2022----
-82. cherry pickup 2
-83. cherry pickup
-84. scramble string
-85. super egg drop binary search - 3 oct 2022----
+78. minimum cost to cut a stick ×
+79. super egg drop ×
+80. optimal strategy for a game dp ×
+imp 81. dungeon game - 28 sept 2022----
+82. cherry pickup 2 ×
+83. cherry pickup ×
+84. scramble string ×
+85. super egg drop binary search × - 3 oct 2022----
