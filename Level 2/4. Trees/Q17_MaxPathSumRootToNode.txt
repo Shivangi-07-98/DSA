@@ -3,6 +3,7 @@ space O(h) recursion stack, where h = height
 
 class Solution {
   public static int maxPathSum(Node root) {
+
     if (root.left != null && root.right != null) {
       int left = maxPathSum(root.left);
       int right = maxPathSum(root.right);
@@ -51,7 +52,6 @@ class Solution {
     travel(node.left, sum + node.data);
     travel(node.right, sum + node.data);
   }
-  
 }
 
 ------------------------------------------------------------

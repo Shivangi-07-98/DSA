@@ -3,7 +3,6 @@ https://leetcode.com/problems/path-sum-iii/description/
 time O(n^2) worst case
 space O(h) recursion stack, where h = height
 
-
 class Solution {
   int count = 0;
 
@@ -34,5 +33,4 @@ class Solution {
     travel2(node.left, csum + node.val, targetSum);
     travel2(node.right, csum + node.val, targetSum);
   }
-  
 }

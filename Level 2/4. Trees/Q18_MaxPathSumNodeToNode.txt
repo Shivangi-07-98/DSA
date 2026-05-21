@@ -3,8 +3,6 @@ https://leetcode.com/problems/binary-tree-maximum-path-sum/description/
 time O(n)
 space O(h) recursion stack, where h = height
 
-
-
 class Solution {
   int max = Integer.MIN_VALUE;
 
@@ -33,5 +31,4 @@ class Solution {
 
     return Math.max(left_dash, right_dash) + node.val;
   }
-  
 }
