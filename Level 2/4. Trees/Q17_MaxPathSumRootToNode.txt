@@ -7,8 +7,10 @@ class Solution {
     if (root.left != null && root.right != null) {
       int left = maxPathSum(root.left);
       int right = maxPathSum(root.right);
+
       int left_dash = Math.max(0, left);
       int right_dash = Math.max(0, right);
+      
       return Math.max(left_dash, right_dash) + root.data;
 
     } else if (root.left != null) {
