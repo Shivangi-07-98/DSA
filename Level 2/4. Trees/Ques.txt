@@ -24,8 +24,27 @@
 23. construct BST from Postorder
 24. closest bst value
 25. closest bst value 2
-
-
+26. Populating Next Right Pointers in Each Node - 26 may 2022----
+27. Image Multiplication
+28. Validate Binary Search Tree
+29. Populating Next Right Pointers in Each Node II - 31 may 2022----
+30. Binary Tree Cameras
+31. Clone a Binary Tree
+32. Sum of Distances in Tree - 1 june 2022----
+33. Construct Binary Tree from Preorder and Postorder Traversal
+34. Flatten Binary Tree to Linked List - 2 june 2022----
+35. Convert Binary Tree to Circular Doubly Linked List
+36. Construct Tree from Inorder and Level Order
+37. Distribute Coins in Binary Tree - 6 june 2022----
+38. Serialize and Deserialize Binary Tree
+39. Kth smallest element in BST
+40. Lowest Common Ancestor of a Binary Search Tree - 7 june 2022----
+41. LCA in Binary Tree
+42. Recover a Tree From Preorder Traversal
+43. Step-By-Step Directions From a Binary Tree Node to Another - 8 june 2022----
+44. Sum Root to Leaf Numbers
+45. Maximum Width of Binary Tree
+46. Convert BST to Greater Tree - 9 june 2022----
 
 kth ancestor of a tree node × - 6 oct 2022----
 longest even sum path - 8 oct 2022----
