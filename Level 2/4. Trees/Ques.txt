@@ -17,8 +17,14 @@
 17. max path sum (root to node)
 18. max path sum (node to node)
 19. path sum 3 (brute)
-20. path sum 3 (optimised) - 25 may 2022----
-21. 
+19. path sum 3 (optimised) - 25 may 2022----
+20. max path sum (leaf to leaf)
+21. delete node in a bst
+22. construct bst from preorder traversal
+23. construct BST from Postorder
+24. closest bst value
+25. closest bst value 2
+
 
 
 kth ancestor of a tree node × - 6 oct 2022----
