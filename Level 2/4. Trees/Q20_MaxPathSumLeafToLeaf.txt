@@ -69,6 +69,6 @@ class Solution {
     } else {
       return node.data;
     }
-
+    
   }
 }
