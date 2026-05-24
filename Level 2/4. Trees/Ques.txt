@@ -19,10 +19,10 @@
 19. path sum 3 (brute)
 19. path sum 3 (optimised) - 25 may 2022----
 20. max path sum (leaf to leaf)
+21. construct bst from preorder traversal
+22. construct bst from postorder
 
-21. delete node in a bst
-22. construct bst from preorder traversal
-23. construct bst from postorder
+23. delete node in a bst
 24. closest bst value
 25. closest bst value 2
 26. populating next right pointers in each node - 26 may 2022----
