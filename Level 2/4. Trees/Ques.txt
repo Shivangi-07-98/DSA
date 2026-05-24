@@ -25,14 +25,15 @@
 24. image multiplication
 25. validate binary search tree
 26. find the closest element in bst
+27. populating next right pointers in each node 2 - 31 may 2022----
+28. binary tree cameras
+29. clone a binary tree
 
 24. closest bst value
 25. closest bst value 2
 23. delete node in a bst
 
-29. populating next right pointers in each node ii - 31 may 2022----
-30. binary tree cameras
-31. clone a binary tree
+
 32. sum of distances in tree - 1 june 2022----
 33. construct binary tree from pre and post order - 2 june 2022----
 34. flatten binary tree to linked list
