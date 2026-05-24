@@ -21,6 +21,7 @@
 20. max path sum (leaf to leaf)
 21. construct bst from preorder traversal
 22. construct bst from postorder
+
 23. populating next right pointers in each node - 26 may 2022----
 24. image multiplication
 25. validate binary search tree
