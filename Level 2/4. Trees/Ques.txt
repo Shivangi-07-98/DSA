@@ -21,13 +21,15 @@
 20. max path sum (leaf to leaf)
 21. construct bst from preorder traversal
 22. construct bst from postorder
+23. populating next right pointers in each node - 26 may 2022----
+24. image multiplication
+25. validate binary search tree
+26. find the closest element in bst
 
-23. delete node in a bst
 24. closest bst value
 25. closest bst value 2
-26. populating next right pointers in each node - 26 may 2022----
-27. image multiplication
-28. validate binary search tree
+23. delete node in a bst
+
 29. populating next right pointers in each node ii - 31 may 2022----
 30. binary tree cameras
 31. clone a binary tree
