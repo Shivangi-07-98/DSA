@@ -21,7 +21,6 @@
 20. max path sum (leaf to leaf)
 21. construct bst from preorder traversal
 22. construct bst from postorder
-
 23. populating next right pointers in each node - 26 may 2022----
 24. image multiplication
 25. validate binary search tree
@@ -30,6 +29,7 @@
 28. binary tree cameras
 29. clone a binary tree
 30. delete node in a bst
+
 30. delete node in a bst - 1 june 2022----
 31. sum of distances in tree
 32. construct binary tree from preorder and postorder traversal
@@ -40,6 +40,7 @@
 37. serialize and deserialize binary tree - 6 june 2022----
 38. kth smallest element in bst
 39. longest univalue path
+
 40. recover a tree from preorder traversal - 7 june 2022----
 41. lowest common ancestor of a binary search tree
 42. lowest common ancestor in a binary tree
