@@ -13,8 +13,7 @@ class Solution {
     return root;
   }
 
-  public TreeNode helper(int[] pre, int[] post, HashMap<Integer, Integer> map, int prelo, int prehi, int postlo,
-      int posthi) {
+  public TreeNode helper(int[] pre, int[] post, HashMap<Integer, Integer> map, int prelo, int prehi, int postlo, int posthi) {
     if (prelo > prehi || postlo > posthi) {
       return null;
     }
@@ -31,5 +30,4 @@ class Solution {
 
     return node;
   }
-  
 }
