@@ -29,10 +29,9 @@
 28. binary tree cameras
 29. clone a binary tree
 30. delete node in a bst
-
-30. delete node in a bst - 1 june 2022----
-31. sum of distances in tree
+31. sum of distances in tree - 1 june 2022----
 32. construct binary tree from preorder and postorder traversal
+
 33. flatten binary tree to linked list - 2 june 2022----
 34. convert binary tree to circular doubly linked list
 35. construct tree from inorder and level order
