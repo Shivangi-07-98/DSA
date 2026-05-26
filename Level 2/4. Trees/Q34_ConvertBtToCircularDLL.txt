@@ -3,7 +3,6 @@ https://www.geeksforgeeks.org/problems/binary-tree-to-cdll/1
 
 // Morris traversal is better
 class Solution {
-  // Function to convert binary tree into circular doubly linked list.
   Node bTreeToClist(Node root) {
     return helper(root);
   }
