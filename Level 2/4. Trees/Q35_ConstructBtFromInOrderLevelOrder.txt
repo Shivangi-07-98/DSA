@@ -8,7 +8,7 @@ class GfG {
       map.put(level[i], i);
     }
 
-    Node root = helper(inord, level, map, 0, inord.length - 1);
+    Node root = helper(inord, map, 0, inord.length - 1);
     return root;
   }
 
