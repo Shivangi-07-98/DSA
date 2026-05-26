@@ -33,7 +33,7 @@
 32. construct binary tree from preorder and postorder traversal
 33. flatten binary tree to linked list - 2 june 2022----
 34. convert a binary tree to a circular doubly linked list
-35. construct a tree from inorder and level order traversals
+35. construct tree from inorder and level order
 36. distribute coins in binary tree
 
 37. serialize and deserialize binary tree - 6 june 2022----
