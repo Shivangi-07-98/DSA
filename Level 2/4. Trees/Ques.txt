@@ -31,11 +31,11 @@
 30. delete node in a bst
 31. sum of distances in tree - 1 june 2022----
 32. construct binary tree from preorder and postorder traversal
-
 33. flatten binary tree to linked list - 2 june 2022----
 34. convert binary tree to circular doubly linked list
 35. construct tree from inorder and level order
 36. distribute coins in binary tree
+
 37. serialize and deserialize binary tree - 6 june 2022----
 38. kth smallest element in bst
 39. longest univalue path

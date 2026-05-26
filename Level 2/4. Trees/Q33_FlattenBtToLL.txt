@@ -62,6 +62,6 @@ class Solution {
       Pair mp = new Pair(node, node);
       return mp;
     }
-
   }
+  
 }
