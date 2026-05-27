@@ -45,6 +45,7 @@
 44. sum root to leaf numbers - 8 june 2022----
 45. maximum width of binary tree
 46. convert bst to greater tree
+47. longest even sum path
 
  - 9 june 2022----
 
