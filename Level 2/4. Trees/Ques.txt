@@ -42,8 +42,8 @@
 41. lowest common ancestor of a binary search tree
 42. lowest common ancestor in a binary tree
 43. number of turns in binary tree
-
 43. step by step directions from a binary tree node to another
+
 44. sum root to leaf numbers - 8 june 2022----
 45. maximum width of binary tree
 46. convert bst to greater tree - 9 june 2022----
