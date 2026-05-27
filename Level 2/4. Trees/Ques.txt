@@ -41,7 +41,6 @@
 40. recover a tree from preorder traversal - 7 june 2022----
 41. lowest common ancestor of a binary search tree
 42. lowest common ancestor in a binary tree
-43. number of turns in binary tree
 43. step by step directions from a binary tree node to another
 
 44. sum root to leaf numbers - 8 june 2022----
