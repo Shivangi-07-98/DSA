@@ -44,8 +44,9 @@
 43. step by step directions from a binary tree node to another
 44. sum root to leaf numbers - 8 june 2022----
 45. maximum width of binary tree
+46. convert bst to greater tree
 
-46. convert bst to greater tree - 9 june 2022----
+ - 9 june 2022----
 
 kth ancestor of a tree node × - 6 oct 2022----
 longest even sum path - 8 oct 2022----
