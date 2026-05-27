@@ -5,11 +5,6 @@ class Solution {
   class Pair {
     int nodes;
     int coins;
-
-    Pair(int nodes, int coins) {
-      this.nodes = nodes;
-      this.coins = coins;
-    }
   }
 
   int moves = 0;
@@ -21,13 +16,13 @@ class Solution {
 
   public Pair helper(TreeNode node) {
     if (node == null) {
-      return new Pair(0, 0);
+      return new Pair();
     }
 
     Pair lp = helper(node.left);
     Pair rp = helper(node.right);
 
-    Pair mp = new Pair(0, 0);
+    Pair mp = new Pair();
     mp.nodes = lp.nodes + rp.nodes + 1; // size
     mp.coins = lp.coins + rp.coins + node.val; // sum
     moves += Math.abs(mp.nodes - mp.coins);
