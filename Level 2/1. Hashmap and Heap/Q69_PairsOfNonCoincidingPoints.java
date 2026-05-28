@@ -1,3 +1,5 @@
+// https://www.geeksforgeeks.org/problems/pairs-of-non-coinciding-points4141/1
+
 // Time Complexity: O(n), Space Complexity: O(n)
 
 import java.io.*;
