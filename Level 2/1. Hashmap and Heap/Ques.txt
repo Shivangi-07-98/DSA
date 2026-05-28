@@ -65,7 +65,7 @@
 67. rearrange characters string no two adjacent - 13 oct 2022----
 68. grid illumination ×
 69. pairs of non coinciding points ×
-70. largest subarray with contiguous elements set 2 ×
+70. length of the largest subarray with contiguous elements set 2 ×
 71. random pick with blacklist - 15 oct 2022----
 72. check anagram string palindrome or not ×
 73. check if frequency of all characters can become same by one removal ×
