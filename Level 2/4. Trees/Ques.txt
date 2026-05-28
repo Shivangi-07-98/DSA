@@ -47,7 +47,6 @@
 46. convert bst to greater tree
 47. longest even sum path
 48. avl - 9 june 2022----
-49. fenwick tree
 
 kth ancestor of a tree node × - 6 oct 2022----
 longest even sum path - 8 oct 2022----
