@@ -1,5 +1,7 @@
 https://leetcode.com/problems/coin-change-ii/
 
+time O(amount * coins.length)
+space O(amount)
 
 class Solution {
   public int change(int amount, int[] coins) {

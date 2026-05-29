@@ -1,5 +1,7 @@
 https://leetcode.com/problems/distinct-subsequences-ii/
 
+time O(n)
+space O(n)
 
 class Solution {
   long MOD = 1000000007;

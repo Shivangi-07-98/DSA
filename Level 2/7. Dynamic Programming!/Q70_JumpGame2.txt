@@ -1,5 +1,7 @@
 https://leetcode.com/problems/jump-game-ii/
 
+time O(n^2)
+space O(1)
 
 class Solution {
   public int jump(int[] nums) {

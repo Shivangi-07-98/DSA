@@ -1,5 +1,7 @@
 // https://www.geeksforgeeks.org/number-subsequences-form-ai-bj-ck/
 
+// time O(n)
+// space O(1)
 
 import java.io.*;
 import java.util.*;

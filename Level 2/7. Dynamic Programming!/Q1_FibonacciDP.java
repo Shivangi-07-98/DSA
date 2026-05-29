@@ -1,3 +1,6 @@
+// time O(2^n)
+// space O(n)
+
 import java.io.*;
 import java.util.*;
 

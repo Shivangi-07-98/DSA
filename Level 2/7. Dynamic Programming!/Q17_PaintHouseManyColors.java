@@ -1,5 +1,7 @@
 // https://leetcode.com/problems/paint-house-ii/
 
+// time O(n * k)
+// space O(n * k)
 
 import java.io.*;
 import java.util.*;

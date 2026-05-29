@@ -1,3 +1,6 @@
+// time O(n * m)
+// space O(n * m)
+
 import java.io.*;
 import java.util.*;
 

@@ -1,5 +1,7 @@
 https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iv/
 
+time O(k * n)
+space O(k * n)
 
 class Solution {
   public int maxProfit(int k, int[] prices) {

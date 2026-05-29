@@ -1,5 +1,7 @@
 https://leetcode.com/problems/ones-and-zeroes/
 
+time O(strs.length * m * n * L)
+space O(strs.length * m * n)
 
 class Solution {
   String[] arr;

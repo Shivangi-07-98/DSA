@@ -1,5 +1,7 @@
 https://leetcode.com/problems/longest-palindromic-subsequence/
 
+time O(n^2)
+space O(n^2)
 
 class Solution {
   public int longestPalindromeSubseq(String s) {

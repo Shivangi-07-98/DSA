@@ -1,5 +1,7 @@
 https://www.geeksforgeeks.org/optimal-binary-search-tree-dp-24/
 
+time O(n^3)
+space O(n^2)
 
 class Solution {
   static int optimalSearchTree(int keys[], int freq[], int n) {

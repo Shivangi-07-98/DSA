@@ -1,5 +1,7 @@
 // https://www.geeksforgeeks.org/program-nth-catalan-number/
 
+// time O(n^2)
+// space O(n)
 
 import java.io.*;
 import java.util.*;

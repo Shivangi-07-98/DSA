@@ -1,5 +1,7 @@
 // https://www.geeksforgeeks.org/highway-billboard-problem/
 
+// time O(n^2)
+// space O(n)
 
 import java.io.*;
 import java.util.*;

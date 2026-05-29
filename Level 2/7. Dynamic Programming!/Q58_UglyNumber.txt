@@ -1,5 +1,7 @@
 https://leetcode.com/problems/ugly-number/
 
+time O(log n)
+space O(1)
 
 class Solution {
   public boolean isUgly(int n) {

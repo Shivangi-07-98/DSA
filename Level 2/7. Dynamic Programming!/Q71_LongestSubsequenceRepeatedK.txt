@@ -1,5 +1,7 @@
 https://leetcode.com/problems/longest-subsequence-repeated-k-times/
 
+time O(n * 26^(n / k))
+space O(26^(n / k))
 
 class Solution {
   public String longestSubsequenceRepeatedK(String s, int k) {

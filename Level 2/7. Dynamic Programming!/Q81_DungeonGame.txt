@@ -1,5 +1,7 @@
 https://leetcode.com/problems/dungeon-game/
 
+time O(n * m)
+space O(n * m)
 
 class Solution {
   public int calculateMinimumHP(int[][] dungeon) {

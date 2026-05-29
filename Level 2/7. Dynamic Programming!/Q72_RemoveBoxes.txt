@@ -1,5 +1,7 @@
 https://leetcode.com/problems/remove-boxes/
 
+time O(n^4)
+space O(n^3)
 
 class Solution {
   public int removeBoxes(int[] boxes) {

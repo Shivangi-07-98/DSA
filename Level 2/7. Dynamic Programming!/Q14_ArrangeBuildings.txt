@@ -1,5 +1,7 @@
 https://leetcode.com/problems/count-number-of-ways-to-place-houses/description/
 
+time O(n)
+space O(1)
 
 class Solution {
   int MOD = 1000000007;

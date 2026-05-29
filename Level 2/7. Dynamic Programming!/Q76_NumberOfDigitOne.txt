@@ -1,5 +1,7 @@
 https://leetcode.com/problems/number-of-digit-one/
 
+time O(log n)
+space O(1)
 
 class Solution {
   public int countDigitOne(int n) {

@@ -1,5 +1,7 @@
 https://leetcode.com/problems/ugly-number-ii/
 
+time O(n)
+space O(n)
 
 class Solution {
   public int nthUglyNumber(int n) {

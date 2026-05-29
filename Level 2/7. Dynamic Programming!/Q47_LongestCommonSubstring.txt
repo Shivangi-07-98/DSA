@@ -1,5 +1,7 @@
 https://www.geeksforgeeks.org/longest-common-substring-dp-29/
 
+time O(n * m)
+space O(n * m)
 
 class Solution{
   int longestCommonSubstr(String S1, String S2, int n, int m){

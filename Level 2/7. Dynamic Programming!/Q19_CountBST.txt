@@ -1,5 +1,7 @@
 https://www.geeksforgeeks.org/count-possible-binary-search-trees-given-n-keys/
 
+time O(n^2)
+space O(n)
 
 class Solution {
   // Function to return the total number of possible unique BST.

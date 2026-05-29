@@ -1,5 +1,7 @@
 // https://www.geeksforgeeks.org/subset-sum-problem-dp-25/
 
+// time O(n * tar)
+// space O(n * tar)
 
 import java.io.*;
 import java.util.*;

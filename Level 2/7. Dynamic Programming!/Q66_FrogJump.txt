@@ -1,5 +1,7 @@
 https://leetcode.com/problems/frog-jump/
 
+time O(n^2)
+space O(n^2)
 
 class Solution {
   public boolean canCross(int[] stones) {

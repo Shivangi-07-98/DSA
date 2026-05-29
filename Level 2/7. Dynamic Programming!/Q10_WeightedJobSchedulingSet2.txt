@@ -1,5 +1,7 @@
 https://leetcode.com/problems/maximum-profit-in-job-scheduling/description/
 
+time O(n^2)
+space O(n)
 
 class Solution {
   public int jobScheduling(int[] startTime, int[] endTime, int[] profit) {

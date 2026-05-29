@@ -1,5 +1,7 @@
 https://www.geeksforgeeks.org/largest-sum-subarray-least-k-numbers/
 
+time O(n)
+space O(n)
 
 class Compute {
   public long maxSumWithK(long a[], long n, long k) {

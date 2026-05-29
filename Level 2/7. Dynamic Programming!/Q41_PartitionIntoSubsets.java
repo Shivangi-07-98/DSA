@@ -1,5 +1,7 @@
 // https://www.geeksforgeeks.org/count-number-of-ways-to-partition-a-set-into-k-subsets/
 
+// time O(n * k)
+// space O(n * k)
 
 import java.io.*;
 import java.util.*;

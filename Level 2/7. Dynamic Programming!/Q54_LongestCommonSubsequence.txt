@@ -1,5 +1,7 @@
 https://leetcode.com/problems/longest-common-subsequence/
 
+time O(n * m)
+space O(n * m)
 
 class Solution {
   public int longestCommonSubsequence(String text1, String text2) {

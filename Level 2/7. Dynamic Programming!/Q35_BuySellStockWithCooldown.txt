@@ -1,5 +1,7 @@
 https://leetcode.com/problems/best-time-to-buy-and-sell-stock-with-cooldown/
 
+time O(n)
+space O(1)
 
 class Solution {
   public int maxProfit(int[] prices) {

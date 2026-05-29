@@ -1,5 +1,7 @@
 https://leetcode.com/problems/cherry-pickup/
 
+time O(n^3)
+space O(n^3)
 
 class Solution {
   public int cherryPickup(int[][] grid) {

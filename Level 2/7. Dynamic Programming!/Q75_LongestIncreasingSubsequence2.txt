@@ -1,5 +1,7 @@
 https://leetcode.com/problems/longest-increasing-subsequence-ii/
 
+time O(maxVal + n log maxVal)
+space O(maxVal)
 
 class Solution {
   class Node {

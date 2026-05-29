@@ -1,5 +1,7 @@
 https://leetcode.com/problems/minimum-cost-to-cut-a-stick/
 
+time O(cuts.length^3)
+space O(cuts.length^2)
 
 class Solution {
   public int minCost(int n, int[] cuts) {

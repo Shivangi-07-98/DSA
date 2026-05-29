@@ -1,5 +1,7 @@
 https://leetcode.com/problems/super-ugly-number/
 
+time O(n * primes.length)
+space O(n + primes.length)
 
 class Solution {
   public int nthSuperUglyNumber(int n, int[] primes) {

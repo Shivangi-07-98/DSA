@@ -1,5 +1,7 @@
 https://leetcode.com/problems/super-egg-drop/
 
+time O(eggs * n * log n)
+space O(eggs * n)
 
 class Solution {
   public int superEggDrop(int eggs, int n) {

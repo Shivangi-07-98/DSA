@@ -1,5 +1,7 @@
 // https://www.geeksforgeeks.org/dynamic-programming-building-bridges/
 
+// time O(n^2)
+// space O(n)
 
 import java.io.*;
 import java.util.*;

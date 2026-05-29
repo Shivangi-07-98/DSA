@@ -1,5 +1,7 @@
 https://www.geeksforgeeks.org/friends-pairing-problem/
 
+time O(n)
+space O(n)
 
 class Solution {
   int MOD = 1000000007;

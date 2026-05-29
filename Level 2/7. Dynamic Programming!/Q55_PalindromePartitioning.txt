@@ -1,5 +1,7 @@
 https://leetcode.com/problems/palindrome-partitioning/
 
+time O(n * 2^n)
+space O(n * 2^n)
 
 class Solution {
   boolean[][] ip;
