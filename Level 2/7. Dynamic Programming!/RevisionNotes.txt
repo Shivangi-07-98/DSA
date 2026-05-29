@@ -1,2 +1,78 @@
+There are mainly 3 things:
 
-0 hr 25 min
+1. Subarray / Substring
+2. Subsequence
+3. Subset
+--------------------------------------------
+1. Subarray / Substring = CONTIGUOUS
+
+This means:
+Elements must stay together.
+No skipping allowed.
+
+ABCD
+Then valid subarrays/substrings are:
+A AB ABC ABCD
+B BC BCD
+C CD
+D
+
+Usually O(n²) brute force with start/end.
+n(n+1)/2
+
+----------------------------------------------
+
+2. Subsequence = ORDER MATTERS, GAPS ALLOWED
+Order must remain same
+BUT Skipping is allowed
+
+every element has 2 choices:
+take it
+or skip it
+
+Total subsequences: For n elements 2^n - 1
+subsequence = subset - empty set
+
+----------------------------------------------
+
+3. Subset = ANYTHING
+Subset comes from sets.
+Order does NOT matter.
+
+subset and subsequence are often very similar
+Difference is mainly:
+subsequence → order preserved
+subset → order irrelevant
+
+Total subset: For n elements 2^n
+subset = subsequence + empty set
+
+-----------------------------------------------
+
+1. SUBARRAY / SUBSTRING - Continuous, Order same, No skipping
+ABC:
+A  AB  ABC  B  BC  C
+Count:
+n(n+1)/2
+
+2. SUBSEQUENCE - Order same, Skipping allowed
+ABC:
+A  B  C  AB  AC  BC  ABC
+Count:
+2^n - 1   (usually non-empty)
+
+3. SUBSET - Order ignored, Selection only, Includes empty set
+ABC:
+{}  A  B  C  AB  AC  BC  ABC
+Count:
+2^n
+
+MAIN DIFFERENCE
+Subarray    -> continuous
+Subsequence -> take/skip, order same
+Subset      -> selection only, order ignored
+
+-------------------------------------------------
+
+
+0 hr 24 min
