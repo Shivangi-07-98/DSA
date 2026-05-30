@@ -74,5 +74,87 @@ Subset      -> selection only, order ignored
 
 -------------------------------------------------
 
+Q8 java does not know how to compare 2d arr
+{8,1}  and  {1,2}
+Should it compare 8 and 1?
+Or 1 and 2?
+Java doesn't know.
+Therefore we give a custom comparison rule.
 
-0 hr 24 min
+Arrays.sort(arr, comparator);
+
+Arrays.sort(array, (a,b) -> {
+    // comparison logic
+});
+
+The second parameter is called a Comparator.
+You are telling Java whenever you need to compare two rows, use this logic.
+
+Suppose Java wants to compare: {8,1} and {1,2}
+Then:
+b1 = {8,1}
+b2 = {1,2}
+
+Now inside comparator:
+b1[0] = 8
+b1[1] = 1
+
+b2[0] = 1
+b2[1] = 2
+
+Arrays.sort(arr, (b1, b2) -> { ... })
+
+1. b1 is ALWAYS the first argument and b2 is ALWAYS the second argument. Their roles never change.
+
+2. Java looks at the SIGN of the returned value (negative, positive, or zero). It does NOT care how the value was calculated or where b1/b2 appear in the expression.
+
+3. Comparator rules:
+  * return negative  -> b1 comes before b2
+  * return positive  -> b2 comes before b1
+  * return 0         -> both are considered equal
+
+4. Ascending order:
+  return b1 - b2;
+  Example: 2 - 5 = -3 (negative)
+  => b1 comes before b2
+  => 2, 5
+
+5. Descending order:
+  return b2 - b1;
+  Example: 5 - 2 = 3 (positive)
+  => b2 comes before b1
+  => 5, 2
+
+Important:
+Java decides using the original arguments (b1, b2), NOT by where b1 and b2 appear in the subtraction expression.
+
+-------------------------------------------------------------------------
+
+1. Ascending:
+Arrays.sort(arr, (b1, b2) -> b1 - b2)
+
+compare(2,5)   -> b1-b2 = 2-5 = -3   -> 2 before 5
+compare(7,2)   -> b1-b2 = 7-2 = 5    -> 2 before 7
+compare(9,3)   -> b1-b2 = 9-3 = 6    -> 3 before 9
+compare(10,1)  -> b1-b2 = 10-1 = 9   -> 1 before 10
+
+Result: smaller value always comes first
+=> Ascending Order
+
+2. Descending:
+Arrays.sort(arr, (b1, b2) -> b2 - b1)
+
+compare(2,5)   -> b2-b1 = 5-2 = 3    -> 5 before 2
+compare(7,2)   -> b2-b1 = 2-7 = -5   -> 7 before 2
+compare(9,3)   -> b2-b1 = 3-9 = -6   -> 9 before 3
+compare(10,1)  -> b2-b1 = 1-10 = -9  -> 10 before 1
+
+Result: larger value always comes first
+=> Descending Order
+
+Note: b1 is ALWAYS the first argument and b2 is ALWAYS the second argument. Only the expression changes (b1-b2 or b2-b1).
+
+-------------------------------------------------------------------------
+
+
+1 hr 51
