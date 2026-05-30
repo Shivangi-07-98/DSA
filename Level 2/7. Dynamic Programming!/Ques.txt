@@ -1,7 +1,7 @@
 1. fibonacci - 23 aug 2022----
 vimp 2. climb stairs
-3. climb stairs with variable jumps
-4. climb stairs with minimum moves
+vimp 3. climb stairs with variable jumps
+vimp 4. climb stairs with minimum moves
 vimp 5. min cost in maze traversal
 vimp 6. goldmine
 vimp 7. longest increasing subsequence n^2 - 24 aug 2022----
@@ -10,8 +10,8 @@ vimp 9. russian doll envelopes
 vimp 10. maximum profit in job scheduling
 11. minimum number of increasing subsequences ×
 vimp 12. longest increasing subsequence nlog(n)
-13. count binary strings - 26 aug 2022----
-14. arrange buildings ×
+vimp 13. count binary strings - 26 aug 2022----
+vimp 14. arrange buildings
 15. paint fence
 16. paint house
 17. paint house many colors
@@ -35,7 +35,7 @@ vimp 34. best time to buy and sell stock with transaction fee
 vimp 35. best time to buy and sell stock with cooldown
 vimp 36. best time to buy and sell stock 3
 37. best time to buy and sell stock 4 - 1 sept 2022----
-38. tiling with 2*1 tiles
+vimp 38. tiling with 2*1 tiles
 39. tiling with m*1 tiles ×
 40. friends pairing ×
 41. partition into subsets ×
@@ -55,7 +55,6 @@ vimp 54. longest common subsequence
 55. palindrome partitioning
 56. count a+b+c+ subsequences ×
 57. longest common subsequence 3 strings ×
-
 58. ugly number - 12 sept 2022----
 59. ugly number 2
 60. super ugly number ×
