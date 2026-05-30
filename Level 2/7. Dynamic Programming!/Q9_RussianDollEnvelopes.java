@@ -34,7 +34,7 @@ public class Q9_RussianDollEnvelopes {
 
     int len = 0;
     for (int val : lis) {
-      len = Math.max(len, val);
+      len = Math.max(val, len);
     }
 
     return len;
