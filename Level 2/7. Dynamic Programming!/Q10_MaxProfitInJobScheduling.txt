@@ -36,7 +36,7 @@ class Solution {
 
     int len = 0;
     for (int val : lis) {
-      len = Math.max(len, val);
+      len = Math.max(val, len);
     }
 
     return len;
