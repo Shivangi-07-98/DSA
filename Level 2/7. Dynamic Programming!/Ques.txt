@@ -7,7 +7,7 @@ vimp 6. goldmine
 vimp 7. longest increasing subsequence n^2 - 24 aug 2022----
 vimp 8. building bridges
 vimp 9. russian doll envelopes
-vimp 10. weighted job scheduling set 2 using lis/maximum profit in job scheduling
+vimp 10. maximum profit in job scheduling
 11. minimum number of increasing subsequences ×
 vimp 12. longest increasing subsequence nlog(n)
 13. count binary strings - 26 aug 2022----
