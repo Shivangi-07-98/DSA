@@ -26,11 +26,11 @@ vimp 12. longest increasing subsequence nlog(n)
 vimp 26. target sum subsets - 28 aug 2022----
 vimp 27. partition equal subset sum
 vimp 28. coin change combination
-29. coin change permutations ×
+vimp 29. coin change permutations
 vimp 30. zero one knapsack
 vimp 31. unbounded knapsack
 vimp 32. best time to buy and sell stock - 30 aug 2022----
-33. best time to buy and sell stock 2
+vimp 33. best time to buy and sell stock 2
 vimp 34. best time to buy and sell stock with transaction fee
 vimp 35. best time to buy and sell stock with cooldown
 vimp 36. best time to buy and sell stock 3
