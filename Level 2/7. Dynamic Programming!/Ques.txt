@@ -17,7 +17,7 @@
 17. paint house many colors
 18. highway billboard
 19. total number of possible binary search trees with n keys/count bst
-20. catalan - 27 aug 2022----
+20. catalan - 27 aug 2022----skip
 21. unique binary search trees ×
 22. count brackets ×
 23. valleys and mountains × | maze path above diagonal × | dyck words ×
@@ -55,11 +55,11 @@
 55. palindrome partitioning
 56. count a+b+c+ subsequences ×
 57. longest common subsequence 3 strings ×
-58. ugly number × - 12 sept 2022----
-59. ugly number 2
+58. ugly number × - 12 sept 2022----skip
+59. ugly number 2 ×
 60. super ugly number ×
 61. distinct subsequences 2 ×
-62. distinct subsequences
+62. distinct subsequences ×
 63. probability of knight to remain in the chessboard - 14 sept 2022----
 64. longest repeating subsequence ×
 65. wildcard pattern matching
