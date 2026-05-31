@@ -15,8 +15,8 @@
 15. paint fence
 16. paint house
 17. paint house many colors
-18. highway billboard
-19. total number of possible binary search trees with n keys/count bst
+18. highway billboard ×
+19. total number of possible binary search trees with n keys/count bst ×
 20. catalan - 27 aug 2022----skip
 21. unique binary search trees ×
 22. count brackets ×
