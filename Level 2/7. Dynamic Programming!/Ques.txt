@@ -17,7 +17,7 @@
 17. paint house many colors
 18. highway billboard ×
 19. total number of possible binary search trees with n keys/count bst ×
-20. catalan - 27 aug 2022----skip
+20. catalan - 27 aug 2022----
 21. unique binary search trees ×
 22. count brackets ×
 23. valleys and mountains × | maze path above diagonal × | dyck words ×
@@ -34,11 +34,12 @@
 34. best time to buy and sell stock with transaction fee
 35. best time to buy and sell stock with cooldown
 36. best time to buy and sell stock 3
-37. best time to buy and sell stock 4 - 1 sept 2022----
+37. best time to buy and sell stock 4 × - 1 sept 2022----
 38. tiling with 2*1 tiles
 39. tiling with m*1 tiles ×
 40. friends pairing ×
 41. partition into subsets ×
+
 42. matrix chain multiplication - 3 sept 2022----
 43. minimum maximum value expression × - 6 sept 2022----skip
 44. optimal binary search tree ×
