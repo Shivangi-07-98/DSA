@@ -82,4 +82,5 @@
 82. cherry pickup 2 ×
 83. cherry pickup ×
 84. scramble string ×
-85. super egg drop binary search × - 3 oct 2022----skip
+
+85. super egg drop binary search × - 3 oct 2022----
