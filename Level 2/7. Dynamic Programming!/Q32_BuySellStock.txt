@@ -10,7 +10,7 @@ class Solution {
 
     for (int i = 1; i < prices.length; i++) {
       bp = Math.min(bp, prices[i]);
-      int pist = prices[i] - bp;
+      int pist = prices[i] - bp; // profit if sold today
       prof = Math.max(prof, pist);
     }
 
