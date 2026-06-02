@@ -5,18 +5,18 @@ space O(n)
 
 class Solution {
   public int maxProfit(int[] prices) {
-    int[] dps = new int[prices.length];
 
-    int lpsf = prices[0];
+    int[] dps = new int[prices.length]; // dp for sell
+    int lpsf = prices[0]; // least price so far
     dps[0] = 0;
     for (int i = 1; i < prices.length; i++) {
       lpsf = Math.min(lpsf, prices[i]);
 
-      int pist = prices[i] - lpsf;
+      int pist = prices[i] - lpsf; // profit if sold today
       dps[i] = Math.max(dps[i - 1], pist);
     }
 
-    int[] dpb = new int[prices.length];
+    int[] dpb = new int[prices.length]; // dp for buying
     dpb[dpb.length - 1] = 0;
     int mpsf = prices[prices.length - 1];
     for (int i = prices.length - 2; i >= 0; i--) {
