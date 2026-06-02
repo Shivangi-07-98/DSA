@@ -5,9 +5,10 @@ space O(1)
 
 class Solution {
   public int maxProfit(int[] prices) {
+
     int obsp = -prices[0];
     int ossp = 0;
-    int ocsp = 0;
+    int ocsp = 0; // old cooled state profit
 
     for (int i = 1; i < prices.length; i++) {
       int nbsp = Math.max(ocsp - prices[i], obsp);
