@@ -5,6 +5,7 @@ space O(n^2)
 
 class Solution {
   public int maxCoins(int[] nums) {
+
     int[][] dp = new int[nums.length][nums.length];
 
     for (int g = 0; g < dp[0].length; g++) {
