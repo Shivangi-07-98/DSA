@@ -60,7 +60,8 @@
 59. ugly number 2 ×
 60. super ugly number ×
 61. distinct subsequences 2 ×
-62. distinct subsequences ×
+62. distinct subsequences
+
 63. probability of knight to remain in the chessboard - 14 sept 2022----
 64. longest repeating subsequence ×
 65. wildcard pattern matching
