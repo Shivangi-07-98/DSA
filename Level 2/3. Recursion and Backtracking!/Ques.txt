@@ -12,18 +12,18 @@ vimp 10. nqueens combinations 2d as 1d queen chooses
 12. nknights combinations 2d as 1d knight chooses ×
 vimp 13. nqueens branch and bound - 22 apr 2022----
 vimp 14. solve sudoku
-15. cryptarithmetic - 25 apr 2022----
-16. crossword puzzle
+15. cryptarithmetic × - 25 apr 2022----
+16. crossword puzzle ×
 17. lexicographical numbers × - 26 apr 2022----
-18. friends pairing 2
-19. k partitions - 2 may 2022----
-20. k subsets with equal sum
+18. friends pairing 2 ×
+19. k partitions × - 2 may 2022----
+20. k subsets with equal sum ×
 21. permutations words 1 ×
 22. permutations words 2 ×
 vimp 23. pattern matching - 4 may 2022----
 vimp 24. word break 1
-25. tug of war
-26. largest number possible after at most k swaps
+vimp 25. tug of war
+vimp 26. largest number possible after at most k swaps
 27. words k selection 1 × - 6 may 2022----
 28. words k length words 1 ×
 29. words k length words 2 ×
@@ -31,14 +31,14 @@ vimp 24. word break 1
 31. words k selection 3 × - 10 may 2022----
 32. words k length words 4 ×
 33. words k selection 4 ×
-34. coin change combinations 1
-35. coin change permutations 1
-36. coin change combinations 2 - 11 may 2022----
-37. coin change permutations 2
-38. josephus problem
+34. coin change combinations 1 ×
+35. coin change permutations 1 ×
+36. coin change combinations 2 × - 11 may 2022----
+37. coin change permutations 2 ×
+38. josephus problem ×
 39. abbreviation using backtracking ×
 40. max score ×
 41. all palindromic permutations × - 13 may 2022----
 
-imp 42. remove invalid parenthesis - 12 nov 2022----
-imp 43. all palindromic partitions
+vimp 42. remove invalid parenthesis - 12 nov 2022----
+vimp 43. all palindromic partitions
