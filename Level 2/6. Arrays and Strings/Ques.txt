@@ -26,11 +26,10 @@
 26. partition labels - 25 july 2022----
 27. partition array into disjoint intervals
 28. reach a number
-29. consecutive numbers sum - 27 july 2022----
-
+29. consecutive numbers sum × - 27 july 2022----
+30. push dominoes
 
 28. two sum sorted array
-30. push dominoes
 31. maximum subarray
 32. maximum product subarray
 33. maximum product subarray2
