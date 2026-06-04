@@ -1,22 +1,22 @@
-1. number of islands - 13 june 2022----
+vimp 1. number of islands - 13 june 2022----
 2. number of enclaves
 vimp 3. rotting oranges
-4. is graph bipartite - 14 june 2022----
-5. bus routes
-6. number of distinct island ×
+vimp 4. is graph bipartite - 14 june 2022----
+imp 5. bus routes
+6. number of distinct island
 vimp 7. 01 matrix - 15 june 2022----
-8. as far from land as possible ×
+8. as far from land as possible
 9. shortest path in weights
-10. swim in rising water
+imp 10. swim in rising water
 11. minimum wire to connect all pcs
 12. minimum cost to connect all cities
-13. coloring a border × - 16 june 2022----
-14. shortest bridge
+13. coloring a border - 16 june 2022----
+imp 14. shortest bridge
 15. strongly connected components kosaraju's algo × - 20 june 2022----
 16. mother vertex ×
 vimp 17. clone graph
 18. topological sorting - 21 june 2022----
-19. given sorted dictionary find precedence characters/alien dictionary
+vimp 19. given sorted dictionary find precedence characters/alien dictionary
 vimp 20. kahn's algorithm for topological sorting
 vimp 21. course schedule 2
 vimp 22. disjoint set union - 22 june 2022----
@@ -25,13 +25,13 @@ vimp 23. kruskal minimum spanning tree/minimum wire to connect all pcs
 vimp 25. redundant connection - 23 june 2022----
 26. regions cut by slashes ×
 27. sentence similarity ×
-28. satisfiability of equality equations - 27 june 2022----
-29. evaluate division
+imp 28. satisfiability of equality equations - 27 june 2022----
+imp 29. evaluate division
 30. articulation point × - 29 june 2022----
 31. articulation point 2 ×
 32. bridge edge in graph ×
 33. minimize malware spread × - 30 june 2022----
-34. similar string groups ×
+34. similar string groups
 35. redundant connection 2 ×
 36. minimum swaps to sort × - 1 july 2022----
 37. minimum swaps to make two array identical ×
@@ -43,16 +43,19 @@ vimp 25. redundant connection - 23 june 2022----
 43. eulerian path in an undirected graph ×
 44. sliding puzzle × - 6 july 2022----
 45. k similar strings ×
-46. reconstruct itinerary
-47. find eventual safe states - 7 july 2022----
+46. reconstruct itinerary ×
+imp 47. find eventual safe states - 7 july 2022----
 48. smallest string with swaps
-49. bricks falling when hit ×
+49. bricks falling when hit
 50. cracking the safe × - 8 july 2022----
 vimp 51. cheapest flights within k stops
-52. remove max number of edges to keep graph fully traversable - 9 july 2022----
+52. remove max number of edges to keep graph fully traversable × - 9 july 2022----
 53. bricks falling when hit
 54. distance from the source bellman ford algorithm × - 11 july 2022----
 55. implementing floyd warshall ×
 56. graph connectivity with threshold ×
 57. ford fulkerson/find the maximum flow × - 12 july 2022----
 58. find critical and pseudo critical edges in minimum spanning tree ×
+
+
+the ques marked with × are completely nonsense even for google interviews, never asked in microsoft, amazon, uber, adobe, walmart, meta, or any top product company they are a total waste of time
