@@ -42,3 +42,6 @@ vimp 26. largest number possible after at most k swaps
 
 vimp 42. remove invalid parenthesis - 12 nov 2022----
 vimp 43. all palindromic partitions
+
+
+the ques marked with × are completely nonsense even for google interviews, never asked in microsoft, amazon, uber, adobe, walmart, meta, or any top product company they are a total waste of time
