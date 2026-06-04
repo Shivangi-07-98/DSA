@@ -15,9 +15,9 @@ vimp 14. solve sudoku
 15. cryptarithmetic × - 25 apr 2022----
 16. crossword puzzle ×
 17. lexicographical numbers × - 26 apr 2022----
-18. friends pairing 2 ×
-19. k partitions × - 2 may 2022----
-20. k subsets with equal sum ×
+18. friends pairing 2
+19. k partitions - 2 may 2022----
+20. k subsets with equal sum
 21. permutations words 1 ×
 22. permutations words 2 ×
 vimp 23. pattern matching - 4 may 2022----
