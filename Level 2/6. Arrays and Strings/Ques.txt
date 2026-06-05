@@ -29,8 +29,8 @@
 29. consecutive numbers sum × - 27 july 2022----
 30. push dominoes
 31. maximum subarray
-
 32. maximum product subarray
+
 28. two sum sorted array
 33. maximum product subarray2
 34. sieve of eratosthenes
