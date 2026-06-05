@@ -1,0 +1,617 @@
+﻿ALL LEVEL 1 QUESTIONS AND SELECTED LEVEL 2 QUESTIONS
+
+LEVEL 2 - SELECTED TOPICS
+
+## 1. Hashmap and Heap
+1. subarray with equal number of 0 and 1 - 11 mar 2022----
+2. substring with equal 0 1 and 2
+3. number of subarrays sum exactly k
+4. subarray sum divisible by k
+5-8. longest subarray
+9. count pair whose sum is divisible by k - 14 mar 2022----
+10. x of a kind in a deck
+11. check ap sequence
+12. array of doubled pair
+13. rabbits in forest
+14. same differences - 15 mar 2022----
+15. count of distinct elements in window of size k
+16. number of employees under every manager
+17. longest consecutive sequence of 1's in a binary string
+18. is array divisible in pairs whose sum is k
+19. find all anagrams - 17 mar 2022----
+20. k anagrams
+21. minimum window substring
+22. find anagram mappings
+23. longest unique substring - 22 mar 2022----
+24. count of substrings having all unique characters
+25. find itinerary from tickets
+26. morning assembly (tricky sorting cost) ×
+27. isomorphic strings
+28. smallest substring containing all unique characters
+29. word pattern
+30. longest substring with exactly k unique characters
+31. smallest subarray with most frequent element - 23 mar 2022----
+32. first non repeating character
+33. lru cache
+34. task completion
+35. pairs with given sum in two sorted matrices - 24 mar 2022----
+36. quadruplet sum1
+37. quadruplet sum2
+38. largest subarray with contiguous elements
+39. powerful integers ×
+40. subdomain visit count
+41. group anagrams - 25 mar 2022----
+42. group shifted strings
+43. maximum consecutive ones - 1
+44. maximum consecutive ones - 2
+45. longest substring with atmost k unique characters
+46. count of substrings having atmost k unique characters
+47. count of substrings with exactly k unique characters
+48. equivalent subarrays
+49. max frequency stack - 28 mar 2022----
+50. insert delete get random O(1)
+51. insert delete get random O(1) - duplicates allowed
+52. recurring sequence in a fraction ×
+53. pairs with equal sum
+54. brick wall - 30 mar 2022----
+55. random pick with blacklist
+56. the skyline problem ×
+57. pairs of non coinciding points ×
+58. minimum cost to connect sticks - 31 mar 2022----
+59. snapshot array
+60. encode and decode tinyurl
+61. avoid flood in the city
+62. minimum number of refueling stops - 1 apr 2022----
+63. line reflection ×
+64. reorganize string
+65. binary string with substrings representing numbers from 1 to n ×
+66. longest substring with every char occuring at least k times
+
+67. rearrange characters string no two adjacent - 13 oct 2022----
+68. grid illumination ×
+69. pairs of non coinciding points ×
+70. length of the largest subarray with contiguous elements set 2 ×
+71. random pick with blacklist - 15 oct 2022----
+72. check anagram string palindrome or not ×
+73. check if frequency of all characters can become same by one removal ×
+74. count number of nice subarrays - 20 oct 2022----
+75. subarrays with k different integers
+76. number of substrings containing all three characters
+77. find median from data stream
+78. fruit into baskets - 22 oct 2022----
+79. replace the substring for balanced string
+80. minimum size subarray sum
+81. island perimeter
+82. a simple fraction ×
+83. shortest subarray with sum at least k
+
+## 4. Trees
+1. level order - 16 may 2022----
+2. reverse level order
+3. left right top bottom view
+4. vertical order traversal of a bt - 17 may 2022----
+5. diagonal traversal
+6. boundary traversal of binary tree
+7. binary tree coloring game - 18 may 2022----
+8. morris in order traversal - 19 may 2022----
+9. morris pre order traversal
+10. recover bst
+11. in order successor
+12. iterative pre post in order traversals - 23 may 2022----
+13. construct binary tree from preorder and inorder traversal
+14. construct binary tree from inorder and postorder traversal
+15. count complete tree nodes
+16. max path sum (root to leaves) - 24 may 2022----
+17. max path sum (root to node)
+18. max path sum (node to node)
+19. path sum 3 (brute)
+19. path sum 3 (optimised) - 25 may 2022----
+20. max path sum (leaf to leaf)
+21. construct bst from preorder traversal
+22. construct bst from postorder
+23. populating next right pointers in each node - 26 may 2022----
+24. image multiplication
+25. validate binary search tree
+26. find the closest element in bst
+27. populating next right pointers in each node 2 - 31 may 2022----
+28. binary tree cameras
+29. clone a binary tree
+30. delete node in a bst
+31. sum of distances in tree - 1 june 2022----
+32. construct binary tree from preorder and postorder traversal
+33. flatten binary tree to linked list - 2 june 2022----
+34. convert a binary tree to a circular doubly linked list
+35. construct tree from inorder and level order
+36. distribute coins in binary tree
+37. serialize and deserialize binary tree - 6 june 2022----
+38. kth smallest element in bst
+39. longest univalue path
+40. recover a tree from preorder traversal - 7 june 2022----
+41. lowest common ancestor of a binary search tree
+42. lowest common ancestor in a binary tree
+43. step by step directions from a binary tree node to another
+44. sum root to leaf numbers - 8 june 2022----
+45. maximum width of binary tree
+46. convert bst to greater tree
+47. longest even sum path
+48. avl - 9 june 2022----
+
+kth ancestor of a tree node × - 6 oct 2022----
+longest even sum path - 8 oct 2022----
+count univalue subtrees - 11 oct 2022----
+
+## 6. Arrays and Strings
+1. container with most water - 15 july 2022----
+2. squares of a sorted array
+3. next greater element 3
+4. majority element
+5. max chunks to make sorted - 18 july 2022----
+6. max chunks to make sorted 2
+7. number of subarrays with bounded maximum
+8. long pressed name
+9. largest number at least twice of others
+10. sort array by parity - 20 july 2022----
+11. reverse vowels of a string
+12. minimum moves to equal array elements 2
+13. product of array except self
+14. maximum swap
+15. maximize distance to closest person
+16. sort the matrix diagonally - 21 july 2022----
+17. first missing positive
+18. pairs of songs with total durations divisible by 60
+19. minimum number platforms required railway bus station
+20. car pooling
+21. minimum moves to equal array elements - 22 july 2022----
+22. boats to save people
+23. key pair
+24. find pair given difference
+25. best meeting point
+26. partition labels - 25 july 2022----
+27. partition array into disjoint intervals
+28. reach a number
+29. consecutive numbers sum × - 27 july 2022----
+30. push dominoes
+
+28. two sum sorted array
+31. maximum subarray
+32. maximum product subarray
+33. maximum product subarray2
+34. sieve of eratosthenes
+35. max sum of two non overlapping subarrays
+36. insert interval
+37. interval list intersections
+38. merge intervals
+39. trapping rain water
+40. gas station
+41. max product of three numbers
+42. min arrows to burst balloons
+43. sliding window maximum
+44. sum of subsequence widths
+45. ways to make a fair array
+46. car fleet
+47. first negative in every window
+48. max score of spliced array
+49. max consecutive ones3
+50. divide chocolate
+51. koko eating bananas
+52. min limit of balls in bag
+53. painters partition problem
+54. capacity to ship packages within d days
+55. split array largest sum
+56. allocate minimum pages
+57. count inversions
+58. count of smaller numbers after self
+59. kth smallest element in sorted matrix
+60. kth smallest in multiplication table
+61. kth smallest pair distance
+62. longest happy prefix
+63. find first occurrence in string
+64. shortest palindrome
+65. max consecutive ones2
+66. meeting rooms
+67. meeting rooms2
+68. range addition
+69. largest number
+70. range sum query mutable
+71. z algorithm pattern search
+72. majority element
+73. majority element2
+74. min cost to move chips
+75. secret password
+76. sum of scores of built strings
+77. fenwick tree range sum query mutable
+
+LEVEL 1 - ALL TOPICS
+
+## 1. Getting Started
+1. Print Z
+2. Grading System
+3. Is A Number Prime
+4. Print All Primes Till N
+5. Print Fibonacci Numbers Till N
+6. Count Digits In A Number
+7. Digits Of A Number
+8. Reverse A Number
+9. Inverse Of A Number
+10. Rotate A Number
+11. Gcd And Lcm
+12. Prime Factorization Of A Number
+13. The Curious Case Of Benjamin Bulbs
+14. Pythagorean Triplet
+15. Hello Name
+16. Hello World
+
+## 2. Patterns
+1. Pattern 1
+2. Pattern 2
+3. Pattern 3
+4. Pattern 4
+5. Pattern 5
+6. Pattern 6
+7. Pattern 7
+8. Pattern 8
+9. Pattern 9
+10. Pattern 10
+11. Pattern 11
+12. Pattern 12
+13. Pattern 13 i
+14. Pattern 13 ii
+15. Pattern 13 iii
+16. Pattern 14
+17. Pattern 15
+18. Pattern 16
+19. Pattern 17
+20. Pattern 18
+21. Pattern 19
+22. Pattern 20
+
+## 3. Function and Arrays
+1. Digit Frequency
+2. Decimal To Any Base
+3. Any Base To Decimal
+4. Any Base To Any Base
+5. Any Base Addition
+6. Any Base Subtraction
+7. Any Base Multiplication
+8. Span Of Array
+9. Find Element In An Array
+10. Bar Chart
+11. Sum Of Two Arrays
+12. Difference Of Two Arrays
+13. Reverse An Array
+14. Rotate An Array
+15. Inverse Of An Array
+16. Subarray Problem
+17. Broken Economy
+18. First Index And Last Index
+19. Subsets Of Array
+20. Inverted Bar Chart
+21. Arrays
+
+## 4. TwoD Arrays
+1. Two D Arrays Demo
+2. Matrix Multiplication
+3. The State Of Wakanda 1
+4. Spiral Display
+5. Exit Point Ofa Matrix
+6. Rotate By 90 Degrees
+7. Ring Rotate
+8. Diagonal Display
+9. Saddle Price
+10. Search In A Sorted 2D Array
+11. count
+12. Playing With Count
+13. Two Power
+
+## 5. String, String Builder and ArrayList
+1. Print All Palindromic Substrings
+2. String Compression
+3. Toggle Case
+4. String With Difference Of Every Two Consecutive Characters
+5. Print All Permutations Of A String Iteratively
+6. Remove Primes
+7. arraylist
+8. Equals
+9. example
+10. Input Of Strings
+11. Intro To Strings
+12. Modification Functions
+13. Poor Performance
+14. Replace
+15. stringbuilder
+
+## 6. Introduction to Recursion
+1. Print Decreasing
+2. Print Increasing
+3. Print Increasing Decreasing
+4. Factorial
+5. Powerlinear
+6. Powerlogarithmic
+7. Print Zigzag
+8. Tower Of Hanoi
+
+## 7. Recursion in Arrays
+1. Display Array
+2. Display Array In Reverse
+3. Max Of An Array
+4. First Index
+5. Last Index
+6. All Indices Of Array
+
+## 8. Recursion with Arraylists
+1. Get Subsequence
+2. Get Kpc
+3. Get Stair Paths
+4. Get Maze Paths
+5. Get Maze Paths With Jumps
+6. Get Subsequence
+
+## 9. Recursion on the way up
+1. Print Subsequence
+2. Print Kpc
+3. Print Stair Paths
+4. Print Maze Paths
+5. Print Maze Paths With Jumps
+6. Print Permutations
+7. Print Encodings
+8. Print Subsequence With Array List
+
+## 10. Recursion Backtracking
+1. Flood Fill
+2. Target Sum Subsets
+3. N Queens
+4. Knights Tour
+
+## 11. Time and Space Complexity
+1. Bubble Sort
+2. Bubble Sort
+3. Check Duplicate
+4. Count Sort
+5. Fibonacci
+6. Highest Frequency Character
+7. Highest Frequency Character
+8. Insertion Sort
+9. Insertion Sort
+10. Merge Sort
+11. Merge Sort
+12. Merge Two Sorted Arrays
+13. Merge Two Sorted Arrays
+14. Move 0 to End
+15. Move 0 to Front
+16. n
+17. n Square
+18. Partition An Array
+19. Polynomial
+20. Print All Primes
+21. Quick Select
+22. Quick Sort
+23. Radix Sort
+24. Selection Sort
+25. Selection Sort
+26. Sieve Of Eratosthenes
+27. Sort
+28. Sort
+29. Sort Dates
+30. Sorting Arrays
+31. Sort Lo Hi
+32. Target Sum Pair
+33. Target Sum Pair With Binary Search
+34. Target Sum Triplet
+
+## 12. Linked Lists
+1. display
+2. add last
+3. get first
+4. get last
+5. get at
+6. add first
+7. add at index
+8. remove first
+imp 9. Kth node from end
+imp 10. mid of LL
+imp 11. reverse a ll (data iterative)
+vimp 12. reverse a ll (pointer iterative)
+vimp 13. merge two sorted ll
+imp 14. merge sort
+imp 15. remove duplicates in a sorted ll
+vimp 16. K Reverse
+imp 17. odd even
+18. display reverse (recursive) LL ×
+19. remove last in ll
+20. remove at*
+vimp 21. Intersection point of a linked list
+imp 22. reverse a ll (pointer recursive)
+23. reverse a ll (data recursive) ×
+vimp 24. is a LL palindrome
+25. fold a LL ×
+vimp 26. Add two LL
+
+imp 27. copy list with random pointer (new) - 1 oct 2022----
+28. split a circular linked list into two halves (new) ×
+vimp 29. lru cache (new)
+30. lfu cache (new) ×
+imp 31. odd even linked list - 3 oct 2022----
+imp 32. reorder list/fold linked list
+33. unfold linked list (new)
+imp 34. reverse linked list
+imp 35. add two numbers - 6 oct 2022----
+36. subtraction in linked list (new) ×
+imp 37. intersection of two linked lists
+vimp 38. linked list cycle (new)
+vimp 39. linked list cycle 2 (new)
+40. quick sort on linked list (new) ×
+
+## 13. Generic Tree
+1. level order 
+2. level order linewise
+3. level order linewise zig zag
+4. construct 
+5. size, max, height of generic tree
+6. Traversals Pre Post Order
+7. serialize
+8. mirror a gt
+9. remove leaves in gt
+10. linearize a gt
+11. linearize efficient
+12. find in gt
+13. node to root path in gt
+14. lca
+15. distance between two nodes
+16. are gt similar
+17. are gt mirror in shape
+18. are gt symmetric
+19. predecessor and successor of an element
+20. multisolver
+21. second largest
+22. ceil and floor
+23. Kth largest
+24. iterative traversals
+25. node with maximum subtree sum
+26. diameter
+27.
+
+## 14. Binary Tree
+1. construct
+2. display
+3. Size Sum Maximum Height of a bt
+4. level order linewise 4 approaches
+5. find in bt
+6. node to root path in bt
+7. print k levels down 
+8. Amazon print nodes k distance away 
+9. iterative pre post inorder traversals
+10. transform to left cloned tree
+11. transform to normal from left-cloned tree
+12. remove leaves in bt
+13. print single child nodes
+14. path to leaf from root in range
+15. diameter of a bt
+16. tilt of a bt
+17. is balanced tree
+18. is a binary search tree
+19. largest bst subtree
+20.
+
+## 15. Binary Search Tree
+1. size, sum, max, min, find in bst
+2. replace with sum of larger
+3. lca of bst 
+4. print in range
+5. target sum pair in bst
+6. add node to bst
+7. remove node from bst
+8. target sum pair alternate approach
+9.
+
+## 16. Hashmap and Heap
+1. highest frequency character
+2. get common elements 1
+3. get common elements 2
+4. longest consecutive sequence - 11 oct 2022----
+4. longest consecutive sequence of elements
+5. k largest elements
+6. merge k sorted lists
+7. sort k sorted array
+8. median priority queue - imp
+9. write priority queue using heap
+10. constructor for heap x
+11. heap comparable vs comparator x
+12. write hashmap x
+
+## 17. Graphs
+1. has path?
+2. print all paths - using edges adjacency list
+3. multisolver - smallest, longest, ceil, floor, kth largest path ×
+4. get connected components of a graph
+5. is graph connected
+6. perfect friends
+7. number of islands - using edges adjacency list
+8. breadth first traversal
+9. spread of infection - using edges adjacency list
+10. is graph cyclic
+11. is graph bipartite
+12. shortest path in weights - Dijkstra's algorithm
+13. hamiltonian path and cycle ×
+14. knights tour ×
+15. iterative depth first traversal
+16. minimum wire required to connect all pcs - Prim's algorithm
+17. order of compilation ×
+18. print all paths - using edges adjacency matrix ×
+19. spread of infection - using edges adjacency matrix ×
+20. number of islands - using edges adjacency matrix ×
+
+## 18. Stacks and Queues
+imp 1. duplicate brackets - 11 feb 2022----
+imp 2. balanced brackets
+imp 3. next greater element to the right_right
+imp 4. stock span - next greater element to the left_left
+imp 5. next greater element to the right_left - 13 feb 2022----
+imp 6. next greater element to the left_right
+vimp 7. largest area histogram
+vimp 8. sliding window maximum - 14 feb 2022----
+9. infix evaluation ×
+10. infix conversions ×
+11. postfix evaluation and conversions × - 15 feb 2022----
+12. prefix evaluation and conversions ×
+imp 13. smallest number following pattern
+imp 14. implement stack using queues - 16 feb 2022----(rajneesh)
+15. dynamic stack ×
+imp 16. merge overlapping interval - 17 feb 2022----
+imp 17. celebrity problem
+18. two stacks in an array ×
+imp 19. minimum stack 1 - 18 feb 2022----
+imp 20. minimum stack - constant space
+21. queue to stack adapter - push efficient × - 19 feb 2022----
+22. queue to stack adapter - pop efficient ×
+23. stack to queue adapter - add efficient ×
+24. stack to queue adapter - remove efficient ×
+
+25. daily temperatures q5 - 2 sept 2022----
+26. find maximum difference between nearest left and right smaller elements ×
+27. largest rectangle in histogram q7
+28. valid parentheses q2
+29. maximal rectangle
+30. minimum add to make parentheses valid - 3 sept 2022----
+31. minimum number of bracket reversals needed to make an expression balanced ×
+32. find if an expression has duplicate parenthesis or not ×
+33. asteroid collision (new)
+34. length of the longest valid substring
+35. backspace string compare × - 5 sept 2022----
+36. reversing first k elements queue ×
+37. min stack q19
+38. remove duplicate letters (new) - 6 sept 2022----
+39. remove k digits (new)
+40. validate stack sequences - 7 sept 2022----
+41. maximum frequency stack (new)
+42. generate binary number (new) ×
+43. efficiently implement k stacks single array × - 20 sept 2022----
+44. efficiently implement k queues single array × - 21 sept 2022----
+
+## 19. Dynamic Programming and Greedy
+1. fibonacci dp
+2. climb stairs
+3. climb stairs with variable jumps
+4. climb stairs with minimum moves
+5. min cost in maze traversal
+6. gold mine
+7. target sum subsets
+8. count binary strings
+9. arrange buildings
+10. count encodings
+11. coin change combination
+12. coin change permutations
+13. zero one knapsack
+14. unbounded knapsack
+15. count a+b+c+ subsequences
+16. maximum sum non adjacent elements
+17. paint house
+18. paint house-many colors
+19. fractional knapsack
+20. tiling with 2*1 tiles
+21. tiling with m*1 tiles
+22. paint fence
+23. 
+
+Level 2 selected topics: 207
+Level 1 topics: 349
+total questions 556
