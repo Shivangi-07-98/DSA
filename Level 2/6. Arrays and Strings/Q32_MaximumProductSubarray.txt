@@ -34,3 +34,5 @@ class Solution {
     return res;
   }
 }
+
+a prefix is a starting part of the sequence, and a suffix is an ending part of the sequence
