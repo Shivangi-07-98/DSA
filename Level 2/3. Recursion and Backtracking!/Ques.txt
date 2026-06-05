@@ -21,7 +21,7 @@ vimp 14. solve sudoku
 21. permutations words 1 ×
 22. permutations words 2 ×
 23. pattern matching - 4 may 2022----
-vimp 24. word break 1
+24. word break 1
 25. tug of war
 26. largest number possible after at most k swaps
 27. words k selection 1 × - 6 may 2022----
@@ -41,7 +41,7 @@ vimp 24. word break 1
 41. all palindromic permutations × - 13 may 2022----
 
 42. remove invalid parenthesis - 12 nov 2022----
-vimp 43. all palindromic partitions
+43. all palindromic partitions
 
 
 the ques marked with × are completely nonsense even for google interviews, never asked in microsoft, amazon, uber, adobe, walmart, meta, or any top product company they are a total waste of time
