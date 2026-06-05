@@ -10,7 +10,7 @@ vimp 2. permutations 2
 vimp 10. nqueens combinations 2d as 1d queen chooses
 11. nqueens permutations 2d as 1d queen chooses ×
 12. nknights combinations 2d as 1d knight chooses ×
-imp 13. nqueens branch and bound - 22 apr 2022----
+13. nqueens branch and bound - 22 apr 2022----
 vimp 14. solve sudoku
 15. cryptarithmetic × - 25 apr 2022----
 16. crossword puzzle ×
