@@ -32,12 +32,12 @@
 32. maximum product subarray
 33. sieve of eratosthenes/count primes
 34. maximum sum of two non overlapping subarrays - 28 july 2022----
+35. trapping rain water
 
 28. two sum sorted array
 36. insert interval
 37. interval list intersections
 38. merge intervals
-39. trapping rain water
 40. gas station
 41. max product of three numbers
 42. min arrows to burst balloons
