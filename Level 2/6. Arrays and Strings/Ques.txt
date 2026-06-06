@@ -34,9 +34,9 @@
 34. maximum sum of two non overlapping subarrays - 28 july 2022----
 35. trapping rain water
 36. merge intervals
+37. insert interval
 
 28. two sum sorted array
-36. insert interval
 37. interval list intersections
 40. gas station
 41. max product of three numbers
