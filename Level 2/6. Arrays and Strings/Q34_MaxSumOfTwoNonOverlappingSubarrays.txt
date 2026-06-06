@@ -19,7 +19,7 @@ class Solution {
         left[i] = sum;
       } else if (i >= fl) {
         sum -= nums[i - fl];
-        left[i] = Math.max(left[i - 1], sum);
+        left[i] = Math.max(sum, left[i - 1]);
       }
     }
 
