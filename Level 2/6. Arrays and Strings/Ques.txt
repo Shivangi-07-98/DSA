@@ -35,9 +35,9 @@
 35. trapping rain water
 36. merge intervals
 37. insert interval
+38. interval list intersections
 
 28. two sum sorted array
-37. interval list intersections
 40. gas station
 41. max product of three numbers
 42. min arrows to burst balloons
