@@ -30,10 +30,9 @@
 30. push dominoes
 31. maximum subarray
 32. maximum product subarray
+33. sieve of eratosthenes/count primes
 
 28. two sum sorted array
-33. maximum product subarray2
-34. sieve of eratosthenes
 35. max sum of two non overlapping subarrays
 36. insert interval
 37. interval list intersections
