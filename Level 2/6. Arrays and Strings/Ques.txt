@@ -31,9 +31,9 @@
 31. maximum subarray
 32. maximum product subarray
 33. sieve of eratosthenes/count primes
+34. maximum sum of two non overlapping subarrays - 28 july 2022----
 
 28. two sum sorted array
-35. max sum of two non overlapping subarrays
 36. insert interval
 37. interval list intersections
 38. merge intervals
