@@ -34,6 +34,7 @@
 34. best time to buy and sell stock with transaction fee
 35. best time to buy and sell stock with cooldown
 36. best time to buy and sell stock 3
+
 37. best time to buy and sell stock 4 × - 1 sept 2022----
 38. tiling with 2*1 tiles
 39. tiling with m*1 tiles ×
@@ -44,7 +45,6 @@
 44. optimal binary search tree ×
 45. burst balloons - 7 sept 2022----
 46. minimum score triangulation of polygon ×
-
 47. longest common substring - 9 sept 2022----
 48. palindromic substrings
 49. longest palindromic substring
@@ -61,7 +61,6 @@
 60. super ugly number ×
 61. distinct subsequences 2 ×
 62. distinct subsequences
-
 63. probability of knight to remain in the chessboard - 14 sept 2022----
 64. longest repeating subsequence ×
 65. wildcard pattern matching
