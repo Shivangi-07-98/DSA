@@ -50,10 +50,10 @@
 50. digit multiplier
 51. find minimum in rotated sorted array
 52. find the smallest divisor given a threshold
+53. divide chocolate/chocolate distribution problem - 5 aug 2022----
 
 
 48. max score of spliced array
-50. divide chocolate
 51. koko eating bananas
 52. min limit of balls in bag
 53. painters partition problem
