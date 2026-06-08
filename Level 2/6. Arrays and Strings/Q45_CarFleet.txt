@@ -33,6 +33,21 @@ class Solution {
 ----------------------------------------------------------------------------
 
 class Solution {
+
+  class Car implements Comparable<Car> {
+    int pos;
+    int speed;
+
+    Car(int pos, int speed) {
+      this.pos = pos;
+      this.speed = speed;
+    }
+
+    public int compareTo(Car c) {
+      return this.pos - c.pos;
+    }
+  }
+
   public int carFleet(int target, int[] position, int[] speed) {
     Car[] cars = new Car[position.length];
 
@@ -54,20 +69,6 @@ class Solution {
     }
 
     return groups;
-  }
-
-  class Car implements Comparable<Car> {
-    int pos;
-    int speed;
-
-    Car(int pos, int speed) {
-      this.pos = pos;
-      this.speed = speed;
-    }
-
-    public int compareTo(Car c) {
-      return this.pos - c.pos;
-    }
   }
 
 }
