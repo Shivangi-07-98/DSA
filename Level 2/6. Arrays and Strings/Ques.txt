@@ -41,8 +41,9 @@
 41. gas station
 42. sliding window maximum
 43. maximum product of three numbers
+44. balance array/ways to make a fair array - 1 aug 2022----
 
-42. two sum sorted array
+44. two sum sorted array
 45. ways to make a fair array
 46. car fleet
 47. first negative in every window
