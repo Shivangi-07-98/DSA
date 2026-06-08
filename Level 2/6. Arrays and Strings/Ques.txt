@@ -48,6 +48,7 @@
 48. first negative integer in every window of size k
 49. max consecutive ones 3 - 4 aug 2022----
 50. digit multiplier
+51. find minimum in rotated sorted array
 
 
 48. max score of spliced array
