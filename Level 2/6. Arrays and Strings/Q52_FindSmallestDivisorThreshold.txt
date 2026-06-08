@@ -11,7 +11,8 @@ class Solution {
 
       int sum = 0;
       for (int val : nums) {
-        sum += (val + mid - 1) / mid;
+        int quo = (val + mid - 1) / mid;
+        sum += quo;
       }
 
       if (sum > threshold) {
