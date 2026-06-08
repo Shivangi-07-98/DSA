@@ -47,6 +47,7 @@
 47. smallest range covering elements from k lists
 48. first negative integer in every window of size k
 49. max consecutive ones 3 - 4 aug 2022----
+50. digit multiplier
 
 
 48. max score of spliced array
