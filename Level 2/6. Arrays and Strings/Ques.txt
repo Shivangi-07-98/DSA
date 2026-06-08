@@ -49,6 +49,7 @@
 49. max consecutive ones 3 - 4 aug 2022----
 50. digit multiplier
 51. find minimum in rotated sorted array
+52. find the smallest divisor given a threshold
 
 
 48. max score of spliced array
