@@ -40,9 +40,9 @@
 40. minimum number of arrows to burst balloons
 41. gas station
 
-28. two sum sorted array
-41. max product of three numbers
-43. sliding window maximum
+42. two sum sorted array
+43. max product of three numbers
+44. sliding window maximum
 45. ways to make a fair array
 46. car fleet
 47. first negative in every window
@@ -60,7 +60,7 @@
 59. kth smallest element in sorted matrix
 60. kth smallest in multiplication table
 61. kth smallest pair distance
-62. longest happy prefix
+62. longest happy prefix ×
 63. find first occurrence in string
 64. shortest palindrome
 65. max consecutive ones2

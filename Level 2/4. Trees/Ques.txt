@@ -22,32 +22,32 @@
 21. construct bst from preorder traversal
 22. construct bst from postorder
 23. populating next right pointers in each node - 26 may 2022----
-24. image multiplication
+24. image multiplication ×
 25. validate binary search tree
 26. find the closest element in bst
 27. populating next right pointers in each node 2 - 31 may 2022----
 28. binary tree cameras
 29. clone a binary tree
 30. delete node in a bst
-31. sum of distances in tree - 1 june 2022----
+31. sum of distances in tree × - 1 june 2022----
 32. construct binary tree from preorder and postorder traversal
 33. flatten binary tree to linked list - 2 june 2022----
-34. convert a binary tree to a circular doubly linked list
-35. construct tree from inorder and level order
+34. convert a binary tree to a circular doubly linked list ×
+35. construct tree from inorder and level order ×
 36. distribute coins in binary tree
 37. serialize and deserialize binary tree - 6 june 2022----
 38. kth smallest element in bst
 39. longest univalue path
-40. recover a tree from preorder traversal - 7 june 2022----
+40. recover a tree from preorder traversal × - 7 june 2022----
 41. lowest common ancestor of a binary search tree
 42. lowest common ancestor in a binary tree
 43. step by step directions from a binary tree node to another
 44. sum root to leaf numbers - 8 june 2022----
 45. maximum width of binary tree
 46. convert bst to greater tree
-47. longest even sum path
-48. avl - 9 june 2022----
+47. longest even sum path ×
+48. avl × - 9 june 2022----
 
 kth ancestor of a tree node × - 6 oct 2022----
-longest even sum path - 8 oct 2022----
+longest even sum path × - 8 oct 2022----
 count univalue subtrees - 11 oct 2022----
