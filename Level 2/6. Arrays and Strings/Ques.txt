@@ -45,9 +45,9 @@
 45. car fleet
 46. maximum sum of smallest and second smallest in an array
 47. smallest range covering elements from k lists
+48. first negative integer in every window of size k
 
 44. two sum sorted array
-47. first negative in every window
 48. max score of spliced array
 49. max consecutive ones3
 50. divide chocolate
