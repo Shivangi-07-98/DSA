@@ -20,9 +20,9 @@ class Solution {
       int crsize = max - p.val;
 
       if (crsize < rsize) {
+        rsize = crsize;
         rbeg = p.val;
         rend = max;
-        rsize = crsize;
       }
 
       if (p.di < nums.get(p.li).size() - 1) {
