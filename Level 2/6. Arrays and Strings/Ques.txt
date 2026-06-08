@@ -44,6 +44,7 @@
 44. balance array/ways to make a fair array - 1 aug 2022----
 45. car fleet
 46. maximum sum of smallest and second smallest in an array
+47. smallest range covering elements from k lists
 
 44. two sum sorted array
 47. first negative in every window
