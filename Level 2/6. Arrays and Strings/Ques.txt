@@ -46,10 +46,10 @@
 46. maximum sum of smallest and second smallest in an array
 47. smallest range covering elements from k lists
 48. first negative integer in every window of size k
+49. max consecutive ones 3 - 4 aug 2022----
 
-44. two sum sorted array
+
 48. max score of spliced array
-49. max consecutive ones3
 50. divide chocolate
 51. koko eating bananas
 52. min limit of balls in bag
