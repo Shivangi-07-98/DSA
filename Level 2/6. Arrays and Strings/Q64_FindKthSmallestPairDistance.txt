@@ -17,13 +17,11 @@ class Solution {
       int mid = (lo + hi) / 2;
 
       int count = 0;
-
       int j = 0;
       for (int i = 0; i < nums.length; i++) {
         while (j < nums.length && nums[j] - nums[i] <= mid) {
           j++;
         }
-
         count += (j - i - 1);
       }
 
