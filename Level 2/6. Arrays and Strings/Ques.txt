@@ -59,11 +59,11 @@
 59. allocate minimum pages - 8 aug 2022----
 60. count inversions in an array
 61. count of smaller numbers after self
+62. kth smallest element in a sorted matrix - 10 aug 2022----
 
 
-48. max score of spliced array
+48. max score of spliced array - 10 aug 2022----
 53. painters partition problem
-59. kth smallest element in sorted matrix
 60. kth smallest in multiplication table
 61. kth smallest pair distance
 62. longest happy prefix ×
