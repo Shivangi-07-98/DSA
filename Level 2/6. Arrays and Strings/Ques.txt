@@ -55,10 +55,10 @@
 55. capacity to ship packages within d days
 56. koko eating bananas
 57. the painter's partition problem 2
+58. minimum limit of balls in a bag
 
 
 48. max score of spliced array
-52. min limit of balls in bag
 53. painters partition problem
 56. allocate minimum pages
 57. count inversions
