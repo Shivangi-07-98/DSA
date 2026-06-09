@@ -63,6 +63,7 @@
 63. kth smallest number in multiplication table
 64. find kth smallest pair distance
 65. kth smallest prime fraction
+66. search in rotated sorted array
 
 
 48. max score of spliced array
