@@ -61,11 +61,11 @@
 61. count of smaller numbers after self
 62. kth smallest element in a sorted matrix - 10 aug 2022----
 63. kth smallest number in multiplication table
+64. find kth smallest pair distance
 
 
 48. max score of spliced array
 53. painters partition problem
-61. kth smallest pair distance
 62. longest happy prefix ×
 63. find first occurrence in string
 64. shortest palindrome
