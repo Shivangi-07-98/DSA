@@ -58,11 +58,11 @@
 58. minimum limit of balls in a bag
 59. allocate minimum pages - 8 aug 2022----
 60. count inversions in an array
+61. count of smaller numbers after self
 
 
 48. max score of spliced array
 53. painters partition problem
-58. count of smaller numbers after self
 59. kth smallest element in sorted matrix
 60. kth smallest in multiplication table
 61. kth smallest pair distance
