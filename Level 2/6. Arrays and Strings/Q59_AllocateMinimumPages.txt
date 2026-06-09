@@ -1,0 +1,42 @@
+https://www.geeksforgeeks.org/problems/allocate-minimum-number-of-pages0937/1
+
+time O(n log sum)
+space O(1)
+
+public class Solution {
+  public int books(ArrayList<Integer> A, int B) {
+    if (A.size() < B) {
+      return -1;
+    }
+
+    int lo = Integer.MIN_VALUE;
+    int hi = 0;
+    for (int val : A) {
+      lo = Math.max(lo, val);
+      hi += val;
+    }
+
+    while (lo < hi) {
+      int allot = (lo + hi) / 2;
+
+      int count = 1;
+      int sum = 0;
+      for (int val : A) {
+        if (sum + val <= allot) {
+          sum = sum + val;
+        } else {
+          sum = val;
+          count++;
+        }
+      }
+
+      if (count > B) {
+        lo = allot + 1;
+      } else {
+        hi = allot;
+      }
+    }
+
+    return lo;
+  }
+}

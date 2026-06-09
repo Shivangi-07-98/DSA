@@ -56,11 +56,11 @@
 56. koko eating bananas
 57. the painter's partition problem 2
 58. minimum limit of balls in a bag
+59. allocate minimum pages - 8 aug 2022----
 
 
 48. max score of spliced array
 53. painters partition problem
-56. allocate minimum pages
 57. count inversions
 58. count of smaller numbers after self
 59. kth smallest element in sorted matrix
