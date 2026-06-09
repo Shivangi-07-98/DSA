@@ -57,11 +57,11 @@
 57. the painter's partition problem 2
 58. minimum limit of balls in a bag
 59. allocate minimum pages - 8 aug 2022----
+60. count inversions in an array
 
 
 48. max score of spliced array
 53. painters partition problem
-57. count inversions
 58. count of smaller numbers after self
 59. kth smallest element in sorted matrix
 60. kth smallest in multiplication table
