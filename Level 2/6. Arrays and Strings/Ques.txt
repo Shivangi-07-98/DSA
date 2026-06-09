@@ -51,6 +51,7 @@
 51. find minimum in rotated sorted array
 52. find the smallest divisor given a threshold
 53. divide chocolate/chocolate distribution problem - 5 aug 2022----
+54. split array largest sum
 
 
 48. max score of spliced array
@@ -58,7 +59,6 @@
 52. min limit of balls in bag
 53. painters partition problem
 54. capacity to ship packages within d days
-55. split array largest sum
 56. allocate minimum pages
 57. count inversions
 58. count of smaller numbers after self
