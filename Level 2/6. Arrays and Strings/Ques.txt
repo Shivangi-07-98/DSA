@@ -53,10 +53,10 @@
 53. divide chocolate/chocolate distribution problem - 5 aug 2022----
 54. split array largest sum
 55. capacity to ship packages within d days
+56. koko eating bananas
 
 
 48. max score of spliced array
-51. koko eating bananas
 52. min limit of balls in bag
 53. painters partition problem
 56. allocate minimum pages
