@@ -54,6 +54,7 @@
 54. split array largest sum
 55. capacity to ship packages within d days
 56. koko eating bananas
+57. the painter's partition problem 2
 
 
 48. max score of spliced array
