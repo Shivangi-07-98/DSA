@@ -28,10 +28,10 @@ class NumArray {
         pos = pos + rsb(pos);
       }
     }
-  }
 
-  private int rsb(int x) {
-    return x & (-x);
+    private int rsb(int x) {
+      return x & (-x);
+    }
   }
 
   Fenwick ft;
