@@ -15,9 +15,8 @@ class Solution {
     return (median1 + median2) / 2.0;
   }
 
-  public int getKthElementFromMergedArray(int[] nums1, int[] nums2,
-      int k, int s1, int s2) {
-
+  public int getKthElementFromMergedArray(int[] nums1, int[] nums2, int k, int s1, int s2) {
+    
     if (s1 >= nums1.length) {
       return nums2[s2 + k - 1];
     }
@@ -41,17 +40,10 @@ class Solution {
     }
 
     if (e11 < e12) {
-      return getKthElementFromMergedArray(
-          nums1, nums2,
-          k - k / 2,
-          s1 + k / 2,
-          s2);
+      return getKthElementFromMergedArray(nums1, nums2, k - k / 2, s1 + k / 2, s2);
     } else {
-      return getKthElementFromMergedArray(
-          nums1, nums2,
-          k - k / 2,
-          s1,
-          s2 + k / 2);
+      return getKthElementFromMergedArray(nums1, nums2, k - k / 2, s1, s2 + k / 2);
     }
+
   }
 }
