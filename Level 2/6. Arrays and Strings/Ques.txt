@@ -78,14 +78,9 @@
 78. largest number - 17 aug 2022----
 79. range sum query mutable ×
 80. z algorithm pattern search ×
-81. chef and secret password ×
+81. chef and secret password × - 18 aug 2022----
 82. sum of scores of built strings ×
 83. find the minimum cost to cross the river/minimum cost to move chips
 84. majority element 2
 85. search in rotated sorted array 2
-
-
-48. max score of spliced array
-53. painters partition problem
-63. find first occurrence in string
-77. fenwick tree range sum query mutable ×
+86. range sum query mutable - fenwick tree × - 20 aug 2022----
