@@ -55,9 +55,9 @@ class NumArray {
     int lpos = left + 1;
     int rpos = right + 1;
 
-    int suml = ft.sum(lpos - 1);
-    int sumr = ft.sum(rpos);
-    return sumr - suml;
+    int sumBeforeLeft = ft.sum(lpos - 1);
+    int sumTillRight = ft.sum(rpos);
+    return sumTillRight - sumBeforeLeft;
   }
 
 }
