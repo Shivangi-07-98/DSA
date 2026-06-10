@@ -72,13 +72,13 @@
 72. range addition - 16 aug 2022----
 73. max consecutive ones 2
 74. median of two sorted arrays
+75. meeting rooms 2
+76. meeting rooms
 
 
 48. max score of spliced array
 53. painters partition problem
 63. find first occurrence in string
-66. meeting rooms
-67. meeting rooms2
 69. largest number
 70. range sum query mutable ×
 71. z algorithm pattern search ×
