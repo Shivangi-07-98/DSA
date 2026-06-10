@@ -71,6 +71,7 @@
 71. shortest palindrome
 72. range addition - 16 aug 2022----
 73. max consecutive ones 2
+74. median of two sorted arrays
 
 
 48. max score of spliced array
