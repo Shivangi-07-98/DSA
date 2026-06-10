@@ -68,12 +68,12 @@
 68. kth smallest product of two sorted arrays
 69. search pattern KMP algorithm
 70. longest happy prefix ×
+71. shortest palindrome
 
 
 48. max score of spliced array
 53. painters partition problem
 63. find first occurrence in string
-64. shortest palindrome
 65. max consecutive ones2
 66. meeting rooms
 67. meeting rooms2
