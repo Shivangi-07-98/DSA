@@ -66,6 +66,7 @@
 66. search in rotated sorted array
 67. find minimum in rotated sorted array 2 - 12 aug 2022----
 68. kth smallest product of two sorted arrays
+69. search pattern KMP algorithm
 
 
 48. max score of spliced array
