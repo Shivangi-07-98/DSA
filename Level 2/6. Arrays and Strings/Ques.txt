@@ -76,12 +76,12 @@
 76. meeting rooms
 77. wave array
 78. largest number - 17 aug 2022----
+79. range sum query mutable ×
 
 
 48. max score of spliced array
 53. painters partition problem
 63. find first occurrence in string
-70. range sum query mutable ×
 71. z algorithm pattern search ×
 72. majority element
 73. majority element2
