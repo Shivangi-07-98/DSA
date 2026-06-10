@@ -4,45 +4,45 @@ time O(log n)
 space O(n)
 
 class NumArray {
-  class FenwickTree {
-    int[] arr;
+  class Fenwick {
+    int[] farr;
 
-    FenwickTree(int[] nums) {
-      arr = new int[nums.length + 1];
-      for (int i = 0; i < nums.length; i++) {
-        this.update(i + 1, nums[i]);
-      }
+    Fenwick(int[] nums) {
+      this.farr = new int[nums.length + 1];
     }
 
-    private int rsb(int x) {
-      return x & (-x);
-    }
-
-    public int getSum(int pos) {
+    int sum(int pos) {
       int res = 0;
 
       while (pos > 0) {
-        res += arr[pos];
+        res += farr[pos];
         pos = pos - rsb(pos);
       }
 
       return res;
     }
 
-    public void update(int pos, int val) {
-      while (pos < arr.length) {
-        arr[pos] += val;
+    void update(int pos, int delta) {
+      while (pos < farr.length) {
+        farr[pos] += delta;
         pos = pos + rsb(pos);
       }
     }
   }
 
-  FenwickTree ft;
+  private int rsb(int x) {
+    return x & (-x);
+  }
+
+  Fenwick ft;
   int[] oarr;
 
   public NumArray(int[] nums) {
-    ft = new FenwickTree(nums);
+    ft = new Fenwick(nums);
     oarr = nums;
+    for (int i = 0; i < nums.length; i++) {
+      ft.update(i + 1, nums[i]);
+    }
   }
 
   public void update(int index, int val) {
@@ -55,8 +55,8 @@ class NumArray {
     int lpos = left + 1;
     int rpos = right + 1;
 
-    int suml = ft.getSum(lpos - 1);
-    int sumr = ft.getSum(rpos);
+    int suml = ft.sum(lpos - 1);
+    int sumr = ft.sum(rpos);
     return sumr - suml;
   }
 
