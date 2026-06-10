@@ -64,9 +64,10 @@
 64. find kth smallest pair distance
 65. kth smallest prime fraction
 66. search in rotated sorted array
+67. find minimum in rotated sorted array 2 - 12 aug 2022----
 
 
-48. max score of spliced array
+48. max score of spliced array - 12 aug 2022----
 53. painters partition problem
 62. longest happy prefix ×
 63. find first occurrence in string
