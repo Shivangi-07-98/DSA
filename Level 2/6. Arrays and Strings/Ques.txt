@@ -78,6 +78,7 @@
 78. largest number - 17 aug 2022----
 79. range sum query mutable ×
 80. z algorithm pattern search ×
+81. chef and secret password ×
 
 
 48. max score of spliced array
@@ -86,6 +87,5 @@
 72. majority element
 73. majority element2
 74. min cost to move chips
-75. secret password ×
 76. sum of scores of built strings ×
 77. fenwick tree range sum query mutable ×
