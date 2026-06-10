@@ -69,6 +69,7 @@
 69. search pattern KMP algorithm
 70. longest happy prefix ×
 71. shortest palindrome
+72. range addition - 16 aug 2022----
 
 
 48. max score of spliced array
@@ -77,7 +78,6 @@
 65. max consecutive ones2
 66. meeting rooms
 67. meeting rooms2
-68. range addition
 69. largest number
 70. range sum query mutable ×
 71. z algorithm pattern search ×
