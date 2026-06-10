@@ -74,6 +74,7 @@
 74. median of two sorted arrays
 75. meeting rooms 2
 76. meeting rooms
+77. wave array
 
 
 48. max score of spliced array
