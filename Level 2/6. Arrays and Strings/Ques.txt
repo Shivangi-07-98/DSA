@@ -70,12 +70,12 @@
 70. longest happy prefix ×
 71. shortest palindrome
 72. range addition - 16 aug 2022----
+73. max consecutive ones 2
 
 
 48. max score of spliced array
 53. painters partition problem
 63. find first occurrence in string
-65. max consecutive ones2
 66. meeting rooms
 67. meeting rooms2
 69. largest number
