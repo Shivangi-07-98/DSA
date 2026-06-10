@@ -79,6 +79,7 @@
 79. range sum query mutable ×
 80. z algorithm pattern search ×
 81. chef and secret password ×
+82. sum of scores of built strings ×
 
 
 48. max score of spliced array
@@ -87,5 +88,4 @@
 72. majority element
 73. majority element2
 74. min cost to move chips
-76. sum of scores of built strings ×
 77. fenwick tree range sum query mutable ×
