@@ -81,12 +81,12 @@
 81. chef and secret password ×
 82. sum of scores of built strings ×
 83. find the minimum cost to cross the river/minimum cost to move chips
+84. majority element 2
 
 
 48. max score of spliced array
 53. painters partition problem
 63. find first occurrence in string
 72. majority element
-73. majority element2
 74. min cost to move chips
 77. fenwick tree range sum query mutable ×
