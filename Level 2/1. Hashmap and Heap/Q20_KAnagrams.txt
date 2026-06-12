@@ -1,0 +1,47 @@
+https://www.geeksforgeeks.org/problems/check-if-two-strings-are-k-anagrams-or-not/1
+
+Time O(n)
+Space O(n)
+
+class Solution {
+	boolean areKAnagrams(String s1, String s2, int k) {
+		if (s1.length() != s2.length()) {
+			return false;
+		}
+		
+		HashMap<Character, Integer> map1 = new HashMap<>();
+		for (char ch: s1.toCharArray()) {
+			map1.put(ch, map1.getOrDefault(ch, 0) + 1);
+		}
+		
+		for (char ch: s2.toCharArray()) {
+			if (map1.containsKey(ch) == true) {
+				if (map1.get(ch) == 1)
+					{map1.remove(ch); }
+				else {
+					map1.put(ch, map1.get(ch) - 1);
+				};
+			}
+		}
+		
+		// 		int changes = 0;
+		// 		for (char ch : map1.keySet()) {
+		// 			changes += map1.get(ch);
+		// 		}
+		// 		if(changes <= k){
+		// 		    return true;
+		// 		}
+		// 		return false;
+		
+		// 		many people prefer values() when they only need the frequencies
+		int changes = 0;
+		for (int freq : map1.values()) {
+			changes += freq;
+		}
+		if (changes <= k) {
+			return true;
+		}
+		return false;
+		
+	}
+}
