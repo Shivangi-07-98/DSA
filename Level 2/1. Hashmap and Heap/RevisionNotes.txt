@@ -87,3 +87,13 @@ always means larger first.
 
 --------------------------------------------------------------------
 
+q19 explanation
+
+Anagram (The Jumbled Remix)
+Original: L - I - S - T - E - N
+Rearranged: S - I - L - E - N - T
+
+Palindrome (The Mirror Word)
+Forward: R ➔ A ➔ C ➔ E ➔ C ➔ A ➔ R
+Backward: R ➔ A ➔ C ➔ E ➔ C ➔ A ➔ R
+

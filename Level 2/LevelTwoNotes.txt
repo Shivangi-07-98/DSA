@@ -9,3 +9,6 @@ Examples of even numbers:
 Examples of odd numbers:
 ... -3, -1, 1, 3, 5 ...
 
+---------------------------------------------------------------------------
+
+Interview approach
