@@ -97,3 +97,6 @@ Palindrome (The Mirror Word)
 Forward: R ➔ A ➔ C ➔ E ➔ C ➔ A ➔ R
 Backward: R ➔ A ➔ C ➔ E ➔ C ➔ A ➔ R
 
+--------------------------------------------------------------------
+
+0 hr 36 min
