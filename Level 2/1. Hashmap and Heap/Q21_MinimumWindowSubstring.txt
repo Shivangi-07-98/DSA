@@ -3,3 +3,59 @@ https://leetcode.com/problems/minimum-window-substring/
 Time O(n)
 Space O(n)
 
+class Solution {
+  public String minWindow(String s, String t) {
+    if (t.length() > s.length()) {
+      return "";
+    }
+
+    HashMap<Character, Integer> tmap = new HashMap<>();
+    for (char ch : t.toCharArray()) {
+      tmap.put(ch, tmap.getOrDefault(ch, 0) + 1);
+    }
+
+    // int mmc = 0;
+    // for (int freq : tmap.values()) {
+    //   mmc += freq;
+    // }
+
+    int mmc = t.length();
+
+    String res = "";
+    int maxlen = Integer.MAX_VALUE;
+    int j = 0;
+    HashMap<Character, Integer> map = new HashMap<>();
+
+    for (int i = 0; i < s.length(); i++) {
+      char ch = s.charAt(i);
+      map.put(ch, map.getOrDefault(ch, 0) + 1);
+
+      if (tmap.containsKey(ch) == true) {
+        if (map.get(ch) <= tmap.get(ch)) {
+          mmc = mmc - 1;
+        }
+      }
+
+      while (mmc == 0) {
+        int len = i - j + 1;
+
+        if (len < maxlen) {
+          maxlen = len;
+          res = s.substring(j, i + 1);
+        }
+
+        char lch = s.charAt(j);
+        map.put(lch, map.get(lch) - 1);
+
+        if (tmap.containsKey(lch) && map.get(lch) < tmap.get(lch)) {
+          mmc++;
+        }
+
+        j++;
+      }
+
+    }
+
+    return res;
+  }
+}
