@@ -112,6 +112,212 @@ Palindrome (The Mirror Word)
 Forward: R ➔ A ➔ C ➔ E ➔ C ➔ A ➔ R
 Backward: R ➔ A ➔ C ➔ E ➔ C ➔ A ➔ R
 
+----------------------
+
+HASHMAP vs HASHSET
+
+--------------------------------------------------
+1. Declaration
+--------------------------------------------------
+
+HashMap<Integer, Integer> map = new HashMap<>();
+
+HashSet<Integer> set = new HashSet<>();
+
+
+--------------------------------------------------
+2. Storage
+--------------------------------------------------
+
+HashMap:
+key -> value
+
+10 -> 100
+20 -> 200
+
+HashSet:
+only unique elements
+
+10
+20
+
+
+--------------------------------------------------
+3. Insertion
+--------------------------------------------------
+
+HashMap:
+map.put(10, 100);
+
+HashSet:
+set.add(10);
+
+
+--------------------------------------------------
+4. Search / Contains
+--------------------------------------------------
+
+HashMap:
+map.containsKey(10);
+
+HashSet:
+set.contains(10);
+
+
+--------------------------------------------------
+5. Get Value
+--------------------------------------------------
+
+HashMap:
+map.get(10);
+
+HashSet:
+Not Available
+(HashSet stores only elements, no values)
+
+
+--------------------------------------------------
+6. Get Default
+--------------------------------------------------
+
+HashMap:
+map.getOrDefault(10, 0);
+
+HashSet:
+Not Available
+
+
+--------------------------------------------------
+7. Remove
+--------------------------------------------------
+
+HashMap:
+map.remove(10);
+
+HashSet:
+set.remove(10);
+
+
+--------------------------------------------------
+8. Size
+--------------------------------------------------
+
+HashMap:
+map.size();
+
+HashSet:
+set.size();
+
+
+--------------------------------------------------
+9. Iterate
+--------------------------------------------------
+
+HashMap Keys:
+
+for (int key : map.keySet()) {
+    System.out.println(key);
+}
+
+HashSet:
+
+for (int x : set) {
+    System.out.println(x);
+}
+
+
+--------------------------------------------------
+10. Iterate Values
+--------------------------------------------------
+
+HashMap:
+
+for (int val : map.values()) {
+    System.out.println(val);
+}
+
+HashSet:
+Not Available
+
+
+--------------------------------------------------
+11. Iterate Key-Value Pair
+--------------------------------------------------
+
+HashMap:
+
+for (Map.Entry<Integer, Integer> e : map.entrySet()) {
+    System.out.println(e.getKey() + " " + e.getValue());
+}
+
+HashSet:
+Not Available
+
+
+--------------------------------------------------
+12. Frequency Count
+--------------------------------------------------
+
+HashMap:
+
+map.put(ch, map.getOrDefault(ch, 0) + 1);
+
+HashSet:
+Not Possible
+(HashSet does not store frequencies)
+
+
+--------------------------------------------------
+13. Duplicate Detection
+--------------------------------------------------
+
+HashMap:
+
+if (map.containsKey(x)) {
+    // duplicate found
+}
+
+HashSet:
+
+if (set.contains(x)) {
+    // duplicate found
+}
+
+
+--------------------------------------------------
+14. Common Use Cases
+--------------------------------------------------
+
+HashMap:
+- Frequency Count
+- Key -> Value Mapping
+- Index Mapping
+- Grouping Data
+
+HashSet:
+- Unique Elements
+- Duplicate Detection
+- Fast Lookup
+- Longest Consecutive Sequence
+
+
+--------------------------------------------------
+15. Internal Idea
+--------------------------------------------------
+
+HashMap:
+key -> value
+
+HashSet:
+Internally similar to
+
+HashMap<Integer, Boolean>
+
+10 -> true
+20 -> true
+
+but Java hides the value part.
+
 -------------------------------------------------------------------
 
 Bit Manipulation - 
