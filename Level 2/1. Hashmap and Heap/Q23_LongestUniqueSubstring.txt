@@ -3,3 +3,31 @@ https://leetcode.com/problems/longest-substring-without-repeating-characters/
 Time O(n)
 Space O(n)
 
+class Solution {
+  public int lengthOfLongestSubstring(String s) {
+    HashSet<Character> set = new HashSet<>();
+    int j = 0;
+    int len = 0;
+
+    for (int i = 0; i < s.length(); i++) {
+      char ch = s.charAt(i);
+      if (set.contains(ch) == false) {
+        set.add(ch);
+      } else {
+        char lt = s.charAt(j);
+
+        while (ch != lt) {
+          set.remove(lt);
+          j++;
+          lt = s.charAt(j);
+        }
+        set.remove(lt);
+        j++;
+        set.add(ch);
+      }
+      len = Math.max(len, set.size());
+    }
+
+    return len;
+  }
+}
