@@ -1,4 +1,4 @@
-Hashmap and Heap -
+Hashmap and Heap - 
 
 Comparable - 
 static class Pair implements Comparable<Pair> {
@@ -27,6 +27,9 @@ PriorityQueue<Integer> pq = new PriorityQueue<>(Collections.reverseOrder()); // 
 -------------------------------------------------------------------
 
 Graphs - 
+
+vertices = node
+edge(can have weights too)
 
 -------------------------------------------------------------------
 
@@ -59,3 +62,4 @@ next greater element to the left - front, back
 DP - 
 Memoization = recursion
 Tabulation = iteration
+
