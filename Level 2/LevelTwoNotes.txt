@@ -69,7 +69,7 @@ Method return type is String
 Java does not automatically convert StringBuilder to String here
 So compiler gives type mismatch
 
-------------------------
+----------------------
 
 For Pair class, Java knows nothing
 Now Java asks:
@@ -100,7 +100,7 @@ always means smaller first.
 other - this
 always means larger first.
 
-------------------------
+----------------------
 
 q19 explanation
 
