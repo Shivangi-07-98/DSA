@@ -114,6 +114,49 @@ Backward: R ➔ A ➔ C ➔ E ➔ C ➔ A ➔ R
 
 -------------------------------------------------------------------
 
+Recursion and Backtracking - 
+
+4 Patterns (Perm/Comb)
+
+1. Who decides?
+- Item decides box
+- Box decides item/empty
+
+2. Does order matter?
+- Yes -> Permutation
+- No  -> Combination
+
+Quick map:
+- Permutation 1: Item chooses box
+  "Where should item 1 go? item 2 go?"
+- Permutation 2: Box chooses item/empty
+  "What to put in box 1? box 2?"
+- Combination 1: Item chooses box (only forward)
+  "Place item 1 in a box, item 2 only after that box"
+- Combination 2: Box chooses take/skip
+  "For each box: take next item or leave empty"
+
+Tiny example (n=3, r=2):
+- Permutations (order matters): 12_, 21_, 1_2, 2_1, _12, _21
+- Combinations (order not matter): 12_, 1_2, _12
+
+How to code quickly (checklist):
+- First decide: Who chooses? item or box
+- Then decide: Order matters? yes=permutation, no=combination
+- Base case prints only if count == required
+
+Template hints:
+1. Permutation 1 (item chooses box)
+   Recursion on item, loop all boxes, place in empty box
+2. Permutation 2 (box chooses item/empty)
+   Recursion on box, try unused items, also try empty
+3. Combination 1 (item chooses box forward)
+   Recursion on item, loop from lastBox+1 only
+4. Combination 2 (box chooses take/skip)
+   Recursion on box, choose take next item or skip
+
+-------------------------------------------------------------------
+
 Graphs - 
 
 -------------------------------------------------------------------
