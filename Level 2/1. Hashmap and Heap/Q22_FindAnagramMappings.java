@@ -7,7 +7,7 @@ public class Q22_FindAnagramMappings {
   public static void main(String[] args) {
     Scanner s = new Scanner(System.in);
     int n = s.nextInt();
-    
+
     int[] a = new int[n];
     int[] b = new int[n];
 
@@ -30,7 +30,7 @@ public class Q22_FindAnagramMappings {
 
     // store indices of arr2
     for (int i = 0; i < arr2.length; i++) {
-      if (!map.containsKey(arr2[i])) {
+      if (map.containsKey(arr2[i]) == false) {
         map.put(arr2[i], new ArrayDeque<>());
       }
       map.get(arr2[i]).add(i);
