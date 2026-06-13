@@ -1,12 +1,13 @@
-// Time Complexity: O(n), Space Complexity: O(n)
+// Time O(n)
+// Space O(n)
 import java.io.*;
 import java.util.*;
 
 public class Q22_FindAnagramMappings {
   public static void main(String[] args) {
     Scanner s = new Scanner(System.in);
-
     int n = s.nextInt();
+    
     int[] a = new int[n];
     int[] b = new int[n];
 
