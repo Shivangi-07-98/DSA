@@ -271,39 +271,6 @@ if (set.contains(x)) {
     // duplicate found
 }
 
-----------------------
-14. Common Use Cases
-----------------------
-
-HashMap:
-- Frequency Count
-- Key -> Value Mapping
-- Index Mapping
-- Grouping Data
-
-HashSet:
-- Unique Elements
-- Duplicate Detection
-- Fast Lookup
-- Longest Consecutive Sequence
-
-----------------------
-15. Internal Idea
-----------------------
-
-HashMap:
-key -> value
-
-HashSet:
-Internally similar to
-
-HashMap<Integer, Boolean>
-
-10 -> true
-20 -> true
-
-but Java hides the value part.
-
 -------------------------------------------------------------------
 
 Bit Manipulation - 
