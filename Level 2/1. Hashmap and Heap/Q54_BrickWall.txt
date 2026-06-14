@@ -1,0 +1,4 @@
+﻿https://leetcode.com/problems/brick-wall/
+
+Time O(total bricks)
+Space O(width breaks)

@@ -1,0 +1,4 @@
+﻿https://www.geeksforgeeks.org/count-subarrays-total-distinct-elements-original-array/
+
+Time O(n)
+Space O(n)

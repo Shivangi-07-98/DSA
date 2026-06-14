@@ -1,0 +1,4 @@
+﻿https://www.geeksforgeeks.org/count-pairs-of-non-coinciding-points/
+
+Time O(n)
+Space O(n)

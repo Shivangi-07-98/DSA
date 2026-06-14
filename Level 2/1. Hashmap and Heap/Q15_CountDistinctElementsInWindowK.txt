@@ -1,0 +1,4 @@
+﻿https://www.geeksforgeeks.org/problems/count-distinct-elements-in-every-window/1
+
+Time O(n)
+Space O(k)

@@ -1,0 +1,4 @@
+﻿https://www.geeksforgeeks.org/count-number-of-substrings-with-atmost-k-distinct-characters/
+
+Time O(n)
+Space O(k)

@@ -1,0 +1,4 @@
+﻿https://leetcode.com/problems/maximum-frequency-stack/
+
+Time push O(1), pop O(1)
+Space O(n)

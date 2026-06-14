@@ -1,0 +1,4 @@
+﻿https://www.geeksforgeeks.org/count-of-substrings-having-all-unique-characters/
+
+Time O(n)
+Space O(n)

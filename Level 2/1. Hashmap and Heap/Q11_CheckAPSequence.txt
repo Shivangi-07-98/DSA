@@ -1,0 +1,4 @@
+﻿https://leetcode.com/problems/can-make-arithmetic-progression-from-sequence/
+
+Time O(n log n)
+Space O(1)
