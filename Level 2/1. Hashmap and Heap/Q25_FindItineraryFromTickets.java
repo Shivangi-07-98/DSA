@@ -1,9 +1,12 @@
-// Time Complexity: O(n), Space Complexity: O(n)
+﻿// https://www.geeksforgeeks.org/find-itinerary-from-a-given-list-of-tickets/
+
+// Time O(n)
+// Space O(n)
+
 import java.io.*;
 import java.util.*;
 
 public class Q25_FindItineraryFromTickets {
-
   public static void main(String[] args) {
     Scanner scn = new Scanner(System.in);
     int n = scn.nextInt();
@@ -19,43 +22,52 @@ public class Q25_FindItineraryFromTickets {
   }
 
   public static void solution(HashMap<String, String> map) {
-    HashMap<String, Boolean> potentialStart = new HashMap<>();
+    HashMap<String, Boolean> start = new HashMap<>();
 
-    // Mark cities
+    // for (String src : map.keySet()) {
+    // String dest = map.get(src);
+    // start.put(dest, false);
+    // if (start.containsKey(src) == false) {
+    // start.put(src, true);
+    // }
+    // }
+
     for (String src : map.keySet()) {
       String dest = map.get(src);
-
-      potentialStart.put(src, true);
-      potentialStart.put(dest, false);
+      start.put(src, true);
+      start.put(dest, false);
     }
 
-    // Find starting city
-    String start = "";
+    String source = "";
 
-    for (String city : potentialStart.keySet()) {
-      if (potentialStart.get(city) == true) {
-        start = city;
+    for (String city : start.keySet()) {
+      if (start.get(city) == true) {
+        source = city;
         break;
       }
     }
 
-    // Print itinerary
-    while (map.containsKey(start)) {
-      System.out.print(start + " -> ");
-      start = map.get(start);
+    // print
+    while (map.containsKey(source)) {
+      System.out.print(source + " -> ");
+      source = map.get(source);
     }
 
-    System.out.print(start + ".");
+    // print last one, as bangalore source toh bn gya but wo kbhi hashmap mai as a
+    // key nhi hoga, only as a value
+    System.out.println(source + ".");
   }
 }
 
 /*
- * Input:
- * 3
+ * Sample Input
+ * 
+ * 4
  * Chennai Bangalore
  * Bombay Delhi
  * Goa Chennai
+ * Delhi Goa
  * 
- * Output:
- * Goa -> Chennai -> Bangalore.
+ * Output
+ * Bombay -> Delhi -> Goa -> Chennai -> Bangalore.
  */
