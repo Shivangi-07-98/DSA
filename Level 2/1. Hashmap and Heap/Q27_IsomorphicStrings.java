@@ -1,4 +1,5 @@
-// Time Complexity: O(n), Space Complexity: O(n)
+// Time O(n)
+// Space O(n)
 
 // WHAT IS THE QUESTION ASKING?
 // Isomorphic Strings: Two strings are isomorphic if characters can be mapped one-to-one
@@ -46,10 +47,8 @@ public class Q27_IsomorphicStrings {
   }
 }
 
-/*
- * Input:
- * egg add
- * 
- * Output:
- * true
- */
+// Input:
+// egg add
+
+// Output:
+// true
