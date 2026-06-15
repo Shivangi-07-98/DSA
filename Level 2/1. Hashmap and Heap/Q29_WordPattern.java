@@ -1,12 +1,15 @@
-// Time Complexity: O(n), Space Complexity: O(n)
+// https://leetcode.com/problems/word-pattern/
+
+// Time O(n)
+// Space O(n)
+
 import java.io.*;
 import java.util.*;
 
 public class Q29_WordPattern {
   public static void main(String[] args) {
     Scanner scn = new Scanner(System.in);
-    String pattern = scn.next();
-    scn.nextLine(); // consume leftover newline
+    String pattern = scn.nextLine();
     String str = scn.nextLine();
     System.out.println(solution(pattern, str));
   }
@@ -39,11 +42,9 @@ public class Q29_WordPattern {
   }
 }
 
-/*
- * Input:
- * abba
- * dog cat cat dog
- * 
- * Output:
- * true
- */
+// Input:
+// abba
+// dog cat cat dog
+
+// Output:
+// true
