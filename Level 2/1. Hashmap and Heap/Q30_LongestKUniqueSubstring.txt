@@ -4,7 +4,7 @@ Time O(n)
 Space O(n)
 
 class Solution {
-  public int longestkSubstr(String s, int k) {
+  public int longestKSubstr(String s, int k) {
 
     HashMap<Character, Integer> map = new HashMap<>();
     int j = 0;
