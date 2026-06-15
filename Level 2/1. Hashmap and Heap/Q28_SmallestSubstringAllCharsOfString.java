@@ -8,7 +8,7 @@
 import java.io.*;
 import java.util.*;
 
-public class Q28_SmallestUniqueSubstring {
+public class Q28_SmallestSubstringAllCharsOfString {
   public static void main(String[] args) {
     Scanner scn = new Scanner(System.in);
     String str = scn.next();
