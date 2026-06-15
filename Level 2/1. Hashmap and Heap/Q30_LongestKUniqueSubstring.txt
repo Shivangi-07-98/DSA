@@ -2,3 +2,33 @@
 
 Time O(n)
 Space O(n)
+
+class Solution {
+  public int longestkSubstr(String s, int k) {
+
+    HashMap<Character, Integer> map = new HashMap<>();
+    int j = 0;
+    int maxLen = -1;
+
+    for (int i = 0; i < s.length(); i++) {
+      char ch = s.charAt(i);
+      map.put(ch, map.getOrDefault(ch, 0) + 1);
+
+      while (map.size() > k) {
+        char lch = s.charAt(j);
+        map.put(lch, map.get(lch) - 1);
+
+        if (map.get(lch) == 0) {
+          map.remove(lch);
+        }
+        j++;
+      }
+
+      if (map.size() == k) {
+        maxLen = Math.max(maxLen, i - j + 1);
+      }
+    }
+
+    return maxLen;
+  }
+}
