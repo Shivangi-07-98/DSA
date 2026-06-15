@@ -26,11 +26,11 @@ public class Q29_WordPattern {
       char ch = pattern.charAt(i);
       String word = words[i];
       if (map.containsKey(ch)) {
-        if (!map.get(ch).equals(word)) {
+        if (map.get(ch).equals(word) == false) {
           return false; // conflict
         }
       } else {
-        if (used.containsKey(word)) {
+        if (used.containsKey(word) == true) {
           return false; // duplicate mapping
         }
         map.put(ch, word);
@@ -48,3 +48,13 @@ public class Q29_WordPattern {
 
 // Output:
 // true
+
+
+// String a = new String("dog");
+// String b = new String("dog");
+// System.out.println(a == b);
+
+// Output:
+// false
+
+// because they are different objects
