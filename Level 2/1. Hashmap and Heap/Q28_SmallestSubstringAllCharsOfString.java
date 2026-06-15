@@ -25,37 +25,25 @@ public class Q28_SmallestSubstringAllCharsOfString {
     int required = set.size();
 
     HashMap<Character, Integer> map = new HashMap<>();
-    int i = -1;
-    int j = -1;
-    int ans = Integer.MAX_VALUE;
+    int j = 0;
+    int minLen = Integer.MAX_VALUE;
 
-    while (true) {
-      boolean f1 = false;
-      boolean f2 = false;
+    for (int i = 0; i < str.length(); i++) {
+      char ch = str.charAt(i);
+      map.put(ch, map.getOrDefault(ch, 0) + 1);
 
-      while (i < str.length() - 1 && map.size() < required) {
-        f1 = true;
-        i++;
-        char ch = str.charAt(i);
-        map.put(ch, map.getOrDefault(ch, 0) + 1);
-      }
-
-      while (j < i && map.size() == required) {
-        f2 = true;
-        ans = Math.min(ans, i - j);
-        j++;
-        char ch = str.charAt(j);
-        map.put(ch, map.get(ch) - 1);
-        if (map.get(ch) == 0) {
-          map.remove(ch);
+      while (map.size() == required) {
+        minLen = Math.min(minLen, i - j + 1);
+        char lch = str.charAt(j);
+        map.put(lch, map.get(lch) - 1);
+        if (map.get(lch) == 0) {
+          map.remove(lch);
         }
+        j++;
       }
-
-      if (!f1 && !f2)
-        break;
     }
 
-    return ans;
+    return minLen;
   }
 }
 
