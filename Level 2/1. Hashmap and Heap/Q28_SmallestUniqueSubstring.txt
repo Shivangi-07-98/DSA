@@ -1,4 +1,6 @@
 ﻿https://www.geeksforgeeks.org/smallest-window-contains-characters-string/
 
+https://www.geeksforgeeks.org/problems/smallest-distant-window3132/1
+
 Time O(n)
 Space O(n)

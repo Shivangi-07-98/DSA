@@ -1,4 +1,10 @@
-// Time Complexity: O(n), Space Complexity: O(n)
+// https://www.geeksforgeeks.org/smallest-window-contains-characters-string/
+
+// https://www.geeksforgeeks.org/problems/smallest-distant-window3132/1
+
+// Time O(n)
+// Space O(n)
+
 import java.io.*;
 import java.util.*;
 
@@ -10,7 +16,7 @@ public class Q28_SmallestUniqueSubstring {
   }
 
   public static int solution(String str) {
-    // Step 1: Count distinct characters
+    // Count distinct characters
     HashSet<Character> set = new HashSet<>();
     for (char ch : str.toCharArray()) {
       set.add(ch);
@@ -18,7 +24,6 @@ public class Q28_SmallestUniqueSubstring {
 
     int required = set.size();
 
-    // Step 2: Sliding Window
     HashMap<Character, Integer> map = new HashMap<>();
     int i = -1;
     int j = -1;
@@ -28,7 +33,6 @@ public class Q28_SmallestUniqueSubstring {
       boolean f1 = false;
       boolean f2 = false;
 
-      // Acquire
       while (i < str.length() - 1 && map.size() < required) {
         f1 = true;
         i++;
@@ -36,7 +40,6 @@ public class Q28_SmallestUniqueSubstring {
         map.put(ch, map.getOrDefault(ch, 0) + 1);
       }
 
-      // Check validity
       while (j < i && map.size() == required) {
         f2 = true;
         ans = Math.min(ans, i - j);
@@ -56,10 +59,8 @@ public class Q28_SmallestUniqueSubstring {
   }
 }
 
-/*
- * Input:
- * aabcbcdbca
- * 
- * Output:
- * 4
- */
+// Input:
+// aabcbcdbca
+
+// Output:
+// 4
