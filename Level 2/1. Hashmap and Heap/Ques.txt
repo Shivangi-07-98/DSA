@@ -20,10 +20,10 @@
 23. longest unique substring - 22 mar 2022----
 24. count of substrings having all unique characters
 25. find itinerary from tickets
-26. morning assembly (tricky sorting cost) ×
-27. isomorphic strings ×
+26. morning assembly (tricky sorting cost)
+27. isomorphic strings
 28. smallest substring containing all unique characters
-29. word pattern ×
+29. word pattern
 30. longest substring with exactly k unique characters
 31. smallest subarray with most frequent element - 23 mar 2022----
 32. first non repeating character
