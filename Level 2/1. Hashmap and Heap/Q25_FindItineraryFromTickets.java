@@ -11,46 +11,46 @@ public class Q25_FindItineraryFromTickets {
     Scanner scn = new Scanner(System.in);
     int n = scn.nextInt();
 
-    HashMap<String, String> map = new HashMap<>();
+    HashMap<String, String> mapIn = new HashMap<>();
 
     for (int i = 0; i < n; i++) {
       String src = scn.next();
       String dest = scn.next();
-      map.put(src, dest);
+      mapIn.put(src, dest);
     }
-    solution(map);
+    solution(mapIn);
   }
 
-  public static void solution(HashMap<String, String> map) {
-    HashMap<String, Boolean> start = new HashMap<>();
+  public static void solution(HashMap<String, String> mapIn) {
+    HashMap<String, Boolean> map = new HashMap<>();
 
-    // for (String src : map.keySet()) {
-    // String dest = map.get(src);
-    // start.put(dest, false);
-    // if (start.containsKey(src) == false) {
-    // start.put(src, true);
+    // for (String src : mapIn.keySet()) {
+    // String dest = mapIn.get(src);
+    // map.put(dest, false);
+    // if (map.containsKey(src) == false) {
+    // map.put(src, true);
     // }
     // }
 
-    for (String src : map.keySet()) {
-      String dest = map.get(src);
-      start.put(src, true);
-      start.put(dest, false);
+    for (String src : mapIn.keySet()) {
+      String dest = mapIn.get(src);
+      map.put(src, true);
+      map.put(dest, false);
     }
 
     String source = "";
 
-    for (String city : start.keySet()) {
-      if (start.get(city) == true) {
+    for (String city : map.keySet()) {
+      if (map.get(city) == true) {
         source = city;
         break;
       }
     }
 
     // print
-    while (map.containsKey(source)) {
+    while (mapIn.containsKey(source)) {
       System.out.print(source + " -> ");
-      source = map.get(source);
+      source = mapIn.get(source);
     }
 
     // print last one, as bangalore source toh bn gya but wo kbhi hashmap mai as a
@@ -59,15 +59,12 @@ public class Q25_FindItineraryFromTickets {
   }
 }
 
-/*
- * Sample Input
- * 
- * 4
- * Chennai Bangalore
- * Bombay Delhi
- * Goa Chennai
- * Delhi Goa
- * 
- * Output
- * Bombay -> Delhi -> Goa -> Chennai -> Bangalore.
- */
+// Input
+// 4
+// Chennai Bangalore
+// Bombay Delhi
+// Goa Chennai
+// Delhi Goa
+
+// Output
+// Bombay -> Delhi -> Goa -> Chennai -> Bangalore.
