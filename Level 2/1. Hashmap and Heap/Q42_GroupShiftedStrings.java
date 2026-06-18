@@ -52,19 +52,18 @@ public class Q42_GroupShiftedStrings {
   }
 
   public static void main(String[] args) {
-    try (Scanner sc = new Scanner(System.in)) {
-      int N = sc.nextInt();
-      String[] arr = new String[N];
-      for (int i = 0; i < N; i++) {
-        arr[i] = sc.next();
-      }
-      ArrayList<ArrayList<String>> shiftedGrouped = groupShiftedStrings(arr);
-      for (ArrayList<String> lst : shiftedGrouped) {
-        Collections.sort(lst);
-      }
-      shiftedGrouped.sort(new ListComparator());
-      display(shiftedGrouped);
+    Scanner scn = new Scanner(System.in);
+    int N = scn.nextInt();
+    String[] arr = new String[N];
+    for (int i = 0; i < N; i++) {
+      arr[i] = scn.next();
     }
+    ArrayList<ArrayList<String>> shiftedGrouped = groupShiftedStrings(arr);
+    for (ArrayList<String> lst : shiftedGrouped) {
+      Collections.sort(lst);
+    }
+    shiftedGrouped.sort(new ListComparator());
+    display(shiftedGrouped);
   }
 
   // it is used to make the result unique
@@ -93,7 +92,7 @@ public class Q42_GroupShiftedStrings {
       System.out.println(sb.toString());
     }
   }
-  
+
 }
 
 // Input:
