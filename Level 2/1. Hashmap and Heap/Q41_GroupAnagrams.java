@@ -37,7 +37,7 @@ public class Q41_GroupAnagrams {
     }
 
     String code = "";
-    for (Character key: fmap.keySet()) {
+    for (Character key : fmap.keySet()) {
       code += key + "" + fmap.get(key);
     }
 
@@ -84,13 +84,11 @@ public class Q41_GroupAnagrams {
   }
 }
 
-/*
- * Input:
- * 5
- * pepcoding codingpep pepper rapper repepp
- * 
- * Output:
- * codingpep pepcoding
- * pepper repepp
- * rapper
- */
+// Input:
+// 5
+// pepcoding codingpep pepper rapper repepp
+
+// Output:
+// codingpep pepcoding
+// pepper repepp
+// rapper
