@@ -1,9 +1,9 @@
-// Time Complexity: O(n), Space Complexity: O(k)
+// Time O(n)
+// Space O(k)
 
 import java.util.*;
 
 public class Q45_LongestAtmostKUniqueSubstring {
-
   public static void main(String[] args) {
     Scanner scn = new Scanner(System.in);
     String str = scn.next();
@@ -23,24 +23,24 @@ public class Q45_LongestAtmostKUniqueSubstring {
       while (map.size() > k) {
         char chj = str.charAt(j);
         map.put(chj, map.get(chj) - 1);
+
         if (map.get(chj) == 0) {
           map.remove(chj);
         }
+
         j++;
       }
 
       ans = Math.max(ans, i - j + 1);
     }
-
+    
     return ans;
   }
 }
 
-/*
- * Input:
- * aabcbcdbca
- * 2
- * 
- * Output:
- * 4
- */
+// Input:
+// aabcbcdbca
+// 2
+
+// Output:
+// 4
