@@ -1,9 +1,9 @@
-// Time Complexity: O(n), Space Complexity: O(1)
+// Time O(n)
+// Space O(1)
 
 import java.util.*;
 
 public class Q44_MaximumConsecutiveOnes2 {
-
   public static void main(String[] args) {
     Scanner scn = new Scanner(System.in);
     int n = scn.nextInt();
@@ -58,12 +58,10 @@ public class Q44_MaximumConsecutiveOnes2 {
   }
 }
 
-/*
- * Input:
- * 10
- * 1 1 1 0 0 0 1 1 1 1
- * 2
- * 
- * Output:
- * 6
- */
+// Input:
+// 10
+// 1 1 1 0 0 0 1 1 1 1
+// 2
+
+// Output:
+// 6
