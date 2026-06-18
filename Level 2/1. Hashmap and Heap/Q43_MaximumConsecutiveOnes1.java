@@ -1,4 +1,5 @@
-// Time Complexity: O(n), Space Complexity: O(1)
+// Time O(n)
+// Space O(1)
 
 import java.util.*;
 
@@ -56,11 +57,9 @@ public class Q43_MaximumConsecutiveOnes1 {
   }
 }
 
-/*
- * Input:
- * 7
- * 1 0 1 1 0 1 1
- * 
- * Output:
- * 5
- */
+// Input:
+// 7
+// 1 0 1 1 0 1 1
+
+// Output:
+// 5

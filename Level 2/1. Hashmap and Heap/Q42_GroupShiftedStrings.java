@@ -32,9 +32,6 @@ public class Q42_GroupShiftedStrings {
   }
 
   public static String getCode(String str) {
-    if (str.length() == 1)
-      return "";
-
     String code = "";
     for (int i = 1; i < str.length(); i++) {
       char chi = str.charAt(i);
