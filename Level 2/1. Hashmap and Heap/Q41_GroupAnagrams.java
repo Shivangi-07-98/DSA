@@ -1,4 +1,5 @@
-// Time Complexity: O(n * k log k), Space Complexity: O(n * k)
+// Time O(n * k log k)
+// Space O(n * k)
 
 import java.io.*;
 import java.util.*;

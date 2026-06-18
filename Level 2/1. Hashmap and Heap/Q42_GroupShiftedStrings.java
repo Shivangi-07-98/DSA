@@ -1,4 +1,5 @@
-// Time Complexity: O(total chars), Space Complexity: O(total chars)
+// Time O(total chars)
+// Space O(total chars)
 
 import java.io.*;
 import java.util.*;
@@ -31,7 +32,8 @@ public class Q42_GroupShiftedStrings {
   }
 
   public static String getCode(String str) {
-    if (str.length() == 1) return "";
+    if (str.length() == 1)
+      return "";
 
     String code = "";
     for (int i = 1; i < str.length(); i++) {
@@ -84,21 +86,21 @@ public class Q42_GroupShiftedStrings {
       ArrayList<String> currList = list.get(i);
       StringBuilder sb = new StringBuilder();
       for (int j = 0; j < currList.size(); j++) {
-        if (j > 0) sb.append(' ');
+        if (j > 0)
+          sb.append(' ');
         sb.append(currList.get(j));
       }
       System.out.println(sb.toString());
     }
   }
+  
 }
 
-/*
- * Input:
- * 6
- * abc bcd acef xyz az ba
- * 
- * Output:
- * abc bcd xyz
- * az ba
- * acef
- */
+// Input:
+// 6
+// abc bcd acef xyz az ba
+
+// Output:
+// abc bcd xyz
+// az ba
+// acef
