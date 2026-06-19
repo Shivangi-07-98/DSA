@@ -68,14 +68,14 @@
 70. length of the largest subarray with contiguous elements set 2 ×
 71. random pick with blacklist × - 15 oct 2022----
 72. check anagram string palindrome or not ×
-73. check if frequency of all characters can become same by one removal ×
-74. count number of nice subarrays - 20 oct 2022----
-75. subarrays with k different integers
-76. number of substrings containing all three characters
+73. check if frequency of all characters can become same by one removal
+74. count number of nice subarrays × - 20 oct 2022----
+75. subarrays with k different integers ×
+76. number of substrings containing all three characters ×
 77. find median from data stream
-78. fruit into baskets - 22 oct 2022----
-79. replace the substring for balanced string
-80. minimum size subarray sum
+78. fruit into baskets × - 22 oct 2022----
+79. replace the substring for balanced string ×
+80. minimum size subarray sum ×
 81. island perimeter
 82. a simple fraction ×
-83. shortest subarray with sum at least k
+83. shortest subarray with sum at least k ×
