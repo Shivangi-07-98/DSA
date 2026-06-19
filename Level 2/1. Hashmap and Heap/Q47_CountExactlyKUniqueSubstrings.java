@@ -41,7 +41,7 @@ public class Q47_CountExactlyKUniqueSubstrings {
   public static int solution(String str, int k) {
     return atMostK(str, k) - atMostK(str, k - 1);
   }
-  
+
 }
 
 // Input:

@@ -33,7 +33,7 @@ public class Q45_LongestAtmostKUniqueSubstring {
 
       ans = Math.max(ans, i - j + 1);
     }
-    
+
     return ans;
   }
 }

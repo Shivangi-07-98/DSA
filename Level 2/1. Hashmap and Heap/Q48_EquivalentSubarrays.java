@@ -38,7 +38,7 @@ public class Q48_EquivalentSubarrays {
 
       res += i - j + 1;
     }
-    
+
     return res;
   }
 }

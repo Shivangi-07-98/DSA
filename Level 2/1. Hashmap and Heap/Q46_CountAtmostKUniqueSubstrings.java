@@ -16,7 +16,7 @@ public class Q46_CountAtmostKUniqueSubstrings {
   public static int solution(String str, int k) {
     HashMap<Character, Integer> map = new HashMap<>();
     int ans = 0;
-    
+
     for (int i = 0, j = 0; i < str.length(); i++) {
       char ch = str.charAt(i);
       map.put(ch, map.getOrDefault(ch, 0) + 1);
