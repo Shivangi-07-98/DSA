@@ -1,6 +1,7 @@
 // LeetCode 1497: Check If Array Pairs Are Divisible by k
 // https://leetcode.com/problems/check-if-array-pairs-are-divisible-by-k/
-// Time Complexity: O(n), Space Complexity: O(n)
+// Time O(n)
+// Space O(n)
 
 // WHAT IS THE QUESTION ASKING?
 // Check if array can be divided into pairs such that sum of each pair is divisible by k
@@ -65,15 +66,13 @@ public class Q18_IsArrayDivisibleInPairsWhoseSumIsK {
 
 }
 
-/*
- * Input:
- * 4
- * 9 7 5 3
- * 6
- * 
- * Output:
- * true
- * 
- * n = 4 elements, means 2 pair
- * n = 10 elements, means 5 pair
- */
+// Input:
+// 4
+// 9 7 5 3
+// 6
+// 
+// Output:
+// true
+// 
+// n = 4 elements, means 2 pair
+// n = 10 elements, means 5 pair

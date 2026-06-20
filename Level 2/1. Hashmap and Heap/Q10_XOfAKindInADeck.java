@@ -1,6 +1,7 @@
 // LeetCode 914: X of a Kind in a Deck of Cards
 // https://leetcode.com/problems/x-of-a-kind-in-a-deck-of-cards/
-// Time Complexity: O(n), Space Complexity: O(n)
+// Time O(n)
+// Space O(n)
 import java.io.*;
 import java.util.*;
 
@@ -56,23 +57,21 @@ public class Q10_XOfAKindInADeck {
 
 }
 
-/*
- * Return true if and only if you can split the entire deck into 1 or more
- * groups of cards, where:
- * Each group has exactly x cards (x >= 2)
- * All the cards in each group have the same integer
- * 
- * Example 1:
- * Input: deck = [1,2,3,4,4,3,2,1]
- * Output: true
- * Explanation: Possible partition [1,1], [2,2], [3,3], [4,4]
- * (x = 2: each group has 2 cards, all cards in a group are same)
- * 
- * Example 2:
- * Input: deck = [1,1,1,2,2,2,3,3]
- * Output: false
- * Explanation: No possible partition
- * (Card 1 appears 3 times, Card 2 appears 3 times, Card 3 appears 2 times.
- * No single x >= 2 can satisfy: all groups must have same size x and all cards
- * in each group must be same integer)
- */
+// Return true if and only if you can split the entire deck into 1 or more
+// groups of cards, where:
+// Each group has exactly x cards (x >= 2)
+// All the cards in each group have the same integer
+// 
+// Example 1:
+// Input: deck = [1,2,3,4,4,3,2,1]
+// Output: true
+// Explanation: Possible partition [1,1], [2,2], [3,3], [4,4]
+// (x = 2: each group has 2 cards, all cards in a group are same)
+// 
+// Example 2:
+// Input: deck = [1,1,1,2,2,2,3,3]
+// Output: false
+// Explanation: No possible partition
+// (Card 1 appears 3 times, Card 2 appears 3 times, Card 3 appears 2 times.
+// No single x >= 2 can satisfy: all groups must have same size x and all cards
+// in each group must be same integer)

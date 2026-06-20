@@ -1,7 +1,7 @@
 // LeetCode 525: Contiguous Array (Longest Version)
 // https://leetcode.com/problems/contiguous-array/
-// Time Complexity: O(n)
-// Space Complexity: O(n)
+// Time O(n)
+// Space O(n)
 import java.io.*;
 import java.util.*;
 
@@ -46,11 +46,9 @@ public class Q5_LongestSubarrayWithEqual0And1 {
 
 }
 
-/*
- * Sample Input:
- * 7
- * 1 0 0 1 0 1 1
- * 
- * Sample Output:
- * 6
- */
+// Input:
+// 7
+// 1 0 0 1 0 1 1
+// 
+// Output:
+// 6

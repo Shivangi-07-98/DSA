@@ -1,4 +1,5 @@
-// Time Complexity: O(n), Space Complexity: O(n)
+// Time O(n)
+// Space O(n)
 import java.io.*;
 import java.util.*;
 
@@ -57,13 +58,11 @@ public class Q31_SmallestSubarrayWithMostFrequentElement {
   
 }
 
-/*
- * Input:
- * 9
- * 1 2 2 3 1 4 2 1 1
- * 
- * Output:
- * 1
- * 0
- * 8
- */
+// Input:
+// 9
+// 1 2 2 3 1 4 2 1 1
+// 
+// Output:
+// 1
+// 0
+// 8

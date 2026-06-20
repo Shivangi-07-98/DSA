@@ -1,6 +1,7 @@
 // LeetCode 485: Max Consecutive Ones
 // https://leetcode.com/problems/max-consecutive-ones/
-// Time Complexity: O(n), Space Complexity: O(1)
+// Time O(n)
+// Space O(1)
 import java.io.*;
 import java.util.*;
 
@@ -42,11 +43,9 @@ public class Q17_LongestConsecutive1s {
 
 }
 
-/*
- * Input:
- * 8
- * 1 1 0 1 1 1 0 1
- * 
- * Output:
- * 3
- */
+// Input:
+// 8
+// 1 1 0 1 1 1 0 1
+// 
+// Output:
+// 3

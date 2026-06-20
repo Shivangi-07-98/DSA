@@ -1,4 +1,5 @@
-// Time Complexity: O(n), Space Complexity: O(n)
+// Time O(n)
+// Space O(n)
 
 import java.io.*;
 import java.util.*;
@@ -47,14 +48,12 @@ public class Q57_PairsOfNonCoincidingPoints {
   }
 }
 
-/*
- * Input:
- * 4
- * 1 2
- * 1 3
- * 2 3
- * 2 2
- * 
- * Output:
- * 4
- */
+// Input:
+// 4
+// 1 2
+// 1 3
+// 2 3
+// 2 2
+// 
+// Output:
+// 4

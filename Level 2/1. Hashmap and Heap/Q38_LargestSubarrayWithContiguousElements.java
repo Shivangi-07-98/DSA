@@ -1,4 +1,5 @@
-// Time Complexity: O(n^2), Space Complexity: O(1)
+// Time O(n^2)
+// Space O(1)
 
 import java.io.*;
 import java.util.*;
@@ -45,11 +46,9 @@ public class Q38_LargestSubarrayWithContiguousElements {
   }
 }
 
-/*
- * Input:
- * 7
- * 10 12 11 14 13 16 15
- * 
- * Output:
- * 7
- */
+// Input:
+// 7
+// 10 12 11 14 13 16 15
+// 
+// Output:
+// 7

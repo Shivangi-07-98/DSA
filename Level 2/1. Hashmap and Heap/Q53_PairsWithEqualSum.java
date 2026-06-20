@@ -1,4 +1,5 @@
-// Time Complexity: O(n^2), Space Complexity: O(n^2)
+// Time O(n^2)
+// Space O(n^2)
 
 import java.io.*;
 import java.util.*;
@@ -31,11 +32,9 @@ public class Q53_PairsWithEqualSum {
   }
 }
 
-/*
- * Input:
- * 4
- * 3 4 7 1
- * 
- * Output:
- * true
- */
+// Input:
+// 4
+// 3 4 7 1
+// 
+// Output:
+// true

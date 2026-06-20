@@ -1,4 +1,5 @@
-// Time Complexity: O(n), Space Complexity: O(n)
+// Time O(n)
+// Space O(n)
 import java.io.*;
 import java.util.*;
 
@@ -59,14 +60,12 @@ public class Q24_CountUniqueSubstrings {
   }
 }
 
-/*
- * Input:
- * abcd
- * 
- * Output:
- * 10
- * 
- * Explanation:
- * All substrings are unique
- * n(n+1)/2 = 4*5/2 = 10
- */
+// Input:
+// abcd
+// 
+// Output:
+// 10
+// 
+// Explanation:
+// All substrings are unique
+// n(n+1)/2 = 4*5/2 = 10

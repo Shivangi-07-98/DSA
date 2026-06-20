@@ -1,4 +1,5 @@
-// Time Complexity: O(n log n), Space Complexity: O(n)
+// Time O(n log n)
+// Space O(n)
 import java.io.*;
 import java.util.*;
 
@@ -36,12 +37,10 @@ public class Q34_TaskCompletion {
   
 }
 
-/*
- * Input:
- * 6 2
- * 2 4
- * 
- * Output:
- * 1 5
- * 3 6
- */
+// Input:
+// 6 2
+// 2 4
+// 
+// Output:
+// 1 5
+// 3 6

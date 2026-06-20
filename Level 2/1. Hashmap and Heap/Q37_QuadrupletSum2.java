@@ -1,4 +1,5 @@
-// Time Complexity: O(n^2), Space Complexity: O(n)
+// Time O(n^2)
+// Space O(n)
 
 import java.io.*;
 import java.util.*;
@@ -52,14 +53,12 @@ public class Q37_QuadrupletSum2 {
   }
 }
 
-/*
- * Input:
- * 2
- * 1 2
- * -2 -1
- * -1 2
- * 0 2
- * 
- * Output:
- * 2
- */
+// Input:
+// 2
+// 1 2
+// -2 -1
+// -1 2
+// 0 2
+// 
+// Output:
+// 2

@@ -1,4 +1,5 @@
-// Time Complexity: O(log10(denominator)), Space Complexity: O(denominator)
+// Time O(log10(denominator))
+// Space O(denominator)
 
 import java.io.*;
 import java.util.*;
@@ -53,10 +54,8 @@ public class Q52_RecurringSequenceInAFraction {
   }
 }
 
-/*
- * Input:
- * 4 333
- * 
- * Output:
- * 0.(012)
- */
+// Input:
+// 4 333
+// 
+// Output:
+// 0.(012)

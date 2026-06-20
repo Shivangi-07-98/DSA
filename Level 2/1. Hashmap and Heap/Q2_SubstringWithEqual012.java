@@ -1,7 +1,7 @@
 // LeetCode 1352: Count Substrings with Equal Number of 0s, 1s and 2s
 // https://leetcode.com/problems/count-substrings-with-equal-number-of-0s-1s-and-2s/
-// Time Complexity: O(n)
-// Space Complexity: O(n)
+// Time O(n)
+// Space O(n)
 import java.io.*;
 import java.util.*;
 
@@ -51,10 +51,8 @@ public class Q2_SubstringWithEqual012 {
 
 }
 
-/*
- * Sample Input:
- * 0102010
- * 
- * Sample Output:
- * 2
- */
+// Input:
+// 0102010
+// 
+// Output:
+// 2

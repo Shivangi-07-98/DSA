@@ -1,4 +1,5 @@
-// Time Complexity: O(26 * n), Space Complexity: O(26)
+// Time O(26 * n)
+// Space O(26)
 
 import java.io.*;
 import java.util.*;
@@ -53,10 +54,8 @@ public class Q66_LongestSubstringEachCharAtLeastK {
   }
 }
 
-/*
- * Input:
- * aaabb 3
- * 
- * Output:
- * 3
- */
+// Input:
+// aaabb 3
+// 
+// Output:
+// 3

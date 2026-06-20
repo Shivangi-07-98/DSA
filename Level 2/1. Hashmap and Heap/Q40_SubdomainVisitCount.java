@@ -1,4 +1,5 @@
-// Time Complexity: O(total chars), Space Complexity: O(total chars)
+// Time O(total chars)
+// Space O(total chars)
 
 import java.io.*;
 import java.util.*;
@@ -46,15 +47,13 @@ public class Q40_SubdomainVisitCount {
   }
 }
 
-/*
- * Input:
- * 2
- * 9001 discuss.leetcode.com
- * 50 yahoo.com
- * 
- * Output:
- * 9001 discuss.leetcode.com
- * 9001 leetcode.com
- * 9051 com
- * 50 yahoo.com
- */
+// Input:
+// 2
+// 9001 discuss.leetcode.com
+// 50 yahoo.com
+// 
+// Output:
+// 9001 discuss.leetcode.com
+// 9001 leetcode.com
+// 9051 com
+// 50 yahoo.com

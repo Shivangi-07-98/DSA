@@ -1,4 +1,5 @@
-// Time Complexity: O(1) average for get/put, Space Complexity: O(capacity)
+// Time O(1) average for get/put
+// Space O(capacity)
 import java.io.*;
 import java.util.*;
 
@@ -98,18 +99,16 @@ public class Q33_LRUCache {
 
 }
 
-/*
- * Input:
- * 2 6
- * put 1 10
- * put 2 20
- * get 1
- * put 3 30
- * get 2
- * get 3
- * 
- * Output:
- * 10
- * -1
- * 30
- */
+// Input:
+// 2 6
+// put 1 10
+// put 2 20
+// get 1
+// put 3 30
+// get 2
+// get 3
+// 
+// Output:
+// 10
+// -1
+// 30

@@ -1,7 +1,7 @@
 // LeetCode 560: Subarray Sum Equals K
 // https://leetcode.com/problems/subarray-sum-equals-k/
-// Time Complexity: O(n)
-// Space Complexity: O(n)
+// Time O(n)
+// Space O(n)
 import java.io.*;
 import java.util.*;
 
@@ -46,12 +46,10 @@ public class Q3_SubarraysSumExactlyK {
 
 }
 
-/*
- * Sample Input:
- * 5
- * 1 1 1 2 3
- * 3
- * 
- * Sample Output:
- * 2
- */
+// Input:
+// 5
+// 1 1 1 2 3
+// 3
+// 
+// Output:
+// 2

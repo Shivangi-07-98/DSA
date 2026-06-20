@@ -1,4 +1,5 @@
-// Time Complexity: O(n^2), Space Complexity: O(1)
+// Time O(n^2)
+// Space O(1)
 
 import java.io.*;
 import java.util.*;
@@ -23,10 +24,8 @@ public class Q65_BinaryStringSubstrings1ToN {
   }
 }
 
-/*
- * Input:
- * 0110 3
- * 
- * Output:
- * true
- */
+// Input:
+// 0110 3
+// 
+// Output:
+// true

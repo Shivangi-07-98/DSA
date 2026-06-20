@@ -1,6 +1,7 @@
 // LeetCode 954: Array of Doubled Pairs
 // https://leetcode.com/problems/array-of-doubled-pairs/
-// Time Complexity: O(n log n), Space Complexity: O(n)
+// Time O(n log n)
+// Space O(n)
 
 // WHAT IS THE QUESTION ASKING?
 // Can we reorder the array so that after reordering:
@@ -71,20 +72,18 @@ public class Q12_ArrayOfDoubledPair {
 
 }
 
-/*
- * Example 1:
- * Input: arr = [3,1,3,6]
- * Output: false
- * Explanation: Cannot form pairs where second = 2 * first
- * 
- * Example 2:
- * Input: arr = [2,1,2,6]
- * Output: false
- * Explanation: Cannot form pairs where second = 2 * first
- * 
- * Example 3:
- * Input: arr = [4,-2,2,-4]
- * Output: true
- * Explanation: We can take two groups, [-2,-4] and [2,4] to form [-2,-4,2,4]
- * where -4 = 2*(-2) and 4 = 2*2
- */
+// Example 1:
+// Input: arr = [3,1,3,6]
+// Output: false
+// Explanation: Cannot form pairs where second = 2 * first
+// 
+// Example 2:
+// Input: arr = [2,1,2,6]
+// Output: false
+// Explanation: Cannot form pairs where second = 2 * first
+// 
+// Example 3:
+// Input: arr = [4,-2,2,-4]
+// Output: true
+// Explanation: We can take two groups, [-2,-4] and [2,4] to form [-2,-4,2,4]
+// where -4 = 2*(-2) and 4 = 2*2

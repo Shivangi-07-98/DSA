@@ -1,4 +1,5 @@
-// Time Complexity: O(n * m), Space Complexity: O(n * m)
+// Time O(n * m)
+// Space O(n * m)
 
 import java.io.*;
 import java.util.*;
@@ -78,15 +79,13 @@ public class Q35_PairsWithGivenSumInTwoSortedMatrices {
   
 }
 
-/*
- * Input:
- * 2 2
- * 1 3
- * 5 7
- * 2 3
- * 4 8
- * 10
- * 
- * Output:
- * 2
- */
+// Input:
+// 2 2
+// 1 3
+// 5 7
+// 2 3
+// 4 8
+// 10
+// 
+// Output:
+// 2

@@ -1,4 +1,5 @@
-// Time Complexity: push O(1), pop O(1), Space Complexity: O(n)
+// Time push O(1), pop O(1)
+// Space O(n)
 
 import java.io.*;
 import java.util.*;
@@ -49,21 +50,19 @@ public class Q49_MaxFrequencyStack {
   }
 }
 
-/*
- * Input:
- * 9
- * push 5
- * push 7
- * push 5
- * push 7
- * push 4
- * push 5
- * pop
- * pop
- * pop
- * 
- * Output:
- * 5
- * 7
- * 5
- */
+// Input:
+// 9
+// push 5
+// push 7
+// push 5
+// push 7
+// push 4
+// push 5
+// pop
+// pop
+// pop
+// 
+// Output:
+// 5
+// 7
+// 5

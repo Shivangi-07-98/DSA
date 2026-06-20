@@ -1,4 +1,5 @@
-// Time Complexity: O(total bricks), Space Complexity: O(width breaks)
+// Time O(total bricks)
+// Space O(width breaks)
 
 import java.io.*;
 import java.util.*;
@@ -41,13 +42,11 @@ public class Q54_BrickWall {
   }
 }
 
-/*
- * Input:
- * 3
- * 3 1 2 2
- * 3 3 1 1
- * 2 2 3
- * 
- * Output:
- * 1
- */
+// Input:
+// 3
+// 3 1 2 2
+// 3 3 1 1
+// 2 2 3
+// 
+// Output:
+// 1

@@ -1,6 +1,7 @@
 // LeetCode 781: Rabbits in Forest
 // https://leetcode.com/problems/rabbits-in-forest/
-// Time Complexity: O(n), Space Complexity: O(n)
+// Time O(n)
+// Space O(n)
 
 // We need to find the minimum number of rabbits in the forest
 // Example: If 7 rabbits say "3 others like me" → they form groups of size 4 (3+1)
@@ -45,23 +46,21 @@ public class Q13_RabbitsInForest {
   }
 
 }
-/*
- * array for below input is n = 27
- * [3 3 3 3 3 3 3 2 2 2 2 2 2 4 4 4 4 4 4 4 4 4 0 0 1 1 1]
- * 7 rabbits bol rhe mere jaise 3 aur hai
- * 6 rabbits bol rhe mere jaise 2 aur hai
- * 9 rabbits bol rhe mere jaise 4 aur hai
- * 2 rabbits bol rhe mere jaise 0 aur hai
- * 3 rabbits bol rhe mere jaise 1 aur hai
- * 
- * 1st case mere jaise 3 aur hai mtlb 4 ka group, 7 rabbits 4 + 4 ke group mai
- * fit honge 1 bachega
- * formula is number of groups * group ka size = (7/4) * 4
- * number of groups = 7/4 ka ceil
- * 
- * 2 ka ceil 2
- * 2.1 to 2.9 ka ceil 3
- * 3 ka ceil 3
- * 
- * min rabbits is = 30
- */
+// array for below input is n = 27
+// [3 3 3 3 3 3 3 2 2 2 2 2 2 4 4 4 4 4 4 4 4 4 0 0 1 1 1]
+// 7 rabbits bol rhe mere jaise 3 aur hai
+// 6 rabbits bol rhe mere jaise 2 aur hai
+// 9 rabbits bol rhe mere jaise 4 aur hai
+// 2 rabbits bol rhe mere jaise 0 aur hai
+// 3 rabbits bol rhe mere jaise 1 aur hai
+// 
+// 1st case mere jaise 3 aur hai mtlb 4 ka group, 7 rabbits 4 + 4 ke group mai
+// fit honge 1 bachega
+// formula is number of groups * group ka size = (7/4) * 4
+// number of groups = 7/4 ka ceil
+// 
+// 2 ka ceil 2
+// 2.1 to 2.9 ka ceil 3
+// 3 ka ceil 3
+// 
+// min rabbits is = 30

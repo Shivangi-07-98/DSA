@@ -48,12 +48,10 @@ public class Q22_FindAnagramMappings {
   
 }
 
-/*
- * Input
- * 4
- * 12 28 46 32
- * 28 12 32 46
- * 
- * Output
- * 1 0 3 2
- */
+// Input
+// 4
+// 12 28 46 32
+// 28 12 32 46
+// 
+// Output
+// 1 0 3 2

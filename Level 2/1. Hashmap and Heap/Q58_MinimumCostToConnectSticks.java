@@ -1,4 +1,5 @@
-// Time Complexity: O(n log n), Space Complexity: O(n)
+// Time O(n log n)
+// Space O(n)
 
 import java.io.*;
 import java.util.*;
@@ -35,11 +36,9 @@ public class Q58_MinimumCostToConnectSticks {
   }
 }
 
-/*
- * Input:
- * 3
- * 2 4 3
- * 
- * Output:
- * 14
- */
+// Input:
+// 3
+// 2 4 3
+// 
+// Output:
+// 14

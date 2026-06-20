@@ -1,4 +1,5 @@
-// Time Complexity: O(n log n), Space Complexity: O(n)
+// Time O(n log n)
+// Space O(n)
 
 import java.io.*;
 import java.util.*;
@@ -74,16 +75,14 @@ public class Q56_TheSkylineProblem {
   }
 }
 
-/*
- * Input:
- * 3
- * 2 9 10
- * 3 7 15
- * 5 12 12
- * 
- * Output:
- * 2 10
- * 3 15
- * 7 12
- * 12 0
- */
+// Input:
+// 3
+// 2 9 10
+// 3 7 15
+// 5 12 12
+// 
+// Output:
+// 2 10
+// 3 15
+// 7 12
+// 12 0

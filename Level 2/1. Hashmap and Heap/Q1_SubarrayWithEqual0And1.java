@@ -1,7 +1,7 @@
 // LeetCode 525: Contiguous Array
 // https://leetcode.com/problems/contiguous-array/
-// Time Complexity: O(n)
-// Space Complexity: O(n)
+// Time O(n)
+// Space O(n)
 import java.io.*;
 import java.util.*;
 
@@ -42,11 +42,9 @@ public class Q1_SubarrayWithEqual0And1 {
 
 }
 
-/*
- * Sample Input:
- * 7
- * 1 0 0 1 0 1 1
- * 
- * Sample Output:
- * 8
- */
+// Input:
+// 7
+// 1 0 0 1 0 1 1
+// 
+// Output:
+// 8

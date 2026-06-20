@@ -1,4 +1,5 @@
-// Time Complexity: O(n), Space Complexity: O(k)
+// Time O(n)
+// Space O(k)
 
 // WHAT IS THE QUESTION ASKING?
 // For each window of size k in the string, count the number of distinct characters
@@ -46,17 +47,15 @@ public class Q15_CountDistinctElementsInWindowK {
 
 }
 
-/*
- * Input:
- * aabcbcdbca
- * 4
- * 
- * Output:
- * 3
- * 3
- * 2
- * 3
- * 3
- * 3
- * 4
- */
+// Input:
+// aabcbcdbca
+// 4
+// 
+// Output:
+// 3
+// 3
+// 2
+// 3
+// 3
+// 3
+// 4

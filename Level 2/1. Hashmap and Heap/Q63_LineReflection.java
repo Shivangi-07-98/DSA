@@ -1,4 +1,5 @@
-// Time Complexity: O(n), Space Complexity: O(n)
+// Time O(n)
+// Space O(n)
 
 import java.io.*;
 import java.util.*;
@@ -50,14 +51,12 @@ public class Q63_LineReflection {
   }
 }
 
-/*
- * Input:
- * 4
- * 1 1
- * -1 1
- * 1 -1
- * -1 -1
- * 
- * Output:
- * true
- */
+// Input:
+// 4
+// 1 1
+// -1 1
+// 1 -1
+// -1 -1
+// 
+// Output:
+// true

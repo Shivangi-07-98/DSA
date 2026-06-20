@@ -1,4 +1,5 @@
-// Time Complexity: O(n^3), Space Complexity: O(1) (excluding output)
+// Time O(n^3)
+// Space O(1) (excluding output)
 
 import java.io.*;
 import java.util.*;
@@ -77,14 +78,12 @@ public class Q36_QuadrupletSum1 {
   }
 }
 
-/*
- * Input:
- * 6
- * 1 0 -1 0 -2 2
- * 0
- * 
- * Output:
- * -2 -1 1 2
- * -2 0 0 2
- * -1 0 0 1
- */
+// Input:
+// 6
+// 1 0 -1 0 -2 2
+// 0
+// 
+// Output:
+// -2 -1 1 2
+// -2 0 0 2
+// -1 0 0 1

@@ -1,6 +1,7 @@
 // LeetCode 1497: Check If Array Pairs Are Divisible by k
 // https://leetcode.com/problems/check-if-array-pairs-are-divisible-by-k/
-// Time Complexity: O(n), Space Complexity: O(n)
+// Time O(n)
+// Space O(n)
 import java.io.*;
 import java.util.*;
 
@@ -25,7 +26,8 @@ public class Q9_CountPairSumDivisibleByK {
   }
 
   // Brute Force Solution
-  // Time Complexity: O(n²), Space Complexity: O(1)
+  // Time O(n²)
+  // Space O(1)
   static long countPairSumDivisibleByK1(int[] arr, int n, int k) {
     long count = 0;
     for (int i = 0; i < n; i++) {
@@ -44,7 +46,8 @@ public class Q9_CountPairSumDivisibleByK {
   }
 
   // Optimized Solution
-  // Time Complexity: O(n), Space Complexity: O(n)
+  // Time O(n)
+  // Space O(n)
   static long countPairSumDivisibleByK2(int[] arr, int n, int k) {
     HashMap<Integer, Integer> map = new HashMap<>();
 
@@ -84,12 +87,10 @@ public class Q9_CountPairSumDivisibleByK {
 
 }
 
-/*
- * Sample Input:
- * 5
- * 2 2 1 7 5
- * 4
- * 
- * Sample Output:
- * 3
- */
+// Input:
+// 5
+// 2 2 1 7 5
+// 4
+// 
+// Output:
+// 3

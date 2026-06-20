@@ -1,4 +1,5 @@
-// Time Complexity: O(n), Space Complexity: O(n)
+// Time O(n)
+// Space O(n)
 
 // WHAT IS THE QUESTION ASKING?
 // Count pairs (i, j) where i < j and arr[i] - i == arr[j] - j
@@ -44,24 +45,22 @@ public class Q14_SameDifferences {
 
 }
 
-/*
- * Input:
- * 5
- * 1 2 3 4 5
- * 
- * Output:
- * 10
- * 
- * Explanation:
- * Calculation:
- * - Index 0: diff = 1 - 0 = 1
- * - Index 1: diff = 2 - 1 = 1
- * - Index 2: diff = 3 - 2 = 1
- * - Index 3: diff = 4 - 3 = 1
- * - Index 4: diff = 5 - 4 = 1
- * 
- * Map: {1: 5}
- * Pairs = 5C2 = 5 * 4 / 2 = 10
- * 
- * Key insight: If arr[i] - i == arr[j] - j, then arr[i] - arr[j] = i - j
- */
+// Input:
+// 5
+// 1 2 3 4 5
+// 
+// Output:
+// 10
+// 
+// Explanation:
+// Calculation:
+// - Index 0: diff = 1 - 0 = 1
+// - Index 1: diff = 2 - 1 = 1
+// - Index 2: diff = 3 - 2 = 1
+// - Index 3: diff = 4 - 3 = 1
+// - Index 4: diff = 5 - 4 = 1
+// 
+// Map: {1: 5}
+// Pairs = 5C2 = 5 * 4 / 2 = 10
+// 
+// Key insight: If arr[i] - i == arr[j] - j, then arr[i] - arr[j] = i - j

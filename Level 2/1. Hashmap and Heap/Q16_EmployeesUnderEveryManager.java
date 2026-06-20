@@ -1,4 +1,5 @@
-// Time Complexity: O(n), Space Complexity: O(n)
+// Time O(n)
+// Space O(n)
 
 // WHAT IS THE QUESTION ASKING?
 // Given employee-manager pairs, count number of employees under each manager
@@ -53,21 +54,19 @@ public class Q16_EmployeesUnderEveryManager {
 
 }
 
-/*
- * Input:
- * 6
- * A C
- * B C
- * C F
- * D E
- * E F
- * F F
- * 
- * Output:
- * A 0
- * B 0
- * C 2
- * D 0
- * E 1
- * F 5
- */
+// Input:
+// 6
+// A C
+// B C
+// C F
+// D E
+// E F
+// F F
+// 
+// Output:
+// A 0
+// B 0
+// C 2
+// D 0
+// E 1
+// F 5

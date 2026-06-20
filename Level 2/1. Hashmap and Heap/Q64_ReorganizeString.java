@@ -1,4 +1,5 @@
-// Time Complexity: O(n log k), Space Complexity: O(k)
+// Time O(n log k)
+// Space O(k)
 
 import java.io.*;
 import java.util.*;
@@ -51,10 +52,8 @@ public class Q64_ReorganizeString {
   }
 }
 
-/*
- * Input:
- * aab
- * 
- * Output:
- * aba
- */
+// Input:
+// aab
+// 
+// Output:
+// aba

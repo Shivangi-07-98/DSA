@@ -1,4 +1,5 @@
-// Time Complexity: O(n), Space Complexity: O(1)
+// Time O(n)
+// Space O(1)
 import java.io.*;
 import java.util.*;
 
@@ -24,10 +25,8 @@ public class Q32_FirstNonRepeatingCharacter {
   }
 }
 
-/*
- * Input:
- * swiss
- * 
- * Output:
- * w
- */
+// Input:
+// swiss
+// 
+// Output:
+// w

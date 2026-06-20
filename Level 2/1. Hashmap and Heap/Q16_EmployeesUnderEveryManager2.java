@@ -1,4 +1,5 @@
-// Time Complexity: O(n), Space Complexity: O(n)
+// Time O(n)
+// Space O(n)
 
 // WHAT IS THE QUESTION ASKING?
 // Question #16: Number of Employees Under Every Manager
@@ -66,21 +67,19 @@ public class Q16_EmployeesUnderEveryManager2 {
 
 }
 
-/*
- * Input:
- * 6
- * A C
- * B C
- * C F
- * D E
- * E F
- * F F
- * 
- * Output:
- * A 0
- * B 0
- * C 2
- * D 0
- * E 1
- * F 5
- */
+// Input:
+// 6
+// A C
+// B C
+// C F
+// D E
+// E F
+// F F
+// 
+// Output:
+// A 0
+// B 0
+// C 2
+// D 0
+// E 1
+// F 5
