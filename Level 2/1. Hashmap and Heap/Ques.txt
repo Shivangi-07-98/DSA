@@ -47,7 +47,7 @@
 50. insert delete get random O(1)
 51. insert delete get random O(1) - duplicates allowed
 52. recurring sequence in a fraction ×
-53. pairs with equal sum
+53. pairs with equal sum ×
 54. brick wall - 30 mar 2022----
 55. random pick with blacklist ×
 56. the skyline problem ×
@@ -55,14 +55,14 @@
 58. minimum cost to connect sticks - 31 mar 2022----
 59. snapshot array
 60. encode and decode tinyurl
-61. avoid flood in the city
-62. minimum number of refueling stops - 1 apr 2022----
+61. avoid flood in the city ×
+62. minimum number of refueling stops × - 1 apr 2022----
 63. line reflection ×
 64. reorganize string
 65. binary string with substrings representing numbers from 1 to n ×
 66. longest substring with every char occuring at least k times
 
-imp 67. rearrange characters string no two adjacent - 13 oct 2022----
+67. rearrange characters string no two adjacent (same as q64) - 13 oct 2022----
 68. grid illumination ×
 69. pairs of non coinciding points ×
 70. length of the largest subarray with contiguous elements set 2 ×
