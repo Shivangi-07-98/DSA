@@ -54,6 +54,6 @@ public class Q64_ReorganizeString {
 
 // Input:
 // aab
-// 
+//
 // Output:
 // aba
