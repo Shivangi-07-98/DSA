@@ -32,7 +32,7 @@
 35. pairs with given sum in two sorted matrices - 24 mar 2022----
 36. quadruplet sum1
 37. quadruplet sum2
-38. largest subarray with contiguous elements
+38. largest subarray with contiguous elements ×
 39. powerful integers ×
 40. subdomain visit count
 41. group anagrams - 25 mar 2022----
@@ -47,7 +47,7 @@
 50. insert delete get random O(1)
 51. insert delete get random O(1) - duplicates allowed
 52. recurring sequence in a fraction ×
-53. pairs with equal sum ×
+53. pairs with equal sum
 54. brick wall - 30 mar 2022----
 55. random pick with blacklist ×
 56. the skyline problem ×
@@ -55,8 +55,8 @@
 58. minimum cost to connect sticks - 31 mar 2022----
 59. snapshot array
 60. encode and decode tinyurl
-61. avoid flood in the city ×
-62. minimum number of refueling stops × - 1 apr 2022----
+61. avoid flood in the city
+62. minimum number of refueling stops - 1 apr 2022----
 63. line reflection ×
 64. reorganize string
 65. binary string with substrings representing numbers from 1 to n ×
