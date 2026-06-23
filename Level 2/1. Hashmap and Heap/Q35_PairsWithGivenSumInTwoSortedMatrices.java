@@ -3,6 +3,7 @@
 
 import java.io.*;
 import java.util.*;
+
 public class Q35_PairsWithGivenSumInTwoSortedMatrices {
 
   public static void main(String[] args) {
@@ -15,7 +16,7 @@ public class Q35_PairsWithGivenSumInTwoSortedMatrices {
         mat1[i][j] = scn.nextInt();
       }
     }
-    
+
     int[][] mat2 = new int[n][n];
     for (int i = 0; i < n; i++) {
       for (int j = 0; j < n; j++) {
@@ -28,23 +29,45 @@ public class Q35_PairsWithGivenSumInTwoSortedMatrices {
   }
 
   // duplicate values
-  public static int solution(int[][] mat1, int[][] mat2, int k) {
-    HashMap<Integer, Integer> map = new HashMap<>();
+  // public static int solution(int[][] mat1, int[][] mat2, int k) {
+  //   HashMap<Integer, Integer> map = new HashMap<>();
 
-    for (int[] row : mat1) {
-      for (int val : row) {
-        map.put(val, map.getOrDefault(val, 0) + 1);
+  //   for (int[] row : mat1) {
+  //     for (int val : row) {
+  //       map.put(val, map.getOrDefault(val, 0) + 1);
+  //     }
+  //   }
+
+  //   int count = 0;
+  //   for (int[] row : mat2) {
+  //     for (int val : row) {
+  //       count += map.getOrDefault(k - val, 0);
+  //     }
+  //   }
+
+  //   return count;
+  // }
+
+  // duplicate values
+  public static int solution(int[][] num1, int[][] num2, int k) {
+    HashMap<Integer, Integer> map = new HashMap<Integer, Integer>();
+
+    int ans = 0;
+    for (int i = 0; i < num1.length; i++) {
+      for (int j = 0; j < num1[0].length; j++) {
+        map.put(num1[i][j], map.getOrDefault(num1[i][j], 0) + 1);
       }
     }
 
-    int count = 0;
-    for (int[] row : mat2) {
-      for (int val : row) {
-        count += map.getOrDefault(k - val, 0);
+    for (int i = 0; i < num2.length; i++) {
+      for (int j = 0; j < num2[0].length; j++) {
+        if (map.containsKey(k - num2[i][j])) {
+          ans += map.get(k - num2[i][j]);
+        }
       }
     }
 
-    return count;
+    return ans;
   }
 
   // unique values
@@ -86,6 +109,6 @@ public class Q35_PairsWithGivenSumInTwoSortedMatrices {
 // 2 3
 // 4 8
 // 10
-// 
+//
 // Output:
 // 2
