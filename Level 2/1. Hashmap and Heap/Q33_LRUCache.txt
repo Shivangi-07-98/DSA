@@ -53,9 +53,8 @@ class LRUCache {
       head = tail = null;
       size--;
     } else {
-      Node nm1 = tail.prev;
-      nm1.next = null;
-      tail = nm1;
+      tail = tail.prev;
+      tail.next = null;
 
       size--;
     }
