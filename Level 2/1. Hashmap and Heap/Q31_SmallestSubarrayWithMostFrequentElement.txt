@@ -1,65 +1,9 @@
+https://leetcode.com/problems/degree-of-an-array/description/
+
+import java.io.*;
 import java.util.*;
 
-public class Main {
-
-  static class Pair {
-    int freq;
-    int fi;
-    int li;
-
-    Pair(int freq, int fi, int li) {
-      this.freq = freq;
-      this.fi = fi;
-      this.li = li;
-    }
-  }
-
-  public static void solution(int[] arr) {
-    HashMap<Integer, Pair> map = new HashMap<>();
-
-    int mfi = arr[0];
-    int mfiKiFreq = 1;
-    int mfiKaSi = 0;
-    int mfiKiLen = 1;
-
-    map.put(arr[0], new Pair(1, 0, 0));
-
-    for (int i = 1; i < arr.length; i++) {
-      int val = arr[i];
-
-      if (map.containsKey(val)) {
-        Pair p = map.get(val);
-        p.freq++;
-        p.li = i;
-
-        int len = i - p.fi + 1;
-
-        if (p.freq > mfiKiFreq) {
-          mfi = val;
-          mfiKiFreq = p.freq;
-          mfiKaSi = p.fi;
-          mfiKiLen = len;
-        } else if (p.freq == mfiKiFreq && len < mfiKiLen) {
-          mfi = val;
-          mfiKiFreq = p.freq;
-          mfiKaSi = p.fi;
-          mfiKiLen = len;
-        } else if (p.freq == mfiKiFreq && len == mfiKiLen && p.fi < mfiKaSi) {
-          mfi = val;
-          mfiKiFreq = p.freq;
-          mfiKaSi = p.fi;
-          mfiKiLen = len;
-        }
-      }
-      else {
-        map.put(val, new Pair(1, i, i));
-      }
-    }
-
-    System.out.println(mfi);
-    System.out.println(mfiKaSi);
-    System.out.println(mfiKaSi + mfiKiLen - 1);
-  }
+public class Q31_SmallestSubarrayWithMostFrequentElement {
 
   public static void main(String[] args) {
     Scanner scn = new Scanner(System.in);
@@ -69,7 +13,48 @@ public class Main {
       arr[i] = scn.nextInt();
     }
 
-    solution(arr);
+    int[] ans = solution(arr);
+    System.out.println(ans[0]);
+    System.out.println(ans[1]);
+    System.out.println(ans[2]);
+  }
+
+  public static int[] solution(int[] arr) {
+    HashMap<Integer, Integer> freq = new HashMap<>();
+    HashMap<Integer, Integer> first = new HashMap<>();
+
+    int maxFreq = 0;
+    int bestLen = Integer.MAX_VALUE;
+    int bestStart = 0;
+    int bestEnd = 0;
+    int bestEle = arr[0];
+
+    for (int i = 0; i < arr.length; i++) {
+      int val = arr[i];
+      first.putIfAbsent(val, i);
+      int f = freq.getOrDefault(val, 0) + 1;
+      freq.put(val, f);
+
+      int start = first.get(val);
+      int len = i - start + 1;
+
+      if (f > maxFreq) {
+        maxFreq = f;
+        bestLen = len;
+        bestStart = start;
+        bestEnd = i;
+        bestEle = val;
+      } else if (f == maxFreq) {
+        if (len < bestLen || (len == bestLen && start < bestStart)) {
+          bestLen = len;
+          bestStart = start;
+          bestEnd = i;
+          bestEle = val;
+        }
+      }
+    }
+
+    return new int[] { bestEle, bestStart, bestEnd };
   }
 
 }
