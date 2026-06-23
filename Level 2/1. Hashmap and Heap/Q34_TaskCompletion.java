@@ -34,13 +34,13 @@ public class Q34_TaskCompletion {
     for (int x : s2)
       System.out.print(x + " ");
   }
-  
+
 }
 
 // Input:
 // 6 2
 // 2 4
-// 
+//
 // Output:
 // 1 5
 // 3 6
