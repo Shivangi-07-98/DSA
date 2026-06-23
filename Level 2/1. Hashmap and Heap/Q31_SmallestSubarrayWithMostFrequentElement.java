@@ -55,13 +55,13 @@ public class Q31_SmallestSubarrayWithMostFrequentElement {
 
     return new int[] { bestEle, bestStart, bestEnd };
   }
-  
+
 }
 
 // Input:
 // 9
 // 1 2 2 3 1 4 2 1 1
-// 
+//
 // Output:
 // 1
 // 0
