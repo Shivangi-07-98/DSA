@@ -13,11 +13,6 @@ class LRUCache {
   int size;
   HashMap<Integer, Node> map = new HashMap<>();
   
-  public LRUCache(int capacity) {
-    this.cap = capacity;
-    this.size = 0;
-  }
-  
   void addFront(int key, int value) {
     Node node = new Node();
     node.key = key;
@@ -58,19 +53,23 @@ class LRUCache {
     }
   }
 
+  public LRUCache(int capacity) {
+    this.cap = capacity;
+    this.size = 0;
+  }
+
   public int get(int key) {
     if (!map.containsKey(key)) {
       return -1;
     }
 
     Node node = map.get(key);
-    int val = node.data;
 
     remove(node);
-    addFront(key, val);
+    addFront(key, node.data);
     map.put(key, head);
 
-    return val;
+    return node.data;
   }
 
   public void put(int key, int value) {
@@ -79,6 +78,7 @@ class LRUCache {
       remove(node);
     } else {
       if (size == cap) {
+        map.remove(tail.key);
         removeLast();
       }
     }
