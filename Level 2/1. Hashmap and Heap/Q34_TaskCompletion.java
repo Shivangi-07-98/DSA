@@ -9,9 +9,18 @@ public class Q34_TaskCompletion {
     int n = scn.nextInt();
     int m = scn.nextInt();
 
-    boolean[] done = new boolean[n + 1];
+    int[] num = new int[m];
     for (int i = 0; i < m; i++) {
-      done[scn.nextInt()] = true;
+      num[i] = scn.nextInt();
+    }
+
+    completeTask(n, m, num);
+  }
+
+  public static void completeTask(int n, int m, int[] arr) {
+    boolean[] done = new boolean[n + 1];
+    for (int task : arr) {
+      done[task] = true;
     }
 
     ArrayList<Integer> s1 = new ArrayList<>();
