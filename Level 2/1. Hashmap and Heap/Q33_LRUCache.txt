@@ -1,3 +1,4 @@
+
 class LRUCache {
 
   static class Node {
@@ -11,8 +12,9 @@ class LRUCache {
   Node tail;
   int cap;
   int size;
+
   HashMap<Integer, Node> map = new HashMap<>();
-  
+
   void addFront(int key, int value) {
     Node node = new Node();
     node.key = key;
@@ -47,9 +49,15 @@ class LRUCache {
   }
 
   void removeLast() {
-    if (tail != null) {
-      map.remove(tail.key);
-      remove(tail);
+    if (head == tail) {
+      head = tail = null;
+      size--;
+    } else {
+      Node nm1 = tail.prev;
+      nm1.next = null;
+      tail = nm1;
+
+      size--;
     }
   }
 
