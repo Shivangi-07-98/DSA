@@ -1,10 +1,12 @@
+https://leetcode.com/problems/lru-cache/description/
+
 class LRUCache {
 
   static class Node {
     Node prev;
     Node next;
     int key;
-    int data;
+    int value;
   }
 
   Node head;
@@ -17,7 +19,7 @@ class LRUCache {
   void addFront(int key, int value) {
     Node node = new Node();
     node.key = key;
-    node.data = value;
+    node.value = value;
 
     if (head == null) {
       head = tail = node;
@@ -47,17 +49,17 @@ class LRUCache {
     size--;
   }
 
-  void removeLast() {
-    if (head == tail) {
-      head = tail = null;
-      size--;
-    } else {
-      tail = tail.prev;
-      tail.next = null;
+  // void removeLast() {
+  //   if (head == tail) {
+  //     head = tail = null;
+  //     size--;
+  //   } else {
+  //     tail = tail.prev;
+  //     tail.next = null;
 
-      size--;
-    }
-  }
+  //     size--;
+  //   }
+  // }
 
   public LRUCache(int capacity) {
     this.cap = capacity;
@@ -72,10 +74,10 @@ class LRUCache {
     Node node = map.get(key);
 
     remove(node);
-    addFront(key, node.data);
+    addFront(key, node.value);
     map.put(key, head);
 
-    return node.data;
+    return node.value;
   }
 
   public void put(int key, int value) {
@@ -85,7 +87,8 @@ class LRUCache {
     } else {
       if (size == cap) {
         map.remove(tail.key);
-        removeLast();
+        // removeLast();
+        remove(tail);
       }
     }
 
