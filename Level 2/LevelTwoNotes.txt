@@ -402,12 +402,14 @@ n(n+1)/2
 2. SUBSEQUENCE - Order same, Skipping allowed
 ABC:
 A  B  C  AB  AC  BC  ABC
+A  AB  ABC  B  BC  C  AC
 Count:
 2^n - 1   (usually non-empty)
 
 3. SUBSET - Order ignored, Selection only, Includes empty set
 ABC:
 {}  A  B  C  AB  AC  BC  ABC
+{}  A  AB  ABC  B  BC  C  AC
 Count:
 2^n
 
