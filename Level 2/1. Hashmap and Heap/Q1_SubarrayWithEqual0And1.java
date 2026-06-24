@@ -7,7 +7,6 @@ import java.io.*;
 import java.util.*;
 
 public class Q1_SubarrayWithEqual0And1 {
-
   public static void main(String[] args) {
     Scanner scn = new Scanner(System.in);
     int n = scn.nextInt(); // 7
@@ -24,8 +23,9 @@ public class Q1_SubarrayWithEqual0And1 {
   static int SubarrayWithEqualZeroAndOne(int[] arr, int n) {
     int ans = 0;
     int sum = 0;
+
     HashMap<Integer, Integer> map = new HashMap<>();
-    map.put(sum, 1);
+    map.put(0, 1);
 
     for (int val : arr) {
       sum += (val == 0 ? -1 : 1);
@@ -46,6 +46,6 @@ public class Q1_SubarrayWithEqual0And1 {
 // Input:
 // 7
 // 1 0 0 1 0 1 1
-// 
+//
 // Output:
 // 8
