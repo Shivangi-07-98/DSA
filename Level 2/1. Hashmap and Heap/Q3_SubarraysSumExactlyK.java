@@ -7,28 +7,27 @@ import java.io.*;
 import java.util.*;
 
 public class Q3_SubarraysSumExactlyK {
-
   public static void main(String[] args) {
     Scanner scn = new Scanner(System.in);
     int n = scn.nextInt();
-    int[] nums = new int[n];
+    int[] arr = new int[n];
     for (int i = 0; i < n; i++) {
-      nums[i] = scn.nextInt();
+      arr[i] = scn.nextInt();
     }
     int k = scn.nextInt();
 
-    int ans = subarraySum(nums, k);
+    int ans = subarraySum(arr, k);
     System.out.println(ans);
   }
 
   // count subarrays with sum exactly equal to k
-  static int subarraySum(int[] nums, int k) {
+  static int subarraySum(int[] arr, int k) {
     int ans = 0;
     int sum = 0;
     HashMap<Integer, Integer> map = new HashMap<>();
-    map.put(sum, 1);
+    map.put(0, 1);
 
-    for (int val : nums) {
+    for (int val : arr) {
       sum += val;
 
       if (map.containsKey(sum - k)) {
