@@ -3,6 +3,7 @@
 
 // WHAT IS THE QUESTION ASKING?
 // For each window of size k in the string, count the number of distinct characters
+
 import java.io.*;
 import java.util.*;
 

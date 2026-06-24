@@ -1,7 +1,8 @@
-// LeetCode 525: Contiguous Array
 // https://leetcode.com/problems/contiguous-array/
+
 // Time O(n)
 // Space O(n)
+
 import java.io.*;
 import java.util.*;
 

@@ -4,6 +4,7 @@
 // WHAT IS THE QUESTION ASKING?
 // Question #16: Number of Employees Under Every Manager
 // Solution 2: Using HashSet instead of ArrayList
+
 import java.io.*;
 import java.util.*;
 

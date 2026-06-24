@@ -1,6 +1,5 @@
-// LeetCode 1502: Can Make Arithmetic Progression From Sequence
 // https://leetcode.com/problems/can-make-arithmetic-progression-from-sequence/
-// 
+
 // WHAT IS AP SEQUENCE?
 // AP = Arithmetic Progression
 // An AP sequence has CONSTANT DIFFERENCE between consecutive numbers
@@ -12,9 +11,10 @@
 // Given an array, can we REARRANGE it to form an AP sequence?
 // Example: [3, 5, 1] can be rearranged to [1, 3, 5] -> YES (difference = 2)
 // Example: [1, 2, 4] cannot form AP -> NO (no constant difference possible)
-// 
+
 // Time O(n)
 // Space O(n)
+
 import java.io.*;
 import java.util.*;
 

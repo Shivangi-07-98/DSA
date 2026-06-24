@@ -1,7 +1,8 @@
-// LeetCode 485: Max Consecutive Ones
 // https://leetcode.com/problems/max-consecutive-ones/
+
 // Time O(n)
 // Space O(1)
+
 import java.io.*;
 import java.util.*;
 

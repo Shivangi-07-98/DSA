@@ -1,7 +1,8 @@
-// LeetCode 974: Subarray Sums Divisible by K (Longest Version)
 // https://leetcode.com/problems/subarray-sums-divisible-by-k/
+
 // Time O(n)
 // Space O(n)
+
 import java.io.*;
 import java.util.*;
 

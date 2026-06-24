@@ -6,6 +6,7 @@
 // Key insight: If arr[i] - i == arr[j] - j, then arr[i] - arr[j] = i - j
 // We calculate diff = arr[i] - i for each element
 // For each diff with frequency f, number of pairs = fC2 = f * (f-1) / 2
+
 import java.io.*;
 import java.util.*;
 
