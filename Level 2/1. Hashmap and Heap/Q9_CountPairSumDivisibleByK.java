@@ -7,7 +7,6 @@ import java.io.*;
 import java.util.*;
 
 public class Q9_CountPairSumDivisibleByK {
-
   public static void main(String[] args) {
     Scanner scn = new Scanner(System.in);
     int n = scn.nextInt();
@@ -92,6 +91,6 @@ public class Q9_CountPairSumDivisibleByK {
 // 5
 // 2 2 1 7 5
 // 4
-// 
+//
 // Output:
 // 3
