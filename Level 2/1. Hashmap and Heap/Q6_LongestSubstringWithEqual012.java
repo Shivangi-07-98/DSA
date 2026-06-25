@@ -18,15 +18,18 @@ public class Q6_LongestSubstringWithEqual012 {
   // find longest substring having equal number of 0, 1 and 2
   static int longestSubstringWithEqual012(String str) {
     int ans = 0;
+
     int c0 = 0;
     int c1 = 0;
     int c2 = 0;
     String key = "0#0";
+
     HashMap<String, Integer> map = new HashMap<>();
     map.put(key, -1);
 
     for (int i = 0; i < str.length(); i++) {
       char ch = str.charAt(i);
+      
       if (ch == '0') {
         c0++;
       } else if (ch == '1') {

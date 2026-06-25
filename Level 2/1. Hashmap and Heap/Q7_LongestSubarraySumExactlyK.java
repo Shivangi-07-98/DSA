@@ -38,7 +38,7 @@ public class Q7_LongestSubarraySumExactlyK {
         }
       }
 
-      if (!map.containsKey(sum)) {
+      if (map.containsKey(sum) == false) {
         map.put(sum, i);
       }
     }
