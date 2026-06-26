@@ -7,6 +7,7 @@ class Solution {
     
     for (int val : arr) {
       set.add(val);
+
       if (val < min) {
         smin = min;
         min = val;
@@ -16,15 +17,16 @@ class Solution {
     }
 
     int d = smin - min;
-    for (int i = 1; i <= n; i++) {
+
+    for (int i = 0; i < n; i++) {
       if (set.contains(min) == false) {
         return false;
       } else {
-        min += d;
+        min = min + d;
       }
     }
 
     return true;
   }
-  
+
 }
