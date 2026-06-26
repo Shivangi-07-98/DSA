@@ -70,18 +70,54 @@ public class Q12_ArrayOfDoubledPair {
     }
   }
 
+  // don't put 0 in hashmap
+  static boolean canReorderDoubled2(int[] arr) {
+    HashMap<Integer, Integer> map = new HashMap<>();
+
+    for (int val : arr) {
+      if (val != 0) {
+        map.put(val, map.getOrDefault(val, 0) + 1);
+      }
+    }
+
+    Arrays.sort(arr); // imp why? see this case 2 8 1 4
+    // 2 takes wrong pair 4 instead 1 2 and 4 8 are pairs
+
+    for (int val : arr) {
+      if (map.containsKey(val) && map.containsKey(2 * val)) {
+        if (map.get(val) > 1) {
+          map.put(val, map.get(val) - 1);
+        } else {
+          map.remove(val);
+        }
+
+        if (map.get(2 * val) > 1) {
+          map.put(2 * val, map.get(2 * val) - 1);
+        } else {
+          map.remove(2 * val);
+        }
+      }
+    }
+
+    if (map.size() == 0) {
+      return true;
+    } else {
+      return false;
+    }
+  }
+
 }
 
 // Example 1:
 // Input: arr = [3,1,3,6]
 // Output: false
 // Explanation: Cannot form pairs where second = 2 * first
-// 
+//
 // Example 2:
 // Input: arr = [2,1,2,6]
 // Output: false
 // Explanation: Cannot form pairs where second = 2 * first
-// 
+//
 // Example 3:
 // Input: arr = [4,-2,2,-4]
 // Output: true
