@@ -24,11 +24,7 @@ public class Q10_XOfAKindInADeck {
     HashMap<Integer, Integer> map = new HashMap<>();
 
     for (int val : arr) {
-      if (map.containsKey(val)) {
-        map.put(val, map.get(val) + 1);
-      } else {
-        map.put(val, 1);
-      }
+      map.put(val, map.getOrDefault(val, 0) + 1);
     }
 
     int counter = 0;
@@ -62,13 +58,13 @@ public class Q10_XOfAKindInADeck {
 // groups of cards, where:
 // Each group has exactly x cards (x >= 2)
 // All the cards in each group have the same integer
-// 
+//
 // Example 1:
 // Input: deck = [1,2,3,4,4,3,2,1]
 // Output: true
 // Explanation: Possible partition [1,1], [2,2], [3,3], [4,4]
 // (x = 2: each group has 2 cards, all cards in a group are same)
-// 
+//
 // Example 2:
 // Input: deck = [1,1,1,2,2,2,3,3]
 // Output: false
