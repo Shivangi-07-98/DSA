@@ -19,6 +19,7 @@ public class Q16_EmployeesUnderEveryManager {
 
     for (int i = 0; i < n; i++) {
       String[] parts = scn.nextLine().split(" ");
+      
       if (parts[0].equals(parts[1])) {
         root = parts[0];
       } else if (tree.containsKey(parts[1])) {
