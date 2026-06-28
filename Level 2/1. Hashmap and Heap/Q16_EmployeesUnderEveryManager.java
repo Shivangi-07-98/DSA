@@ -38,6 +38,7 @@ public class Q16_EmployeesUnderEveryManager {
     }
   }
 
+  // tree bna kar dry run kar lena
   static int size(String root, HashMap<String, ArrayList<String>> tree, HashMap<String, Integer> res) {
     if (tree.containsKey(root) == false) {
       res.put(root, 0);
