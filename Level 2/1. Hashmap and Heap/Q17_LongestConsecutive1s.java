@@ -21,8 +21,8 @@ public class Q17_LongestConsecutive1s {
   }
 
   static int longestConsecutiveOnes(int[] arr) {
-    int tl = 0;
-    int ml = 0;
+    int tl = 0; // temporary length
+    int ml = 0; // maximum length
 
     for (int val : arr) {
       if (val == 0) {
