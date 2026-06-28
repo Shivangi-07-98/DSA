@@ -40,10 +40,10 @@ public class Q15_CountDistinctElementsInWindowK {
       }
 
       System.out.print(map.size() + " ");
-      System.out.println();
-
       j++;
     }
+    System.out.println();
+
   }
 
 }
