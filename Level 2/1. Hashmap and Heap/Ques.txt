@@ -67,11 +67,11 @@
 69. pairs of non coinciding points ×
 70. length of the largest subarray with contiguous elements set 2 ×
 71. random pick with blacklist × - 15 oct 2022----
-72. check anagram string palindrome or not (same as q41)
+72. check anagram string palindrome or not
 imp 73. check if frequency of all characters can become same by one removal
 74. count number of nice subarrays (same as q3) - 20 oct 2022----
 75. subarrays with k different integers (same as q47)
-76. number of substrings containing all three characters (same as q21)
+76. number of substrings containing all three characters
 imp 77. find median from data stream
 78. fruit into baskets (same as q45) - 22 oct 2022----
 79. replace the substring for balanced string ×
