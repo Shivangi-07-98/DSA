@@ -39,7 +39,7 @@ class Solution {
 
     Pair prev = null;
 
-    while (!pq.isEmpty()) {
+    while (pq.size() > 0) {
       Pair curr = pq.remove();
 
       sb.append(curr.ch);
