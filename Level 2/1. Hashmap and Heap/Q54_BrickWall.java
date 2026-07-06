@@ -5,7 +5,6 @@ import java.io.*;
 import java.util.*;
 
 public class Q54_BrickWall {
-
   public static void main(String[] args) {
     Scanner scn = new Scanner(System.in);
 
@@ -44,9 +43,12 @@ public class Q54_BrickWall {
 
 // Input:
 // 3
-// 3 1 2 2
-// 3 3 1 1
-// 2 2 3
-// 
+// 3
+// 1 2 2
+// 3
+// 3 1 1
+// 2
+// 2 3
+//
 // Output:
 // 1

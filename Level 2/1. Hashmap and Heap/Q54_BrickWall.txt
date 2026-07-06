@@ -2,3 +2,23 @@
 
 Time O(total bricks)
 Space O(width breaks)
+
+class Solution {
+  public int leastBricks(List<List<Integer>> wall) {
+    HashMap<Integer, Integer> map = new HashMap<>();
+    int maxEdges = 0;
+
+    for (List<Integer> row : wall) {
+      int sum = 0;
+
+      for (int i = 0; i < row.size() - 1; i++) {
+        sum += row.get(i);
+        int val = map.getOrDefault(sum, 0) + 1;
+        map.put(sum, val);
+        maxEdges = Math.max(maxEdges, val);
+      }
+    }
+
+    return wall.size() - maxEdges;
+  }
+}
