@@ -60,7 +60,7 @@
 63. line reflection ×
 64. reorganize string
 65. binary string with substrings representing numbers from 1 to n ×
-66. longest substring with every char occuring at least k times
+66. longest substring with every char occuring at least k times ×
 
 67. rearrange characters string no two adjacent (same as q64) - 13 oct 2022----
 68. grid illumination ×
