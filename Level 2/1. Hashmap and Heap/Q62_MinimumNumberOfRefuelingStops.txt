@@ -11,7 +11,10 @@ class Solution {
     int i = 0;
     int pumps = 0;
 
+    // Keep refueling until the target becomes reachable
     while (range < target) {
+
+      // Add all stations that are reachable with the current range
       while (i < stations.length) {
         if (stations[i][0] <= range) {
           queue.add(stations[i][1]);
@@ -21,14 +24,21 @@ class Solution {
         i++;
       }
 
+      // No reachable station left to refuel from, so target is impossible
       if (queue.size() == 0) {
         return -1;
       }
 
+      // Refuel from the reachable station having the maximum fuel
       range += queue.remove();
+
+      // Count this refueling stop
       pumps++;
     }
 
     return pumps;
   }
 }
+
+stations[i][0] = position
+stations[i][1] = fuel
