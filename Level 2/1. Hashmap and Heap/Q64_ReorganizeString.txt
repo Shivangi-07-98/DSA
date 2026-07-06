@@ -2,3 +2,54 @@
 
 Time O(n log k)
 Space O(k)
+
+class Solution {
+
+  class Pair {
+    char ch;
+    int freq;
+
+    Pair(char ch, int freq) {
+      this.ch = ch;
+      this.freq = freq;
+    }
+  }
+
+  public String reorganizeString(String s) {
+    HashMap<Character, Integer> map = new HashMap<>();
+
+    // Frequency map
+    for (char ch : s.toCharArray()) {
+      map.put(ch, map.getOrDefault(ch, 0) + 1);
+    }
+
+    // Max Heap
+    PriorityQueue<Pair> pq = new PriorityQueue<>((a, b) -> b.freq - a.freq);
+
+    for (char ch : map.keySet()) {
+      pq.add(new Pair(ch, map.get(ch)));
+    }
+
+    StringBuilder sb = new StringBuilder();
+
+    Pair prev = null;
+
+    while (!pq.isEmpty()) {
+
+      Pair curr = pq.remove();
+
+      sb.append(curr.ch);
+      curr.freq--;
+
+      // Put the previous character back into the heap
+      if (prev != null && prev.freq > 0) {
+        pq.add(prev);
+      }
+
+      // Keep current aside so it cannot be used immediately again
+      prev = curr;
+    }
+
+    return sb.length() == s.length() ? sb.toString() : "";
+  }
+}
