@@ -20,6 +20,8 @@ class Solution {
           queue.add(stations[i][1]);
         } else {
           break;
+          // exit the loop immediately
+          // never execute i++
         }
         i++;
       }
