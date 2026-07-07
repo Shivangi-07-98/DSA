@@ -7,13 +7,13 @@ import java.util.*;
 public class Q36_QuadrupletSum1 {
 
   public static void main(String[] args) {
-    Scanner sc = new Scanner(System.in);
-    int n = sc.nextInt();
+    Scanner scn = new Scanner(System.in);
+    int n = scn.nextInt();
     int[] arr = new int[n];
     for (int i = 0; i < n; i++) {
-      arr[i] = sc.nextInt();
+      arr[i] = scn.nextInt();
     }
-    int target = sc.nextInt();
+    int target = scn.nextInt();
 
     ArrayList<ArrayList<Integer>> ans = fourSum(arr, target, n);
     Collections.sort(ans, (a, b) -> {
@@ -39,7 +39,7 @@ public class Q36_QuadrupletSum1 {
       System.out.println(sb.toString());
     }
 
-    sc.close();
+    scn.close();
   }
 
   public static ArrayList<ArrayList<Integer>> fourSum(int[] nums, int target, int n) {
