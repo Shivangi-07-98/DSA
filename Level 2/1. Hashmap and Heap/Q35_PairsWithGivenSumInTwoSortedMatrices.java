@@ -102,6 +102,20 @@ public class Q35_PairsWithGivenSumInTwoSortedMatrices {
 
 }
 
+// boxNumber = row * matrix.length + column
+// row = (boxNumber - column) / matrix.length
+// column = boxNumber - (row * matrix.length)
+// but
+// row = boxNumber / matrix.length;
+// col = boxNumber % matrix.length;
+
+// | Division      | Original Equation |
+// | ------------- | ----------------- |
+// | Dividend = 23 | boxNumber       |
+// | Divisor = 9   | matrix.length   |
+// | Quotient = 2  | row             |
+// | Remainder = 5 | column          |
+
 // Input:
 // 2 2
 // 1 3
