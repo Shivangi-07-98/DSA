@@ -35,10 +35,10 @@ public class Q38_LargestSubarrayWithContiguousElements {
         set.add(arr[j]);
         min = Math.min(min, arr[j]);
         max = Math.max(max, arr[j]);
-      }
 
-      if (max - min == set.size() - 1) {
-        ans = Math.max(ans, set.size());
+        if (max - min == j - i) {
+          ans = Math.max(ans, j - i + 1);
+        }
       }
     }
 
@@ -49,6 +49,6 @@ public class Q38_LargestSubarrayWithContiguousElements {
 // Input:
 // 7
 // 10 12 11 14 13 16 15
-// 
+//
 // Output:
 // 7
