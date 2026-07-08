@@ -1,6 +1,7 @@
 https://leetcode.com/problems/insert-delete-getrandom-o1/description/
-Time Complexity: O(1) average, Space Complexity: O(n)
 
+Time O(1) average
+Space O(n)
 
 class RandomizedSet {
   Random r;

@@ -1,6 +1,7 @@
-https://leetcode.com/problems/insert-delete-getrandom-o1-duplicates-allowed/description/
-Time Complexity: O(1) average, Space Complexity: O(n)
+https://leetcode.com/problems/insert-delete-getrandom-o1-duplicates-allowed/
 
+Time O(1) average
+Space O(n)
 
 class RandomizedCollection {
   HashMap<Integer, HashSet<Integer>> map;
