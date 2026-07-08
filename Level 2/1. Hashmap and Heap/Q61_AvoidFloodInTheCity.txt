@@ -1,5 +1,7 @@
 https://leetcode.com/problems/avoid-flood-in-the-city/description/
-Time Complexity: O(n log n), Space Complexity: O(n)
+
+Time O(n log n)
+Space O(n)
 
 class Solution {
   public int[] avoidFlood(int[] rains) {
