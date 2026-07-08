@@ -31,7 +31,7 @@ class RandomizedCollection {
   }
 
   public boolean remove(int val) {
-    if (!map.containsKey(val) == false) {
+    if (map.containsKey(val) == false) {
       return false;
     }
 
