@@ -1,6 +1,7 @@
 https://leetcode.com/problems/encode-and-decode-tinyurl/description/
-Time Complexity: O(1) average, Space Complexity: O(number of urls)
 
+Time O(1) average
+Space O(number of urls)
 
 public class Codec {
   HashMap<String, String> map;
