@@ -47,7 +47,7 @@
 50. insert delete get random O(1)
 51. insert delete get random O(1) - duplicates allowed
 52. recurring sequence in a fraction ×
-53. pairs with equal sum
+53. pairs with equal sum ×
 54. brick wall - 30 mar 2022----
 55. random pick with blacklist ×
 56. the skyline problem ×
