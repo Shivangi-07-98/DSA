@@ -1,6 +1,7 @@
 https://leetcode.com/problems/snapshot-array/description/
-Time Complexity: set O(1), snap O(1), get O(log n), Space Complexity: O(total updates)
 
+Time set O(1), snap O(1), get O(log n)
+Space O(total updates)
 
 class SnapshotArray {
   HashMap<Integer, Integer>[] maps;
