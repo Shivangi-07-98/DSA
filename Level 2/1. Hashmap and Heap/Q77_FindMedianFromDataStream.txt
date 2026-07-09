@@ -2,37 +2,35 @@ https://leetcode.com/problems/find-median-from-data-stream/description/
 
 
 class MedianFinder {
-  PriorityQueue<Integer> second;
-  PriorityQueue<Integer> first;
-  int sz;
+  PriorityQueue<Integer> left;
+  PriorityQueue<Integer> right;
 
   public MedianFinder() {
-    first = new PriorityQueue<>(Collections.reverseOrder());
-    second = new PriorityQueue<>();
-    sz = 0;
+    left = new PriorityQueue<>(Collections.reverseOrder());
+    right = new PriorityQueue<>();
   }
 
   public void addNum(int num) {
-    if (first.size() > 0 && num < first.peek()) {
-      first.add(num);
+    if (left.size() > 0 && num < left.peek()) {
+      left.add(num);
     } else {
-      second.add(num);
+      right.add(num);
     }
 
-    if (second.size() - first.size() == 2) {
-      first.add(second.remove());
-    } else if (first.size() - second.size() == 2) {
-      second.add(first.remove());
+    if (left.size() - right.size() == 2) {
+      right.add(left.remove());
+    } else if (right.size() - left.size() == 2) {
+      left.add(right.remove());
     }
   }
 
   public double findMedian() {
-    if (second.size() > first.size()) {
-      return second.peek();
-    } else if (first.size() > second.size()) {
-      return first.peek();
+    if (left.size() > right.size()) {
+      return left.peek();
+    } else if (right.size() > left.size()) {
+      return right.peek();
     } else {
-      return (second.peek() + first.peek()) / 2.0;
+      return (left.peek() + right.peek()) / 2.0;
     }
   }
   
