@@ -13,7 +13,7 @@
 13. product of array except self
 14. maximum swap
 15. maximize distance to closest person
-16. sort the matrix diagonally × - 21 july 2022----
+16. sort the matrix diagonally - 21 july 2022----
 17. first missing positive
 18. pairs of songs with total durations divisible by 60
 19. minimum number platforms required railway bus station
