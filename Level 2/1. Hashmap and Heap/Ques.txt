@@ -75,7 +75,7 @@ imp 73. check if frequency of all characters can become same by one removal
 imp 77. find median from data stream
 78. fruit into baskets (same as q45) - 22 oct 2022----
 79. replace the substring for balanced string ×
-80. minimum size subarray sum (same as q28)
+80. minimum size subarray sum
 imp 81. island perimeter
 82. a simple fraction ×
 83. shortest subarray with sum at least k ×
