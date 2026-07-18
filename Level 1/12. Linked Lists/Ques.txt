@@ -22,20 +22,20 @@ vimp 21. Intersection point of a linked list
 imp 22. reverse a ll (pointer recursive)
 23. reverse a ll (data recursive) ×
 vimp 24. is a LL palindrome
-25. fold a LL ×
+25. fold a LL
 vimp 26. Add two LL
 
 imp 27. copy list with random pointer (new) - 1 oct 2022----
 28. split a circular linked list into two halves (new) ×
-vimp 29. lru cache (new)
+29. lru cache
 30. lfu cache (new) ×
-imp 31. odd even linked list - 3 oct 2022----
-imp 32. reorder list/fold linked list
+31. odd even linked list (same as q17) - 3 oct 2022----
+32. reorder list/fold linked list (same as q25)
 33. unfold linked list (new)
-imp 34. reverse linked list
-imp 35. add two numbers - 6 oct 2022----
+34. reverse linked list (same as q11 12)
+35. add two numbers (same as q26) - 6 oct 2022----
 36. subtraction in linked list (new) ×
-imp 37. intersection of two linked lists
+37. intersection of two linked lists (same as q21)
 vimp 38. linked list cycle (new)
 vimp 39. linked list cycle 2 (new)
 40. quick sort on linked list (new) ×
