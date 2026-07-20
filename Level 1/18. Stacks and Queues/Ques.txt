@@ -24,22 +24,22 @@ imp 20. minimum stack - constant space
 24. stack to queue adapter - remove efficient ×
 
 25. daily temperatures (same as q5) - 2 sept 2022----
-26. find maximum difference between nearest left and right smaller elements ×
-27. largest rectangle in histogram (same as q7)
-28. valid parentheses (same as q2)
-29. maximal rectangle
-30. minimum add to make parentheses valid - 3 sept 2022----
+26. max diff between nearest left and right smaller elements (exact same as q3,q4)
+27. largest rectangle in histogram (exact same as q7)
+28. valid parentheses (exact same as q2)
+29. maximal rectangle (same as q7)
+30. minimum add to make parentheses valid (same as q2) - 3 sept 2022----
 31. minimum number of bracket reversals needed to make an expression balanced ×
-32. find if an expression has duplicate parenthesis or not ×
+32. find if an expression has duplicate parenthesis or not (exact same as q1)
 33. asteroid collision (new)
-34. length of the longest valid substring
-35. backspace string compare × - 5 sept 2022----
+34. length of the longest valid substring (dp ques) ×
+35. backspace string compare - 5 sept 2022----
 36. reversing first k elements queue ×
-37. min stack (same as q19)
+37. min stack (exact same as q19)
 38. remove duplicate letters (new) - 6 sept 2022----
 39. remove k digits (new)
 40. validate stack sequences - 7 sept 2022----
-41. maximum frequency stack
+41. maximum frequency stack (hm ques)
 42. generate binary number (new) ×
 43. efficiently implement k stacks single array × - 20 sept 2022----
 44. efficiently implement k queues single array × - 21 sept 2022----
