@@ -27,7 +27,7 @@ vimp 26. Add two LL
 
 imp 27. copy list with random pointer (new) - 1 oct 2022----
 28. split a circular linked list into two halves (new) ×
-29. lru cache
+29. lru cache (hm ques)
 30. lfu cache (new) ×
 31. odd even linked list (same as q17) - 3 oct 2022----
 32. reorder list/fold linked list (same as q25)
