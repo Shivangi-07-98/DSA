@@ -32,9 +32,9 @@ imp 20. minimum stack - constant space
 31. minimum number of bracket reversals needed to make an expression balanced ×
 32. find if an expression has duplicate parenthesis or not (exact same as q1)
 *33. asteroid collision (new)
-34. length of the longest valid substring (dp ques) ×
+34. length of the longest valid substring
 *35. backspace string compare - 5 sept 2022----
-36. reversing first k elements queue ×
+36. reversing first k elements queue
 37. min stack (exact same as q19)
 *38. remove duplicate letters (new) - 6 sept 2022----
 *39. remove k digits (new)
