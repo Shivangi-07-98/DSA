@@ -3,25 +3,27 @@ https://www.geeksforgeeks.org/problems/minimum-platforms-1587115620/1
 time O(n log n)
 space O(1)
 
-static int findPlatform(int arr[], int dep[], int n) {
-  Arrays.sort(arr);
-  Arrays.sort(dep);
+class Solution {
+  static int findPlatform(int arr[], int dep[], int n) {
+    Arrays.sort(arr);
+    Arrays.sort(dep);
 
-  int count = 0;
-  int max = 0;
+    int count = 0;
+    int max = 0;
 
-  int i = 0;
-  int j = 0;
-  while (i < arr.length && j < dep.length) {
-    if (arr[i] <= dep[j]) {
-      i++;
-      count++;
-    } else {
-      j++;
-      count--;
+    int i = 0;
+    int j = 0;
+    while (i < arr.length && j < dep.length) {
+      if (arr[i] <= dep[j]) {
+        i++;
+        count++;
+      } else {
+        j++;
+        count--;
+      }
+      max = Math.max(count, max);
     }
-    max = Math.max(count, max);
+
+    return max;
   }
-  
-  return max;
 }
