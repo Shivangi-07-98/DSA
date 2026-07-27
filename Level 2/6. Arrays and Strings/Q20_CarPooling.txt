@@ -35,6 +35,7 @@ reason: it only stores touched stops, no huge array allocation, and keeps sorted
 
 solution 1
 (time O(n log n), space O(n))
+
 class Solution {
   public boolean carPooling(int[][] trips, int capacity) {
     TreeMap<Integer, Integer> map = new TreeMap<>();
@@ -74,6 +75,7 @@ class Solution {
 
 solution 2
 (time O(n log n), space O(n))
+
 class Solution {
   public boolean carPooling(int[][] trips, int capacity) {
     // key = location
@@ -119,6 +121,7 @@ class Solution {
 
 solution 3
 (time O(n + 1001) = O(n), space O(1001) = O(1))
+
 class Solution {
   public boolean carPooling(int[][] trips, int capacity) {
 
@@ -177,6 +180,7 @@ class Solution {
 
 solution 4
 (time O(n log n), space O(n))
+
 class Solution {
   class Pair implements Comparable<Pair> {
     int time;
@@ -232,6 +236,7 @@ class Solution {
 
 solution 5
 (time O(n log n), space O(n))
+
 class Solution {
   public boolean carPooling(int[][] trips, int capacity) {
     HashMap<Integer, Integer> map = new HashMap<>();
@@ -276,6 +281,7 @@ class Solution {
 
 solution 6
 (time O(n log n), space O(n))
+
 class Solution {
   public boolean carPooling(int[][] trips, int capacity) {
     int[] map = new int[1001];
