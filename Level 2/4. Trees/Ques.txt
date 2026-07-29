@@ -48,6 +48,7 @@
 47. longest even sum path ×
 48. avl × - 9 june 2022----
 
+fenwick tree × - 20 aug 2022----
 kth ancestor of a tree node × - 6 oct 2022----
 longest even sum path × - 8 oct 2022----
 count univalue subtrees - 11 oct 2022----
