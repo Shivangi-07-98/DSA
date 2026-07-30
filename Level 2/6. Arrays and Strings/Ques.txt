@@ -28,7 +28,7 @@
 28. reach a number ×
 29. consecutive numbers sum × - 27 july 2022----
 30. push dominoes ×
-31. maximum subarray
+31. maximum subarray (Kadane's Algorithm)
 32. maximum product subarray
 33. sieve of eratosthenes/count primes ×
 34. maximum sum of two non overlapping subarrays × - 28 july 2022----
