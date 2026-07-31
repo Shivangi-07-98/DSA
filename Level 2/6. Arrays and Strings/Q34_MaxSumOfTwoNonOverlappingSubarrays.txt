@@ -1,4 +1,4 @@
-https://leetcode.com/problems/maximum-sum-of-two-non-overlapping-subarrays/description/
+https://leetcode.com/problems/maximum-sum-of-two-non-overlapping-subarrays/
 
 time O(n)
 space O(1)
