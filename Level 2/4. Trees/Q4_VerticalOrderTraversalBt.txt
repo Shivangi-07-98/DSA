@@ -1,7 +1,7 @@
-https://leetcode.com/problems/vertical-order-traversal-of-a-binary-tree/description/
+https://leetcode.com/problems/vertical-order-traversal-of-a-binary-tree/
+
 time O(n log n)  (sorting nodes inside each vertical)
 space O(n)  (hashmap + queue + output)
-
 
 class Solution {
   class Pair implements Comparable<Pair> {

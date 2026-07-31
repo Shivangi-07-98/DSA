@@ -36,7 +36,6 @@ class Solution {
   }
 }
 
-
 Morris Traversal (Inorder) - Node
 
 Case 1: node.left == null

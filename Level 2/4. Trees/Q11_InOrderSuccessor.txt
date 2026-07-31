@@ -3,8 +3,6 @@ https://www.geeksforgeeks.org/problems/inorder-successor-in-bst/1
 time O(n)
 space O(1)
 
-
-
 class Solution {
   public Node inorderSuccessor(Node root, Node x) {
     Node curr = root;
@@ -49,6 +47,7 @@ class Solution {
   }
 }
 
+--------------------------------------------------------------------------
 
 class Solution {
   public Node inorderSuccessor(Node root, Node x) {
