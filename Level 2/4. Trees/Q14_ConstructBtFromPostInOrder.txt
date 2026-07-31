@@ -1,9 +1,7 @@
-https://leetcode.com/problems/construct-binary-tree-from-inorder-and-postorder-traversal/description/
+https://leetcode.com/problems/construct-binary-tree-from-inorder-and-postorder-traversal/
 
 time O(n^2)
 space O(h) recursion stack, where h = height
-
-
 
 class Solution {
   public TreeNode buildTree(int[] inorder, int[] postorder) {
@@ -36,7 +34,6 @@ class Solution {
     return node;
   }
 }
-
 
 int lhs = idx - inlo;
 
