@@ -25,6 +25,43 @@ public class Q25_BestMeetingPoint {
   }
 
   public static int minTotalDistance(int[][] grid) {
+    ArrayList<Integer> rows = new ArrayList<>();
+
+    for (int i = 0; i < grid.length; i++) {
+      for (int j = 0; j < grid[i].length; j++) {
+        if (grid[i][j] == 1) {
+          rows.add(i);
+        }
+      }
+    }
+
+    ArrayList<Integer> columns = new ArrayList<>();
+
+    for (int j = 0; j < grid[0].length; j++) {
+      for (int i = 0; i < grid.length; i++) {
+        if (grid[i][j] == 1) {
+          columns.add(j);
+        }
+      }
+    }
+
+    int r = rows.get(rows.size() / 2);
+    int c = columns.get(columns.size() / 2);
+
+    int d1 = 0;
+    for (int row : rows) {
+      d1 += Math.abs(row - r);
+    }
+
+    int d2 = 0;
+    for (int column : columns) {
+      d2 += Math.abs(column - c);
+    }
+
+    return d1 + d2;
+  }
+
+  public static int minTotalDistance2(int[][] grid) {
     ArrayList<Integer> xcord = new ArrayList<>();
     ArrayList<Integer> ycord = new ArrayList<>();
 
@@ -56,5 +93,5 @@ public class Q25_BestMeetingPoint {
     }
     return dist;
   }
-  
+
 }
