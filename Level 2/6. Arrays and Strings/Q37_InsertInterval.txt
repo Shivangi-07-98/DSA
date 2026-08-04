@@ -19,8 +19,8 @@ class Solution {
       interval[1] = Math.max(intervals[i][1], interval[1]);
       i++;
     }
-
     res.add(interval);
+    
     while (i < intervals.length) {
       res.add(intervals[i]);
       i++;
