@@ -5,8 +5,8 @@
 5. diagonal traversal
 6. boundary traversal of binary tree
 7. binary tree coloring game - 18 may 2022----
-8. morris in order traversal - 19 may 2022----
-9. morris pre order traversal
+8. morris in order traversal × - 19 may 2022----
+9. morris pre order traversal ×
 10. recover bst
 11. in order successor
 12. iterative pre post in order traversals - 23 may 2022----
@@ -26,8 +26,8 @@
 25. validate binary search tree
 26. find the closest element in bst
 27. populating next right pointers in each node 2 - 31 may 2022----
-28. binary tree cameras
-29. clone a binary tree
+28. binary tree cameras ×
+29. clone a binary tree ×
 30. delete node in a bst
 31. sum of distances in tree × - 1 june 2022----
 32. construct binary tree from preorder and postorder traversal
