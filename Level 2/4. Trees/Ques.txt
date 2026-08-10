@@ -30,7 +30,7 @@
 29. clone a binary tree ×
 30. delete node in a bst
 31. sum of distances in tree × - 1 june 2022----
-32. construct binary tree from preorder and postorder traversal
+32. construct full binary tree from preorder and postorder traversal
 33. flatten binary tree to linked list - 2 june 2022----
 34. convert a binary tree to a circular doubly linked list ×
 35. construct tree from inorder and level order ×
