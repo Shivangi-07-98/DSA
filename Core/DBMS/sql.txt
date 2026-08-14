@@ -1,0 +1,227 @@
+select last_name
+from actor;
+
+select last_name as LastName
+from actor;
+
+select * 
+from film;
+
+select rental_duration
+from film;
+
+select rental_duration,
+rental_duration * 24 as rent_dur_hours
+from film;
+
+select
+3*3 as multiplication,
+6+6 as addition,
+1-1 as subtraction,
+10/2 as division;
+  
+select first_name, last_name,
+first_name || ' ' || last_name as full_name
+from customer;
+
+select first_name, last_name, (left(first_name || ' ' || last_name, 2))
+from customer;
+
+select first_name, last_name, initcap(left(first_name || ' ' || last_name, 2))
+from customer;
+
+select first_name, last_name, (left(first_name || ' ' || last_name, 2))
+from customer;
+
+select first_name, last_name, lower(left(first_name || ' ' || last_name, 2))
+from customer;
+
+select first_name, last_name, lower(right(first_name || ' ' || last_name, 2))
+from customer;
+
+select title, rental_duration
+from film
+where rental_duration < 5;
+
+select title, rental_duration
+from film
+where rental_duration = 5;
+
+select title, rental_duration
+from film
+where rental_duration > 5;
+
+select title, rental_duration
+from film
+where rental_duration <= 5;
+
+select title, rental_duration
+from film
+where rental_duration >= 5;
+
+select title, rental_duration
+from film
+where rental_duration != 5;
+
+select title, rental_duration
+from film
+where rental_duration <> 5;
+
+-- hi bro (-- is comment in sql)
+
+select *
+from customer c
+where first_name = 'MARY';
+
+select *
+from rental r
+where rental_date >= '2006-01-01';
+
+select title, rental_duration, length
+from film
+where length > 100 and rental_duration = 5;
+
+select title, rental_duration, length
+from film
+where length > 100 or rental_duration = 5;
+
+select title, rental_duration, length
+from film
+where length > 100 and rental_duration = 5
+and left(title, 1) = 'A';
+
+select title, rental_duration
+from film
+where not rental_duration = 5;
+
+-- both are same
+
+select title, rental_duration
+from film
+where rental_duration != 5;
+
+select title, rating
+from film
+where rating <> 'PG';
+
+-- rating <> 'PG' means every rating except PG
+
+select title, rating
+from film
+where rating is null;
+
+-- can't use => where rating = 'NULL';
+
+select title, rating
+from film
+where rating is not null;
+
+select first_name, customer_id
+from customer
+where customer_id in (1, 8, 14, 44, 50);
+
+select first_name, customer_id
+from customer
+where customer_id not in (1, 2, 3, 4, 5);
+
+select first_name, customer_id
+from customer
+where customer_id between 1 and 8;
+
+select first_name, customer_id
+from customer
+where customer_id not between 2 and 590;
+
+select first_name
+from customer
+where left(first_name, 1) = 'A'
+or left(first_name, 1) = 'F'
+or left(first_name, 1) = 'J';
+
+select first_name
+from customer
+where left(first_name, 1) in ('A', 'F', 'J');
+
+select first_name
+from customer
+where first_name like 'M%';
+
+-- starts with M, followed by anything (or nothing)
+
+select first_name
+from customer
+where first_name like '_M';
+
+-- exactly 2 characters, with M as the second character
+
+select first_name
+from customer
+where first_name like '__M';
+
+-- exactly 3 characters, with M as the third character
+
+select first_name
+from customer
+where first_name like '_M_';
+
+-- exactly 3 characters, with M as the second character
+
+select first_name
+from customer
+where first_name like '__M_%';
+
+select first_name
+from customer
+where first_name similar to 'M%L{2}%';
+
+-- starts with M, followed by anything, then exactly 2 L's, followed by anything
+
+select title, length
+from film
+order by length;
+
+-- sorts the results by length in ascending order
+
+select title, length
+from film
+order by length asc;
+
+select title, length
+from film
+order by length desc;
+
+select title, length
+from film
+where length > 184
+order by length desc;
+
+select title, length
+from film
+where length > 184 or length is null
+order by length desc;
+
+select title, length
+from film
+order by length
+limit 5;
+
+-- returns only the first 5 rows
+
+select title, length
+from film
+order by length
+offset 980;
+
+-- skips the first 980 rows and returns the next rows to end
+
+select distinct rating
+from film;
+
+-- removes duplicate ratings and returns each unique rating only
+
+select distinct rating, length
+from film;
+
+-- removes duplicate ROW combinations of rating + length
+
+
