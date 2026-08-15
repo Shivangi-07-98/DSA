@@ -224,4 +224,134 @@ from film;
 
 -- removes duplicate ROW combinations of rating + length
 
+select title, length,
+case
+	when length <= 60 then 'short'
+	when length > 60 and length <= 120 then 'long'
+	when length > 120 then 'very long'
+	end as length_description
+from film;
+
+select title, length,
+case
+	when length <= 60 then 'short'
+	when length > 60 and length <= 120 then 'long'
+	when length > 120 then 'very long'
+	else 'unknown'
+	end as length_description
+from film;
+
+select count(*)
+from film;
+
+select count(length)
+from film;
+
+select count(distinct rating)
+from film;
+
+-- count does not count null
+
+select distinct rating
+from film;
+
+select sum(length)
+from film;
+
+-- aggregate functions - count, sum, min, max, avg
+
+select
+min(amount),
+max(amount),
+avg(amount)
+from payment;
+
+select rating, count(*)
+from film
+group by rating;
+
+-- counts how many films belong to each rating
+
+select rating, title
+from film
+order by rating;
+
+-- sorts films by rating in ascending order
+
+select customer_id, staff_id, count(*)
+from payment
+group by customer_id, staff_id
+order by customer_id, staff_id;
+
+-- groups payments by customer and staff, then sorts by customer and staff
+
+select customer_id, staff_id, count(*)
+from payment
+group by customer_id, staff_id
+having count(*) > 20
+order by customer_id, staff_id;
+
+/*
+from: pick the tables to be queried
+where: filter the rows
+group by: aggregate rows
+having: filter the aggregates
+select: select the columns that appear in the output
+order by: sort the rows
+limit: limit the number of returned rows
+*/
+
+select rating, count(*)
+from film
+where length > 60
+group by rating
+having count(*) > 10
+order by rating
+limit 5;
+
+select *
+from film
+cross join store;
+
+select film_id, store_id
+from film
+cross join store
+order by film_id, store_id;
+
+-- 1000 * 2 = 2000
+
+select store_id
+from store;
+
+-- 2
+
+select film_id
+from film;
+
+-- 1000
+
+select rental_date, first_name, last_name
+from rental
+inner join customer
+on rental.customer_id = customer.customer_id;
+
+select film_id, store_id
+from film
+inner join store
+on film.film_id = store.store_id;
+
+select film_id, store_id
+from film
+left join store
+on film.film_id = store.store_id;
+
+select film_id, store_id
+from film
+right join store
+on film.film_id = store.store_id;
+
+select film_id, store_id
+from film
+full outer join store
+on film.film_id = store.store_id;
 
