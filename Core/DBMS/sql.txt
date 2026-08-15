@@ -355,3 +355,33 @@ from film
 full outer join store
 on film.film_id = store.store_id;
 
+/*
+cross join: Cartesian product
+inner join: cross join + filtering
+outer join: cross join + filtering + add missing rows
+
+my understanding:
+cross join: every possible combination of rows
+inner join: only matching rows
+outer join: matching rows + unmatched/missing rows
+*/
+
+select title, length
+from film
+where length > (select avg(length) from film)
+order by length;
+
+select customer_id,
+       sum(amount) as cust_amount,
+       100.0 * sum(amount) / (select sum(amount) from payment) as pct
+from payment
+group by customer_id
+order by pct desc;
+
+select title, rating
+from film
+where rating in
+(select distinct rating
+    from film
+    where left(cast(rating as text), 2) = 'PG');
+
