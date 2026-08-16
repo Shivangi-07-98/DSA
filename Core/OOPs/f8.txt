@@ -1,0 +1,98 @@
+FINAL DATA MEMBER / VARIABLE
+
+1. FINAL + CONSTRUCTOR
+
+class P {
+    final int maxScore;
+
+    P() {
+        maxScore = 100;       // ✅ Allowed
+    }
+}
+
+If final is not initialized at declaration,
+it can be initialized once in the constructor.
+
+
+--------------------------------------------------
+
+2. FINAL + INSTANCE BLOCK
+
+class P {
+    final int maxScore;
+
+    {
+        maxScore = 100;       // ✅ Allowed
+    }
+}
+
+If final is not initialized at declaration,
+it can be initialized once in an instance block.
+
+
+--------------------------------------------------
+
+3. FINAL + NORMAL METHOD
+
+class P {
+    final int maxScore;
+
+    void fun() {
+        maxScore = 100;       // ❌ ERROR
+    }
+}
+
+Even if final is not initialized,
+it cannot be initialized inside a normal method.
+
+
+--------------------------------------------------
+
+4. STATIC FINAL + STATIC BLOCK
+
+class P {
+    static final int maxScore;
+
+    static {
+        maxScore = 100;       // ✅ Allowed
+    }
+}
+
+If final is also static and is not initialized at declaration,
+it can be initialized once in a static block.
+
+It cannot be initialized in a constructor.
+
+
+--------------------------------------------------
+
+5. FINAL ALREADY INITIALIZED
+
+class P {
+    final int maxScore = 100;
+}
+
+Since maxScore is already initialized,
+it cannot be assigned again in:
+
+→ constructor
+→ instance block
+→ static block
+→ normal method
+
+A final variable can be assigned only ONCE.
+
+class P {
+
+    static final int maxScore;
+
+    // Constructor
+    P() {
+        // maxScore = 100;    // ❌ Not allowed
+    }
+
+    // Static block
+    static {
+        maxScore = 100;       // ✅ Allowed
+    }
+}
