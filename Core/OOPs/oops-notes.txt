@@ -133,9 +133,66 @@ class Person {
     }
 }
 
+final keyword - 
 
-Final 
-    variable = values can't be reassigned
-    data member = values can't be reassigned (either assign in parsing or constructor / static block)
-    fn = Can't override the fn in derived class (overloading is allowed in same class and derived class)
-    class = 
+The `final` keyword is used to restrict changes.
+
+1. final variable (local variable)
+
+A final local variable can be assigned a value only once.
+Once a value is assigned, it cannot be changed.
+
+Example:
+
+void fun() {
+    final int x = 10;
+
+    x = 20;   // ERROR
+}
+
+
+2. final data member
+
+A final data member can be assigned a value only once.
+Once initialized, its value cannot be changed.
+
+Example:
+
+class Person {
+
+    final int age = 25;   // final data member
+
+    void fun() {
+        age = 30;         // ERROR
+    }
+}
+
+
+3. final function (method)
+
+A final method cannot be overridden by a child class.
+
+Example:
+
+class Parent {
+
+    final void fun() {
+        // code
+    }
+}
+
+class Child extends Parent {
+
+    void fun() {
+        // ERROR: cannot override final method
+    }
+}
+
+Easy way to remember:
+
+final variable  → value cannot be changed
+final data member → value cannot be changed
+final method → cannot be overridden
+
+data member = values can't be reassigned (either assign in parsing or constructor / static block)
+functions = can't override the fn in derived class (overloading is allowed in same class and derived class)
