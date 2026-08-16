@@ -97,3 +97,45 @@ Inheritance & Polymorphism -
   variable = values can't be reassigned
   data member = values can't be reassigned (either assign in parsing or constructor / static block)
   fn = Can't override the fn in derived class (overloading is allowed in same class and derived class)
+
+
+
+
+
+
+
+
+
+
+
+10 july 2022------------------------------------------------------------------
+
+Variable vs Data Member
+
+Data Member:
+A variable declared inside a class but outside any method/function is called a data member.
+It belongs to the object/class and represents its properties or state.
+
+Variable:
+A variable declared inside a method/function/block is called a local variable.
+It is used only within that method/function/block.
+
+Example:
+
+class Person {
+
+    int age;          // data member
+    String name;      // data member
+
+    void display() {
+        int salary;   // local variable
+        String city;  // local variable
+    }
+}
+
+
+Final 
+    variable = values can't be reassigned
+    data member = values can't be reassigned (either assign in parsing or constructor / static block)
+    fn = Can't override the fn in derived class (overloading is allowed in same class and derived class)
+    class = 
