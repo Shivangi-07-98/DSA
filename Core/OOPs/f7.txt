@@ -1,0 +1,63 @@
+Left side = reference type
+Right side (new ...) = actual object type
+
+1. P obj = new P();
+
+Reference → P
+Object    → P
+Both are P
+
+2. C obj = new C();
+
+Reference → C
+Object    → C
+Both are C
+
+3. P obj = new C();
+
+Reference → P
+Object    → C
+This is possible because C extends P
+P = Parent reference
+C = Child object
+
+4. C obj = new P();
+
+Reference → C
+Object    → P
+❌ NOT possible
+Because a Parent object is not a Child object
+C can refer to a C object,
+but C cannot refer to a plain P object
+
+
+P obj = new P();   → P reference, P object
+C obj = new C();   → C reference, C object
+P obj = new C();   → P reference, C object ✅
+C obj = new P();   → C reference, P object ❌
+
+
+P obj = new C();
+obj is a P-type reference, but the actual object created in memory is C
+
+P object → has P's things
+C object → has P's things + C's additional things
+
+So why can't this happen?
+C obj = new P(); ❌
+
+The problem is:
+
+Reference says: "I am allowed to access C's things."
+Object actually is: "I am only P."
+
+If Java allowed this, you could do:
+
+C obj = new P();
+
+obj.cFun(); ❌
+
+But the actual object is only a P object, so it doesn't have cFun().
+
+That's why Java doesn't allow:
+C obj = new P();
