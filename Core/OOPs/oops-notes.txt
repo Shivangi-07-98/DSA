@@ -211,6 +211,19 @@ class = can't derive the final class
 16 july 2022------------------------------------------------------------------
 
 
+Constructor<?> hashMapConstructor = Class.forName("java.util.HashMap").getConstructor(null);
+Map<String,String> myMap = hashMapConstructor.newInstance(null);
+
+super(...)
+→ parent constructor
+
+super.method()
+→ parent method
+
+super.variable
+→ parent variable
+
+
 
 Abstract
     class = can't make an object of abstract class
