@@ -5,14 +5,16 @@ import java.util.*;
 
 public class f10 {
   public static void main(String[] args) throws NumberFormatException, IOException {
-    Employee obj = new Employee("A", 10); // not allowed because Employee class is abstract
-    obj.markAttendance();
+    // Employee obj = new Employee("A", 10); // not allowed because Employee class is abstract
+    // obj.markAttendance();
 
-    obj = new HREmployee(null, "A", 10);
+    Employee obj = new HREmployee(null, "A", 10);
     obj.markAttendance();
+    obj.doWork();
 
     obj = new SoftwareEmployee("", "A", 10);
     obj.markAttendance();
+    obj.doWork();
   }
 
   static abstract class Employee {
@@ -29,7 +31,7 @@ public class f10 {
       System.out.println(name + " is present");
     }
 
-    // abstract void doWork();
+    abstract void doWork();
   }
 
   static class HREmployee extends Employee {
@@ -58,18 +60,18 @@ public class f10 {
     }
   }
 
-  // static class OperationsEmployee extends Employee {
-  // List<Integer> operations;
+  static class OperationsEmployee extends Employee {
+    List<Integer> operations;
 
-  // SoftwareEmployee(List<Integer> ops, String name, int empid){
-  // super(name, empid);
-  // this.operations = ops;
-  // }
+    OperationsEmployee(List<Integer> ops, String name, int empid) {
+      super(name, empid);
+      this.operations = ops;
+    }
 
-  // void doWork() {
-  // System.out.println(name + " does operations");
-  // }
-  // }
+    void doWork() {
+      System.out.println(name + " does operations");
+    }
+  }
 
 }
 

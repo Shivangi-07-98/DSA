@@ -210,10 +210,6 @@ class = can't derive the final class
 
 16 july 2022------------------------------------------------------------------
 
-
-Constructor<?> hashMapConstructor = Class.forName("java.util.HashMap").getConstructor(null);
-Map<String,String> myMap = hashMapConstructor.newInstance(null);
-
 super(...)
 → parent constructor
 
@@ -224,15 +220,164 @@ super.variable
 → parent variable
 
 
+ABSTRACT
 
-Abstract
-    class = can't make an object of abstract class
-    (for instance Employee class derived into HREmployee or Software Employee. Employee class should be abstracrt, because not a type in itself, just created to absorb common functions of HREmployee and SoftwareEmployee)
-    fn = fn which doesn't have code (only API)
-    implications
-        Why required? -> To absorb common code of deriving Classes
-        If fn is abstract, will the containing class be necessarily abstract? Yes
-        If class is abstract, will it necessarily have abstract functions? No
+1. ABSTRACT CLASS
+
+abstract class
+→ We cannot create an object of an abstract class.
+
+Why do we use it?
+
+An abstract class is used as a common/base class for its
+derived (child) classes.
+
+Example:
+
+            Employee
+           /        \
+          /          \
+   HREmployee    SoftwareEmployee
+
+Employee contains the common things of both classes,
+such as name, empid, markAttendance(), etc.
+
+We don't create a general Employee object.
+We create HREmployee or SoftwareEmployee objects.
+
+So, Employee is made abstract.
+
+
+2. ABSTRACT FUNCTION
+
+abstract function
+→ A function that has no body/code.
+only api - means function name, parameters, return type
+
+Example:
+abstract void doWork();
+
+It only tells the child class:
+
+"You must have a doWork() function,
+but you decide what it should do."
+
+Example:
+
+HREmployee → doWork() → creates payroll
+SoftwareEmployee → doWork() → writes code
+
+So, the implementation can be different in each child.
+
+
+3. WHY IS ABSTRACT CLASS REQUIRED?
+
+→ To keep common code in one place.
+
+Instead of writing the same common code separately
+in HREmployee, SoftwareEmployee, etc.,
+we put it in the Employee class.
+
+This is what "absorb common code of derived classes" means.
+
+
+4. IMPORTANT RULES
+
+If a function is abstract
+→ The class containing that function MUST be abstract.
+
+If a class is abstract
+→ It does NOT have to contain an abstract function.
+
+An abstract class can have:
+→ normal functions
+→ abstract functions
+→ data members
+→ constructors
+
+If fn is abstract, will the containing class be necessarily abstract? Yes
+If class is abstract, will it necessarily have abstract functions? No
+
+ABSTRACT — IMPORTANT QUESTIONS
+
+1. If a function is abstract, will the containing class necessarily be abstract?
+Yes.
+
+Reason:
+An abstract function has no body/implementation.
+If the class were not abstract, we could create its object.
+But then we would have an object of a class containing a function
+that has no implementation.
+
+Therefore, if a class contains even one abstract function,
+the class must be marked abstract.
+
+2. If a class is abstract, will it necessarily have abstract functions?
+No. An abstract class can have only normal functions as well.
+
+Reason:
+A class can be made abstract simply to prevent its direct object
+creation and to use it as a common/base class for child classes.
+
+so abstract class → does NOT necessarily need an abstract function.
+
+3. What happens if a child class does not provide the abstract
+function of its parent?
+
+If a child class extends a parent class that has an abstract function,
+the child must provide (implement/override) that function.
+
+Example:
+
+abstract class Parent {
+    abstract void fun();
+}
+
+class Child extends Parent {
+    // fun() is missing
+}
+
+This gives an error because Child has inherited an abstract function
+but has not provided its implementation.
+
+How can we fix it?
+
+Option 1: Provide the function in Child:
+
+class Child extends Parent {
+    void fun() {
+        System.out.println("Child's implementation");
+    }
+}
+
+Option 2: If Child also does not want to provide the implementation,
+mark Child as abstract:
+
+abstract class Child extends Parent {
+}
+
+Why must Child be abstract?
+
+Because Child still has an abstract function without a body.
+If Child were not abstract, we could create its object even though
+the function still has no implementation.
+
+So the rule is:
+
+Parent has abstract function
+        ↓
+Child must implement it
+        OR
+Child must also be abstract
+
+Q. What is abstract class? -> Can't make object
+Q. What is abstract fn? -> A fn with no body.
+Q. Can an abstract class have 0 abstract fns? -> Yes
+Q. Can a class having abstract fns be market non-abstract? -> False. Have to mark the class abstract or provide implementations for all abstract fns
+Q. Ctor in abstract class? -> allowed
+Q. Why abstract fn? -> To enforce the deriving classes to provide implementations
+Q. Why abstract class? -> To represent the common concept and absorb common functionality or data memebrs
+
 
 
 interface
@@ -253,16 +398,6 @@ abstract class vs interface (4:32 to 4:42 for notes)
     -> A class can't derive two abstract classes, but can implement any number of interfaces
     -> Interface data members are final and static
 
-Questions
-    Q1. What is final variable?
-    Q2. What is final data member?
-    Q3. When are they initialized?
-    Q4. What is final fn? -> Can't override them in derived class
-    Q5. What is a final class? -> Can't derive the final class
-    Q6. What is abstract class? -> Can't make object
-    Q7. What is abstract fn? -> A fn with no body.
-    Q8. Can an abstract class have 0 abstract fns? -> Yes
-    Q9. Can a class having abstract fns be market non-abstract? -> False. Have to mark the class abstract or provide implementations for all abstract fns
-    Q10. Ctor in abstract class? -> allowed
-    Q11. Why abstract fn? -> TO enforce the deriving classes to provide implementations
-    Q12. Why abstract class? -> To represent the common concept and absorb common functionality or data memebrs?
+
+Constructor<?> hashMapConstructor = Class.forName("java.util.HashMap").getConstructor(null);
+Map<String,String> myMap = hashMapConstructor.newInstance(null);
