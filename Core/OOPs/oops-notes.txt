@@ -379,25 +379,25 @@ Q. Why abstract fn? -> To enforce the deriving classes to provide implementation
 Q. Why abstract class? -> To represent the common concept and absorb common functionality or data memebrs
 
 
+Interface
+-> When all fns are abstract and there are no common instance data members to share
+-> Similar to abstract classes
+-> An extreme version of abstract classes, when all fns are abstract, no common instance data members
+-> If a class implements an interface but doesn't provide body for all functions, then it will become abstract
+-> Can we make an object of interface? No
+-> Can an interface provide body for any function? Yes, since Java8, using the default keyword it is possible (although advised to not use). Java provided for this backword compatibility. Not to be used often.
+-> Can an interface have data members? Yes, but not as instance data members, can be used as static data members
 
-interface
-    -> When all fns are abstract and there are no common instance data members to share
-    -> Similar to abstract classes
-    -> An extreme version of abstract classes
-        -> when all fns are abstract
-        -> no common instance data members
-    -> If a class implements an interface but doesn't provide body for all functions, then it will become abstract
-    -> Can we make an object of interface? No
-    -> Can an interface provide body for any function? Yes, since Java8, using the default keyword it is possible (although advised to not use). Java provided for this backword compatibility. Not to be used often.
-    -> Can an interface have data members? Yes, but not as instance data members, can be used as static data members
+--> Instance simply means belonging to an object.
+Instance data member → each object can have its own separate value.
+static data member → belongs to the class, shared rather than belonging separately to each object.
 
+Interface data members are automatically: public static final → no instance data members.
+So they are class-level constants, not object-specific variables.
 
-abstract class vs interface (4:32 to 4:42 for notes)
-    -> Abstract classes can have implementations for some functions, interfaces are supposed to have all functions with no implementations
-    -> Abstract classes can have instance data members, interfaces can only have static data members
-    -> A class can't derive two abstract classes, but can implement any number of interfaces
-    -> Interface data members are final and static
+abstract class vs interface
+-> Abstract classes can have implementations for some functions, interfaces are supposed to have all functions with no implementations
+-> Abstract classes can have instance data members, interfaces can only have static data members
+-> A class can't derive two abstract classes, but can implement any number of interfaces
+-> Interface data members are final and static
 
-
-Constructor<?> hashMapConstructor = Class.forName("java.util.HashMap").getConstructor(null);
-Map<String,String> myMap = hashMapConstructor.newInstance(null);
