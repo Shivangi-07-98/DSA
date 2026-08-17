@@ -196,3 +196,18 @@ final method → cannot be overridden
 
 data member = values can't be reassigned (either assign in parsing or constructor / static block)
 functions = can't override the fn in derived class (overloading is allowed in same class and derived class)
+
+
+
+
+
+
+
+
+
+
+
+
+16 july 2022------------------------------------------------------------------
+
+
