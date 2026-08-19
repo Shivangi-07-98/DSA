@@ -1,4 +1,6 @@
-OOPS - Encapsulation, Inheritance, Polymorphism
+The four pillars of Object-Oriented Programming (OOP) are Encapsulation, Abstraction, Inheritance, and Polymorphism
+
+OOPS - Encapsulation, Abstraction, Inheritance, Polymorphism
 Encapsulation - Classes, Objects
 
 Encapsulation-
