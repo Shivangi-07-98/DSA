@@ -64,7 +64,7 @@ class f2 {
     // obj.fun2(); // not allowed, because compiler won't allow it
     ((C) obj3).fun2(); // typecasting allows it and we see C fun2
 
-    // case 4 => C and p
+    // case 4 => C and P
     // C obj4 = new P();
 
     // Why not allowed
