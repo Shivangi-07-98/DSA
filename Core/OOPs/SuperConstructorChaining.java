@@ -52,35 +52,17 @@ public class SuperConstructorChaining {
 }
 
 /*
- * CONSTRUCTOR CHAIN:
- *
- * new HREmployee("A", 10)
- *          ↓
- * HREmployee("A", 10)
- *          ↓
- * super("A", 10)
- *          ↓
- * Employee("A", 10)
- *
- *
  * INHERITANCE:
- *
  * HREmployee extends Employee
  *
  * This means HREmployee is a child class of Employee
  * and gets the properties/methods of Employee.
  *
- *
  * WHY super()?
- *
- * Employee is responsible for initializing:
- *
- * name
- * empid
+ * Employee is responsible for initializing: name, empid
  *
  * Therefore HREmployee calls the Employee constructor
- * using super(name, empid).
- *
+ * using super(name, empid)
  *
  * "super" vs "super()":
  *
@@ -92,7 +74,6 @@ public class SuperConstructorChaining {
  *
  * super(...)
  * → calls the parent class's constructor.
- *
  *
  * IMPORTANT:
  *
