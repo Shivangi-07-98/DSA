@@ -50,19 +50,7 @@ public class ThisConstructorChaining {
 }
 
 /*
- * CONSTRUCTOR CHAIN:
- *
- * new Employee()
- *       ↓
- * Employee()
- *       ↓
- * this("B", 20)
- *       ↓
- * Employee(String name, int empid)
- *
- *
  * IMPORTANT:
- *
  * If Employee() was empty:
  *
  * Employee() {
@@ -71,7 +59,6 @@ public class ThisConstructorChaining {
  * then name would be null and empid would be 0,
  * because no constructor would initialize them.
  *
- *
  * DEFAULT CONSTRUCTOR:
  *
  * If we do not write ANY constructor,
@@ -79,7 +66,6 @@ public class ThisConstructorChaining {
  *
  * But if we write our own constructor, Java does not
  * automatically provide the no-argument constructor.
- *
  *
  * "this" vs "this()":
  *
