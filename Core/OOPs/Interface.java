@@ -99,6 +99,21 @@ public class Interface {
  *
  * UpiPayment also implements Payment.
  * Therefore UpiPayment must also write pay().
+ * 
+ * @Override is not mandatory. It tells the compiler that I intend to override a
+ * parent/interface method, so the compiler can catch mistakes in the method signature
+ * 
+ * @Override
+ *      ↓
+ * "I intend to override/implement this method."
+ *      ↓
+ * Java checks whether my method actually matches.
+ * 
+ * @Override
+ *      ↓
+ * Tells the compiler:
+ * "I intend to override this method.
+ * Please check that I actually do."
  *
  * @Override tells Java:
  *
