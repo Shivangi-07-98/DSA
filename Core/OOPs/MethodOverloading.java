@@ -8,6 +8,7 @@ Method overloading means the method name is the same, but the parameters are dif
 For example, the add() method can take two integers, three integers, or two double values.
 The compiler looks at the arguments given to add() and decides which add() method should be called.
 This is called compile-time polymorphism.
+It means the decision about which method to call can be determined by the compiler before the program runs.
 */
 
 import java.io.*;

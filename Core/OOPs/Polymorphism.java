@@ -54,8 +54,6 @@ public class Polymorphism {
  * the actual object is called at runtime.
  * 
  * MethodOverloading.java contains Compile-time polymorphism example
- * 
- * 
  */
 
 // OVERLOADING
