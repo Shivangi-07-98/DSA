@@ -1,14 +1,15 @@
 package OOPs;
 
 /*
-Question: Show constructor chaining in inheritance using super().
+Inheritance means a child class gets/uses properties and methods of a parent class using extends
 
-Idea:
-A Student is also a Person. Person handles the common name field.
-Student handles its own rollNumber field. super(name) calls the parent
-constructor first, so the parent part of the Student object is initialized.
+Employee
+   ↓
+HREmployee
+SoftwareEmployee
+OperationsEmployee
 */
-public class ConstructorInheritance {
+public class Inheritance {
     static class Person {
         String name;
 
