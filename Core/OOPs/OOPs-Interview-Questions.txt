@@ -1,9 +1,3 @@
-OOPS INTERVIEW - MUST KNOW VERBAL QUESTIONS
-================================================
-
-Read each answer slowly once. In an interview, start with the first one or two
-sentences. Then explain the example only if the interviewer asks for more.
-
 1. What are the four pillars of OOPS?
 
 Answer:
