@@ -101,3 +101,17 @@ In practical internet work, people often use the simpler TCP/IP model:
 Link -> Internet -> Transport -> Application. Ethernet/Wi-Fi are link-level,
 IP is internet-level, TCP/UDP are transport-level, and HTTP/DNS are
 application-level. This one mapping is enough for a basic software interview.
+
+
+8. What is a port? What is the difference between an IP address and a port?
+
+Answer:
+An IP address identifies a machine or network interface on a network. A port
+identifies the particular application or service on that machine that should
+receive the network data.
+
+For example, a server can have IP address 203.0.113.10. HTTPS commonly uses
+port 443, so clients connect to that service at 203.0.113.10:443. The IP tells
+the network which machine to reach; the port tells that machine which program
+should receive the request. Many applications can run on one machine because
+they listen on different ports.

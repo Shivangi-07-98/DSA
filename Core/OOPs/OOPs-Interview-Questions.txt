@@ -191,3 +191,35 @@ ambiguity problem.
 Java supports multiple inheritance of type through interfaces. A class can
 implement many interfaces. If two interfaces provide the same default method,
 the class must override it and clearly resolve the ambiguity.
+
+
+15. What is the difference between ==, equals(), and hashCode()?
+
+Answer:
+For primitive values, == compares the actual values. For objects, == checks
+whether two references point to the exact same object in memory.
+
+equals() checks logical equality. For example, two different String objects
+containing "hello" may not be the same object, so == can be false, but their
+equals() result is true.
+
+hashCode() returns an integer used by hash-based collections such as HashMap
+and HashSet to quickly find an object's bucket. The important rule is: if two
+objects are equal according to equals(), they must return the same hashCode().
+Therefore, whenever we override equals(), we should also override hashCode().
+
+
+16. What is exception handling? What is the difference between checked and unchecked exceptions?
+
+Answer:
+Exception handling is Java's way to deal with an abnormal situation without
+silently continuing with bad data. We use try for code that may fail, catch to
+handle a known failure, finally for cleanup that should run in either case, and
+throw/throws to create or pass an exception onward.
+
+Checked exceptions are checked by the compiler. Java requires us to handle or
+declare them, for example IOException. Unchecked exceptions are subclasses of
+RuntimeException, for example NullPointerException and IllegalArgumentException.
+They usually indicate a programming mistake or invalid use of an API. Do not
+catch every exception and ignore it; either recover meaningfully or let it be
+reported clearly.
