@@ -9,6 +9,9 @@ package OOPs;
  *
  * this():
  * this() calls another constructor of the SAME class.
+ * 
+ * inside one constructor
+ * Java allows only one constructor call as the first statement
  *
  * IMPORTANT:
  * 1. this() must be the first statement inside a constructor.

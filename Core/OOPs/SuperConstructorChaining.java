@@ -9,6 +9,9 @@ package OOPs;
  *
  * super():
  * super() calls the constructor of the PARENT class.
+ * 
+ * inside one constructor
+ * Java allows only one constructor call as the first statement
  *
  * IMPORTANT:
  * 1. super() must be the first statement inside a child constructor.
