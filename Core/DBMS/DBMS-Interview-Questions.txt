@@ -1,0 +1,161 @@
+DBMS / SQL INTERVIEW - MUST KNOW VERBAL QUESTIONS
+====================================================
+
+Read the first paragraph of each answer as your direct interview answer.
+The lines after it explain the reason in a simple way.
+
+1. What are ACID properties in a database transaction?
+
+Answer:
+ACID means Atomicity, Consistency, Isolation, and Durability. These properties
+make transactions reliable.
+
+Atomicity means all steps of a transaction happen or none happen. In a money
+transfer, money must be deducted from one account and added to the other. If
+the second step fails, the first step must also be undone.
+
+Consistency means a transaction takes the database from one valid state to
+another valid state. Rules such as primary key, foreign key, and balance
+constraints must still be true after the transaction.
+
+Isolation means simultaneous transactions should not disturb each other. One
+transaction should not see another transaction's incomplete work.
+
+Durability means after COMMIT succeeds, the change remains saved even if the
+server crashes immediately after that.
+
+
+2. What is the difference between a primary key, unique key, and foreign key?
+
+Answer:
+A primary key uniquely identifies every row in its own table. It cannot be
+NULL, and a table has only one primary key (it may contain multiple columns).
+
+A unique key also prevents duplicate values, but it is not the main identity
+of the table. A table can have multiple unique constraints. NULL handling can
+vary slightly by database, so in an interview say that a primary key never
+allows NULL and check the DBMS-specific rule for UNIQUE.
+
+A foreign key is a column whose value refers to a primary or unique key in
+another table. It keeps the relationship valid. For example,
+orders.customer_id can refer to customers.customer_id, so an order cannot
+point to a customer that does not exist.
+
+
+3. What is the difference between WHERE and HAVING?
+
+Answer:
+WHERE filters individual rows before grouping. HAVING filters groups after
+GROUP BY and aggregate calculations.
+
+For example, WHERE amount > 100 removes small payments before they are put in
+customer groups. HAVING COUNT(*) > 5 keeps only those customer groups that
+have more than five payments. Aggregate conditions such as COUNT(*) usually
+belong in HAVING.
+
+
+4. What is a JOIN? Explain INNER JOIN and LEFT JOIN.
+
+Answer:
+A JOIN combines related rows from two tables using a matching condition.
+Usually the condition connects a foreign key with a primary key.
+
+INNER JOIN returns only rows that have a match on both sides. LEFT JOIN
+returns every row from the left table; where no row matches on the right,
+the right table's columns are NULL. Use a LEFT JOIN when keeping all left-side
+rows is important, even if related data is missing.
+
+
+5. What is normalization? Why do we use it?
+
+Answer:
+Normalization is organising data into sensible related tables so that we avoid
+unnecessary repeated data and the problems caused by that repetition.
+
+For example, do not store a customer's name and address repeatedly in every
+order row. Store customer data once in customers and store customer_id in
+orders. This prevents update anomalies (changing many copies), insertion
+anomalies, and deletion anomalies (accidentally losing customer information
+when an order is deleted).
+
+The usual interview-level forms are: 1NF: atomic values, no repeating groups;
+2NF: every non-key column depends on the whole key; 3NF: non-key columns should
+not depend on another non-key column.
+
+
+6. What is an index? What is its trade-off?
+
+Answer:
+An index is an extra data structure that helps the database find rows faster,
+similar to the index at the back of a book. It is useful for columns used often
+in WHERE, JOIN, ORDER BY, or lookups.
+
+The trade-off is extra storage and slower INSERT, UPDATE, and DELETE operations
+because the database must also update the index. Therefore we do not add an
+index to every column; we add it where read performance is worth the cost.
+
+
+7. What is a transaction? What are COMMIT and ROLLBACK?
+
+Answer:
+A transaction is one logical unit of database work, often containing several
+SQL statements. COMMIT permanently saves its changes. ROLLBACK cancels the
+uncommitted changes and returns the database to the earlier consistent state.
+
+For a bank transfer, begin a transaction, deduct money, add money, then
+COMMIT only if both operations succeed. If any step fails, ROLLBACK.
+
+
+8. What is the difference between DELETE, TRUNCATE, and DROP?
+
+Answer:
+DELETE removes selected rows and can use WHERE. The table itself stays.
+
+TRUNCATE removes all rows quickly; it does not allow a WHERE clause. The table
+structure stays.
+
+DROP removes the table itself: its rows, structure, and related definition are
+removed. Think: DELETE removes data, TRUNCATE empties a table, DROP removes the
+container too. Exact logging and rollback behaviour can vary by DBMS.
+
+
+9. What is NULL? Why should we not write = NULL?
+
+Answer:
+NULL means the value is missing, unknown, or not applicable. It is not zero,
+not an empty string, and not the word "NULL".
+
+SQL treats comparisons with NULL as unknown, so WHERE salary = NULL does not
+work. Write WHERE salary IS NULL or WHERE salary IS NOT NULL.
+
+
+10. What is the normal logical order in which SQL query clauses are processed?
+
+Answer:
+The useful order to remember is:
+FROM/JOIN -> WHERE -> GROUP BY -> HAVING -> SELECT -> ORDER BY -> LIMIT.
+
+This explains why WHERE cannot filter COUNT(*) directly: COUNT(*) is created
+only after grouping, so that condition belongs in HAVING.
+
+
+11. What is the difference between DBMS and RDBMS?
+
+Answer:
+A DBMS is software that stores and manages data. An RDBMS is a DBMS that stores
+data in related tables and uses relationships, keys, and usually SQL.
+
+In interview practice, systems such as MySQL, PostgreSQL, Oracle, and SQL
+Server are RDBMSs. The important idea is that RDBMS adds the relational model
+and relationship constraints to normal database management.
+
+
+12. What is the difference between a subquery and a JOIN?
+
+Answer:
+A subquery is a query inside another query. It is useful when one query needs
+a value or set produced by another query, for example the average salary.
+
+A JOIN combines columns from related tables into one result. Both can sometimes
+solve the same problem. Choose the version that makes the relation clear; for
+combining customer and order columns, a JOIN is usually the natural choice.

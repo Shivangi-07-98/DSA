@@ -1,0 +1,193 @@
+OOPS INTERVIEW - MUST KNOW VERBAL QUESTIONS
+================================================
+
+Read each answer slowly once. In an interview, start with the first one or two
+sentences. Then explain the example only if the interviewer asks for more.
+
+1. What are the four pillars of OOPS?
+
+Answer:
+The four pillars are Encapsulation, Abstraction, Inheritance, and Polymorphism.
+
+Encapsulation means keeping data and the functions that work on that data
+together inside a class. We normally keep data private and give controlled
+methods, such as getters and setters, to read or change it.
+
+Abstraction means showing only what the user needs to use and hiding the
+unnecessary internal work. For example, a person calls car.start(); they do
+not need to know how the engine starts internally.
+
+Inheritance means a child class receives common properties and methods from a
+parent class. For example, Dog can extend Animal, because a Dog is an Animal.
+
+Polymorphism means one method call can behave in different ways. For example,
+an Animal reference can call sound(), but a Dog object barks and a Cat object
+meows.
+
+
+2. What is encapsulation? Why do we make data members private?
+
+Answer:
+Encapsulation means putting related data and functions together in one class.
+We make data private so outside code cannot put an object into an invalid
+state directly.
+
+For example, if balance is public, anyone can write account.balance = -100.
+If balance is private, we can provide deposit() and withdraw() methods. Those
+methods can first check that the amount is valid. So encapsulation gives
+control and protects the object's data.
+
+
+3. What is abstraction?
+
+Answer:
+Abstraction means showing the important operation and hiding the internal
+implementation. It answers: "what can this object do?" rather than "how does
+it do it?"
+
+In Java, abstraction is commonly achieved with abstract classes and
+interfaces. For example, an abstract Employee class can say every employee
+must doWork(), but HR and Software employees can implement doWork() in their
+own ways.
+
+
+4. What is inheritance? What is the difference between an "is-a" and a "has-a" relationship?
+
+Answer:
+Inheritance lets a child class reuse the common code of a parent class. We use
+the extends keyword. For example, Dog extends Animal: a Dog is an Animal.
+That is an "is-a" relationship.
+
+A "has-a" relationship means one class contains or uses another object.
+For example, a Car has an Engine. We usually create this using a data member,
+not by extending the class. Use inheritance only when the child truly is a
+special type of the parent.
+
+
+5. What is polymorphism? What are compile-time and run-time polymorphism?
+
+Answer:
+Polymorphism means "one thing, many forms." The same method name or reference
+can give different behaviour.
+
+Compile-time polymorphism is method overloading. The compiler chooses the
+method from the argument list. Example: print(int) and print(String).
+
+Run-time polymorphism is method overriding. A parent reference can point to a
+child object, such as Shape s = new Circle(). When s.draw() runs, Java calls
+Circle's draw() method. The actual object decides the overridden method at
+run time.
+
+
+6. What is the difference between method overloading and method overriding?
+
+Answer:
+Overloading means same method name but different parameter lists. It normally
+happens in the same class and is compile-time polymorphism. Changing only the
+return type is not enough for overloading.
+
+Overriding means a child class provides its own version of an inherited method
+with the same method name and same parameters. It is run-time polymorphism.
+The overridden method cannot be private, static, or final. Using @Override is
+a good habit because Java checks that we really overrode a parent method.
+
+
+7. What is the difference between an abstract class and an interface?
+
+Answer:
+Both are used for abstraction, and we cannot directly create their objects.
+
+Use an abstract class when related child classes share common state or common
+implemented code. An abstract class can have constructors, instance data
+members, normal methods, and abstract methods. A class can extend only one
+class, so it can extend only one abstract class.
+
+Use an interface when we want to define a capability or contract. A class can
+implement multiple interfaces. Interface fields are public static final
+constants, so an interface does not have normal instance data members. Since
+Java 8, an interface may also have default and static methods with bodies.
+
+
+8. What is the difference between a class and an object?
+
+Answer:
+A class is a blueprint. It defines what data and functions its objects will
+have. An object is the real instance created from that blueprint.
+
+For example, Car is a class. new Car() creates one object. Every object has
+its own instance data, such as colour, while all Car objects share class-level
+static data.
+
+
+9. What is a constructor? What happens if we do not write one?
+
+Answer:
+A constructor runs when an object is created. It has the same name as the
+class and no return type. We use it to put the object into a valid starting
+state.
+
+If we write no constructor at all, Java provides a default no-argument
+constructor. But if we write any constructor, for example a parameterized one,
+Java does not automatically add the no-argument constructor.
+
+
+10. What are this and super?
+
+Answer:
+this refers to the current object. We use this.name = name when a constructor
+parameter and a data member have the same name. this() calls another
+constructor in the same class and must be the first line.
+
+super refers to the parent part of the current object. super(...) calls the
+parent constructor and must be the first line in a child constructor.
+super.method() calls the parent version of a method, and super.variable reads
+the parent data member when a child has a member with the same name.
+
+
+11. What is static? Why cannot a static method directly use instance data?
+
+Answer:
+static means the member belongs to the class itself, not to each individual
+object. For example, all BankAccount objects can share one static interestRate.
+We access it using BankAccount.interestRate.
+
+A static method can be called without creating an object. Therefore it does
+not know which object's instance data, such as balance, it should use. That is
+why it cannot directly use this or non-static data members. It can use them
+only through a specific object passed to or created inside the method.
+
+
+12. What does final mean for a variable, method, and class?
+
+Answer:
+A final variable can be assigned only once. For an object reference, the
+reference cannot point to another object, although the existing object's
+mutable fields may still change.
+
+A final method cannot be overridden by a child class. A final class cannot be
+extended. For example, String is final, so we cannot create a child class of
+String.
+
+
+13. What are access modifiers in Java?
+
+Answer:
+public means accessible from everywhere. protected means accessible in the
+same package and in child classes. No modifier means package-private, so it is
+accessible only in the same package. private means accessible only inside the
+same class.
+
+For encapsulation, data members are usually private, and public methods give
+safe access to them.
+
+
+14. Can Java support multiple inheritance?
+
+Answer:
+Java does not allow a class to extend two classes. If two parents had the same
+method, Java would not know which implementation to use; this is the diamond
+ambiguity problem.
+
+Java supports multiple inheritance of type through interfaces. A class can
+implement many interfaces. If two interfaces provide the same default method,
+the class must override it and clearly resolve the ambiguity.

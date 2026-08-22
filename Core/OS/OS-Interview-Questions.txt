@@ -1,0 +1,108 @@
+OPERATING SYSTEM - SMALL, MUST KNOW INTERVIEW QUESTIONS
+========================================================
+
+This is deliberately not an OS book. These are the few questions where a
+software developer should at least know the basic idea. Give the first
+paragraph in an interview; use the example only when the interviewer asks.
+
+1. What is an operating system? What does it do?
+
+Answer:
+An operating system is the layer between applications and computer hardware.
+It manages CPU time, memory, files, input/output devices, and running programs.
+It also gives applications a safe, convenient way to use hardware instead of
+every program directly controlling the CPU, disk, or network card.
+
+For example, when many apps are open, the OS decides which work gets CPU time.
+When an app asks to read a file, the OS checks permissions and communicates
+with the disk. Windows, Linux, Android, and macOS are operating systems.
+
+
+2. What is the difference between a process and a thread?
+
+Answer:
+A process is a running program with its own separate memory space and system
+resources. A thread is a smaller execution path inside a process.
+
+Threads in one process share common things such as code and heap memory, but
+each thread has its own stack and current execution state. Creating and
+switching threads is usually cheaper than creating and switching processes.
+
+Example: a browser is one process, and it can use several threads: one for the
+user interface, one for network work, and one for background tasks. Because
+threads share memory, they are fast to communicate with, but they must be
+careful not to change shared data at the same time.
+
+
+3. What is a race condition? How do we prevent it?
+
+Answer:
+A race condition happens when two or more threads access shared data at the
+same time and the final result depends on the timing of their execution.
+
+For example, suppose count is 5. Two threads both read 5, both add 1, and both
+write 6. The expected answer was 7, but one update was lost.
+
+We prevent it by protecting the critical section: the small part of code that
+reads or changes shared data. In Java we can use synchronized, Lock, Atomic
+classes, or another correct concurrency mechanism. The main idea is that only
+one thread changes that shared value at a time when required.
+
+
+4. What is a deadlock? What are the four necessary conditions?
+
+Answer:
+A deadlock is a situation where two or more processes or threads wait forever
+for resources held by each other, so none of them can continue.
+
+Example: Thread A holds lock 1 and waits for lock 2. At the same time, Thread B
+holds lock 2 and waits for lock 1.
+
+The four necessary conditions are:
+1. Mutual exclusion: a resource can be used by only one process at a time.
+2. Hold and wait: a process holds one resource while waiting for another.
+3. No preemption: the resource is not forcibly taken away.
+4. Circular wait: a circular chain exists, where each waits for the next.
+
+To avoid the common lock example, always acquire locks in one fixed order.
+Then a circular wait cannot form.
+
+
+5. What is virtual memory? What is a page fault?
+
+Answer:
+Virtual memory lets every process behave as if it has its own large continuous
+memory space. The OS and hardware map that virtual address to real RAM pages.
+Only the currently needed pages must be in RAM; less-used pages can stay on
+disk until needed.
+
+A page fault happens when a program accesses a page that is not currently in
+RAM. The OS loads it from disk if it is valid, updates the mapping, and then
+continues the program. This is normal sometimes, but too many page faults make
+the computer slow because disk access is much slower than RAM.
+
+
+6. What is context switching?
+
+Answer:
+Context switching is when the OS pauses one running process or thread, saves
+its current state, and restores the saved state of another one so it can run.
+
+The saved state includes information such as registers and the current
+instruction position. Context switching lets many programs appear to run at
+once on one CPU, but it has overhead, so excessive switching wastes time.
+
+
+7. What is the difference between a mutex and a semaphore?
+
+Answer:
+A mutex is a lock for mutual exclusion. Normally one thread locks it before
+entering a critical section, and that same thread unlocks it after finishing.
+At one time, only one thread owns the mutex.
+
+A semaphore is a counter used to control access to a limited number of
+resources or to signal between threads. For example, a semaphore starting at
+3 can allow up to three threads to use three database connections. A binary
+semaphore has values 0 and 1, but the core interview difference is this:
+mutex means one owner protecting one critical section; semaphore means an
+available-count or signalling mechanism.

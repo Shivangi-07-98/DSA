@@ -1,0 +1,103 @@
+COMPUTER NETWORKS - SMALL, MUST KNOW INTERVIEW QUESTIONS
+=========================================================
+
+This is deliberately not a networking book. These are the few questions that
+are basic enough for a software developer, especially one who works with web
+applications, APIs, or backend services.
+
+1. What is the difference between TCP and UDP?
+
+Answer:
+TCP is connection-oriented and reliable. It establishes a connection, keeps
+data in order, detects missing data, and retransmits it when needed. This
+extra reliability adds overhead.
+
+UDP sends independent packets without creating a connection and without
+guaranteeing delivery, order, or no duplicates. It is simpler and lower
+overhead.
+
+Use TCP when correctness matters, such as web pages, login requests, and
+database communication. Use UDP when low delay matters more than perfect
+delivery, such as live calls, gaming, or streaming. The application can still
+add its own reliability on top of UDP if it needs it.
+
+
+2. What is DNS?
+
+Answer:
+DNS stands for Domain Name System. It translates a human-readable domain name,
+such as example.com, into an IP address, such as 93.184.216.34, which computers
+use to reach the correct server.
+
+Without DNS, users would have to remember IP addresses. Before asking DNS again,
+the browser or operating system may use a cached earlier answer if it has not
+expired.
+
+
+3. What is HTTP? What is the difference between HTTP and HTTPS?
+
+Answer:
+HTTP is the application-level request-response protocol used by browsers,
+mobile apps, and servers to communicate. A client sends a request and a server
+sends a response, for example GET /products.
+
+HTTPS is HTTP protected by TLS encryption. TLS encrypts the data while it
+travels, helps the client verify it is talking to the real server using a
+certificate, and helps detect unwanted modification in transit. Use HTTPS for
+web applications, especially whenever passwords, tokens, or private data exist.
+
+
+4. Explain the TCP three-way handshake.
+
+Answer:
+Before sending normal application data, TCP normally creates a connection using
+three messages: SYN, SYN-ACK, and ACK.
+
+The client sends SYN, meaning "I want to connect." The server replies SYN-ACK,
+meaning "I received your request and I also want to connect." The client sends
+ACK, confirming the server's reply. Now both sides know that the connection can
+start and can exchange data.
+
+
+5. What happens when you enter a URL in a browser?
+
+Answer:
+First, the browser checks caches and uses DNS if it needs to find the domain's
+IP address. Then it opens a connection to that IP address: normally TCP, and
+for HTTPS it also performs a TLS handshake to create a secure connection.
+
+Next, the browser sends an HTTP request. The server processes it and returns
+an HTTP response containing a status code, headers, and usually HTML, JSON, or
+another body. The browser then renders the response and may request extra
+files such as CSS, JavaScript, images, or API data.
+
+This answer is intentionally high-level. Do not try to list every network
+layer unless the interviewer asks a follow-up.
+
+
+6. What are IP address and MAC address? What do a router and a switch do?
+
+Answer:
+An IP address is a logical network address used to deliver data across networks
+and the internet. A MAC address identifies a network interface on a local
+network.
+
+A switch connects devices within the same local network and forwards frames
+using MAC addresses. A router connects different networks and forwards packets
+toward their destination using IP addresses. A simple way to remember it is:
+switch is mainly local-network delivery; router is between-network delivery.
+
+
+7. What are the OSI and TCP/IP layers?
+
+Answer:
+The OSI model is a way to divide networking into layers. From lowest to
+highest, its seven layers are Physical, Data Link, Network, Transport, Session,
+Presentation, and Application. You do not need to force every protocol into a
+perfect box; the model helps us understand which part of communication is doing
+which job.
+
+In practical internet work, people often use the simpler TCP/IP model:
+Link -> Internet -> Transport -> Application. Ethernet/Wi-Fi are link-level,
+IP is internet-level, TCP/UDP are transport-level, and HTTP/DNS are
+application-level. This one mapping is enough for a basic software interview.
