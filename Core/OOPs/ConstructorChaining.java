@@ -10,33 +10,45 @@ that is constructor chaining between the child and parent constructors.
 
 Constructor chaining means:
 One constructor calls another constructor
+
+this()  → calls another constructor of the SAME class
+super() → calls the constructor of the PARENT class
+
+One important rule:
+this() or super() must be the first statement inside a constructor.
+
+Also, a constructor can have either this() or super() as its first statement, not both.
 */
+
+import java.io.*;
+import java.util.*;
+
 public class ConstructorChaining {
-    static class Person {
-        String name;
 
-        Person(String name) {
-            this.name = name;
-            System.out.println("Person constructor: name is set");
-        }
+  public static void main(String[] args) {
+    HREmployee obj = new HREmployee("A", 10);
+
+    System.out.println(obj.name);
+    System.out.println(obj.empid);
+  }
+
+  static class Employee {
+    String name;
+    int empid;
+
+    Employee() {
+      this("Unknown", 0);
     }
 
-    static class Student extends Person {
-        int rollNumber;
-
-        Student(String name, int rollNumber) {
-            super(name); // must be the first line of a child constructor
-            this.rollNumber = rollNumber;
-            System.out.println("Student constructor: roll number is set");
-        }
-
-        void display() {
-            System.out.println(name + " has roll number " + rollNumber);
-        }
+    Employee(String name, int empid) {
+      this.name = name;
+      this.empid = empid;
     }
+  }
 
-    public static void main(String[] args) {
-        Student student = new Student("Riya", 101);
-        student.display();
+  static class HREmployee extends Employee {
+    HREmployee(String name, int empid) {
+      super(name, empid);
     }
+  }
 }
