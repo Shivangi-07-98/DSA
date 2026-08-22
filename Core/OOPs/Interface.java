@@ -74,6 +74,23 @@ public class Interface {
 }
 
 /*
+ * 
+ * Could you write {} and leave it empty?
+ * No, not for this normal interface method.
+ * 
+ * interface Payment {
+ *    void pay(double amount) {
+ *    }
+ * }
+ *
+ * is not valid for a normal abstract interface method.
+ * 
+ * You write:
+ * void pay(double amount);
+ * 
+ * The semicolon means:
+ * The method is declared here; implementation will be provided by the
+ * implementing class.
  * Payment is an interface. Payment says void pay(double amount)
  * So every class implementing Payment must provide pay()
  *
