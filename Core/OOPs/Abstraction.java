@@ -111,3 +111,49 @@ public class Abstraction {
  * Abstraction means showing only the necessary details
  * and hiding the implementation details
  */
+
+/*
+ * Abstract class is a class. Interface is not a class. Interface is its own
+ * Java type.
+ * 
+ * ABSTRACTION
+ *     ↓
+ * OOP concept
+ *     ↓
+ * Can be achieved using
+ *     ├── abstract class
+ *     └── interface
+ * 
+ * An interface is one way of achieving abstraction. An abstract class is
+ * another way of achieving abstraction.
+ * 
+ * Abstract class can have BOTH normal and abstract things
+ * Interface is more like a contract
+ * 
+ * Abstract class can contain common implemented code + abstract methods that
+ * children must implement.
+ * 
+ * Interface primarily defines a contract that implementing classes must follow.
+ * 
+ * ENCAPSULATION
+ * → control access to data
+ * 
+ * INHERITANCE
+ * → child gets/uses parent properties and methods
+ * 
+ * POLYMORPHISM
+ * → same call can behave differently
+ * 
+ * ABSTRACTION
+ * → show necessary details, hide implementation details
+ */
+
+
+//               ABSTRACTION
+//                    ↓
+//           ┌────────┴────────┐
+//           ↓                 ↓
+//    ABSTRACT CLASS       INTERFACE
+//           ↓                 ↓
+//  common code +         contract
+//  abstract methods      to implement
