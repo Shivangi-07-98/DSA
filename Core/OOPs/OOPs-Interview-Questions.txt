@@ -52,6 +52,11 @@ Inheritance lets a child class reuse the common code of a parent class. We use
 the extends keyword. For example, Dog extends Animal: a Dog is an Animal.
 That is an "is-a" relationship.
 
+An is-a relationship means the child is a type of the parent.
+HREmployee is an Employee
+SoftwareEmployee is an Employee
+So inheritance represents an is-a relationship.
+
 A "has-a" relationship means one class contains or uses another object.
 For example, a Car has an Engine. We usually create this using a data member,
 not by extending the class. Use inheritance only when the child truly is a
@@ -174,6 +179,11 @@ same class.
 For encapsulation, data members are usually private, and public methods give
 safe access to them.
 
+public               → everywhere
+protected            → Same package + child classes
+default/No modifier  → Same package
+private              → Only inside the same class
+
 
 14. Can Java support multiple inheritance?
 
@@ -217,3 +227,9 @@ RuntimeException, for example NullPointerException and IllegalArgumentException.
 They usually indicate a programming mistake or invalid use of an API. Do not
 catch every exception and ignore it; either recover meaningfully or let it be
 reported clearly.
+
+try       → code that may cause an exception
+catch     → handles the exception
+finally   → cleanup code
+throw     → explicitly throws an exception
+throws    → declares that a method may pass an exception to its caller
