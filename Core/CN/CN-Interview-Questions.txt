@@ -1,9 +1,4 @@
-COMPUTER NETWORKS - SMALL, MUST KNOW INTERVIEW QUESTIONS
-=========================================================
-
-This is deliberately not a networking book. These are the few questions that
-are basic enough for a software developer, especially one who works with web
-applications, APIs, or backend services.
+COMPUTER NETWORKS
 
 1. What is the difference between TCP and UDP?
 

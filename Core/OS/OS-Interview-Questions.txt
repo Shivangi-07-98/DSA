@@ -1,9 +1,4 @@
-OPERATING SYSTEM - SMALL, MUST KNOW INTERVIEW QUESTIONS
-========================================================
-
-This is deliberately not an OS book. These are the few questions where a
-software developer should at least know the basic idea. Give the first
-paragraph in an interview; use the example only when the interviewer asks.
+OPERATING SYSTEM
 
 1. What is an operating system? What does it do?
 
