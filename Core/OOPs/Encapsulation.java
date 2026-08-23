@@ -7,7 +7,6 @@ package OOPs;
  * access to the data.
  *
  * In Java, we commonly achieve this by:
- *
  * 1. Making data members private.
  * 2. Providing public getter/setter methods when needed.
  *
