@@ -1,5 +1,7 @@
 https://leetcode.com/problems/find-the-smallest-divisor-given-a-threshold/
 
+time O(n log 10^6) = O(n)
+space O(1)
 
 class Solution {
   public int smallestDivisor(int[] nums, int threshold) {
@@ -27,6 +29,9 @@ class Solution {
 }
 
 --------------------------------------------------------------------------
+
+time O(n log n)
+space O(1)
 
 class Solution {
   public int smallestDivisor(int[] nums, int threshold) {
