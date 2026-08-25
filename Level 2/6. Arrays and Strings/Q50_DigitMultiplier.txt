@@ -1,5 +1,7 @@
 https://www.geeksforgeeks.org/problems/digit-multiplier3000/1
 
+time O(log n)
+space O(log n)
 
 class Solution {
   static String getSmallest(Long N) {
