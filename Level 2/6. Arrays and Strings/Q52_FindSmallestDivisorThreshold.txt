@@ -4,6 +4,33 @@ https://leetcode.com/problems/find-the-smallest-divisor-given-a-threshold/
 class Solution {
   public int smallestDivisor(int[] nums, int threshold) {
     int lo = 1;
+    int hi = 1000000; // given the arr can be from 1 to 1000000
+
+    while (lo < hi) {
+      int mid = (lo + hi) / 2;
+
+      int sum = 0;
+      for (int val : nums) {
+        int quo = (val + mid - 1) / mid;
+        sum += quo;
+      }
+
+      if (sum > threshold) {
+        lo = mid + 1;
+      } else {
+        hi = mid;
+      }
+    }
+
+    return lo;
+  }
+}
+
+--------------------------------------------------------------------------
+
+class Solution {
+  public int smallestDivisor(int[] nums, int threshold) {
+    int lo = 1;
     int hi = Integer.MIN_VALUE;
 
     for (int val : nums) {
