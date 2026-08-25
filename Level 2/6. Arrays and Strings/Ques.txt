@@ -31,7 +31,7 @@
 31. maximum subarray (Kadane's Algorithm)
 32. maximum product subarray
 33. sieve of eratosthenes/count primes ×
-34. maximum sum of two non overlapping subarrays - 28 july 2022----
+34. maximum sum of two non overlapping subarrays × - 28 july 2022----
 35. trapping rain water
 36. merge intervals
 37. insert interval
@@ -44,7 +44,7 @@
 44. balance array/ways to make a fair array - 1 aug 2022----
 45. car fleet
 46. maximum sum of smallest and second smallest in an array
-47. smallest range covering elements from k lists
+47. smallest range covering elements from k lists ×
 48. first negative integer in every window of size k
 49. max consecutive ones 3 - 4 aug 2022----
 50. digit multiplier
@@ -58,17 +58,17 @@
 58. minimum limit of balls in a bag
 59. allocate minimum pages - 8 aug 2022----
 60. count inversions in an array
-61. count of smaller numbers after self
+61. count of smaller numbers after self ×
 62. kth smallest element in a sorted matrix - 10 aug 2022----
-63. kth smallest number in multiplication table
-64. find kth smallest pair distance
-65. kth smallest prime fraction
+63. kth smallest number in multiplication table ×
+64. find kth smallest pair distance ×
+65. kth smallest prime fraction ×
 66. search in rotated sorted array
 67. find minimum in rotated sorted array 2 - 12 aug 2022----
-68. kth smallest product of two sorted arrays
+68. kth smallest product of two sorted arrays ×
 69. search pattern KMP algorithm
-70. longest happy prefix ×
-71. shortest palindrome
+70. longest happy prefix
+71. shortest palindrome ×
 72. range addition - 16 aug 2022----
 73. max consecutive ones 2
 74. median of two sorted arrays
