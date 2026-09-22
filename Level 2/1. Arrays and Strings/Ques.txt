@@ -41,12 +41,12 @@
 41. gas station
 42. sliding window maximum
 43. maximum product of three numbers
-44. balance array/ways to make a fair array - 1 aug 2022----here
+44. balance array/ways to make a fair array - 1 aug 2022----
 45. car fleet
 46. maximum sum of smallest and second smallest in an array
 47. smallest range covering elements from k lists ×
 48. first negative integer in every window of size k
-49. max consecutive ones 3 - 4 aug 2022----done
+49. max consecutive ones 3 - 4 aug 2022----
 50. digit multiplier
 51. find minimum in rotated sorted array
 52. find the smallest divisor given a threshold
@@ -59,7 +59,7 @@
 59. allocate books/allocate minimum pages - 8 aug 2022----
 60. count inversions in an array
 61. count of smaller numbers after self ×
-62. kth smallest element in a sorted matrix - 10 aug 2022----
+62. kth smallest element in a sorted matrix - 10 aug 2022----here
 63. kth smallest number in multiplication table ×
 64. find kth smallest pair distance ×
 65. kth smallest prime fraction ×
