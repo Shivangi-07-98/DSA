@@ -3,6 +3,8 @@ https://leetcode.com/problems/kth-smallest-element-in-a-sorted-matrix/
 time O(n log(max-min))
 space O(1)
 
+binary search solution
+
 class Solution {
   public int kthSmallest(int[][] matrix, int k) {
     int m = matrix.length;
@@ -12,7 +14,7 @@ class Solution {
     int hi = matrix[m - 1][n - 1];
 
     while (lo < hi) {
-      int mid = lo + (hi - lo) / 2;
+      int mid = lo + (hi - lo) / 2; // to prevent negative numbers from infinite loop
 
       int count = 0;
       int j = n - 1;

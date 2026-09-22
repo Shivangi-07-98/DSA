@@ -5,6 +5,7 @@ space O(1)
 
 class Solution {
   public int findMinArrowShots(int[][] points) {
+    // expanded form to prevent one test case fail of extreme numbers
     Arrays.sort(points, (a, b) -> {
       if (a[0] > b[0]) {
         return 1;

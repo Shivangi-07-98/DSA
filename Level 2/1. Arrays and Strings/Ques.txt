@@ -59,7 +59,7 @@
 59. allocate books/allocate minimum pages - 8 aug 2022----
 60. count inversions in an array
 61. count of smaller numbers after self ×
-62. kth smallest element in a sorted matrix - 10 aug 2022----here
+62. kth smallest element in a sorted matrix - 10 aug 2022----done
 63. kth smallest number in multiplication table ×
 64. find kth smallest pair distance ×
 65. kth smallest prime fraction ×
