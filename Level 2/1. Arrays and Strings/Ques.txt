@@ -59,12 +59,12 @@
 59. allocate books/allocate minimum pages - 8 aug 2022----here
 60. count inversions in an array
 61. count of smaller numbers after self ×
-62. kth smallest element in a sorted matrix - 10 aug 2022----done
+62. kth smallest element in a sorted matrix - 10 aug 2022----
 63. kth smallest number in multiplication table ×
 64. find kth smallest pair distance ×
 65. kth smallest prime fraction ×
 66. search in rotated sorted array
-67. find minimum in rotated sorted array 2 - 12 aug 2022----done
+67. find minimum in rotated sorted array 2 - 12 aug 2022----
 68. kth smallest product of two sorted arrays ×
 69. search pattern KMP algorithm
 70. longest happy prefix
@@ -75,12 +75,12 @@
 75. meeting rooms 2
 76. meeting rooms
 77. wave array
-78. largest number - 17 aug 2022----done
+78. largest number - 17 aug 2022----
 79. range sum query mutable ×
 80. z algorithm pattern search ×
-81. chef and secret password × - 18 aug 2022----done
+81. chef and secret password × - 18 aug 2022----
 82. sum of scores of built strings ×
 83. find the minimum cost to cross the river/minimum cost to move chips
 84. majority element 2
 85. search in rotated sorted array 2
-86. range sum query mutable - fenwick tree × - 20 aug 2022----done
+86. range sum query mutable - fenwick tree × - 20 aug 2022----
