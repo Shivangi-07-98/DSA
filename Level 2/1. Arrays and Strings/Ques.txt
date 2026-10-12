@@ -23,6 +23,7 @@
 23. key pair
 24. find pair given difference
 25. best meeting point
+
 26. partition labels - 25 july 2022----
 27. partition array into disjoint intervals
 28. reach a number ×
@@ -46,6 +47,7 @@
 46. maximum sum of smallest and second smallest in an array
 47. smallest range covering elements from k lists ×
 48. first negative integer in every window of size k
+
 49. max consecutive ones 3 - 4 aug 2022----
 50. digit multiplier
 51. find minimum in rotated sorted array
@@ -59,6 +61,7 @@
 59. allocate books/allocate minimum pages - 8 aug 2022----here
 60. count inversions in an array
 61. count of smaller numbers after self ×
+
 62. kth smallest element in a sorted matrix - 10 aug 2022----
 63. kth smallest number in multiplication table ×
 64. find kth smallest pair distance ×
