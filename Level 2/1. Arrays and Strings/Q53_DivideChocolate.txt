@@ -1,5 +1,7 @@
 https://leetcode.com/problems/divide-chocolate/description/
 
+https://www.geeksforgeeks.org/problems/chocolate-distribution-problem3825/1
+
 time O(n log sum)
 space O(1)
 
