@@ -55,7 +55,7 @@
 54. split array largest sum
 55. capacity to ship packages within d days
 56. koko eating bananas
-57. the painter's partition problem 2
+57. the painter's partition problem
 58. minimum limit of balls in a bag
 59. allocate books/allocate minimum pages - 8 aug 2022----
 60. count inversions in an array
