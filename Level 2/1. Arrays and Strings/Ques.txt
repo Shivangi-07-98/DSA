@@ -51,17 +51,15 @@
 50. digit multiplier
 51. find minimum in rotated sorted array
 52. find the smallest divisor given a threshold
-
-53. divide chocolate/chocolate distribution problem - 5 aug 2022----here
+53. divide chocolate/chocolate distribution problem - 5 aug 2022----
 54. split array largest sum
 55. capacity to ship packages within d days
 56. koko eating bananas
 57. the painter's partition problem 2
 58. minimum limit of balls in a bag
-59. allocate books/allocate minimum pages - 8 aug 2022----here
+59. allocate books/allocate minimum pages - 8 aug 2022----
 60. count inversions in an array
 61. count of smaller numbers after self ×
-
 62. kth smallest element in a sorted matrix - 10 aug 2022----
 63. kth smallest number in multiplication table ×
 64. find kth smallest pair distance ×
