@@ -1,22 +1,22 @@
 ﻿LEVEL 1
 
 ## 1. Getting Started
-1. Print Z
-2. Grading System
-3. Is A Number Prime
-4. Print All Primes Till N
-5. Print Fibonacci Numbers Till N
-6. Count Digits In A Number
-7. Digits Of A Number
-8. Reverse A Number
-9. Inverse Of A Number
-10. Rotate A Number
-11. Gcd And Lcm
-12. Prime Factorization Of A Number
-13. The Curious Case Of Benjamin Bulbs
-14. Pythagorean Triplet
-15. Hello Name
-16. Hello World
+1. Hello Name
+2. Hello World
+3. Print Z
+4. Grading System
+5. Is A Number Prime
+6. Print All Primes Till N
+7. Print Fibonacci Numbers Till N
+8. Count Digits In A Number
+9. Digits Of A Number
+10. Reverse A Number
+11. Inverse Of A Number
+12. Rotate A Number
+13. Gcd And Lcm
+14. Prime Factorization Of A Number
+15. The Curious Case Of Benjamin Bulbs
+16. Pythagorean Triplet
 
 ## 2. Patterns
 1. Pattern 1
@@ -31,71 +31,69 @@
 10. Pattern 10
 11. Pattern 11
 12. Pattern 12
-13. Pattern 13 i
-14. Pattern 13 ii
-15. Pattern 13 iii
-16. Pattern 14
-17. Pattern 15
-18. Pattern 16
-19. Pattern 17
-20. Pattern 18
-21. Pattern 19
-22. Pattern 20
+13. Pattern 13
+14. Pattern 14
+15. Pattern 15
+16. Pattern 16
+17. Pattern 17
+18. Pattern 18
+19. Pattern 19
+20. Pattern 20
 
 ## 3. Function and Arrays
-1. Digit Frequency
-2. Decimal To Any Base
-3. Any Base To Decimal
-4. Any Base To Any Base
-5. Any Base Addition
-6. Any Base Subtraction
-7. Any Base Multiplication
-8. Span Of Array
-9. Find Element In An Array
-10. Bar Chart
-11. Sum Of Two Arrays
-12. Difference Of Two Arrays
-13. Reverse An Array
-14. Rotate An Array
-15. Inverse Of An Array
-16. Subarray Problem
-17. Broken Economy
-18. First Index And Last Index
-19. Subsets Of Array
-20. Inverted Bar Chart
-21. Arrays
+1. Arrays
+2. Digit Frequency
+3. Decimal To Any Base
+4. Any Base To Decimal
+5. Any Base To Any Base
+6. Any Base Addition
+7. Any Base Subtraction
+8. Any Base Multiplication
+9. Span Of Array
+10. Find Element In An Array
+11. Bar Chart
+12. Sum Of Two Arrays
+13. Difference Of Two Arrays
+14. Reverse An Array
+15. Rotate An Array
+16. Inverse Of An Array
+17. Subarray Problem
+18. Broken Economy
+19. First Index And Last Index
+20. Subsets Of Array
+21. Inverted Bar Chart
 
 ## 4. TwoD Arrays
-1. Two D Arrays Demo
-2. Matrix Multiplication
-3. The State Of Wakanda 1
-4. Spiral Display
-5. Exit Point Ofa Matrix
-6. Rotate By 90 Degrees
-7. Ring Rotate
-8. Diagonal Display
-9. Saddle Price
-10. Search In A Sorted 2D Array
-11. count
-12. Playing With Count
-13. Two Power
+1. count
+2. Playing With Count
+3. Two Power
+4. Two D Arrays Demo
+5. Matrix Multiplication
+6. The State Of Wakanda 1
+7. Spiral Display
+8. Exit Point Of a Matrix
+9. Rotate By 90 Degrees
+10. Ring Rotate
+11. Diagonal Display
+12. Saddle Price
+13. Search In A Sorted 2D Array
 
 ## 5. String, String Builder and ArrayList
-1. Print All Palindromic Substrings
-2. String Compression
-3. Toggle Case
-4. String With Difference Of Every Two Consecutive Characters
-5. Print All Permutations Of A String Iteratively
-6. Remove Primes
-7. arraylist
-8. Equals
-9. example
-10. Input Of Strings
-11. Intro To Strings
-12. Modification Functions
-13. Poor Performance
-14. Replace
-15. stringbuilder
+1. arraylist
+2. Equals
+3. example
+4. Input Of Strings
+5. Intro To Strings
+6. Modification Functions
+7. Poor Performance
+8. Replace
+9. stringbuilder
+10. Print All Palindromic Substrings
+11. String Compression
+12. Toggle Case
+13. String With Difference Of Every Two Consecutive Characters
+14. Print All Permutations Of A String Iteratively
+15. Remove Primes
 
 ## 6. Introduction to Recursion
 1. Print Decreasing
@@ -121,17 +119,16 @@
 3. Get Stair Paths
 4. Get Maze Paths
 5. Get Maze Paths With Jumps
-6. Get Subsequence
 
 ## 9. Recursion on the way up
 1. Print Subsequence
+1. Print Subsequence With ArrayList
 2. Print Kpc
 3. Print Stair Paths
 4. Print Maze Paths
 5. Print Maze Paths With Jumps
 6. Print Permutations
 7. Print Encodings
-8. Print Subsequence With Array List
 
 ## 10. Recursion Backtracking
 1. Flood Fill
@@ -141,39 +138,33 @@
 
 ## 11. Time and Space Complexity
 1. Bubble Sort
-2. Bubble Sort
-3. Check Duplicate
-4. Count Sort
-5. Fibonacci
-6. Highest Frequency Character
-7. Highest Frequency Character
-8. Insertion Sort
-9. Insertion Sort
-10. Merge Sort
-11. Merge Sort
-12. Merge Two Sorted Arrays
-13. Merge Two Sorted Arrays
-14. Move 0 to End
-15. Move 0 to Front
-16. n
-17. n Square
-18. Partition An Array
-19. Polynomial
-20. Print All Primes
-21. Quick Select
-22. Quick Sort
-23. Radix Sort
-24. Selection Sort
-25. Selection Sort
-26. Sieve Of Eratosthenes
-27. Sort
-28. Sort
-29. Sort Dates
-30. Sorting Arrays
-31. Sort Lo Hi
-32. Target Sum Pair
-33. Target Sum Pair With Binary Search
-34. Target Sum Triplet
+2. Check Duplicate
+3. Count Sort
+4. Fibonacci
+5. Highest Frequency Character
+6. Insertion Sort
+7. Merge Sort
+8. Merge Two Sorted Arrays
+9. Move 0 to End
+10. Move 0 to Front
+11. n
+12. n Square
+13. Partition An Array
+14. Polynomial
+15. Print All Primes
+16. Quick Select
+17. Quick Sort
+18. Radix Sort
+19. Selection Sort
+20. Sieve Of Eratosthenes
+21. Sort01
+22. Sort012
+23. Sort Dates
+24. Sorting Arrays
+25. Sort Lo Hi
+26. Target Sum Pair
+27. Target Sum Pair With Binary Search
+28. Target Sum Triplet
 
 ## 12. Linked Lists
 1. display
