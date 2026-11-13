@@ -56,6 +56,3 @@ vimp 25. redundant connection - 23 june 2022----
 56. graph connectivity with threshold ×
 57. ford fulkerson/find the maximum flow × - 12 july 2022----
 58. find critical and pseudo critical edges in minimum spanning tree ×
-
-
-the ques marked with × are completely nonsense even for google interviews, never asked in microsoft, amazon, uber, adobe, walmart, meta, or any top product company they are a total waste of time
