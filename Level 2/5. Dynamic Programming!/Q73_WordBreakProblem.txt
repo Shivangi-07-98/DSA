@@ -1,4 +1,5 @@
 https://www.geeksforgeeks.org/word-break-problem-dp-32/
+https://leetcode.com/problems/word-break/description/
 
 time O(n^3)
 space O(n + m)

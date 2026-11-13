@@ -1,17 +1,17 @@
 1. fibonacci - 23 aug 2022----
 imp 2. climb stairs
-3. climb stairs with variable jumps
+imp 3. climb stairs with variable jumps
 imp 4. climb stairs with minimum moves
-5. min cost in maze traversal
+imp 5. min cost in maze traversal
 6. goldmine
 imp 7. longest increasing subsequence n^2 - 24 aug 2022----
 8. building bridges
-9. russian doll envelopes
+imp 9. russian doll envelopes
 imp 10. maximum profit in job scheduling
 11. minimum number of increasing subsequences ×
 imp 12. longest increasing subsequence nlog(n)
-13. count binary strings - 26 aug 2022----
-14. arrange buildings
+imp 13. count binary strings - 26 aug 2022----
+imp 14. arrange buildings
 15. paint fence
 16. paint house
 17. paint house many colors
@@ -23,7 +23,7 @@ imp 12. longest increasing subsequence nlog(n)
 23. valleys and mountains × | maze path above diagonal × | dyck words ×
 24. circles and chords ×
 25. triangulations ×
-26. target sum subsets - 28 aug 2022----
+imp 26. target sum subsets - 28 aug 2022----
 imp 27. partition equal subset sum
 imp 28. coin change combination
 29. coin change permutations
@@ -34,7 +34,6 @@ imp 33. best time to buy and sell stock 2
 imp 34. best time to buy and sell stock with transaction fee
 imp 35. best time to buy and sell stock with cooldown
 imp 36. best time to buy and sell stock 3
-
 37. best time to buy and sell stock 4 × - 1 sept 2022----
 38. tiling with 2*1 tiles
 39. tiling with m*1 tiles ×
@@ -88,35 +87,19 @@ imp 73. word break problem - 20 sept 2022----
 
 ---------------------------------------------------------------------------
 
-70. Climbing Stairs
+todo - 
+
 198. House Robber
 322. Coin Change
-300. Longest Increasing Subsequence
-1143. Longest Common Subsequence
-72. Edit Distance
-139. Word Break
 62. Unique Paths
-416. Partition Equal Subset Sum
-121. Best Time to Buy and Sell Stock
-122. Best Time to Buy and Sell Stock II
 
 213. House Robber II
-64. Minimum Path Sum
-518. Coin Change II
 494. Target Sum
-5. Longest Palindromic Substring
-516. Longest Palindromic Subsequence
-152. Maximum Product Subarray
 91. Decode Ways
 55. Jump Game
-45. Jump Game II
-309. Best Time to Buy and Sell Stock with Cooldown
 
 120. Triangle
 221. Maximal Square
 279. Perfect Squares
 337. House Robber III (DP on Trees)
-1235. Maximum Profit in Job Scheduling (DP + Binary Search)
 1048. Longest String Chain
-714. Best Time to Buy and Sell Stock with Transaction Fee
-123. Best Time to Buy and Sell Stock III
